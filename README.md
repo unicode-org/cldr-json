@@ -40,13 +40,14 @@ locales not in the modern coverage listing. The functional packages are:
  * cldr-core        - Basic CLDR supplemental data - Only one package here - no "full" and "modern".
  * cldr-dates       - Data for date/time formatting, including data for Gregorian calendar.
                       Requires that the corresponding "numbers" package be installed as well.
- * cldr-cal-<type>  - CLDR data for non-Gregorian calendars. <type> is one of the supported
+ * cldr-cal-[type]  - CLDR data for non-Gregorian calendars. [type] is one of the supported
                       non-Gregorian calendar types in CLDR: ( buddhist, chinese, coptic, dangi,
                       hebrew, indian, islamic, japanese, persian, roc ).
  * cldr-localenames - Translated versions of locale display name elements: languages, scripts,
                       territories, variants.
  * cldr-misc        - Other CLDR data not defined elsewhere.
  * cldr-numbers     - Data for number formatting.
+ * cldr-segments    - Line breaking data from Unicode's ULI project ( http://uli.unicode.org/ )
  * cldr-units       - Data for units formatting.
 
 ## Installation
@@ -57,4 +58,9 @@ _Bower_ release installation:
                                      above, for example:
 
     $ bower install cldr-dates-full
+
+## Bug reports
+
+    CLDR does NOT use Github's issue tracking system to track bugs.  If you find an error in
+    the data contained here, please file a new ticket at http://unicode.org/cldr/trac/newticket
 
