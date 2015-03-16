@@ -1,0 +1,95 @@
+<project name="CLDR JSON Generation" default="all" basedir=".">
+  <target name="init">
+    <tstamp/>
+    <property name="cldr.jar" value="../../tools/java/cldr.jar"/>
+
+    <!-- parallelize by splitting between 5 processes. Could be better, could be worse. wfm. -->
+    <property name="localematch.0" value="[ed].*"/>
+    <property name="localematch.1" value="[sk].*"/>
+    <property name="localematch.2" value="[fm].*"/>
+    <property name="localematch.3" value="[an].*"/>
+    <property name="localematch.4" value="[icv].*"/>
+    <property name="localematch.5" value="[trg].*"/>
+    <property name="localematch.6" value="[bhu].*"/>
+    <property name="localematch.7" value="[lpz].*"/>
+    <property name="localematch.8" value="[^edicvsktrgfmbhuanlpz].*"/> <!-- everything else -->
+  </target>
+
+  <target name="build" depends="init" description="Build java/ (cldr-tools)">
+    <ant dir="../../tools/java" inheritAll="true" target="all"/>
+  </target>
+
+  <target name="all" depends="init,build,build-json" description="Build java/ and the JSON"/>
+  <target name="pall" depends="init,build,build-json-parallel" description="Build java/ and the JSON"/>
+
+  <target name="jar" depends="init" description="Create java/cldr.jar">
+    <ant dir="../../tools/java" inheritAll="true" target="jar"/>
+  </target>
+
+  <target name="clean" depends="init" description="Clean out JSON directories">
+    <delete>
+      <fileset dir="." includes="**/*.json"/>
+      <fileset dir="." includes="**/.bowerrc"/>
+      <fileset dir="." includes="**/**/*.json"/>
+    </delete>
+  </target>
+
+  <target name="build-json" depends="build-json-main,build-json-supplemental,build-json-segments"/>
+  <target name="build-json-parallel" depends="build-json-main-parallel,build-json-supplemental,build-json-segments"/>
+
+  <target name="_buildjsonmain"> <!-- no depends - DO NOT CALL outside of build-json-main -->
+      <java fork="true" jar="${cldr.jar}">
+        <sysproperty key="CLDR_DIR" value="../.."/>
+        <sysproperty key="CLDR_GEN_DIR" value="."/>
+        <arg value="ldml2json"/>
+        <arg value="-o"/> <arg value="false"/>
+        <arg value="-t"/> <arg value="main"/>
+        <arg value="-p"/> <arg value="true"/>
+        <arg value="-r"/> <arg value="true"/>
+        <arg value="-s"/> <arg value="contributed"/>
+        <arg value="-m"/> <arg value="${localeMatch}"/>
+      </java>
+  </target>
+
+  <target name="build-json-main-parallel" depends="init,jar">
+    <parallel threadsPerProcessor="1">
+      <antcall target="_buildjsonmain"><param name="localeMatch" value="${localematch.0}"/></antcall>
+      <antcall target="_buildjsonmain"><param name="localeMatch" value="${localematch.1}"/></antcall>
+      <antcall target="_buildjsonmain"><param name="localeMatch" value="${localematch.2}"/></antcall>
+      <antcall target="_buildjsonmain"><param name="localeMatch" value="${localematch.3}"/></antcall>
+      <antcall target="_buildjsonmain"><param name="localeMatch" value="${localematch.4}"/></antcall>
+      <antcall target="_buildjsonmain"><param name="localeMatch" value="${localematch.5}"/></antcall>
+      <antcall target="_buildjsonmain"><param name="localeMatch" value="${localematch.6}"/></antcall>
+      <antcall target="_buildjsonmain"><param name="localeMatch" value="${localematch.7}"/></antcall>
+      <antcall target="_buildjsonmain"><param name="localeMatch" value="${localematch.8}"/></antcall>
+    </parallel>
+  </target>
+
+  <target name="build-json-main" depends="init,jar">
+      <antcall target="_buildjsonmain"><param name="localeMatch" value="[a-z].*"/></antcall>
+  </target>
+
+  <target name="build-json-supplemental" depends="init,jar">
+    <java fork="true" jar="${cldr.jar}">
+      <sysproperty key="CLDR_DIR" value="../.."/>
+      <sysproperty key="CLDR_GEN_DIR" value="."/>
+      <arg value="ldml2json"/>
+      <arg value="-o"/> <arg value="false"/>
+      <arg value="-p"/> <arg value="true"/>
+      <arg value="-s"/> <arg value="contributed"/>
+      <arg value="-t"/> <arg value="supplemental"/>
+    </java>
+  </target>
+
+  <target name="build-json-segments" depends="init,jar">
+    <java fork="true" jar="${cldr.jar}">
+      <sysproperty key="CLDR_DIR" value="../.."/>
+      <sysproperty key="CLDR_GEN_DIR" value="."/>
+      <arg value="ldml2json"/>
+      <arg value="-o"/> <arg value="false"/>
+      <arg value="-t"/> <arg value="segments"/>
+      <arg value="-s"/> <arg value="contributed"/>
+      <arg value="-p"/> <arg value="true"/>
+    </java>
+  </target>
+</project>
