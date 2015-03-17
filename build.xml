@@ -28,9 +28,12 @@
 
   <target name="clean" depends="init" description="Clean out JSON directories">
     <delete>
-      <fileset dir="." includes="**/*.json"/>
-      <fileset dir="." includes="**/.bowerrc"/>
-      <fileset dir="." includes="**/**/*.json"/>
+      <fileset dir=".." includes="**/bower.json"/>
+      <fileset dir=".." includes="**/package.json"/>
+      <fileset dir=".." includes="**/.bowerrc"/>
+      <fileset dir=".." includes="**/main/**/*.json"/>
+      <fileset dir=".." includes="**/segments/**/*.json"/>
+      <fileset dir=".." includes="**/supplemental/*.json"/>
     </delete>
   </target>
 
@@ -40,7 +43,7 @@
   <target name="_buildjsonmain"> <!-- no depends - DO NOT CALL outside of build-json-main -->
       <java fork="true" jar="${cldr.jar}">
         <sysproperty key="CLDR_DIR" value="../.."/>
-        <sysproperty key="CLDR_GEN_DIR" value="."/>
+        <sysproperty key="CLDR_GEN_DIR" value=".."/>
         <arg value="ldml2json"/>
         <arg value="-o"/> <arg value="false"/>
         <arg value="-t"/> <arg value="main"/>
@@ -72,7 +75,7 @@
   <target name="build-json-supplemental" depends="init,jar">
     <java fork="true" jar="${cldr.jar}">
       <sysproperty key="CLDR_DIR" value="../.."/>
-      <sysproperty key="CLDR_GEN_DIR" value="."/>
+      <sysproperty key="CLDR_GEN_DIR" value=".."/>
       <arg value="ldml2json"/>
       <arg value="-o"/> <arg value="false"/>
       <arg value="-p"/> <arg value="true"/>
@@ -84,7 +87,7 @@
   <target name="build-json-segments" depends="init,jar">
     <java fork="true" jar="${cldr.jar}">
       <sysproperty key="CLDR_DIR" value="../.."/>
-      <sysproperty key="CLDR_GEN_DIR" value="."/>
+      <sysproperty key="CLDR_GEN_DIR" value=".."/>
       <arg value="ldml2json"/>
       <arg value="-o"/> <arg value="false"/>
       <arg value="-t"/> <arg value="segments"/>
