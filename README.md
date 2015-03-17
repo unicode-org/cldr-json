@@ -16,8 +16,7 @@ If you require JSON data containing provisional or unconfirmed data, you can gen
 using the Ldml2JSON conversion utility in CLDR's tools distribution ( org.unicode.cldr.json ).
 
 ## Status
-No official release yet - first official version will be 27.0.0,
-which should be published on or about 2015-03-18
+Latest official release is version 27.0.0, published on 2015-03-18
 
 ## Licensing
 
