@@ -46,7 +46,7 @@ the locales not in the modern coverage listing. The functional packages are:
                           territories, variants.
  - **cldr-misc**        : Other CLDR data not defined elsewhere.
  - **cldr-numbers**     : Data for number formatting.
- - **cldr-segments**    : Line breaking data from Unicode's ULI project ( http://uli.unicode.org/ )
+ - **cldr-segments**    : Line breaking data from Unicode's [ULI project](http://uli.unicode.org/)
  - **cldr-units**       : Data for units formatting.
 
 ## Installation
