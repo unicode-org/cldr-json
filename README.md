@@ -10,7 +10,7 @@ tooling (written in Java).
 
 The data in these packages is intended to serve as a common reference point for most
 JavaScript packages. As such, this JSON data is generated using only data that has achieved
-draft="contributed" or draft="approved" status in the CLDR. This is the same threshhold
+`draft="contributed"` or `draft="approved"` status in the CLDR. This is the same threshhold
 as is used by the [ICU](http://icu-project.org) (International Components for Unicode).
 
 If you require JSON data containing provisional or unconfirmed data, or data that is customized
