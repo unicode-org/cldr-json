@@ -3,9 +3,10 @@
 JSON distribution of [CLDR](http://cldr.unicode.org/) locale data for internationalization
 
 It should be noted that XML (not JSON) is the "official" format for all CLDR data.  The
-JSON data contained in the packages described is provided as a convenience for the development
-community, and is programatically generated from the corresponding XML, using the JSON conversion
-utility that is provided as part of the CLDR tooling (written in Java).
+JSON data contained in the packages described [below](#package-organization) is provided
+as a convenience for the development community, and is programatically generated from the
+corresponding XML, using the JSON conversion utility that is provided as part of the CLDR
+tooling (written in Java).
 
 The data in these packages is intended to serve as a common reference point for most
 JavaScript packages. As such, this JSON data is generated using only data that has achieved
@@ -36,16 +37,16 @@ available packages: The "[modern][]" packages, which contain the set of locales 
 coverage targets by the CLDR subcomittee, and the "[full][]" packages, which contain the complete
 set of locales, including those in the corresponding modern packages. The functional groups are:
 
- - **[cldr-core][]**    : Basic CLDR supplemental data — only one package here, no "full" and "modern".
- - **[cldr-dates][]**   : Data for date/time formatting, including data for Gregorian calendar.
+ - **[cldr-core][]**        – Basic CLDR supplemental data — only one package here, no "full" and "modern".
+ - **[cldr-dates][]**       – Data for date/time formatting, including data for Gregorian calendar.
 Requires that the corresponding **[cldr-numbers][]** package be installed as well.
- - **cldr-cal-[type]**  : CLDR data for non-Gregorian calendars. [type] is one of the supported non-Gregorian calendar types in CLDR: 
+ - **cldr-cal-[type]**      – CLDR data for non-Gregorian calendars. [type] is one of the supported non-Gregorian calendar types in CLDR: 
 [buddhist][], [chinese][], [coptic][], [dangi][], [ethiopic][], [hebrew][], [indian][], [islamic][], [japanese][], [persian][], or [roc][].
- - **[cldr-localenames][]** : Translated versions of locale display name elements: languages, scripts, territories, and variants.
- - **[cldr-misc][]**        : Other CLDR data not defined elsewhere.
- - **[cldr-numbers][]**     : Data for number formatting.
- - **[cldr-segments][]**    : Line breaking data from Unicode's [ULI project](http://uli.unicode.org/)
- - **[cldr-units][]**       : Data for units formatting.
+ - **[cldr-localenames][]** – Translated versions of locale display name elements: languages, scripts, territories, and variants.
+ - **[cldr-misc][]**        – Other CLDR data not defined elsewhere.
+ - **[cldr-numbers][]**     – Data for number formatting.
+ - **[cldr-segments][]**    – Line breaking data from Unicode's [ULI project](http://uli.unicode.org/)
+ - **[cldr-units][]**       – Data for units formatting.
 
 ## Installation
 
