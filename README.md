@@ -19,6 +19,7 @@ distribution (`org.unicode.cldr.json`).
 
 ## Status
 Latest official release is version 27.0.3, published on 2015-04-21
+Preliminary data for version 28.0.0 is now available for testing.
 
 ## Licensing
 
