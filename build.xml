@@ -34,11 +34,12 @@
       <fileset dir=".." includes="**/main/**/*.json"/>
       <fileset dir=".." includes="**/segments/**/*.json"/>
       <fileset dir=".." includes="**/supplemental/*.json"/>
+      <fileset dir=".." includes="**/rbnf/*.json"/>
     </delete>
   </target>
 
-  <target name="build-json" depends="build-json-main,build-json-supplemental,build-json-segments"/>
-  <target name="build-json-parallel" depends="build-json-main-parallel,build-json-supplemental,build-json-segments"/>
+  <target name="build-json" depends="build-json-main,build-json-supplemental,build-json-segments,build-json-rbnf"/>
+  <target name="build-json-parallel" depends="build-json-main-parallel,build-json-supplemental,build-json-segments,build-json-rbnf"/>
 
   <target name="_buildjsonmain"> <!-- no depends - DO NOT CALL outside of build-json-main -->
       <java fork="true" jar="${cldr.jar}">
@@ -91,6 +92,18 @@
       <arg value="ldml2json"/>
       <arg value="-o"/> <arg value="false"/>
       <arg value="-t"/> <arg value="segments"/>
+      <arg value="-s"/> <arg value="contributed"/>
+      <arg value="-p"/> <arg value="true"/>
+    </java>
+  </target>
+
+  <target name="build-json-rbnf" depends="init,jar">
+    <java fork="true" jar="${cldr.jar}">
+      <sysproperty key="CLDR_DIR" value="../.."/>
+      <sysproperty key="CLDR_GEN_DIR" value=".."/>
+      <arg value="ldml2json"/>
+      <arg value="-o"/> <arg value="false"/>
+      <arg value="-t"/> <arg value="rbnf"/>
       <arg value="-s"/> <arg value="contributed"/>
       <arg value="-p"/> <arg value="true"/>
     </java>
