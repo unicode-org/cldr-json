@@ -18,8 +18,7 @@ in any way, you can generate it using the Ldml2JSON conversion utility in CLDR's
 distribution (`org.unicode.cldr.json`).
 
 ## Status
-Latest official release is version 28.0.0, published on 2015-09-17
-Package cldr-core is at 28.0.2, published on 2015-11-13
+Latest official release is version 29.0.0, published on 2016-03-16
 
 ## Licensing
 
@@ -46,6 +45,7 @@ Requires that the corresponding **[cldr-numbers][]** package be installed as wel
  - **[cldr-localenames][]** – Translated versions of locale display name elements: languages, scripts, territories, and variants.
  - **[cldr-misc][]**        – Other CLDR data not defined elsewhere.
  - **[cldr-numbers][]**     – Data for number formatting.
+ - **[cldr-rbnf][]**        – Rule Based Number Formatting data — only one package here, no "full" and "modern".
  - **[cldr-segments][]**    – Line breaking data from Unicode's [ULI project](http://uli.unicode.org/)
  - **[cldr-units][]**       – Data for units formatting.
 
@@ -73,6 +73,7 @@ the data contained here, please file a new ticket at http://unicode.org/cldr/tra
 [cldr-localenames]: https://github.com/unicode-cldr?query=cldr-localenames
 [cldr-misc]: https://github.com/unicode-cldr?query=cldr-misc
 [cldr-numbers]: https://github.com/unicode-cldr?query=cldr-numbers
+[cldr-rbnf]: https://github.com/unicode-cldr/cldr-rbnf
 [cldr-segments]: https://github.com/unicode-cldr?query=cldr-segments
 [cldr-units]: https://github.com/unicode-cldr?query=cldr-units
 [buddhist]: https://github.com/unicode-cldr?query=cldr-cal-buddhist
