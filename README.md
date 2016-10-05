@@ -20,6 +20,10 @@ distribution (`org.unicode.cldr.json`).
 ## Status
 Latest official release is version 30.0.0, published on 2016-10-05
 
+## Tags
+
+Each repository is tagged with the release it pertains to, for example `30.0.0`.
+
 ## Licensing
 
 This project is distributed by the [Unicode Consortium Terms of Use](http://unicode.org/repos/cldr/trunk/unicode-license.txt)
