@@ -18,11 +18,11 @@ in any way, you can generate it using the Ldml2JSON conversion utility in CLDR's
 distribution (`org.unicode.cldr.json`).
 
 ## Status
-Latest official release is version 32, published on 2017-11-01
+Latest official release is version 32.0.1, published on 2017-12-08
 
 ## Tags
 
-Each repository is tagged with the release it pertains to, for example `32.0.0`.
+Each repository is tagged with the release it pertains to, for example `32.0.1`.
 
 ## Licensing
 
