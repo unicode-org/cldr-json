@@ -18,11 +18,11 @@ in any way, you can generate it using the Ldml2JSON conversion utility in CLDR's
 distribution (`org.unicode.cldr.json`).
 
 ## Status
-Latest official release is version 35.1.0, published on 2019-04-17
+Latest official release is version 36.0.0, published on 2019-10-04
 
 ## Tags
 
-Each repository is tagged with the release it pertains to, for example `35.1.0`.
+Each repository is tagged with the release it pertains to, for example `36.0.0`.
 
 ## Licensing
 
@@ -70,7 +70,7 @@ Installation using [bower](http://bower.io):
 ## Bug reports
 
 CLDR does NOT use Github's issue tracking system to track bugs.  If you find an error in
-the data contained here, please file a new ticket at http://unicode.org/cldr/trac/newticket
+the data contained here, please file a new ticket at [Unicode Jira](https://unicode-org.atlassian.net/projects/CLDR/issues)
 
 [cldr-core]: https://github.com/unicode-cldr/cldr-core
 [cldr-dates]: https://github.com/unicode-cldr?q=cldr-dates

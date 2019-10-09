@@ -43,8 +43,9 @@
 
   <target name="_buildjsonmain"> <!-- no depends - DO NOT CALL outside of build-json-main -->
       <java fork="true" jar="${cldr.jar}">
-        <sysproperty key="CLDR_DIR" value="../.."/>
+        <sysproperty key="CLDR_DIR" value="../../../cldr-staging/production"/>
         <sysproperty key="CLDR_GEN_DIR" value=".."/>
+        <jvmarg value="-Xmx16G"/>
         <arg value="ldml2json"/>
         <arg value="-o"/> <arg value="false"/>
         <arg value="-t"/> <arg value="main"/>
@@ -75,7 +76,7 @@
 
   <target name="build-json-supplemental" depends="init,jar">
     <java fork="true" jar="${cldr.jar}">
-      <sysproperty key="CLDR_DIR" value="../.."/>
+      <sysproperty key="CLDR_DIR" value="../../../cldr-staging/production"/>
       <sysproperty key="CLDR_GEN_DIR" value=".."/>
       <arg value="ldml2json"/>
       <arg value="-o"/> <arg value="false"/>
@@ -87,7 +88,7 @@
 
   <target name="build-json-segments" depends="init,jar">
     <java fork="true" jar="${cldr.jar}">
-      <sysproperty key="CLDR_DIR" value="../.."/>
+      <sysproperty key="CLDR_DIR" value="../../../cldr-staging/production"/>
       <sysproperty key="CLDR_GEN_DIR" value=".."/>
       <arg value="ldml2json"/>
       <arg value="-o"/> <arg value="false"/>
@@ -99,7 +100,7 @@
 
   <target name="build-json-rbnf" depends="init,jar">
     <java fork="true" jar="${cldr.jar}">
-      <sysproperty key="CLDR_DIR" value="../.."/>
+      <sysproperty key="CLDR_DIR" value="../../../cldr-staging/production"/>
       <sysproperty key="CLDR_GEN_DIR" value=".."/>
       <arg value="ldml2json"/>
       <arg value="-o"/> <arg value="false"/>
