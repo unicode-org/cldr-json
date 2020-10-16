@@ -24,10 +24,6 @@ Latest official release is version 37.0.0, published on 2020-04-23
 
 Each repository is tagged with the release it pertains to, for example `37.0.0`.
 
-## Licensing
-
-This project is distributed by the [Unicode Consortium Terms of Use](http://unicode.org/repos/cldr/trunk/unicode-license.txt)
-
 ## Dependencies
 
 This project requires the following other projects to run:
@@ -71,6 +67,17 @@ Installation using [bower](http://bower.io):
 
 CLDR does NOT use Github's issue tracking system to track bugs.  If you find an error in
 the data contained here, please file a new ticket at [Unicode Jira](https://unicode-org.atlassian.net/projects/CLDR/issues)
+
+### Licenses
+
+- Usage of CLDR data and software is governed by the [Unicode Terms of Use](http://www.unicode.org/copyright.html)
+a copy of which is included as [LICENSE](./LICENSE).
+
+### Copyright
+
+Copyright &copy; 1991-2020 Unicode, Inc.
+All rights reserved.
+[Terms of use](http://www.unicode.org/copyright.html)
 
 [cldr-core]: https://github.com/unicode-cldr/cldr-core
 [cldr-dates]: https://github.com/unicode-cldr?q=cldr-dates
