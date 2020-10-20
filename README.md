@@ -16,6 +16,8 @@ as is used by the [ICU](http://icu-project.org) (International Components for Un
 If you require JSON data containing provisional or unconfirmed data, or data that is customized
 in any way, you can generate it using the Ldml2JSON conversion utility in CLDR's tools
 distribution (`org.unicode.cldr.json`).
+See [Updating JSON Data](http://cldr.unicode.org/development/updating-codes/updating-json-data)
+for instructions.
 
 ## Status
 Latest official release is version 37.0.0, published on 2020-04-23
