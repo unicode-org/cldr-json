@@ -62,6 +62,10 @@ Installation using [bower](http://bower.io):
     $ bower install <package-name> , where <package-name> is one of the package names mentioned above, for example:
 
     $ bower install cldr-dates-full
+    
+## Updating
+
+See: <http://cldr.unicode.org/development/updating-codes/updating-json-data>
 
 ## Bug reports
 
