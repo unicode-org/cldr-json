@@ -76,6 +76,11 @@ Installation using [npm](https://www.npmjs.com):
 
 (Note that bower is deprecated, please use npm.)
 
+## Who uses cldr-json?
+
+See [USERS.md](./USERS.md) for a list of libraries
+which use this data.
+
 ## Bug reports
 
 CLDR does not use Github's issue tracking system to track bugs.  If you find an error in
