@@ -7,6 +7,8 @@ Also see the main list of CLDR users on <http://cldr.unicode.org>
 ## Projects
 
 - [cldr engine (@phensley/cldr)](https://phensley.github.io/cldr-engine)
+- [formatjs](https://formatjs.io/)
+- [globalizejs](https://github.com/globalizejs/globalize)
 - [unicode.org/icu4x](https://github.com/unicode-org/icu4x)
 
 ### Licenses
