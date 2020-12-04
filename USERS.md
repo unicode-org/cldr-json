@@ -6,7 +6,7 @@ Also see the main list of CLDR users on <http://cldr.unicode.org>
 
 ## Projects
 
-- [cldr engine (@phenseley/cldr)](https://phensley.github.io/cldr-engine)
+- [cldr engine (@phensley/cldr)](https://phensley.github.io/cldr-engine)
 - [unicode.org/icu4x](https://github.com/unicode-org/icu4x)
 
 ### Licenses
