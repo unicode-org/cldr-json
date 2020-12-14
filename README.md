@@ -16,27 +16,25 @@ as is used by the [ICU](http://icu-project.org) (International Components for Un
 If you require JSON data containing provisional or unconfirmed data, or data that is customized
 in any way, you can generate it using the Ldml2JSON conversion utility in CLDR's tools
 distribution (`org.unicode.cldr.json`).
-See [Updating JSON Data](http://cldr.unicode.org/development/updating-codes/updating-json-data)
-for instructions.
 
 ## Status
-Latest official release is version 37.0.0, published on 2020-04-23
-Version 38 data is being updated soon.
+Latest official release is version 38.0.0, published on 2020-12-04
 
 ## Tags
 
-Previously, each repository was tagged with the release it pertains to, for example `37.0.0`.
-Moving forward, only the `cldr-json` repo will be used, and it will contain all data in a single tag.
+Previously, each repository was tagged with the release it pertains to, for example `38.0.0`.
+Now, only the `cldr-json` repo will be used, and it will contain all data in a single tag.
 
 ## Updating
-
-TODO: these instructions need improvement.
 
 1. Check out the [`cldr-staging`](https://github.com/unicode-org/cldr-staging) repo as a sibling to this one. This will be the data source.
 2. Check out the [`cldr`](https://github.com/unicode-org/cldr) repo as a sibling to this one and set it up so maven builds are possible.
 3. Run the script `cldr-generate-json.sh`
 4. Data will be updated in the `cldr-json` subdirectory.
-5. npm packages can be updated as well. Each sub-subdirectory is an npm package. (Instructions TBD.)
+5. npm packages can be updated as well. Each sub-subdirectory is an npm package.
+
+See [Updating JSON Data](http://cldr.unicode.org/development/updating-codes/updating-json-data)
+for detailed instructions.
 
 ## Licensing
 
