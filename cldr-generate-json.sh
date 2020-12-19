@@ -29,6 +29,11 @@ done
 
 echo "Finshed converting '${TYPES}' to ${OUT}"
 
+if [ -x ./local-config.sh ];
+then
+    echo "REMINDER: you have a local-config.sh - may not be a standard build"
+fi
+
 ## Example options for the generator:
 #[-p, true, -o, false, -r, true, -t, supplemental, -d, ./cldr-json, -s, contributed]
 #-c	commondir	≝	/Users/srl295/src/cldr-staging/production/common/
