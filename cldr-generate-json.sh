@@ -24,9 +24,10 @@ set -x
 ${MVN_COMPILE} || exit 1
 
 for type in ${TYPES}; do
-    ${MVN_EXEC}  -Dexec.args="-m .* -p true -o true -r true -t ${type} -d ${OUT} -s ${DRAFTSTATUS} " || exit 1
+    ${MVN_EXEC}  -Dexec.args="-m ${MATCH} -p true -o true -r true -t ${type} -d ${OUT} -s ${DRAFTSTATUS} -V ${VERSION}" || exit 1
 done
 
+echo "Finshed converting '${TYPES}' to ${OUT}"
 
 ## Example options for the generator:
 #[-p, true, -o, false, -r, true, -t, supplemental, -d, ./cldr-json, -s, contributed]

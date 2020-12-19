@@ -19,6 +19,9 @@ DIST=./dist
 # which types to generate
 TYPES="supplemental segments rbnf main annotations"
 
+# Only these files
+MATCH='.*'
+
 # what draft status to consider
 DRAFTSTATUS="contributed"
 
