@@ -5,15 +5,12 @@
 #
 # Creates JSON data under ./cldr-json in this directory.
 
-CLDR_DIR=../cldr
-OUT=./cldr-json
-INDATA=../cldr-staging/production
-DIST=./dist
-
-# which types to generate
-TYPES="supplemental segments rbnf main annotations"
-DRAFTSTATUS="contributed"
-VERSION="38.1.0-BETA3"
+. ./cldr-config.sh
+if [ -x ./local-config.sh ];
+then
+    echo "Using local-config.sh"
+    . ./local-config.sh
+fi
 
 # for now, seed has to exist.
 mkdir -p -v ${OUT} ${INDATA}/seed/main ${INDATA}/seed/annotations ${DIST}
@@ -27,13 +24,9 @@ set -x
 ${MVN_COMPILE} || exit 1
 
 for type in ${TYPES}; do
-    ${MVN_EXEC}  -Dexec.args="-p true -o false -r true -t ${type} -d ${OUT} -s ${DRAFTSTATUS} -V ${VERSION}" || exit 1
+    ${MVN_EXEC}  -Dexec.args="-m .* -p true -o true -r true -t ${type} -d ${OUT} -s ${DRAFTSTATUS} " || exit 1
 done
 
-( cd ${OUT} && zip -r cldr-${VERSION}-json-full.zip ../LICENSE cldr-core cldr-rbnf cldr-*-full )
-( cd ${OUT} && zip -r cldr-${VERSION}-json-modern.zip ../LICENSE cldr-core cldr-rbnf cldr-*-modern )
-
-mv -v ${OUT}/*.zip ${DIST}/
 
 ## Example options for the generator:
 #[-p, true, -o, false, -r, true, -t, supplemental, -d, ./cldr-json, -s, contributed]
