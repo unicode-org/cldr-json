@@ -11,6 +11,7 @@ Also see the main list of CLDR users on <http://cldr.unicode.org>
 - [globalizejs](https://github.com/globalizejs/globalize)
 - [unicode.org/icu4x](https://github.com/unicode-org/icu4x)
 - [bojanz/currency](https://github.com/bojanz/currency)
+- [cdnjs](https://github.com/cdnjs/cdnjs/tree/master/ajax/libs/cldr-json) ([config](https://github.com/cdnjs/packages/blob/master/packages/c/cldr-json.json)) ([website](https://cdnjs.com/libraries/cldr-json))
 
 ### Licenses
 
