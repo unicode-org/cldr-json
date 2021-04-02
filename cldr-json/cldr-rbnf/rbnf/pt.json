@@ -2,7 +2,7 @@
   "rbnf": {
     "identity": {
       "version": {
-        "_cldrVersion": "38"
+        "_cldrVersion": "39"
       },
       "language": "pt"
     },
@@ -56,6 +56,26 @@
           [
             "0",
             "=%spellout-cardinal-masculine=;"
+          ]
+        ],
+        "%%optional-e": [
+          [
+            "0",
+            "' e ;"
+          ],
+          [
+            "1",
+            "' ;"
+          ]
+        ],
+        "%%spellout-cardinal-masculine-with-e": [
+          [
+            "0",
+            "' e =%spellout-cardinal-masculine=;"
+          ],
+          [
+            "100",
+            "→%%optional-e→=%spellout-cardinal-masculine=;"
           ]
         ],
         "%spellout-cardinal-masculine": [
@@ -221,47 +241,41 @@
           ],
           [
             "1000",
-            "mil[ e →→];"
+            "mil[→%%spellout-cardinal-masculine-with-e→];"
           ],
           [
             "2000",
-            "←← mil[ e →→];"
+            "←← mil[→%%spellout-cardinal-masculine-with-e→];"
           ],
           [
             "1000000",
-            "um milhão[ e →→];"
-          ],
-          [
-            "2000000",
-            "←← milhões[ e →→];"
+            "←← $(cardinal,one{milhão}other{milhões})$[→%%spellout-cardinal-masculine-with-e→];"
           ],
           [
             "1000000000",
-            "um bilhão[ e →→];"
-          ],
-          [
-            "2000000000",
-            "←← bilhões[ e →→];"
+            "←← $(cardinal,one{bilhão}other{bilhões})$[→%%spellout-cardinal-masculine-with-e→];"
           ],
           [
             "1000000000000",
-            "um trilhão[ e →→];"
-          ],
-          [
-            "2000000000000",
-            "←← trilhões[ e →→];"
+            "←← $(cardinal,one{trilhão}other{trilhões})$[→%%spellout-cardinal-masculine-with-e→];"
           ],
           [
             "1000000000000000",
-            "um quatrilhão[ e →→];"
-          ],
-          [
-            "2000000000000000",
-            "←← quatrilhões[ e →→];"
+            "←← $(cardinal,one{quatrilhão}other{quatrilhões})$[→%%spellout-cardinal-masculine-with-e→];"
           ],
           [
             "1000000000000000000",
             "=#,##0=;"
+          ]
+        ],
+        "%%spellout-cardinal-feminine-with-e": [
+          [
+            "0",
+            "' e =%spellout-cardinal-feminine=;"
+          ],
+          [
+            "100",
+            "→%%optional-e→=%spellout-cardinal-feminine=;"
           ]
         ],
         "%spellout-cardinal-feminine": [
@@ -363,43 +377,27 @@
           ],
           [
             "1000",
-            "mil[ e →→];"
+            "mil[→%%spellout-cardinal-feminine-with-e→];"
           ],
           [
             "2000",
-            "←← mil[ e →→];"
+            "←← mil[→%%spellout-cardinal-feminine-with-e→];"
           ],
           [
             "1000000",
-            "um milhão[ e →→];"
-          ],
-          [
-            "2000000",
-            "←%spellout-cardinal-masculine← milhões[ e →→];"
+            "←%spellout-cardinal-masculine← $(cardinal,one{milhão}other{milhões})$[→%%spellout-cardinal-feminine-with-e→];"
           ],
           [
             "1000000000",
-            "um bilhão[ e →→];"
-          ],
-          [
-            "2000000000",
-            "←%spellout-cardinal-masculine← bilhões[ e →→];"
+            "←%spellout-cardinal-masculine← $(cardinal,one{bilhão}other{bilhões})$[→%%spellout-cardinal-feminine-with-e→];"
           ],
           [
             "1000000000000",
-            "um trilhão[ e →→];"
-          ],
-          [
-            "2000000000000",
-            "←%spellout-cardinal-masculine← trilhões[ e →→];"
+            "←%spellout-cardinal-masculine← $(cardinal,one{trilhão}other{trilhões})$[→%%spellout-cardinal-feminine-with-e→];"
           ],
           [
             "1000000000000000",
-            "um quatrilhão[ e →→];"
-          ],
-          [
-            "2000000000000000",
-            "←%spellout-cardinal-masculine← quatrilhões[ e →→];"
+            "←%spellout-cardinal-masculine← $(cardinal,one{quatrilhão}other{quatrilhões})$[→%%spellout-cardinal-feminine-with-e→];"
           ],
           [
             "1000000000000000000",
@@ -533,38 +531,22 @@
           ],
           [
             "2000",
-            "←%spellout-cardinal-masculine← ­milésimo[ →→];"
+            "←%spellout-cardinal-masculine← milésimo[ →→];"
           ],
           [
             "1000000",
-            "um milionésimo[ →→];"
-          ],
-          [
-            "2000000",
             "←%spellout-cardinal-masculine← milionésimo[ →→];"
           ],
           [
             "1000000000",
-            "um bilionésimo[ →→];"
-          ],
-          [
-            "2000000000",
             "←%spellout-cardinal-masculine← bilionésimo[ →→];"
           ],
           [
             "1000000000000",
-            "um trilionésimo[ →→];"
-          ],
-          [
-            "2000000000000",
             "←%spellout-cardinal-masculine← trilionésima[ →→];"
           ],
           [
             "1000000000000000",
-            "um quadrilionésimo[ →→];"
-          ],
-          [
-            "2000000000000000",
             "←%spellout-cardinal-masculine← quadrilionésimo[ →→];"
           ],
           [
@@ -699,38 +681,22 @@
           ],
           [
             "2000",
-            "←%spellout-cardinal-feminine← ­milésima[ →→];"
+            "←%spellout-cardinal-feminine← milésima[ →→];"
           ],
           [
             "1000000",
-            "uma milionésima[ →→];"
-          ],
-          [
-            "2000000",
             "←%spellout-cardinal-feminine← milionésima[ →→];"
           ],
           [
             "1000000000",
-            "uma bilionésima[ →→];"
-          ],
-          [
-            "2000000000",
             "←%spellout-cardinal-feminine← bilionésima[ →→];"
           ],
           [
             "1000000000000",
-            "uma trilionésima[ →→];"
-          ],
-          [
-            "2000000000000",
             "←%spellout-cardinal-feminine← trilionésima[ →→];"
           ],
           [
             "1000000000000000",
-            "uma quadrilionésima[ →→];"
-          ],
-          [
-            "2000000000000000",
             "←%spellout-cardinal-feminine← quadrilionésima[ →→];"
           ],
           [

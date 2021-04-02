@@ -2,7 +2,7 @@
   "supplemental": {
     "version": {
       "_unicodeVersion": "13.0.0",
-      "_cldrVersion": "38"
+      "_cldrVersion": "39"
     },
     "unitConstants": {
       "ft_to_m": {
@@ -24,11 +24,18 @@
       "gal_to_m3": {
         "_value": "231*in3_to_m3"
       },
+      "glucose_molar_mass": {
+        "_description": "derivation from the mean atomic weights according to STANDARD ATOMIC WEIGHTS 2019 on https://ciaaw.org/atomic-weights.htm",
+        "_value": "180.1557"
+      },
       "gravity": {
         "_value": "9.80665"
       },
       "in3_to_m3": {
         "_value": "ft3_to_m3/12*12*12"
+      },
+      "item_per_mole": {
+        "_value": "6.02214076E+23"
       },
       "lb_to_kg": {
         "_value": "0.45359237"
@@ -86,6 +93,9 @@
       "item-per-cubic-meter": {
         "_quantity": "concentration"
       },
+      "item-per-kilogram": {
+        "_quantity": "concentration-mass"
+      },
       "kelvin": {
         "_quantity": "temperature",
         "_status": "simple"
@@ -93,9 +103,6 @@
       "kilogram": {
         "_quantity": "mass",
         "_status": "simple"
-      },
-      "kilogram-meter-per-meter-square-second": {
-        "_quantity": "torque"
       },
       "kilogram-meter-per-square-second": {
         "_quantity": "force"
@@ -191,6 +198,9 @@
     "convertUnits": {
       "100-kilometer": {
         "_baseUnit": "meter",
+        "_systems": [
+          "metric"
+        ],
         "_factor": "100000"
       },
       "acre": {
@@ -202,7 +212,11 @@
         "_factor": "ft2_to_m2 * 43560"
       },
       "ampere": {
-        "_baseUnit": "ampere"
+        "_baseUnit": "ampere",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "arc-minute": {
         "_baseUnit": "revolution",
@@ -222,6 +236,9 @@
       },
       "bar": {
         "_baseUnit": "kilogram-per-meter-square-second",
+        "_systems": [
+          "metric"
+        ],
         "_factor": "100000"
       },
       "barrel": {
@@ -258,15 +275,25 @@
         "_factor": "4.184"
       },
       "candela": {
-        "_baseUnit": "candela"
+        "_baseUnit": "candela",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "carat": {
         "_baseUnit": "kilogram",
+        "_systems": [
+          "metric"
+        ],
         "_factor": "0.0002"
       },
       "celsius": {
         "_baseUnit": "kelvin",
-        "_offset": "273.15"
+        "_offset": "273.15",
+        "_systems": [
+          "metric"
+        ]
       },
       "century": {
         "_baseUnit": "year",
@@ -281,6 +308,9 @@
       },
       "cup-metric": {
         "_baseUnit": "cubic-meter",
+        "_systems": [
+          "metric"
+        ],
         "_factor": "0.00025"
       },
       "dalton": {
@@ -289,10 +319,20 @@
       },
       "day": {
         "_baseUnit": "second",
+        "_systems": [
+          "metric",
+          "ussystem",
+          "uksystem"
+        ],
         "_factor": "86400"
       },
       "day-person": {
         "_baseUnit": "second",
+        "_systems": [
+          "metric",
+          "ussystem",
+          "uksystem"
+        ],
         "_factor": "86400"
       },
       "decade": {
@@ -436,14 +476,25 @@
       },
       "gram": {
         "_baseUnit": "kilogram",
+        "_systems": [
+          "metric",
+          "si"
+        ],
         "_factor": "0.001"
       },
       "hectare": {
         "_baseUnit": "square-meter",
+        "_systems": [
+          "metric"
+        ],
         "_factor": "10000"
       },
       "hertz": {
-        "_baseUnit": "revolution-per-second"
+        "_baseUnit": "revolution-per-second",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "horsepower": {
         "_baseUnit": "kilogram-square-meter-per-cubic-second",
@@ -455,6 +506,11 @@
       },
       "hour": {
         "_baseUnit": "second",
+        "_systems": [
+          "metric",
+          "ussystem",
+          "uksystem"
+        ],
         "_factor": "3600"
       },
       "inch": {
@@ -476,17 +532,29 @@
         "_factor": "gal_to_m3*3/128*2"
       },
       "joule": {
-        "_baseUnit": "kilogram-square-meter-per-square-second"
+        "_baseUnit": "kilogram-square-meter-per-square-second",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "karat": {
         "_baseUnit": "portion",
         "_factor": "1/24"
       },
       "kelvin": {
-        "_baseUnit": "kelvin"
+        "_baseUnit": "kelvin",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "kilogram": {
-        "_baseUnit": "kilogram"
+        "_baseUnit": "kilogram",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "knot": {
         "_baseUnit": "meter-per-second",
@@ -502,19 +570,37 @@
       },
       "liter": {
         "_baseUnit": "cubic-meter",
+        "_systems": [
+          "metric"
+        ],
         "_factor": "0.001"
       },
       "lumen": {
-        "_baseUnit": "candela-square-meter-per-square-meter"
+        "_baseUnit": "candela-square-meter-per-square-meter",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "lux": {
-        "_baseUnit": "candela-per-square-meter"
+        "_baseUnit": "candela-per-square-meter",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "meter": {
-        "_baseUnit": "meter"
+        "_baseUnit": "meter",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "metric-ton": {
         "_baseUnit": "kilogram",
+        "_systems": [
+          "metric"
+        ],
         "_factor": "1000"
       },
       "mile": {
@@ -527,15 +613,27 @@
       },
       "mile-scandinavian": {
         "_baseUnit": "meter",
+        "_systems": [
+          "metric"
+        ],
         "_factor": "10000"
       },
       "minute": {
         "_baseUnit": "second",
+        "_systems": [
+          "metric",
+          "ussystem",
+          "uksystem"
+        ],
         "_factor": "60"
       },
       "mole": {
         "_baseUnit": "item",
-        "_factor": "6.02214076E+23"
+        "_systems": [
+          "metric",
+          "si"
+        ],
+        "_factor": "item_per_mole"
       },
       "month": {
         "_baseUnit": "year",
@@ -554,14 +652,26 @@
         "_factor": "1852"
       },
       "newton": {
-        "_baseUnit": "kilogram-meter-per-square-second"
+        "_baseUnit": "kilogram-meter-per-square-second",
+        "_systems": [
+          "metric",
+          "si"
+        ]
+      },
+      "ofglucose": {
+        "_baseUnit": "item-per-kilogram",
+        "_factor": "1000*item_per_mole/glucose_molar_mass"
       },
       "ofhg": {
         "_baseUnit": "kilogram-per-square-meter-square-second",
         "_factor": "13595.1*gravity"
       },
       "ohm": {
-        "_baseUnit": "kilogram-square-meter-per-cubic-second-square-ampere"
+        "_baseUnit": "kilogram-square-meter-per-cubic-second-square-ampere",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "ounce": {
         "_baseUnit": "kilogram",
@@ -584,7 +694,11 @@
         "_factor": "30856780000000000"
       },
       "pascal": {
-        "_baseUnit": "kilogram-per-meter-square-second"
+        "_baseUnit": "kilogram-per-meter-square-second",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "percent": {
         "_baseUnit": "portion",
@@ -618,6 +732,9 @@
       },
       "pint-metric": {
         "_baseUnit": "cubic-meter",
+        "_systems": [
+          "metric"
+        ],
         "_factor": "0.0005"
       },
       "pixel": {
@@ -666,13 +783,23 @@
       },
       "radian": {
         "_baseUnit": "revolution",
+        "_systems": [
+          "metric",
+          "si"
+        ],
         "_factor": "1/2*PI"
       },
       "revolution": {
         "_baseUnit": "revolution"
       },
       "second": {
-        "_baseUnit": "second"
+        "_baseUnit": "second",
+        "_systems": [
+          "si",
+          "metric",
+          "ussystem",
+          "uksystem"
+        ]
       },
       "solar-luminosity": {
         "_baseUnit": "kilogram-square-meter-per-cubic-second",
@@ -723,10 +850,18 @@
         "_factor": "lb_to_kg*2000"
       },
       "volt": {
-        "_baseUnit": "kilogram-square-meter-per-cubic-second-ampere"
+        "_baseUnit": "kilogram-square-meter-per-cubic-second-ampere",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "watt": {
-        "_baseUnit": "kilogram-square-meter-per-cubic-second"
+        "_baseUnit": "kilogram-square-meter-per-cubic-second",
+        "_systems": [
+          "metric",
+          "si"
+        ]
       },
       "week": {
         "_baseUnit": "second",

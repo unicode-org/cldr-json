@@ -2,7 +2,7 @@
   "supplemental": {
     "version": {
       "_unicodeVersion": "13.0.0",
-      "_cldrVersion": "38"
+      "_cldrVersion": "39"
     },
     "unitPreferenceData": {
       "area": {
@@ -87,6 +87,11 @@
       },
       "concentration": {
         "blood-glucose": {
+          "001": [
+            {
+              "unit": "milligram-ofglucose-per-deciliter"
+            }
+          ],
           "AG": [
             {
               "unit": "millimole-per-liter"
@@ -455,6 +460,16 @@
               "unit": "liter-per-kilometer"
             }
           ],
+          "CA": [
+            {
+              "unit": "mile-per-gallon-imperial"
+            }
+          ],
+          "GB": [
+            {
+              "unit": "mile-per-gallon-imperial"
+            }
+          ],
           "IT": [
             {
               "unit": "liter-per-kilometer"
@@ -493,32 +508,6 @@
           "TR": [
             {
               "unit": "liter-per-kilometer"
-            }
-          ]
-        }
-      },
-      "consumption-inverse": {
-        "default": {
-          "001": [
-            {
-              "unit": "kilometer-per-centiliter"
-            }
-          ]
-        },
-        "vehicle-fuel": {
-          "001": [
-            {
-              "unit": "kilometer-per-centiliter"
-            }
-          ],
-          "CA": [
-            {
-              "unit": "mile-per-gallon-imperial"
-            }
-          ],
-          "GB": [
-            {
-              "unit": "mile-per-gallon-imperial"
             }
           ],
           "US": [
@@ -672,11 +661,6 @@
               "unit": "meter-and-centimeter"
             }
           ],
-          "BR": [
-            {
-              "unit": "meter-and-centimeter"
-            }
-          ],
           "CA": [
             {
               "unit": "foot-and-inch",
@@ -684,21 +668,6 @@
             },
             {
               "unit": "inch"
-            }
-          ],
-          "CN": [
-            {
-              "unit": "meter-and-centimeter"
-            }
-          ],
-          "DE": [
-            {
-              "unit": "meter-and-centimeter"
-            }
-          ],
-          "DK": [
-            {
-              "unit": "meter-and-centimeter"
             }
           ],
           "DZ": [
@@ -764,37 +733,7 @@
               "unit": "meter-and-centimeter"
             }
           ],
-          "MX": [
-            {
-              "unit": "meter-and-centimeter"
-            }
-          ],
           "MY": [
-            {
-              "unit": "meter-and-centimeter"
-            }
-          ],
-          "NL": [
-            {
-              "unit": "meter-and-centimeter"
-            }
-          ],
-          "NO": [
-            {
-              "unit": "meter-and-centimeter"
-            }
-          ],
-          "PL": [
-            {
-              "unit": "meter-and-centimeter"
-            }
-          ],
-          "PT": [
-            {
-              "unit": "meter-and-centimeter"
-            }
-          ],
-          "RU": [
             {
               "unit": "meter-and-centimeter"
             }
@@ -857,7 +796,8 @@
               "geq": 300.0
             },
             {
-              "unit": "meter"
+              "unit": "meter",
+              "geq": 10.0
             },
             {
               "unit": "meter"
@@ -871,6 +811,10 @@
             {
               "unit": "yard",
               "geq": 100.0
+            },
+            {
+              "unit": "yard",
+              "geq": 10.0
             },
             {
               "unit": "yard"
@@ -888,6 +832,10 @@
               "geq": 300.0
             },
             {
+              "unit": "meter",
+              "geq": 10.0
+            },
+            {
               "unit": "meter"
             }
           ],
@@ -899,6 +847,10 @@
             {
               "unit": "foot",
               "geq": 100.0
+            },
+            {
+              "unit": "foot",
+              "geq": 10.0
             },
             {
               "unit": "foot"
@@ -926,11 +878,6 @@
           "GB": [
             {
               "unit": "foot-and-inch"
-            }
-          ],
-          "MX": [
-            {
-              "unit": "meter-and-centimeter"
             }
           ],
           "US": [
@@ -1028,21 +975,6 @@
               "unit": "gram"
             }
           ],
-          "DZ": [
-            {
-              "unit": "kilogram-and-gram"
-            }
-          ],
-          "EG": [
-            {
-              "unit": "kilogram-and-gram"
-            }
-          ],
-          "ES": [
-            {
-              "unit": "kilogram-and-gram"
-            }
-          ],
           "GB": [
             {
               "unit": "stone-and-pound"
@@ -1056,16 +988,6 @@
               "unit": "pound-and-ounce"
             }
           ],
-          "JO": [
-            {
-              "unit": "kilogram-and-gram"
-            }
-          ],
-          "SA": [
-            {
-              "unit": "kilogram-and-gram"
-            }
-          ],
           "US": [
             {
               "unit": "pound"
@@ -1077,13 +999,6 @@
         }
       },
       "mass-density": {
-        "blood-glucose": {
-          "001": [
-            {
-              "unit": "milligram-per-deciliter"
-            }
-          ]
-        },
         "default": {
           "001": [
             {
