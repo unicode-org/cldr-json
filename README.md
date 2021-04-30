@@ -18,7 +18,7 @@ in any way, you can generate it using the Ldml2JSON conversion utility in CLDR's
 distribution (`org.unicode.cldr.json`).
 
 ## Status
-Latest official release is version 38.0.0, published on 2020-12-04
+Latest official release is version 39.0.0, published on 2021-04-30
 
 ## Tags
 
