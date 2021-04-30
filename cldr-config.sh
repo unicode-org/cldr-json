@@ -26,4 +26,4 @@ MATCH='.*'
 DRAFTSTATUS="contributed"
 
 # override the version number of CLDR
-VERSION="38.1.0"
+VERSION="39.0.0'
