@@ -17,7 +17,7 @@ INDATA=../cldr-staging/production
 DIST=./dist
 
 # which types to generate
-TYPES="supplemental segments rbnf main annotations"
+TYPES="supplemental segments rbnf main annotations bcp47"
 
 # Only these files
 MATCH='.*'
