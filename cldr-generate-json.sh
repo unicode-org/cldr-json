@@ -1,5 +1,5 @@
 #!/bin/bash
-# 
+#
 #     Copyright © 1991-2020 Unicode, Inc. All rights reserved. Distributed under
 # the Terms of Use in http://www.unicode.org/copyright.html.
 #
@@ -16,9 +16,9 @@ fi
 mkdir -p -v ${OUT} ${INDATA}/seed/main ${INDATA}/seed/annotations ${DIST}
 MAIN_CLASS=org.unicode.cldr.json.Ldml2JsonConverter
 export MAVEN_OPTS="-Xmx8192m -XX:MaxPermSize=1024m -Dexec.cleanupDaemonThreads=false -Dexec.mainClass=${MAIN_CLASS}"
-MVN="mvn --file=${CLDR_DIR}/tools/pom.xml"
+MVN="mvn --file=${CLDR_DIR}/tools/pom.xml -pl cldr-code"
 MVN_COMPILE="${MVN} compile"
-MVN_EXEC="${MVN} -DCLDR_DIR=${INDATA} exec:java -pl cldr-code"
+MVN_EXEC="${MVN} -DCLDR_DIR=${INDATA} exec:java"
 
 set -x
 ${MVN_COMPILE} || exit 1
