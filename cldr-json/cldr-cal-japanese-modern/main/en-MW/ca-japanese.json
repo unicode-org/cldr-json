@@ -3,7 +3,7 @@
     "en-MW": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "en",
         "territory": "MW"
@@ -22,7 +22,7 @@
                   "6": "Jun",
                   "7": "Jul",
                   "8": "Aug",
-                  "9": "Sep",
+                  "9": "Sept",
                   "10": "Oct",
                   "11": "Nov",
                   "12": "Dec"
@@ -66,7 +66,7 @@
                   "6": "Jun",
                   "7": "Jul",
                   "8": "Aug",
-                  "9": "Sep",
+                  "9": "Sept",
                   "10": "Oct",
                   "11": "Nov",
                   "12": "Dec"
@@ -1020,15 +1020,55 @@
             },
             "dateFormats": {
               "full": "EEEE, MMMM d, y G",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "MMMM d, y G",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "MMM d, y G",
-              "short": "M/d/y GGGGG"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMd"
+                }
+              },
+              "short": "M/d/y GGGGG",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "h:mm:ss a z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "h:mm:ss a",
-              "short": "h:mm a"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "h:mm a",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} 'at' {0}",
@@ -1049,6 +1089,7 @@
                 "Ehms": "E, h:mm:ss a",
                 "EHms": "E, HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "dd/MM/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E, d MMM y G",

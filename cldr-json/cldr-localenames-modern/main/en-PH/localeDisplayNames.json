@@ -3,7 +3,7 @@
     "en-PH": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "en",
         "territory": "PH"
@@ -20,9 +20,9 @@
           "colAlternate": "Ignore Symbols Sorting",
           "colBackwards": "Reversed Accent Sorting",
           "colCaseFirst": "Uppercase/Lowercase Ordering",
-          "colCaseLevel": "Case-Sensitive Sorting",
+          "colCaseLevel": "Case Sensitive Sorting",
           "collation": "Sort Order",
-          "colNormalization": "Normalised Sorting",
+          "colNormalization": "Normalized Sorting",
           "colNumeric": "Numeric Sorting",
           "colReorder": "Script/Block Reordering",
           "colStrength": "Sorting Strength",
@@ -115,12 +115,19 @@
             "zhuyin": "Zhuyin Sort Order"
           },
           "colNormalization": {
-            "no": "Sort Without Normalisation",
-            "yes": "Sort Unicode Normalised"
+            "no": "Sort Without Normalization",
+            "yes": "Sort Unicode Normalized"
           },
           "colNumeric": {
             "no": "Sort Digits Individually",
             "yes": "Sort Digits Numerically"
+          },
+          "colReorder": {
+            "currency": "Currency",
+            "digit": "Digits",
+            "punct": "Punctuation",
+            "space": "Whitespace",
+            "symbol": "Symbol"
           },
           "colStrength": {
             "identical": "Sort All",
@@ -171,10 +178,10 @@
             "hybrid": "Hybrid"
           },
           "hc": {
-            "h11": "12-Hour System (0–11)",
-            "h12": "12-Hour System (1–12)",
-            "h23": "24-Hour System (0–23)",
-            "h24": "24-Hour System (1–24)"
+            "h11": "12 Hour System (0–11)",
+            "h12": "12 Hour System (1–12)",
+            "h23": "24 Hour System (0–23)",
+            "h24": "24 Hour System (1–24)"
           },
           "i0": {
             "handwrit": "Handwriting Input Method",
@@ -212,13 +219,6 @@
             "var": "Keyboard Variant",
             "viqr": "Vietnamese VIQR Keyboard",
             "windows": "Windows Keyboard"
-          },
-          "kr": {
-            "currency": "Currency",
-            "digit": "Digits",
-            "punct": "Punctuation",
-            "space": "Whitespace",
-            "symbol": "Symbol"
           },
           "kv": {
             "currency": "Ignore Symbols affects spaces, punctuation, all symbols",
@@ -351,6 +351,7 @@
             "thai": "Thai Digits",
             "tibt": "Tibetan Digits",
             "tirh": "Tirhuta Digits",
+            "tnsa": "Tangsa Digits",
             "traditional": "Traditional Numerals",
             "vaii": "Vai Digits",
             "wara": "Warang Citi Digits",

@@ -3,7 +3,7 @@
     "pt-MO": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "pt",
         "territory": "MO"
@@ -303,15 +303,55 @@
             },
             "dateFormats": {
               "full": "EEEE, d 'de' MMMM 'de' y G",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "d 'de' MMMM 'de' y G",
-              "medium": "d MMM y G",
-              "short": "d/M/y G"
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
+              "medium": "d 'de' MMM 'de' y G",
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMd"
+                }
+              },
+              "short": "d/M/y G",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "h:mm:ss a z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "h:mm:ss a",
-              "short": "h:mm a"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "h:mm a",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} 'às' {0}",
@@ -332,6 +372,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "dd/MM/y GGGGG",
                 "GyMMM": "MMM 'de' y G",
                 "GyMMMd": "d 'de' MMM 'de' y G",
                 "GyMMMEd": "E, d 'de' MMM 'de' y G",

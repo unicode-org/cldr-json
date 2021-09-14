@@ -3,7 +3,7 @@
     "zh-Hant": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "zh",
         "script": "Hant"
@@ -1070,15 +1070,55 @@
             },
             "dateFormats": {
               "full": "U年MMMd日EEEE",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMEEEEd"
+                }
+              },
               "long": "U年MMMd日",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMd"
+                }
+              },
               "medium": "U年MMMd日",
-              "short": "U/M/d"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMd"
+                }
+              },
+              "short": "U/M/d",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMd"
+                }
+              }
             },
             "timeFormats": {
-              "full": "ah:mm:ss [zzzz]",
-              "long": "ah:mm:ss [z]",
-              "medium": "ah:mm:ss",
-              "short": "ah:mm"
+              "full": "Bh:mm:ss [zzzz]",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Bhmmsszzzz"
+                }
+              },
+              "long": "Bh:mm:ss [z]",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Bhmmssz"
+                }
+              },
+              "medium": "Bh:mm:ss",
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Bhmmss"
+                }
+              },
+              "short": "Bh:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Bhmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1098,11 +1138,14 @@
                 "GyMMM": "rU年MMM",
                 "GyMMMd": "r年MMMd",
                 "GyMMMEd": "rU年MMMdE",
-                "h": "ah時",
+                "GyMMMM": "r(U)MMMM",
+                "GyMMMMd": "r(U)MMMMd日",
+                "GyMMMMEd": "r(U)MMMMd日 E",
+                "h": "Bh時",
                 "H": "HH時",
-                "hm": "ah:mm",
+                "hm": "Bh:mm",
                 "Hm": "HH:mm",
-                "hms": "ah:mm:ss",
+                "hms": "Bh:mm:ss",
                 "Hms": "HH:mm:ss",
                 "M": "MMM",
                 "Md": "M/d",
@@ -1126,6 +1169,8 @@
                 "yyyyMMMd": "r年MMMd",
                 "yyyyMMMEd": "rU年MMMdE",
                 "yyyyMMMM": "rU年MMMM",
+                "yyyyMMMMd": "r(U)MMMMd日",
+                "yyyyMMMMEd": "r(U)MMMMd日 E",
                 "yyyyQQQ": "rU年QQQQ",
                 "yyyyQQQQ": "rU年QQQQ"
               },
@@ -1157,33 +1202,37 @@
                   "d": "d日至d日"
                 },
                 "h": {
-                  "a": "ah時至ah時",
-                  "h": "ah時至h時"
+                  "a": "h a – h a",
+                  "B": "Bh時至Bh時",
+                  "h": "Bh時至h時"
                 },
                 "H": {
                   "H": "HH至HH"
                 },
                 "hm": {
-                  "a": "ah:mm至ah:mm",
-                  "h": "ah:mm至h:mm",
-                  "m": "ah:mm至h:mm"
+                  "a": "h:mm a – h:mm a",
+                  "B": "Bh:mm至Bh:mm",
+                  "h": "Bh:mm至h:mm",
+                  "m": "Bh:mm至h:mm"
                 },
                 "Hm": {
                   "H": "HH:mm至HH:mm",
                   "m": "HH:mm至HH:mm"
                 },
                 "hmv": {
-                  "a": "ah:mm至ah:mm [v]",
-                  "h": "ah:mm至h:mm [v]",
-                  "m": "ah:mm至h:mm [v]"
+                  "a": "h:mm a – h:mm a v",
+                  "B": "Bh:mm至Bh:mm [v]",
+                  "h": "Bh:mm至h:mm [v]",
+                  "m": "Bh:mm至h:mm [v]"
                 },
                 "Hmv": {
                   "H": "HH:mm–HH:mm [v]",
                   "m": "HH:mm–HH:mm [v]"
                 },
                 "hv": {
-                  "a": "ah時至ah時 [v]",
-                  "h": "ah時至h時 [v]"
+                  "a": "h a – h a v",
+                  "B": "Bh時至Bh時 [v]",
+                  "h": "Bh時至h時 [v]"
                 },
                 "Hv": {
                   "H": "HH–HH [v]"

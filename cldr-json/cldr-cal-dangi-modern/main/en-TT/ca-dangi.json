@@ -3,7 +3,7 @@
     "en-TT": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "en",
         "territory": "TT"
@@ -1076,15 +1076,55 @@
             },
             "dateFormats": {
               "full": "EEEE, d MMMM r(U)",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMMEEEEd"
+                }
+              },
               "long": "d MMMM r(U)",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMMd"
+                }
+              },
               "medium": "d MMM r",
-              "short": "dd/MM/r"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMd"
+                }
+              },
+              "short": "dd/MM/r",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "h:mm:ss a z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "h:mm:ss a",
-              "short": "h:mm a"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "h:mm a",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} 'at' {0}",
@@ -1105,9 +1145,12 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "r(U)",
-                "GyMMM": "MMM r(U)",
+                "GyMMM": "MMM r",
                 "GyMMMd": "d MMM r",
-                "GyMMMEd": "E, d MMM r(U)",
+                "GyMMMEd": "E, d MMM r",
+                "GyMMMM": "MMMM r(U)",
+                "GyMMMMd": "d MMMM r(U)",
+                "GyMMMMEd": "E, d MMMM r(U)",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1127,15 +1170,17 @@
                 "UMMM": "MMM U",
                 "UMMMd": "d MMM U",
                 "y": "r(U)",
-                "yMd": "dd/MM/r",
+                "yMd": "r-MM-dd",
                 "yyyy": "r(U)",
                 "yyyyM": "MM/r",
                 "yyyyMd": "dd/MM/r",
                 "yyyyMEd": "E, dd/MM/r",
-                "yyyyMMM": "MMM r(U)",
+                "yyyyMMM": "MMM r",
                 "yyyyMMMd": "d MMM r",
-                "yyyyMMMEd": "E, d MMM r(U)",
+                "yyyyMMMEd": "E, d MMM r",
                 "yyyyMMMM": "MMMM r(U)",
+                "yyyyMMMMd": "d MMMM r(U)",
+                "yyyyMMMMEd": "E, d MMMM r(U)",
                 "yyyyQQQ": "QQQ r(U)",
                 "yyyyQQQQ": "QQQQ r(U)"
               },

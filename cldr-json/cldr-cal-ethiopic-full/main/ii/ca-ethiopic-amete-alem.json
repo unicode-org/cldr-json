@@ -3,7 +3,7 @@
     "ii": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ii"
       },
@@ -269,15 +269,55 @@
             },
             "dateFormats": {
               "full": "G y MMMM d, EEEE",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "G y MMMM d",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "G y MMM d",
-              "short": "GGGGG y-MM-dd"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMd"
+                }
+              },
+              "short": "GGGGG y-MM-dd",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyMMdd"
+                }
+              }
             },
             "timeFormats": {
-              "full": "h:mm:ss a zzzz",
-              "long": "h:mm:ss a z",
-              "medium": "h:mm:ss a",
-              "short": "h:mm a"
+              "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
+              "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
+              "medium": "HH:mm:ss",
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -298,6 +338,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G y MMM d",
                 "GyMMMEd": "G y MMM d, E",

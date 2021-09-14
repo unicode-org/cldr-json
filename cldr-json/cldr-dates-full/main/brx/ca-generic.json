@@ -3,7 +3,7 @@
     "brx": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "brx"
       },
@@ -266,15 +266,55 @@
             },
             "dateFormats": {
               "full": "EEEE, MMMM d, y G",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "MMMM d, y G",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "MMM d, y G",
-              "short": "M/d/yy GGGGG"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMd"
+                }
+              },
+              "short": "M/d/yy GGGGG",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyyMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "h:mm:ss a z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "h:mm:ss a",
-              "short": "h:mm a"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "h:mm a",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -295,6 +335,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "MMM, y G",
                 "GyMMMd": "MMM d, y G",
                 "GyMMMEd": "E, MMM d, y G",

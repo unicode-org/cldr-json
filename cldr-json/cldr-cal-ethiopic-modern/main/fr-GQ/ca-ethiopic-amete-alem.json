@@ -3,7 +3,7 @@
     "fr-GQ": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "fr",
         "territory": "GQ"
@@ -306,15 +306,55 @@
             },
             "dateFormats": {
               "full": "EEEE d MMMM y G",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "d MMMM y G",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "d MMM y G",
-              "short": "dd/MM/y GGGGG"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMd"
+                }
+              },
+              "short": "dd/MM/y GGGGG",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} 'à' {0}",
@@ -335,6 +375,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "dd/MM/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E d MMM y G",
@@ -345,8 +386,8 @@
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
                 "M": "L",
-                "Md": "d/M",
-                "MEd": "E d/M",
+                "Md": "dd/MM",
+                "MEd": "E dd/MM",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
                 "MMMEd": "E d MMM",
@@ -354,9 +395,9 @@
                 "ms": "mm:ss",
                 "y": "y G",
                 "yyyy": "y G",
-                "yyyyM": "M/y GGGGG",
-                "yyyyMd": "d/M/y GGGGG",
-                "yyyyMEd": "E d/M/y GGGGG",
+                "yyyyM": "MM/y GGGGG",
+                "yyyyMd": "dd/MM/y GGGGG",
+                "yyyyMEd": "E dd/MM/y GGGGG",
                 "yyyyMMM": "MMM y G",
                 "yyyyMMMd": "d MMM y G",
                 "yyyyMMMEd": "E d MMM y G",

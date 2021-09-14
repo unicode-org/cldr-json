@@ -3,7 +3,7 @@
     "es-CR": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "es",
         "territory": "CR"
@@ -14,18 +14,18 @@
             "months": {
               "format": {
                 "abbreviated": {
-                  "1": "ene.",
-                  "2": "feb.",
-                  "3": "mar.",
-                  "4": "abr.",
-                  "5": "may.",
-                  "6": "jun.",
-                  "7": "jul.",
-                  "8": "ago.",
-                  "9": "sep.",
-                  "10": "oct.",
-                  "11": "nov.",
-                  "12": "dic."
+                  "1": "ene",
+                  "2": "feb",
+                  "3": "mar",
+                  "4": "abr",
+                  "5": "may",
+                  "6": "jun",
+                  "7": "jul",
+                  "8": "ago",
+                  "9": "sept",
+                  "10": "oct",
+                  "11": "nov",
+                  "12": "dic"
                 },
                 "narrow": {
                   "1": "E",
@@ -58,18 +58,18 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "1": "ene.",
-                  "2": "feb.",
-                  "3": "mar.",
-                  "4": "abr.",
-                  "5": "may.",
-                  "6": "jun.",
-                  "7": "jul.",
-                  "8": "ago.",
-                  "9": "sep.",
-                  "10": "oct.",
-                  "11": "nov.",
-                  "12": "dic."
+                  "1": "ene",
+                  "2": "feb",
+                  "3": "mar",
+                  "4": "abr",
+                  "5": "may",
+                  "6": "jun",
+                  "7": "jul",
+                  "8": "ago",
+                  "9": "sept",
+                  "10": "oct",
+                  "11": "nov",
+                  "12": "dic"
                 },
                 "narrow": {
                   "1": "E",
@@ -142,13 +142,13 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "sun": "dom.",
-                  "mon": "lun.",
-                  "tue": "mar.",
-                  "wed": "mié.",
-                  "thu": "jue.",
-                  "fri": "vie.",
-                  "sat": "sáb."
+                  "sun": "dom",
+                  "mon": "lun",
+                  "tue": "mar",
+                  "wed": "mié",
+                  "thu": "jue",
+                  "fri": "vie",
+                  "sat": "sáb"
                 },
                 "narrow": {
                   "sun": "D",
@@ -297,15 +297,55 @@
             },
             "dateFormats": {
               "full": "EEEE, d 'de' MMMM 'de' y G",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "d 'de' MMMM 'de' y G",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "d 'de' MMM 'de' y G",
-              "short": "dd/MM/yy GGGGG"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMd"
+                }
+              },
+              "short": "d/M/y GGGGG",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyyMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1}, {0}",
@@ -326,6 +366,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "MMM 'de' y G",
                 "GyMMMd": "d 'de' MMM 'de' y G",
                 "GyMMMEd": "E, d 'de' MMM 'de' y G",
@@ -394,21 +435,21 @@
                   "y": "y–y G"
                 },
                 "GyM": {
-                  "G": "MM/y GGGGG – MM/y GGGGG",
-                  "M": "MM/y – MM/y GGGGG",
+                  "G": "M/y GGGGG – M/y GGGG",
+                  "M": "M/y – M/y GGGGG",
                   "y": "MM/y – MM/y GGGGG"
                 },
                 "GyMd": {
-                  "d": "dd/MM/y – dd/MM/y GGGGG",
-                  "G": "dd/MM/y GGGGG – dd/MM/y GGGGG",
-                  "M": "dd/MM/y – dd/MM/y GGGGG",
-                  "y": "dd/MM/y – dd/MM/y GGGGG"
+                  "d": "d/M/y – d/M/y GGGGG",
+                  "G": "d/M/y GGGGG – d/M/y GGGGG",
+                  "M": "d/M/y – d/M/y GGGGG",
+                  "y": "d/M/y – d/M/y GGGGG"
                 },
                 "GyMEd": {
-                  "d": "E dd/MM/y – E dd/MM/y GGGGG",
-                  "G": "E dd/MM/y GGGGG – E dd/MM/y GGGGG",
-                  "M": "E dd/MM/y – E dd/MM/y GGGGG",
-                  "y": "E dd/MM/y – E dd/MM/y GGGGG"
+                  "d": "E d/M/y – E d/M/y GGGGG",
+                  "G": "E d/M/y GGGGG – E d/M/y GGGGG",
+                  "M": "E d/M/y – E d/M/y GGGGG",
+                  "y": "E d/M/y – E d/M/y GGGGG"
                 },
                 "GyMMM": {
                   "G": "MMM 'de' y G – MMM 'de' y G",

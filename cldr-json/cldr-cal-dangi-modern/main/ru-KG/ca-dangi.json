@@ -3,7 +3,7 @@
     "ru-KG": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ru",
         "territory": "KG"
@@ -142,13 +142,13 @@
                   "sat": "сб"
                 },
                 "narrow": {
-                  "sun": "вс",
-                  "mon": "пн",
-                  "tue": "вт",
-                  "wed": "ср",
-                  "thu": "чт",
-                  "fri": "пт",
-                  "sat": "сб"
+                  "sun": "В",
+                  "mon": "П",
+                  "tue": "В",
+                  "wed": "С",
+                  "thu": "Ч",
+                  "fri": "П",
+                  "sat": "С"
                 },
                 "short": {
                   "sun": "вс",
@@ -1064,15 +1064,55 @@
             },
             "dateFormats": {
               "full": "EEEE, d MMMM U",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMMEEEEd"
+                }
+              },
               "long": "d MMMM U",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMMd"
+                }
+              },
               "medium": "dd.MM U",
-              "short": "dd.MM.y"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMdd"
+                }
+              },
+              "short": "dd.MM.y",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1092,6 +1132,9 @@
                 "GyMMM": "LLL U",
                 "GyMMMd": "d MMM U",
                 "GyMMMEd": "E, d MMM U",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "h a",
                 "H": "H",
                 "hm": "h:mm a",
@@ -1120,6 +1163,8 @@
                 "yyyyMMMd": "d MMM U",
                 "yyyyMMMEd": "E, d MMM U",
                 "yyyyMMMM": "LLLL U",
+                "yyyyMMMMd": "r(U) MMMM d",
+                "yyyyMMMMEd": "r(U) MMMM d, E",
                 "yyyyQQQ": "QQQ U",
                 "yyyyQQQQ": "QQQQ U"
               },

@@ -3,7 +3,7 @@
     "eu": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "eu"
       },
@@ -314,15 +314,55 @@
             },
             "dateFormats": {
               "full": "G. 'aroko' y. 'urteko' MMMM d, EEEE",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "G. 'aroko' y. 'urteko' MMMM d",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "G. 'aroko' y('e')'ko' MMM d",
-              "short": "GGGGG y-MM-dd"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMd"
+                }
+              },
+              "short": "GGGGG y-MM-dd",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss (zzzz)",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss (z)",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1}, {0}",
@@ -343,6 +383,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G. 'aroko' y. 'urtea'",
+                "GyMd": "y-MM-dd (GGGGG)",
                 "GyMMM": "G. 'aroko' y('e')'ko' MMMM",
                 "GyMMMd": "G. 'aroko' y('e')'ko' MMMM d",
                 "GyMMMEd": "G. 'aroko' y('e')'ko' MMMM d, EEEE",
@@ -449,23 +490,23 @@
                 },
                 "h": {
                   "a": "h a – h a",
-                  "h": "h–h a"
+                  "h": "h – h a"
                 },
                 "H": {
-                  "H": "HH–HH"
+                  "H": "HH – HH"
                 },
                 "hm": {
-                  "a": ":h:mm a – h:mm a",
-                  "h": "h:mm–h:mm a",
-                  "m": "h:mm–h:mm a"
+                  "a": "h:mm a – h:mm a",
+                  "h": "h:mm – h:mm a",
+                  "m": "h:mm – h:mm a"
                 },
                 "Hm": {
-                  "H": "HH:mm–HH:mm",
-                  "m": "HH:mm–HH:mm"
+                  "H": "HH:mm – HH:mm",
+                  "m": "HH:mm – HH:mm"
                 },
                 "hmv": {
                   "a": "h:mm a – h:mm a v",
-                  "h": "h:mm–h:mm a v",
+                  "h": "h:mm – h:mm a v",
                   "m": "h:mm–h:mm a v"
                 },
                 "Hmv": {

@@ -3,7 +3,7 @@
     "pt-CH": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "pt",
         "territory": "CH"
@@ -1064,15 +1064,55 @@
             },
             "dateFormats": {
               "full": "EEEE, d 'de' MMMM 'de' U",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMMEEEEd"
+                }
+              },
               "long": "d 'de' MMMM 'de' U",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMMd"
+                }
+              },
               "medium": "d 'de' MMM 'de' U",
-              "short": "dd/MM/yy"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMd"
+                }
+              },
+              "short": "dd/MM/yy",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yyMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1087,11 +1127,19 @@
                 "E": "ccc",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
-                "Ed": "d, E",
-                "Gy": "r U",
-                "GyMMM": "r(U) MMM",
-                "GyMMMd": "r MMM d",
-                "GyMMMEd": "r(U) MMM d, E",
+                "Ed": "E, d",
+                "Ehm": "E h:mm a",
+                "EHm": "E HH:mm",
+                "Ehms": "E h:mm:ss a",
+                "EHms": "E HH:mm:ss",
+                "Gy": "r(U)",
+                "GyMd": "dd/MM/r",
+                "GyMMM": "MMM 'de' U",
+                "GyMMMd": "d 'de' MMM 'de' U",
+                "GyMMMEd": "E, d 'de' MMM 'de' U",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1099,12 +1147,13 @@
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
                 "M": "L",
-                "Md": "MM-dd",
-                "MEd": "MM-dd, E",
+                "Md": "d/M",
+                "MEd": "E, dd/MM",
                 "MMM": "LLL",
-                "MMMd": "MMM d",
-                "MMMEd": "MMM d, E",
-                "MMMMd": "MMMM d",
+                "MMMd": "d 'de' MMM",
+                "MMMEd": "E, d 'de' MMM",
+                "MMMMd": "d 'de' MMMM",
+                "MMMMEd": "E, d 'de' MMMM",
                 "ms": "mm:ss",
                 "UM": "U MM",
                 "UMd": "U MM-d",
@@ -1113,15 +1162,17 @@
                 "y": "r(U)",
                 "yMd": "r-MM-dd",
                 "yyyy": "r(U)",
-                "yyyyM": "r-MM",
-                "yyyyMd": "r-MM-dd",
-                "yyyyMEd": "r-MM-dd, E",
-                "yyyyMMM": "r(U) MMM",
-                "yyyyMMMd": "r MMM d",
-                "yyyyMMMEd": "r(U) MMM d, E",
-                "yyyyMMMM": "r(U) MMMM",
-                "yyyyQQQ": "r(U) QQQ",
-                "yyyyQQQQ": "r(U) QQQQ"
+                "yyyyM": "MM/r",
+                "yyyyMd": "dd/MM/r",
+                "yyyyMEd": "E, dd/MM/r",
+                "yyyyMMM": "MMM 'de' U",
+                "yyyyMMMd": "d 'de' MMM 'de' U",
+                "yyyyMMMEd": "E, d 'de' MMM 'de' U",
+                "yyyyMMMM": "MMMM 'de' U",
+                "yyyyMMMMd": "d 'de' MMMM 'de' U",
+                "yyyyMMMMEd": "E, d 'de' MMMM 'de' U",
+                "yyyyQQQ": "U QQQ",
+                "yyyyQQQQ": "U QQQQ"
               },
               "appendItems": {
                 "Day": "{0} ({2}: {1})",

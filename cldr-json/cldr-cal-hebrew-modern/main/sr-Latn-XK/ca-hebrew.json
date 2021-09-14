@@ -3,7 +3,7 @@
     "sr-Latn-XK": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "sr",
         "script": "Latn",
@@ -195,10 +195,10 @@
             "quarters": {
               "format": {
                 "abbreviated": {
-                  "1": "K1",
-                  "2": "K2",
-                  "3": "K3",
-                  "4": "K4"
+                  "1": "1. kv.",
+                  "2": "2. kv.",
+                  "3": "3. kv.",
+                  "4": "4. kv."
                 },
                 "narrow": {
                   "1": "1.",
@@ -215,10 +215,10 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "1": "K1",
-                  "2": "K2",
-                  "3": "K3",
-                  "4": "K4"
+                  "1": "1. kv.",
+                  "2": "2. kv.",
+                  "3": "3. kv.",
+                  "4": "4. kv."
                 },
                 "narrow": {
                   "1": "1.",
@@ -238,9 +238,9 @@
               "format": {
                 "abbreviated": {
                   "midnight": "ponoć",
-                  "am": "pre podne",
+                  "am": "AM",
                   "noon": "podne",
-                  "pm": "po podne",
+                  "pm": "PM",
                   "morning1": "jutro",
                   "afternoon1": "po pod.",
                   "evening1": "uveče",
@@ -248,9 +248,9 @@
                 },
                 "narrow": {
                   "midnight": "ponoć",
-                  "am": "a",
+                  "am": "AM",
                   "noon": "podne",
-                  "pm": "p",
+                  "pm": "PM",
                   "morning1": "jutro",
                   "afternoon1": "po pod.",
                   "evening1": "veče",
@@ -258,9 +258,9 @@
                 },
                 "wide": {
                   "midnight": "ponoć",
-                  "am": "pre podne",
+                  "am": "AM",
                   "noon": "podne",
-                  "pm": "po podne",
+                  "pm": "PM",
                   "morning1": "ujutro",
                   "afternoon1": "po podne",
                   "evening1": "uveče",
@@ -270,9 +270,9 @@
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "ponoć",
-                  "am": "pre podne",
+                  "am": "AM",
                   "noon": "podne",
-                  "pm": "po podne",
+                  "pm": "PM",
                   "morning1": "jutro",
                   "afternoon1": "popodne",
                   "evening1": "veče",
@@ -290,9 +290,9 @@
                 },
                 "wide": {
                   "midnight": "ponoć",
-                  "am": "pre podne",
+                  "am": "AM",
                   "noon": "podne",
-                  "pm": "po podne",
+                  "pm": "PM",
                   "morning1": "jutro",
                   "afternoon1": "popodne",
                   "evening1": "veče",
@@ -313,15 +313,55 @@
             },
             "dateFormats": {
               "full": "EEEE, d. MMMM y. G",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "d. MMMM y. G",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "d.MM.y. G",
-              "short": "d.M.y. GGGGG"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMd"
+                }
+              },
+              "short": "d.M.y. GGGGG",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -342,6 +382,7 @@
                 "Ehms": "E hh:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y. G",
+                "GyMd": "d.M.y. GGGGG",
                 "GyMMM": "MMM y. G",
                 "GyMMMd": "d. MMM y. G",
                 "GyMMMEd": "E, d. MMM y. G",

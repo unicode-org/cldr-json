@@ -3,7 +3,7 @@
     "sw-CD": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "sw",
         "territory": "CD"
@@ -315,15 +315,55 @@
             },
             "dateFormats": {
               "full": "EEEE, d MMMM y",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMEEEEd"
+                }
+              },
               "long": "d MMMM y",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMd"
+                }
+              },
               "medium": "d MMM y",
-              "short": "dd/MM/y"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMd"
+                }
+              },
+              "short": "dd/MM/y",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -344,6 +384,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E, d MMM y G",
@@ -442,9 +483,9 @@
                 },
                 "GyMMMEd": {
                   "d": "E, d MMM – E, d MMM y G",
-                  "G": "E, MMM d, y G – E, MMM d, y G",
-                  "M": "E, MMM d – E, MMM d, y G",
-                  "y": "E, MMM d, y – E, MMM d, y G"
+                  "G": "E, d MMM y G – E, d MMM y G",
+                  "M": "E, d MMM – E, d MMM y G",
+                  "y": "E, d MMM y – E, d MMM y G"
                 },
                 "h": {
                   "a": "h a – h a",
@@ -493,12 +534,12 @@
                   "M": "LLL–LLL"
                 },
                 "MMMd": {
-                  "d": "MMM d–d",
-                  "M": "MMM d – MMM d"
+                  "d": "d – d MMM",
+                  "M": "d MMM – d MMM"
                 },
                 "MMMEd": {
-                  "d": "MMM d, E – MMM d, E",
-                  "M": "MMM d, E – MMM d, E"
+                  "d": "E, d MMM – E, d MMM",
+                  "M": "E, d MMM – E, d MMM"
                 },
                 "y": {
                   "y": "y–y"
@@ -522,14 +563,14 @@
                   "y": "MMM y – MMM y"
                 },
                 "yMMMd": {
-                  "d": "MMM d – d, y",
-                  "M": "MMM d – d, y",
-                  "y": "MMM d y – MMM d y"
+                  "d": "d – d MMM y",
+                  "M": "d – d MMM y",
+                  "y": "d MMM y – d MMM y"
                 },
                 "yMMMEd": {
-                  "d": "E, MMM d – E, MMM d y",
-                  "M": "E, MMM d– E, MMM d y",
-                  "y": "E, MMM d y – E, MMM d y"
+                  "d": "E, d MMM – E, d MMM y",
+                  "M": "E, d MMM – E, d MMM y",
+                  "y": "E, d MMM y – E, d MMM y"
                 },
                 "yMMMM": {
                   "M": "MMMM–MMMM y",

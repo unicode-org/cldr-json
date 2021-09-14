@@ -3,7 +3,7 @@
     "dz": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "dz"
       },
@@ -971,15 +971,55 @@
             },
             "dateFormats": {
               "full": "EEEE, G སྤྱི་ལོ་y MMMM ཚེས་dd",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEdd"
+                }
+              },
               "long": "G སྤྱི་ལོ་y MMMM ཚེས་ dd",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMdd"
+                }
+              },
               "medium": "G སྤྱི་ལོ་y ཟླ་MMM ཚེས་dd",
-              "short": "GGGGG y-MM-dd"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMdd"
+                }
+              },
+              "short": "GGGGG y-MM-dd",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "ཆུ་ཚོད་ h སྐར་མ་ mm:ss a zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "ཆུ་ཚོད་ h སྐར་མ་ mm:ss a z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "ཆུ་ཚོད་h:mm:ss a",
-              "short": "ཆུ་ཚོད་ h སྐར་མ་ mm a"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "ཆུ་ཚོད་ h སྐར་མ་ mm a",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1000,6 +1040,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "G y སྤྱི་ཟླ་MMM",
                 "GyMMMd": "G y MMM d",
                 "GyMMMEd": "གཟའ་E, G ལོy ཟླ་MMM ཚེ་d",

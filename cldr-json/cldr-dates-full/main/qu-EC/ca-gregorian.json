@@ -3,7 +3,7 @@
     "qu-EC": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "qu",
         "territory": "EC"
@@ -253,35 +253,75 @@
             },
             "eras": {
               "eraNames": {
-                "0": "BCE",
-                "0-alt-variant": "BCE",
-                "1": "d.C.",
-                "1-alt-variant": "CE"
+                "0": "ñawpa cristu",
+                "0-alt-variant": "Ñawpa Kaqlla Era",
+                "1": "chanta cristu",
+                "1-alt-variant": "kaqlla era"
               },
               "eraAbbr": {
-                "0": "BCE",
-                "0-alt-variant": "BCE",
+                "0": "a.d.",
+                "0-alt-variant": "ACE",
                 "1": "d.C.",
-                "1-alt-variant": "CE"
+                "1-alt-variant": "ec"
               },
               "eraNarrow": {
-                "0": "BCE",
-                "0-alt-variant": "BCE",
+                "0": "a.d.",
+                "0-alt-variant": "ACE",
                 "1": "dC",
-                "1-alt-variant": "CE"
+                "1-alt-variant": "ec"
               }
             },
             "dateFormats": {
               "full": "EEEE, d MMMM, y",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMEEEEd"
+                }
+              },
               "long": "d MMMM y",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMd"
+                }
+              },
               "medium": "d MMM y",
-              "short": "dd/MM/y"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMd"
+                }
+              },
+              "short": "dd/MM/y",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -302,6 +342,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM, y G",
                 "GyMMMEd": "E, d MMM, y G",
@@ -364,29 +405,29 @@
                   "d": "d–d"
                 },
                 "Gy": {
-                  "G": "y G – y G",
+                  "G": "G y – G y",
                   "y": "y–y G"
                 },
                 "GyM": {
                   "G": "MM-y GGGGG – MM-y GGGGG",
-                  "M": "MM-y – MM-y GGGGG",
-                  "y": "MM-y – MM-y GGGGG"
+                  "M": "GGGGG y-MM – y-MM",
+                  "y": "GGGGG y-MM – y-MM"
                 },
                 "GyMd": {
-                  "d": "dd-MM-y – dd-MM-y GGGGG",
-                  "G": "dd-MM-y GGGGG – dd-MM-y GGGGG",
-                  "M": "dd-MM-y – dd-MM-y GGGGG",
-                  "y": "dd-MM-y – dd-MM-y GGGGG"
+                  "d": "GGGGG y-MM-dd – y-MM-dd",
+                  "G": "GGGGG y-MM-dd – GGGGG y-MM-dd",
+                  "M": "GGGGG y-MM-dd – y-MM-dd",
+                  "y": "GGGGG y-MM-dd – y-MM-dd"
                 },
                 "GyMEd": {
-                  "d": "E, dd-MM-y – E, dd-MM-y GGGGG",
-                  "G": "E, dd-MM-y GGGG – E, dd-MM-y GGGGG",
-                  "M": "E, dd-MM-y – E, dd-MM-y GGGGG",
-                  "y": "E, dd-MM-y – E, dd-MM-y GGGGG"
+                  "d": "GGGGG y-MM-dd, E – y-MM-dd, E",
+                  "G": "GGGGG y-MM-dd, E – GGGGG y-MM-dd, E",
+                  "M": "GGGGG y-MM-dd, E – y-MM-dd, E",
+                  "y": "GGGGG y-MM-dd, E – y-MM-dd, E"
                 },
                 "GyMMM": {
-                  "G": "MMM y G – MMM y G",
-                  "M": "MMM y – MMM y G",
+                  "G": "G y MMM – G y MMM",
+                  "M": "G y MMM–MMM",
                   "y": "MMM y – MMM y G"
                 },
                 "GyMMMd": {

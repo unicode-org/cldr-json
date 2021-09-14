@@ -3,7 +3,7 @@
     "so-DJ": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "so",
         "territory": "DJ"
@@ -163,7 +163,7 @@
                   "sun": "Axd",
                   "mon": "Isn",
                   "tue": "Tldo",
-                  "wed": "Arbc",
+                  "wed": "Arbaco",
                   "thu": "Khms",
                   "fri": "Jmc",
                   "sat": "Sbti"
@@ -238,11 +238,11 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "am": "GH",
+                  "am": "AM",
                   "pm": "GD"
                 },
                 "narrow": {
-                  "am": "GH",
+                  "am": "AM",
                   "pm": "GD"
                 },
                 "wide": {
@@ -264,15 +264,55 @@
             },
             "dateFormats": {
               "full": "EEEE, MMMM d, y G",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "MMMM d, y G",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "MMM d, y G",
-              "short": "M/d/y GGGGG"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMd"
+                }
+              },
+              "short": "M/d/y GGGGG",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "h:mm:ss a z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "h:mm:ss a",
-              "short": "h:mm a"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "h:mm a",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} 'barta' {0}",
@@ -293,6 +333,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "M/d/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "MMM d, y G",
                 "GyMMMEd": "E, MMM d, y G",

@@ -3,7 +3,7 @@
     "sl": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "sl"
       },
@@ -313,22 +313,62 @@
               }
             },
             "dateFormats": {
-              "full": "EEEE, dd. MMMM y",
-              "long": "dd. MMMM y",
+              "full": "EEEE, d. MMMM y",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMEEEEdd"
+                }
+              },
+              "long": "d. MMMM y",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMdd"
+                }
+              },
               "medium": "d. MMM y",
-              "short": "d. MM. yy"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMd"
+                }
+              },
+              "short": "d. MM. yy",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yyMMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
               "long": "{1} {0}",
-              "medium": "{1} {0}",
-              "short": "{1} {0}",
+              "medium": "{1}, {0}",
+              "short": "{1}, {0}",
               "availableFormats": {
                 "Bh": "h B",
                 "Bhm": "h:mm B",
@@ -344,6 +384,7 @@
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
                 "GyM": "MMM y G",
+                "GyMd": "d. M. y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d. MMM y G",
                 "GyMMMEd": "E, d. MMM y G",

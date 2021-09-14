@@ -3,7 +3,7 @@
     "ta": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ta"
       },
@@ -326,19 +326,59 @@
             },
             "dateFormats": {
               "full": "EEEE, d MMMM, y",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMEEEEd"
+                }
+              },
               "long": "d MMMM, y",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMd"
+                }
+              },
               "medium": "d MMM, y",
-              "short": "d/M/yy"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMd"
+                }
+              },
+              "short": "d/M/yy",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yyMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "a h:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "a h:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "a h:mm:ss",
-              "short": "a h:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "a h:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
-              "full": "{1} ’அன்று’ {0}",
-              "long": "{1} ’அன்று’ {0}",
+              "full": "{1} அன்று {0}",
+              "long": "{1} அன்று {0}",
               "medium": "{1}, {0}",
               "short": "{1}, {0}",
               "availableFormats": {
@@ -355,6 +395,7 @@
                 "Ehms": "E a h:mm:ss",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G y MMM d",
                 "GyMMMEd": "G y MMM d, E",

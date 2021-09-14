@@ -3,7 +3,7 @@
     "uz": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "uz"
       },
@@ -288,26 +288,66 @@
             },
             "eras": {
               "eraNames": {
-                "0": "Hijriy yil"
+                "0": "Hijriy"
               },
               "eraAbbr": {
-                "0": "Hijriy yil"
+                "0": "Hijriy"
               },
               "eraNarrow": {
-                "0": "Hijriy yil"
+                "0": "Hijriy"
               }
             },
             "dateFormats": {
               "full": "EEEE, d-MMMM, y (G)",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "d-MMMM, y (G)",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "d-MMM, y (G)",
-              "short": "dd.MM.y (GGGGG)"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMd"
+                }
+              },
+              "short": "dd.MM.y (GGGGG)",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "H:mm:ss (zzzz)",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmsszzzz"
+                }
+              },
               "long": "H:mm:ss (z)",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1}, {0}",
@@ -328,6 +368,7 @@
                 "Ehms": "E, h:mm:ss (a)",
                 "EHms": "E, HH:mm:ss",
                 "Gy": "y (G)",
+                "GyMd": "dd.MM.y GGGGG",
                 "GyMMM": "MMM, y (G)",
                 "GyMMMd": "d-MMM, y (G)",
                 "GyMMMEd": "E, d-MMM, y (G)",

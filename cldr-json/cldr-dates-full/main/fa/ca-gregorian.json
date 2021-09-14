@@ -3,7 +3,7 @@
     "fa": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "fa"
       },
@@ -13,13 +13,13 @@
             "months": {
               "format": {
                 "abbreviated": {
-                  "1": "ژانویهٔ",
-                  "2": "فوریهٔ",
+                  "1": "ژانویه",
+                  "2": "فوریه",
                   "3": "مارس",
                   "4": "آوریل",
-                  "5": "مهٔ",
+                  "5": "مه",
                   "6": "ژوئن",
-                  "7": "ژوئیهٔ",
+                  "7": "ژوئیه",
                   "8": "اوت",
                   "9": "سپتامبر",
                   "10": "اکتبر",
@@ -247,7 +247,7 @@
                   "pm": "بعدازظهر",
                   "morning1": "بامداد",
                   "morning2": "صبح",
-                  "afternoon1": "ظهر",
+                  "afternoon1": "بعدازظهر",
                   "afternoon2": "عصر",
                   "night1": "شب",
                   "night2": "نیمه‌شب"
@@ -308,15 +308,55 @@
             },
             "dateFormats": {
               "full": "EEEE d MMMM y",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMEEEEd"
+                }
+              },
               "long": "d MMMM y",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMd"
+                }
+              },
               "medium": "d MMM y",
-              "short": "y/M/d"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMd"
+                }
+              },
+              "short": "y/M/d",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "H:mm:ss (zzzz)",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmsszzzz"
+                }
+              },
               "long": "H:mm:ss (z)",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmssz"
+                }
+              },
               "medium": "H:mm:ss",
-              "short": "H:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmss"
+                }
+              },
+              "short": "H:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1}، ساعت {0}",
@@ -337,6 +377,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E H:mm:ss",
                 "Gy": "y G",
+                "GyMd": "y/M/d GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E d MMM y G",

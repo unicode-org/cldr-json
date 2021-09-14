@@ -3,7 +3,7 @@
     "zh-Hant-HK": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "zh",
         "script": "Hant",
@@ -1071,15 +1071,55 @@
             },
             "dateFormats": {
               "full": "U（r）年MMMdEEEE",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMEEEEd"
+                }
+              },
               "long": "U（r）年MMMd",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMd"
+                }
+              },
               "medium": "U年MMMd",
-              "short": "U/M/d"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMd"
+                }
+              },
+              "short": "U/M/d",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "ah:mm:ss [zzzz]",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "ah:mm:ss [z]",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "ah:mm:ss",
-              "short": "ah:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "ah:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1099,6 +1139,9 @@
                 "GyMMM": "rU年MMM",
                 "GyMMMd": "r年MMMd",
                 "GyMMMEd": "rU年MMMdE",
+                "GyMMMM": "r(U)年MMMM",
+                "GyMMMMd": "r(U)年MMMMd日",
+                "GyMMMMEd": "r(U)年MMMMd日 E",
                 "h": "ah時",
                 "H": "HH",
                 "hm": "ah:mm",
@@ -1127,6 +1170,8 @@
                 "yyyyMMMd": "r年MMMd",
                 "yyyyMMMEd": "rU年MMMdE",
                 "yyyyMMMM": "rU年MMMM",
+                "yyyyMMMMd": "r(U)年MMMMd日",
+                "yyyyMMMMEd": "r(U)年MMMMd日 E",
                 "yyyyQQQ": "rU年QQQQ",
                 "yyyyQQQQ": "rU年QQQQ"
               },
@@ -1159,6 +1204,7 @@
                 },
                 "h": {
                   "a": "ah時至ah時",
+                  "B": "Bh時至Bh時",
                   "h": "ah時至h時"
                 },
                 "H": {
@@ -1166,6 +1212,7 @@
                 },
                 "hm": {
                   "a": "ah:mm至ah:mm",
+                  "B": "Bh:mm至Bh:mm",
                   "h": "ah:mm至h:mm",
                   "m": "ah:mm至h:mm"
                 },
@@ -1175,6 +1222,7 @@
                 },
                 "hmv": {
                   "a": "ah:mm至ah:mm [v]",
+                  "B": "Bh:mm至Bh:mm [v]",
                   "h": "ah:mm至h:mm [v]",
                   "m": "ah:mm至h:mm [v]"
                 },
@@ -1184,6 +1232,7 @@
                 },
                 "hv": {
                   "a": "ah時至ah時 [v]",
+                  "B": "Bh時至Bh時 [v]",
                   "h": "ah時至h時 [v]"
                 },
                 "Hv": {

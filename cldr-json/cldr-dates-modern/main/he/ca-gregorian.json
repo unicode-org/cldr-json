@@ -3,7 +3,7 @@
     "he": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "he"
       },
@@ -306,23 +306,63 @@
                 "1-alt-variant": "CE"
               },
               "eraNarrow": {
-                "0": "לפנה״ס",
+                "0": "לפני",
                 "0-alt-variant": "BCE",
-                "1": "לספירה",
+                "1": "אחריי",
                 "1-alt-variant": "CE"
               }
             },
             "dateFormats": {
               "full": "EEEE, d בMMMM y",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMEEEEd"
+                }
+              },
               "long": "d בMMMM y",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMd"
+                }
+              },
               "medium": "d בMMM y",
-              "short": "d.M.y"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMd"
+                }
+              },
+              "short": "d.M.y",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "H:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmsszzzz"
+                }
+              },
               "long": "H:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmssz"
+                }
+              },
               "medium": "H:mm:ss",
-              "short": "H:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmss"
+                }
+              },
+              "short": "H:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} בשעה {0}",
@@ -343,6 +383,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E H:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d בMMM y G",
                 "GyMMMEd": "E, d בMMM y G",

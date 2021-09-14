@@ -3,7 +3,7 @@
     "sr-Cyrl-XK": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "sr",
         "script": "Cyrl",
@@ -43,18 +43,18 @@
                   "12": "д"
                 },
                 "wide": {
-                  "1": "јануар",
-                  "2": "фебруар",
-                  "3": "март",
-                  "4": "април",
-                  "5": "мај",
-                  "6": "јун",
-                  "7": "јул",
-                  "8": "август",
-                  "9": "септембар",
-                  "10": "октобар",
-                  "11": "новембар",
-                  "12": "децембар"
+                  "1": "јануара",
+                  "2": "фебруара",
+                  "3": "марта",
+                  "4": "априла",
+                  "5": "маја",
+                  "6": "јуна",
+                  "7": "јула",
+                  "8": "августа",
+                  "9": "септембра",
+                  "10": "октобра",
+                  "11": "новембра",
+                  "12": "децембра"
                 }
               },
               "stand-alone": {
@@ -183,10 +183,10 @@
             "quarters": {
               "format": {
                 "abbreviated": {
-                  "1": "К1",
-                  "2": "К2",
-                  "3": "К3",
-                  "4": "К4"
+                  "1": "1. кв.",
+                  "2": "2. кв.",
+                  "3": "3. кв.",
+                  "4": "4. кв."
                 },
                 "narrow": {
                   "1": "1.",
@@ -203,10 +203,10 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "1": "К1",
-                  "2": "К2",
-                  "3": "К3",
-                  "4": "К4"
+                  "1": "1. кв.",
+                  "2": "2. кв.",
+                  "3": "3. кв.",
+                  "4": "4. кв."
                 },
                 "narrow": {
                   "1": "1.",
@@ -226,9 +226,9 @@
               "format": {
                 "abbreviated": {
                   "midnight": "поноћ",
-                  "am": "пре подне",
+                  "am": "AM",
                   "noon": "подне",
-                  "pm": "по подне",
+                  "pm": "PM",
                   "morning1": "јутро",
                   "afternoon1": "по под.",
                   "evening1": "увече",
@@ -236,9 +236,9 @@
                 },
                 "narrow": {
                   "midnight": "поноћ",
-                  "am": "a",
+                  "am": "AM",
                   "noon": "подне",
-                  "pm": "p",
+                  "pm": "PM",
                   "morning1": "јутро",
                   "afternoon1": "по под.",
                   "evening1": "вече",
@@ -246,9 +246,9 @@
                 },
                 "wide": {
                   "midnight": "поноћ",
-                  "am": "пре подне",
+                  "am": "AM",
                   "noon": "подне",
-                  "pm": "по подне",
+                  "pm": "PM",
                   "morning1": "ујутро",
                   "afternoon1": "по подне",
                   "evening1": "увече",
@@ -258,9 +258,9 @@
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "поноћ",
-                  "am": "пре подне",
+                  "am": "AM",
                   "noon": "подне",
-                  "pm": "по подне",
+                  "pm": "PM",
                   "morning1": "јутро",
                   "afternoon1": "поподне",
                   "evening1": "вече",
@@ -278,9 +278,9 @@
                 },
                 "wide": {
                   "midnight": "поноћ",
-                  "am": "пре подне",
+                  "am": "AM",
                   "noon": "подне",
-                  "pm": "по подне",
+                  "pm": "PM",
                   "morning1": "јутро",
                   "afternoon1": "поподне",
                   "evening1": "вече",
@@ -304,15 +304,55 @@
             },
             "dateFormats": {
               "full": "EEEE, d. MMMM y. G",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "d. MMMM y. G",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "d.MM.y. G",
-              "short": "d.M.y. GGGGG"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMd"
+                }
+              },
+              "short": "d.M.y. GGGGG",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -333,6 +373,7 @@
                 "Ehms": "E hh:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y. G",
+                "GyMd": "d.M.y. GGGGG",
                 "GyMMM": "MMM y. G",
                 "GyMMMd": "d. MMM y. G",
                 "GyMMMEd": "E, d. MMM y. G",

@@ -3,7 +3,7 @@
     "mai": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "mai"
       },
@@ -159,13 +159,13 @@
                   "sat": "शनि"
                 },
                 "wide": {
-                  "sun": "रविवार",
-                  "mon": "सोमवार",
-                  "tue": "मंगलवार",
-                  "wed": "बुधवार",
-                  "thu": "गुरुवार",
-                  "fri": "शुक्रवार",
-                  "sat": "शनिवार"
+                  "sun": "रवि दिन",
+                  "mon": "सोम दिन",
+                  "tue": "मंगल दिन",
+                  "wed": "बुध दिन",
+                  "thu": "बृहस्पति दिन",
+                  "fri": "शुक्र दिन",
+                  "sat": "शनि दिन"
                 }
               },
               "stand-alone": {
@@ -197,13 +197,13 @@
                   "sat": "शनि"
                 },
                 "wide": {
-                  "sun": "रविवार",
-                  "mon": "सोमवार",
-                  "tue": "मंगलवार",
-                  "wed": "बुधवार",
-                  "thu": "गुरुवार",
-                  "fri": "शुक्रवार",
-                  "sat": "शनिवार"
+                  "sun": "रवि दिन",
+                  "mon": "सोम दिन",
+                  "tue": "मंगल दिन",
+                  "wed": "बुध दिन",
+                  "thu": "बृहस्पति दिन",
+                  "fri": "शुक्र दिन",
+                  "sat": "शनि दिन"
                 }
               }
             },
@@ -222,10 +222,10 @@
                   "4": "4"
                 },
                 "wide": {
-                  "1": "पहली तिमाही",
-                  "2": "दूसरी तिमाही",
-                  "3": "तीसरी तिमाही",
-                  "4": "चौथी तिमाही"
+                  "1": "पहिल तिमाही",
+                  "2": "दोसर तिमाही",
+                  "3": "तेसर तिमाही",
+                  "4": "चारिम तिमाही"
                 }
               },
               "stand-alone": {
@@ -242,10 +242,10 @@
                   "4": "4"
                 },
                 "wide": {
-                  "1": "पहली तिमाही",
-                  "2": "दूसरी तिमाही",
-                  "3": "तीसरी तिमाही",
-                  "4": "चौथी तिमाही"
+                  "1": "पहिल तिमाही",
+                  "2": "दोसर तिमाही",
+                  "3": "तेसर तिमाही",
+                  "4": "चारिम तिमाही"
                 }
               }
             },
@@ -260,8 +260,8 @@
                   "pm": "PM"
                 },
                 "wide": {
-                  "am": "am",
-                  "pm": "pm"
+                  "am": "भोर",
+                  "pm": "सांझ"
                 }
               },
               "stand-alone": {
@@ -1027,15 +1027,55 @@
             },
             "dateFormats": {
               "full": "r(U) MMMM d, EEEE",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMMEEEEd"
+                }
+              },
               "long": "r(U) MMMM d",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMMd"
+                }
+              },
               "medium": "r MMM d",
-              "short": "r-MM-dd"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMd"
+                }
+              },
+              "short": "r-MM-dd",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "h:mm:ss a z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "h:mm:ss a",
-              "short": "h:mm a"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "h:mm a",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1052,9 +1092,12 @@
                 "EBhms": "E h:mm:ss B",
                 "Ed": "d, E",
                 "Gy": "r U",
-                "GyMMM": "r(U) MMM",
+                "GyMMM": "r MMM",
                 "GyMMMd": "r MMM d",
-                "GyMMMEd": "r(U) MMM d, E",
+                "GyMMMEd": "r MMM d, E",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1079,10 +1122,12 @@
                 "yyyyM": "r-MM",
                 "yyyyMd": "r-MM-dd",
                 "yyyyMEd": "r-MM-dd, E",
-                "yyyyMMM": "r(U) MMM",
+                "yyyyMMM": "r MMM",
                 "yyyyMMMd": "r MMM d",
-                "yyyyMMMEd": "r(U) MMM d, E",
+                "yyyyMMMEd": "r MMM d, E",
                 "yyyyMMMM": "r(U) MMMM",
+                "yyyyMMMMd": "r(U) MMMM d",
+                "yyyyMMMMEd": "r(U) MMMM d, E",
                 "yyyyQQQ": "r(U) QQQ",
                 "yyyyQQQQ": "r(U) QQQQ"
               },

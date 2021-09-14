@@ -3,7 +3,7 @@
     "br": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "br"
       },
@@ -1027,15 +1027,55 @@
             },
             "dateFormats": {
               "full": "EEEE d MMMM r (U)",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMMEEEEd"
+                }
+              },
               "long": "d MMMM r (U)",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMMd"
+                }
+              },
               "medium": "d MMM r",
-              "short": "dd/MM/r"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMd"
+                }
+              },
+              "short": "dd/MM/r",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} 'da' {0}",
@@ -1055,6 +1095,9 @@
                 "GyMMM": "MMM r (U)",
                 "GyMMMd": "d MMM r",
                 "GyMMMEd": "E d MMM r (U)",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1083,6 +1126,8 @@
                 "yyyyMMMd": "d MMM r",
                 "yyyyMMMEd": "E d MMM r (U)",
                 "yyyyMMMM": "MMMM r (U)",
+                "yyyyMMMMd": "r(U) MMMM d",
+                "yyyyMMMMEd": "r(U) MMMM d, E",
                 "yyyyQQQ": "QQQ r (U)",
                 "yyyyQQQQ": "QQQQ r (U)"
               },

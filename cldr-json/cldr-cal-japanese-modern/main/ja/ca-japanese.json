@@ -3,7 +3,7 @@
     "ja": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ja"
       },
@@ -1016,21 +1016,70 @@
                 "_value": "Gy年M月d日EEEE",
                 "_numbers": "y=jpanyear"
               },
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": {
+                    "_value": "GyMEEEEd",
+                    "_numbers": "y=jpanyear"
+                  }
+                }
+              },
               "long": {
                 "_value": "Gy年M月d日",
                 "_numbers": "y=jpanyear"
+              },
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": {
+                    "_value": "GyMd",
+                    "_numbers": "y=jpanyear"
+                  }
+                }
               },
               "medium": {
                 "_value": "Gy年M月d日",
                 "_numbers": "y=jpanyear"
               },
-              "short": "GGGGGy/M/d"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": {
+                    "_value": "GyMd",
+                    "_numbers": "y=jpanyear"
+                  }
+                }
+              },
+              "short": "GGGGGy/M/d",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "H時mm分ss秒 zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmsszzzz"
+                }
+              },
               "long": "H:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmssz"
+                }
+              },
               "medium": "H:mm:ss",
-              "short": "H:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmss"
+                }
+              },
+              "short": "H:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1052,6 +1101,7 @@
                 "Ehms": "aK:mm:ss (E)",
                 "EHms": "H:mm:ss (E)",
                 "Gy": "Gy年",
+                "GyMd": "GGGGGy/M/d",
                 "GyMMM": "Gy年M月",
                 "GyMMMd": "Gy年M月d日",
                 "GyMMMEd": "Gy年M月d日(E)",

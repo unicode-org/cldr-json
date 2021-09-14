@@ -3,7 +3,7 @@
     "yue-Hans": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "yue",
         "script": "Hans"
@@ -1070,15 +1070,55 @@
             },
             "dateFormats": {
               "full": "U年MMMd日EEEE",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMEEEEd"
+                }
+              },
               "long": "U年MMMd日",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMd"
+                }
+              },
               "medium": "U年MMMd日",
-              "short": "U/M/d"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMMMd"
+                }
+              },
+              "short": "U/M/d",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMd"
+                }
+              }
             },
             "timeFormats": {
-              "full": "zzzz ah:mm:ss",
-              "long": "z ah:mm:ss",
-              "medium": "ah:mm:ss",
-              "short": "ah:mm"
+              "full": "zzzz HH:mm:ss",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
+              "long": "z HH:mm:ss",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
+              "medium": "HH:mm:ss",
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1098,6 +1138,9 @@
                 "GyMMM": "rU年MMM",
                 "GyMMMd": "r年MMMd",
                 "GyMMMEd": "rU年MMMdE",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1126,6 +1169,8 @@
                 "yyyyMMMd": "r年MMMd",
                 "yyyyMMMEd": "rU年MMMdE",
                 "yyyyMMMM": "rU年MMMM",
+                "yyyyMMMMd": "r(U) MMMM d",
+                "yyyyMMMMEd": "r(U) MMMM d, E",
                 "yyyyQQQ": "rU年QQQQ",
                 "yyyyQQQQ": "rU年QQQQ"
               },

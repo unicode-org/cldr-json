@@ -3,7 +3,7 @@
     "yue": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "yue"
       },
@@ -305,15 +305,55 @@
             },
             "dateFormats": {
               "full": "Gy年M月d日EEEE",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMEEEEd"
+                }
+              },
               "long": "Gy年M月d日",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMd"
+                }
+              },
               "medium": "Gy年M月d日",
-              "short": "Gy/M/d"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMd"
+                }
+              },
+              "short": "Gy/M/d",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "ah:mm:ss [zzzz]",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "ah:mm:ss [z]",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "ah:mm:ss",
-              "short": "ah:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "ah:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1}{0}",
@@ -334,6 +374,7 @@
                 "Ehms": "ah:mm:ssE",
                 "EHms": "E HH:mm:ss",
                 "Gy": "Gy年",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "Gy年M月",
                 "GyMMMd": "Gy年M月d日",
                 "GyMMMEd": "Gy年M月d日E",

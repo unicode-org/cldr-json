@@ -3,7 +3,7 @@
     "hsb": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "hsb"
       },
@@ -237,12 +237,12 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "am": "dopołdnja",
-                  "pm": "popołdnju"
+                  "am": "am",
+                  "pm": "pm"
                 },
                 "narrow": {
-                  "am": "dopołdnja",
-                  "pm": "popołdnju"
+                  "am": "am",
+                  "pm": "pm"
                 },
                 "wide": {
                   "am": "dopołdnja",
@@ -266,15 +266,55 @@
             },
             "dateFormats": {
               "full": "EEEE, d. MMMM y G",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "d. MMMM y G",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "d.M.y G",
-              "short": "d.M.yy GGGGG"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMd"
+                }
+              },
+              "short": "d.M.yy GGGGG",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGGyyMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "H:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmsszzzz"
+                }
+              },
               "long": "H:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmssz"
+                }
+              },
               "medium": "H:mm:ss",
-              "short": "H:mm 'hodź'."
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmss"
+                }
+              },
+              "short": "H:mm 'hodź'.",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -282,7 +322,7 @@
               "medium": "{1} {0}",
               "short": "{1} {0}",
               "availableFormats": {
-                "Bh": "h B",
+                "Bh": "h 'hodź'. B",
                 "Bhm": "h:mm B",
                 "Bhms": "h:mm:ss B",
                 "d": "d",
@@ -291,15 +331,16 @@
                 "EBhms": "E h:mm:ss B",
                 "Ed": "E, d.",
                 "Ehm": "E h:mm a",
-                "EHm": "E HH:mm",
-                "Ehms": "E h:mm:ss a",
-                "EHms": "E HH:mm:ss",
+                "EHm": "E, HH:mm",
+                "Ehms": "E, h:mm:ss a",
+                "EHms": "E, HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d.M.y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d. MMM y G",
                 "GyMMMEd": "E, d. MMM y G",
-                "h": "h a",
-                "H": "HH",
+                "h": "h 'hodź'. a",
+                "H": "HH 'hodź'.",
                 "hm": "h:mm a",
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
@@ -310,7 +351,7 @@
                 "MMM": "LLL",
                 "MMMd": "d. MMM",
                 "MMMEd": "E, d. MMM",
-                "MMMMd": "MMMM d",
+                "MMMMd": "d. MMMM",
                 "ms": "mm:ss",
                 "y": "y G",
                 "yyyy": "y G",
@@ -320,7 +361,7 @@
                 "yyyyMMM": "MMM y G",
                 "yyyyMMMd": "d. MMM y G",
                 "yyyyMMMEd": "E, d. MMM y G",
-                "yyyyMMMM": "G y MMMM",
+                "yyyyMMMM": "LLLL y G",
                 "yyyyQQQ": "QQQ y G",
                 "yyyyQQQQ": "QQQQ y G"
               },
@@ -340,11 +381,11 @@
               "intervalFormats": {
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
-                  "B": "h B – h B",
+                  "B": "h 'hodź'. B – h 'hodź'. B",
                   "h": "h–h B"
                 },
                 "Bhm": {
-                  "B": "h:mm B – h:mm B",
+                  "B": "h:mm 'hodź'. B – h:mm 'hodź'. B",
                   "h": "h:mm–h:mm B",
                   "m": "h:mm–h:mm B"
                 },

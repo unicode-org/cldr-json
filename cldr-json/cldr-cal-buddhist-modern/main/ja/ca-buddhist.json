@@ -3,7 +3,7 @@
     "ja": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ja"
       },
@@ -305,15 +305,55 @@
             },
             "dateFormats": {
               "full": "GGGGy年M月d日EEEE",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGyMEEEEd"
+                }
+              },
               "long": "GGGGy年M月d日",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GGGGyMd"
+                }
+              },
               "medium": "Gy/MM/dd",
-              "short": "Gy/MM/dd"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMdd"
+                }
+              },
+              "short": "Gy/MM/dd",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "H時mm分ss秒 zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmsszzzz"
+                }
+              },
               "long": "H:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmssz"
+                }
+              },
               "medium": "H:mm:ss",
-              "short": "H:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmss"
+                }
+              },
+              "short": "H:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",

@@ -3,7 +3,7 @@
     "es-CO": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "es",
         "territory": "CO"
@@ -14,18 +14,18 @@
             "months": {
               "format": {
                 "abbreviated": {
-                  "1": "ene.",
-                  "2": "feb.",
-                  "3": "mar.",
-                  "4": "abr.",
-                  "5": "may.",
-                  "6": "jun.",
-                  "7": "jul.",
-                  "8": "ago.",
-                  "9": "sep.",
-                  "10": "oct.",
-                  "11": "nov.",
-                  "12": "dic."
+                  "1": "ene",
+                  "2": "feb",
+                  "3": "mar",
+                  "4": "abr",
+                  "5": "may",
+                  "6": "jun",
+                  "7": "jul",
+                  "8": "ago",
+                  "9": "sept",
+                  "10": "oct",
+                  "11": "nov",
+                  "12": "dic"
                 },
                 "narrow": {
                   "1": "E",
@@ -142,13 +142,13 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "sun": "dom.",
-                  "mon": "lun.",
-                  "tue": "mar.",
-                  "wed": "mié.",
-                  "thu": "jue.",
-                  "fri": "vie.",
-                  "sat": "sáb."
+                  "sun": "dom",
+                  "mon": "lun",
+                  "tue": "mar",
+                  "wed": "mié",
+                  "thu": "jue",
+                  "fri": "vie",
+                  "sat": "sáb"
                 },
                 "narrow": {
                   "sun": "d",
@@ -303,15 +303,55 @@
             },
             "dateFormats": {
               "full": "EEEE, d 'de' MMMM 'de' y",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMEEEEd"
+                }
+              },
               "long": "d 'de' MMMM 'de' y",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMd"
+                }
+              },
               "medium": "d/MM/y",
-              "short": "d/MM/yy"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMd"
+                }
+              },
+              "short": "d/MM/yy",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yyMMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "h:mm:ss a z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "h:mm:ss a",
-              "short": "h:mm a"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "h:mm a",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1}, {0}",
@@ -332,6 +372,7 @@
                 "Ehms": "E, h:mm:ss a",
                 "EHms": "E, HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "MMM 'de' y G",
                 "GyMMMd": "d 'de' MMM 'de' y G",
                 "GyMMMEd": "E, d MMM 'de' y G",
@@ -345,11 +386,11 @@
                 "hms": "h:mm:ss a",
                 "Hms": "H:mm:ss",
                 "hmsv": "h:mm:ss a v",
-                "Hmsv": "H:mm:ss v",
+                "Hmsv": "HH:mm:ss v",
                 "hmsvvvv": "h:mm:ss a (vvvv)",
-                "Hmsvvvv": "H:mm:ss (vvvv)",
+                "Hmsvvvv": "HH:mm:ss vvvv",
                 "hmv": "h:mm a v",
-                "Hmv": "H:mm v",
+                "Hmv": "HH:mm v",
                 "M": "L",
                 "Md": "d/M",
                 "MEd": "E, d/M",
@@ -371,7 +412,7 @@
                 "yMM": "M/y",
                 "yMMM": "MMM 'de' y",
                 "yMMMd": "d 'de' MMM 'de' y",
-                "yMMMEd": "E, d 'de' MMM 'de' y",
+                "yMMMEd": "E, d MMM y",
                 "yMMMM": "MMMM 'de' y",
                 "yMMMMd": "d 'de' MMMM 'de' y",
                 "yMMMMEd": "EEE, d 'de' MMMM 'de' y",
@@ -501,11 +542,11 @@
                 },
                 "MMMMd": {
                   "d": "d–d 'de' MMMM",
-                  "M": "d 'de' MMMM–d 'de' MMMM"
+                  "M": "d 'de' MMMM – d 'de' MMMM"
                 },
                 "MMMMEd": {
-                  "d": "E, d 'de' MMMM–E, d 'de' MMMM",
-                  "M": "E, d 'de' MMMM–E, d 'de' MMMM"
+                  "d": "E, d 'de' MMMM – E, d 'de' MMMM",
+                  "M": "E, d 'de' MMMM – E, d 'de' MMMM"
                 },
                 "y": {
                   "y": "y 'a' y"
@@ -544,13 +585,13 @@
                 },
                 "yMMMMd": {
                   "d": "d–d 'de' MMMM 'de' y",
-                  "M": "d 'de' MMMM–d 'de' MMMM 'de' y",
-                  "y": "d 'de' MMMM 'de' y–d 'de' MMMM 'de' y"
+                  "M": "d 'de' MMMM – d 'de' MMMM 'de' y",
+                  "y": "d 'de' MMMM 'de' y – d 'de' MMMM 'de' y"
                 },
                 "yMMMMEd": {
-                  "d": "E, d 'de' MMMM–E, d 'de' MMMM 'de' y",
-                  "M": "E, d 'de' MMMM–E, d 'de' MMMM 'de' y",
-                  "y": "E, d 'de' MMMM 'de' y–E, d 'de' MMMM 'de' y"
+                  "d": "E, d 'de' MMMM – E, d 'de' MMMM 'de' y",
+                  "M": "E, d 'de' MMMM – E, d 'de' MMMM 'de' y",
+                  "y": "E, d 'de' MMMM 'de' y – E, d 'de' MMMM 'de' y"
                 }
               }
             }

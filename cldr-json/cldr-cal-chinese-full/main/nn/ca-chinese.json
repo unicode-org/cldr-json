@@ -3,7 +3,7 @@
     "nn": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "nn"
       },
@@ -263,8 +263,8 @@
                 },
                 "narrow": {
                   "midnight": "mn.",
-                  "am": "f.m.",
-                  "pm": "e.m.",
+                  "am": "a",
+                  "pm": "p",
                   "morning1": "mg.",
                   "morning2": "fm.",
                   "afternoon1": "em.",
@@ -273,20 +273,20 @@
                 },
                 "wide": {
                   "midnight": "midnatt",
-                  "am": "formiddag",
-                  "pm": "ettermiddag",
-                  "morning1": "på morgenen",
+                  "am": "a.m.",
+                  "pm": "p.m.",
+                  "morning1": "på morgonen",
                   "morning2": "på formiddagen",
                   "afternoon1": "på ettermiddagen",
                   "evening1": "på kvelden",
-                  "night1": "på natten"
+                  "night1": "på natta"
                 }
               },
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "midn.",
-                  "am": "f.m.",
-                  "pm": "e.m.",
+                  "am": "a.m.",
+                  "pm": "p.m.",
                   "morning1": "morg.",
                   "morning2": "form.",
                   "afternoon1": "etterm.",
@@ -305,9 +305,9 @@
                 },
                 "wide": {
                   "midnight": "midnatt",
-                  "am": "f.m.",
-                  "pm": "e.m.",
-                  "morning1": "morgen",
+                  "am": "a.m.",
+                  "pm": "p.m.",
+                  "morning1": "morgon",
                   "morning2": "formiddag",
                   "afternoon1": "ettermiddag",
                   "evening1": "kveld",
@@ -1063,19 +1063,59 @@
             },
             "dateFormats": {
               "full": "EEEE d. MMMM r(U)",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMMEEEEd"
+                }
+              },
               "long": "d. MMMM r(U)",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMMd"
+                }
+              },
               "medium": "d. MMM r",
-              "short": "d.M.r"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMd"
+                }
+              },
+              "short": "d.M.r",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "'kl'. HH:mm:ss zzzz",
               "full-alt-variant": "'kl'. HH.mm.ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
               "long-alt-variant": "HH.mm.ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
               "medium-alt-variant": "HH.mm.ss",
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
               "short": "HH:mm",
-              "short-alt-variant": "HH.mm"
+              "short-alt-variant": "HH.mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1095,6 +1135,9 @@
                 "GyMMM": "MMM r(U)",
                 "GyMMMd": "d. MMM r",
                 "GyMMMEd": "E d. MMM r(U)",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1123,6 +1166,8 @@
                 "yyyyMMMd": "d. MMM r",
                 "yyyyMMMEd": "E d. MMM r(U)",
                 "yyyyMMMM": "MMMM r(U)",
+                "yyyyMMMMd": "r(U) MMMM d",
+                "yyyyMMMMEd": "r(U) MMMM d, E",
                 "yyyyQQQ": "QQQ r(U)",
                 "yyyyQQQQ": "QQQQ r(U)"
               },

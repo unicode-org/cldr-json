@@ -3,7 +3,7 @@
     "mai": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "mai"
       },
@@ -136,13 +136,13 @@
                   "sat": "शनि"
                 },
                 "wide": {
-                  "sun": "रविवार",
-                  "mon": "सोमवार",
-                  "tue": "मंगलवार",
-                  "wed": "बुधवार",
-                  "thu": "गुरुवार",
-                  "fri": "शुक्रवार",
-                  "sat": "शनिवार"
+                  "sun": "रवि दिन",
+                  "mon": "सोम दिन",
+                  "tue": "मंगल दिन",
+                  "wed": "बुध दिन",
+                  "thu": "बृहस्पति दिन",
+                  "fri": "शुक्र दिन",
+                  "sat": "शनि दिन"
                 }
               },
               "stand-alone": {
@@ -174,13 +174,13 @@
                   "sat": "शनि"
                 },
                 "wide": {
-                  "sun": "रविवार",
-                  "mon": "सोमवार",
-                  "tue": "मंगलवार",
-                  "wed": "बुधवार",
-                  "thu": "गुरुवार",
-                  "fri": "शुक्रवार",
-                  "sat": "शनिवार"
+                  "sun": "रवि दिन",
+                  "mon": "सोम दिन",
+                  "tue": "मंगल दिन",
+                  "wed": "बुध दिन",
+                  "thu": "बृहस्पति दिन",
+                  "fri": "शुक्र दिन",
+                  "sat": "शनि दिन"
                 }
               }
             },
@@ -199,10 +199,10 @@
                   "4": "4"
                 },
                 "wide": {
-                  "1": "पहली तिमाही",
-                  "2": "दूसरी तिमाही",
-                  "3": "तीसरी तिमाही",
-                  "4": "चौथी तिमाही"
+                  "1": "पहिल तिमाही",
+                  "2": "दोसर तिमाही",
+                  "3": "तेसर तिमाही",
+                  "4": "चारिम तिमाही"
                 }
               },
               "stand-alone": {
@@ -219,10 +219,10 @@
                   "4": "4"
                 },
                 "wide": {
-                  "1": "पहली तिमाही",
-                  "2": "दूसरी तिमाही",
-                  "3": "तीसरी तिमाही",
-                  "4": "चौथी तिमाही"
+                  "1": "पहिल तिमाही",
+                  "2": "दोसर तिमाही",
+                  "3": "तेसर तिमाही",
+                  "4": "चारिम तिमाही"
                 }
               }
             },
@@ -237,8 +237,8 @@
                   "pm": "PM"
                 },
                 "wide": {
-                  "am": "am",
-                  "pm": "pm"
+                  "am": "भोर",
+                  "pm": "सांझ"
                 }
               },
               "stand-alone": {
@@ -269,15 +269,55 @@
             },
             "dateFormats": {
               "full": "G EEEE, d MMMM y",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMEEEEd"
+                }
+              },
               "long": "G d MMMM y",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMMd"
+                }
+              },
               "medium": "G d MMM y",
-              "short": "G d/M/y"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMMMd"
+                }
+              },
+              "short": "G d/M/y",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "GyMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "h:mm:ss a z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "h:mm:ss a",
-              "short": "h:mm a"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "h:mm a",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} के {0}",
@@ -298,6 +338,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G y MMM d",
                 "GyMMMEd": "G y MMM d, E",

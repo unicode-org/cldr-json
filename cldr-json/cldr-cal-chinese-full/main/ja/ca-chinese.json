@@ -3,7 +3,7 @@
     "ja": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ja"
       },
@@ -1072,21 +1072,70 @@
                 "_value": "U年MMMd日EEEE",
                 "_numbers": "hanidec"
               },
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": {
+                    "_value": "UMMMEEEEd",
+                    "_numbers": "hanidec"
+                  }
+                }
+              },
               "long": {
                 "_value": "U年MMMd日",
                 "_numbers": "hanidec"
+              },
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": {
+                    "_value": "UMMMd",
+                    "_numbers": "hanidec"
+                  }
+                }
               },
               "medium": {
                 "_value": "U年MMMd日",
                 "_numbers": "hanidec"
               },
-              "short": "U-M-d"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": {
+                    "_value": "UMMMd",
+                    "_numbers": "hanidec"
+                  }
+                }
+              },
+              "short": "U-M-d",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "UMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "H時mm分ss秒 zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmsszzzz"
+                }
+              },
               "long": "H:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmssz"
+                }
+              },
               "medium": "H:mm:ss",
-              "short": "H:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmmss"
+                }
+              },
+              "short": "H:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "Hmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1104,10 +1153,14 @@
                 "Ed": "d日(E)",
                 "EEEEd": "d日EEEE",
                 "Gy": "U年",
+                "GyMd": "U-M-d",
                 "GyMMM": "U年MMM",
                 "GyMMMd": "U年MMMd日",
                 "GyMMMEd": "U年MMMd日(E)",
                 "GyMMMEEEEd": "U年MMMd日EEEE",
+                "GyMMMM": "r(U)年MMMM",
+                "GyMMMMd": "r(U)年MMMMd日",
+                "GyMMMMEd": "r(U)年MMMMd日(E)",
                 "h": "aK時",
                 "H": "H時",
                 "hm": "aK:mm",
@@ -1129,7 +1182,7 @@
                 "UMMM": "U年MMM",
                 "UMMMd": "U年MMMd日",
                 "y": "U年",
-                "yMd": "U年M月d日",
+                "yMd": "U-M-d",
                 "yyyy": "U年",
                 "yyyyM": "U年M月",
                 "yyyyMd": "U年M月d日",
@@ -1140,6 +1193,8 @@
                 "yyyyMMMEd": "U年MMMd日(E)",
                 "yyyyMMMEEEEd": "U年MMMd日EEEE",
                 "yyyyMMMM": "U年MMMM",
+                "yyyyMMMMd": "r(U)年MMMMd日",
+                "yyyyMMMMEd": "r(U)年MMMMd日(E)",
                 "yyyyQQQ": "U年QQQ",
                 "yyyyQQQQ": "U年QQQQ"
               },

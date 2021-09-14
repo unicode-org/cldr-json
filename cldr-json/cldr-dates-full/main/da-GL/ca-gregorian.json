@@ -3,7 +3,7 @@
     "da-GL": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "da",
         "territory": "GL"
@@ -309,15 +309,55 @@
             },
             "dateFormats": {
               "full": "EEEE 'den' d. MMMM y",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMEEEEd"
+                }
+              },
               "long": "d. MMMM y",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMMd"
+                }
+              },
               "medium": "d. MMM y",
-              "short": "dd.MM.y"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMMd"
+                }
+              },
+              "short": "dd.MM.y",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "yMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH.mm.ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH.mm.ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH.mm.ss",
-              "short": "HH.mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH.mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} 'kl'. {0}",
@@ -338,6 +378,7 @@
                 "Ehms": "E h.mm.ss a",
                 "EHms": "E HH.mm.ss",
                 "Gy": "y G",
+                "GyMd": "d.M.y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d. MMM y G",
                 "GyMMMEd": "E d. MMM y G",
@@ -360,8 +401,8 @@
                 "MMMEd": "E d. MMM",
                 "MMMMd": "d. MMMM",
                 "MMMMEd": "E d. MMMM",
-                "MMMMW-count-one": "'uge' W 'i' MMMM",
-                "MMMMW-count-other": "'uge' W 'i' MMMM",
+                "MMMMW-count-one": "W. 'uge' 'i' MMMM",
+                "MMMMW-count-other": "W. 'uge' 'i' MMMM",
                 "ms": "mm.ss",
                 "y": "y",
                 "yM": "M.y",

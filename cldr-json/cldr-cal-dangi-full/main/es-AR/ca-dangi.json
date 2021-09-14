@@ -3,7 +3,7 @@
     "es-AR": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "es",
         "territory": "AR"
@@ -171,13 +171,13 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "sun": "dom.",
-                  "mon": "lun.",
-                  "tue": "mar.",
-                  "wed": "mié.",
-                  "thu": "jue.",
-                  "fri": "vie.",
-                  "sat": "sáb."
+                  "sun": "dom",
+                  "mon": "lun",
+                  "tue": "mar",
+                  "wed": "mié",
+                  "thu": "jue",
+                  "fri": "vie",
+                  "sat": "sáb"
                 },
                 "narrow": {
                   "sun": "D",
@@ -1057,16 +1057,56 @@
               }
             },
             "dateFormats": {
-              "full": "EEEE, d-M-y",
-              "long": "d-M-y",
-              "medium": "d-M-y",
-              "short": "d-M-y"
+              "full": "EEEE, d-M-r",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMEEEEd"
+                }
+              },
+              "long": "d-M-r",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMd"
+                }
+              },
+              "medium": "d-M-r",
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMd"
+                }
+              },
+              "short": "d-M-r",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMd"
+                }
+              }
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmsszzzz"
+                }
+              },
               "long": "HH:mm:ss z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmssz"
+                }
+              },
               "medium": "HH:mm:ss",
-              "short": "HH:mm"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmmss"
+                }
+              },
+              "short": "HH:mm",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "HHmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1082,10 +1122,13 @@
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "E d",
-                "Gy": "y",
-                "GyMMM": "M-y",
-                "GyMMMd": "d-M-y",
-                "GyMMMEd": "E, d-M-y",
+                "Gy": "r",
+                "GyMMM": "M-r",
+                "GyMMMd": "d-M-r",
+                "GyMMMEd": "E, d-M-r",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "hh a",
                 "H": "HH",
                 "hm": "hh:mm a",
@@ -1104,18 +1147,20 @@
                 "UMd": "U MM-d",
                 "UMMM": "U MMM",
                 "UMMMd": "U MMM d",
-                "y": "y",
+                "y": "r",
                 "yMd": "r-MM-dd",
-                "yyyy": "y",
-                "yyyyM": "M-y",
-                "yyyyMd": "d-M-y",
-                "yyyyMEd": "E, d-M-y",
-                "yyyyMMM": "M-y",
-                "yyyyMMMd": "d-M-y",
-                "yyyyMMMEd": "E, d-M-y",
-                "yyyyMMMM": "M-y",
-                "yyyyQQQ": "QQQ y",
-                "yyyyQQQQ": "QQQQ y"
+                "yyyy": "r",
+                "yyyyM": "M-r",
+                "yyyyMd": "d-M-r",
+                "yyyyMEd": "E, d-M-r",
+                "yyyyMMM": "M-r",
+                "yyyyMMMd": "d-M-r",
+                "yyyyMMMEd": "E, d-M-r",
+                "yyyyMMMM": "M-r",
+                "yyyyMMMMd": "r(U) MMMM d",
+                "yyyyMMMMEd": "r(U) MMMM d, E",
+                "yyyyQQQ": "QQQ r",
+                "yyyyQQQQ": "QQQQ r"
               },
               "appendItems": {
                 "Day": "{0} ({2}: {1})",

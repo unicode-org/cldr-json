@@ -3,7 +3,7 @@
     "ti": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ti"
       },
@@ -161,9 +161,9 @@
                 "wide": {
                   "sun": "ሰንበት",
                   "mon": "ሰኑይ",
-                  "tue": "ሠሉስ",
+                  "tue": "ሰሉስ",
                   "wed": "ረቡዕ",
-                  "thu": "ኃሙስ",
+                  "thu": "ሓሙስ",
                   "fri": "ዓርቢ",
                   "sat": "ቀዳም"
                 }
@@ -181,7 +181,7 @@
                 "narrow": {
                   "sun": "ሰ",
                   "mon": "ሰ",
-                  "tue": "ሠ",
+                  "tue": "ሰ",
                   "wed": "ረ",
                   "thu": "ሓ",
                   "fri": "ዓ",
@@ -199,9 +199,9 @@
                 "wide": {
                   "sun": "ሰንበት",
                   "mon": "ሰኑይ",
-                  "tue": "ሠሉስ",
+                  "tue": "ሰሉስ",
                   "wed": "ረቡዕ",
-                  "thu": "ኃሙስ",
+                  "thu": "ሓሙስ",
                   "fri": "ዓርቢ",
                   "sat": "ቀዳም"
                 }
@@ -210,10 +210,10 @@
             "quarters": {
               "format": {
                 "abbreviated": {
-                  "1": "ቀዳማይ ርብዒ",
-                  "2": "ካልኣይ ርብዒ",
-                  "3": "ሳልሳይ ርብዒ",
-                  "4": "ራብዓይ ርብዒ"
+                  "1": "ር1",
+                  "2": "ር2",
+                  "3": "ር3",
+                  "4": "ር4"
                 },
                 "narrow": {
                   "1": "1",
@@ -222,10 +222,10 @@
                   "4": "4"
                 },
                 "wide": {
-                  "1": "ቀዳማይ ርብዒ",
-                  "2": "ካልኣይ ርብዒ",
-                  "3": "ሳልሳይ ርብዒ",
-                  "4": "ራብዓይ ርብዒ"
+                  "1": "1ይ ርብዒ",
+                  "2": "2ይ ርብዒ",
+                  "3": "3ይ ርብዒ",
+                  "4": "4ይ ርብዒ"
                 }
               },
               "stand-alone": {
@@ -242,40 +242,40 @@
                   "4": "4"
                 },
                 "wide": {
-                  "1": "ቀዳማይ ርብዒ",
-                  "2": "ካልኣይ ርብዒ",
-                  "3": "ሳልሳይ ርብዒ",
-                  "4": "ራብዓይ ርብዒ"
+                  "1": "1ይ ርብዒ",
+                  "2": "2ይ ርብዒ",
+                  "3": "3ይ ርብዒ",
+                  "4": "4ይ ርብዒ"
                 }
               }
             },
             "dayPeriods": {
               "format": {
                 "abbreviated": {
-                  "am": "ቅ ፍር-መዓ",
-                  "pm": "ደሕ ፍር-መዓ"
+                  "am": "ቅ.ቀ.",
+                  "pm": "ድ.ቀ."
                 },
                 "narrow": {
-                  "am": "ንጉሆ ሰዓተ",
-                  "pm": "ድሕር ሰዓት"
+                  "am": "ቅ.ቀ.",
+                  "pm": "ድ.ቀ."
                 },
                 "wide": {
-                  "am": "ቅድመ ፍርቂ-መዓልቲ",
-                  "pm": "ደሕረ ፍርቀ-መዓልቲ"
+                  "am": "ቅ.ቀ.",
+                  "pm": "ድ.ቀ."
                 }
               },
               "stand-alone": {
                 "abbreviated": {
-                  "am": "ቅ ፍር-መዓ",
-                  "pm": "ደሕ ፍር-መዓ"
+                  "am": "ቅ.ቀ.",
+                  "pm": "ድ.ቀ."
                 },
                 "narrow": {
-                  "am": "ንጉሆ ሰዓተ",
-                  "pm": "ድሕር ሰዓት"
+                  "am": "ቅ.ቀ.",
+                  "pm": "ድ.ቀ."
                 },
                 "wide": {
-                  "am": "ቅድመ ፍርቂ-መዓልቲ",
-                  "pm": "ደሕረ ፍርቀ-መዓልቲ"
+                  "am": "ቅ.ቀ.",
+                  "pm": "ድ.ቀ."
                 }
               }
             },
@@ -1027,15 +1027,55 @@
             },
             "dateFormats": {
               "full": "r(U) MMMM d, EEEE",
+              "full": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMMEEEEd"
+                }
+              },
               "long": "r(U) MMMM d",
+              "long": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMMd"
+                }
+              },
               "medium": "r MMM d",
-              "short": "r-MM-dd"
+              "medium": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMMd"
+                }
+              },
+              "short": "r-MM-dd",
+              "short": {
+                "dateFormat": {
+                  "datetimeSkeleton": "rMMdd"
+                }
+              }
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
+              "full": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmsszzzz"
+                }
+              },
               "long": "h:mm:ss a z",
+              "long": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmssz"
+                }
+              },
               "medium": "h:mm:ss a",
-              "short": "h:mm a"
+              "medium": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmmss"
+                }
+              },
+              "short": "h:mm a",
+              "short": {
+                "timeFormat": {
+                  "datetimeSkeleton": "ahmm"
+                }
+              }
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1052,9 +1092,12 @@
                 "EBhms": "E h:mm:ss B",
                 "Ed": "d, E",
                 "Gy": "r U",
-                "GyMMM": "r(U) MMM",
+                "GyMMM": "r MMM",
                 "GyMMMd": "r MMM d",
-                "GyMMMEd": "r(U) MMM d, E",
+                "GyMMMEd": "r MMM d, E",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1079,10 +1122,12 @@
                 "yyyyM": "r-MM",
                 "yyyyMd": "r-MM-dd",
                 "yyyyMEd": "r-MM-dd, E",
-                "yyyyMMM": "r(U) MMM",
+                "yyyyMMM": "r MMM",
                 "yyyyMMMd": "r MMM d",
-                "yyyyMMMEd": "r(U) MMM d, E",
+                "yyyyMMMEd": "r MMM d, E",
                 "yyyyMMMM": "r(U) MMMM",
+                "yyyyMMMMd": "r(U) MMMM d",
+                "yyyyMMMMEd": "r(U) MMMM d, E",
                 "yyyyQQQ": "r(U) QQQ",
                 "yyyyQQQQ": "r(U) QQQQ"
               },
