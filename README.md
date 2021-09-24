@@ -17,9 +17,8 @@ If you require JSON data containing provisional or unconfirmed data, or data tha
 in any way, you can generate it using the Ldml2JSON conversion utility in CLDR's tools
 distribution (`org.unicode.cldr.json`).
 
-## Status
-Latest official release is version 39.0.0, published on 2021-04-30
-
+### Latest Release
+[![Latest Official Release](https://img.shields.io/github/v/tag/unicode-org/cldr-json?sort=semver)](https://github.com/unicode-org/cldr-json/releases/latest)
 ## Tags
 
 Previously, each repository was tagged with the release it pertains to, for example `38.0.0`.
