@@ -17,7 +17,7 @@ INDATA=../cldr-staging/production
 DIST=./dist
 
 # which types to generate
-TYPES="supplemental segments rbnf main annotations bcp47"
+TYPES=all
 
 # Only these files
 MATCH='.*'
@@ -26,4 +26,4 @@ MATCH='.*'
 DRAFTSTATUS="contributed"
 
 # override the version number of CLDR
-VERSION="39.0.0"
+#VERSION="39.0.0"
