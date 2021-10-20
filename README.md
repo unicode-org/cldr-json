@@ -31,8 +31,13 @@ Now, only the `cldr-json` repo will be used, and it will contain all data in a s
 2. Check out the [`cldr`](https://github.com/unicode-org/cldr) repo as a sibling to this one and set it up so maven builds are possible.
 3. Run the script `cldr-generate-json.sh`
 4. Data will be updated in the `cldr-json` subdirectory.
-5. Run the script `cldr-generate-zips.sh`
-6. npm packages can be updated as well. Each sub-subdirectory is an npm package.
+5. Run the script `cldr-generate-zips.sh` to generate zipfiles under `dist/`
+6. npm packages can be updated as well. Each sub-subdirectory is an npm package. The following script will preview
+(dry run) publishing to npm under the `beta` tag.
+
+```shell
+(cd cldr-json; for repo in $(ls); do (cd $repo; npm publish --tag beta --dry-run); done)
+```
 
 See `cldr-config.sh` for customization options.
 
