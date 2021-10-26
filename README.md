@@ -2,55 +2,22 @@
 
 JSON distribution of [CLDR](http://cldr.unicode.org/) locale data for internationalization
 
-It should be noted that XML (not JSON) is the "official" format for all CLDR data.  The
-JSON data contained in the packages described [below](#package-organization) is provided
-as a convenience for the development community, and is programatically generated from the
-corresponding XML, using the JSON conversion utility that is provided as part of the CLDR
-tooling (written in Java).
-
-The data in these packages is intended to serve as a common reference point for most
-JavaScript packages. As such, this JSON data is generated using only data that has achieved
-`draft="contributed"` or `draft="approved"` status in the CLDR. This is the same threshhold
-as is used by the [ICU](http://icu-project.org) (International Components for Unicode).
-
-If you require JSON data containing provisional or unconfirmed data, or data that is customized
-in any way, you can generate it using the Ldml2JSON conversion utility in CLDR's tools
-distribution (`org.unicode.cldr.json`).
-
 ### Latest Release
 [![Latest Official Release](https://img.shields.io/github/v/tag/unicode-org/cldr-json?sort=semver)](https://github.com/unicode-org/cldr-json/releases/latest)
-## Tags
 
-Previously, each repository was tagged with the release it pertains to, for example `38.0.0`.
-Now, only the `cldr-json` repo will be used, and it will contain all data in a single tag.
+Although XML (not JSON) is the "official" format for all CLDR data, this data is programatically generated from the
+corresponding XML, using the CLDR tooling.
 
-## Updating
+This JSON data is generated using only data that has achieved
+`draft="contributed"` or `draft="approved"` status in the CLDR. This is the same threshhold
+as is used by the [ICU](https://icu.unicode.org) (International Components for Unicode).
 
-1. Check out the [`cldr-staging`](https://github.com/unicode-org/cldr-staging) repo as a sibling to this one. This will be the data source.
-2. Check out the [`cldr`](https://github.com/unicode-org/cldr) repo as a sibling to this one and set it up so maven builds are possible.
-3. Run the script `cldr-generate-json.sh`
-4. Data will be updated in the `cldr-json` subdirectory.
-5. Run the script `cldr-generate-zips.sh` to generate zipfiles under `dist/`
-6. npm packages can be updated as well. Each sub-subdirectory is an npm package. The following script will preview
-(dry run) publishing to npm under the `beta` tag.
+See [UPDATING.md](./UPDATING.md) for details on building or customizing this data yourself.
 
-```shell
-(cd cldr-json; for repo in $(ls); do (cd $repo; npm publish --tag beta --dry-run); done)
-```
+### Who uses cldr-json?
 
-See `cldr-config.sh` for customization options.
-
-See [Updating JSON Data](http://cldr.unicode.org/development/updating-codes/updating-json-data)
-for detailed instructions.
-
-## Licensing
-
-This project is distributed by the [Unicode Consortium Terms of Use](http://unicode.org/repos/cldr/trunk/unicode-license.txt)
-
-## Dependencies
-
-This project requires the following other projects to run:
- * none
+See [USERS.md](./USERS.md) for a list of libraries
+which use this data.
 
 ## Package Organization
 
@@ -58,7 +25,9 @@ Because the CLDR is so large and contains so many different types of information
 here is grouped into packages by functionality. For each type of functionality, there are two
 available packages: The "modern" packages, which contain the set of locales listed as modern
 coverage targets by the CLDR subcomittee, and the "full" packages, which contain the complete
-set of locales, including those in the corresponding modern packages. The functional groups are:
+set of locales, including those in the corresponding modern packages.
+
+The functional groups are:
 
  - **cldr-core**        – Basic CLDR supplemental data — only one package here, no "full" and "modern".
  - **cldr-dates**       – Data for date/time formatting, including data for Gregorian calendar.
@@ -71,7 +40,15 @@ Requires that the corresponding **cldr-numbers** package be installed as well.
  - **cldr-segments**    – Line breaking data from Unicode's [ULI project](http://uli.unicode.org/)
  - **cldr-units**       – Data for units formatting.
 
-## Installation
+## Downloading
+### Tagged Releases
+
+See the [releases](https://github.com/unicode-org/cldr-json/releases) page for a list of cldr-json releases. As of v38, all
+JSON data is contained in this single repository.
+
+The GitHub release page also contains .zip files where you can download all full or modern data in a single .zip.
+
+## npm packages
 
 Installation using [npm](https://www.npmjs.com):
 
@@ -81,12 +58,20 @@ Installation using [npm](https://www.npmjs.com):
 
 (Note that bower is deprecated, please use npm.)
 
-## Who uses cldr-json?
-
-See [USERS.md](./USERS.md) for a list of libraries
-which use this data.
-
-## Bug reports
+## Bug reports / Contributing
 
 CLDR does not use Github's issue tracking system to track bugs.  If you find an error in
 the data contained here, please file a new ticket at [Unicode Jira](https://unicode-org.atlassian.net/projects/CLDR/issues)
+
+## Licenses
+
+- Usage of CLDR data and software is governed by the [Unicode Terms of Use](http://www.unicode.org/copyright.html)
+a copy of which is included as [unicode-license.txt](./unicode-license.txt).
+
+SPDX-License-Identifier: Unicode-DFS-2016
+
+## Copyright
+
+Copyright &copy; 1991-2021 Unicode, Inc.
+All rights reserved.
+[Terms of use](http://www.unicode.org/copyright.html)
