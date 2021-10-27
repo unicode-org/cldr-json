@@ -1,6 +1,15 @@
-# cldr-json package
+# cldr-annotations-derived-modern
 
-This package is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+Character annotation data, including derived data.
+
+This package contains the set of locales listed as modern coverage. See also the `cldr-annotations-derived-full` package.
+
+
+[![NPM version](https://img.shields.io/npm/v/cldr-annotations-derived-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-annotations-derived-modern)
+
+## General Info
+
+This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>

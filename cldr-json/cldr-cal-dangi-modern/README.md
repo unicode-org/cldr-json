@@ -1,6 +1,15 @@
-# cldr-json package
+# cldr-cal-dangi-modern
 
-This package is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+CLDR data for Dangi calendars.
+
+This package contains the set of locales listed as modern coverage. See also the `cldr-cal-dangi-full` package.
+
+
+[![NPM version](https://img.shields.io/npm/v/cldr-cal-dangi-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-dangi-modern)
+
+## General Info
+
+This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>

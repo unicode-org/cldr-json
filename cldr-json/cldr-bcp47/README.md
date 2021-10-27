@@ -1,6 +1,13 @@
-# cldr-json package
+# cldr-bcp47
 
-This package is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+BCP 47 metadata
+
+
+[![NPM version](https://img.shields.io/npm/v/cldr-bcp47.svg?style=flat)](https://www.npmjs.org/package/cldr-bcp47)
+
+## General Info
+
+This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>

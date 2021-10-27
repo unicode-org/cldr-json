@@ -1,6 +1,15 @@
-# cldr-json package
+# cldr-cal-buddhist-modern
 
-This package is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+CLDR data for Buddhist calendars.
+
+This package contains the set of locales listed as modern coverage. See also the `cldr-cal-buddhist-full` package.
+
+
+[![NPM version](https://img.shields.io/npm/v/cldr-cal-buddhist-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-buddhist-modern)
+
+## General Info
+
+This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>
