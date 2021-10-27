@@ -3,7 +3,7 @@
     "tt": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "tt"
       },
@@ -267,11 +267,23 @@
               "medium": "dd.MM.y (G)",
               "short": "dd.MM.y (GGGGG)"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMdd",
+              "short": "GGGGGyMMdd"
+            },
             "timeFormats": {
               "full": "H:mm:ss zzzz",
               "long": "H:mm:ss z",
               "medium": "H:mm:ss",
               "short": "H:mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1}, {0}",
@@ -292,6 +304,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y 'ел'",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "G y 'ел', MMM",
                 "GyMMMd": "G y 'ел', d MMM",
                 "GyMMMEd": "G y 'ел', d MMM, E",

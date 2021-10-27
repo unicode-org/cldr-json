@@ -3,7 +3,7 @@
     "ff-Adlm": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ff",
         "script": "Adlm"
@@ -272,16 +272,28 @@
               }
             },
             "dateFormats": {
-              "full": "G y MMMM d, EEEE",
-              "long": "G y MMMM d",
-              "medium": "G y MMM d",
-              "short": "GGGGG y-MM-dd"
+              "full": "EEEE d MMMM⹁ y G",
+              "long": "d MMMM⹁ y G",
+              "medium": "d MMM⹁ y G",
+              "short": "d-M-y GGGGG"
+            },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyMMdd"
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -296,15 +308,16 @@
                 "E": "ccc",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
-                "Ed": "d, E",
+                "Ed": "E d",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
-                "Gy": "G y",
-                "GyMMM": "G y MMM",
-                "GyMMMd": "G y MMM d",
-                "GyMMMEd": "G y MMM d, E",
+                "Gy": "y G",
+                "GyMd": "d-M-y GGGGG",
+                "GyMMM": "MMM y G",
+                "GyMMMd": "d MMM⹁ y G",
+                "GyMMMEd": "E⹁ d MMM⹁ y G",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -312,24 +325,24 @@
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
                 "M": "L",
-                "Md": "MM-dd",
-                "MEd": "MM-dd, E",
+                "Md": "d-M",
+                "MEd": "E d-M",
                 "MMM": "LLL",
-                "MMMd": "MMM d",
-                "MMMEd": "MMM d, E",
-                "MMMMd": "MMMM d",
+                "MMMd": "d MMM",
+                "MMMEd": "E d MMM",
+                "MMMMd": "d MMMM",
                 "ms": "mm:ss",
-                "y": "G y",
-                "yyyy": "G y",
-                "yyyyM": "GGGGG y-MM",
-                "yyyyMd": "GGGGG y-MM-dd",
-                "yyyyMEd": "GGGGG y-MM-dd, E",
-                "yyyyMMM": "G y MMM",
-                "yyyyMMMd": "G y MMM d",
-                "yyyyMMMEd": "G y MMM d, E",
-                "yyyyMMMM": "G y MMMM",
-                "yyyyQQQ": "G y QQQ",
-                "yyyyQQQQ": "G y QQQQ"
+                "y": "y G",
+                "yyyy": "y G",
+                "yyyyM": "M-y GGGGG",
+                "yyyyMd": "d-M-y GGGGG",
+                "yyyyMEd": "E⹁ d-M-y GGGGG",
+                "yyyyMMM": "MMM y G",
+                "yyyyMMMd": "d MMM⹁ y G",
+                "yyyyMMMEd": "E⹁ d MMM⹁ y G",
+                "yyyyMMMM": "MMMM y G",
+                "yyyyQQQ": "QQQ y G",
+                "yyyyQQQQ": "QQQQ y G"
               },
               "appendItems": {
                 "Day": "{0} ({2}: {1})",

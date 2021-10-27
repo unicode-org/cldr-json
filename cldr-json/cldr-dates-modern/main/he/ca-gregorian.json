@@ -3,7 +3,7 @@
     "he": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "he"
       },
@@ -306,9 +306,9 @@
                 "1-alt-variant": "CE"
               },
               "eraNarrow": {
-                "0": "לפנה״ס",
+                "0": "לפני",
                 "0-alt-variant": "BCE",
-                "1": "לספירה",
+                "1": "אחריי",
                 "1-alt-variant": "CE"
               }
             },
@@ -318,11 +318,23 @@
               "medium": "d בMMM y",
               "short": "d.M.y"
             },
+            "dateSkeletons": {
+              "full": "yMMMMEEEEd",
+              "long": "yMMMMd",
+              "medium": "yMMMd",
+              "short": "yMd"
+            },
             "timeFormats": {
               "full": "H:mm:ss zzzz",
               "long": "H:mm:ss z",
               "medium": "H:mm:ss",
               "short": "H:mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1} בשעה {0}",
@@ -343,6 +355,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E H:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d בMMM y G",
                 "GyMMMEd": "E, d בMMM y G",

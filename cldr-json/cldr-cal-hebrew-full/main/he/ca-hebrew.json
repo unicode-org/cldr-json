@@ -3,7 +3,7 @@
     "he": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "he"
       },
@@ -333,11 +333,35 @@
                 "_numbers": "hebr"
               }
             },
+            "dateSkeletons": {
+              "full": {
+                "_value": "yMMMMEEEEd",
+                "_numbers": "hebr"
+              },
+              "long": {
+                "_value": "yMMMMd",
+                "_numbers": "hebr"
+              },
+              "medium": {
+                "_value": "yMMMMd",
+                "_numbers": "hebr"
+              },
+              "short": {
+                "_value": "yMMMMd",
+                "_numbers": "hebr"
+              }
+            },
             "timeFormats": {
               "full": "H:mm:ss zzzz",
               "long": "H:mm:ss z",
               "medium": "H:mm:ss",
               "short": "H:mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1} בשעה {0}",
@@ -358,6 +382,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "MMMM y G",
                 "GyMMMd": "d בMMMM y G",
                 "GyMMMEd": "E, d בMMMM y G",
@@ -376,7 +401,7 @@
                 "MMMMd": "d בMMMM",
                 "MMMMEd": "E, d בMMMM",
                 "ms": "mm:ss",
-                "y": "y G",
+                "y": "y",
                 "yyyy": "y G",
                 "yyyyM": "MMMM y",
                 "yyyyMd": "d בMMMM y",
@@ -386,8 +411,8 @@
                 "yyyyMMMd": "d בMMMM y",
                 "yyyyMMMEd": "E, d בMMMM y",
                 "yyyyMMMM": "MMMM y",
-                "yyyyQQQ": "G y QQQ",
-                "yyyyQQQQ": "G y QQQQ"
+                "yyyyQQQ": "QQQ y בשעה G",
+                "yyyyQQQQ": "QQQQ y בשעה G"
               },
               "appendItems": {
                 "Day": "{0} ({2}: {1})",
@@ -405,8 +430,8 @@
               "intervalFormats": {
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
-                  "B": "h B – h B",
-                  "h": "h–h B"
+                  "B": "h בB – h בB",
+                  "h": "h–h בB"
                 },
                 "Bhm": {
                   "B": "h:mm B – h:mm B",
@@ -418,7 +443,7 @@
                 },
                 "Gy": {
                   "G": "y G – y G",
-                  "y": "G y–y"
+                  "y": "y – y G"
                 },
                 "GyM": {
                   "G": "GGGGG y-MM – GGGGG y-MM",
@@ -456,7 +481,7 @@
                 },
                 "h": {
                   "a": "h a – h a",
-                  "h": "h–h a"
+                  "h": "h – h a"
                 },
                 "H": {
                   "H": "H–H"
@@ -464,16 +489,16 @@
                 "hm": {
                   "a": "h:mm a – h:mm a",
                   "h": "h:mm–h:mm a",
-                  "m": "h:mm–h:mm a"
+                  "m": "h:mm – h:mm a"
                 },
                 "Hm": {
-                  "H": "H:mm–H:mm",
-                  "m": "H:mm–H:mm"
+                  "H": "HH:mm – HH:mm",
+                  "m": "HH:mm – HH:mm"
                 },
                 "hmv": {
                   "a": "h:mm a – h:mm a v",
-                  "h": "h:mm–h:mm a v",
-                  "m": "h:mm–h:mm a v"
+                  "h": "h:mm – h:mm a v",
+                  "m": "h:mm – h:mm a v"
                 },
                 "Hmv": {
                   "H": "H:mm–H:mm v",
@@ -481,32 +506,32 @@
                 },
                 "hv": {
                   "a": "h a – h a v",
-                  "h": "h–h a v"
+                  "h": "h – h a v"
                 },
                 "Hv": {
                   "H": "H–H v"
                 },
                 "M": {
-                  "M": "M–M"
+                  "M": "MMM – MMM"
                 },
                 "Md": {
-                  "d": "dd/MM – dd/MM",
-                  "M": "dd/MM – dd/MM"
+                  "d": "d – d בMMM",
+                  "M": "d בMMM – d בMMM"
                 },
                 "MEd": {
-                  "d": "EEEE dd/MM – EEEE dd/MM",
-                  "M": "EEEE dd/MM – EEEE dd/MM"
+                  "d": "E d בMMM – E d בMMM",
+                  "M": "E d בMMM – E d בMMM"
                 },
                 "MMM": {
                   "M": "MMM–MMM"
                 },
                 "MMMd": {
-                  "d": "d–d MMM",
-                  "M": "d MMM – d MMM"
+                  "d": "d–d בMMM",
+                  "M": "d בMMM – d בMMM"
                 },
                 "MMMEd": {
-                  "d": "EEEE d MMM – EEEE d MMM",
-                  "M": "EEEE d MMM – EEEE d MMM"
+                  "d": "E d בMMM – E d בMMM",
+                  "M": "E d בMMM – E d בMMM"
                 },
                 "MMMM": {
                   "M": "LLLL–LLLL"
@@ -515,36 +540,36 @@
                   "y": "y–y"
                 },
                 "yM": {
-                  "M": "MM/y – MM/y",
-                  "y": "MM/y – MM/y"
+                  "M": "MMM y – MMM y",
+                  "y": "MMM y – MMM y"
                 },
                 "yMd": {
-                  "d": "dd/MM/y – dd/MM/y",
-                  "M": "dd/MM/y – dd/MM/y",
-                  "y": "dd/MM/y – dd/MM/y"
+                  "d": "d – d בMMM y",
+                  "M": "d בMMMM – d בMMMM y",
+                  "y": "d בMMM y – d בMMM y"
                 },
                 "yMEd": {
-                  "d": "EEEE dd/MM/y – EEEE dd/MM/y",
-                  "M": "EEEE dd/MM/y – EEEE dd/MM/y",
-                  "y": "EEEE dd/MM/y – EEEE dd/MM/y"
+                  "d": "E d בMMM – E d בMMM y",
+                  "M": "E d בMMM – E d בMMM y",
+                  "y": "E d בMMM y – E d בMMM y"
                 },
                 "yMMM": {
                   "M": "MMM–MMM y",
                   "y": "MMM y – MMM y"
                 },
                 "yMMMd": {
-                  "d": "d–d MMM y",
-                  "M": "d MMM – d MMM y",
-                  "y": "d MMM y – d MMM y"
+                  "d": "d–d בMMM y",
+                  "M": "d בMMM – d בMMM y",
+                  "y": "d בMMM y – d בMMM y"
                 },
                 "yMMMEd": {
-                  "d": "EEEE d MMM – EEEE d MMM y",
-                  "M": "EEEE d MMM – EEEE d MMM y",
-                  "y": "EEEE d MMM y – EEEE d MMM y"
+                  "d": "E d בMMM – E d בMMM y",
+                  "M": "E d בMMM – E d בMMM y",
+                  "y": "E d בMMM y – E d בMMM y"
                 },
                 "yMMMM": {
-                  "M": "MMMM – MMMM y G",
-                  "y": "MMMM y–MMMM y"
+                  "M": "MMMM–MMMM y",
+                  "y": "MMMM y – MMMM y"
                 }
               }
             }

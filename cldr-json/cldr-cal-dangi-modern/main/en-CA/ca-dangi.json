@@ -3,7 +3,7 @@
     "en-CA": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "en",
         "territory": "CA"
@@ -133,13 +133,13 @@
             "days": {
               "format": {
                 "abbreviated": {
-                  "sun": "Sun.",
-                  "mon": "Mon.",
-                  "tue": "Tue.",
-                  "wed": "Wed.",
-                  "thu": "Thu.",
-                  "fri": "Fri.",
-                  "sat": "Sat."
+                  "sun": "Sun",
+                  "mon": "Mon",
+                  "tue": "Tue",
+                  "wed": "Wed",
+                  "thu": "Thu",
+                  "fri": "Fri",
+                  "sat": "Sat"
                 },
                 "narrow": {
                   "sun": "S",
@@ -171,13 +171,13 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "sun": "Sun.",
-                  "mon": "Mon.",
-                  "tue": "Tue.",
-                  "wed": "Wed.",
-                  "thu": "Thu.",
-                  "fri": "Fri.",
-                  "sat": "Sat."
+                  "sun": "Sun",
+                  "mon": "Mon",
+                  "tue": "Tue",
+                  "wed": "Wed",
+                  "thu": "Thu",
+                  "fri": "Fri",
+                  "sat": "Sat"
                 },
                 "narrow": {
                   "sun": "S",
@@ -1081,11 +1081,23 @@
               "short": "r-MM-dd",
               "short-alt-variant": "d/M/r"
             },
+            "dateSkeletons": {
+              "full": "rMMMMEEEEd",
+              "long": "rMMMMd",
+              "medium": "rMMMd",
+              "short": "rMd"
+            },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
               "long": "h:mm:ss a z",
               "medium": "h:mm:ss a",
               "short": "h:mm a"
+            },
+            "timeSkeletons": {
+              "full": "ahmmsszzzz",
+              "long": "ahmmssz",
+              "medium": "ahmmss",
+              "short": "ahmm"
             },
             "dateTimeFormats": {
               "full": "{1} 'at' {0}",
@@ -1106,9 +1118,12 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "r(U)",
-                "GyMMM": "MMM r(U)",
+                "GyMMM": "MMM r",
                 "GyMMMd": "MMM d, r",
                 "GyMMMEd": "E, MMM d, r(U)",
+                "GyMMMM": "MMMM r(U)",
+                "GyMMMMd": "d MMMM r(U)",
+                "GyMMMMEd": "E, d MMMM r(U)",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1135,15 +1150,16 @@
                 "yMd-alt-variant": "d/M/r",
                 "yyyy": "r(U)",
                 "yyyyM": "r-MM",
-                "yyyyM-alt-variant": "M/r",
                 "yyyyMd": "r-MM-dd",
                 "yyyyMd-alt-variant": "d/M/r",
                 "yyyyMEd": "E, r-MM-dd",
                 "yyyyMEd-alt-variant": "E, d/M/r",
-                "yyyyMMM": "MMM r(U)",
+                "yyyyMMM": "MMM r",
                 "yyyyMMMd": "MMM d, r",
                 "yyyyMMMEd": "E, MMM d, r(U)",
                 "yyyyMMMM": "MMMM r(U)",
+                "yyyyMMMMd": "d MMMM r(U)",
+                "yyyyMMMMEd": "E, d MMMM r(U)",
                 "yyyyQQQ": "QQQ r(U)",
                 "yyyyQQQQ": "QQQQ r(U)"
               },
@@ -1237,9 +1253,7 @@
                 },
                 "yM": {
                   "M": "y-MM – y-MM",
-                  "M-alt-variant": "M/y – M/y",
-                  "y": "y-MM – y-MM",
-                  "y-alt-variant": "M/y – M/y"
+                  "y": "y-MM – y-MM"
                 },
                 "yMd": {
                   "d": "y-MM-dd – y-MM-dd",

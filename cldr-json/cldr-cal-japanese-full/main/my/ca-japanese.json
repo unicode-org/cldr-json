@@ -3,7 +3,7 @@
     "my": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "my"
       },
@@ -1011,11 +1011,23 @@
               "medium": "G d MMM y",
               "short": "GGGGG dd-MM-yy"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEdd",
+              "long": "GyMMMMdd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyyMMdd"
+            },
             "timeFormats": {
               "full": "zzzz HH:mm:ss",
               "long": "z HH:mm:ss",
-              "medium": "B HH:mm:ss",
-              "short": "B H:mm"
+              "medium": "H:mm:ss",
+              "short": "H:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1036,6 +1048,7 @@
                 "Ehms": "E a h:mm:ss",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G d MMM y",
                 "GyMMMEd": "G d MMM y Eနေ့",
@@ -1050,7 +1063,7 @@
                 "MEd": "d/M Eနေ့",
                 "MMM": "LLL",
                 "MMMd": "MMM d",
-                "MMMEd": "MMM d၊ E",
+                "MMMEd": "MMM d- E",
                 "MMMMd": "MMMM d",
                 "MMMMEd": "MMMM d Eနေ့",
                 "ms": "mm:ss",

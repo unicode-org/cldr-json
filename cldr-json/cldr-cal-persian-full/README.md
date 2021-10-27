@@ -1,6 +1,15 @@
-# cldr-json package
+# cldr-cal-persian-full
 
-This package is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+CLDR data for Persian calendars.
+
+This package contains the complete set of locales, including what is in the `cldr-cal-persian-modern` package.
+
+
+[![NPM version](https://img.shields.io/npm/v/cldr-cal-persian-full.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-persian-full)
+
+## General Info
+
+This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>

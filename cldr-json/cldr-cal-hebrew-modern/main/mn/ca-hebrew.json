@@ -3,7 +3,7 @@
     "mn": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "mn"
       },
@@ -315,11 +315,23 @@
               "medium": "G y 'оны' MMM'ын' d",
               "short": "GGGGG y.MM.dd"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMccccd",
+              "long": "GyMMdd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyMMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss (zzzz)",
               "long": "HH:mm:ss (z)",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -340,6 +352,7 @@
                 "Ehms": "E. h:mm:ss a",
                 "EHms": "E. HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "GGGGG y.MM.dd",
                 "GyMMM": "G y 'оны' MMM",
                 "GyMMMd": "G y 'оны' MMM'ын' d",
                 "GyMMMEd": "G y 'оны' MMM'ын' d. E",

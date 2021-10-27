@@ -1,6 +1,15 @@
-# cldr-json package
+# cldr-misc-modern
 
-This package is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+Other CLDR data not defined elsewhere
+
+This package contains the set of locales listed as modern coverage. See also the `cldr-misc-full` package.
+
+
+[![NPM version](https://img.shields.io/npm/v/cldr-misc-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-misc-modern)
+
+## General Info
+
+This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>

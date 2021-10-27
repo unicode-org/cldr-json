@@ -3,7 +3,7 @@
     "ko": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ko"
       },
@@ -318,11 +318,23 @@
               "medium": "y. M. d.",
               "short": "yy. M. d."
             },
+            "dateSkeletons": {
+              "full": "yMEEEEd",
+              "long": "yMd",
+              "medium": "yMd",
+              "short": "yyMd"
+            },
             "timeFormats": {
               "full": "a h시 m분 s초 zzzz",
               "long": "a h시 m분 s초 z",
               "medium": "a h:mm:ss",
               "short": "a h:mm"
+            },
+            "timeSkeletons": {
+              "full": "ahmszzzz",
+              "long": "ahmsz",
+              "medium": "ahmmss",
+              "short": "ahmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -344,6 +356,7 @@
                 "Ehms": "(E) a h:mm:ss",
                 "EHms": "(E) HH:mm:ss",
                 "Gy": "G y년",
+                "GyMd": "GGGGG y/M/d",
                 "GyMMM": "G y년 MMM",
                 "GyMMMd": "G y년 MMM d일",
                 "GyMMMEd": "G y년 MMM d일 (E)",

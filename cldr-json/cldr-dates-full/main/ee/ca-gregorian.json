@@ -3,7 +3,7 @@
     "ee": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ee"
       },
@@ -312,11 +312,23 @@
               "medium": "MMM d 'lia', y",
               "short": "M/d/yy"
             },
+            "dateSkeletons": {
+              "full": "yMMMMEEEEd",
+              "long": "yMMMMd",
+              "medium": "yMMMd",
+              "short": "yyMd"
+            },
             "timeFormats": {
               "full": "a 'ga' h:mm:ss zzzz",
               "long": "a 'ga' h:mm:ss z",
               "medium": "a 'ga' h:mm:ss",
               "short": "a 'ga' h:mm"
+            },
+            "timeSkeletons": {
+              "full": "ahmmsszzzz",
+              "long": "ahmmssz",
+              "medium": "ahmmss",
+              "short": "ahmm"
             },
             "dateTimeFormats": {
               "full": "{0} {1}",
@@ -337,6 +349,7 @@
                 "Ehms": "E a 'ga' h:mm:ss",
                 "EHms": "E 'ga' HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "MMM d 'lia', y G",
                 "GyMMMEd": "E, MMM d 'lia' y G",

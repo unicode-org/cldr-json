@@ -3,7 +3,7 @@
     "et": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "et"
       },
@@ -130,13 +130,13 @@
                   "sat": "L"
                 },
                 "wide": {
-                  "sun": "pühapäev",
-                  "mon": "esmaspäev",
-                  "tue": "teisipäev",
-                  "wed": "kolmapäev",
-                  "thu": "neljapäev",
-                  "fri": "reede",
-                  "sat": "laupäev"
+                  "sun": "Pühapäev",
+                  "mon": "Esmaspäev",
+                  "tue": "Teisipäev",
+                  "wed": "Kolmapäev",
+                  "thu": "Neljapäev",
+                  "fri": "Reede",
+                  "sat": "Laupäev"
                 }
               },
               "stand-alone": {
@@ -168,13 +168,13 @@
                   "sat": "L"
                 },
                 "wide": {
-                  "sun": "pühapäev",
-                  "mon": "esmaspäev",
-                  "tue": "teisipäev",
-                  "wed": "kolmapäev",
-                  "thu": "neljapäev",
-                  "fri": "reede",
-                  "sat": "laupäev"
+                  "sun": "Pühapäev",
+                  "mon": "Esmaspäev",
+                  "tue": "Teisipäev",
+                  "wed": "Kolmapäev",
+                  "thu": "Neljapäev",
+                  "fri": "Reede",
+                  "sat": "Laupäev"
                 }
               }
             },
@@ -1011,11 +1011,23 @@
               "medium": "dd.MM.y G",
               "short": "dd.MM.y GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMdd",
+              "short": "GGGGGyMMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1}, 'kell' {0}",
@@ -1036,6 +1048,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d.MM.y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d. MMM y G",
                 "GyMMMEd": "E, d. MMMM y G",
@@ -1095,25 +1108,25 @@
                   "d": "d–d"
                 },
                 "Gy": {
-                  "G": "G y – G y",
-                  "y": "G y–y"
+                  "G": "y G – y G",
+                  "y": "y–y G"
                 },
                 "GyM": {
-                  "G": "GGGGG y-MM – GGGGG y-MM",
-                  "M": "GGGGG y-MM – y-MM",
-                  "y": "GGGGG y-MM – y-MM"
+                  "G": "M.y GGGGG – M.y GGGGG",
+                  "M": "M.y–M.y GGGGG",
+                  "y": "M.y–M.y GGGGG"
                 },
                 "GyMd": {
-                  "d": "GGGGG y-MM-dd – y-MM-dd",
-                  "G": "GGGGG y-MM-dd – GGGGG y-MM-dd",
-                  "M": "GGGGG y-MM-dd – y-MM-dd",
-                  "y": "GGGGG y-MM-dd – y-MM-dd"
+                  "d": "d.MM.y–d.MM.y GGGGG",
+                  "G": "d.MM.y GGGGG – d.MM.y GGGGG",
+                  "M": "d.MM.y–d.MM.y GGGGG",
+                  "y": "d.MM.y–d.MM.y GGGGG"
                 },
                 "GyMEd": {
-                  "d": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "G": "GGGGG y-MM-dd, E – GGGGG y-MM-dd, E",
-                  "M": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "y": "GGGGG y-MM-dd, E – y-MM-dd, E"
+                  "d": "E, d.MM.y – E, d.MM.y GGGGG",
+                  "G": "E, d.MM.y GGGGG – E, d.MM.y GGGGG",
+                  "M": "E, d.MM.y – E, d.MM.y GGGGG",
+                  "y": "E, d.MM.y – E, d.MM.y GGGGG"
                 },
                 "GyMMM": {
                   "G": "MMM y G – MMM y G",

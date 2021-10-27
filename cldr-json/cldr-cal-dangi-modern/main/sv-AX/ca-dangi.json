@@ -3,7 +3,7 @@
     "sv-AX": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "sv",
         "territory": "AX"
@@ -1068,6 +1068,12 @@
               "medium": "d MMM r",
               "short": "r-MM-dd"
             },
+            "dateSkeletons": {
+              "full": "rMMMMEEEEd",
+              "long": "rMMMMd",
+              "medium": "rMMMd",
+              "short": "rMMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "full-alt-variant": "'kl'. HH.mm.ss zzzz",
@@ -1077,6 +1083,13 @@
               "medium-alt-variant": "HH.mm.ss",
               "short": "HH:mm",
               "short-alt-variant": "HH.mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "full-alt-variant": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1096,6 +1109,9 @@
                 "GyMMM": "MMM r(U)",
                 "GyMMMd": "d MMM r",
                 "GyMMMEd": "E d MMM r(U)",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1124,6 +1140,8 @@
                 "yyyyMMMd": "d MMM r",
                 "yyyyMMMEd": "E d MMM r(U)",
                 "yyyyMMMM": "MMMM r(U)",
+                "yyyyMMMMd": "r(U) MMMM d",
+                "yyyyMMMMEd": "r(U) MMMM d, E",
                 "yyyyQQQ": "QQQ r(U)",
                 "yyyyQQQQ": "QQQQ r(U)"
               },

@@ -3,7 +3,7 @@
     "gu": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "gu"
       },
@@ -289,13 +289,13 @@
               },
               "eraAbbr": {
                 "0": "ઈ.સ.પૂર્વે",
-                "0-alt-variant": "સા.યુ.પ.",
+                "0-alt-variant": "ઈ.સ.પૂર્વે",
                 "1": "ઈ.સ.",
                 "1-alt-variant": "સા.યુ."
               },
               "eraNarrow": {
                 "0": "ઇ સ પુ",
-                "0-alt-variant": "સા.યુ.પ.",
+                "0-alt-variant": "ઈ.સ.પૂર્વે",
                 "1": "ઇસ",
                 "1-alt-variant": "સા.યુ."
               }
@@ -306,11 +306,23 @@
               "medium": "d MMM, y",
               "short": "d/M/yy"
             },
+            "dateSkeletons": {
+              "full": "yMMMMEEEEd",
+              "long": "yMMMMd",
+              "medium": "yMMMd",
+              "short": "yyMd"
+            },
             "timeFormats": {
               "full": "hh:mm:ss a zzzz",
               "long": "hh:mm:ss a z",
               "medium": "hh:mm:ss a",
               "short": "hh:mm a"
+            },
+            "timeSkeletons": {
+              "full": "ahhmmsszzzz",
+              "long": "ahhmmssz",
+              "medium": "ahhmmss",
+              "short": "ahhmm"
             },
             "dateTimeFormats": {
               "full": "{1} એ {0} વાગ્યે",
@@ -331,6 +343,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "MMM, G y",
                 "GyMMMd": "d MMM, G y",
                 "GyMMMEd": "E, d MMM, G y",

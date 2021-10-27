@@ -3,7 +3,7 @@
     "lo": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "lo"
       },
@@ -312,11 +312,23 @@
               "medium": "d MMM y",
               "short": "d/M/y"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "yMMMMd",
+              "medium": "yMMMd",
+              "short": "yMd"
+            },
             "timeFormats": {
               "full": "H ໂມງ m ນາທີ ss ວິນາທີ zzzz",
               "long": "H ໂມງ m ນາທີ ss ວິນາທີ z",
               "medium": "H:mm:ss",
               "short": "H:mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmsszzzz",
+              "long": "Hmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1}, {0}",
@@ -337,6 +349,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "d/M/GGGGG y",
                 "GyMMM": "MMM, G y",
                 "GyMMMd": "d MMMM, G y",
                 "GyMMMEd": "E d MMMM, G y",

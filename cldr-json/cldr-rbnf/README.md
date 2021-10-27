@@ -1,6 +1,13 @@
-# cldr-json package
+# cldr-rbnf
 
-This package is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+Rule Based Number Formatting data
+
+
+[![NPM version](https://img.shields.io/npm/v/cldr-rbnf.svg?style=flat)](https://www.npmjs.org/package/cldr-rbnf)
+
+## General Info
+
+This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>

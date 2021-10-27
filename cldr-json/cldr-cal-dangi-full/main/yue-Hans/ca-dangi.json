@@ -3,7 +3,7 @@
     "yue-Hans": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "yue",
         "script": "Hans"
@@ -1074,11 +1074,23 @@
               "medium": "U年MMMd日",
               "short": "U/M/d"
             },
+            "dateSkeletons": {
+              "full": "UMMMEEEEd",
+              "long": "UMMMd",
+              "medium": "UMMMd",
+              "short": "UMd"
+            },
             "timeFormats": {
-              "full": "zzzz ah:mm:ss",
-              "long": "z ah:mm:ss",
-              "medium": "ah:mm:ss",
-              "short": "ah:mm"
+              "full": "zzzz HH:mm:ss",
+              "long": "z HH:mm:ss",
+              "medium": "HH:mm:ss",
+              "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1098,6 +1110,9 @@
                 "GyMMM": "rU年MMM",
                 "GyMMMd": "r年MMMd",
                 "GyMMMEd": "rU年MMMdE",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1126,6 +1141,8 @@
                 "yyyyMMMd": "r年MMMd",
                 "yyyyMMMEd": "rU年MMMdE",
                 "yyyyMMMM": "rU年MMMM",
+                "yyyyMMMMd": "r(U) MMMM d",
+                "yyyyMMMMEd": "r(U) MMMM d, E",
                 "yyyyQQQ": "rU年QQQQ",
                 "yyyyQQQQ": "rU年QQQQ"
               },

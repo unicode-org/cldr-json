@@ -3,7 +3,7 @@
     "vi": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "vi"
       },
@@ -1067,11 +1067,23 @@
               "medium": "dd-MM U",
               "short": "dd/MM/y"
             },
+            "dateSkeletons": {
+              "full": "UMMMMEEEEdd",
+              "long": "UMdd",
+              "medium": "UMMdd",
+              "short": "yMMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1091,6 +1103,9 @@
                 "GyMMM": "r(U) MMM",
                 "GyMMMd": "r MMM d",
                 "GyMMMEd": "r(U) MMM d, E",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "d/MMMM r(U)",
+                "GyMMMMEd": "E, d/MMMM r(U)",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1119,6 +1134,8 @@
                 "yyyyMMMd": "r MMM d",
                 "yyyyMMMEd": "r(U) MMM d, E",
                 "yyyyMMMM": "r(U) MMMM",
+                "yyyyMMMMd": "d/MMMM r(U)",
+                "yyyyMMMMEd": "E, d/MMMM r(U)",
                 "yyyyQQQ": "r(U) QQQ",
                 "yyyyQQQQ": "r(U) QQQQ"
               },

@@ -27,19 +27,7 @@ available packages: The "modern" packages, which contain the set of locales list
 coverage targets by the CLDR subcomittee, and the "full" packages, which contain the complete
 set of locales, including those in the corresponding modern packages.
 
-The functional groups are:
-
- - **cldr-core**        – Basic CLDR supplemental data — only one package here, no "full" and "modern".
- - **cldr-dates**       – Data for date/time formatting, including data for Gregorian calendar.
-Requires that the corresponding **cldr-numbers** package be installed as well.
- - **cldr-cal-_type_**      – CLDR data for non-Gregorian calendars. _type_ is one of the supported non-Gregorian calendar types in CLDR: buddhist, chinese, coptic, dangi, ethiopic, hebrew, indian, islamic, japanese, persian, or roc.
- - **cldr-localenames** – Translated versions of locale display name elements: languages, scripts, territories, and variants.
- - **cldr-misc**        – Other CLDR data not defined elsewhere.
- - **cldr-numbers**     – Data for number formatting.
- - **cldr-rbnf**        – Rule Based Number Formatting data — only one package here, no "full" and "modern".
- - **cldr-segments**    – Line breaking data from Unicode's [ULI project](http://uli.unicode.org/)
- - **cldr-units**       – Data for units formatting.
-
+See [PACKAGES.md](./PACKAGES.md) for the full package list.
 ## Downloading
 ### Tagged Releases
 

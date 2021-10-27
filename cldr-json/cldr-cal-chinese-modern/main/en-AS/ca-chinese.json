@@ -3,7 +3,7 @@
     "en-AS": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "en",
         "territory": "AS"
@@ -1080,11 +1080,23 @@
               "medium": "MMM d, r",
               "short": "M/d/r"
             },
+            "dateSkeletons": {
+              "full": "rMMMMEEEEd",
+              "long": "rMMMMd",
+              "medium": "rMMMd",
+              "short": "rMd"
+            },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
               "long": "h:mm:ss a z",
               "medium": "h:mm:ss a",
               "short": "h:mm a"
+            },
+            "timeSkeletons": {
+              "full": "ahmmsszzzz",
+              "long": "ahmmssz",
+              "medium": "ahmmss",
+              "short": "ahmm"
             },
             "dateTimeFormats": {
               "full": "{1} 'at' {0}",
@@ -1105,9 +1117,12 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "r(U)",
-                "GyMMM": "MMM r(U)",
+                "GyMMM": "MMM r",
                 "GyMMMd": "MMM d, r",
-                "GyMMMEd": "E, MMM d, r(U)",
+                "GyMMMEd": "E, MMM d, r",
+                "GyMMMM": "MMMM r(U)",
+                "GyMMMMd": "MMMM d, r(U)",
+                "GyMMMMEd": "E, MMMM d, r(U)",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1127,15 +1142,17 @@
                 "UMMM": "MMM U",
                 "UMMMd": "MMM d, U",
                 "y": "r(U)",
-                "yMd": "M/d/r",
+                "yMd": "r-MM-dd",
                 "yyyy": "r(U)",
                 "yyyyM": "M/r",
                 "yyyyMd": "M/d/r",
                 "yyyyMEd": "E, M/d/r",
-                "yyyyMMM": "MMM r(U)",
+                "yyyyMMM": "MMM r",
                 "yyyyMMMd": "MMM d, r",
-                "yyyyMMMEd": "E, MMM d, r(U)",
+                "yyyyMMMEd": "E, MMM d, r",
                 "yyyyMMMM": "MMMM r(U)",
+                "yyyyMMMMd": "MMMM d, r(U)",
+                "yyyyMMMMEd": "E, MMMM d, r(U)",
                 "yyyyQQQ": "QQQ r(U)",
                 "yyyyQQQQ": "QQQQ r(U)"
               },

@@ -3,7 +3,7 @@
     "fr-CA": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "fr",
         "territory": "CA"
@@ -310,11 +310,23 @@
               "medium": "d MMM y G",
               "short": "yy-MM-dd GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyyMMdd"
+            },
             "timeFormats": {
               "full": "HH 'h' mm 'min' ss 's' zzzz",
               "long": "HH 'h' mm 'min' ss 's' z",
               "medium": "HH 'h' mm 'min' ss 's'",
               "short": "HH 'h' mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} 'à' {0}",
@@ -335,6 +347,7 @@
                 "Ehms": "E h 'h' mm 'min' ss 's' a",
                 "EHms": "E HH 'h' mm 'min' ss 's'",
                 "Gy": "y G",
+                "GyMd": "y-MM-dd GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E d MMM y G",

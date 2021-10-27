@@ -3,7 +3,7 @@
     "zh-Hant-HK": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "zh",
         "script": "Hant",
@@ -1019,11 +1019,23 @@
               "medium": "Gy年M月d日",
               "short": "Gy/M/d"
             },
+            "dateSkeletons": {
+              "full": "GyMEEEEd",
+              "long": "GyMd",
+              "medium": "GyMd",
+              "short": "GyMd"
+            },
             "timeFormats": {
               "full": "ah:mm:ss [zzzz]",
               "long": "ah:mm:ss [z]",
               "medium": "ah:mm:ss",
               "short": "ah:mm"
+            },
+            "timeSkeletons": {
+              "full": "ahmmsszzzz",
+              "long": "ahmmssz",
+              "medium": "ahmmss",
+              "short": "ahmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1041,9 +1053,10 @@
                 "Ed": "d日（E）",
                 "Ehm": "E ah:mm",
                 "EHm": "E HH:mm",
-                "Ehms": "E ah:mm:ss",
+                "Ehms": "E Bh:mm:ss",
                 "EHms": "E HH:mm:ss",
                 "Gy": "Gy年",
+                "GyMd": "G y/M/d",
                 "GyMMM": "Gy年M月",
                 "GyMMMd": "Gy年M月d日",
                 "GyMMMEd": "Gy年M月d日E",
@@ -1140,6 +1153,7 @@
                 },
                 "h": {
                   "a": "ah時至ah時",
+                  "B": "Bh時至Bh時",
                   "h": "ah時至h時"
                 },
                 "H": {
@@ -1147,6 +1161,7 @@
                 },
                 "hm": {
                   "a": "ah:mm至ah:mm",
+                  "B": "Bh:mm至Bh:mm",
                   "h": "ah:mm至h:mm",
                   "m": "ah:mm至h:mm"
                 },
@@ -1156,6 +1171,7 @@
                 },
                 "hmv": {
                   "a": "ah:mm至ah:mm [v]",
+                  "B": "Bh:mm至Bh:mm [v]",
                   "h": "ah:mm至h:mm [v]",
                   "m": "ah:mm至h:mm [v]"
                 },
@@ -1165,6 +1181,7 @@
                 },
                 "hv": {
                   "a": "ah時至ah時 [v]",
+                  "B": "Bh時至Bh時 [v]",
                   "h": "ah時至h時 [v]"
                 },
                 "Hv": {

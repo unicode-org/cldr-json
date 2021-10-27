@@ -3,7 +3,7 @@
     "en-NG": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "en",
         "territory": "NG"
@@ -22,7 +22,7 @@
                   "6": "Jun",
                   "7": "Jul",
                   "8": "Aug",
-                  "9": "Sep",
+                  "9": "Sept",
                   "10": "Oct",
                   "11": "Nov",
                   "12": "Dec"
@@ -66,7 +66,7 @@
                   "6": "Jun",
                   "7": "Jul",
                   "8": "Aug",
-                  "9": "Sep",
+                  "9": "Sept",
                   "10": "Oct",
                   "11": "Nov",
                   "12": "Dec"
@@ -1024,11 +1024,23 @@
               "medium": "MMM d, y G",
               "short": "M/d/y GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyMd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} 'at' {0}",
@@ -1049,6 +1061,7 @@
                 "Ehms": "E, h:mm:ss a",
                 "EHms": "E, HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "dd/MM/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E, d MMM y G",

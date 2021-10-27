@@ -2,20 +2,19 @@
   "annotations": {
     "identity": {
       "version": {
-        "_cldrVersion": "39"
+        "_cldrVersion": "40"
       },
       "language": "sv"
     },
     "annotations": {
       "{": {
         "default": [
-          "fågelkrok",
-          "klammerparentes",
-          "spetsparentes",
-          "vänster klammerparentes"
+          "ackolad",
+          "inledande klammerparentes",
+          "klammerparentes"
         ],
         "tts": [
-          "vänster klammerparentes"
+          "inledande klammerparentes"
         ]
       },
       "🏻": {
@@ -322,9 +321,10 @@
         "default": [
           "apostrof",
           "citattecken",
-          "enkelt citationstecken",
-          "smart citationstecken",
-          "vänster apostrof"
+          "enkelt citattecken",
+          "typoghrafiskt citattecken",
+          "vänster apostrof",
+          "vänsterställd apostrof"
         ],
         "tts": [
           "vänster apostrof"
@@ -334,9 +334,10 @@
         "default": [
           "apostrof",
           "citattecken",
-          "enkelt citationstecken",
+          "enkelt citattecken",
           "höger apostrof",
-          "smart citationstecken"
+          "högerställd apostrof",
+          "typografiskt citattecken"
         ],
         "tts": [
           "höger apostrof"
@@ -358,23 +359,23 @@
           "citat",
           "citattecken",
           "dubbelt citattecken",
-          "smart citattecken",
-          "vänster citattecken"
+          "inledande citattecken",
+          "typografiskt citattecken"
         ],
         "tts": [
-          "vänster citattecken"
+          "inledande citattecken"
         ]
       },
       "”": {
         "default": [
+          "avslutande citattecken",
           "citat",
           "citattecken",
           "dubbelt citattecken",
-          "höger citattecken",
-          "smart citattecken"
+          "typografiskt citattecken"
         ],
         "tts": [
-          "höger citattecken"
+          "avslutande citattecken"
         ]
       },
       "„": {
@@ -382,12 +383,12 @@
           "citat",
           "citattecken",
           "dubbelt citattecken",
-          "nedsänkt citattecken",
-          "nedsänkt högerställt citattecken",
-          "smart citattecken"
+          "nedre avslutande citattecken",
+          "nedre citattecken",
+          "typografiskt citattecken"
         ],
         "tts": [
-          "nedsänkt högerställt citattecken"
+          "nedre avslutande citattecken"
         ]
       },
       "«": {
@@ -416,88 +417,89 @@
       },
       ")": {
         "default": [
-          "höger parentes",
+          "avslutande parentes",
           "klammer",
           "parentes",
           "rundparentes"
         ],
         "tts": [
-          "höger parentes"
+          "avslutande parentes"
         ]
       },
       "[": {
         "default": [
           "hakparentes",
-          "klammer",
-          "parentes",
-          "vänster hakparentes"
-        ],
-        "tts": [
-          "vänster hakparentes"
-        ]
-      },
-      "]": {
-        "default": [
-          "hakparentes",
-          "höger hakparentes",
+          "inledande hakparentes",
           "klammer",
           "parentes"
         ],
         "tts": [
-          "höger hakparentes"
+          "inledande hakparentes"
+        ]
+      },
+      "]": {
+        "default": [
+          "avslutande hakparentes",
+          "hakparentes",
+          "klammer",
+          "parentes"
+        ],
+        "tts": [
+          "avslutande hakparentes"
         ]
       },
       "}": {
         "default": [
-          "fågelkrok",
-          "höger klammerparentes",
-          "klammerparentes",
-          "spetsparentes"
+          "ackolad",
+          "avslutande klammerparentes",
+          "klammerparentes"
         ],
         "tts": [
-          "höger klammerparentes"
+          "avslutande klammerparentes"
         ]
       },
       "〈": {
         "default": [
           "chevron",
+          "inledande vinkelparentes",
           "klammer",
-          "vänster vinkelparentes",
           "vinkelparentes"
         ],
         "tts": [
-          "vänster vinkelparentes"
+          "inledande vinkelparentes"
         ]
       },
       "〉": {
         "default": [
+          "avslutande vinkelparentes",
           "chevron",
-          "höger vinkelparentes",
           "klammer",
           "vinkelparentes"
         ],
         "tts": [
-          "höger vinkelparentes"
+          "avslutande vinkelparentes"
         ]
       },
       "《": {
         "default": [
-          "dubbel vänster vinkelparentes",
+          "dubbel inledande vinkelparentes",
           "dubbel vinkelparantes",
+          "inledande dubbel vinkelparentes",
           "klammer"
         ],
         "tts": [
-          "dubbel vänster vinkelparentes"
+          "inledande dubbel vinkelparentes"
         ]
       },
       "》": {
         "default": [
-          "dubbel höger vinkelparentes",
+          "avslutande dubbel vinkelparentes",
+          "dubbel avslutande vinkelparentes",
           "dubbel vinkelparentes",
           "klammer"
         ],
         "tts": [
-          "dubbel höger vinkelparentes"
+          "avslutande dubbel vinkelparentes"
         ]
       },
       "「": {
@@ -565,23 +567,25 @@
       "〔": {
         "default": [
           "inledande sköldpaddsskalformat parentestecken",
+          "inledande sköldpaddsskalsparentes",
           "parentestecken",
           "skalformat parentestecken",
           "sköldpaddsskalformat parentestecken"
         ],
         "tts": [
-          "inledande sköldpaddsskalformat parentestecken"
+          "inledande sköldpaddsskalsparentes"
         ]
       },
       "〕": {
         "default": [
           "avslutande sköldpaddsskalformat parentestecken",
+          "avslutande sköldpaddsskalparentes",
           "parentestecken",
           "skalformat parentestecken",
           "sköldpaddsskalformat parentestecken"
         ],
         "tts": [
-          "avslutande sköldpaddsskalformat parentestecken"
+          "avslutande sköldpaddsskalparentes"
         ]
       },
       "〖": {
@@ -628,6 +632,16 @@
           "paragraftecken"
         ]
       },
+      "@": {
+        "default": [
+          "@-tecken",
+          "at-tecken",
+          "snabel-a"
+        ],
+        "tts": [
+          "snabel-a"
+        ]
+      },
       "*": {
         "default": [
           "asterisk",
@@ -650,6 +664,11 @@
         ]
       },
       "\\": {
+        "default": [
+          "bakåt snedstreck",
+          "bakstreck",
+          "omvänt snedstreck"
+        ],
         "tts": [
           "omvänt snedstreck"
         ]
@@ -662,6 +681,41 @@
         ],
         "tts": [
           "et-tecken"
+        ]
+      },
+      "#": {
+        "default": [
+          "fyrkant",
+          "fyrtagg",
+          "hash",
+          "hash-tagg",
+          "hashtecken",
+          "nummer",
+          "nummertecken",
+          "pound"
+        ],
+        "tts": [
+          "fyrkant"
+        ]
+      },
+      "%": {
+        "default": [
+          "hundradel",
+          "per hundra",
+          "procent"
+        ],
+        "tts": [
+          "procent"
+        ]
+      },
+      "‰": {
+        "default": [
+          "per tusen",
+          "promille",
+          "tusendel"
+        ],
+        "tts": [
+          "promille"
         ]
       },
       "†": {
@@ -713,6 +767,26 @@
         ],
         "tts": [
           "primtecken"
+        ]
+      },
+      "″": {
+        "default": [
+          "dubbelprim",
+          "dubbelprimtecken"
+        ],
+        "tts": [
+          "dubbelprimtecken"
+        ]
+      },
+      "‴": {
+        "default": [
+          "prim",
+          "trippelprim",
+          "trippelprimtecken",
+          "triss"
+        ],
+        "tts": [
+          "trippelprimtecken"
         ]
       },
       "‸": {
@@ -796,7 +870,7 @@
           "copyright",
           "inspelning",
           "ljud",
-          "ljudinspelning upphovsrätt",
+          "ljudinspelning",
           "upphovsrätt"
         ],
         "tts": [
@@ -1576,6 +1650,16 @@
           "n-ställig summering"
         ]
       },
+      "+": {
+        "default": [
+          "addera",
+          "plus",
+          "plustecken"
+        ],
+        "tts": [
+          "plustecken"
+        ]
+      },
       "±": {
         "default": [
           "plus-minus"
@@ -1609,9 +1693,9 @@
       "<": {
         "default": [
           "mindre än",
-          "mindre än-tecknet",
-          "mindreäntecknet",
-          "vinkel"
+          "mindre än-tecken",
+          "starttagg",
+          "tagg"
         ],
         "tts": [
           "mindre än"
@@ -1628,8 +1712,7 @@
       "=": {
         "default": [
           "lika med",
-          "likhetstecken",
-          "summa"
+          "likhetstecken"
         ],
         "tts": [
           "likhetstecken"
@@ -1647,10 +1730,10 @@
       },
       ">": {
         "default": [
+          "sluttagg",
           "större än",
-          "större än-tecknet",
-          "störreäntecknet",
-          "vinkel"
+          "större än-tecken",
+          "tagg"
         ],
         "tts": [
           "större än"
@@ -3012,6 +3095,438 @@
           "moll"
         ]
       },
+      "🥹": {
+        "default": [
+          "ansikte som håller tillbaka tårarna",
+          "arg",
+          "gråter",
+          "ledsen",
+          "tårar i ögonen"
+        ],
+        "tts": [
+          "ansikte som håller tillbaka tårarna"
+        ]
+      },
+      "🧌": {
+        "default": [
+          "fantasy",
+          "monster",
+          "saga",
+          "sägen",
+          "troll"
+        ],
+        "tts": [
+          "troll"
+        ]
+      },
+      "🩻": {
+        "default": [
+          "ben",
+          "läkare",
+          "medicin",
+          "röntgen",
+          "skelett"
+        ],
+        "tts": [
+          "röntgen"
+        ]
+      },
+      "🩼": {
+        "default": [
+          "funktionsnedsättning",
+          "handikapp",
+          "käpp",
+          "krycka",
+          "mobilitetshjälpmedel",
+          "skadad"
+        ],
+        "tts": [
+          "krycka"
+        ]
+      },
+      "🪩": {
+        "default": [
+          "dansa",
+          "disco",
+          "discokula",
+          "fest",
+          "glitter"
+        ],
+        "tts": [
+          "discokula"
+        ]
+      },
+      "🪪": {
+        "default": [
+          "ID",
+          "ID-kort",
+          "legitimation",
+          "personuppgifter",
+          "säkerhet"
+        ],
+        "tts": [
+          "ID-kort"
+        ]
+      },
+      "🪫": {
+        "default": [
+          "elektronik",
+          "låg batterinivå",
+          "låg energinivå"
+        ],
+        "tts": [
+          "låg batterinivå"
+        ]
+      },
+      "🪬": {
+        "default": [
+          "amulett",
+          "Fatima",
+          "hamsa",
+          "hand",
+          "Maria",
+          "Miriam",
+          "skydd"
+        ],
+        "tts": [
+          "hamsa"
+        ]
+      },
+      "🪷": {
+        "default": [
+          "blomma",
+          "buddhism",
+          "hinduism",
+          "Indien",
+          "lotus",
+          "renhet",
+          "Vietnam"
+        ],
+        "tts": [
+          "lotus"
+        ]
+      },
+      "🪸": {
+        "default": [
+          "korall",
+          "ocean",
+          "rev"
+        ],
+        "tts": [
+          "korall"
+        ]
+      },
+      "🪹": {
+        "default": [
+          "ruva",
+          "tomt bo"
+        ],
+        "tts": [
+          "tomt bo"
+        ]
+      },
+      "🪺": {
+        "default": [
+          "bo med ägg",
+          "ruva"
+        ],
+        "tts": [
+          "bo med ägg"
+        ]
+      },
+      "🫃": {
+        "default": [
+          "gravid",
+          "gravid man",
+          "stor mage",
+          "uppsvälld"
+        ],
+        "tts": [
+          "gravid man"
+        ]
+      },
+      "🫄": {
+        "default": [
+          "gravid",
+          "gravid person",
+          "stor mage",
+          "uppsvälld"
+        ],
+        "tts": [
+          "gravid person"
+        ]
+      },
+      "🫅": {
+        "default": [
+          "ädling",
+          "kung",
+          "kunglighet",
+          "monark",
+          "person med krona"
+        ],
+        "tts": [
+          "person med krona"
+        ]
+      },
+      "🫗": {
+        "default": [
+          "dryck",
+          "glas",
+          "hälla vätska",
+          "spilla",
+          "tomt"
+        ],
+        "tts": [
+          "hälla vätska"
+        ]
+      },
+      "🫘": {
+        "default": [
+          "bönor",
+          "kidneybönor",
+          "mat"
+        ],
+        "tts": [
+          "bönor"
+        ]
+      },
+      "🫙": {
+        "default": [
+          "behållare",
+          "burk",
+          "förvaring",
+          "krydda",
+          "sås",
+          "tom"
+        ],
+        "tts": [
+          "burk"
+        ]
+      },
+      "🫠": {
+        "default": [
+          "flytande",
+          "försvinner",
+          "smältande ansikte",
+          "smälter",
+          "upplöses"
+        ],
+        "tts": [
+          "smältande ansikte"
+        ]
+      },
+      "🫡": {
+        "default": [
+          "ansikte som gör honnör",
+          "hälsa",
+          "honnör",
+          "instämma",
+          "ja",
+          "ok",
+          "salutera"
+        ],
+        "tts": [
+          "ansikte som gör honnör"
+        ]
+      },
+      "🫢": {
+        "default": [
+          "ansikte med ögonen öppna och handen för munnen",
+          "förvånad",
+          "generad",
+          "misstro",
+          "överraskad",
+          "överväldigad",
+          "rädd"
+        ],
+        "tts": [
+          "ansikte med ögonen öppna och handen för munnen"
+        ]
+      },
+      "🫣": {
+        "default": [
+          "ansikte som kisar",
+          "fängslad",
+          "kikar",
+          "stirrar"
+        ],
+        "tts": [
+          "ansikte som kisar"
+        ]
+      },
+      "🫤": {
+        "default": [
+          "ansikte med diagonal mun",
+          "besviken",
+          "osäker",
+          "skeptisk"
+        ],
+        "tts": [
+          "ansikte med diagonal mun"
+        ]
+      },
+      "🫥": {
+        "default": [
+          "deprimerad",
+          "försvinner",
+          "gömd",
+          "introvert",
+          "osynlig",
+          "osynligt ansikte"
+        ],
+        "tts": [
+          "osynligt ansikte"
+        ]
+      },
+      "🫦": {
+        "default": [
+          "ängslig",
+          "biter i läppen",
+          "flirtar",
+          "nervös",
+          "obekväm",
+          "orolig",
+          "rädd"
+        ],
+        "tts": [
+          "biter i läppen"
+        ]
+      },
+      "🫧": {
+        "default": [
+          "bubblor",
+          "lödder",
+          "rap",
+          "rent",
+          "tvål",
+          "under vatten"
+        ],
+        "tts": [
+          "bubblor"
+        ]
+      },
+      "🫰": {
+        "default": [
+          "dyrt",
+          "hand med tummen och pekfingret korsade",
+          "knäppa med fingrarna",
+          "pengaprassel",
+          "pengar",
+          "snäppa med fingrarna"
+        ],
+        "tts": [
+          "hand med tummen och pekfingret korsade"
+        ]
+      },
+      "🫱": {
+        "default": [
+          "hand",
+          "hand som pekar till höger",
+          "höger",
+          "till höger"
+        ],
+        "tts": [
+          "hand som pekar till höger"
+        ]
+      },
+      "🫲": {
+        "default": [
+          "hand",
+          "hand som pekar till vänster",
+          "till vänster",
+          "vänster"
+        ],
+        "tts": [
+          "hand som pekar till vänster"
+        ]
+      },
+      "🫳": {
+        "default": [
+          "avvisa",
+          "handflatan nedåt",
+          "neka",
+          "schas"
+        ],
+        "tts": [
+          "handflatan nedåt"
+        ]
+      },
+      "🫴": {
+        "default": [
+          "bjuda in",
+          "erbjuda",
+          "fånga",
+          "handflatan uppåt",
+          "kalla på"
+        ],
+        "tts": [
+          "handflatan uppåt"
+        ]
+      },
+      "🫵": {
+        "default": [
+          "finger som pekar på mig",
+          "mig",
+          "peka"
+        ],
+        "tts": [
+          "finger som pekar på mig"
+        ]
+      },
+      "🫶": {
+        "default": [
+          "handhjärta",
+          "kärlek"
+        ],
+        "tts": [
+          "handhjärta"
+        ]
+      },
+      "🛝": {
+        "default": [
+          "leka",
+          "lekplats",
+          "nöjesfält",
+          "rutschbana"
+        ],
+        "tts": [
+          "rutschbana"
+        ]
+      },
+      "🛞": {
+        "default": [
+          "cirkel",
+          "däck",
+          "hjul",
+          "rulla"
+        ],
+        "tts": [
+          "hjul"
+        ]
+      },
+      "🛟": {
+        "default": [
+          "flytetyg",
+          "frälsarkrans",
+          "livboj",
+          "livräddning",
+          "räddning",
+          "säkerhet"
+        ],
+        "tts": [
+          "livboj"
+        ]
+      },
+      "🟰": {
+        "default": [
+          "fetstilt likamedtecken",
+          "likhet",
+          "matte"
+        ],
+        "tts": [
+          "fetstilt likamedtecken"
+        ]
+      },
       "😀": {
         "default": [
           "ansikte med stort leende",
@@ -3678,7 +4193,9 @@
         "default": [
           "anonym",
           "ansikte",
+          "förklädnad",
           "glasögon",
+          "inkognito",
           "mask",
           "maskerat ansikte",
           "näsa"
@@ -4391,6 +4908,17 @@
           "brustet hjärta"
         ]
       },
+      "❤‍🔥": {
+        "default": [
+          "besviken",
+          "brinnande hjärta",
+          "osäker",
+          "skeptisk"
+        ],
+        "tts": [
+          "brinnande hjärta"
+        ]
+      },
       "❤‍🩹": {
         "default": [
           "friskna till",
@@ -4701,7 +5229,7 @@
           "fingrar",
           "förhör",
           "handgest",
-          "knuten",
+          "nypa",
           "sarkastisk"
         ],
         "tts": [
@@ -6061,8 +6589,8 @@
       },
       "🧑‍🎨": {
         "default": [
-          "artist",
-          "konstnär"
+          "konstnär",
+          "palett"
         ],
         "tts": [
           "konstnär"
@@ -7760,8 +8288,9 @@
       },
       "🧘": {
         "default": [
-          "meditering",
+          "meditation",
           "person i lotusposition",
+          "person i lotusställning",
           "yoga"
         ],
         "tts": [
@@ -9621,8 +10150,7 @@
       "🫑": {
         "default": [
           "grönsak",
-          "paprika",
-          "röd paprika"
+          "paprika"
         ],
         "tts": [
           "paprika"
@@ -10892,9 +11420,10 @@
       },
       "🪵": {
         "default": [
-          "stockar",
-          "timmerstockar",
+          "stock",
+          "timmerstock",
           "trä",
+          "trästock",
           "trästockar",
           "ved"
         ],
@@ -11681,7 +12210,8 @@
         "default": [
           "automatisk riksha",
           "bilriksha",
-          "motorriksha",
+          "motordriven rickshaw",
+          "motordriven riksha",
           "tuk-tuk"
         ],
         "tts": [
@@ -11983,9 +12513,10 @@
       },
       "🚠": {
         "default": [
-          "fordon",
           "gondolbana",
-          "linbana"
+          "kabinbana",
+          "linbana",
+          "skidlift"
         ],
         "tts": [
           "linbana"
@@ -11994,7 +12525,7 @@
       "🚡": {
         "default": [
           "funifor",
-          "gondol",
+          "gondolbana",
           "kabinbana",
           "linbana"
         ],
@@ -12035,6 +12566,7 @@
         "default": [
           "hotell",
           "klocka",
+          "piccolo",
           "plingklocka",
           "receptionsklocka"
         ],
@@ -12094,9 +12626,7 @@
       "⏱": {
         "default": [
           "klocka",
-          "kronograf",
           "stoppur",
-          "tid",
           "tidtagarur"
         ],
         "tts": [
@@ -13492,10 +14022,12 @@
       },
       "🪄": {
         "default": [
-          "tro´llstav",
+          "häxa",
+          "magi",
           "trollkarl",
           "trollkonst",
-          "trollspö"
+          "trollspö",
+          "trollstav"
         ],
         "tts": [
           "trollspö"
@@ -15109,7 +15641,10 @@
       "✉": {
         "default": [
           "brev",
+          "e-post",
+          "e-postmeddelande",
           "kuvert",
+          "mail",
           "mejl"
         ],
         "tts": [
@@ -15126,7 +15661,7 @@
           "mejl"
         ],
         "tts": [
-          "e-postsymbol"
+          "e-post"
         ]
       },
       "📨": {
@@ -15658,6 +16193,7 @@
       },
       "🔫": {
         "default": [
+          "leksakspistol",
           "pistol",
           "revolver",
           "vapen",
@@ -17420,9 +17956,11 @@
       },
       "❓": {
         "default": [
+          "?",
           "fråga",
-          "frågetecken",
-          "rött frågetecken"
+          "interpunktion",
+          "rött frågetecken",
+          "tecken"
         ],
         "tts": [
           "rött frågetecken"
@@ -18535,6 +19073,17 @@
         ],
         "tts": [
           "cent"
+        ]
+      },
+      "$": {
+        "default": [
+          "dollar",
+          "pengar",
+          "peso",
+          "USD"
+        ],
+        "tts": [
+          "dollar"
         ]
       },
       "£": {

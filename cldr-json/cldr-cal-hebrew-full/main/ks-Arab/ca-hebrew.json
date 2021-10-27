@@ -3,7 +3,7 @@
     "ks-Arab": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ks",
         "script": "Arab"
@@ -280,11 +280,23 @@
               "medium": "MMM d, Gy",
               "short": "M/d/Gy"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GyMd"
+            },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
               "long": "h:mm:ss a z",
               "medium": "h:mm:ss a",
               "short": "h:mm a"
+            },
+            "timeSkeletons": {
+              "full": "ahmmsszzzz",
+              "long": "ahmmssz",
+              "medium": "ahmmss",
+              "short": "ahmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -305,6 +317,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "Gy",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "MMM Gy",
                 "GyMMMd": "MMM d, Gy",
                 "GyMMMEd": "EEE, MMM d, Gy",
