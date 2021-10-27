@@ -3,7 +3,7 @@
     "zh-Hans-HK": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "zh",
         "script": "Hans",
@@ -1084,11 +1084,32 @@
               },
               "short": "r/M/d"
             },
+            "dateSkeletons": {
+              "full": {
+                "_value": "UMMMEEEEd",
+                "_numbers": "hanidec"
+              },
+              "long": {
+                "_value": "UMMMd",
+                "_numbers": "hanidec"
+              },
+              "medium": {
+                "_value": "UMMMd",
+                "_numbers": "hanidec"
+              },
+              "short": "rMd"
+            },
             "timeFormats": {
               "full": "zzzz ah:mm:ss",
               "long": "z ah:mm:ss",
               "medium": "ah:mm:ss",
               "short": "ah:mm"
+            },
+            "timeSkeletons": {
+              "full": "ahmmsszzzz",
+              "long": "ahmmssz",
+              "medium": "ahmmss",
+              "short": "ahmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1108,6 +1129,9 @@
                 "GyMMM": "rU年MMM",
                 "GyMMMd": "r年MMMd",
                 "GyMMMEd": "rU年MMMdE",
+                "GyMMMM": "rU年MMMM",
+                "GyMMMMd": "rU年MMMMd",
+                "GyMMMMEd": "rU年MMMdE",
                 "h": "ah时",
                 "H": "HH",
                 "hm": "ah:mm",
@@ -1136,6 +1160,8 @@
                 "yyyyMMMd": "r年MMMd",
                 "yyyyMMMEd": "rU年MMMdE",
                 "yyyyMMMM": "rU年MMMM",
+                "yyyyMMMMd": "rU年MMMMd",
+                "yyyyMMMMEd": "rU年MMMMdE",
                 "yyyyQQQ": "rU年QQQQ",
                 "yyyyQQQQ": "rU年QQQQ"
               },

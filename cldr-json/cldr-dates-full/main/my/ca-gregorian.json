@@ -3,7 +3,7 @@
     "my": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "my"
       },
@@ -307,16 +307,28 @@
               }
             },
             "dateFormats": {
-              "full": "y၊ MMMM d၊ EEEE",
-              "long": "y၊ d MMMM",
-              "medium": "y၊ MMM d",
+              "full": "y- MMMM d- EEEE",
+              "long": "y- MMMM d",
+              "medium": "y- MMM d",
               "short": "dd-MM-yy"
+            },
+            "dateSkeletons": {
+              "full": "yMMMMEEEEd",
+              "long": "yMMMMd",
+              "medium": "yMMMd",
+              "short": "yyMMdd"
             },
             "timeFormats": {
               "full": "zzzz HH:mm:ss",
               "long": "z HH:mm:ss",
-              "medium": "B HH:mm:ss",
-              "short": "B H:mm"
+              "medium": "H:mm:ss",
+              "short": "H:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -337,9 +349,10 @@
                 "Ehms": "E B h:mm:ss",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "G y MMM",
-                "GyMMMd": "G y၊ MMM d",
-                "GyMMMEd": "G y၊ MMM d၊ E",
+                "GyMMMd": "G y- MMM d",
+                "GyMMMEd": "G y- MMM d- E",
                 "h": "B h",
                 "H": "HH",
                 "hm": "B h:mm",
@@ -352,10 +365,10 @@
                 "Hmv": "v HH:mm",
                 "M": "L",
                 "Md": "d/M",
-                "MEd": "d/M၊ E",
+                "MEd": "d-M- E",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
-                "MMMEd": "MMM d၊ E",
+                "MMMEd": "MMM d- E",
                 "MMMMd": "MMMM d",
                 "MMMMEd": "MMMM d ရက် Eနေ့",
                 "MMMMW-count-other": "MMMM လ W ပတ်မြောက်",
@@ -363,10 +376,10 @@
                 "y": "y",
                 "yM": "M/y",
                 "yMd": "dd-MM-y",
-                "yMEd": "d/M/y၊ E",
+                "yMEd": "d/M/y- E",
                 "yMMM": "MMM y",
-                "yMMMd": "y၊ MMM d",
-                "yMMMEd": "y၊ MMM d၊ E",
+                "yMMMd": "y- MMM d",
+                "yMMMEd": "y- MMM d- E",
                 "yMMMM": "y MMMM",
                 "yQQQ": "y QQQ",
                 "yQQQQ": "y QQQQ",
@@ -477,8 +490,8 @@
                   "M": "d/M – d/M"
                 },
                 "MEd": {
-                  "d": "d/M၊ EEEE – d/M၊ EEEE",
-                  "M": "d/M၊ EEEE – d/M၊ EEEE"
+                  "d": "d/M- EEEE – d/M- EEEE",
+                  "M": "d/M- EEEE – d/M- EEEE"
                 },
                 "MMM": {
                   "M": "MMM – MMM"
@@ -488,8 +501,8 @@
                   "M": "MMM d – MMM d"
                 },
                 "MMMEd": {
-                  "d": "MMM d၊ E – MMM d၊ E",
-                  "M": "MMM d၊ E – MMM d၊ E"
+                  "d": "MMM d- E – MMM d- E",
+                  "M": "MMM d- E – MMM d- E"
                 },
                 "y": {
                   "y": "y – y"
@@ -504,23 +517,23 @@
                   "y": "d/M/y – d/M/y"
                 },
                 "yMEd": {
-                  "d": "d/M/y၊ EEEE – d/M/y၊ EEEE",
-                  "M": "d/M/y၊ EEEE – d/M/y၊ EEEE",
-                  "y": "d/M/y၊ EEEE – d/M/y၊ EEEE"
+                  "d": "d/M/y- EEEE – d/M/y- EEEE",
+                  "M": "d/M/y- EEEE – d/M/y- EEEE",
+                  "y": "d/M/y- EEEE – d/M/y- EEEE"
                 },
                 "yMMM": {
                   "M": "y MMM – MMM",
                   "y": "y MMM – y MMM"
                 },
                 "yMMMd": {
-                  "d": "y၊ MMM d – d",
-                  "M": "y၊ MMM d – MMM d",
-                  "y": "y၊ MMM d – y၊ MMM d"
+                  "d": "y- MMM d – d",
+                  "M": "y- MMM d – MMM d",
+                  "y": "y- MMM d – y- MMM d"
                 },
                 "yMMMEd": {
-                  "d": "y၊ MMM d၊ EEEE – MMM d၊ EEEE",
-                  "M": "y၊ MMM d၊ EEEE – MMM d၊ EEEE",
-                  "y": "y၊ MMM d၊ EEEE – y၊ MMM d၊ EEEE"
+                  "d": "y- MMM d- EEEE – MMM d- EEEE",
+                  "M": "y- MMM d- EEEE – MMM d- EEEE",
+                  "y": "y- MMM d- EEEE – y- MMM d- EEEE"
                 },
                 "yMMMM": {
                   "M": "y MMMM – MMMM",

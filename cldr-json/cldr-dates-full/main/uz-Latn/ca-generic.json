@@ -3,7 +3,7 @@
     "uz-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "uz",
         "script": "Latn"
@@ -307,11 +307,23 @@
               "medium": "d-MMM, y (G)",
               "short": "dd.MM.y (GGGGG)"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyMMdd"
+            },
             "timeFormats": {
               "full": "H:mm:ss (zzzz)",
               "long": "H:mm:ss (z)",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1}, {0}",
@@ -332,6 +344,7 @@
                 "Ehms": "E, h:mm:ss (a)",
                 "EHms": "E, HH:mm:ss",
                 "Gy": "y (G)",
+                "GyMd": "dd.MM.y GGGGG",
                 "GyMMM": "MMM, y (G)",
                 "GyMMMd": "d-MMM, y (G)",
                 "GyMMMEd": "E, d-MMM, y (G)",

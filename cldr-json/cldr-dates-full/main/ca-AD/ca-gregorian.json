@@ -3,7 +3,7 @@
     "ca-AD": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ca",
         "territory": "AD"
@@ -319,11 +319,23 @@
               "medium": "d MMM y",
               "short": "d/M/yy"
             },
+            "dateSkeletons": {
+              "full": "yMMMMEEEEd",
+              "long": "yMMMMd",
+              "medium": "yMMMd",
+              "short": "yyMd"
+            },
             "timeFormats": {
               "full": "H:mm:ss (zzzz)",
               "long": "H:mm:ss z",
               "medium": "H:mm:ss",
               "short": "H:mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1}, 'a' 'les' {0}",
@@ -344,6 +356,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E H:mm:ss",
                 "Gy": "y G",
+                "GyMd": "dd-MM-y GGGGG",
                 "GyMMM": "LLL y G",
                 "GyMMMd": "d MMM 'de' y G",
                 "GyMMMEd": "E, d MMM 'de' y G",

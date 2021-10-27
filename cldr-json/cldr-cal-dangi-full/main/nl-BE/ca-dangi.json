@@ -3,7 +3,7 @@
     "nl-BE": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "nl",
         "territory": "BE"
@@ -1062,11 +1062,23 @@
               "medium": "d MMM r",
               "short": "dd-MM-r"
             },
+            "dateSkeletons": {
+              "full": "rMMMMEEEEd",
+              "long": "rMMMMd",
+              "medium": "rMMMd",
+              "short": "rMMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} 'om' {0}",
@@ -1086,6 +1098,9 @@
                 "GyMMM": "MMM r (U)",
                 "GyMMMd": "d MMM r",
                 "GyMMMEd": "E d MMM r (U)",
+                "GyMMMM": "MMMM r(U)",
+                "GyMMMMd": "d MMMM r(U)",
+                "GyMMMMEd": "E d MMMM r(U)",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1114,6 +1129,8 @@
                 "yyyyMMMd": "d MMM r",
                 "yyyyMMMEd": "E d MMM r (U)",
                 "yyyyMMMM": "MMMM r (U)",
+                "yyyyMMMMd": "d MMMM r(U)",
+                "yyyyMMMMEd": "E d MMMM r(U)",
                 "yyyyQQQ": "QQQ r (U)",
                 "yyyyQQQQ": "QQQQ r (U)"
               },

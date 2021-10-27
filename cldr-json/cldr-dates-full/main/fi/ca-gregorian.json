@@ -3,7 +3,7 @@
     "fi": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "fi"
       },
@@ -318,11 +318,23 @@
               "medium": "d.M.y",
               "short": "d.M.y"
             },
+            "dateSkeletons": {
+              "full": "yMMMMccccd",
+              "long": "yMMMMd",
+              "medium": "yMd",
+              "short": "yMd"
+            },
             "timeFormats": {
               "full": "H.mm.ss zzzz",
               "long": "H.mm.ss z",
               "medium": "H.mm.ss",
               "short": "H.mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1} 'klo' {0}",
@@ -343,6 +355,7 @@
                 "Ehms": "E h.mm.ss a",
                 "EHms": "E H.mm.ss",
                 "Gy": "y G",
+                "GyMd": "M.d.y G",
                 "GyMMM": "LLL y G",
                 "GyMMMd": "d. MMM y G",
                 "GyMMMEd": "E d. MMM y G",

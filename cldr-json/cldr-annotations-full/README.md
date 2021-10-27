@@ -1,6 +1,15 @@
-# cldr-json package
+# cldr-annotations-full
 
-This package is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+Character annotation data
+
+This package contains the complete set of locales, including what is in the `cldr-annotations-modern` package.
+
+
+[![NPM version](https://img.shields.io/npm/v/cldr-annotations-full.svg?style=flat)](https://www.npmjs.org/package/cldr-annotations-full)
+
+## General Info
+
+This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>

@@ -3,7 +3,7 @@
     "mni-Beng": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "mni",
         "script": "Beng"
@@ -115,9 +115,9 @@
                 "narrow": {
                   "sun": "নোং",
                   "mon": "নিং",
-                  "tue": "লৈ",
+                  "tue": "লৈবা",
                   "wed": "য়ুম",
-                  "thu": "শগ",
+                  "thu": "শগো",
                   "fri": "ইরা",
                   "sat": "থাং"
                 },
@@ -271,11 +271,23 @@
               "medium": "MMM d, y G",
               "short": "M/d/y GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyMd"
+            },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
               "long": "h:mm:ss a z",
               "medium": "h:mm:ss a",
               "short": "h:mm a"
+            },
+            "timeSkeletons": {
+              "full": "ahmmsszzzz",
+              "long": "ahmmssz",
+              "medium": "ahmmss",
+              "short": "ahmm"
             },
             "dateTimeFormats": {
               "full": "{1} গী {0} দা",
@@ -296,6 +308,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G y MMM d",
                 "GyMMMEd": "G y MMM d, E",

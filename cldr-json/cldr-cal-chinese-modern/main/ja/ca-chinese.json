@@ -3,7 +3,7 @@
     "ja": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ja"
       },
@@ -1082,11 +1082,32 @@
               },
               "short": "U-M-d"
             },
+            "dateSkeletons": {
+              "full": {
+                "_value": "UMMMEEEEd",
+                "_numbers": "hanidec"
+              },
+              "long": {
+                "_value": "UMMMd",
+                "_numbers": "hanidec"
+              },
+              "medium": {
+                "_value": "UMMMd",
+                "_numbers": "hanidec"
+              },
+              "short": "UMd"
+            },
             "timeFormats": {
               "full": "H時mm分ss秒 zzzz",
               "long": "H:mm:ss z",
               "medium": "H:mm:ss",
               "short": "H:mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1104,10 +1125,14 @@
                 "Ed": "d日(E)",
                 "EEEEd": "d日EEEE",
                 "Gy": "U年",
+                "GyMd": "U-M-d",
                 "GyMMM": "U年MMM",
                 "GyMMMd": "U年MMMd日",
                 "GyMMMEd": "U年MMMd日(E)",
                 "GyMMMEEEEd": "U年MMMd日EEEE",
+                "GyMMMM": "r(U)年MMMM",
+                "GyMMMMd": "r(U)年MMMMd日",
+                "GyMMMMEd": "r(U)年MMMMd日(E)",
                 "h": "aK時",
                 "H": "H時",
                 "hm": "aK:mm",
@@ -1129,7 +1154,7 @@
                 "UMMM": "U年MMM",
                 "UMMMd": "U年MMMd日",
                 "y": "U年",
-                "yMd": "U年M月d日",
+                "yMd": "U-M-d",
                 "yyyy": "U年",
                 "yyyyM": "U年M月",
                 "yyyyMd": "U年M月d日",
@@ -1140,6 +1165,8 @@
                 "yyyyMMMEd": "U年MMMd日(E)",
                 "yyyyMMMEEEEd": "U年MMMd日EEEE",
                 "yyyyMMMM": "U年MMMM",
+                "yyyyMMMMd": "r(U)年MMMMd日",
+                "yyyyMMMMEd": "r(U)年MMMMd日(E)",
                 "yyyyQQQ": "U年QQQ",
                 "yyyyQQQQ": "U年QQQQ"
               },

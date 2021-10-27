@@ -3,7 +3,7 @@
     "brx": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "brx"
       },
@@ -273,11 +273,23 @@
               "medium": "MMM d, y G",
               "short": "M/d/yy GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyyMd"
+            },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
               "long": "h:mm:ss a z",
               "medium": "h:mm:ss a",
               "short": "h:mm a"
+            },
+            "timeSkeletons": {
+              "full": "ahmmsszzzz",
+              "long": "ahmmssz",
+              "medium": "ahmmss",
+              "short": "ahmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -298,6 +310,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "MMM, y G",
                 "GyMMMd": "MMM d, y G",
                 "GyMMMEd": "E, MMM d, y G",

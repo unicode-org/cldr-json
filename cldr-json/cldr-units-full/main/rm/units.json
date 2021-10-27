@@ -3,7 +3,7 @@
     "rm": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "rm"
       },
@@ -94,7 +94,7 @@
             "unitPrefixPattern": "Yi{0}"
           },
           "per": {
-            "compoundUnitPattern": "{0}/{1}"
+            "compoundUnitPattern": "{0} per {1}"
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
@@ -191,6 +191,10 @@
           "concentr-millimole-per-liter": {
             "displayName": "mmol/L",
             "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-item": {
+            "displayName": "item",
+            "unitPattern-count-other": "{0} item"
           },
           "concentr-permillion": {
             "displayName": "ppm",
@@ -401,6 +405,10 @@
           "force-newton": {
             "displayName": "N",
             "unitPattern-count-other": "{0} N"
+          },
+          "force-kilowatt-hour-per-100-kilometer": {
+            "displayName": "kWh/100km",
+            "unitPattern-count-other": "{0} kWh/100km"
           },
           "frequency-gigahertz": {
             "displayName": "GHz",
@@ -867,11 +875,11 @@
             "unitPattern-count-other": "{0} qt Imp."
           },
           "coordinateUnit": {
-            "displayName": "direction",
-            "east": "{0}E",
-            "north": "{0}N",
-            "south": "{0}S",
-            "west": "{0}W"
+            "displayName": "direcziun",
+            "east": "{0} ost",
+            "north": "{0} nord",
+            "south": "{0} sid",
+            "west": "{0} vest"
           }
         },
         "short": {
@@ -1057,6 +1065,10 @@
           "concentr-millimole-per-liter": {
             "displayName": "mmol/L",
             "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-item": {
+            "displayName": "item",
+            "unitPattern-count-other": "{0} item"
           },
           "concentr-permillion": {
             "displayName": "ppm",
@@ -1267,6 +1279,10 @@
           "force-newton": {
             "displayName": "N",
             "unitPattern-count-other": "{0} N"
+          },
+          "force-kilowatt-hour-per-100-kilometer": {
+            "displayName": "kWh/100km",
+            "unitPattern-count-other": "{0} kWh/100km"
           },
           "frequency-gigahertz": {
             "displayName": "GHz",
@@ -1733,11 +1749,11 @@
             "unitPattern-count-other": "{0} qt Imp."
           },
           "coordinateUnit": {
-            "displayName": "direction",
-            "east": "{0}E",
-            "north": "{0}N",
-            "south": "{0}S",
-            "west": "{0}W"
+            "displayName": "direcziun",
+            "east": "{0} O",
+            "north": "{0} N",
+            "south": "{0} S",
+            "west": "{0} V"
           }
         },
         "narrow": {
@@ -1923,6 +1939,10 @@
           "concentr-millimole-per-liter": {
             "displayName": "mmol/L",
             "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-item": {
+            "displayName": "item",
+            "unitPattern-count-other": "{0} item"
           },
           "concentr-permillion": {
             "displayName": "ppm",
@@ -2133,6 +2153,11 @@
           "force-newton": {
             "displayName": "N",
             "unitPattern-count-other": "{0} N"
+          },
+          "force-kilowatt-hour-per-100-kilometer": {
+            "displayName": "kWh/100km",
+            "unitPattern-count-one": "{0}kWh/100km",
+            "unitPattern-count-other": "{0}kWh/100km"
           },
           "frequency-gigahertz": {
             "displayName": "GHz",
@@ -2535,7 +2560,8 @@
           },
           "volume-gallon-imperial": {
             "displayName": "Imp. gal",
-            "unitPattern-count-other": "{0} gal Imp.",
+            "unitPattern-count-one": "{0} gal imp",
+            "unitPattern-count-other": "{0} gal imp",
             "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
@@ -2556,7 +2582,8 @@
           },
           "volume-fluid-ounce-imperial": {
             "displayName": "Imp. fl oz",
-            "unitPattern-count-other": "{0} fl oz Imp."
+            "unitPattern-count-one": "{0} fl oz imp",
+            "unitPattern-count-other": "{0} fl oz imp"
           },
           "volume-tablespoon": {
             "displayName": "tbsp",
@@ -2576,7 +2603,8 @@
           },
           "volume-dessert-spoon-imperial": {
             "displayName": "dstspn Imp",
-            "unitPattern-count-other": "{0} dstspn Imp"
+            "unitPattern-count-one": "{0}dsp-Imp",
+            "unitPattern-count-other": "{0}dsp-Imp"
           },
           "volume-drop": {
             "displayName": "drop",
@@ -2599,11 +2627,11 @@
             "unitPattern-count-other": "{0} qt Imp."
           },
           "coordinateUnit": {
-            "displayName": "direction",
-            "east": "{0}E",
-            "north": "{0}N",
+            "displayName": "direcziun",
+            "east": "{0}O",
+            "north": "{0} N",
             "south": "{0}S",
-            "west": "{0}W"
+            "west": "{0}V"
           }
         },
         "durationUnit-type-hm": {

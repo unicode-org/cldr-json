@@ -3,7 +3,7 @@
     "ta": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ta"
       },
@@ -327,11 +327,23 @@
               "medium": "d MMM, y G",
               "short": "d/M/y GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyMd"
+            },
             "timeFormats": {
               "full": "a h:mm:ss zzzz",
               "long": "a h:mm:ss z",
               "medium": "a h:mm:ss",
               "short": "a h:mm"
+            },
+            "timeSkeletons": {
+              "full": "ahmmsszzzz",
+              "long": "ahmmssz",
+              "medium": "ahmmss",
+              "short": "ahmm"
             },
             "dateTimeFormats": {
               "full": "{1} அன்று {0}",
@@ -352,6 +364,7 @@
                 "Ehms": "E a h:mm:ss",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM, y G",
                 "GyMMMEd": "E, d MMM, y G",

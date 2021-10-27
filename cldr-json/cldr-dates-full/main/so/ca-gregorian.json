@@ -3,7 +3,7 @@
     "so": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "so"
       },
@@ -162,7 +162,7 @@
                   "sun": "Axd",
                   "mon": "Isn",
                   "tue": "Tldo",
-                  "wed": "Arbc",
+                  "wed": "Arbaco",
                   "thu": "Khms",
                   "fri": "Jmc",
                   "sat": "Sbti"
@@ -237,11 +237,11 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "am": "GH",
+                  "am": "AM",
                   "pm": "GD"
                 },
                 "narrow": {
-                  "am": "GH",
+                  "am": "AM",
                   "pm": "GD"
                 },
                 "wide": {
@@ -258,10 +258,10 @@
                 "1-alt-variant": "Taariikhda Miilaadiga"
               },
               "eraAbbr": {
-                "0": "CH",
+                "0": "BC",
                 "0-alt-variant": "KTM",
-                "1": "CD",
-                "1-alt-variant": "TM"
+                "1": "AD",
+                "1-alt-variant": "CE"
               },
               "eraNarrow": {
                 "0": "B",
@@ -271,10 +271,16 @@
               }
             },
             "dateFormats": {
-              "full": "EEEE, MMMM dd, y",
-              "long": "dd MMMM y",
+              "full": "EEEE, MMMM d, y",
+              "long": "MMMM d, y",
               "medium": "dd-MMM-y",
               "short": "dd/MM/yy"
+            },
+            "dateSkeletons": {
+              "full": "yMMMMEEEEdd",
+              "long": "yMMMMdd",
+              "medium": "yMMMdd",
+              "short": "yyMMdd"
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
@@ -282,10 +288,16 @@
               "medium": "h:mm:ss a",
               "short": "h:mm a"
             },
+            "timeSkeletons": {
+              "full": "ahmmsszzzz",
+              "long": "ahmmssz",
+              "medium": "ahmmss",
+              "short": "ahmm"
+            },
             "dateTimeFormats": {
-              "full": "{1} {0}",
-              "long": "{1} {0}",
-              "medium": "{1} {0}",
+              "full": "{1} 'ee' {0}",
+              "long": "{1} 'ee' {0}",
+              "medium": "{1} 'ee' {0}",
               "short": "{1} {0}",
               "availableFormats": {
                 "Bh": "h B",
@@ -301,6 +313,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "M/d/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "MMM d, y G",
                 "GyMMMEd": "E, MMM d, y G",

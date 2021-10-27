@@ -3,7 +3,7 @@
     "rm": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "rm"
       },
@@ -276,11 +276,23 @@
               "medium": "dd-MM-y",
               "short": "dd-MM-yy"
             },
+            "dateSkeletons": {
+              "full": "yMMMMEEEEd",
+              "long": "yMMMMd",
+              "medium": "yMMdd",
+              "short": "yyMMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -301,6 +313,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "dd-MM-y GGGGG",
                 "GyMMM": "LLL y G",
                 "GyMMMd": "dd-MM-y GGGGG",
                 "GyMMMEd": "E, dd-MM-y GGGGG",
@@ -324,7 +337,8 @@
                 "MMMEd": "E, dd-MM",
                 "MMMMd": "d MMMM",
                 "MMMMEd": "E, d MMMM",
-                "MMMMW-count-other": "'week' W 'of' MMMM",
+                "MMMMW-count-one": "W. 'emna' MMMM",
+                "MMMMW-count-other": "W. 'emna' MMMM",
                 "ms": "mm:ss",
                 "y": "y",
                 "yM": "LL-y",
@@ -338,7 +352,8 @@
                 "yMMMMEd": "E, d MMMM y",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
-                "yw-count-other": "'week' w 'of' Y"
+                "yw-count-one": "w. 'dal' Y",
+                "yw-count-other": "w. 'emna' 'dal' Y"
               },
               "appendItems": {
                 "Day": "{0} ({2}: {1})",

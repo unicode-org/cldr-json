@@ -3,7 +3,7 @@
     "fa": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "fa"
       },
@@ -247,7 +247,7 @@
                   "pm": "بعدازظهر",
                   "morning1": "بامداد",
                   "morning2": "صبح",
-                  "afternoon1": "ظهر",
+                  "afternoon1": "بعدازظهر",
                   "afternoon2": "عصر",
                   "night1": "شب",
                   "night2": "نیمه‌شب"
@@ -303,11 +303,23 @@
               "medium": "d MMM y G",
               "short": "y/M/d GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyMd"
+            },
             "timeFormats": {
               "full": "H:mm:ss (zzzz)",
               "long": "H:mm:ss (z)",
               "medium": "H:mm:ss",
               "short": "H:mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1}، ساعت {0}",
@@ -328,6 +340,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E H:mm:ss",
                 "Gy": "y G",
+                "GyMd": "M/d/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E d MMM y G",

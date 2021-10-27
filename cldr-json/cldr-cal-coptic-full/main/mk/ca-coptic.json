@@ -3,7 +3,7 @@
     "mk": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "mk"
       },
@@ -111,7 +111,7 @@
                 "abbreviated": {
                   "sun": "нед.",
                   "mon": "пон.",
-                  "tue": "вт.",
+                  "tue": "вто.",
                   "wed": "сре.",
                   "thu": "чет.",
                   "fri": "пет.",
@@ -318,11 +318,23 @@
               "medium": "dd.M.y G",
               "short": "dd.M.y GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEdd",
+              "long": "GyMMMMdd",
+              "medium": "GyMdd",
+              "short": "GGGGGyMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -343,6 +355,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y 'г'. G",
+                "GyMd": "d.M.y GGGGG",
                 "GyMMM": "MMM y 'г'. G",
                 "GyMMMd": "dd MMM y 'г'. G",
                 "GyMMMEd": "E, dd MMM y 'г'. G",

@@ -3,7 +3,7 @@
     "su-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "su",
         "script": "Latn"
@@ -277,11 +277,23 @@
               "medium": "d MMM y",
               "short": "d/M/yy"
             },
+            "dateSkeletons": {
+              "full": "yMMMMEEEEd",
+              "long": "yMMMMd",
+              "medium": "yMMMd",
+              "short": "yyMd"
+            },
             "timeFormats": {
               "full": "H.mm.ss zzzz",
               "long": "H.mm.ss z",
               "medium": "H.mm.ss",
               "short": "H.mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1} 'jam' {0}",
@@ -302,6 +314,7 @@
                 "Ehms": "E h.mm.ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E, d MMM y G",

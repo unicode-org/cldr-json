@@ -1,6 +1,15 @@
-# cldr-json package
+# cldr-localenames-modern
 
-This package is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+Translated versions of locale display name elements: languages, scripts, territories, and variants.
+
+This package contains the set of locales listed as modern coverage. See also the `cldr-localenames-full` package.
+
+
+[![NPM version](https://img.shields.io/npm/v/cldr-localenames-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-localenames-modern)
+
+## General Info
+
+This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>

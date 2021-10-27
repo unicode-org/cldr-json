@@ -3,7 +3,7 @@
     "so": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "so"
       },
@@ -174,7 +174,7 @@
                   "sun": "Axd",
                   "mon": "Isn",
                   "tue": "Tldo",
-                  "wed": "Arbc",
+                  "wed": "Arbaco",
                   "thu": "Khms",
                   "fri": "Jmc",
                   "sat": "Sbti"
@@ -249,11 +249,11 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "am": "GH",
+                  "am": "AM",
                   "pm": "GD"
                 },
                 "narrow": {
-                  "am": "GH",
+                  "am": "AM",
                   "pm": "GD"
                 },
                 "wide": {
@@ -279,11 +279,23 @@
               "medium": "MMM d, y G",
               "short": "M/d/y GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyMd"
+            },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
               "long": "h:mm:ss a z",
               "medium": "h:mm:ss a",
               "short": "h:mm a"
+            },
+            "timeSkeletons": {
+              "full": "ahmmsszzzz",
+              "long": "ahmmssz",
+              "medium": "ahmmss",
+              "short": "ahmm"
             },
             "dateTimeFormats": {
               "full": "{1} 'barta' {0}",
@@ -304,6 +316,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "M/d/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "MMM d, y G",
                 "GyMMMEd": "E, MMM d, y G",

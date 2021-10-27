@@ -3,7 +3,7 @@
     "uk": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "uk"
       },
@@ -312,14 +312,26 @@
             "dateFormats": {
               "full": "EEEE, d MMMM y 'р'. G",
               "long": "d MMMM y 'р'. G",
-              "medium": "d MMM y G",
+              "medium": "d MMM y 'р'. G",
               "short": "dd.MM.yy GGGGG"
+            },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyyMMdd"
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} 'о' {0}",
@@ -340,9 +352,10 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
-                "GyMMM": "LLL y G",
-                "GyMMMd": "d MMM y G",
-                "GyMMMEd": "E, d MMM y G",
+                "GyMd": "dd-MM-y GGGGG",
+                "GyMMM": "LLL y 'р'. G",
+                "GyMMMd": "d MMM y 'р'. G",
+                "GyMMMEd": "E, d MMM y 'р'. G",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -363,10 +376,10 @@
                 "yyyyM": "MM.y G",
                 "yyyyMd": "dd.MM.y G",
                 "yyyyMEd": "E, dd.MM.y G",
-                "yyyyMMM": "LLL y G",
-                "yyyyMMMd": "d MMM y G",
-                "yyyyMMMEd": "E, d MMM y G",
-                "yyyyMMMM": "LLLL y G",
+                "yyyyMMM": "LLL y 'р'. G",
+                "yyyyMMMd": "d MMM y 'р'. G",
+                "yyyyMMMEd": "E, d MMM y 'р'. G",
+                "yyyyMMMM": "LLLL y 'р'. G",
                 "yyyyQQQ": "QQQ y G",
                 "yyyyQQQQ": "QQQQ y 'р'. G"
               },
@@ -507,22 +520,22 @@
                   "y": "E, dd.MM.y – E, dd.MM.y"
                 },
                 "yMMM": {
-                  "M": "LLL–LLL y",
-                  "y": "LLL y – LLL y"
+                  "M": "LLL–LLL y 'р'.",
+                  "y": "LLL y – LLL y 'рр'."
                 },
                 "yMMMd": {
-                  "d": "d–d MMM y",
-                  "M": "d MMM – d MMM y",
-                  "y": "d MMM y – d MMM y"
+                  "d": "d–d MMM y 'р'.",
+                  "M": "d MMM – d MMM y 'р'.",
+                  "y": "d MMM y – d MMM y 'рр'."
                 },
                 "yMMMEd": {
-                  "d": "E, d – E, d MMM y",
-                  "M": "E, d MMM – E, d MMM y",
-                  "y": "E, d MMM y – E, d MMM y"
+                  "d": "E, d – E, d MMM y 'р'.",
+                  "M": "E, d MMM – E, d MMM y 'р'.",
+                  "y": "E, d MMM y – E, d MMM y 'рр'."
                 },
                 "yMMMM": {
-                  "M": "LLLL – LLLL y",
-                  "y": "LLLL y – LLLL y"
+                  "M": "LLLL – LLLL y 'р'.",
+                  "y": "LLLL y – LLLL y 'рр'."
                 }
               }
             }

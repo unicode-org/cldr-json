@@ -3,7 +3,7 @@
     "nn": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "nn"
       },
@@ -234,8 +234,8 @@
                 },
                 "narrow": {
                   "midnight": "mn.",
-                  "am": "f.m.",
-                  "pm": "e.m.",
+                  "am": "a",
+                  "pm": "p",
                   "morning1": "mg.",
                   "morning2": "fm.",
                   "afternoon1": "em.",
@@ -244,20 +244,20 @@
                 },
                 "wide": {
                   "midnight": "midnatt",
-                  "am": "formiddag",
-                  "pm": "ettermiddag",
-                  "morning1": "på morgenen",
+                  "am": "a.m.",
+                  "pm": "p.m.",
+                  "morning1": "på morgonen",
                   "morning2": "på formiddagen",
                   "afternoon1": "på ettermiddagen",
                   "evening1": "på kvelden",
-                  "night1": "på natten"
+                  "night1": "på natta"
                 }
               },
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "midn.",
-                  "am": "f.m.",
-                  "pm": "e.m.",
+                  "am": "a.m.",
+                  "pm": "p.m.",
                   "morning1": "morg.",
                   "morning2": "form.",
                   "afternoon1": "etterm.",
@@ -276,9 +276,9 @@
                 },
                 "wide": {
                   "midnight": "midnatt",
-                  "am": "f.m.",
-                  "pm": "e.m.",
-                  "morning1": "morgen",
+                  "am": "a.m.",
+                  "pm": "p.m.",
+                  "morning1": "morgon",
                   "morning2": "formiddag",
                   "afternoon1": "ettermiddag",
                   "evening1": "kveld",
@@ -1011,6 +1011,12 @@
               "medium": "d. MMM y G",
               "short": "d.M y G"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GyMd"
+            },
             "timeFormats": {
               "full": "'kl'. HH:mm:ss zzzz",
               "full-alt-variant": "'kl'. HH.mm.ss zzzz",
@@ -1020,6 +1026,12 @@
               "medium-alt-variant": "HH.mm.ss",
               "short": "HH:mm",
               "short-alt-variant": "HH.mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1040,6 +1052,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "dd.MM.y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d. MMM y G",
                 "GyMMMEd": "E d. MMM y G",

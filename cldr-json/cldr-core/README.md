@@ -1,6 +1,13 @@
-# cldr-json package
+# cldr-core
 
-This package is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+Basic CLDR supplemental data
+
+
+[![NPM version](https://img.shields.io/npm/v/cldr-core.svg?style=flat)](https://www.npmjs.org/package/cldr-core)
+
+## General Info
+
+This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>

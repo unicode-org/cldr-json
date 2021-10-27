@@ -3,7 +3,7 @@
     "sr-Latn-BA": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "sr",
         "script": "Latn",
@@ -183,10 +183,10 @@
             "quarters": {
               "format": {
                 "abbreviated": {
-                  "1": "K1",
-                  "2": "K2",
-                  "3": "K3",
-                  "4": "K4"
+                  "1": "1. kv.",
+                  "2": "2. kv.",
+                  "3": "3. kv.",
+                  "4": "4. kv."
                 },
                 "narrow": {
                   "1": "1.",
@@ -203,10 +203,10 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "1": "K1",
-                  "2": "K2",
-                  "3": "K3",
-                  "4": "K4"
+                  "1": "1. kv.",
+                  "2": "2. kv.",
+                  "3": "3. kv.",
+                  "4": "4. kv."
                 },
                 "narrow": {
                   "1": "1.",
@@ -236,9 +236,9 @@
                 },
                 "narrow": {
                   "midnight": "ponoć",
-                  "am": "a",
+                  "am": "AM",
                   "noon": "podne",
-                  "pm": "p",
+                  "pm": "PM",
                   "morning1": "jutro",
                   "afternoon1": "po pod.",
                   "evening1": "veče",
@@ -308,11 +308,23 @@
               "medium": "d.MM.y. G",
               "short": "d.M.y. GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMd",
+              "short": "GGGGGyMd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -333,6 +345,7 @@
                 "Ehms": "E hh:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y. G",
+                "GyMd": "d.M.y. GGGGG",
                 "GyMMM": "MMM y. G",
                 "GyMMMd": "d. MMM y. G",
                 "GyMMMEd": "E, d. MMM y. G",

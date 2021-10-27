@@ -3,7 +3,7 @@
     "zh": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "zh"
       },
@@ -1082,11 +1082,32 @@
               },
               "short": "r/M/d"
             },
+            "dateSkeletons": {
+              "full": {
+                "_value": "rMMMEEEEd",
+                "_numbers": "d=hanidays"
+              },
+              "long": {
+                "_value": "rMMMd",
+                "_numbers": "d=hanidays"
+              },
+              "medium": {
+                "_value": "rMMMd",
+                "_numbers": "d=hanidays"
+              },
+              "short": "rMd"
+            },
             "timeFormats": {
-              "full": "zzzz ah:mm:ss",
-              "long": "z ah:mm:ss",
-              "medium": "ah:mm:ss",
-              "short": "ah:mm"
+              "full": "zzzz HH:mm:ss",
+              "long": "z HH:mm:ss",
+              "medium": "HH:mm:ss",
+              "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1106,6 +1127,9 @@
                 "GyMMM": "rU年MMM",
                 "GyMMMd": "r年MMMd",
                 "GyMMMEd": "rU年MMMdE",
+                "GyMMMM": "rU年MMMM",
+                "GyMMMMd": "rU年MMMMd",
+                "GyMMMMEd": "rU年MMMdE",
                 "h": "ah时",
                 "H": "HH",
                 "hm": "ah:mm",
@@ -1134,6 +1158,8 @@
                 "yyyyMMMd": "r年MMMd",
                 "yyyyMMMEd": "rU年MMMdE",
                 "yyyyMMMM": "rU年MMMM",
+                "yyyyMMMMd": "rU年MMMMd",
+                "yyyyMMMMEd": "rU年MMMMdE",
                 "yyyyQQQ": "rU年QQQQ",
                 "yyyyQQQQ": "rU年QQQQ"
               },

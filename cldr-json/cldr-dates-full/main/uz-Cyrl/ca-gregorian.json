@@ -3,7 +3,7 @@
     "uz-Cyrl": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "uz",
         "script": "Cyrl"
@@ -313,11 +313,23 @@
               "medium": "d MMM, y",
               "short": "dd/MM/yy"
             },
+            "dateSkeletons": {
+              "full": "yMMMMEEEEdd",
+              "long": "yMMMMd",
+              "medium": "yMMMd",
+              "short": "yyMMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss (zzzz)",
               "long": "HH:mm:ss (z)",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -338,6 +350,7 @@
                 "Ehms": "E, h:mm:ss a",
                 "EHms": "E, HH:mm:ss",
                 "Gy": "G y",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "MMM, G y",
                 "GyMMMd": "d MMM, G y",
                 "GyMMMEd": "E, d-MMM, G y",

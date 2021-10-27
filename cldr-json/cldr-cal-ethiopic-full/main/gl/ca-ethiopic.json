@@ -3,7 +3,7 @@
     "gl": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "gl"
       },
@@ -312,11 +312,23 @@
               "medium": "d 'de' MMM 'de' y G",
               "short": "dd/MM/y GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GYMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyMMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} 'ás' {0}",
@@ -337,6 +349,7 @@
                 "Ehms": "E, h:mm:ss a",
                 "EHms": "E, HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "MMM 'de' y G",
                 "GyMMMd": "d 'de' MMM 'de' y G",
                 "GyMMMEd": "E, d 'de' MMM 'de' y G",

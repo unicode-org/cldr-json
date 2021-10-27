@@ -3,7 +3,7 @@
     "kk": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "kk"
       },
@@ -312,11 +312,23 @@
               "medium": "G dd.MM.y",
               "short": "GGGGG dd.MM.y"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMdd",
+              "short": "GGGGGyMMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -337,6 +349,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y 'ж'.",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "G y 'ж'. MMM",
                 "GyMMMd": "G y 'ж'. d MMM",
                 "GyMMMEd": "G y 'ж'. d MMM, E",

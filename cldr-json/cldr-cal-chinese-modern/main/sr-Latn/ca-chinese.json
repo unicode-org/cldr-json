@@ -3,7 +3,7 @@
     "sr-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "sr",
         "script": "Latn"
@@ -211,10 +211,10 @@
             "quarters": {
               "format": {
                 "abbreviated": {
-                  "1": "K1",
-                  "2": "K2",
-                  "3": "K3",
-                  "4": "K4"
+                  "1": "1. kv.",
+                  "2": "2. kv.",
+                  "3": "3. kv.",
+                  "4": "4. kv."
                 },
                 "narrow": {
                   "1": "1.",
@@ -231,10 +231,10 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "1": "K1",
-                  "2": "K2",
-                  "3": "K3",
-                  "4": "K4"
+                  "1": "1. kv.",
+                  "2": "2. kv.",
+                  "3": "3. kv.",
+                  "4": "4. kv."
                 },
                 "narrow": {
                   "1": "1.",
@@ -254,9 +254,9 @@
               "format": {
                 "abbreviated": {
                   "midnight": "ponoć",
-                  "am": "pre podne",
+                  "am": "AM",
                   "noon": "podne",
-                  "pm": "po podne",
+                  "pm": "PM",
                   "morning1": "ujutro",
                   "afternoon1": "po podne",
                   "evening1": "uveče",
@@ -264,9 +264,9 @@
                 },
                 "narrow": {
                   "midnight": "ponoć",
-                  "am": "a",
+                  "am": "AM",
                   "noon": "podne",
-                  "pm": "p",
+                  "pm": "PM",
                   "morning1": "ujutru",
                   "afternoon1": "po podne",
                   "evening1": "uveče",
@@ -274,9 +274,9 @@
                 },
                 "wide": {
                   "midnight": "ponoć",
-                  "am": "pre podne",
+                  "am": "AM",
                   "noon": "podne",
-                  "pm": "po podne",
+                  "pm": "PM",
                   "morning1": "ujutro",
                   "afternoon1": "po podne",
                   "evening1": "uveče",
@@ -286,9 +286,9 @@
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "ponoć",
-                  "am": "pre podne",
+                  "am": "AM",
                   "noon": "podne",
-                  "pm": "po podne",
+                  "pm": "PM",
                   "morning1": "jutro",
                   "afternoon1": "popodne",
                   "evening1": "veče",
@@ -306,9 +306,9 @@
                 },
                 "wide": {
                   "midnight": "ponoć",
-                  "am": "pre podne",
+                  "am": "AM",
                   "noon": "podne",
-                  "pm": "po podne",
+                  "pm": "PM",
                   "morning1": "jutro",
                   "afternoon1": "popodne",
                   "evening1": "veče",
@@ -1068,11 +1068,23 @@
               "medium": "r MMM d",
               "short": "r-MM-dd"
             },
+            "dateSkeletons": {
+              "full": "rMMMMEEEEd",
+              "long": "rMMMMd",
+              "medium": "rMMMd",
+              "short": "rMMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1089,9 +1101,12 @@
                 "EBhms": "E h:mm:ss B",
                 "Ed": "d, E",
                 "Gy": "r U",
-                "GyMMM": "r(U) MMM",
+                "GyMMM": "r MMM",
                 "GyMMMd": "r MMM d",
-                "GyMMMEd": "r(U) MMM d, E",
+                "GyMMMEd": "r MMM d, E",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1116,10 +1131,12 @@
                 "yyyyM": "r-MM",
                 "yyyyMd": "r-MM-dd",
                 "yyyyMEd": "r-MM-dd, E",
-                "yyyyMMM": "r(U) MMM",
+                "yyyyMMM": "r MMM",
                 "yyyyMMMd": "r MMM d",
-                "yyyyMMMEd": "r(U) MMM d, E",
+                "yyyyMMMEd": "r MMM d, E",
                 "yyyyMMMM": "r(U) MMMM",
+                "yyyyMMMMd": "r(U) MMMM d",
+                "yyyyMMMMEd": "r(U) MMMM d, E",
                 "yyyyQQQ": "r(U) QQQ",
                 "yyyyQQQQ": "r(U) QQQQ"
               },

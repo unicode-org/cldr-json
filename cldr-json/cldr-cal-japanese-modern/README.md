@@ -1,6 +1,15 @@
-# cldr-json package
+# cldr-cal-japanese-modern
 
-This package is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+CLDR data for Japanese calendars.
+
+This package contains the set of locales listed as modern coverage. See also the `cldr-cal-japanese-full` package.
+
+
+[![NPM version](https://img.shields.io/npm/v/cldr-cal-japanese-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-japanese-modern)
+
+## General Info
+
+This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>

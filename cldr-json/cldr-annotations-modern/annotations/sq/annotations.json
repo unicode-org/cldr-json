@@ -2,7 +2,7 @@
   "annotations": {
     "identity": {
       "version": {
-        "_cldrVersion": "39"
+        "_cldrVersion": "40"
       },
       "language": "sq"
     },
@@ -88,6 +88,27 @@
           "vijë e ulët"
         ]
       },
+      "-": {
+        "default": [
+          "minus",
+          "ndarëse",
+          "ndarje minus",
+          "vizë"
+        ],
+        "tts": [
+          "ndarje minus"
+        ]
+      },
+      "‐": {
+        "default": [
+          "ndarëse",
+          "ndarje",
+          "vizë"
+        ],
+        "tts": [
+          "ndarje"
+        ]
+      },
       "–": {
         "default": [
           "e mesme",
@@ -112,7 +133,6 @@
         "default": [
           "shirit",
           "shirit horizontal",
-          "vijë",
           "vizë"
         ],
         "tts": [
@@ -167,6 +187,7 @@
       },
       "؛": {
         "default": [
+          "arabe",
           "dy pika arabe",
           "pikëpresje arabe"
         ],
@@ -182,6 +203,16 @@
           "dy pika"
         ]
       },
+      "!": {
+        "default": [
+          "çudi",
+          "pikëçuditje",
+          "vini re"
+        ],
+        "tts": [
+          "pikëçuditje"
+        ]
+      },
       "¡": {
         "default": [
           "bam",
@@ -195,11 +226,22 @@
       },
       "?": {
         "default": [
+          "pikëpyetje",
           "pyetje",
           "shenja e pikëpyetjes"
         ],
         "tts": [
           "shenja e pikëpyetjes"
+        ]
+      },
+      "¿": {
+        "default": [
+          "përmbys",
+          "pikëpyetje",
+          "pyetje"
+        ],
+        "tts": [
+          "pikëpyetje përmbys"
         ]
       },
       "؟": {
@@ -275,8 +317,8 @@
         "default": [
           "apostrof",
           "apostrof i majtë",
-          "thonjës e harkuar",
           "thonjëz",
+          "thonjëz e harkuar",
           "thonjëz njëshe"
         ],
         "tts": [
@@ -669,9 +711,8 @@
       },
       "‧": {
         "default": [
-          "ndarje",
+          "ndarëse",
           "pikë",
-          "pikë ndarëse",
           "vizë"
         ],
         "tts": [
@@ -680,17 +721,26 @@
       },
       "′": {
         "default": [
-          "apostrof",
           "prim"
         ],
         "tts": [
           "prim"
         ]
       },
+      "″": {
+        "default": [
+          "dy prim",
+          "prim"
+        ],
+        "tts": [
+          "dy prim"
+        ]
+      },
       "‴": {
         "default": [
           "prim",
-          "prim i trefishtë"
+          "prim i trefishtë",
+          "tre prim"
         ],
         "tts": [
           "prim i trefishtë"
@@ -733,7 +783,6 @@
       },
       "´": {
         "default": [
-          "fortë",
           "theks",
           "theks i fortë",
           "ton"
@@ -744,13 +793,16 @@
       },
       "^": {
         "default": [
-          "drejtim lart",
           "fuqi",
           "hundore",
-          "kënd",
-          "kulm",
+          "kapelë",
+          "kllapë këndore",
+          "kontroll",
+          "pykë",
+          "shenjë xor",
           "theks",
-          "theks hundor"
+          "theks hundor",
+          "tregues"
         ],
         "tts": [
           "theks hundor"
@@ -1693,12 +1745,15 @@
       },
       "|": {
         "default": [
+          "dypikësh",
           "kulm",
+          "shenjë",
+          "shenjë sheffer",
           "shirit",
           "shirit vertikal",
+          "shkop",
           "vijë",
-          "vijë vertikale",
-          "vizë"
+          "vijë vertikale"
         ],
         "tts": [
           "vijë vertikale"
@@ -1774,10 +1829,11 @@
       "∙": {
         "default": [
           "operator",
-          "operator pikë"
+          "operator pikë",
+          "operator pikësim"
         ],
         "tts": [
-          "operator pikë"
+          "operator pikësim"
         ]
       },
       "√": {
@@ -1989,6 +2045,34 @@
           "thuajse baras"
         ]
       },
+      "≌": {
+        "default": [
+          "barazim",
+          "matematikë",
+          "të gjitha baras"
+        ],
+        "tts": [
+          "të gjitha baras"
+        ]
+      },
+      "≒": {
+        "default": [
+          "afërsisht baras me imazhin"
+        ],
+        "tts": [
+          "afërsisht baras me imazhin"
+        ]
+      },
+      "≖": {
+        "default": [
+          "barazim",
+          "matematikë",
+          "unazë barazimi"
+        ],
+        "tts": [
+          "unazë barazimi"
+        ]
+      },
       "≡": {
         "default": [
           "i ngjashëm",
@@ -2001,13 +2085,24 @@
           "njëlloj me"
         ]
       },
+      "≣": {
+        "default": [
+          "barasvlerë strikte",
+          "barazim",
+          "matematikë"
+        ],
+        "tts": [
+          "barasvlerë strikte"
+        ]
+      },
       "≤": {
         "default": [
           "baras",
           "baraz",
           "më e vogël ose baras",
-          "më e vogël se",
-          "pabarazi"
+          "më pak",
+          "më pak se ose baras",
+          "pabarazim"
         ],
         "tts": [
           "më e vogël ose baras"
@@ -2018,11 +2113,100 @@
           "baras",
           "baraz",
           "më e madhe ose baras",
-          "më e madhe se",
-          "pabarazi"
+          "më shumë",
+          "më shumë se ose baras",
+          "pabarazim"
         ],
         "tts": [
           "më e madhe ose baras"
+        ]
+      },
+      "≦": {
+        "default": [
+          "matematikë",
+          "më pak ose baras",
+          "pabarazi"
+        ],
+        "tts": [
+          "më pak ose baras"
+        ]
+      },
+      "≧": {
+        "default": [
+          "matematikë",
+          "më shumë ose baras",
+          "pabarazi"
+        ],
+        "tts": [
+          "më shumë ose baras"
+        ]
+      },
+      "≪": {
+        "default": [
+          "matematikë",
+          "pabarazi",
+          "shumë më pak"
+        ],
+        "tts": [
+          "shumë më pak"
+        ]
+      },
+      "≫": {
+        "default": [
+          "matematikë",
+          "pabarazi",
+          "shumë më shumë"
+        ],
+        "tts": [
+          "shumë më shumë"
+        ]
+      },
+      "≬": {
+        "default": [
+          "ndërmjet"
+        ],
+        "tts": [
+          "ndërmjet"
+        ]
+      },
+      "≳": {
+        "default": [
+          "matematikë",
+          "më shumë ose afërsisht",
+          "pabarazi"
+        ],
+        "tts": [
+          "më shumë ose afërsisht"
+        ]
+      },
+      "≺": {
+        "default": [
+          "matematikë",
+          "operator bashkësie",
+          "pararend"
+        ],
+        "tts": [
+          "pararend"
+        ]
+      },
+      "≻": {
+        "default": [
+          "matematikë",
+          "operator bashkësie",
+          "tejkalon"
+        ],
+        "tts": [
+          "tejkalon"
+        ]
+      },
+      "⊁": {
+        "default": [
+          "matematikë",
+          "nuk tejkalon",
+          "operator bashkësie"
+        ],
+        "tts": [
+          "nuk tejkalon"
         ]
       },
       "⊂": {
@@ -2033,6 +2217,441 @@
         ],
         "tts": [
           "nënbashkësi e"
+        ]
+      },
+      "⊃": {
+        "default": [
+          "matematikë",
+          "mbibashkësi",
+          "operator bashkësie"
+        ],
+        "tts": [
+          "mbibashkësi"
+        ]
+      },
+      "⊆": {
+        "default": [
+          "nënbashkësia baras"
+        ],
+        "tts": [
+          "nënbashkësia baras"
+        ]
+      },
+      "⊇": {
+        "default": [
+          "barazi",
+          "matematikë",
+          "mbibashkësia baras"
+        ],
+        "tts": [
+          "mbibashkësia baras"
+        ]
+      },
+      "⊕": {
+        "default": [
+          "plus",
+          "rreth me plus"
+        ],
+        "tts": [
+          "rreth me plus"
+        ]
+      },
+      "⊖": {
+        "default": [
+          "diferencë simetrike",
+          "erozion",
+          "rreth me minus"
+        ],
+        "tts": [
+          "rreth me minus"
+        ]
+      },
+      "⊗": {
+        "default": [
+          "produkt",
+          "rreth me kryq",
+          "tensor"
+        ],
+        "tts": [
+          "rreth me kryq"
+        ]
+      },
+      "⊘": {
+        "default": [
+          "matematikë",
+          "rreth me thyesë",
+          "si pjesëtim"
+        ],
+        "tts": [
+          "rreth me thyesë"
+        ]
+      },
+      "⊙": {
+        "default": [
+          "operator",
+          "operator rrethi me pikë",
+          "XNOR"
+        ],
+        "tts": [
+          "operator rrethi me pikë"
+        ]
+      },
+      "⊚": {
+        "default": [
+          "operator rrethi me rreth"
+        ],
+        "tts": [
+          "operator rrethi me rreth"
+        ]
+      },
+      "⊛": {
+        "default": [
+          "operator",
+          "operator rrethi me yll",
+          "yll"
+        ],
+        "tts": [
+          "operator rrethi me yll"
+        ]
+      },
+      "⊞": {
+        "default": [
+          "katror me plus",
+          "matematikë",
+          "si mbledhje"
+        ],
+        "tts": [
+          "katror me plus"
+        ]
+      },
+      "⊟": {
+        "default": [
+          "katror me minus",
+          "matematikë",
+          "si heqje"
+        ],
+        "tts": [
+          "katror me minus"
+        ]
+      },
+      "⊥": {
+        "default": [
+          "eet",
+          "falsum",
+          "thumb",
+          "thumb lart"
+        ],
+        "tts": [
+          "thumb lart"
+        ]
+      },
+      "⊮": {
+        "default": [
+          "nuk detyron"
+        ],
+        "tts": [
+          "nuk detyron"
+        ]
+      },
+      "⊰": {
+        "default": [
+          "matematikë",
+          "operator bashkësie",
+          "pararend në raport"
+        ],
+        "tts": [
+          "pararend në raport"
+        ]
+      },
+      "⊱": {
+        "default": [
+          "matematikë",
+          "operator bashkësie",
+          "tejkalon në raport"
+        ],
+        "tts": [
+          "tejkalon në raport"
+        ]
+      },
+      "⋭": {
+        "default": [
+          "matematikë",
+          "nuk përmban si të barabartë nëngrupi normal",
+          "teori e grupeve"
+        ],
+        "tts": [
+          "nuk përmban si të barabartë nëngrupi normal"
+        ]
+      },
+      "⊶": {
+        "default": [
+          "origjinal"
+        ],
+        "tts": [
+          "origjinal"
+        ]
+      },
+      "⊹": {
+        "default": [
+          "matematikë",
+          "matricë katrore",
+          "matricë lidhjeje hermitiane",
+          "matricë vetëndajshtuese"
+        ],
+        "tts": [
+          "matricë lidhjeje hermitiane"
+        ]
+      },
+      "⊿": {
+        "default": [
+          "matematikë",
+          "trekëndësh i djathtë",
+          "trekëndësh kënddrejtë"
+        ],
+        "tts": [
+          "trekëndësh kënddrejtë"
+        ]
+      },
+      "⋁": {
+        "default": [
+          "logjike",
+          "n-ar logjik ose",
+          "shkëputje"
+        ],
+        "tts": [
+          "n-ar logjik ose"
+        ]
+      },
+      "⋂": {
+        "default": [
+          "matematikë",
+          "ndërprerje",
+          "ndërprerje n-are",
+          "operator bashkësie"
+        ],
+        "tts": [
+          "ndërprerje n-are"
+        ]
+      },
+      "⋃": {
+        "default": [
+          "bashkim",
+          "bashkim n-ar",
+          "matematikë",
+          "operator bashkësie"
+        ],
+        "tts": [
+          "bashkim n-ar"
+        ]
+      },
+      "⋅": {
+        "default": [
+          "operator",
+          "operator pikë"
+        ],
+        "tts": [
+          "operator pikë"
+        ]
+      },
+      "⋆": {
+        "default": [
+          "operator",
+          "operator yll"
+        ],
+        "tts": [
+          "operator yll"
+        ]
+      },
+      "⋈": {
+        "default": [
+          "bashkim natyral",
+          "fjongo",
+          "operator binar"
+        ],
+        "tts": [
+          "bashkim natyral"
+        ]
+      },
+      "⋒": {
+        "default": [
+          "matematikë",
+          "ndërprerje",
+          "ndërprerje dyshe",
+          "operator bashkësie"
+        ],
+        "tts": [
+          "ndërprerje dyshe"
+        ]
+      },
+      "⋘": {
+        "default": [
+          "matematikë",
+          "pabarazi",
+          "shumë më pak se"
+        ],
+        "tts": [
+          "shumë më pak se"
+        ]
+      },
+      "⋙": {
+        "default": [
+          "matematikë",
+          "pabarazi",
+          "shumë më shumë se"
+        ],
+        "tts": [
+          "shumë më shumë se"
+        ]
+      },
+      "⋮": {
+        "default": [
+          "matematikë",
+          "trepikësh",
+          "trepikësh vertikal"
+        ],
+        "tts": [
+          "trepikësh vertikal"
+        ]
+      },
+      "⋯": {
+        "default": [
+          "trepikësh",
+          "trepikësh horizontal mesi"
+        ],
+        "tts": [
+          "trepikësh horizontal mesi"
+        ]
+      },
+      "⋰": {
+        "default": [
+          "matematikë",
+          "trepikësh",
+          "trepikësh diagonal djathtas lart"
+        ],
+        "tts": [
+          "trepikësh diagonal djathtas lart"
+        ]
+      },
+      "⋱": {
+        "default": [
+          "matematikë",
+          "trepikësh",
+          "trepikësh diagonal djathtas poshtë"
+        ],
+        "tts": [
+          "trepikësh diagonal djathtas poshtë"
+        ]
+      },
+      "■": {
+        "default": [
+          "katror i mbushur"
+        ],
+        "tts": [
+          "katror i mbushur"
+        ]
+      },
+      "□": {
+        "default": [
+          "katror i zbrazët"
+        ],
+        "tts": [
+          "katror i zbrazët"
+        ]
+      },
+      "▢": {
+        "default": [
+          "katror i zbrazët me kënde të harkuara"
+        ],
+        "tts": [
+          "katror i zbrazët me kënde të harkuara"
+        ]
+      },
+      "▣": {
+        "default": [
+          "katror i zbrazët me katror të mbushur"
+        ],
+        "tts": [
+          "katror i zbrazët me katror të mbushur"
+        ]
+      },
+      "▤": {
+        "default": [
+          "katror me mbushje horizontale"
+        ],
+        "tts": [
+          "katror me mbushje horizontale"
+        ]
+      },
+      "▥": {
+        "default": [
+          "katror me mbushje vertikale"
+        ],
+        "tts": [
+          "katror me mbushje vertikale"
+        ]
+      },
+      "▦": {
+        "default": [
+          "katror me mbushje rrjete drejtkëndore"
+        ],
+        "tts": [
+          "katror me mbushje rrjete drejtkëndore"
+        ]
+      },
+      "▧": {
+        "default": [
+          "katror me mbushje majtas lart djathtas poshtë"
+        ],
+        "tts": [
+          "katror me mbushje majtas lart djathtas poshtë"
+        ]
+      },
+      "▨": {
+        "default": [
+          "katror me mbushje djathtas lart majtas poshtë"
+        ],
+        "tts": [
+          "katror me mbushje djathtas lart majtas poshtë"
+        ]
+      },
+      "▩": {
+        "default": [
+          "katror me mbushje rrjete diagonale"
+        ],
+        "tts": [
+          "katror me mbushje rrjete diagonale"
+        ]
+      },
+      "▬": {
+        "default": [
+          "drejtkëndësh i mbushur"
+        ],
+        "tts": [
+          "drejtkëndësh i mbushur"
+        ]
+      },
+      "▭": {
+        "default": [
+          "drejtkëndësh i zbrazët"
+        ],
+        "tts": [
+          "drejtkëndësh i zbrazët"
+        ]
+      },
+      "▮": {
+        "default": [
+          "drejtkëndësh i mbushur vertikal"
+        ],
+        "tts": [
+          "drejtkëndësh i mbushur vertikal"
+        ]
+      },
+      "▰": {
+        "default": [
+          "paralelogram i mbushur"
+        ],
+        "tts": [
+          "paralelogram i mbushur"
         ]
       },
       "▲": {
@@ -2047,6 +2666,70 @@
           "trekëndësh i mbushur, me drejtim lart"
         ]
       },
+      "△": {
+        "default": [
+          "trekëndësh i zbrazët me drejtim lart"
+        ],
+        "tts": [
+          "trekëndësh i zbrazët me drejtim lart"
+        ]
+      },
+      "▴": {
+        "default": [
+          "trekëndësh i mbushur i vogël me drejtim lart"
+        ],
+        "tts": [
+          "trekëndësh i mbushur i vogël me drejtim lart"
+        ]
+      },
+      "▵": {
+        "default": [
+          "trekëndësh i zbrazët i vogël me drejtim lart"
+        ],
+        "tts": [
+          "trekëndësh i zbrazët i vogël me drejtim lart"
+        ]
+      },
+      "▷": {
+        "default": [
+          "trekëndësh i zbrazët i me drejtim djathtas"
+        ],
+        "tts": [
+          "trekëndësh i zbrazët i me drejtim djathtas"
+        ]
+      },
+      "▸": {
+        "default": [
+          "trekëndësh i mbushur i vogël me drejtim djathtas"
+        ],
+        "tts": [
+          "trekëndësh i mbushur i vogël me drejtim djathtas"
+        ]
+      },
+      "▹": {
+        "default": [
+          "trekëndësh i mbushur i zbrazët me drejtim djathtas"
+        ],
+        "tts": [
+          "trekëndësh i mbushur i zbrazët me drejtim djathtas"
+        ]
+      },
+      "►": {
+        "default": [
+          "tregues i mbushur me drejtim djathtas"
+        ],
+        "tts": [
+          "tregues i mbushur me drejtim djathtas"
+        ]
+      },
+      "▻": {
+        "default": [
+          "tregues i zbrazët me drejtim djathtas"
+        ],
+        "tts": [
+          "tregues i zbrazët me drejtim djathtas"
+        ]
+      },
       "▼": {
         "default": [
           "mbushur",
@@ -2057,6 +2740,106 @@
         ],
         "tts": [
           "trekëndësh i mbushur, me drejtim poshtë"
+        ]
+      },
+      "▽": {
+        "default": [
+          "tregues i mbushur me drejtim poshtë"
+        ],
+        "tts": [
+          "tregues i mbushur me drejtim poshtë"
+        ]
+      },
+      "▾": {
+        "default": [
+          "trekëndësh i mbushur i vogël me drejtim poshtë"
+        ],
+        "tts": [
+          "trekëndësh i mbushur i vogël me drejtim poshtë"
+        ]
+      },
+      "▿": {
+        "default": [
+          "trekëndësh i zbrazët i vogël me drejtim poshtë"
+        ],
+        "tts": [
+          "trekëndësh i zbrazët i vogël me drejtim poshtë"
+        ]
+      },
+      "◁": {
+        "default": [
+          "trekëndësh i zbrazët me drejtim majtas"
+        ],
+        "tts": [
+          "trekëndësh i zbrazët me drejtim majtas"
+        ]
+      },
+      "◂": {
+        "default": [
+          "trekëndësh i mbushur i vogël me drejtim majtas"
+        ],
+        "tts": [
+          "trekëndësh i mbushur i vogël me drejtim majtas"
+        ]
+      },
+      "◃": {
+        "default": [
+          "trekëndësh i zbrazët i vogël me drejtim majtas"
+        ],
+        "tts": [
+          "trekëndësh i zbrazët i vogël me drejtim majtas"
+        ]
+      },
+      "◄": {
+        "default": [
+          "tregues i mbushur me drejtim majtas"
+        ],
+        "tts": [
+          "tregues i mbushur me drejtim majtas"
+        ]
+      },
+      "◅": {
+        "default": [
+          "tregues i zbrazët me drejtim majtas"
+        ],
+        "tts": [
+          "tregues i zbrazët me drejtim majtas"
+        ]
+      },
+      "◆": {
+        "default": [
+          "romb i mbushur"
+        ],
+        "tts": [
+          "romb i mbushur"
+        ]
+      },
+      "◇": {
+        "default": [
+          "romb i zbrazët"
+        ],
+        "tts": [
+          "romb i zbrazët"
+        ]
+      },
+      "◈": {
+        "default": [
+          "romb i zbrazët me romb të mbushur"
+        ],
+        "tts": [
+          "romb i zbrazët me romb të mbushur"
+        ]
+      },
+      "◉": {
+        "default": [
+          "lagje",
+          "rrathë të mbushur bashkëqendrorë",
+          "rreth i zbrazët me rreth të mbushur",
+          "rreth me pikë",
+          "sy peshku"
+        ],
+        "tts": [
+          "rreth i zbrazët me rreth të mbushur"
         ]
       },
       "◊": {
@@ -2078,6 +2861,32 @@
           "rreth bosh"
         ]
       },
+      "◌": {
+        "default": [
+          "rreth i pikëzuar"
+        ],
+        "tts": [
+          "rreth i pikëzuar"
+        ]
+      },
+      "◍": {
+        "default": [
+          "rreth me mbushje vertikale"
+        ],
+        "tts": [
+          "rreth me mbushje vertikale"
+        ]
+      },
+      "◎": {
+        "default": [
+          "dopjorreth",
+          "rrathë bashkëqendrorë",
+          "shënjestër"
+        ],
+        "tts": [
+          "rrathë bashkëqendrorë"
+        ]
+      },
       "●": {
         "default": [
           "rreth",
@@ -2085,6 +2894,174 @@
         ],
         "tts": [
           "rreth i mbushur"
+        ]
+      },
+      "◐": {
+        "default": [
+          "rreth gjysmë i mbushur majtas"
+        ],
+        "tts": [
+          "rreth gjysmë i mbushur majtas"
+        ]
+      },
+      "◑": {
+        "default": [
+          "rreth gjysmë i mbushur djathtas"
+        ],
+        "tts": [
+          "rreth gjysmë i mbushur djathtas"
+        ]
+      },
+      "◒": {
+        "default": [
+          "rreth gjysmë i mbushur poshtë"
+        ],
+        "tts": [
+          "rreth gjysmë i mbushur poshtë"
+        ]
+      },
+      "◓": {
+        "default": [
+          "rreth gjysmë i mbushur lart"
+        ],
+        "tts": [
+          "rreth gjysmë i mbushur lart"
+        ]
+      },
+      "◔": {
+        "default": [
+          "rreth me sektor të mbushur djathtas lart"
+        ],
+        "tts": [
+          "rreth me sektor të mbushur djathtas lart"
+        ]
+      },
+      "◕": {
+        "default": [
+          "rreth i mbushur përveç sektorit majtas lart"
+        ],
+        "tts": [
+          "rreth i mbushur përveç sektorit majtas lart"
+        ]
+      },
+      "◖": {
+        "default": [
+          "gjysmërreth i mbushur i majtë"
+        ],
+        "tts": [
+          "gjysmërreth i mbushur i majtë"
+        ]
+      },
+      "◗": {
+        "default": [
+          "gjysmërreth i mbushur i djathtë"
+        ],
+        "tts": [
+          "gjysmërreth i mbushur i djathtë"
+        ]
+      },
+      "◘": {
+        "default": [
+          "pikë e anasjellë"
+        ],
+        "tts": [
+          "pikë e anasjellë"
+        ]
+      },
+      "◙": {
+        "default": [
+          "katror i mbushur me rreth të zbrazët"
+        ],
+        "tts": [
+          "katror i mbushur me rreth të zbrazët"
+        ]
+      },
+      "◜": {
+        "default": [
+          "hark sektori majtas lart"
+        ],
+        "tts": [
+          "hark sektori majtas lart"
+        ]
+      },
+      "◝": {
+        "default": [
+          "hark sektori djathtas lart"
+        ],
+        "tts": [
+          "hark sektori djathtas lart"
+        ]
+      },
+      "◞": {
+        "default": [
+          "hark sektori djathtas poshtë"
+        ],
+        "tts": [
+          "hark sektori djathtas poshtë"
+        ]
+      },
+      "◟": {
+        "default": [
+          "hark sektori majtas poshtë"
+        ],
+        "tts": [
+          "hark sektori majtas poshtë"
+        ]
+      },
+      "◠": {
+        "default": [
+          "gjysmëhark lart"
+        ],
+        "tts": [
+          "gjysmëhark lart"
+        ]
+      },
+      "◡": {
+        "default": [
+          "gjysmëhark poshtë"
+        ],
+        "tts": [
+          "gjysmëhark poshtë"
+        ]
+      },
+      "◢": {
+        "default": [
+          "trekëndësh i mbushur djathtas poshtë"
+        ],
+        "tts": [
+          "trekëndësh i mbushur djathtas poshtë"
+        ]
+      },
+      "◣": {
+        "default": [
+          "trekëndësh i mbushur majtas poshtë"
+        ],
+        "tts": [
+          "trekëndësh i mbushur majtas poshtë"
+        ]
+      },
+      "◤": {
+        "default": [
+          "trekëndësh i mbushur majtas lart"
+        ],
+        "tts": [
+          "trekëndësh i mbushur majtas lart"
+        ]
+      },
+      "◥": {
+        "default": [
+          "trekëndësh i mbushur djathtas lart"
+        ],
+        "tts": [
+          "trekëndësh i mbushur djathtas lart"
+        ]
+      },
+      "◦": {
+        "default": [
+          "pikë e zbrazët"
+        ],
+        "tts": [
+          "pikë e zbrazët"
         ]
       },
       "◯": {
@@ -2097,6 +3074,30 @@
           "rreth i madh bosh"
         ]
       },
+      "◳": {
+        "default": [
+          "katror i zbrazët me sektor djathtas lart"
+        ],
+        "tts": [
+          "katror i zbrazët me sektor djathtas lart"
+        ]
+      },
+      "◷": {
+        "default": [
+          "rreth i zbrazët me sektor djathtas lart"
+        ],
+        "tts": [
+          "rreth i zbrazët me sektor djathtas lart"
+        ]
+      },
+      "◿": {
+        "default": [
+          "trekëndësh djathtas poshtë"
+        ],
+        "tts": [
+          "trekëndësh djathtas poshtë"
+        ]
+      },
       "♪": {
         "default": [
           "e tetë",
@@ -2106,6 +3107,72 @@
         ],
         "tts": [
           "nota e tetë"
+        ]
+      },
+      "⨧": {
+        "default": [
+          "plus dy subskript"
+        ],
+        "tts": [
+          "plus dy subskript"
+        ]
+      },
+      "⨯": {
+        "default": [
+          "kryq vektorial produkti"
+        ],
+        "tts": [
+          "kryq vektorial produkti"
+        ]
+      },
+      "⨼": {
+        "default": [
+          "produkt i brendshëm"
+        ],
+        "tts": [
+          "produkt i brendshëm"
+        ]
+      },
+      "⩣": {
+        "default": [
+          "nënviza logjike ose dyshe"
+        ],
+        "tts": [
+          "nënviza logjike ose dyshe"
+        ]
+      },
+      "⩽": {
+        "default": [
+          "më pak ose baras i pjerrët"
+        ],
+        "tts": [
+          "më pak ose baras i pjerrët"
+        ]
+      },
+      "⪍": {
+        "default": [
+          "më pak ose përafërsisht"
+        ],
+        "tts": [
+          "më pak ose përafërsisht"
+        ]
+      },
+      "⪚": {
+        "default": [
+          "matematikë",
+          "më shumë ose baras me dy rreshta",
+          "pabarazi"
+        ],
+        "tts": [
+          "më shumë ose baras me dy rreshta"
+        ]
+      },
+      "⪺": {
+        "default": [
+          "tejkalon ose përafërsisht"
+        ],
+        "tts": [
+          "tejkalon ose përafërsisht"
         ]
       },
       "♭": {
@@ -2127,6 +3194,412 @@
         ],
         "tts": [
           "diez"
+        ]
+      },
+      "🥹": {
+        "default": [
+          "fytyrë që mezi mban lotët",
+          "klithmë",
+          "krenari",
+          "mëri",
+          "mërzi",
+          "rezisto"
+        ],
+        "tts": [
+          "fytyrë që mezi mban lotët"
+        ]
+      },
+      "🧌": {
+        "default": [
+          "fantazi",
+          "përbindësh",
+          "përrallë",
+          "xhuxh"
+        ],
+        "tts": [
+          "xhuxh"
+        ]
+      },
+      "🩻": {
+        "default": [
+          "doktor",
+          "grafi",
+          "kocka",
+          "mjekësore",
+          "skelet"
+        ],
+        "tts": [
+          "grafi"
+        ]
+      },
+      "🩼": {
+        "default": [
+          "bastun",
+          "invalid",
+          "lëndim",
+          "ndihmesë për lëvizje",
+          "patericë",
+          "shkop"
+        ],
+        "tts": [
+          "patericë"
+        ]
+      },
+      "🪩": {
+        "default": [
+          "disko",
+          "festë",
+          "kërcim",
+          "luks",
+          "sferë diskoje"
+        ],
+        "tts": [
+          "sferë diskoje"
+        ]
+      },
+      "🪪": {
+        "default": [
+          "dokument identifikimi",
+          "kredenciale",
+          "letërnjoftim",
+          "patentë",
+          "siguri"
+        ],
+        "tts": [
+          "letërnjoftim"
+        ]
+      },
+      "🪫": {
+        "default": [
+          "bateri e ulët",
+          "elektronike",
+          "energji e ulët"
+        ],
+        "tts": [
+          "bateri e ulët"
+        ]
+      },
+      "🪬": {
+        "default": [
+          "dorë",
+          "Fatimja",
+          "hajmali",
+          "Maria",
+          "mbrojtje",
+          "Miriami"
+        ],
+        "tts": [
+          "hajmali"
+        ]
+      },
+      "🪷": {
+        "default": [
+          "budizëm",
+          "Indi",
+          "induizëm",
+          "lule",
+          "pastërti",
+          "Vietnam",
+          "zambak uji"
+        ],
+        "tts": [
+          "zambak uji"
+        ]
+      },
+      "🪸": {
+        "default": [
+          "koral",
+          "korale",
+          "oqean"
+        ],
+        "tts": [
+          "koral"
+        ]
+      },
+      "🪹": {
+        "default": [
+          "fole bosh",
+          "krijim foleje"
+        ],
+        "tts": [
+          "fole bosh"
+        ]
+      },
+      "🪺": {
+        "default": [
+          "fole me vezë",
+          "krijim foleje"
+        ],
+        "tts": [
+          "fole me vezë"
+        ]
+      },
+      "🫃": {
+        "default": [
+          "bark",
+          "burrë shtatzënë",
+          "fryrë",
+          "plot",
+          "shtatzënë"
+        ],
+        "tts": [
+          "burrë shtatzënë"
+        ]
+      },
+      "🫄": {
+        "default": [
+          "bark",
+          "fryrë",
+          "person shtatzënë",
+          "plot",
+          "shtatzënë"
+        ],
+        "tts": [
+          "person shtatzënë"
+        ]
+      },
+      "🫅": {
+        "default": [
+          "finsik",
+          "mbret",
+          "mbretëror",
+          "monark",
+          "person me kurorë"
+        ],
+        "tts": [
+          "person me kurorë"
+        ]
+      },
+      "🫗": {
+        "default": [
+          "bosh",
+          "derdhje",
+          "gotë",
+          "hedhje lëngu",
+          "pije"
+        ],
+        "tts": [
+          "hedhje lëngu"
+        ]
+      },
+      "🫘": {
+        "default": [
+          "bishtajore",
+          "fasule",
+          "ushqim",
+          "veshkë"
+        ],
+        "tts": [
+          "fasule"
+        ]
+      },
+      "🫠": {
+        "default": [
+          "fytyrë që shkrin",
+          "lëng",
+          "shkrirje",
+          "shpërbërje",
+          "zhdukje"
+        ],
+        "tts": [
+          "fytyrë që shkrin"
+        ]
+      },
+      "🫡": {
+        "default": [
+          "diellor",
+          "fytyrë përshëndetëse",
+          "ok",
+          "përshëndetje",
+          "po",
+          "trupa"
+        ],
+        "tts": [
+          "fytyrë përshëndetëse"
+        ]
+      },
+      "🫢": {
+        "default": [
+          "çudi",
+          "frikë",
+          "fytyrë me sy të hapur dhe dorën mbi gojë",
+          "habi",
+          "mahnitje",
+          "mosbesim",
+          "turp"
+        ],
+        "tts": [
+          "fytyrë me sy të hapur dhe dorën mbi gojë"
+        ]
+      },
+      "🫣": {
+        "default": [
+          "fytyrë me sy përgjues",
+          "habitje",
+          "ngulje sysh",
+          "përgjim"
+        ],
+        "tts": [
+          "fytyrë me sy përgjues"
+        ]
+      },
+      "🫤": {
+        "default": [
+          "eh",
+          "fytyrë me gojë diagonale",
+          "i pasigurt",
+          "skeptik",
+          "zhgënjim"
+        ],
+        "tts": [
+          "fytyrë me gojë diagonale"
+        ]
+      },
+      "🫥": {
+        "default": [
+          "depresiv",
+          "fshehje",
+          "fytyrë me vijë të pikëzuar",
+          "i padukshëm",
+          "introvert",
+          "zhdukje"
+        ],
+        "tts": [
+          "fytyrë me vijë të pikëzuar"
+        ]
+      },
+      "🫦": {
+        "default": [
+          "ankth",
+          "flirt",
+          "frikë",
+          "kafshim buze",
+          "nervozizëm",
+          "shqetësim",
+          "siklet"
+        ],
+        "tts": [
+          "kafshim buze"
+        ]
+      },
+      "🫧": {
+        "default": [
+          "flluska",
+          "gromësimë",
+          "nën ujë",
+          "pastër",
+          "sapun"
+        ],
+        "tts": [
+          "flluska"
+        ]
+      },
+      "🫰": {
+        "default": [
+          "dashuri",
+          "dorë me gishtin tregues dhe të madhin të kapur",
+          "para",
+          "shtrenjtë",
+          "trokas",
+          "zemër"
+        ],
+        "tts": [
+          "dorë me gishtin tregues dhe të madhin të kapur"
+        ]
+      },
+      "🫱": {
+        "default": [
+          "djathtas",
+          "djathtë",
+          "dorë"
+        ],
+        "tts": [
+          "dorë djathtas"
+        ]
+      },
+      "🫲": {
+        "default": [
+          "dorë",
+          "majtas",
+          "majtë"
+        ],
+        "tts": [
+          "dorë majtas"
+        ]
+      },
+      "🫳": {
+        "default": [
+          "anulo",
+          "dorë me pëllëmbë poshtë",
+          "hidh",
+          "larg"
+        ],
+        "tts": [
+          "dorë me pëllëmbë poshtë"
+        ]
+      },
+      "🫴": {
+        "default": [
+          "dorë me pëllëmbë lart",
+          "eja",
+          "kap",
+          "ofrim",
+          "shenjë"
+        ],
+        "tts": [
+          "dorë me pëllëmbë lart"
+        ]
+      },
+      "🫵": {
+        "default": [
+          "drejtim",
+          "gishti tregues nga shikuesi",
+          "ti"
+        ],
+        "tts": [
+          "gishti tregues nga shikuesi"
+        ]
+      },
+      "🫶": {
+        "default": [
+          "dashuri",
+          "duar si zemër"
+        ],
+        "tts": [
+          "duar si zemër"
+        ]
+      },
+      "🛝": {
+        "default": [
+          "lojë",
+          "park lojërash",
+          "rrëshqitëse këndi lojërash"
+        ],
+        "tts": [
+          "rrëshqitëse këndi lojërash"
+        ]
+      },
+      "🛞": {
+        "default": [
+          "gomë",
+          "kthesë",
+          "rreth",
+          "rrotë"
+        ],
+        "tts": [
+          "rrotë"
+        ]
+      },
+      "🛟": {
+        "default": [
+          "bovë rrethore",
+          "mbrojtës jete",
+          "pluskues",
+          "shpëtim",
+          "siguri"
+        ],
+        "tts": [
+          "bovë rrethore"
         ]
       },
       "😀": {
@@ -2547,6 +4020,12 @@
         ]
       },
       "😶‍🌫": {
+        "default": [
+          "fytyrë në mjegull",
+          "fytyrë në re",
+          "i hutuar",
+          "kokë në re"
+        ],
         "tts": [
           "fytyrë në re"
         ]
@@ -7165,11 +8644,9 @@
       },
       "🦳": {
         "default": [
-          "flokë",
           "flokë të bardha",
-          "gri",
+          "flokë të bardhë",
           "i moshuar",
-          "të bardha",
           "thinja"
         ],
         "tts": [
@@ -9134,10 +10611,12 @@
       },
       "🥙": {
         "default": [
-          "bukë e mbushur",
+          "bukë e sheshtë",
           "bukë e sheshtë me mbushje",
-          "giro",
-          "palapetë e mbushur",
+          "gjiro",
+          "mbushje",
+          "palapetë",
+          "qebap",
           "ushqim"
         ],
         "tts": [
@@ -16949,7 +18428,8 @@
       },
       "❓": {
         "default": [
-          "pikëpyetje",
+          "?",
+          "pikëpyetje e kuqe",
           "pikësim",
           "pyetje",
           "shenja e pikëpyetjes e kuqe",
@@ -18136,6 +19616,35 @@
           "jen"
         ]
       },
+      "₢": {
+        "default": [
+          "BRB",
+          "kruseiro",
+          "monedhë"
+        ],
+        "tts": [
+          "kruseiro"
+        ]
+      },
+      "₣": {
+        "default": [
+          "frangë",
+          "frangë franceze",
+          "monedhë"
+        ],
+        "tts": [
+          "frangë franceze"
+        ]
+      },
+      "₤": {
+        "default": [
+          "lirë",
+          "monedhë"
+        ],
+        "tts": [
+          "lirë"
+        ]
+      },
       "₥": {
         "default": [
           "mil",
@@ -18165,12 +19674,50 @@
           "euro"
         ]
       },
+      "₰": {
+        "default": [
+          "monedhë",
+          "pfenig",
+          "qindarkë gjermane"
+        ],
+        "tts": [
+          "qindarkë gjermane"
+        ]
+      },
       "₱": {
         "default": [
           "pezo"
         ],
         "tts": [
           "pezo"
+        ]
+      },
+      "₳": {
+        "default": [
+          "ARA",
+          "austral",
+          "monedhë"
+        ],
+        "tts": [
+          "austral"
+        ]
+      },
+      "₶": {
+        "default": [
+          "lirë tureze",
+          "monedhë"
+        ],
+        "tts": [
+          "lirë tureze"
+        ]
+      },
+      "₷": {
+        "default": [
+          "monedhë",
+          "spesmilo"
+        ],
+        "tts": [
+          "spesmilo"
         ]
       },
       "₹": {
@@ -18198,6 +19745,24 @@
         ],
         "tts": [
           "bitcoin"
+        ]
+      },
+      "₨": {
+        "default": [
+          "monedhë",
+          "rupje"
+        ],
+        "tts": [
+          "rupje"
+        ]
+      },
+      "﷼": {
+        "default": [
+          "monedhë",
+          "rial"
+        ],
+        "tts": [
+          "rial"
         ]
       },
       "¹": {

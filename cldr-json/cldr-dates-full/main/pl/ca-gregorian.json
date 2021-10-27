@@ -3,7 +3,7 @@
     "pl": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "pl"
       },
@@ -316,13 +316,25 @@
               "full": "EEEE, d MMMM y",
               "long": "d MMMM y",
               "medium": "d MMM y",
-              "short": "dd.MM.y"
+              "short": "d.MM.y"
+            },
+            "dateSkeletons": {
+              "full": "yMMMMEEEEd",
+              "long": "yMMMMd",
+              "medium": "yMMMd",
+              "short": "yMMdd"
             },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -343,6 +355,7 @@
                 "Ehms": "E, h:mm:ss a",
                 "EHms": "E, HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d.MM.y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E, d MMM y G",
@@ -557,7 +570,7 @@
                   "y": "d MMMM y – d MMMM y"
                 },
                 "yMMMMEd": {
-                  "d": "E, d – E, d MMMM y",
+                  "d": "E, d MMMM – E, d MMMM y",
                   "M": "E, d MMMM – E, d MMMM y",
                   "y": "E, d MMMM y – E, d MMMM y"
                 }

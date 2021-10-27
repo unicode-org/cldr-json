@@ -3,7 +3,7 @@
     "smn": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "smn"
       },
@@ -276,11 +276,23 @@
               "medium": "d.M.y G",
               "short": "d.M.y GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMccccd",
+              "long": "GyMMMMd",
+              "medium": "GyMd",
+              "short": "GGGGGyMd"
+            },
             "timeFormats": {
               "full": "H.mm.ss zzzz",
               "long": "H.mm.ss z",
               "medium": "H.mm.ss",
               "short": "H.mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1} 'tme' {0}",
@@ -301,6 +313,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "GGGGG y-MM-dd",
                 "GyMMM": "LLL y G",
                 "GyMMMd": "MMM d. y G",
                 "GyMMMEd": "E MMM d. y G",

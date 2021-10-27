@@ -3,7 +3,7 @@
     "he": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "he"
       },
@@ -312,11 +312,23 @@
               "medium": "d בMMM y G",
               "short": "d.M.y GGGGG"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GGGGGyMd"
+            },
             "timeFormats": {
               "full": "H:mm:ss zzzz",
               "long": "H:mm:ss z",
               "medium": "H:mm:ss",
               "short": "H:mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1} בשעה {0}",
@@ -337,6 +349,7 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d בMMM y G",
                 "GyMMMEd": "E, d בMMM y G",

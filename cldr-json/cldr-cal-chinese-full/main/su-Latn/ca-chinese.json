@@ -3,7 +3,7 @@
     "su-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "su",
         "script": "Latn"
@@ -1032,11 +1032,23 @@
               "medium": "r MMM d",
               "short": "r-MM-dd"
             },
+            "dateSkeletons": {
+              "full": "rMMMMEEEEd",
+              "long": "rMMMMd",
+              "medium": "rMMMd",
+              "short": "rMMdd"
+            },
             "timeFormats": {
               "full": "H.mm.ss zzzz",
               "long": "H.mm.ss z",
               "medium": "H.mm.ss",
               "short": "H.mm"
+            },
+            "timeSkeletons": {
+              "full": "Hmmsszzzz",
+              "long": "Hmmssz",
+              "medium": "Hmmss",
+              "short": "Hmm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",
@@ -1053,9 +1065,12 @@
                 "EBhms": "E h:mm:ss B",
                 "Ed": "d, E",
                 "Gy": "r U",
-                "GyMMM": "r(U) MMM",
+                "GyMMM": "r MMM",
                 "GyMMMd": "r MMM d",
-                "GyMMMEd": "r(U) MMM d, E",
+                "GyMMMEd": "r MMM d, E",
+                "GyMMMM": "r(U) MMMM",
+                "GyMMMMd": "r(U) MMMM d",
+                "GyMMMMEd": "r(U) MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -1080,10 +1095,12 @@
                 "yyyyM": "r-MM",
                 "yyyyMd": "r-MM-dd",
                 "yyyyMEd": "r-MM-dd, E",
-                "yyyyMMM": "r(U) MMM",
+                "yyyyMMM": "r MMM",
                 "yyyyMMMd": "r MMM d",
-                "yyyyMMMEd": "r(U) MMM d, E",
+                "yyyyMMMEd": "r MMM d, E",
                 "yyyyMMMM": "r(U) MMMM",
+                "yyyyMMMMd": "r(U) MMMM d",
+                "yyyyMMMMEd": "r(U) MMMM d, E",
                 "yyyyQQQ": "r(U) QQQ",
                 "yyyyQQQQ": "r(U) QQQQ"
               },

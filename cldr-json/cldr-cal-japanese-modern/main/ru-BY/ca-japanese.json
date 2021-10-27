@@ -3,7 +3,7 @@
     "ru-BY": {
       "identity": {
         "version": {
-          "_cldrVersion": "39"
+          "_cldrVersion": "40"
         },
         "language": "ru",
         "territory": "BY"
@@ -113,13 +113,13 @@
                   "sat": "сб"
                 },
                 "narrow": {
-                  "sun": "вс",
-                  "mon": "пн",
-                  "tue": "вт",
-                  "wed": "ср",
-                  "thu": "чт",
-                  "fri": "пт",
-                  "sat": "сб"
+                  "sun": "В",
+                  "mon": "П",
+                  "tue": "В",
+                  "wed": "С",
+                  "thu": "Ч",
+                  "fri": "П",
+                  "sat": "С"
                 },
                 "short": {
                   "sun": "вс",
@@ -1012,11 +1012,23 @@
               "medium": "d MMM y 'г'. G",
               "short": "dd.MM.y G"
             },
+            "dateSkeletons": {
+              "full": "GyMMMMEEEEd",
+              "long": "GyMMMMd",
+              "medium": "GyMMMd",
+              "short": "GyMMdd"
+            },
             "timeFormats": {
               "full": "HH:mm:ss zzzz",
               "long": "HH:mm:ss z",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
+            },
+            "timeSkeletons": {
+              "full": "HHmmsszzzz",
+              "long": "HHmmssz",
+              "medium": "HHmmss",
+              "short": "HHmm"
             },
             "dateTimeFormats": {
               "full": "{1}, {0}",
@@ -1037,6 +1049,7 @@
                 "Ehms": "ccc, h:mm:ss a",
                 "EHms": "ccc HH:mm:ss",
                 "Gy": "y 'г'. G",
+                "GyMd": "dd.MM.y G",
                 "GyMMM": "LLL y 'г'. G",
                 "GyMMMd": "d MMM y 'г'. G",
                 "GyMMMEd": "E, d MMM y 'г'. G",
