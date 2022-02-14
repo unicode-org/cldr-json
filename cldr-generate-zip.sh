@@ -13,7 +13,7 @@ then
 fi
 
 set -x
-( cd ${OUT} && zip -r cldr-${VERSION}-json-full.zip ../LICENSE cldr-core cldr-rbnf cldr-*-full )
-( cd ${OUT} && zip -r cldr-${VERSION}-json-modern.zip ../LICENSE cldr-core cldr-rbnf cldr-*-modern )
+( cd ${OUT} && zip -r cldr-${VERSION}-json-full.zip ../LICENSE cldr-core cldr-rbnf cldr-*-full cldr-bcp47 )
+( cd ${OUT} && zip -r cldr-${VERSION}-json-modern.zip ../LICENSE cldr-core cldr-rbnf cldr-*-modern cldr-bcp47 )
 
 mv -v ${OUT}/*.zip ${DIST}/
