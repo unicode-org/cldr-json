@@ -16,6 +16,6 @@ set -x
 ( cd ${OUT} && cp ../LICENSE LICENSE )
 ( cd ${OUT} && zip -r cldr-${VERSION}-json-full.zip LICENSE cldr-core cldr-rbnf cldr-*-full cldr-bcp47 )
 ( cd ${OUT} && zip -r cldr-${VERSION}-json-modern.zip LICENSE cldr-core cldr-rbnf cldr-*-modern cldr-bcp47 )
-( cd ${OUT} && rm LICENSE }
+( cd ${OUT} && rm LICENSE )
 
 mv -v ${OUT}/*.zip ${DIST}/

@@ -3,7 +3,7 @@
     "ta": {
       "identity": {
         "version": {
-          "_cldrVersion": "40"
+          "_cldrVersion": "41"
         },
         "language": "ta"
       },
@@ -107,7 +107,7 @@
             "compoundUnitPattern1-count-other": "கன {0}"
           },
           "times": {
-            "compoundUnitPattern": "{0}⋅{1}"
+            "compoundUnitPattern": "{0}-{1}"
           },
           "acceleration-g-force": {
             "displayName": "ஜி-ஃபோர்ஸ்",
@@ -121,12 +121,18 @@
             "dative-count-other": "{0} ஜி-ஃபோர்ஸுக்கு"
           },
           "acceleration-meter-per-square-second": {
-            "displayName": "மீட்டர்/சதுரவிநாடி",
+            "displayName": "மீட்டர்கள்/சதுரவிநாடி",
             "unitPattern-count-one": "{0} மீட்டர்/சதுரவிநாடி",
-            "unitPattern-count-other": "{0} மீட்டர்கள்/சதுரவிநாடி"
+            "ablative-count-one": "{0} மீட்டர்/சதுரவிநாடியில்",
+            "accusative-count-one": "{0} மீட்டர்/சதுரவிநாடியை",
+            "dative-count-one": "{0} மீட்டர்/சதுரவிநாடிக்கு",
+            "unitPattern-count-other": "{0} மீட்டர்கள்/சதுரவிநாடி",
+            "ablative-count-other": "{0} மீட்டர்கள்/சதுரவிநாடியில்",
+            "accusative-count-other": "{0} மீட்டர்கள்/சதுரவிநாடியை",
+            "dative-count-other": "{0} மீட்டர்கள்/சதுரவிநாடிக்கு"
           },
           "angle-revolution": {
-            "displayName": "சுழற்சி",
+            "displayName": "சுழற்சிகள்",
             "unitPattern-count-one": "{0} சுழற்சி",
             "ablative-count-one": "{0} சுழற்சியில்",
             "accusative-count-one": "{0} சுழற்சியை",
@@ -137,12 +143,12 @@
             "dative-count-other": "{0} சுழற்சிகளுக்கு"
           },
           "angle-radian": {
-            "displayName": "ரேடியன்",
+            "displayName": "ரேடியன்ஸ்",
             "unitPattern-count-one": "{0} ரேடியன்",
             "ablative-count-one": "{0} ரேடியனில்",
             "accusative-count-one": "{0} ரேடியனை",
             "dative-count-one": "{0} ரேடியனுக்கு",
-            "unitPattern-count-other": "{0} ரேடியன்",
+            "unitPattern-count-other": "{0} ரேடியன்ஸ்",
             "ablative-count-other": "{0} ரேடியன்ஸில்",
             "accusative-count-other": "{0} ரேடியன்ஸை",
             "dative-count-other": "{0} ரேடியன்ஸுக்கு"
@@ -153,7 +159,7 @@
             "ablative-count-one": "{0} டிகிரியில்",
             "accusative-count-one": "{0} டிகிரியை",
             "dative-count-one": "{0} டிகிரிக்கு",
-            "unitPattern-count-other": "{0} டிகிரி",
+            "unitPattern-count-other": "{0} டிகிரீஸ்",
             "ablative-count-other": "{0} டிகிரீஸில்",
             "accusative-count-other": "{0} டிகிரீஸை",
             "dative-count-other": "{0} டிகிரீஸுக்கு"
@@ -183,8 +189,14 @@
           "area-square-kilometer": {
             "displayName": "சதுர கிலோமீட்டர்கள்",
             "unitPattern-count-one": "{0} சதுர கிலோமீட்டர்",
+            "ablative-count-one": "{0} சதுர கிலோமீட்டரில்",
+            "accusative-count-one": "{0} சதுர கிலோமீட்டரை",
+            "dative-count-one": "{0} சதுர கிலோமீட்டருக்கு",
             "unitPattern-count-other": "{0} சதுர கிலோமீட்டர்கள்",
-            "perUnitPattern": "{0}/கி.மீ.²"
+            "ablative-count-other": "{0} சதுர கிலோமீட்டர்களில்",
+            "accusative-count-other": "{0} சதுர கிலோமீட்டர்களை",
+            "dative-count-other": "{0} சதுர கிலோமீட்டர்களுக்கு",
+            "perUnitPattern": "{0}/சதுர கிலோமீட்டர்"
           },
           "area-hectare": {
             "displayName": "ஹெக்டேர்",
@@ -192,7 +204,7 @@
             "ablative-count-one": "{0} ஹெக்டேரில்",
             "accusative-count-one": "{0} ஹெக்டேரை",
             "dative-count-one": "{0} ஹெக்டேருக்கு",
-            "unitPattern-count-other": "{0} ஹெக்டேர்",
+            "unitPattern-count-other": "{0} ஹெக்டேர்கள்",
             "ablative-count-other": "{0} ஹெக்டேர்களில்",
             "accusative-count-other": "{0} ஹெக்டேர்களை",
             "dative-count-other": "{0} ஹெக்டேர்களுக்கு"
@@ -200,20 +212,32 @@
           "area-square-meter": {
             "displayName": "சதுர மீட்டர்கள்",
             "unitPattern-count-one": "{0} சதுர மீட்டர்",
-            "unitPattern-count-other": "{0} சதுர மீட்டர்",
+            "ablative-count-one": "{0} சதுர மீட்டரில்",
+            "accusative-count-one": "{0} சதுர மீட்டரை",
+            "dative-count-one": "{0} சதுர மீட்டருக்கு",
+            "unitPattern-count-other": "{0} சதுர மீட்டர்கள்",
+            "ablative-count-other": "{0} சதுர மீட்டர்களில்",
+            "accusative-count-other": "{0} சதுர மீட்டர்களை",
+            "dative-count-other": "{0} சதுர மீட்டர்களுக்கு",
             "perUnitPattern": "{0}/சதுர மீட்டர்"
           },
           "area-square-centimeter": {
             "displayName": "சதுர சென்டி மீட்டர்கள்",
             "unitPattern-count-one": "{0} சதுர சென்டிமீட்டர்",
+            "ablative-count-one": "{0} சதுர சென்டிமீட்டரில்",
+            "accusative-count-one": "{0} சதுர சென்டிமீட்டரை",
+            "dative-count-one": "{0} சதுர சென்டிமீட்டருக்கு",
             "unitPattern-count-other": "{0} சதுர சென்டிமீட்டர்கள்",
+            "ablative-count-other": "{0} சதுர சென்டிமீட்டர்களில்",
+            "accusative-count-other": "{0} சதுர சென்டிமீட்டர்களை",
+            "dative-count-other": "{0} சதுர சென்டிமீட்டர்களுக்கு",
             "perUnitPattern": "{0}/சதுர சென்டிமீட்டர்"
           },
           "area-square-mile": {
             "displayName": "சதுர மைல்கள்",
             "unitPattern-count-one": "{0} சதுர மைல்",
-            "unitPattern-count-other": "{0} சதுர மைல்",
-            "perUnitPattern": "{0}/ச. மை."
+            "unitPattern-count-other": "{0} சதுர மைல்கள்",
+            "perUnitPattern": "{0}/சதுர மைல்"
           },
           "area-acre": {
             "displayName": "ஏக்கர்",
@@ -260,12 +284,24 @@
           "concentr-millimole-per-liter": {
             "displayName": "மில்லிமோல்கள்/லிட்டர்",
             "unitPattern-count-one": "{0} மில்லிமோல்/லிட்டர்",
-            "unitPattern-count-other": "{0} மில்லிமோல்கள்/லிட்டர்"
+            "ablative-count-one": "{0} மில்லிமோல்/லிட்டரில்",
+            "accusative-count-one": "{0} மில்லிமோல்/லிட்டரை",
+            "dative-count-one": "{0} மில்லிமோல்/லிட்டருக்கு",
+            "unitPattern-count-other": "{0} மில்லிமோல்கள்/லிட்டர்",
+            "ablative-count-other": "{0} மில்லிமோல்கள்/லிட்டரில்",
+            "accusative-count-other": "{0} மில்லிமோல்கள்/லிட்டரை",
+            "dative-count-other": "{0} மில்லிமோல்கள்/லிட்டருக்கு"
           },
           "concentr-item": {
             "displayName": "உருப்படிகள்",
             "unitPattern-count-one": "{0} உருப்படி",
-            "unitPattern-count-other": "{0} உருப்படிகள்"
+            "ablative-count-one": "{0} உருப்படியில்",
+            "accusative-count-one": "{0} உருப்படியை",
+            "dative-count-one": "{0} உருப்படிக்கு",
+            "unitPattern-count-other": "{0} உருப்படிகள்",
+            "ablative-count-other": "{0} உருப்படிகளில்",
+            "accusative-count-other": "{0} உருப்படிகளை",
+            "dative-count-other": "{0} உருப்படிகளுக்கு"
           },
           "concentr-permillion": {
             "displayName": "பகுதிகள்/மில்லியன்",
@@ -325,12 +361,24 @@
           "consumption-liter-per-kilometer": {
             "displayName": "லிட்டர்கள்/கிலோமீட்டர்",
             "unitPattern-count-one": "{0} லிட்டர்/கிலோமீட்டர்",
-            "unitPattern-count-other": "{0} லிட்டர்கள்/கிலோமீட்டர்"
+            "ablative-count-one": "{0} லிட்டர்/கிலோமீட்டரில்",
+            "accusative-count-one": "{0} லிட்டர்/கிலோமீட்டரை",
+            "dative-count-one": "{0} லிட்டர்/கிலோமீட்டருக்கு",
+            "unitPattern-count-other": "{0} லிட்டர்கள்/கிலோமீட்டர்",
+            "ablative-count-other": "{0} லிட்டர்கள்/கிலோமீட்டரில்",
+            "accusative-count-other": "{0} லிட்டர்கள்/கிலோமீட்டரை",
+            "dative-count-other": "{0} லிட்டர்கள்/கிலோமீட்டருக்கு"
           },
           "consumption-liter-per-100-kilometer": {
             "displayName": "லிட்டர்/100கி.மீ",
             "unitPattern-count-one": "{0} லிட்டர்/100கி.மீ",
-            "unitPattern-count-other": "{0} லிட்டர்/100கி.மீ"
+            "ablative-count-one": "{0} லிட்டர்/100கிலோமீட்டரில்",
+            "accusative-count-one": "{0} லிட்டர்/100கிலோமீட்டரை",
+            "dative-count-one": "{0} லிட்டர்/100கிலோமீட்டருக்கு",
+            "unitPattern-count-other": "{0} லிட்டர்/100கி.மீ",
+            "ablative-count-other": "{0} லிட்டர்/100கிலோமீட்டரில்",
+            "accusative-count-other": "{0} லிட்டர்/100கிலோமீட்டரை",
+            "dative-count-other": "{0} லிட்டர்/100கிலோமீட்டருக்கு"
           },
           "consumption-mile-per-gallon": {
             "displayName": "மைல்கள்/கேலன்",
@@ -345,47 +393,101 @@
           "digital-petabyte": {
             "displayName": "பெடாபைட்கள்",
             "unitPattern-count-one": "{0} பெடாபைட்",
-            "unitPattern-count-other": "{0} பெடாபைட்கள்"
+            "ablative-count-one": "{0} பெடாபைட்டில்",
+            "accusative-count-one": "{0} பெடாபைட்டை",
+            "dative-count-one": "{0} பெடாபைட்டுக்கு",
+            "unitPattern-count-other": "{0} பெடாபைட்கள்",
+            "ablative-count-other": "{0} பெடாபைட்களில்",
+            "accusative-count-other": "{0} பெடாபைட்களை",
+            "dative-count-other": "{0} பெடாபைட்களுக்கு"
           },
           "digital-terabyte": {
             "displayName": "டெராபைட்கள்",
             "unitPattern-count-one": "{0} டெராபைட்",
-            "unitPattern-count-other": "{0} டெராபைட்கள்"
+            "ablative-count-one": "{0} டெராபைட்டில்",
+            "accusative-count-one": "{0} டெராபைட்டை",
+            "dative-count-one": "{0} டெராபைட்டுக்கு",
+            "unitPattern-count-other": "{0} டெராபைட்கள்",
+            "ablative-count-other": "{0} டெராபைட்களில்",
+            "accusative-count-other": "{0} டெராபைட்களை",
+            "dative-count-other": "{0} டெராபைட்களுக்கு"
           },
           "digital-terabit": {
             "displayName": "டெரா பிட்கள்",
             "unitPattern-count-one": "{0} டெராபிட்",
-            "unitPattern-count-other": "{0} டெராபிட்கள்"
+            "ablative-count-one": "{0} டெராபிட்டில்",
+            "accusative-count-one": "{0} டெராபிட்டை",
+            "dative-count-one": "{0} டெராபிட்டுக்கு",
+            "unitPattern-count-other": "{0} டெராபிட்கள்",
+            "ablative-count-other": "{0} டெராபிட்களில்",
+            "accusative-count-other": "{0} டெராபிட்களை",
+            "dative-count-other": "{0} டெராபிட்களுக்கு"
           },
           "digital-gigabyte": {
             "displayName": "கிகாபைட்கள்",
             "unitPattern-count-one": "{0} கிகாபைட்",
-            "unitPattern-count-other": "{0} கிகாபைட்கள்"
+            "ablative-count-one": "{0} கிகாபைட்டில்",
+            "accusative-count-one": "{0} கிகாபைட்டை",
+            "dative-count-one": "{0} கிகாபைட்டுக்கு",
+            "unitPattern-count-other": "{0} கிகாபைட்கள்",
+            "ablative-count-other": "{0} கிகாபைட்களில்",
+            "accusative-count-other": "{0} கிகாபைட்களை",
+            "dative-count-other": "{0} கிகாபைட்களுக்கு"
           },
           "digital-gigabit": {
             "displayName": "கிகாபிட்கள்",
             "unitPattern-count-one": "{0} கிகாபிட்",
-            "unitPattern-count-other": "{0} கிகாபிட்கள்"
+            "ablative-count-one": "{0} கிகாபிட்டில்",
+            "accusative-count-one": "{0} கிகாபிட்டை",
+            "dative-count-one": "{0} கிகாபிட்டுக்கு",
+            "unitPattern-count-other": "{0} கிகாபிட்கள்",
+            "ablative-count-other": "{0} கிகாபிட்களில்",
+            "accusative-count-other": "{0} கிகாபிட்களை",
+            "dative-count-other": "{0} கிகாபிட்களுக்கு"
           },
           "digital-megabyte": {
             "displayName": "மெகாபைட்கள்",
             "unitPattern-count-one": "{0} மெகாபைட்",
-            "unitPattern-count-other": "{0} மெகாபைட்கள்"
+            "ablative-count-one": "{0} மெகாபைட்டில்",
+            "accusative-count-one": "{0} மெகாபைட்டை",
+            "dative-count-one": "{0} மெகாபைட்டுக்கு",
+            "unitPattern-count-other": "{0} மெகாபைட்கள்",
+            "ablative-count-other": "{0} மெகாபைட்களில்",
+            "accusative-count-other": "{0} மெகாபைட்களை",
+            "dative-count-other": "{0} மெகாபைட்களுக்கு"
           },
           "digital-megabit": {
             "displayName": "மெகாபிட்கள்",
             "unitPattern-count-one": "{0} மெகாபிட்",
-            "unitPattern-count-other": "{0} மெகாபிட்கள்"
+            "ablative-count-one": "{0} மெகாபிட்டில்",
+            "accusative-count-one": "{0} மெகாபிட்டை",
+            "dative-count-one": "{0} மெகாபிட்டுக்கு",
+            "unitPattern-count-other": "{0} மெகாபிட்கள்",
+            "ablative-count-other": "{0} மெகாபிட்களில்",
+            "accusative-count-other": "{0} மெகாபிட்களை",
+            "dative-count-other": "{0} மெகாபிட்களுக்கு"
           },
           "digital-kilobyte": {
             "displayName": "கிலோபைட்கள்",
             "unitPattern-count-one": "{0} கிலோபைட்",
-            "unitPattern-count-other": "{0} கிலோபைட்கள்"
+            "ablative-count-one": "{0} கிலோபைட்டில்",
+            "accusative-count-one": "{0} கிலோபைட்டை",
+            "dative-count-one": "{0} கிலோபைட்டுக்கு",
+            "unitPattern-count-other": "{0} கிலோபைட்கள்",
+            "ablative-count-other": "{0} கிலோபைட்களில்",
+            "accusative-count-other": "{0} கிலோபைட்களை",
+            "dative-count-other": "{0} கிலோபைட்களுக்கு"
           },
           "digital-kilobit": {
             "displayName": "கிலோபிட்கள்",
             "unitPattern-count-one": "{0} கிலோபிட்",
-            "unitPattern-count-other": "{0} கிலோபிட்கள்"
+            "ablative-count-one": "{0} கிலோபிட்டில்",
+            "accusative-count-one": "{0} கிலோபிட்டை",
+            "dative-count-one": "{0} கிலோபிட்டுக்கு",
+            "unitPattern-count-other": "{0} கிலோபிட்கள்",
+            "ablative-count-other": "{0} கிலோபிட்களில்",
+            "accusative-count-other": "{0} கிலோபிட்களை",
+            "dative-count-other": "{0} கிலோபிட்களுக்கு"
           },
           "digital-byte": {
             "displayName": "பைட்கள்",
@@ -528,17 +630,35 @@
           "duration-millisecond": {
             "displayName": "மில்லிவிநாடிகள்",
             "unitPattern-count-one": "{0} மில்லிவிநாடி",
-            "unitPattern-count-other": "{0} மில்லிவிநாடிகள்"
+            "ablative-count-one": "{0} மில்லிவிநாடியில்",
+            "accusative-count-one": "{0} மில்லிவிநாடியை",
+            "dative-count-one": "{0} மில்லிவிநாடிக்கு",
+            "unitPattern-count-other": "{0} மில்லிவிநாடிகள்",
+            "ablative-count-other": "{0} மில்லிவிநாடிகளில்",
+            "accusative-count-other": "{0} மில்லிவிநாடிகளை",
+            "dative-count-other": "{0} மில்லிவிநாடிகளுக்கு"
           },
           "duration-microsecond": {
             "displayName": "மைக்ரோவிநாடிகள்",
             "unitPattern-count-one": "{0} மைக்ரோவிநாடி",
-            "unitPattern-count-other": "{0} மைக்ரோவிநாடிகள்"
+            "ablative-count-one": "{0} மைக்ரோவிநாடியில்",
+            "accusative-count-one": "{0} மைக்ரோவிநாடியை",
+            "dative-count-one": "{0} மைக்ரோவிநாடிக்கு",
+            "unitPattern-count-other": "{0} மைக்ரோவிநாடிகள்",
+            "ablative-count-other": "{0} மைக்ரோவிநாடிகளில்",
+            "accusative-count-other": "{0} மைக்ரோவிநாடிகளை",
+            "dative-count-other": "{0} மைக்ரோவிநாடிகளுக்கு"
           },
           "duration-nanosecond": {
             "displayName": "நானோசெகண்டுகள்",
             "unitPattern-count-one": "{0} நானோசெகண்டு",
-            "unitPattern-count-other": "{0} நானோசெகண்டுகள்"
+            "ablative-count-one": "{0} நானோசெகண்டில்",
+            "accusative-count-one": "{0} நானோசெகண்டை",
+            "dative-count-one": "{0} நானோசெகண்டுக்கு",
+            "unitPattern-count-other": "{0} நானோசெகண்டுகள்",
+            "ablative-count-other": "{0} நானோசெகண்டுகளில்",
+            "accusative-count-other": "{0} நானோசெகண்டுகளை",
+            "dative-count-other": "{0} நானோசெகண்டுகளுக்கு"
           },
           "electric-ampere": {
             "displayName": "ஆம்பியர்கள்",
@@ -554,7 +674,13 @@
           "electric-milliampere": {
             "displayName": "மில்லி ஆம்பியர்கள்",
             "unitPattern-count-one": "{0} மில்லி ஆம்பியர்",
-            "unitPattern-count-other": "{0} மில்லி ஆம்பியர்கள்"
+            "ablative-count-one": "{0} மில்லி ஆம்பியரில்",
+            "accusative-count-one": "{0} மில்லி ஆம்பியரை",
+            "dative-count-one": "{0} மில்லி ஆம்பியருக்கு",
+            "unitPattern-count-other": "{0} மில்லி ஆம்பியர்கள்",
+            "ablative-count-other": "{0} மில்லி ஆம்பியர்களில்",
+            "accusative-count-other": "{0} மில்லி ஆம்பியர்களை",
+            "dative-count-other": "{0} மில்லி ஆம்பியர்களுக்கு"
           },
           "electric-ohm": {
             "displayName": "ஓம்ஸ்",
@@ -602,7 +728,13 @@
           "energy-kilojoule": {
             "displayName": "கிலோஜூல்கள்",
             "unitPattern-count-one": "{0} கிலோஜூல்",
-            "unitPattern-count-other": "{0} கிலோஜூல்கள்"
+            "ablative-count-one": "{0} கிலோஜூலில்",
+            "accusative-count-one": "{0} கிலோஜூலை",
+            "dative-count-one": "{0} கிலோஜூலுக்கு",
+            "unitPattern-count-other": "{0} கிலோஜூல்கள்",
+            "ablative-count-other": "{0} கிலோஜூல்களில்",
+            "accusative-count-other": "{0} கிலோஜூல்களை",
+            "dative-count-other": "{0} கிலோஜூல்களுக்கு"
           },
           "energy-joule": {
             "displayName": "ஜூல்கள்",
@@ -618,7 +750,13 @@
           "energy-kilowatt-hour": {
             "displayName": "கிலோவாட் மணிநேரம்",
             "unitPattern-count-one": "{0} கிலோவாட் மணிநேரம்",
-            "unitPattern-count-other": "{0} கிலோவாட் மணிநேரம்"
+            "ablative-count-one": "{0} கிலோவாட் மணிநேரத்தில்",
+            "accusative-count-one": "{0} கிலோவாட் மணிநேரத்தை",
+            "dative-count-one": "{0} கிலோவாட் மணிநேரத்திற்கு",
+            "unitPattern-count-other": "{0} கிலோவாட் மணிநேரம்",
+            "ablative-count-other": "{0} கிலோவாட் மணிநேரத்தில்",
+            "accusative-count-other": "{0} கிலோவாட் மணிநேரத்தை",
+            "dative-count-other": "{0} கிலோவாட் மணிநேரத்திற்கு"
           },
           "energy-electronvolt": {
             "displayName": "எலக்ட்ரான்வோல்ட்ஸ்",
@@ -654,22 +792,46 @@
           "force-kilowatt-hour-per-100-kilometer": {
             "displayName": "கிலோவாட்-மணிநேரம்/100 கிலோமீட்டர்",
             "unitPattern-count-one": "{0} கிலோவாட்-மணிநேரம்/100 கிலோமீட்டர்",
-            "unitPattern-count-other": "{0} கிலோவாட்-மணிநேரம்/100 கிலோமீட்டர்"
+            "ablative-count-one": "{0} கிலோவாட்-மணிநேரம்/100 கிலோமீட்டரில்",
+            "accusative-count-one": "{0} கிலோவாட்-மணிநேரம்/100 கிலோமீட்டரை",
+            "dative-count-one": "{0} கிலோவாட்-மணிநேரம்/100 கிலோமீட்டருக்கு",
+            "unitPattern-count-other": "{0} கிலோவாட்-மணிநேரம்/100 கிலோமீட்டர்",
+            "ablative-count-other": "{0} கிலோவாட்-மணிநேரம்/100 கிலோமீட்டரில்",
+            "accusative-count-other": "{0} கிலோவாட்-மணிநேரம்/100 கிலோமீட்டரை",
+            "dative-count-other": "{0} கிலோவாட்-மணிநேரம்/100 கிலோமீட்டருக்கு"
           },
           "frequency-gigahertz": {
             "displayName": "கிகாஹெர்ட்ஸ்",
             "unitPattern-count-one": "{0} கிகாஹெர்ட்ஸ்",
-            "unitPattern-count-other": "{0} கிகாஹெர்ட்ஸ்"
+            "ablative-count-one": "{0} கிகாஹெர்ட்ஸில்",
+            "accusative-count-one": "{0} கிகாஹெர்ட்ஸை",
+            "dative-count-one": "{0} கிகாஹெர்ட்ஸுக்கு",
+            "unitPattern-count-other": "{0} கிகாஹெர்ட்ஸ்",
+            "ablative-count-other": "{0} கிகாஹெர்ட்ஸில்",
+            "accusative-count-other": "{0} கிகாஹெர்ட்ஸை",
+            "dative-count-other": "{0} கிகாஹெர்ட்ஸுக்கு"
           },
           "frequency-megahertz": {
             "displayName": "மெகாஹெர்ட்ஸ்",
             "unitPattern-count-one": "{0} மெகாஹெர்ட்ஸ்",
-            "unitPattern-count-other": "{0} மெகாஹெர்ட்ஸ்"
+            "ablative-count-one": "{0} மெகாஹெர்ட்ஸில்",
+            "accusative-count-one": "{0} மெகாஹெர்ட்ஸை",
+            "dative-count-one": "{0} மெகாஹெர்ட்ஸுக்கு",
+            "unitPattern-count-other": "{0} மெகாஹெர்ட்ஸ்",
+            "ablative-count-other": "{0} மெகாஹெர்ட்ஸில்",
+            "accusative-count-other": "{0} மெகாஹெர்ட்ஸை",
+            "dative-count-other": "{0} மெகாஹெர்ட்ஸுக்கு"
           },
           "frequency-kilohertz": {
             "displayName": "கிலோஹெர்ட்ஸ்",
             "unitPattern-count-one": "{0} கிலோஹெர்ட்ஸ்",
-            "unitPattern-count-other": "{0} கிலோஹெர்ட்ஸ்"
+            "ablative-count-one": "{0} கிலோஹெர்ட்ஸில்",
+            "accusative-count-one": "{0} கிலோஹெர்ட்ஸை",
+            "dative-count-one": "{0} கிலோஹெர்ட்ஸுக்கு",
+            "unitPattern-count-other": "{0} கிலோஹெர்ட்ஸ்",
+            "ablative-count-other": "{0} கிலோஹெர்ட்ஸில்",
+            "accusative-count-other": "{0} கிலோஹெர்ட்ஸை",
+            "dative-count-other": "{0} கிலோஹெர்ட்ஸுக்கு"
           },
           "frequency-hertz": {
             "displayName": "ஹெர்ட்ஸ்",
@@ -707,12 +869,24 @@
           "graphics-megapixel": {
             "displayName": "மெகாபிக்சல்கள்",
             "unitPattern-count-one": "{0} மெகாபிக்சல்",
-            "unitPattern-count-other": "{0} மெகாபிக்சல்கள்"
+            "ablative-count-one": "{0} மெகாபிக்சலில்",
+            "accusative-count-one": "{0} மெகாபிக்சலை",
+            "dative-count-one": "{0} மெகாபிக்சலுக்கு",
+            "unitPattern-count-other": "{0} மெகாபிக்சல்கள்",
+            "ablative-count-other": "{0} மெகாபிக்சல்களில்",
+            "accusative-count-other": "{0} மெகாபிக்சல்களை",
+            "dative-count-other": "{0} மெகாபிக்சல்களுக்கு"
           },
           "graphics-pixel-per-centimeter": {
             "displayName": "பிக்சல்கள்/ சென்டிமீட்டர்",
             "unitPattern-count-one": "{0} பிக்சல்/ சென்டிமீட்டர்",
-            "unitPattern-count-other": "{0} பிக்சல்கள்/ சென்டிமீட்டர்"
+            "ablative-count-one": "{0} பிக்சல்/ சென்டிமீட்டரில்",
+            "accusative-count-one": "{0} பிக்சல்/ சென்டிமீட்டரை",
+            "dative-count-one": "{0} பிக்சல்/ சென்டிமீட்டருக்கு",
+            "unitPattern-count-other": "{0} பிக்சல்கள்/ சென்டிமீட்டர்",
+            "ablative-count-other": "{0} பிக்சல்கள்/ சென்டிமீட்டரில்",
+            "accusative-count-other": "{0} பிக்சல்கள்/ சென்டிமீட்டரை",
+            "dative-count-other": "{0} பிக்சல்கள்/ சென்டிமீட்டருக்கு"
           },
           "graphics-pixel-per-inch": {
             "displayName": "பிக்சல்கள்/ அங்குலம்",
@@ -730,9 +904,9 @@
             "unitPattern-count-other": "{0} புள்ளிகள் / அங்குலம்"
           },
           "graphics-dot": {
-            "displayName": "புள்ளி",
+            "displayName": "புள்ளிகள்",
             "unitPattern-count-one": "{0}புள்ளி",
-            "unitPattern-count-other": "{0}புள்ளி"
+            "unitPattern-count-other": "{0}புள்ளிகள்"
           },
           "length-earth-radius": {
             "displayName": "புவி ஆரம்",
@@ -742,7 +916,13 @@
           "length-kilometer": {
             "displayName": "கிலோமீட்டர்கள்",
             "unitPattern-count-one": "{0} கிலோமீட்டர்",
+            "ablative-count-one": "{0} கிலோமீட்டரில்",
+            "accusative-count-one": "{0} கிலோமீட்டரை",
+            "dative-count-one": "{0} கிலோமீட்டருக்கு",
             "unitPattern-count-other": "{0} கிலோமீட்டர்கள்",
+            "ablative-count-other": "{0} கிலோமீட்டர்களில்",
+            "accusative-count-other": "{0} கிலோமீட்டர்களை",
+            "dative-count-other": "{0} கிலோமீட்டர்களுக்கு",
             "perUnitPattern": "{0}/கிலோமீட்டர்"
           },
           "length-meter": {
@@ -760,33 +940,69 @@
           "length-decimeter": {
             "displayName": "டெசிமீட்டர்கள்",
             "unitPattern-count-one": "{0} டெசிமீட்டர்",
-            "unitPattern-count-other": "{0} டெசிமீட்டர்கள்"
+            "ablative-count-one": "{0} டெசிமீட்டரில்",
+            "accusative-count-one": "{0} டெசிமீட்டரை",
+            "dative-count-one": "{0} டெசிமீட்டருக்கு",
+            "unitPattern-count-other": "{0} டெசிமீட்டர்கள்",
+            "ablative-count-other": "{0} டெசிமீட்டர்களில்",
+            "accusative-count-other": "{0} டெசிமீட்டர்களை",
+            "dative-count-other": "{0} டெசிமீட்டர்களுக்கு"
           },
           "length-centimeter": {
             "displayName": "சென்டிமீட்டர்கள்",
             "unitPattern-count-one": "{0} சென்டிமீட்டர்",
+            "ablative-count-one": "{0} சென்டிமீட்டரில்",
+            "accusative-count-one": "{0} சென்டிமீட்டரை",
+            "dative-count-one": "{0} சென்டிமீட்டருக்கு",
             "unitPattern-count-other": "{0} சென்டிமீட்டர்கள்",
+            "ablative-count-other": "{0} சென்டிமீட்டர்களில்",
+            "accusative-count-other": "{0} சென்டிமீட்டர்களை",
+            "dative-count-other": "{0} சென்டிமீட்டர்களுக்கு",
             "perUnitPattern": "{0}/சென்டிமீட்டர்"
           },
           "length-millimeter": {
             "displayName": "மில்லிமீட்டர்கள்",
             "unitPattern-count-one": "{0} மில்லிமீட்டர்",
-            "unitPattern-count-other": "{0} மில்லிமீட்டர்கள்"
+            "ablative-count-one": "{0} மில்லிமீட்டரில்",
+            "accusative-count-one": "{0} மில்லிமீட்டரை",
+            "dative-count-one": "{0} மில்லிமீட்டருக்கு",
+            "unitPattern-count-other": "{0} மில்லிமீட்டர்கள்",
+            "ablative-count-other": "{0} மில்லிமீட்டர்களில்",
+            "accusative-count-other": "{0} மில்லிமீட்டர்களை",
+            "dative-count-other": "{0} மில்லிமீட்டர்களுக்கு"
           },
           "length-micrometer": {
             "displayName": "மைக்ரோமீட்டர்கள்",
             "unitPattern-count-one": "{0} மைக்ரோமீட்டர்",
-            "unitPattern-count-other": "{0} மைக்ரோமீட்டர்கள்"
+            "ablative-count-one": "{0} மைக்ரோமீட்டரில்",
+            "accusative-count-one": "{0} மைக்ரோமீட்டரை",
+            "dative-count-one": "{0} மைக்ரோமீட்டருக்கு",
+            "unitPattern-count-other": "{0} மைக்ரோமீட்டர்கள்",
+            "ablative-count-other": "{0} மைக்ரோமீட்டர்களில்",
+            "accusative-count-other": "{0} மைக்ரோமீட்டர்களை",
+            "dative-count-other": "{0} மைக்ரோமீட்டர்களுக்கு"
           },
           "length-nanometer": {
             "displayName": "நானோமீட்டர்கள்",
             "unitPattern-count-one": "{0} நானோமீட்டர்",
-            "unitPattern-count-other": "{0} நானோமீட்டர்கள்"
+            "ablative-count-one": "{0} நானோமீட்டரில்",
+            "accusative-count-one": "{0} நானோமீட்டரை",
+            "dative-count-one": "{0} நானோமீட்டருக்கு",
+            "unitPattern-count-other": "{0} நானோமீட்டர்கள்",
+            "ablative-count-other": "{0} நானோமீட்டர்களில்",
+            "accusative-count-other": "{0} நானோமீட்டர்களை",
+            "dative-count-other": "{0} நானோமீட்டர்களுக்கு"
           },
           "length-picometer": {
             "displayName": "பைக்கோமீட்டர்கள்",
             "unitPattern-count-one": "{0} பைக்கோமீட்டர்",
-            "unitPattern-count-other": "{0} பைக்கோமீட்டர்கள்"
+            "ablative-count-one": "{0} பைக்கோமீட்டரில்",
+            "accusative-count-one": "{0} பைக்கோமீட்டரை",
+            "dative-count-one": "{0} பைக்கோமீட்டருக்கு",
+            "unitPattern-count-other": "{0} பைக்கோமீட்டர்கள்",
+            "ablative-count-other": "{0} பைக்கோமீட்டர்களில்",
+            "accusative-count-other": "{0} பைக்கோமீட்டர்களை",
+            "dative-count-other": "{0} பைக்கோமீட்டர்களுக்கு"
           },
           "length-mile": {
             "displayName": "மைல்கள்",
@@ -900,12 +1116,12 @@
             "unitPattern-count-other": "{0} சூரிய ஒளிர்வுத்தன்மை"
           },
           "mass-metric-ton": {
-            "displayName": "மெட்ரிக் டன்",
+            "displayName": "மெட்ரிக் டன்கள்",
             "unitPattern-count-one": "{0} மெட்ரிக் டன்",
             "ablative-count-one": "{0} மெட்ரிக் டன்னில்",
             "accusative-count-one": "{0} மெட்ரிக் டன்னை",
             "dative-count-one": "{0} மெட்ரிக் டன்னுக்கு",
-            "unitPattern-count-other": "{0} மெட்ரிக் டன்",
+            "unitPattern-count-other": "{0} மெட்ரிக் டன்கள்",
             "ablative-count-other": "{0} மெட்ரிக் டன்களில்",
             "accusative-count-other": "{0} மெட்ரிக் டன்களை",
             "dative-count-other": "{0} மெட்ரிக் டன்களுக்கு"
@@ -937,17 +1153,29 @@
           "mass-milligram": {
             "displayName": "மில்லி கிராம்கள்",
             "unitPattern-count-one": "{0} மில்லி கிராம்",
-            "unitPattern-count-other": "{0} மில்லி கிராம்கள்"
+            "ablative-count-one": "{0} மில்லி கிராமில்",
+            "accusative-count-one": "{0} மில்லி கிராமை",
+            "dative-count-one": "{0} மில்லி கிராமுக்கு",
+            "unitPattern-count-other": "{0} மில்லி கிராம்கள்",
+            "ablative-count-other": "{0} மில்லி கிராம்களில்",
+            "accusative-count-other": "{0} மில்லி கிராம்களை",
+            "dative-count-other": "{0} மில்லி கிராம்களுக்கு"
           },
           "mass-microgram": {
             "displayName": "மைக்ரோ கிராம்கள்",
             "unitPattern-count-one": "{0} மைக்ரோ கிராம்",
-            "unitPattern-count-other": "{0} மைக்ரோ கிராம்கள்"
+            "ablative-count-one": "{0} மைக்ரோ கிராமில்",
+            "accusative-count-one": "{0} மைக்ரோ கிராமை",
+            "dative-count-one": "{0} மைக்ரோ கிராமுக்கு",
+            "unitPattern-count-other": "{0} மைக்ரோ கிராம்கள்",
+            "ablative-count-other": "{0} மைக்ரோ கிராம்களில்",
+            "accusative-count-other": "{0} மைக்ரோ கிராம்களை",
+            "dative-count-other": "{0} மைக்ரோ கிராம்களுக்கு"
           },
           "mass-ton": {
-            "displayName": "டன்",
+            "displayName": "டன்கள்",
             "unitPattern-count-one": "{0} டன்",
-            "unitPattern-count-other": "{0} டன்"
+            "unitPattern-count-other": "{0} டன்கள்"
           },
           "mass-stone": {
             "displayName": "ஸ்டோன்ஸ்",
@@ -998,24 +1226,42 @@
             "unitPattern-count-other": "{0} சூரியத் திணிவுகள்"
           },
           "mass-grain": {
-            "displayName": "கிரைன்",
+            "displayName": "கிரைன்கள்",
             "unitPattern-count-one": "{0} கிரைன்",
-            "unitPattern-count-other": "{0} கிரைன்"
+            "unitPattern-count-other": "{0} கிரைன்கள்"
           },
           "power-gigawatt": {
             "displayName": "கிகாவாட்ஸ்",
             "unitPattern-count-one": "{0} கிகாவாட்",
-            "unitPattern-count-other": "{0} கிகாவாட்ஸ்"
+            "ablative-count-one": "{0} கிகாவாட்டில்",
+            "accusative-count-one": "{0} கிகாவாட்டை",
+            "dative-count-one": "{0} கிகாவாட்டுக்கு",
+            "unitPattern-count-other": "{0} கிகாவாட்ஸ்",
+            "ablative-count-other": "{0} கிகாவாட்ஸில்",
+            "accusative-count-other": "{0} கிகாவாட்ஸை",
+            "dative-count-other": "{0} கிகாவாட்ஸுக்கு"
           },
           "power-megawatt": {
             "displayName": "மெகாவாட்ஸ்",
             "unitPattern-count-one": "{0} மெகாவாட்",
-            "unitPattern-count-other": "{0} மெகாவாட்ஸ்"
+            "ablative-count-one": "{0} மெகாவாட்டில்",
+            "accusative-count-one": "{0} மெகாவாட்டை",
+            "dative-count-one": "{0} மெகாவாட்டுக்கு",
+            "unitPattern-count-other": "{0} மெகாவாட்ஸ்",
+            "ablative-count-other": "{0} மெகாவாட்ஸில்",
+            "accusative-count-other": "{0} மெகாவாட்ஸை",
+            "dative-count-other": "{0} மெகாவாட்ஸுக்கு"
           },
           "power-kilowatt": {
             "displayName": "கிலோவாட்கள்",
             "unitPattern-count-one": "{0} கிலோவாட்",
-            "unitPattern-count-other": "{0} கிலோவாட்கள்"
+            "ablative-count-one": "{0} கிலோவாட்டில்",
+            "accusative-count-one": "{0} கிலோவாட்டை",
+            "dative-count-one": "{0} கிலோவாட்டுக்கு",
+            "unitPattern-count-other": "{0} கிலோவாட்கள்",
+            "ablative-count-other": "{0} கிலோவாட்களில்",
+            "accusative-count-other": "{0} கிலோவாட்களை",
+            "dative-count-other": "{0} கிலோவாட்களுக்கு"
           },
           "power-watt": {
             "displayName": "வாட்ஸ்",
@@ -1031,7 +1277,13 @@
           "power-milliwatt": {
             "displayName": "மில்லிவாட்ஸ்",
             "unitPattern-count-one": "{0} மில்லிவாட்",
-            "unitPattern-count-other": "{0} மில்லிவாட்ஸ்"
+            "ablative-count-one": "{0} மில்லிவாட்டில்",
+            "accusative-count-one": "{0} மில்லிவாட்டை",
+            "dative-count-one": "{0} மில்லிவாட்டுக்கு",
+            "unitPattern-count-other": "{0} மில்லிவாட்ஸ்",
+            "ablative-count-other": "{0} மில்லிவாட்ஸில்",
+            "accusative-count-other": "{0} மில்லிவாட்ஸை",
+            "dative-count-other": "{0} மில்லிவாட்ஸுக்கு"
           },
           "power-horsepower": {
             "displayName": "குதிரைத்திறன்",
@@ -1067,18 +1319,24 @@
           "pressure-millibar": {
             "displayName": "மில்லிபார்கள்",
             "unitPattern-count-one": "{0} மில்லிபார்",
-            "unitPattern-count-other": "{0} மில்லிபார்கள்"
+            "ablative-count-one": "{0} மில்லிபாரில்",
+            "accusative-count-one": "{0} மில்லிபாரை",
+            "dative-count-one": "{0} மில்லிபாருக்கு",
+            "unitPattern-count-other": "{0} மில்லிபார்கள்",
+            "ablative-count-other": "{0} மில்லிபார்களில்",
+            "accusative-count-other": "{0} மில்லிபார்களை",
+            "dative-count-other": "{0} மில்லிபார்களுக்கு"
           },
           "pressure-atmosphere": {
-            "displayName": "வளிஅழுத்தம்",
-            "unitPattern-count-one": "{0} வளிஅழுத்தம்",
-            "ablative-count-one": "{0} வளிஅழுத்தத்தில்",
-            "accusative-count-one": "{0} வளிஅழுத்தத்தை",
-            "dative-count-one": "{0} வளிஅழுத்தத்திற்கு",
-            "unitPattern-count-other": "{0} வளிஅழுத்தங்கள்",
-            "ablative-count-other": "{0} வளிஅழுத்தங்களில்",
-            "accusative-count-other": "{0} வளிஅழுத்தங்களை",
-            "dative-count-other": "{0} வளிஅழுத்தங்களுக்கு"
+            "displayName": "வளிமண்டலம்",
+            "unitPattern-count-one": "வளிமண்டலம்",
+            "ablative-count-one": "வளிமண்டலத்தில்",
+            "accusative-count-one": "வளிமண்டலத்தை",
+            "dative-count-one": "வளிமண்டலத்திற்கு",
+            "unitPattern-count-other": "{0} வளிமண்டலங்கள்",
+            "ablative-count-other": "{0} வளிமண்டலங்களில்",
+            "accusative-count-other": "{0} வளிமண்டலங்களை",
+            "dative-count-other": "{0} வளிமண்டலங்களுக்கு"
           },
           "pressure-pascal": {
             "displayName": "பாஸ்கல்கள்",
@@ -1094,27 +1352,57 @@
           "pressure-hectopascal": {
             "displayName": "ஹெக்டோபாஸ்கல்",
             "unitPattern-count-one": "{0} ஹெக்டோபாஸ்கல்",
-            "unitPattern-count-other": "{0} ஹெக்டோபாஸ்கல்"
+            "ablative-count-one": "{0} ஹெக்டோபாஸ்கலில்",
+            "accusative-count-one": "{0} ஹெக்டோபாஸ்கலை",
+            "dative-count-one": "{0} ஹெக்டோபாஸ்கலுக்கு",
+            "unitPattern-count-other": "{0} ஹெக்டோபாஸ்கல்",
+            "ablative-count-other": "{0} ஹெக்டோபாஸ்கலில்",
+            "accusative-count-other": "{0} ஹெக்டோபாஸ்கலை",
+            "dative-count-other": "{0} ஹெக்டோபாஸ்கலுக்கு"
           },
           "pressure-kilopascal": {
             "displayName": "கிலோபாஸ்கல்ஸ்",
             "unitPattern-count-one": "{0} கிலோபாஸ்கல்",
-            "unitPattern-count-other": "{0} கிலோபாஸ்கல்ஸ்"
+            "ablative-count-one": "{0} கிலோபாஸ்கலில்",
+            "accusative-count-one": "{0} கிலோபாஸ்கலை",
+            "dative-count-one": "{0} கிலோபாஸ்கலுக்கு",
+            "unitPattern-count-other": "{0} கிலோபாஸ்கல்ஸ்",
+            "ablative-count-other": "{0} கிலோபாஸ்கல்ஸில்",
+            "accusative-count-other": "{0} கிலோபாஸ்கல்ஸை",
+            "dative-count-other": "{0} கிலோபாஸ்கல்ஸுக்கு"
           },
           "pressure-megapascal": {
             "displayName": "மெகாபாஸ்கல்ஸ்",
             "unitPattern-count-one": "{0} மெகாபாஸ்கல்",
-            "unitPattern-count-other": "{0} மெகாபாஸ்கல்ஸ்"
+            "ablative-count-one": "{0} மெகாபாஸ்கலில்",
+            "accusative-count-one": "{0} மெகாபாஸ்கலை",
+            "dative-count-one": "{0} மெகாபாஸ்கலுக்கு",
+            "unitPattern-count-other": "{0} மெகாபாஸ்கல்ஸ்",
+            "ablative-count-other": "{0} மெகாபாஸ்கல்ஸில்",
+            "accusative-count-other": "{0} மெகாபாஸ்கல்ஸை",
+            "dative-count-other": "{0} மெகாபாஸ்கல்ஸுக்கு"
           },
           "speed-kilometer-per-hour": {
             "displayName": "கிலோமீட்டர்கள்/மணிநேரம்",
             "unitPattern-count-one": "{0} கிலோமீட்டர்/மணிநேரம்",
-            "unitPattern-count-other": "{0} கிலோமீட்டர்கள்/மணிநேரம்"
+            "ablative-count-one": "{0} கிலோமீட்டர்/மணிநேரத்தில்",
+            "accusative-count-one": "{0} கிலோமீட்டர்/மணிநேரத்தை",
+            "dative-count-one": "{0} கிலோமீட்டர்/மணிநேரத்திற்கு",
+            "unitPattern-count-other": "{0} கிலோமீட்டர்கள்/மணிநேரம்",
+            "ablative-count-other": "{0} கிலோமீட்டர்கள்/மணிநேரத்தில்",
+            "accusative-count-other": "{0} கிலோமீட்டர்கள்/மணிநேரத்தை",
+            "dative-count-other": "{0} கிலோமீட்டர்கள்/மணிநேரத்திற்கு"
           },
           "speed-meter-per-second": {
             "displayName": "மீட்டர்கள்/விநாடி",
             "unitPattern-count-one": "{0} மீட்டர்/விநாடி",
-            "unitPattern-count-other": "{0} மீட்டர்கள்/விநாடி"
+            "ablative-count-one": "{0} மீட்டர்/விநாடியில்",
+            "accusative-count-one": "{0} மீட்டர்/விநாடியை",
+            "dative-count-one": "{0} மீட்டர்/விநாடிக்கு",
+            "unitPattern-count-other": "{0} மீட்டர்கள்/விநாடி",
+            "ablative-count-other": "{0} மீட்டர்கள்/விநாடியில்",
+            "accusative-count-other": "{0} மீட்டர்கள்/விநாடியை",
+            "dative-count-other": "{0} மீட்டர்கள்/விநாடிக்கு"
           },
           "speed-mile-per-hour": {
             "displayName": "மைல்கள்/மணிநேரம்",
@@ -1132,7 +1420,7 @@
             "ablative-count-one": "{0} டிகிரியில்",
             "accusative-count-one": "{0} டிகிரியை",
             "dative-count-one": "{0} டிகிரிக்கு",
-            "unitPattern-count-other": "{0}°",
+            "unitPattern-count-other": "{0} டிகிரீஸ்",
             "ablative-count-other": "{0} டிகிரீஸில்",
             "accusative-count-other": "{0} டிகிரீஸை",
             "dative-count-other": "{0} டிகிரீஸுக்கு"
@@ -1159,36 +1447,60 @@
             "ablative-count-one": "{0} கெல்வினில்",
             "accusative-count-one": "{0} கெல்வினை",
             "dative-count-one": "{0} கெல்வினுக்கு",
-            "unitPattern-count-other": "{0} கெல்வின்",
+            "unitPattern-count-other": "{0} கெல்வின்ஸ்",
             "ablative-count-other": "{0} கெல்வின்ஸில்",
             "accusative-count-other": "{0} கெல்வின்ஸை",
             "dative-count-other": "{0} கெல்வின்ஸுக்கு"
           },
           "torque-pound-force-foot": {
-            "displayName": "பவுண்ட்-அடி",
-            "unitPattern-count-one": "{0} பவுண்ட்-அடி",
-            "unitPattern-count-other": "{0} பவுண்ட்-அடி"
+            "displayName": "பவுண்ட்-விசை-அடி",
+            "unitPattern-count-one": "{0} பவுண்ட்-விசை-அடி",
+            "unitPattern-count-other": "{0} பவுண்ட்-விசை-அடி"
           },
           "torque-newton-meter": {
             "displayName": "நியூட்டன் மீட்டர்கள்",
             "unitPattern-count-one": "{0} நியூட்டன் மீட்டர்",
-            "unitPattern-count-other": "{0} நியூட்டன் மீட்டர்கள்"
+            "ablative-count-one": "{0} நியூட்டன் மீட்டரில்",
+            "accusative-count-one": "{0} நியூட்டன் மீட்டரை",
+            "dative-count-one": "{0} நியூட்டன் மீட்டருக்கு",
+            "unitPattern-count-other": "{0} நியூட்டன் மீட்டர்கள்",
+            "ablative-count-other": "{0} நியூட்டன் மீட்டர்களில்",
+            "accusative-count-other": "{0} நியூட்டன் மீட்டர்களை",
+            "dative-count-other": "{0} நியூட்டன் மீட்டர்களுக்கு"
           },
           "volume-cubic-kilometer": {
             "displayName": "கன கிலோமீட்டர்கள்",
             "unitPattern-count-one": "{0} கன கிலோமீட்டர்",
-            "unitPattern-count-other": "{0} கன கிலோமீட்டர்கள்"
+            "ablative-count-one": "{0} கன கிலோமீட்டரில்",
+            "accusative-count-one": "{0} கன கிலோமீட்டரை",
+            "dative-count-one": "{0} கன கிலோமீட்டருக்கு",
+            "unitPattern-count-other": "{0} கன கிலோமீட்டர்கள்",
+            "ablative-count-other": "{0} கன கிலோமீட்டர்களில்",
+            "accusative-count-other": "{0} கன கிலோமீட்டர்களை",
+            "dative-count-other": "{0} கன கிலோமீட்டர்களுக்கு"
           },
           "volume-cubic-meter": {
             "displayName": "கன மீட்டர்கள்",
             "unitPattern-count-one": "{0} கன மீட்டர்",
+            "ablative-count-one": "{0} கன மீட்டரில்",
+            "accusative-count-one": "{0} கன மீட்டரை",
+            "dative-count-one": "{0} கன மீட்டருக்கு",
             "unitPattern-count-other": "{0} கன மீட்டர்கள்",
+            "ablative-count-other": "{0} கன மீட்டர்களில்",
+            "accusative-count-other": "{0} கன மீட்டர்களை",
+            "dative-count-other": "{0} கன மீட்டர்களுக்கு",
             "perUnitPattern": "{0}/கன மீட்டர்"
           },
           "volume-cubic-centimeter": {
             "displayName": "கன சென்டிமீட்டர்கள்",
             "unitPattern-count-one": "{0} கன சென்டிமீட்டர்",
+            "ablative-count-one": "{0} கன சென்டிமீட்டரில்",
+            "accusative-count-one": "{0} கன சென்டிமீட்டரை",
+            "dative-count-one": "{0} கன சென்டிமீட்டருக்கு",
             "unitPattern-count-other": "{0} கன சென்டிமீட்டர்கள்",
+            "ablative-count-other": "{0} கன சென்டிமீட்டர்களில்",
+            "accusative-count-other": "{0} கன சென்டிமீட்டர்களை",
+            "dative-count-other": "{0} கன சென்டிமீட்டர்களுக்கு",
             "perUnitPattern": "{0}/கன சென்டிமீட்டர்"
           },
           "volume-cubic-mile": {
@@ -1214,12 +1526,24 @@
           "volume-megaliter": {
             "displayName": "மெகாலிட்டர்கள்",
             "unitPattern-count-one": "{0} மெகாலிட்டர்",
-            "unitPattern-count-other": "{0} மெகாலிட்டர்கள்"
+            "ablative-count-one": "{0} மெகாலிட்டரில்",
+            "accusative-count-one": "{0} மெகாலிட்டரை",
+            "dative-count-one": "{0} மெகாலிட்டருக்கு",
+            "unitPattern-count-other": "{0} மெகாலிட்டர்கள்",
+            "ablative-count-other": "{0} மெகாலிட்டர்களில்",
+            "accusative-count-other": "{0} மெகாலிட்டர்களை",
+            "dative-count-other": "{0} மெகாலிட்டர்களுக்கு"
           },
           "volume-hectoliter": {
             "displayName": "ஹெக்டோலிட்டர்கள்",
             "unitPattern-count-one": "{0} ஹெக்டோலிட்டர்",
-            "unitPattern-count-other": "{0} ஹெக்டோலிட்டர்கள்"
+            "ablative-count-one": "{0} ஹெக்டோலிட்டரில்",
+            "accusative-count-one": "{0} ஹெக்டோலிட்டரை",
+            "dative-count-one": "{0} ஹெக்டோலிட்டருக்கு",
+            "unitPattern-count-other": "{0} ஹெக்டோலிட்டர்கள்",
+            "ablative-count-other": "{0} ஹெக்டோலிட்டர்களில்",
+            "accusative-count-other": "{0} ஹெக்டோலிட்டர்களை",
+            "dative-count-other": "{0} ஹெக்டோலிட்டர்களுக்கு"
           },
           "volume-liter": {
             "displayName": "லிட்டர்கள்",
@@ -1236,17 +1560,35 @@
           "volume-deciliter": {
             "displayName": "டெசிலிட்டர்கள்",
             "unitPattern-count-one": "{0} டெசிலிட்டர்",
-            "unitPattern-count-other": "{0} டெசிலிட்டர்கள்"
+            "ablative-count-one": "{0} டெசிலிட்டரில்",
+            "accusative-count-one": "{0} டெசிலிட்டரை",
+            "dative-count-one": "{0} டெசிலிட்டருக்கு",
+            "unitPattern-count-other": "{0} டெசிலிட்டர்கள்",
+            "ablative-count-other": "{0} டெசிலிட்டர்களில்",
+            "accusative-count-other": "{0} டெசிலிட்டர்களை",
+            "dative-count-other": "{0} டெசிலிட்டர்களுக்கு"
           },
           "volume-centiliter": {
             "displayName": "சென்டிலிட்டர்கள்",
             "unitPattern-count-one": "{0} சென்டிலிட்டர்",
-            "unitPattern-count-other": "{0} சென்டிலிட்டர்கள்"
+            "ablative-count-one": "{0} சென்டிலிட்டரில்",
+            "accusative-count-one": "{0} சென்டிலிட்டரை",
+            "dative-count-one": "{0} சென்டிலிட்டருக்கு",
+            "unitPattern-count-other": "{0} சென்டிலிட்டர்கள்",
+            "ablative-count-other": "{0} சென்டிலிட்டர்களில்",
+            "accusative-count-other": "{0} சென்டிலிட்டர்களை",
+            "dative-count-other": "{0} சென்டிலிட்டர்களுக்கு"
           },
           "volume-milliliter": {
             "displayName": "மில்லிலிட்டர்கள்",
             "unitPattern-count-one": "{0} மில்லிலிட்டர்",
-            "unitPattern-count-other": "{0} மில்லிலிட்டர்கள்"
+            "ablative-count-one": "{0} மில்லிலிட்டரில்",
+            "accusative-count-one": "{0} மில்லிலிட்டரை",
+            "dative-count-one": "{0} மில்லிலிட்டருக்கு",
+            "unitPattern-count-other": "{0} மில்லிலிட்டர்கள்",
+            "ablative-count-other": "{0} மில்லிலிட்டர்களில்",
+            "accusative-count-other": "{0} மில்லிலிட்டர்களை",
+            "dative-count-other": "{0} மில்லிலிட்டர்களுக்கு"
           },
           "volume-pint-metric": {
             "displayName": "மெட்ரிக் பின்ட்கள்",
@@ -1287,7 +1629,7 @@
             "perUnitPattern": "{0}/கேலன்"
           },
           "volume-gallon-imperial": {
-            "displayName": "இம்பீ. கேலன்",
+            "displayName": "இம்பீ. கேலன்கள்",
             "unitPattern-count-one": "{0} இம்பீ. கேலன்",
             "unitPattern-count-other": "{0} இம்பீ. கேலன்கள்",
             "perUnitPattern": "{0}/இம்பீ. கேலன்"
@@ -1308,24 +1650,24 @@
             "unitPattern-count-other": "{0} கோப்பைகள்"
           },
           "volume-fluid-ounce": {
-            "displayName": "திரவ அவுன்ஸ்",
+            "displayName": "திரவ அவுன்ஸ்கள்",
             "unitPattern-count-one": "{0} திரவ அவுன்ஸ்",
-            "unitPattern-count-other": "{0} திரவ அவுன்ஸ்"
+            "unitPattern-count-other": "{0} திரவ அவுன்ஸ்கள்"
           },
           "volume-fluid-ounce-imperial": {
-            "displayName": "இம்பீரியல் ஃப்ளூயிட் அவுன்ஸ்கள்",
-            "unitPattern-count-one": "{0} இம்பீரியல் ஃப்ளூயிட் அவுன்ஸ்",
-            "unitPattern-count-other": "{0} இம்பீரியல் ஃப்ளூயிட் அவுன்ஸ்கள்"
+            "displayName": "இம்பீரியல் திரவ அவுன்ஸ்கள்",
+            "unitPattern-count-one": "{0} இம்பீரியல் திரவ அவுன்ஸ்",
+            "unitPattern-count-other": "{0} இம்பீரியல் திரவ அவுன்ஸ்கள்"
           },
           "volume-tablespoon": {
-            "displayName": "மேஜைக்கரண்டி",
+            "displayName": "மேஜைக்கரண்டிகள்",
             "unitPattern-count-one": "{0} மேஜைக்கரண்டி",
-            "unitPattern-count-other": "{0} மேஜைக்கரண்டி"
+            "unitPattern-count-other": "{0} மேஜைக்கரண்டிகள்"
           },
           "volume-teaspoon": {
-            "displayName": "தேக்கரண்டி",
+            "displayName": "தேக்கரண்டிகள்",
             "unitPattern-count-one": "{0} தேக்கரண்டி",
-            "unitPattern-count-other": "{0} தேக்கரண்டி"
+            "unitPattern-count-other": "{0} தேக்கரண்டிகள்"
           },
           "volume-barrel": {
             "displayName": "பீப்பாய்கள்",
@@ -1333,29 +1675,29 @@
             "unitPattern-count-other": "{0} பீப்பாய்கள்"
           },
           "volume-dessert-spoon": {
-            "displayName": "இனிப்புக் கரண்டி",
+            "displayName": "இனிப்புக் கரண்டிகள்",
             "unitPattern-count-one": "{0} இனிப்புக் கரண்டி",
             "unitPattern-count-other": "{0} இனிப்புக் கரண்டி"
           },
           "volume-dessert-spoon-imperial": {
-            "displayName": "இம்பீரியல் இனிப்புக் கரண்டி",
+            "displayName": "இம்பீரியல் இனிப்புக் கரண்டிகள்",
             "unitPattern-count-one": "{0} இம்பீரியல் இனிப்புக் கரண்டி",
-            "unitPattern-count-other": "{0} இம்பீரியல் இனிப்புக் கரண்டி"
+            "unitPattern-count-other": "{0} இம்பீரியல் இனிப்புக் கரண்டிகள்"
           },
           "volume-drop": {
-            "displayName": "துளி",
+            "displayName": "துளிகள்",
             "unitPattern-count-one": "{0} துளி",
-            "unitPattern-count-other": "{0} துளி"
+            "unitPattern-count-other": "{0} துளிகள்"
           },
           "volume-dram": {
-            "displayName": "டிராம்",
+            "displayName": "டிராம்கள்",
             "unitPattern-count-one": "{0} டிராம்",
-            "unitPattern-count-other": "{0} டிராம்"
+            "unitPattern-count-other": "{0} டிராம்கள்"
           },
           "volume-jigger": {
-            "displayName": "ஜிகர்",
+            "displayName": "ஜிகர்கள்",
             "unitPattern-count-one": "{0} ஜிகர்",
-            "unitPattern-count-other": "{0} ஜிகர்"
+            "unitPattern-count-other": "{0} ஜிகர்கள்"
           },
           "volume-pinch": {
             "displayName": "சிட்டிகை",
@@ -1363,14 +1705,14 @@
             "unitPattern-count-other": "{0} சிட்டிகை"
           },
           "volume-quart-imperial": {
-            "displayName": "இம்பீரியல் குவார்ட்",
+            "displayName": "இம்பீரியல் குவார்ட்ஸ்",
             "unitPattern-count-one": "{0} இம்பீரியல் குவார்ட்",
-            "unitPattern-count-other": "{0} இம்பீரியல் குவார்ட்"
+            "unitPattern-count-other": "{0} இம்பீரியல் குவார்ட்ஸ்"
           },
           "coordinateUnit": {
             "displayName": "கார்டினல் திசை",
             "east": "{0}கிழக்கு",
-            "north": "{0}வ",
+            "north": "{0}வடக்கு",
             "south": "{0}தெற்கு",
             "west": "{0}மேற்கு"
           }
