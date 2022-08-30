@@ -3,7 +3,7 @@
     "zh-Hans-HK": {
       "identity": {
         "version": {
-          "_cldrVersion": "41"
+          "_cldrVersion": "42"
         },
         "language": "zh",
         "script": "Hans",
@@ -283,13 +283,18 @@
             "unitPattern-count-other": "{0}个世纪"
           },
           "duration-decade": {
-            "displayName": "年代",
-            "unitPattern-count-other": "{0}年代"
+            "displayName": "个十年",
+            "unitPattern-count-other": "{0}个十年"
           },
           "duration-year": {
             "displayName": "年",
             "unitPattern-count-other": "{0}年",
             "perUnitPattern": "{0}/年"
+          },
+          "duration-quarter": {
+            "displayName": "季度",
+            "unitPattern-count-other": "{0}季",
+            "perUnitPattern": "{0}/季"
           },
           "duration-month": {
             "displayName": "个月",
@@ -439,15 +444,15 @@
           },
           "graphics-dot-per-inch": {
             "displayName": "点/英寸",
-            "unitPattern-count-other": "{0} 点/英寸"
+            "unitPattern-count-other": "{0}点/英寸"
           },
           "graphics-dot": {
             "displayName": "点",
-            "unitPattern-count-other": "{0} 点"
+            "unitPattern-count-other": "{0}点"
           },
           "length-earth-radius": {
             "displayName": "地球半径",
-            "unitPattern-count-other": "{0} 地球半径"
+            "unitPattern-count-other": "{0}地球半径"
           },
           "length-kilometer": {
             "displayName": "公里",
@@ -554,7 +559,7 @@
             "displayName": "太阳光度",
             "unitPattern-count-other": "{0}太阳光度"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "公吨",
             "unitPattern-count-other": "{0}公吨"
           },
@@ -1140,17 +1145,22 @@
             "unitPattern-count-other": "{0} b"
           },
           "duration-century": {
-            "displayName": "世纪",
+            "displayName": "个世纪",
             "unitPattern-count-other": "{0}个世纪"
           },
           "duration-decade": {
-            "displayName": "年代",
-            "unitPattern-count-other": "{0}年代"
+            "displayName": "个十年",
+            "unitPattern-count-other": "{0}个十年"
           },
           "duration-year": {
             "displayName": "年",
             "unitPattern-count-other": "{0}年",
             "perUnitPattern": "{0}/年"
+          },
+          "duration-quarter": {
+            "displayName": "季",
+            "unitPattern-count-other": "{0}季",
+            "perUnitPattern": "{0}/季"
           },
           "duration-month": {
             "displayName": "个月",
@@ -1219,8 +1229,8 @@
             "unitPattern-count-other": "{0}卡"
           },
           "energy-foodcalorie": {
-            "displayName": "卡",
-            "unitPattern-count-other": "{0}卡"
+            "displayName": "大卡",
+            "unitPattern-count-other": "{0}大卡"
           },
           "energy-kilojoule": {
             "displayName": "千焦",
@@ -1411,7 +1421,7 @@
             "displayName": "L☉",
             "unitPattern-count-other": "{0} L☉"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "t",
             "unitPattern-count-other": "{0} t"
           },
@@ -1438,7 +1448,7 @@
             "unitPattern-count-other": "{0} tn"
           },
           "mass-stone": {
-            "displayName": "st",
+            "displayName": "英石",
             "unitPattern-count-other": "{0} st"
           },
           "mass-pound": {
@@ -1856,9 +1866,9 @@
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
-            "displayName": "平方公里",
+            "displayName": "km²",
             "unitPattern-count-other": "{0}km²",
-            "perUnitPattern": "{0}/平方公里"
+            "perUnitPattern": "{0}/km²"
           },
           "area-hectare": {
             "displayName": "公顷",
@@ -1867,38 +1877,38 @@
           "area-square-meter": {
             "displayName": "平方米",
             "unitPattern-count-other": "{0}m²",
-            "perUnitPattern": "{0}/平方米"
+            "perUnitPattern": "{0}/m²"
           },
           "area-square-centimeter": {
-            "displayName": "平方厘米",
-            "unitPattern-count-other": "{0}平方厘米",
-            "perUnitPattern": "{0}/平方厘米"
+            "displayName": "cm²",
+            "unitPattern-count-other": "{0}cm²",
+            "perUnitPattern": "{0}/cm²"
           },
           "area-square-mile": {
-            "displayName": "平方英里",
+            "displayName": "mi²",
             "unitPattern-count-other": "{0}mi²",
-            "perUnitPattern": "{0}/平方英里"
+            "perUnitPattern": "{0}/mi²"
           },
           "area-acre": {
             "displayName": "英亩",
             "unitPattern-count-other": "{0}ac"
           },
           "area-square-yard": {
-            "displayName": "平方码",
-            "unitPattern-count-other": "{0}平方码"
+            "displayName": "yd²",
+            "unitPattern-count-other": "{0}yd²"
           },
           "area-square-foot": {
-            "displayName": "平方英尺",
+            "displayName": "ft²",
             "unitPattern-count-other": "{0}ft²"
           },
           "area-square-inch": {
-            "displayName": "平方英寸",
-            "unitPattern-count-other": "{0}平方英寸",
-            "perUnitPattern": "{0}/平方英寸"
+            "displayName": "in²",
+            "unitPattern-count-other": "{0}in²",
+            "perUnitPattern": "{0}/in²"
           },
           "area-dunam": {
-            "displayName": "杜纳亩",
-            "unitPattern-count-other": "{0}杜纳亩"
+            "displayName": "dunam",
+            "unitPattern-count-other": "{0}dunam"
           },
           "concentr-karat": {
             "displayName": "kt",
@@ -1938,7 +1948,7 @@
           },
           "consumption-liter-per-kilometer": {
             "displayName": "L/km",
-            "unitPattern-count-other": "{0} L/km"
+            "unitPattern-count-other": "{0}L/km"
           },
           "consumption-liter-per-100-kilometer": {
             "displayName": "L/100km",
@@ -1946,7 +1956,7 @@
           },
           "consumption-mile-per-gallon": {
             "displayName": "mpg US",
-            "unitPattern-count-other": "{0} mpg US"
+            "unitPattern-count-other": "{0}mpg"
           },
           "consumption-mile-per-gallon-imperial": {
             "displayName": "mpg Imp.",
@@ -1997,17 +2007,22 @@
             "unitPattern-count-other": "{0} b"
           },
           "duration-century": {
-            "displayName": "世纪",
+            "displayName": "个世纪",
             "unitPattern-count-other": "{0}个世纪"
           },
           "duration-decade": {
-            "displayName": "年代",
-            "unitPattern-count-other": "{0}年代"
+            "displayName": "个十年",
+            "unitPattern-count-other": "{0}个十年"
           },
           "duration-year": {
             "displayName": "年",
             "unitPattern-count-other": "{0}年",
             "perUnitPattern": "{0}/年"
+          },
+          "duration-quarter": {
+            "displayName": "季",
+            "unitPattern-count-other": "{0}季",
+            "perUnitPattern": "{0}/季"
           },
           "duration-month": {
             "displayName": "个月",
@@ -2041,63 +2056,63 @@
           },
           "duration-millisecond": {
             "displayName": "毫秒",
-            "unitPattern-count-other": "{0}毫秒"
+            "unitPattern-count-other": "{0}ms"
           },
           "duration-microsecond": {
-            "displayName": "微秒",
-            "unitPattern-count-other": "{0}微秒"
+            "displayName": "μs",
+            "unitPattern-count-other": "{0}μs"
           },
           "duration-nanosecond": {
             "displayName": "纳秒",
-            "unitPattern-count-other": "{0}纳秒"
+            "unitPattern-count-other": "{0}ns"
           },
           "electric-ampere": {
             "displayName": "A",
-            "unitPattern-count-other": "{0} A"
+            "unitPattern-count-other": "{0}A"
           },
           "electric-milliampere": {
             "displayName": "mA",
-            "unitPattern-count-other": "{0} mA"
+            "unitPattern-count-other": "{0}mA"
           },
           "electric-ohm": {
             "displayName": "Ω",
-            "unitPattern-count-other": "{0} Ω"
+            "unitPattern-count-other": "{0}Ω"
           },
           "electric-volt": {
             "displayName": "V",
-            "unitPattern-count-other": "{0} V"
+            "unitPattern-count-other": "{0}V"
           },
           "energy-kilocalorie": {
-            "displayName": "千卡",
-            "unitPattern-count-other": "{0}千卡"
+            "displayName": "kcal",
+            "unitPattern-count-other": "{0}kcal"
           },
           "energy-calorie": {
-            "displayName": "卡",
-            "unitPattern-count-other": "{0}卡"
+            "displayName": "cal",
+            "unitPattern-count-other": "{0}cal"
           },
           "energy-foodcalorie": {
-            "displayName": "卡",
-            "unitPattern-count-other": "{0}卡"
+            "displayName": "Cal",
+            "unitPattern-count-other": "{0}Cal"
           },
           "energy-kilojoule": {
-            "displayName": "千焦",
-            "unitPattern-count-other": "{0}千焦"
+            "displayName": "kJ",
+            "unitPattern-count-other": "{0}kJ"
           },
           "energy-joule": {
             "displayName": "焦耳",
-            "unitPattern-count-other": "{0}焦耳"
+            "unitPattern-count-other": "{0}J"
           },
           "energy-kilowatt-hour": {
-            "displayName": "千瓦时",
-            "unitPattern-count-other": "{0}千瓦时"
+            "displayName": "kWh",
+            "unitPattern-count-other": "{0}kWh"
           },
           "energy-electronvolt": {
-            "displayName": "电子伏",
-            "unitPattern-count-other": "{0}电子伏"
+            "displayName": "eV",
+            "unitPattern-count-other": "{0}eV"
           },
           "energy-british-thermal-unit": {
-            "displayName": "英热单位",
-            "unitPattern-count-other": "{0}英热单位"
+            "displayName": "BTU",
+            "unitPattern-count-other": "{0}Btu"
           },
           "energy-therm-us": {
             "displayName": "美制克卡",
@@ -2105,7 +2120,7 @@
           },
           "force-pound-force": {
             "displayName": "lbf",
-            "unitPattern-count-other": "{0} lbf"
+            "unitPattern-count-other": "{0}lbf"
           },
           "force-newton": {
             "displayName": "牛",
@@ -2117,39 +2132,39 @@
           },
           "frequency-gigahertz": {
             "displayName": "GHz",
-            "unitPattern-count-other": "{0} GHz"
+            "unitPattern-count-other": "{0}GHz"
           },
           "frequency-megahertz": {
             "displayName": "MHz",
-            "unitPattern-count-other": "{0} MHz"
+            "unitPattern-count-other": "{0}MHz"
           },
           "frequency-kilohertz": {
             "displayName": "kHz",
-            "unitPattern-count-other": "{0} kHz"
+            "unitPattern-count-other": "{0}kHz"
           },
           "frequency-hertz": {
             "displayName": "Hz",
-            "unitPattern-count-other": "{0} Hz"
+            "unitPattern-count-other": "{0}Hz"
           },
           "graphics-em": {
             "displayName": "em",
-            "unitPattern-count-other": "{0} em"
+            "unitPattern-count-other": "{0}em"
           },
           "graphics-pixel": {
             "displayName": "px",
-            "unitPattern-count-other": "{0} px"
+            "unitPattern-count-other": "{0}px"
           },
           "graphics-megapixel": {
             "displayName": "MP",
-            "unitPattern-count-other": "{0} MP"
+            "unitPattern-count-other": "{0}MP"
           },
           "graphics-pixel-per-centimeter": {
             "displayName": "ppcm",
-            "unitPattern-count-other": "{0} ppcm"
+            "unitPattern-count-other": "{0}ppcm"
           },
           "graphics-pixel-per-inch": {
             "displayName": "ppi",
-            "unitPattern-count-other": "{0} ppi"
+            "unitPattern-count-other": "{0}ppi"
           },
           "graphics-dot-per-centimeter": {
             "displayName": "dpcm",
@@ -2170,95 +2185,95 @@
           "length-kilometer": {
             "displayName": "公里",
             "unitPattern-count-other": "{0}公里",
-            "perUnitPattern": "{0}/公里"
+            "perUnitPattern": "{0}/km"
           },
           "length-meter": {
             "displayName": "米",
             "unitPattern-count-other": "{0}米",
-            "perUnitPattern": "{0}/米"
+            "perUnitPattern": "{0}/m"
           },
           "length-decimeter": {
-            "displayName": "分米",
-            "unitPattern-count-other": "{0}分米"
+            "displayName": "dm",
+            "unitPattern-count-other": "{0}dm"
           },
           "length-centimeter": {
             "displayName": "厘米",
             "unitPattern-count-other": "{0}厘米",
-            "perUnitPattern": "{0}/厘米"
+            "perUnitPattern": "{0}/cm"
           },
           "length-millimeter": {
             "displayName": "毫米",
             "unitPattern-count-other": "{0}毫米"
           },
           "length-micrometer": {
-            "displayName": "微米",
-            "unitPattern-count-other": "{0}微米"
+            "displayName": "μm",
+            "unitPattern-count-other": "{0}μm"
           },
           "length-nanometer": {
-            "displayName": "纳米",
-            "unitPattern-count-other": "{0}纳米"
+            "displayName": "nm",
+            "unitPattern-count-other": "{0}nm"
           },
           "length-picometer": {
-            "displayName": "皮米",
+            "displayName": "pm",
             "unitPattern-count-other": "{0}pm"
           },
           "length-mile": {
-            "displayName": "英里",
+            "displayName": "mi",
             "unitPattern-count-other": "{0}mi"
           },
           "length-yard": {
-            "displayName": "码",
+            "displayName": "yd",
             "unitPattern-count-other": "{0}yd"
           },
           "length-foot": {
-            "displayName": "英尺",
+            "displayName": "ft",
             "unitPattern-count-other": "{0}′",
-            "perUnitPattern": "{0}/英尺"
+            "perUnitPattern": "{0}/ft"
           },
           "length-inch": {
-            "displayName": "英寸",
+            "displayName": "in",
             "unitPattern-count-other": "{0}″",
-            "perUnitPattern": "{0}/英寸"
+            "perUnitPattern": "{0}/in"
           },
           "length-parsec": {
             "displayName": "秒差距",
-            "unitPattern-count-other": "{0}秒差距"
+            "unitPattern-count-other": "{0}pc"
           },
           "length-light-year": {
-            "displayName": "光年",
+            "displayName": "ly",
             "unitPattern-count-other": "{0}ly"
           },
           "length-astronomical-unit": {
-            "displayName": "天文单位",
-            "unitPattern-count-other": "{0}天文单位"
+            "displayName": "au",
+            "unitPattern-count-other": "{0}au"
           },
           "length-furlong": {
             "displayName": "弗隆",
-            "unitPattern-count-other": "{0}弗隆"
+            "unitPattern-count-other": "{0}fur"
           },
           "length-fathom": {
             "displayName": "英寻",
-            "unitPattern-count-other": "{0}英寻"
+            "unitPattern-count-other": "{0}fth"
           },
           "length-nautical-mile": {
-            "displayName": "海里",
-            "unitPattern-count-other": "{0}海里"
+            "displayName": "nmi",
+            "unitPattern-count-other": "{0}nmi"
           },
           "length-mile-scandinavian": {
-            "displayName": "斯堪的纳维亚英里",
+            "displayName": "smi",
             "unitPattern-count-other": "{0}smi"
           },
           "length-point": {
             "displayName": "pt",
-            "unitPattern-count-other": "{0} pt"
+            "unitPattern-count-other": "{0}pt"
           },
           "length-solar-radius": {
-            "displayName": "太阳半径",
-            "unitPattern-count-other": "{0}太阳半径"
+            "displayName": "R☉",
+            "unitPattern-count-other": "{0}R☉"
           },
           "light-lux": {
             "displayName": "lx",
-            "unitPattern-count-other": "{0} lx"
+            "unitPattern-count-other": "{0}lx"
           },
           "light-candela": {
             "displayName": "cd",
@@ -2270,11 +2285,11 @@
           },
           "light-solar-luminosity": {
             "displayName": "L☉",
-            "unitPattern-count-other": "{0} L☉"
+            "unitPattern-count-other": "{0}L☉"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "t",
-            "unitPattern-count-other": "{0} t"
+            "unitPattern-count-other": "{0}t"
           },
           "mass-kilogram": {
             "displayName": "kg",
@@ -2288,64 +2303,64 @@
           },
           "mass-milligram": {
             "displayName": "mg",
-            "unitPattern-count-other": "{0} mg"
+            "unitPattern-count-other": "{0}mg"
           },
           "mass-microgram": {
             "displayName": "μg",
-            "unitPattern-count-other": "{0} μg"
+            "unitPattern-count-other": "{0}μg"
           },
           "mass-ton": {
             "displayName": "tn",
-            "unitPattern-count-other": "{0} tn"
+            "unitPattern-count-other": "{0}tn"
           },
           "mass-stone": {
             "displayName": "英石",
-            "unitPattern-count-other": "{0}英石"
+            "unitPattern-count-other": "{0}st"
           },
           "mass-pound": {
             "displayName": "lb",
-            "unitPattern-count-other": "{0}磅",
+            "unitPattern-count-other": "{0}#",
             "perUnitPattern": "{0}/lb"
           },
           "mass-ounce": {
             "displayName": "oz",
-            "unitPattern-count-other": "{0}盎司",
+            "unitPattern-count-other": "{0}oz",
             "perUnitPattern": "{0}/oz"
           },
           "mass-ounce-troy": {
             "displayName": "oz t",
-            "unitPattern-count-other": "{0} oz t"
+            "unitPattern-count-other": "{0}oz t"
           },
           "mass-carat": {
             "displayName": "CD",
-            "unitPattern-count-other": "{0} CD"
+            "unitPattern-count-other": "{0}CD"
           },
           "mass-dalton": {
             "displayName": "Da",
-            "unitPattern-count-other": "{0} Da"
+            "unitPattern-count-other": "{0}Da"
           },
           "mass-earth-mass": {
             "displayName": "M⊕",
-            "unitPattern-count-other": "{0} M⊕"
+            "unitPattern-count-other": "{0}M⊕"
           },
           "mass-solar-mass": {
             "displayName": "M☉",
-            "unitPattern-count-other": "{0} M☉"
+            "unitPattern-count-other": "{0}M☉"
           },
           "mass-grain": {
-            "displayName": "格令",
-            "unitPattern-count-other": "{0}格令"
+            "displayName": "gr",
+            "unitPattern-count-other": "{0}gr"
           },
           "power-gigawatt": {
-            "displayName": "吉瓦",
-            "unitPattern-count-other": "{0}吉瓦"
+            "displayName": "GW",
+            "unitPattern-count-other": "{0}GW"
           },
           "power-megawatt": {
-            "displayName": "兆瓦",
-            "unitPattern-count-other": "{0}兆瓦"
+            "displayName": "MW",
+            "unitPattern-count-other": "{0}MW"
           },
           "power-kilowatt": {
-            "displayName": "千瓦",
+            "displayName": "kW",
             "unitPattern-count-other": "{0}kW"
           },
           "power-watt": {
@@ -2353,28 +2368,28 @@
             "unitPattern-count-other": "{0}W"
           },
           "power-milliwatt": {
-            "displayName": "毫瓦",
-            "unitPattern-count-other": "{0}毫瓦"
+            "displayName": "mW",
+            "unitPattern-count-other": "{0}mW"
           },
           "power-horsepower": {
-            "displayName": "马力",
+            "displayName": "hp",
             "unitPattern-count-other": "{0}hp"
           },
           "pressure-millimeter-ofhg": {
             "displayName": "mmHg",
-            "unitPattern-count-other": "{0} mmHg"
+            "unitPattern-count-other": "{0}mmHg"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "psi",
-            "unitPattern-count-other": "{0} psi"
+            "unitPattern-count-other": "{0}psi"
           },
           "pressure-inch-ofhg": {
             "displayName": "inHg",
-            "unitPattern-count-other": "{0}\\\" Hg"
+            "unitPattern-count-other": "{0}″ Hg"
           },
           "pressure-bar": {
             "displayName": "bar",
-            "unitPattern-count-other": "{0} bar"
+            "unitPattern-count-other": "{0}bar"
           },
           "pressure-millibar": {
             "displayName": "mbar",
@@ -2382,11 +2397,11 @@
           },
           "pressure-atmosphere": {
             "displayName": "atm",
-            "unitPattern-count-other": "{0} atm"
+            "unitPattern-count-other": "{0}atm"
           },
           "pressure-pascal": {
             "displayName": "Pa",
-            "unitPattern-count-other": "{0} Pa"
+            "unitPattern-count-other": "{0}Pa"
           },
           "pressure-hectopascal": {
             "displayName": "hPa",
@@ -2394,11 +2409,11 @@
           },
           "pressure-kilopascal": {
             "displayName": "kPa",
-            "unitPattern-count-other": "{0} kPa"
+            "unitPattern-count-other": "{0}kPa"
           },
           "pressure-megapascal": {
             "displayName": "MPa",
-            "unitPattern-count-other": "{0} MPa"
+            "unitPattern-count-other": "{0}MPa"
           },
           "speed-kilometer-per-hour": {
             "displayName": "km/h",
@@ -2409,12 +2424,12 @@
             "unitPattern-count-other": "{0}m/s"
           },
           "speed-mile-per-hour": {
-            "displayName": "英里/小时",
-            "unitPattern-count-other": "{0}mi/h"
+            "displayName": "mi/hr",
+            "unitPattern-count-other": "{0}mph"
           },
           "speed-knot": {
-            "displayName": "节",
-            "unitPattern-count-other": "{0}节"
+            "displayName": "kn",
+            "unitPattern-count-other": "{0}kn"
           },
           "temperature-generic": {
             "displayName": "°",
@@ -2434,152 +2449,152 @@
           },
           "torque-pound-force-foot": {
             "displayName": "lbf⋅ft",
-            "unitPattern-count-other": "{0} lbf⋅ft"
+            "unitPattern-count-other": "{0}lbf⋅ft"
           },
           "torque-newton-meter": {
             "displayName": "牛米",
             "unitPattern-count-other": "{0}牛米"
           },
           "volume-cubic-kilometer": {
-            "displayName": "立方千米",
+            "displayName": "km³",
             "unitPattern-count-other": "{0}km³"
           },
           "volume-cubic-meter": {
-            "displayName": "立方米",
-            "unitPattern-count-other": "{0}立方米",
-            "perUnitPattern": "{0}/立方米"
+            "displayName": "m³",
+            "unitPattern-count-other": "{0}m³",
+            "perUnitPattern": "{0}/m³"
           },
           "volume-cubic-centimeter": {
-            "displayName": "立方厘米",
-            "unitPattern-count-other": "{0}立方厘米",
-            "perUnitPattern": "{0}/立方厘米"
+            "displayName": "cm³",
+            "unitPattern-count-other": "{0}cm³",
+            "perUnitPattern": "{0}/cm³"
           },
           "volume-cubic-mile": {
-            "displayName": "立方英里",
+            "displayName": "mi³",
             "unitPattern-count-other": "{0}mi³"
           },
           "volume-cubic-yard": {
-            "displayName": "立方码",
-            "unitPattern-count-other": "{0}立方码"
+            "displayName": "yd³",
+            "unitPattern-count-other": "{0}yd³"
           },
           "volume-cubic-foot": {
-            "displayName": "立方英尺",
-            "unitPattern-count-other": "{0}立方英尺"
+            "displayName": "ft³",
+            "unitPattern-count-other": "{0}ft³"
           },
           "volume-cubic-inch": {
-            "displayName": "立方英寸",
-            "unitPattern-count-other": "{0}立方英寸"
+            "displayName": "in³",
+            "unitPattern-count-other": "{0}in³"
           },
           "volume-megaliter": {
             "displayName": "兆升",
             "unitPattern-count-other": "{0}兆升"
           },
           "volume-hectoliter": {
-            "displayName": "公石",
-            "unitPattern-count-other": "{0}公石"
+            "displayName": "hL",
+            "unitPattern-count-other": "{0}hL"
           },
           "volume-liter": {
             "displayName": "升",
             "unitPattern-count-other": "{0}升",
-            "perUnitPattern": "{0}/升"
+            "perUnitPattern": "{0}/L"
           },
           "volume-deciliter": {
-            "displayName": "分升",
-            "unitPattern-count-other": "{0}分升"
+            "displayName": "dL",
+            "unitPattern-count-other": "{0}dL"
           },
           "volume-centiliter": {
-            "displayName": "厘升",
-            "unitPattern-count-other": "{0}厘升"
+            "displayName": "cL",
+            "unitPattern-count-other": "{0}cL"
           },
           "volume-milliliter": {
-            "displayName": "毫升",
-            "unitPattern-count-other": "{0}毫升"
+            "displayName": "mL",
+            "unitPattern-count-other": "{0}mL"
           },
           "volume-pint-metric": {
-            "displayName": "公制品脱",
-            "unitPattern-count-other": "{0}公制品脱"
+            "displayName": "pt",
+            "unitPattern-count-other": "{0}mpt"
           },
           "volume-cup-metric": {
-            "displayName": "公制杯",
-            "unitPattern-count-other": "{0}公制杯"
+            "displayName": "mcup",
+            "unitPattern-count-other": "{0}mc"
           },
           "volume-acre-foot": {
             "displayName": "英亩英尺",
-            "unitPattern-count-other": "{0}英亩英尺"
+            "unitPattern-count-other": "{0}ac ft"
           },
           "volume-bushel": {
             "displayName": "蒲式耳",
-            "unitPattern-count-other": "{0}蒲式耳"
+            "unitPattern-count-other": "{0}bu"
           },
           "volume-gallon": {
-            "displayName": "加仑",
-            "unitPattern-count-other": "{0}加仑",
-            "perUnitPattern": "{0}/加仑"
+            "displayName": "gal",
+            "unitPattern-count-other": "{0}gal",
+            "perUnitPattern": "{0}/gal"
           },
           "volume-gallon-imperial": {
             "displayName": "英制加仑",
-            "unitPattern-count-other": "{0}英制加仑",
+            "unitPattern-count-other": "{0}galIm",
             "perUnitPattern": "{0}/英制加仑"
           },
           "volume-quart": {
-            "displayName": "夸脱",
-            "unitPattern-count-other": "{0}夸脱"
+            "displayName": "qt",
+            "unitPattern-count-other": "{0}qt"
           },
           "volume-pint": {
-            "displayName": "品脱",
-            "unitPattern-count-other": "{0}品脱"
+            "displayName": "pt",
+            "unitPattern-count-other": "{0}pt"
           },
           "volume-cup": {
             "displayName": "杯",
-            "unitPattern-count-other": "{0}杯"
+            "unitPattern-count-other": "{0}c"
           },
           "volume-fluid-ounce": {
             "displayName": "液盎司",
-            "unitPattern-count-other": "{0}液盎司"
+            "unitPattern-count-other": "{0}fl oz"
           },
           "volume-fluid-ounce-imperial": {
             "displayName": "英制液盎司",
-            "unitPattern-count-other": "{0}英制液盎司"
+            "unitPattern-count-other": "{0}fl oz Im"
           },
           "volume-tablespoon": {
             "displayName": "汤匙",
-            "unitPattern-count-other": "{0}汤匙"
+            "unitPattern-count-other": "{0}tbsp"
           },
           "volume-teaspoon": {
-            "displayName": "茶匙",
-            "unitPattern-count-other": "{0}茶匙"
+            "displayName": "tsp",
+            "unitPattern-count-other": "{0}tsp"
           },
           "volume-barrel": {
             "displayName": "桶",
-            "unitPattern-count-other": "{0}桶"
+            "unitPattern-count-other": "{0}bbl"
           },
           "volume-dessert-spoon": {
             "displayName": "甜点匙",
-            "unitPattern-count-other": "{0}甜点匙"
+            "unitPattern-count-other": "{0}dsp"
           },
           "volume-dessert-spoon-imperial": {
             "displayName": "英制甜点匙",
-            "unitPattern-count-other": "{0} dstspn Imp"
+            "unitPattern-count-other": "{0}dsp-Imp"
           },
           "volume-drop": {
             "displayName": "滴",
-            "unitPattern-count-other": "{0}滴"
+            "unitPattern-count-other": "{0}dr"
           },
           "volume-dram": {
             "displayName": "液量打兰",
-            "unitPattern-count-other": "{0}液量打兰"
+            "unitPattern-count-other": "{0}fl.dr."
           },
           "volume-jigger": {
             "displayName": "量杯",
-            "unitPattern-count-other": "{0}量杯"
+            "unitPattern-count-other": "{0}jigger"
           },
           "volume-pinch": {
             "displayName": "撮",
-            "unitPattern-count-other": "{0}撮"
+            "unitPattern-count-other": "{0}pn"
           },
           "volume-quart-imperial": {
             "displayName": "英制夸脱",
-            "unitPattern-count-other": "{0}英制夸脱"
+            "unitPattern-count-other": "{0}qt-Imp."
           },
           "coordinateUnit": {
             "displayName": "方向",

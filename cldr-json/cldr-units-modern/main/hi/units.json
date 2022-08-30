@@ -3,7 +3,7 @@
     "hi": {
       "identity": {
         "version": {
-          "_cldrVersion": "41"
+          "_cldrVersion": "42"
         },
         "language": "hi"
       },
@@ -466,6 +466,15 @@
             "unitPattern-count-other": "{0} वर्ष",
             "oblique-count-other": "{0} वर्ष",
             "perUnitPattern": "{0} प्रति वर्ष"
+          },
+          "duration-quarter": {
+            "gender": "feminine",
+            "displayName": "तिमाही",
+            "unitPattern-count-one": "{0} तिमाही",
+            "oblique-count-one": "{0} तिमाही",
+            "unitPattern-count-other": "{0} तिमाहियां",
+            "oblique-count-other": "{0} तिमाहियां",
+            "perUnitPattern": "{0}/ति"
           },
           "duration-month": {
             "gender": "masculine",
@@ -932,7 +941,7 @@
             "unitPattern-count-other": "{0} सौर ज्योति",
             "oblique-count-other": "{0} सौर ज्योति"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "gender": "masculine",
             "displayName": "मीट्रिक टन",
             "unitPattern-count-one": "{0} मीट्रिक टन",
@@ -1569,16 +1578,16 @@
             "unitPrefixPattern": "योटा {0}"
           },
           "1024p1": {
-            "unitPrefixPattern": "Ki{0}"
+            "unitPrefixPattern": "कि.बी.{0}"
           },
           "1024p2": {
-            "unitPrefixPattern": "Mi{0}"
+            "unitPrefixPattern": "मे.बी.{0}"
           },
           "1024p3": {
-            "unitPrefixPattern": "Gi{0}"
+            "unitPrefixPattern": "जी.बी.{0}"
           },
           "1024p4": {
-            "unitPrefixPattern": "Ti{0}"
+            "unitPrefixPattern": "टे.बी.{0}"
           },
           "1024p5": {
             "unitPrefixPattern": "पे.बी.{0}"
@@ -1610,8 +1619,8 @@
           },
           "acceleration-g-force": {
             "displayName": "गुरुत्व बल",
-            "unitPattern-count-one": "{0} G",
-            "unitPattern-count-other": "{0} G"
+            "unitPattern-count-one": "{0} गु॰",
+            "unitPattern-count-other": "{0} गु॰"
           },
           "acceleration-meter-per-square-second": {
             "displayName": "मीटर/से²",
@@ -1832,6 +1841,12 @@
             "unitPattern-count-other": "{0} वर्ष",
             "perUnitPattern": "{0}/वर्ष"
           },
+          "duration-quarter": {
+            "displayName": "तिमा",
+            "unitPattern-count-one": "{0} तिमा",
+            "unitPattern-count-other": "{0} तिमा",
+            "perUnitPattern": "{0}/ति"
+          },
           "duration-month": {
             "displayName": "माह",
             "unitPattern-count-one": "{0} माह",
@@ -1914,19 +1929,19 @@
             "unitPattern-count-other": "{0} cal"
           },
           "energy-foodcalorie": {
-            "displayName": "Cal",
+            "displayName": "कैलोरी",
             "unitPattern-count-one": "{0} Cal",
             "unitPattern-count-other": "{0} Cal"
           },
           "energy-kilojoule": {
             "displayName": "किलो जूल",
-            "unitPattern-count-one": "{0} kJ",
-            "unitPattern-count-other": "{0} kJ"
+            "unitPattern-count-one": "{0} कि॰जू॰",
+            "unitPattern-count-other": "{0} कि॰जू॰"
           },
           "energy-joule": {
             "displayName": "जूल",
-            "unitPattern-count-one": "{0} J",
-            "unitPattern-count-other": "{0} J"
+            "unitPattern-count-one": "{0} जू॰",
+            "unitPattern-count-other": "{0} जू॰"
           },
           "energy-kilowatt-hour": {
             "displayName": "kWh",
@@ -2135,10 +2150,10 @@
             "displayName": "L☉",
             "unitPattern-count-other": "{0} L☉"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "मीट्रिक टन",
             "unitPattern-count-one": "{0} मीट्रिक टन",
-            "unitPattern-count-other": "{0} मीट्रिक टन"
+            "unitPattern-count-other": "{0} मी टन"
           },
           "mass-kilogram": {
             "displayName": "कि॰ग्रा॰",
@@ -2385,8 +2400,8 @@
           },
           "volume-hectoliter": {
             "displayName": "है॰ली॰",
-            "unitPattern-count-one": "{0} है॰ली॰",
-            "unitPattern-count-other": "{0} है॰ली॰"
+            "unitPattern-count-one": "{0} हे॰ली॰",
+            "unitPattern-count-other": "{0} हे॰ली॰"
           },
           "volume-liter": {
             "displayName": "लीटर",
@@ -2426,8 +2441,8 @@
           },
           "volume-bushel": {
             "displayName": "बुशल",
-            "unitPattern-count-one": "{0} बुश.",
-            "unitPattern-count-other": "{0} बुश."
+            "unitPattern-count-one": "{0} बुश॰",
+            "unitPattern-count-other": "{0} बुश॰"
           },
           "volume-gallon": {
             "displayName": "गैलन",
@@ -2626,8 +2641,8 @@
           },
           "acceleration-g-force": {
             "displayName": "गु–बल",
-            "unitPattern-count-one": "{0}गु॰",
-            "unitPattern-count-other": "{0}गु॰"
+            "unitPattern-count-one": "{0} गु",
+            "unitPattern-count-other": "{0} गु"
           },
           "acceleration-meter-per-square-second": {
             "displayName": "मीटर/से²",
@@ -2661,14 +2676,14 @@
           },
           "area-square-kilometer": {
             "displayName": "वर्ग किमी",
-            "unitPattern-count-one": "{0} km²",
-            "unitPattern-count-other": "{0} km²",
+            "unitPattern-count-one": "{0} वर्ग कि॰मी॰",
+            "unitPattern-count-other": "{0} वर्ग कि॰मी॰",
             "perUnitPattern": "{0}/वर्ग किमी"
           },
           "area-hectare": {
             "displayName": "हे",
-            "unitPattern-count-one": "{0}हे॰",
-            "unitPattern-count-other": "{0}हे॰"
+            "unitPattern-count-one": "{0} हे॰",
+            "unitPattern-count-other": "{0} हे॰"
           },
           "area-square-meter": {
             "displayName": "वर्ग मी",
@@ -2684,29 +2699,29 @@
           },
           "area-square-mile": {
             "displayName": "वर्ग मील",
-            "unitPattern-count-one": "{0}वर्ग मील",
-            "unitPattern-count-other": "{0}वर्ग मील",
+            "unitPattern-count-one": "{0} वर्ग मील",
+            "unitPattern-count-other": "{0} व मी",
             "perUnitPattern": "{0}/वर्ग मील"
           },
           "area-acre": {
             "displayName": "एकड़",
-            "unitPattern-count-one": "{0}एकड़",
-            "unitPattern-count-other": "{0}एकड़"
+            "unitPattern-count-one": "{0} एकड़",
+            "unitPattern-count-other": "{0} एकड़"
           },
           "area-square-yard": {
             "displayName": "वर्ग गज़",
             "unitPattern-count-one": "{0} वर्ग गज़",
-            "unitPattern-count-other": "{0} वर्ग गज़"
+            "unitPattern-count-other": "{0} व ग"
           },
           "area-square-foot": {
             "displayName": "वर्ग फ़ीट",
-            "unitPattern-count-one": "{0}ft²",
-            "unitPattern-count-other": "{0}ft²"
+            "unitPattern-count-one": "{0} व फ़ी",
+            "unitPattern-count-other": "{0} व फ़ी"
           },
           "area-square-inch": {
             "displayName": "वर्ग इंच",
-            "unitPattern-count-one": "{0} वर्ग इंच",
-            "unitPattern-count-other": "{0} वर्ग इंच",
+            "unitPattern-count-one": "{0} व इं",
+            "unitPattern-count-other": "{0} व इं",
             "perUnitPattern": "{0}/वर्ग इंच"
           },
           "area-dunam": {
@@ -2764,8 +2779,8 @@
           },
           "consumption-liter-per-100-kilometer": {
             "displayName": "ली॰/100 कि॰मी॰",
-            "unitPattern-count-one": "{0}ली/100कि",
-            "unitPattern-count-other": "{0}ली/100कि"
+            "unitPattern-count-one": "{0} ली/100 किमी",
+            "unitPattern-count-other": "{0} ली/100 किमी"
           },
           "consumption-mile-per-gallon": {
             "displayName": "मील/गैलन",
@@ -2848,6 +2863,12 @@
             "unitPattern-count-other": "{0}वर्ष",
             "perUnitPattern": "{0}/व"
           },
+          "duration-quarter": {
+            "displayName": "तिमा",
+            "unitPattern-count-one": "{0} तिमा",
+            "unitPattern-count-other": "{0} तिमा",
+            "perUnitPattern": "{0}/ति"
+          },
           "duration-month": {
             "displayName": "माह",
             "unitPattern-count-one": "{0}माह",
@@ -2862,26 +2883,26 @@
           },
           "duration-day": {
             "displayName": "दिन",
-            "unitPattern-count-one": "{0}दिन",
-            "unitPattern-count-other": "{0}दिन",
+            "unitPattern-count-one": "{0} दि",
+            "unitPattern-count-other": "{0} दि",
             "perUnitPattern": "{0}/दि"
           },
           "duration-hour": {
             "displayName": "घंटा",
             "unitPattern-count-one": "{0}घं॰",
-            "unitPattern-count-other": "{0}घं॰",
+            "unitPattern-count-other": "{0} घं",
             "perUnitPattern": "{0}/घं"
           },
           "duration-minute": {
             "displayName": "मिनट",
-            "unitPattern-count-one": "{0}मि॰",
-            "unitPattern-count-other": "{0}मि॰",
+            "unitPattern-count-one": "{0} मि",
+            "unitPattern-count-other": "{0} मि",
             "perUnitPattern": "{0}/मि"
           },
           "duration-second": {
             "displayName": "सेकंड",
-            "unitPattern-count-one": "{0}से॰",
-            "unitPattern-count-other": "{0}से॰",
+            "unitPattern-count-one": "{0} से",
+            "unitPattern-count-other": "{0} से",
             "perUnitPattern": "{0}/से"
           },
           "duration-millisecond": {
@@ -2896,8 +2917,8 @@
           },
           "duration-nanosecond": {
             "displayName": "ns",
-            "unitPattern-count-one": "{0} ns",
-            "unitPattern-count-other": "{0} ns"
+            "unitPattern-count-one": "{0} नैनो से",
+            "unitPattern-count-other": "{0} नैनो से"
           },
           "electric-ampere": {
             "displayName": "एम्पी॰",
@@ -2926,23 +2947,23 @@
           },
           "energy-calorie": {
             "displayName": "cal",
-            "unitPattern-count-one": "{0} cal",
-            "unitPattern-count-other": "{0} cal"
+            "unitPattern-count-one": "{0} कै",
+            "unitPattern-count-other": "{0} कै"
           },
           "energy-foodcalorie": {
-            "displayName": "Cal",
-            "unitPattern-count-one": "{0} Cal",
-            "unitPattern-count-other": "{0} Cal"
+            "displayName": "कैलोरी",
+            "unitPattern-count-one": "{0} कै",
+            "unitPattern-count-other": "{0} कै"
           },
           "energy-kilojoule": {
             "displayName": "किलो जूल",
-            "unitPattern-count-one": "{0} kJ",
-            "unitPattern-count-other": "{0} kJ"
+            "unitPattern-count-one": "{0} किजू",
+            "unitPattern-count-other": "{0} किजू"
           },
           "energy-joule": {
             "displayName": "जूल",
-            "unitPattern-count-one": "{0} J",
-            "unitPattern-count-other": "{0} J"
+            "unitPattern-count-one": "{0} जू",
+            "unitPattern-count-other": "{0} जू"
           },
           "energy-kilowatt-hour": {
             "displayName": "kWh",
@@ -3037,14 +3058,14 @@
           },
           "length-kilometer": {
             "displayName": "कि॰मी॰",
-            "unitPattern-count-one": "{0} कि॰मी॰",
-            "unitPattern-count-other": "{0} कि॰मी॰",
+            "unitPattern-count-one": "{0} किमी",
+            "unitPattern-count-other": "{0} किमी",
             "perUnitPattern": "{0}/किमी"
           },
           "length-meter": {
             "displayName": "मीटर",
-            "unitPattern-count-one": "{0}मी",
-            "unitPattern-count-other": "{0}मी",
+            "unitPattern-count-one": "{0} मी",
+            "unitPattern-count-other": "{0} मी",
             "perUnitPattern": "{0}/मी"
           },
           "length-decimeter": {
@@ -3060,8 +3081,8 @@
           },
           "length-millimeter": {
             "displayName": "मि॰मी॰",
-            "unitPattern-count-one": "{0} मि॰मी॰",
-            "unitPattern-count-other": "{0} मि॰मी॰"
+            "unitPattern-count-one": "{0} मिमी",
+            "unitPattern-count-other": "{0} मिमी"
           },
           "length-micrometer": {
             "displayName": "μm",
@@ -3070,8 +3091,8 @@
           },
           "length-nanometer": {
             "displayName": "nm",
-            "unitPattern-count-one": "{0} nm",
-            "unitPattern-count-other": "{0} nm"
+            "unitPattern-count-one": "{0} नैमी",
+            "unitPattern-count-other": "{0} नैमी"
           },
           "length-picometer": {
             "displayName": "pm",
@@ -3080,13 +3101,13 @@
           },
           "length-mile": {
             "displayName": "मील",
-            "unitPattern-count-one": "{0}मील",
-            "unitPattern-count-other": "{0}मील"
+            "unitPattern-count-one": "{0} मील",
+            "unitPattern-count-other": "{0} मील"
           },
           "length-yard": {
-            "displayName": "गज़",
-            "unitPattern-count-one": "{0}गज",
-            "unitPattern-count-other": "{0}गज"
+            "displayName": "यार्ड",
+            "unitPattern-count-one": "{0} यार्ड",
+            "unitPattern-count-other": "{0} यार्ड"
           },
           "length-foot": {
             "displayName": "फ़ीट",
@@ -3107,8 +3128,8 @@
           },
           "length-light-year": {
             "displayName": "प्रव",
-            "unitPattern-count-one": "{0}प्र॰व॰",
-            "unitPattern-count-other": "{0}प्र॰व॰"
+            "unitPattern-count-one": "{0} प्रव",
+            "unitPattern-count-other": "{0} प्रव"
           },
           "length-astronomical-unit": {
             "displayName": "खगो॰ इका॰",
@@ -3161,15 +3182,15 @@
             "displayName": "L☉",
             "unitPattern-count-other": "{0} L☉"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "मीट्रिक टन",
-            "unitPattern-count-one": "{0} मीट्रिक टन",
-            "unitPattern-count-other": "{0} मीट्रिक टन"
+            "unitPattern-count-one": "{0} ट",
+            "unitPattern-count-other": "{0} ट"
           },
           "mass-kilogram": {
             "displayName": "कि॰ग्रा॰",
-            "unitPattern-count-one": "{0}कि॰ग्रा॰",
-            "unitPattern-count-other": "{0} कि॰ग्रा॰",
+            "unitPattern-count-one": "{0} किग्रा",
+            "unitPattern-count-other": "{0} किग्रा",
             "perUnitPattern": "{0}/कि॰ग्रा॰"
           },
           "mass-gram": {
@@ -3180,8 +3201,8 @@
           },
           "mass-milligram": {
             "displayName": "मि॰ग्रा॰",
-            "unitPattern-count-one": "{0} मि॰ग्रा॰",
-            "unitPattern-count-other": "{0} मि॰ग्रा॰"
+            "unitPattern-count-one": "{0} मिग्रा",
+            "unitPattern-count-other": "{0} मिग्रा"
           },
           "mass-microgram": {
             "displayName": "मा॰ग्रा॰",
@@ -3206,8 +3227,8 @@
           },
           "mass-ounce": {
             "displayName": "औंस",
-            "unitPattern-count-one": "{0}औं॰",
-            "unitPattern-count-other": "{0}औं॰",
+            "unitPattern-count-one": "{0} औं॰",
+            "unitPattern-count-other": "{0} औं॰",
             "perUnitPattern": "{0}/औंस"
           },
           "mass-ounce-troy": {
@@ -3250,23 +3271,23 @@
           },
           "power-kilowatt": {
             "displayName": "kW",
-            "unitPattern-count-one": "{0}कि॰वॉ॰",
-            "unitPattern-count-other": "{0}कि॰वॉ॰"
+            "unitPattern-count-one": "{0} किवॉ",
+            "unitPattern-count-other": "{0} किवॉ"
           },
           "power-watt": {
             "displayName": "वॉट",
-            "unitPattern-count-one": "{0}वॉ",
-            "unitPattern-count-other": "{0}वॉ"
+            "unitPattern-count-one": "{0} वॉ",
+            "unitPattern-count-other": "{0} वॉ"
           },
           "power-milliwatt": {
             "displayName": "mW",
-            "unitPattern-count-one": "{0} mW",
-            "unitPattern-count-other": "{0} mW"
+            "unitPattern-count-one": "{0} मिवॉ",
+            "unitPattern-count-other": "{0} मिवॉ"
           },
           "power-horsepower": {
             "displayName": "hp",
-            "unitPattern-count-one": "{0}एचपी",
-            "unitPattern-count-other": "{0}एचपी"
+            "unitPattern-count-one": "{0} एचपी",
+            "unitPattern-count-other": "{0} एचपी"
           },
           "pressure-millimeter-ofhg": {
             "displayName": "mm Hg",
@@ -3280,8 +3301,8 @@
           },
           "pressure-inch-ofhg": {
             "displayName": "inHg",
-            "unitPattern-count-one": "{0}\\\" Hg",
-            "unitPattern-count-other": "{0}\\\" Hg"
+            "unitPattern-count-one": "{0}\" Hg",
+            "unitPattern-count-other": "{0}\" Hg"
           },
           "pressure-bar": {
             "displayName": "बार",
@@ -3306,7 +3327,7 @@
           "pressure-hectopascal": {
             "displayName": "hPa",
             "unitPattern-count-one": "{0}hPa",
-            "unitPattern-count-other": "{0}hPa"
+            "unitPattern-count-other": "{0} hPa"
           },
           "pressure-kilopascal": {
             "displayName": "किपा॰",
@@ -3320,18 +3341,18 @@
           },
           "speed-kilometer-per-hour": {
             "displayName": "कि॰मी॰/घं॰",
-            "unitPattern-count-one": "{0}किमी/घं",
-            "unitPattern-count-other": "{0}किमी/घं"
+            "unitPattern-count-one": "{0} किमी/घं",
+            "unitPattern-count-other": "{0} किमी/घं"
           },
           "speed-meter-per-second": {
             "displayName": "मीटर/से॰",
-            "unitPattern-count-one": "{0}मी॰/से॰",
+            "unitPattern-count-one": "{0} मी/से",
             "unitPattern-count-other": "{0}मी॰/से॰"
           },
           "speed-mile-per-hour": {
             "displayName": "मील/घंटा",
-            "unitPattern-count-one": "{0}mph",
-            "unitPattern-count-other": "{0}mph"
+            "unitPattern-count-one": "{0} मीप्रघं",
+            "unitPattern-count-other": "{0} मीप्रघं"
           },
           "speed-knot": {
             "displayName": "नॉट",
@@ -3369,8 +3390,8 @@
           },
           "volume-cubic-kilometer": {
             "displayName": "घन कि॰मी॰",
-            "unitPattern-count-one": "{0}घन किमी",
-            "unitPattern-count-other": "{0}घन किमी"
+            "unitPattern-count-one": "{0} घन किमी",
+            "unitPattern-count-other": "{0} घन किमी"
           },
           "volume-cubic-meter": {
             "displayName": "घन मी",
@@ -3386,8 +3407,8 @@
           },
           "volume-cubic-mile": {
             "displayName": "घन मील",
-            "unitPattern-count-one": "{0}घन मील",
-            "unitPattern-count-other": "{0}घन मील"
+            "unitPattern-count-one": "{0} घन मील",
+            "unitPattern-count-other": "{0} घन मील"
           },
           "volume-cubic-yard": {
             "displayName": "घन या॰",
@@ -3396,8 +3417,8 @@
           },
           "volume-cubic-foot": {
             "displayName": "घन फ़ीट",
-            "unitPattern-count-one": "{0} घन फ़ीट",
-            "unitPattern-count-other": "{0} घन फ़ीट"
+            "unitPattern-count-one": "{0} घ॰ फ़ी॰",
+            "unitPattern-count-other": "{0} घ॰ फ़ी॰"
           },
           "volume-cubic-inch": {
             "displayName": "घन इंच",
@@ -3411,13 +3432,13 @@
           },
           "volume-hectoliter": {
             "displayName": "है॰ली॰",
-            "unitPattern-count-one": "{0} है॰ली॰",
-            "unitPattern-count-other": "{0} है॰ली॰"
+            "unitPattern-count-one": "{0} हेली",
+            "unitPattern-count-other": "{0} हेली"
           },
           "volume-liter": {
             "displayName": "लीटर",
-            "unitPattern-count-one": "{0}ली॰",
-            "unitPattern-count-other": "{0}ली॰",
+            "unitPattern-count-one": "{0} ली",
+            "unitPattern-count-other": "{0} ली",
             "perUnitPattern": "{0}/ली"
           },
           "volume-deciliter": {

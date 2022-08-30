@@ -181,6 +181,16 @@
  - A CLDR package with no packageDesc description. (modern only)
  - [![NPM version](https://img.shields.io/npm/v/cldr-numbers-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-numbers-modern)
 
+### [cldr-personNames-full](./cldr-json/cldr-personNames-full/)
+
+ - A CLDR package with no packageDesc description. (full)
+ - [![NPM version](https://img.shields.io/npm/v/cldr-personNames-full.svg?style=flat)](https://www.npmjs.org/package/cldr-personNames-full)
+
+### [cldr-personNames-modern](./cldr-json/cldr-personNames-modern/)
+
+ - A CLDR package with no packageDesc description. (modern only)
+ - [![NPM version](https://img.shields.io/npm/v/cldr-personNames-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-personNames-modern)
+
 ### [cldr-rbnf](./cldr-json/cldr-rbnf/)
 
  - Rule Based Number Formatting data
