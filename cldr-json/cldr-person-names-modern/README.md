@@ -1,11 +1,11 @@
-# cldr-personNames-modern
+# cldr-person-names-modern
 
 A CLDR package with no packageDesc description.
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-personNames-full` package.
+This package contains the set of locales listed as modern coverage. See also the `cldr-person-names-full` package.
 
 
-[![NPM version](https://img.shields.io/npm/v/cldr-personNames-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-personNames-modern)
+[![NPM version](https://img.shields.io/npm/v/cldr-person-names-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-person-names-modern)
 
 ## General Info
 

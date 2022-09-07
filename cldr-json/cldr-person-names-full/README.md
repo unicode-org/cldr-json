@@ -1,11 +1,11 @@
-# cldr-personNames-full
+# cldr-person-names-full
 
 A CLDR package with no packageDesc description.
 
-This package contains the complete set of locales, including what is in the `cldr-personNames-modern` package.
+This package contains the complete set of locales, including what is in the `cldr-person-names-modern` package.
 
 
-[![NPM version](https://img.shields.io/npm/v/cldr-personNames-full.svg?style=flat)](https://www.npmjs.org/package/cldr-personNames-full)
+[![NPM version](https://img.shields.io/npm/v/cldr-person-names-full.svg?style=flat)](https://www.npmjs.org/package/cldr-person-names-full)
 
 ## General Info
 

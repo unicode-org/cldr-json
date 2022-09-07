@@ -181,15 +181,15 @@
  - A CLDR package with no packageDesc description. (modern only)
  - [![NPM version](https://img.shields.io/npm/v/cldr-numbers-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-numbers-modern)
 
-### [cldr-personNames-full](./cldr-json/cldr-personNames-full/)
+### [cldr-person-names-full](./cldr-json/cldr-person-names-full/)
 
  - A CLDR package with no packageDesc description. (full)
- - [![NPM version](https://img.shields.io/npm/v/cldr-personNames-full.svg?style=flat)](https://www.npmjs.org/package/cldr-personNames-full)
+ - [![NPM version](https://img.shields.io/npm/v/cldr-person-names-full.svg?style=flat)](https://www.npmjs.org/package/cldr-person-names-full)
 
-### [cldr-personNames-modern](./cldr-json/cldr-personNames-modern/)
+### [cldr-person-names-modern](./cldr-json/cldr-person-names-modern/)
 
  - A CLDR package with no packageDesc description. (modern only)
- - [![NPM version](https://img.shields.io/npm/v/cldr-personNames-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-personNames-modern)
+ - [![NPM version](https://img.shields.io/npm/v/cldr-person-names-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-person-names-modern)
 
 ### [cldr-rbnf](./cldr-json/cldr-rbnf/)
 
