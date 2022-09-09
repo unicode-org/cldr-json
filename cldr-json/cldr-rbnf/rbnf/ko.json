@@ -1,711 +1,934 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "ko"
     },
     "rbnf": {
       "OrdinalRules": {
         "%digits-ordinal": [
-          {
-            "rbnfrule": "−→→;"
-          },
-          {
-            "rbnfrule": "=#,##0=번째;"
-          }
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0=번째;"
+          ]
         ]
       },
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←점→→→;"
-          },
-          {
-            "rbnfrule": "←←점→→→;"
-          },
-          {
-            "rbnfrule": "공;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-sinokorean=;"
-          }
+          [
+            "0.x",
+            "←%spellout-cardinal-sinokorean←점→→→;"
+          ],
+          [
+            "x.x",
+            "←←점→→→;"
+          ],
+          [
+            "0",
+            "공;"
+          ],
+          [
+            "1",
+            "=%spellout-cardinal-sinokorean=;"
+          ]
         ],
         "%spellout-cardinal-sinokorean": [
-          {
-            "rbnfrule": "마이너스 →→;"
-          },
-          {
-            "rbnfrule": "←←점→→→;"
-          },
-          {
-            "rbnfrule": "영;"
-          },
-          {
-            "rbnfrule": "일;"
-          },
-          {
-            "rbnfrule": "이;"
-          },
-          {
-            "rbnfrule": "삼;"
-          },
-          {
-            "rbnfrule": "사;"
-          },
-          {
-            "rbnfrule": "오;"
-          },
-          {
-            "rbnfrule": "육;"
-          },
-          {
-            "rbnfrule": "칠;"
-          },
-          {
-            "rbnfrule": "팔;"
-          },
-          {
-            "rbnfrule": "구;"
-          },
-          {
-            "rbnfrule": "십[→→];"
-          },
-          {
-            "rbnfrule": "←←십[→→];"
-          },
-          {
-            "rbnfrule": "백[→→];"
-          },
-          {
-            "rbnfrule": "←←백[→→];"
-          },
-          {
-            "rbnfrule": "천[→→];"
-          },
-          {
-            "rbnfrule": "←←천[→→];"
-          },
-          {
-            "rbnfrule": "만[ →→];"
-          },
-          {
-            "rbnfrule": "←←만[ →→];"
-          },
-          {
-            "rbnfrule": "←←억[ →→];"
-          },
-          {
-            "rbnfrule": "←←조[ →→];"
-          },
-          {
-            "rbnfrule": "←←경[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "마이너스 →→;"
+          ],
+          [
+            "x.x",
+            "←←점→→→;"
+          ],
+          [
+            "0",
+            "영;"
+          ],
+          [
+            "1",
+            "일;"
+          ],
+          [
+            "2",
+            "이;"
+          ],
+          [
+            "3",
+            "삼;"
+          ],
+          [
+            "4",
+            "사;"
+          ],
+          [
+            "5",
+            "오;"
+          ],
+          [
+            "6",
+            "육;"
+          ],
+          [
+            "7",
+            "칠;"
+          ],
+          [
+            "8",
+            "팔;"
+          ],
+          [
+            "9",
+            "구;"
+          ],
+          [
+            "10",
+            "십[→→];"
+          ],
+          [
+            "20",
+            "←←십[→→];"
+          ],
+          [
+            "100",
+            "백[→→];"
+          ],
+          [
+            "200",
+            "←←백[→→];"
+          ],
+          [
+            "1000",
+            "천[→→];"
+          ],
+          [
+            "2000",
+            "←←천[→→];"
+          ],
+          [
+            "10000",
+            "만[ →→];"
+          ],
+          [
+            "20000",
+            "←←만[ →→];"
+          ],
+          [
+            "100000000",
+            "←←억[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←←조[ →→];"
+          ],
+          [
+            "10000000000000000",
+            "←←경[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-native-attributive": [
-          {
-            "rbnfrule": "마이너스 →→;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-sinokorean=;"
-          },
-          {
-            "rbnfrule": "영;"
-          },
-          {
-            "rbnfrule": "한;"
-          },
-          {
-            "rbnfrule": "두;"
-          },
-          {
-            "rbnfrule": "세;"
-          },
-          {
-            "rbnfrule": "네;"
-          },
-          {
-            "rbnfrule": "다섯;"
-          },
-          {
-            "rbnfrule": "여섯;"
-          },
-          {
-            "rbnfrule": "일곱;"
-          },
-          {
-            "rbnfrule": "여덟;"
-          },
-          {
-            "rbnfrule": "아홉;"
-          },
-          {
-            "rbnfrule": "열[→→];"
-          },
-          {
-            "rbnfrule": "스무;"
-          },
-          {
-            "rbnfrule": "스물[→→];"
-          },
-          {
-            "rbnfrule": "서른[→→];"
-          },
-          {
-            "rbnfrule": "마흔[→→];"
-          },
-          {
-            "rbnfrule": "쉰[→→];"
-          },
-          {
-            "rbnfrule": "예순[→→];"
-          },
-          {
-            "rbnfrule": "일흔[→→];"
-          },
-          {
-            "rbnfrule": "여든[→→];"
-          },
-          {
-            "rbnfrule": "아흔[→→];"
-          },
-          {
-            "rbnfrule": "백[→→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←백[→→];"
-          },
-          {
-            "rbnfrule": "천[→→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←천[→→];"
-          },
-          {
-            "rbnfrule": "만[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←만[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←억[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←조[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←경[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "마이너스 →→;"
+          ],
+          [
+            "x.x",
+            "=%spellout-cardinal-sinokorean=;"
+          ],
+          [
+            "0",
+            "영;"
+          ],
+          [
+            "1",
+            "한;"
+          ],
+          [
+            "2",
+            "두;"
+          ],
+          [
+            "3",
+            "세;"
+          ],
+          [
+            "4",
+            "네;"
+          ],
+          [
+            "5",
+            "다섯;"
+          ],
+          [
+            "6",
+            "여섯;"
+          ],
+          [
+            "7",
+            "일곱;"
+          ],
+          [
+            "8",
+            "여덟;"
+          ],
+          [
+            "9",
+            "아홉;"
+          ],
+          [
+            "10",
+            "열[→→];"
+          ],
+          [
+            "20",
+            "스무;"
+          ],
+          [
+            "21",
+            "스물[→→];"
+          ],
+          [
+            "30",
+            "서른[→→];"
+          ],
+          [
+            "40",
+            "마흔[→→];"
+          ],
+          [
+            "50",
+            "쉰[→→];"
+          ],
+          [
+            "60",
+            "예순[→→];"
+          ],
+          [
+            "70",
+            "일흔[→→];"
+          ],
+          [
+            "80",
+            "여든[→→];"
+          ],
+          [
+            "90",
+            "아흔[→→];"
+          ],
+          [
+            "100",
+            "백[→→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-sinokorean←백[→→];"
+          ],
+          [
+            "1000",
+            "천[→→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-sinokorean←천[→→];"
+          ],
+          [
+            "10000",
+            "만[ →→];"
+          ],
+          [
+            "20000",
+            "←%spellout-cardinal-sinokorean←만[ →→];"
+          ],
+          [
+            "100000000",
+            "←%spellout-cardinal-sinokorean←억[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-sinokorean←조[ →→];"
+          ],
+          [
+            "10000000000000000",
+            "←%spellout-cardinal-sinokorean←경[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-native": [
-          {
-            "rbnfrule": "마이너스 →→;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-sinokorean=;"
-          },
-          {
-            "rbnfrule": "영;"
-          },
-          {
-            "rbnfrule": "하나;"
-          },
-          {
-            "rbnfrule": "둘;"
-          },
-          {
-            "rbnfrule": "셋;"
-          },
-          {
-            "rbnfrule": "넷;"
-          },
-          {
-            "rbnfrule": "다섯;"
-          },
-          {
-            "rbnfrule": "여섯;"
-          },
-          {
-            "rbnfrule": "일곱;"
-          },
-          {
-            "rbnfrule": "여덟;"
-          },
-          {
-            "rbnfrule": "아홉;"
-          },
-          {
-            "rbnfrule": "열[ →→];"
-          },
-          {
-            "rbnfrule": "스물[→→];"
-          },
-          {
-            "rbnfrule": "서른[→→];"
-          },
-          {
-            "rbnfrule": "마흔[→→];"
-          },
-          {
-            "rbnfrule": "쉰[→→];"
-          },
-          {
-            "rbnfrule": "예순[→→];"
-          },
-          {
-            "rbnfrule": "일흔[→→];"
-          },
-          {
-            "rbnfrule": "여든[→→];"
-          },
-          {
-            "rbnfrule": "아흔[→→];"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-sinokorean=;"
-          }
+          [
+            "-x",
+            "마이너스 →→;"
+          ],
+          [
+            "x.x",
+            "=%spellout-cardinal-sinokorean=;"
+          ],
+          [
+            "0",
+            "영;"
+          ],
+          [
+            "1",
+            "하나;"
+          ],
+          [
+            "2",
+            "둘;"
+          ],
+          [
+            "3",
+            "셋;"
+          ],
+          [
+            "4",
+            "넷;"
+          ],
+          [
+            "5",
+            "다섯;"
+          ],
+          [
+            "6",
+            "여섯;"
+          ],
+          [
+            "7",
+            "일곱;"
+          ],
+          [
+            "8",
+            "여덟;"
+          ],
+          [
+            "9",
+            "아홉;"
+          ],
+          [
+            "10",
+            "열[ →→];"
+          ],
+          [
+            "20",
+            "스물[→→];"
+          ],
+          [
+            "30",
+            "서른[→→];"
+          ],
+          [
+            "40",
+            "마흔[→→];"
+          ],
+          [
+            "50",
+            "쉰[→→];"
+          ],
+          [
+            "60",
+            "예순[→→];"
+          ],
+          [
+            "70",
+            "일흔[→→];"
+          ],
+          [
+            "80",
+            "여든[→→];"
+          ],
+          [
+            "90",
+            "아흔[→→];"
+          ],
+          [
+            "100",
+            "=%spellout-cardinal-sinokorean=;"
+          ]
         ],
         "%spellout-cardinal-financial": [
-          {
-            "rbnfrule": "마이너스 →→;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-sinokorean=;"
-          },
-          {
-            "rbnfrule": "영;"
-          },
-          {
-            "rbnfrule": "일;"
-          },
-          {
-            "rbnfrule": "이;"
-          },
-          {
-            "rbnfrule": "삼;"
-          },
-          {
-            "rbnfrule": "사;"
-          },
-          {
-            "rbnfrule": "오;"
-          },
-          {
-            "rbnfrule": "육;"
-          },
-          {
-            "rbnfrule": "칠;"
-          },
-          {
-            "rbnfrule": "팔;"
-          },
-          {
-            "rbnfrule": "구;"
-          },
-          {
-            "rbnfrule": "←←십[→→];"
-          },
-          {
-            "rbnfrule": "←←백[→→];"
-          },
-          {
-            "rbnfrule": "←←천[→→];"
-          },
-          {
-            "rbnfrule": "←←만[→→];"
-          },
-          {
-            "rbnfrule": "←←억[→→];"
-          },
-          {
-            "rbnfrule": "←←조[→→];"
-          },
-          {
-            "rbnfrule": "←←경[→→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "마이너스 →→;"
+          ],
+          [
+            "x.x",
+            "=%spellout-cardinal-sinokorean=;"
+          ],
+          [
+            "0",
+            "영;"
+          ],
+          [
+            "1",
+            "일;"
+          ],
+          [
+            "2",
+            "이;"
+          ],
+          [
+            "3",
+            "삼;"
+          ],
+          [
+            "4",
+            "사;"
+          ],
+          [
+            "5",
+            "오;"
+          ],
+          [
+            "6",
+            "육;"
+          ],
+          [
+            "7",
+            "칠;"
+          ],
+          [
+            "8",
+            "팔;"
+          ],
+          [
+            "9",
+            "구;"
+          ],
+          [
+            "10",
+            "←←십[→→];"
+          ],
+          [
+            "100",
+            "←←백[→→];"
+          ],
+          [
+            "1000",
+            "←←천[→→];"
+          ],
+          [
+            "10000",
+            "←←만[→→];"
+          ],
+          [
+            "100000000",
+            "←←억[→→];"
+          ],
+          [
+            "1000000000000",
+            "←←조[→→];"
+          ],
+          [
+            "10000000000000000",
+            "←←경[→→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-ordinal-sinokorean-count": [
-          {
-            "rbnfrule": "마이너스 →→;"
-          },
-          {
-            "rbnfrule": "=#,##0.#=;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-native-count-smaller= 번째;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-sinokorean-count-smaller= 번째;"
-          }
+          [
+            "-x",
+            "마이너스 →→;"
+          ],
+          [
+            "x.x",
+            "=#,##0.#=;"
+          ],
+          [
+            "0",
+            "=%%spellout-ordinal-native-count-smaller= 번째;"
+          ],
+          [
+            "10",
+            "=%%spellout-ordinal-sinokorean-count-smaller= 번째;"
+          ]
         ],
-        "%spellout-ordinal-sinokorean-count-smaller": [
-          {
-            "rbnfrule": "영;"
-          },
-          {
-            "rbnfrule": "한;"
-          },
-          {
-            "rbnfrule": "두;"
-          },
-          {
-            "rbnfrule": "세;"
-          },
-          {
-            "rbnfrule": "네;"
-          },
-          {
-            "rbnfrule": "다섯;"
-          },
-          {
-            "rbnfrule": "여섯;"
-          },
-          {
-            "rbnfrule": "일곱;"
-          },
-          {
-            "rbnfrule": "여덟;"
-          },
-          {
-            "rbnfrule": "아홉;"
-          },
-          {
-            "rbnfrule": "열[→→];"
-          },
-          {
-            "rbnfrule": "스무;"
-          },
-          {
-            "rbnfrule": "스물[→→];"
-          },
-          {
-            "rbnfrule": "서른[→→];"
-          },
-          {
-            "rbnfrule": "마흔[→→];"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-sinokorean-count-larger=;"
-          }
+        "%%spellout-ordinal-sinokorean-count-smaller": [
+          [
+            "0",
+            "영;"
+          ],
+          [
+            "1",
+            "한;"
+          ],
+          [
+            "2",
+            "두;"
+          ],
+          [
+            "3",
+            "세;"
+          ],
+          [
+            "4",
+            "네;"
+          ],
+          [
+            "5",
+            "다섯;"
+          ],
+          [
+            "6",
+            "여섯;"
+          ],
+          [
+            "7",
+            "일곱;"
+          ],
+          [
+            "8",
+            "여덟;"
+          ],
+          [
+            "9",
+            "아홉;"
+          ],
+          [
+            "10",
+            "열[→→];"
+          ],
+          [
+            "20",
+            "스무;"
+          ],
+          [
+            "21",
+            "스물[→→];"
+          ],
+          [
+            "30",
+            "서른[→→];"
+          ],
+          [
+            "40",
+            "마흔[→→];"
+          ],
+          [
+            "50",
+            "=%%spellout-ordinal-sinokorean-count-larger=;"
+          ]
         ],
-        "%spellout-ordinal-sinokorean-count-larger": [
-          {
-            "rbnfrule": "일;"
-          },
-          {
-            "rbnfrule": "이;"
-          },
-          {
-            "rbnfrule": "삼;"
-          },
-          {
-            "rbnfrule": "사;"
-          },
-          {
-            "rbnfrule": "오;"
-          },
-          {
-            "rbnfrule": "육;"
-          },
-          {
-            "rbnfrule": "칠;"
-          },
-          {
-            "rbnfrule": "팔;"
-          },
-          {
-            "rbnfrule": "구;"
-          },
-          {
-            "rbnfrule": "십[→→];"
-          },
-          {
-            "rbnfrule": "←←십[→→];"
-          },
-          {
-            "rbnfrule": "오십[→→];"
-          },
-          {
-            "rbnfrule": "육십[→→];"
-          },
-          {
-            "rbnfrule": "칠십[→→];"
-          },
-          {
-            "rbnfrule": "팔십[→→];"
-          },
-          {
-            "rbnfrule": "구십[→→];"
-          },
-          {
-            "rbnfrule": "백[→→];"
-          },
-          {
-            "rbnfrule": "←←백[→→];"
-          },
-          {
-            "rbnfrule": "천[→→];"
-          },
-          {
-            "rbnfrule": "←←천[→→];"
-          },
-          {
-            "rbnfrule": "만[ →→];"
-          },
-          {
-            "rbnfrule": "←←만[ →→];"
-          },
-          {
-            "rbnfrule": "←←억[ →→];"
-          },
-          {
-            "rbnfrule": "←←조[ →→];"
-          },
-          {
-            "rbnfrule": "←←경[ →→];"
-          }
+        "%%spellout-ordinal-sinokorean-count-larger": [
+          [
+            "1",
+            "일;"
+          ],
+          [
+            "2",
+            "이;"
+          ],
+          [
+            "3",
+            "삼;"
+          ],
+          [
+            "4",
+            "사;"
+          ],
+          [
+            "5",
+            "오;"
+          ],
+          [
+            "6",
+            "육;"
+          ],
+          [
+            "7",
+            "칠;"
+          ],
+          [
+            "8",
+            "팔;"
+          ],
+          [
+            "9",
+            "구;"
+          ],
+          [
+            "10",
+            "십[→→];"
+          ],
+          [
+            "20",
+            "←←십[→→];"
+          ],
+          [
+            "50",
+            "오십[→→];"
+          ],
+          [
+            "60",
+            "육십[→→];"
+          ],
+          [
+            "70",
+            "칠십[→→];"
+          ],
+          [
+            "80",
+            "팔십[→→];"
+          ],
+          [
+            "90",
+            "구십[→→];"
+          ],
+          [
+            "100",
+            "백[→→];"
+          ],
+          [
+            "200",
+            "←←백[→→];"
+          ],
+          [
+            "1000",
+            "천[→→];"
+          ],
+          [
+            "2000",
+            "←←천[→→];"
+          ],
+          [
+            "10000",
+            "만[ →→];"
+          ],
+          [
+            "20000",
+            "←←만[ →→];"
+          ],
+          [
+            "100000000",
+            "←←억[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←←조[ →→];"
+          ],
+          [
+            "10000000000000000",
+            "←←경[ →→];"
+          ]
         ],
         "%spellout-ordinal-native-count": [
-          {
-            "rbnfrule": "마이너스 →→;"
-          },
-          {
-            "rbnfrule": "=#,##0.#=;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-native-count-smaller= 번째;"
-          }
+          [
+            "-x",
+            "마이너스 →→;"
+          ],
+          [
+            "x.x",
+            "=#,##0.#=;"
+          ],
+          [
+            "0",
+            "=%%spellout-ordinal-native-count-smaller= 번째;"
+          ]
         ],
-        "%spellout-ordinal-native-count-smaller": [
-          {
-            "rbnfrule": "영;"
-          },
-          {
-            "rbnfrule": "첫;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-native-attributive=;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-native-count-larger=;"
-          }
+        "%%spellout-ordinal-native-count-smaller": [
+          [
+            "0",
+            "영;"
+          ],
+          [
+            "1",
+            "첫;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-native-attributive=;"
+          ],
+          [
+            "50",
+            "=%%spellout-ordinal-native-count-larger=;"
+          ]
         ],
-        "%spellout-ordinal-native-count-larger": [
-          {
-            "rbnfrule": "영;"
-          },
-          {
-            "rbnfrule": "한;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-native-attributive=;"
-          },
-          {
-            "rbnfrule": "서른[→→];"
-          },
-          {
-            "rbnfrule": "마흔[→→];"
-          },
-          {
-            "rbnfrule": "쉰[→%spellout-cardinal-native-attributive→];"
-          },
-          {
-            "rbnfrule": "예순[→%spellout-cardinal-native-attributive→];"
-          },
-          {
-            "rbnfrule": "일흔[→%spellout-cardinal-native-attributive→];"
-          },
-          {
-            "rbnfrule": "여든[→%spellout-cardinal-native-attributive→];"
-          },
-          {
-            "rbnfrule": "아흔[→%spellout-cardinal-native-attributive→];"
-          },
-          {
-            "rbnfrule": "백[→→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←백[→→];"
-          },
-          {
-            "rbnfrule": "천[→→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←천[→→];"
-          },
-          {
-            "rbnfrule": "만[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←만[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←억[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←조[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←경[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+        "%%spellout-ordinal-native-count-larger": [
+          [
+            "0",
+            "영;"
+          ],
+          [
+            "1",
+            "한;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-native-attributive=;"
+          ],
+          [
+            "30",
+            "서른[→→];"
+          ],
+          [
+            "40",
+            "마흔[→→];"
+          ],
+          [
+            "50",
+            "쉰[→%spellout-cardinal-native-attributive→];"
+          ],
+          [
+            "60",
+            "예순[→%spellout-cardinal-native-attributive→];"
+          ],
+          [
+            "70",
+            "일흔[→%spellout-cardinal-native-attributive→];"
+          ],
+          [
+            "80",
+            "여든[→%spellout-cardinal-native-attributive→];"
+          ],
+          [
+            "90",
+            "아흔[→%spellout-cardinal-native-attributive→];"
+          ],
+          [
+            "100",
+            "백[→→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-sinokorean←백[→→];"
+          ],
+          [
+            "1000",
+            "천[→→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-sinokorean←천[→→];"
+          ],
+          [
+            "10000",
+            "만[ →→];"
+          ],
+          [
+            "20000",
+            "←%spellout-cardinal-sinokorean←만[ →→];"
+          ],
+          [
+            "100000000",
+            "←%spellout-cardinal-sinokorean←억[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-sinokorean←조[ →→];"
+          ],
+          [
+            "10000000000000000",
+            "←%spellout-cardinal-sinokorean←경[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-ordinal-sinokorean": [
-          {
-            "rbnfrule": "=%spellout-ordinal-native=;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-sinokorean=째;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-sinokorean-count-larger=째;"
-          }
+          [
+            "0",
+            "=%spellout-ordinal-native=;"
+          ],
+          [
+            "50",
+            "=%spellout-cardinal-sinokorean=째;"
+          ],
+          [
+            "100",
+            "=%%spellout-ordinal-sinokorean-count-larger=째;"
+          ]
         ],
         "%spellout-ordinal-native": [
-          {
-            "rbnfrule": "=#,##0.#=;"
-          },
-          {
-            "rbnfrule": "마이너스 →→;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-native-priv=째;"
-          }
+          [
+            "x.x",
+            "=#,##0.#=;"
+          ],
+          [
+            "-x",
+            "마이너스 →→;"
+          ],
+          [
+            "0",
+            "=%%spellout-ordinal-native-priv=째;"
+          ]
         ],
-        "%spellout-ordinal-native-priv": [
-          {
-            "rbnfrule": "영;"
-          },
-          {
-            "rbnfrule": "첫;"
-          },
-          {
-            "rbnfrule": "둘;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-native-smaller=;"
-          }
+        "%%spellout-ordinal-native-priv": [
+          [
+            "0",
+            "영;"
+          ],
+          [
+            "1",
+            "첫;"
+          ],
+          [
+            "2",
+            "둘;"
+          ],
+          [
+            "3",
+            "=%%spellout-ordinal-native-smaller=;"
+          ]
         ],
-        "%spellout-ordinal-native-smaller": [
-          {
-            "rbnfrule": ";"
-          },
-          {
-            "rbnfrule": "한;"
-          },
-          {
-            "rbnfrule": "두;"
-          },
-          {
-            "rbnfrule": "셋;"
-          },
-          {
-            "rbnfrule": "넷;"
-          },
-          {
-            "rbnfrule": "다섯;"
-          },
-          {
-            "rbnfrule": "여섯;"
-          },
-          {
-            "rbnfrule": "일곱;"
-          },
-          {
-            "rbnfrule": "여덟;"
-          },
-          {
-            "rbnfrule": "아홉;"
-          },
-          {
-            "rbnfrule": "열[→→];"
-          },
-          {
-            "rbnfrule": "스무;"
-          },
-          {
-            "rbnfrule": "스물[→→];"
-          },
-          {
-            "rbnfrule": "서른[→→];"
-          },
-          {
-            "rbnfrule": "마흔[→→];"
-          },
-          {
-            "rbnfrule": "쉰[→→];"
-          },
-          {
-            "rbnfrule": "예순[→→];"
-          },
-          {
-            "rbnfrule": "일흔[→→];"
-          },
-          {
-            "rbnfrule": "여든[→→];"
-          },
-          {
-            "rbnfrule": "아흔[→→];"
-          },
-          {
-            "rbnfrule": "백[→%%spellout-ordinal-native-smaller-x02→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←백[→%%spellout-ordinal-native-smaller-x02→];"
-          },
-          {
-            "rbnfrule": "천[→%%spellout-ordinal-native-smaller-x02→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←천[→%%spellout-ordinal-native-smaller-x02→];"
-          },
-          {
-            "rbnfrule": "만[ →%%spellout-ordinal-native-smaller-x02→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←만[ →%%spellout-ordinal-native-smaller-x02→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←억[ →%%spellout-ordinal-native-smaller-x02→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←조[ →%%spellout-ordinal-native-smaller-x02→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-sinokorean←경[ →%%spellout-ordinal-native-smaller-x02→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+        "%%spellout-ordinal-native-smaller": [
+          [
+            "0",
+            ";"
+          ],
+          [
+            "1",
+            "한;"
+          ],
+          [
+            "2",
+            "두;"
+          ],
+          [
+            "3",
+            "셋;"
+          ],
+          [
+            "4",
+            "넷;"
+          ],
+          [
+            "5",
+            "다섯;"
+          ],
+          [
+            "6",
+            "여섯;"
+          ],
+          [
+            "7",
+            "일곱;"
+          ],
+          [
+            "8",
+            "여덟;"
+          ],
+          [
+            "9",
+            "아홉;"
+          ],
+          [
+            "10",
+            "열[→→];"
+          ],
+          [
+            "20",
+            "스무;"
+          ],
+          [
+            "21",
+            "스물[→→];"
+          ],
+          [
+            "30",
+            "서른[→→];"
+          ],
+          [
+            "40",
+            "마흔[→→];"
+          ],
+          [
+            "50",
+            "쉰[→→];"
+          ],
+          [
+            "60",
+            "예순[→→];"
+          ],
+          [
+            "70",
+            "일흔[→→];"
+          ],
+          [
+            "80",
+            "여든[→→];"
+          ],
+          [
+            "90",
+            "아흔[→→];"
+          ],
+          [
+            "100",
+            "백[→%%spellout-ordinal-native-smaller-x02→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-sinokorean←백[→%%spellout-ordinal-native-smaller-x02→];"
+          ],
+          [
+            "1000",
+            "천[→%%spellout-ordinal-native-smaller-x02→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-sinokorean←천[→%%spellout-ordinal-native-smaller-x02→];"
+          ],
+          [
+            "10000",
+            "만[ →%%spellout-ordinal-native-smaller-x02→];"
+          ],
+          [
+            "20000",
+            "←%spellout-cardinal-sinokorean←만[ →%%spellout-ordinal-native-smaller-x02→];"
+          ],
+          [
+            "100000000",
+            "←%spellout-cardinal-sinokorean←억[ →%%spellout-ordinal-native-smaller-x02→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-sinokorean←조[ →%%spellout-ordinal-native-smaller-x02→];"
+          ],
+          [
+            "10000000000000000",
+            "←%spellout-cardinal-sinokorean←경[ →%%spellout-ordinal-native-smaller-x02→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
-        "%spellout-ordinal-native-smaller-x02": [
-          {
-            "rbnfrule": "=%%spellout-ordinal-native-smaller=;"
-          },
-          {
-            "rbnfrule": "둘;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-native-smaller=;"
-          }
+        "%%spellout-ordinal-native-smaller-x02": [
+          [
+            "0",
+            "=%%spellout-ordinal-native-smaller=;"
+          ],
+          [
+            "2",
+            "둘;"
+          ],
+          [
+            "3",
+            "=%%spellout-ordinal-native-smaller=;"
+          ]
         ]
       }
     }

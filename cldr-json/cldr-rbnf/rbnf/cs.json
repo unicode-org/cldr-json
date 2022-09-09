@@ -1,365 +1,482 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "cs"
     },
     "rbnf": {
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal-masculine=;"
+          ]
         ],
         "%spellout-cardinal-masculine": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←← čárka →→;"
-          },
-          {
-            "rbnfrule": "nula;"
-          },
-          {
-            "rbnfrule": "jeden;"
-          },
-          {
-            "rbnfrule": "dva;"
-          },
-          {
-            "rbnfrule": "tři;"
-          },
-          {
-            "rbnfrule": "čtyři;"
-          },
-          {
-            "rbnfrule": "pět;"
-          },
-          {
-            "rbnfrule": "šest;"
-          },
-          {
-            "rbnfrule": "sedm;"
-          },
-          {
-            "rbnfrule": "osm;"
-          },
-          {
-            "rbnfrule": "devět;"
-          },
-          {
-            "rbnfrule": "deset;"
-          },
-          {
-            "rbnfrule": "jedenáct;"
-          },
-          {
-            "rbnfrule": "dvanáct;"
-          },
-          {
-            "rbnfrule": "třináct;"
-          },
-          {
-            "rbnfrule": "čtrnáct;"
-          },
-          {
-            "rbnfrule": "patnáct;"
-          },
-          {
-            "rbnfrule": "šestnáct;"
-          },
-          {
-            "rbnfrule": "sedmnáct;"
-          },
-          {
-            "rbnfrule": "osmnáct;"
-          },
-          {
-            "rbnfrule": "devatenáct;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine←cet[ →→];"
-          },
-          {
-            "rbnfrule": "padesát[ →→];"
-          },
-          {
-            "rbnfrule": "šedesát[ →→];"
-          },
-          {
-            "rbnfrule": "sedmdesát[ →→];"
-          },
-          {
-            "rbnfrule": "osmdesát[ →→];"
-          },
-          {
-            "rbnfrule": "devadesát[ →→];"
-          },
-          {
-            "rbnfrule": "sto[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← stě[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← sta[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← set[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíc[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíce[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíc[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← milión[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← milióny[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliónů[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliarda[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliardy[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliardů[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← bilión[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← bilióny[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliónů[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliarda[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliardy[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliardů[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←← čárka →→;"
+          ],
+          [
+            "0",
+            "nula;"
+          ],
+          [
+            "1",
+            "jeden;"
+          ],
+          [
+            "2",
+            "dva;"
+          ],
+          [
+            "3",
+            "tři;"
+          ],
+          [
+            "4",
+            "čtyři;"
+          ],
+          [
+            "5",
+            "pět;"
+          ],
+          [
+            "6",
+            "šest;"
+          ],
+          [
+            "7",
+            "sedm;"
+          ],
+          [
+            "8",
+            "osm;"
+          ],
+          [
+            "9",
+            "devět;"
+          ],
+          [
+            "10",
+            "deset;"
+          ],
+          [
+            "11",
+            "jedenáct;"
+          ],
+          [
+            "12",
+            "dvanáct;"
+          ],
+          [
+            "13",
+            "třináct;"
+          ],
+          [
+            "14",
+            "čtrnáct;"
+          ],
+          [
+            "15",
+            "patnáct;"
+          ],
+          [
+            "16",
+            "šestnáct;"
+          ],
+          [
+            "17",
+            "sedmnáct;"
+          ],
+          [
+            "18",
+            "osmnáct;"
+          ],
+          [
+            "19",
+            "devatenáct;"
+          ],
+          [
+            "20",
+            "←%spellout-cardinal-masculine←cet[ →→];"
+          ],
+          [
+            "50",
+            "padesát[ →→];"
+          ],
+          [
+            "60",
+            "šedesát[ →→];"
+          ],
+          [
+            "70",
+            "sedmdesát[ →→];"
+          ],
+          [
+            "80",
+            "osmdesát[ →→];"
+          ],
+          [
+            "90",
+            "devadesát[ →→];"
+          ],
+          [
+            "100",
+            "sto[ →→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-feminine← stě[ →→];"
+          ],
+          [
+            "300",
+            "←%spellout-cardinal-feminine← sta[ →→];"
+          ],
+          [
+            "500",
+            "←%spellout-cardinal-feminine← set[ →→];"
+          ],
+          [
+            "1000",
+            "←%spellout-cardinal-feminine← tisíc[ →→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-feminine← tisíce[ →→];"
+          ],
+          [
+            "5000",
+            "←%spellout-cardinal-feminine← tisíc[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-masculine← milión[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← milióny[ →→];"
+          ],
+          [
+            "5000000",
+            "←%spellout-cardinal-masculine← miliónů[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-masculine← miliarda[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← miliardy[ →→];"
+          ],
+          [
+            "5000000000",
+            "←%spellout-cardinal-masculine← miliardů[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-masculine← bilión[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← bilióny[ →→];"
+          ],
+          [
+            "5000000000000",
+            "←%spellout-cardinal-masculine← biliónů[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-masculine← biliarda[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← biliardy[ →→];"
+          ],
+          [
+            "5000000000000000",
+            "←%spellout-cardinal-masculine← biliardů[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-neuter": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←← čárka →→;"
-          },
-          {
-            "rbnfrule": "nula;"
-          },
-          {
-            "rbnfrule": "jedno;"
-          },
-          {
-            "rbnfrule": "dvě;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine←cet[ →→];"
-          },
-          {
-            "rbnfrule": "padesát[ →→];"
-          },
-          {
-            "rbnfrule": "šedesát[ →→];"
-          },
-          {
-            "rbnfrule": "sedmdesát[ →→];"
-          },
-          {
-            "rbnfrule": "osmdesát[ →→];"
-          },
-          {
-            "rbnfrule": "devadesát[ →→];"
-          },
-          {
-            "rbnfrule": "sto[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← stě[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← sta[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← set[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíc[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíce[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíc[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← milión[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← milióny[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliónů[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliarda[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliardy[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliardů[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← bilión[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← bilióny[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliónů[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliarda[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliardy[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliardů[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←← čárka →→;"
+          ],
+          [
+            "0",
+            "nula;"
+          ],
+          [
+            "1",
+            "jedno;"
+          ],
+          [
+            "2",
+            "dvě;"
+          ],
+          [
+            "3",
+            "=%spellout-cardinal-masculine=;"
+          ],
+          [
+            "20",
+            "←%spellout-cardinal-masculine←cet[ →→];"
+          ],
+          [
+            "50",
+            "padesát[ →→];"
+          ],
+          [
+            "60",
+            "šedesát[ →→];"
+          ],
+          [
+            "70",
+            "sedmdesát[ →→];"
+          ],
+          [
+            "80",
+            "osmdesát[ →→];"
+          ],
+          [
+            "90",
+            "devadesát[ →→];"
+          ],
+          [
+            "100",
+            "sto[ →→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-feminine← stě[ →→];"
+          ],
+          [
+            "300",
+            "←%spellout-cardinal-feminine← sta[ →→];"
+          ],
+          [
+            "500",
+            "←%spellout-cardinal-feminine← set[ →→];"
+          ],
+          [
+            "1000",
+            "←%spellout-cardinal-feminine← tisíc[ →→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-feminine← tisíce[ →→];"
+          ],
+          [
+            "5000",
+            "←%spellout-cardinal-feminine← tisíc[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-masculine← milión[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← milióny[ →→];"
+          ],
+          [
+            "5000000",
+            "←%spellout-cardinal-masculine← miliónů[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-masculine← miliarda[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← miliardy[ →→];"
+          ],
+          [
+            "5000000000",
+            "←%spellout-cardinal-masculine← miliardů[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-masculine← bilión[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← bilióny[ →→];"
+          ],
+          [
+            "5000000000000",
+            "←%spellout-cardinal-masculine← biliónů[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-masculine← biliarda[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← biliardy[ →→];"
+          ],
+          [
+            "5000000000000000",
+            "←%spellout-cardinal-masculine← biliardů[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-feminine": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←← čárka →→;"
-          },
-          {
-            "rbnfrule": "nula;"
-          },
-          {
-            "rbnfrule": "jedna;"
-          },
-          {
-            "rbnfrule": "dvě;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine←cet[ →→];"
-          },
-          {
-            "rbnfrule": "padesát[ →→];"
-          },
-          {
-            "rbnfrule": "šedesát[ →→];"
-          },
-          {
-            "rbnfrule": "sedmdesát[ →→];"
-          },
-          {
-            "rbnfrule": "osmdesát[ →→];"
-          },
-          {
-            "rbnfrule": "devadesát[ →→];"
-          },
-          {
-            "rbnfrule": "sto[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← stě[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← sta[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← set[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíc[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíce[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíc[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← milión[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← milióny[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliónů[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliarda[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliardy[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliardů[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← bilión[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← bilióny[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliónů[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliarda[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliardy[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliardů[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←← čárka →→;"
+          ],
+          [
+            "0",
+            "nula;"
+          ],
+          [
+            "1",
+            "jedna;"
+          ],
+          [
+            "2",
+            "dvě;"
+          ],
+          [
+            "3",
+            "=%spellout-cardinal-masculine=;"
+          ],
+          [
+            "20",
+            "←%spellout-cardinal-masculine←cet[ →→];"
+          ],
+          [
+            "50",
+            "padesát[ →→];"
+          ],
+          [
+            "60",
+            "šedesát[ →→];"
+          ],
+          [
+            "70",
+            "sedmdesát[ →→];"
+          ],
+          [
+            "80",
+            "osmdesát[ →→];"
+          ],
+          [
+            "90",
+            "devadesát[ →→];"
+          ],
+          [
+            "100",
+            "sto[ →→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-feminine← stě[ →→];"
+          ],
+          [
+            "300",
+            "←%spellout-cardinal-feminine← sta[ →→];"
+          ],
+          [
+            "500",
+            "←%spellout-cardinal-feminine← set[ →→];"
+          ],
+          [
+            "1000",
+            "←%spellout-cardinal-feminine← tisíc[ →→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-feminine← tisíce[ →→];"
+          ],
+          [
+            "5000",
+            "←%spellout-cardinal-feminine← tisíc[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-masculine← milión[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← milióny[ →→];"
+          ],
+          [
+            "5000000",
+            "←%spellout-cardinal-masculine← miliónů[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-masculine← miliarda[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← miliardy[ →→];"
+          ],
+          [
+            "5000000000",
+            "←%spellout-cardinal-masculine← miliardů[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-masculine← bilión[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← bilióny[ →→];"
+          ],
+          [
+            "5000000000000",
+            "←%spellout-cardinal-masculine← biliónů[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-masculine← biliarda[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← biliardy[ →→];"
+          ],
+          [
+            "5000000000000000",
+            "←%spellout-cardinal-masculine← biliardů[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ]
       }
     }

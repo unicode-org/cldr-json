@@ -1,266 +1,350 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "mk"
     },
     "rbnf": {
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal-masculine=;"
+          ]
         ],
         "%spellout-cardinal-masculine": [
-          {
-            "rbnfrule": "минус →→;"
-          },
-          {
-            "rbnfrule": "←← кома →→;"
-          },
-          {
-            "rbnfrule": "нула;"
-          },
-          {
-            "rbnfrule": "еден;"
-          },
-          {
-            "rbnfrule": "два;"
-          },
-          {
-            "rbnfrule": "три;"
-          },
-          {
-            "rbnfrule": "четири;"
-          },
-          {
-            "rbnfrule": "пет;"
-          },
-          {
-            "rbnfrule": "шест;"
-          },
-          {
-            "rbnfrule": "седум;"
-          },
-          {
-            "rbnfrule": "осум;"
-          },
-          {
-            "rbnfrule": "девет;"
-          },
-          {
-            "rbnfrule": "десет;"
-          },
-          {
-            "rbnfrule": "единаесет;"
-          },
-          {
-            "rbnfrule": "дванаесет;"
-          },
-          {
-            "rbnfrule": "тринаесет;"
-          },
-          {
-            "rbnfrule": "четиринаесет;"
-          },
-          {
-            "rbnfrule": "петнаесет;"
-          },
-          {
-            "rbnfrule": "шеснаесет;"
-          },
-          {
-            "rbnfrule": "седумнаесет;"
-          },
-          {
-            "rbnfrule": "осумнаесет;"
-          },
-          {
-            "rbnfrule": "деветнаесет;"
-          },
-          {
-            "rbnfrule": "дваесет[ и →→];"
-          },
-          {
-            "rbnfrule": "триесет[ и →→];"
-          },
-          {
-            "rbnfrule": "четириесет[ и →→];"
-          },
-          {
-            "rbnfrule": "педесет[ и →→];"
-          },
-          {
-            "rbnfrule": "шеесет[ и →→];"
-          },
-          {
-            "rbnfrule": "седумдесет[ и →→];"
-          },
-          {
-            "rbnfrule": "осумдесет[ и →→];"
-          },
-          {
-            "rbnfrule": "деведесет[ и →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←сто[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← илјада[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← милион[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← милијарда[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← билион[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← билијарда[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "минус →→;"
+          ],
+          [
+            "x.x",
+            "←← кома →→;"
+          ],
+          [
+            "0",
+            "нула;"
+          ],
+          [
+            "1",
+            "еден;"
+          ],
+          [
+            "2",
+            "два;"
+          ],
+          [
+            "3",
+            "три;"
+          ],
+          [
+            "4",
+            "четири;"
+          ],
+          [
+            "5",
+            "пет;"
+          ],
+          [
+            "6",
+            "шест;"
+          ],
+          [
+            "7",
+            "седум;"
+          ],
+          [
+            "8",
+            "осум;"
+          ],
+          [
+            "9",
+            "девет;"
+          ],
+          [
+            "10",
+            "десет;"
+          ],
+          [
+            "11",
+            "единаесет;"
+          ],
+          [
+            "12",
+            "дванаесет;"
+          ],
+          [
+            "13",
+            "тринаесет;"
+          ],
+          [
+            "14",
+            "четиринаесет;"
+          ],
+          [
+            "15",
+            "петнаесет;"
+          ],
+          [
+            "16",
+            "шеснаесет;"
+          ],
+          [
+            "17",
+            "седумнаесет;"
+          ],
+          [
+            "18",
+            "осумнаесет;"
+          ],
+          [
+            "19",
+            "деветнаесет;"
+          ],
+          [
+            "20",
+            "дваесет[ и →→];"
+          ],
+          [
+            "30",
+            "триесет[ и →→];"
+          ],
+          [
+            "40",
+            "четириесет[ и →→];"
+          ],
+          [
+            "50",
+            "педесет[ и →→];"
+          ],
+          [
+            "60",
+            "шеесет[ и →→];"
+          ],
+          [
+            "70",
+            "седумдесет[ и →→];"
+          ],
+          [
+            "80",
+            "осумдесет[ и →→];"
+          ],
+          [
+            "90",
+            "деведесет[ и →→];"
+          ],
+          [
+            "100",
+            "←%spellout-cardinal-feminine←сто[ →→];"
+          ],
+          [
+            "1000",
+            "←%spellout-cardinal-feminine← илјада[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-masculine← милион[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-masculine← милијарда[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-masculine← билион[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-masculine← билијарда[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-neuter": [
-          {
-            "rbnfrule": "минус →→;"
-          },
-          {
-            "rbnfrule": "←← кома →→;"
-          },
-          {
-            "rbnfrule": "нула;"
-          },
-          {
-            "rbnfrule": "едно;"
-          },
-          {
-            "rbnfrule": "два;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          },
-          {
-            "rbnfrule": "дваесет[ и →→];"
-          },
-          {
-            "rbnfrule": "триесет[ и →→];"
-          },
-          {
-            "rbnfrule": "четириесет[ и →→];"
-          },
-          {
-            "rbnfrule": "педесет[ и →→];"
-          },
-          {
-            "rbnfrule": "шеесет[ и →→];"
-          },
-          {
-            "rbnfrule": "седумдесет[ и →→];"
-          },
-          {
-            "rbnfrule": "осумдесет[ и →→];"
-          },
-          {
-            "rbnfrule": "деведесет[ и →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←сто[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← илјада[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← милион[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← милијарда[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← билион[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← билијарда[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "минус →→;"
+          ],
+          [
+            "x.x",
+            "←← кома →→;"
+          ],
+          [
+            "0",
+            "нула;"
+          ],
+          [
+            "1",
+            "едно;"
+          ],
+          [
+            "2",
+            "два;"
+          ],
+          [
+            "3",
+            "=%spellout-cardinal-masculine=;"
+          ],
+          [
+            "20",
+            "дваесет[ и →→];"
+          ],
+          [
+            "30",
+            "триесет[ и →→];"
+          ],
+          [
+            "40",
+            "четириесет[ и →→];"
+          ],
+          [
+            "50",
+            "педесет[ и →→];"
+          ],
+          [
+            "60",
+            "шеесет[ и →→];"
+          ],
+          [
+            "70",
+            "седумдесет[ и →→];"
+          ],
+          [
+            "80",
+            "осумдесет[ и →→];"
+          ],
+          [
+            "90",
+            "деведесет[ и →→];"
+          ],
+          [
+            "100",
+            "←%spellout-cardinal-feminine←сто[ →→];"
+          ],
+          [
+            "1000",
+            "←%spellout-cardinal-feminine← илјада[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-masculine← милион[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-masculine← милијарда[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-masculine← билион[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-masculine← билијарда[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-feminine": [
-          {
-            "rbnfrule": "минус →→;"
-          },
-          {
-            "rbnfrule": "←← кома →→;"
-          },
-          {
-            "rbnfrule": "нула;"
-          },
-          {
-            "rbnfrule": "една;"
-          },
-          {
-            "rbnfrule": "две;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          },
-          {
-            "rbnfrule": "дваесет[ и →→];"
-          },
-          {
-            "rbnfrule": "триесет[ и →→];"
-          },
-          {
-            "rbnfrule": "четириесет[ и →→];"
-          },
-          {
-            "rbnfrule": "педесет[ и →→];"
-          },
-          {
-            "rbnfrule": "шеесет[ и →→];"
-          },
-          {
-            "rbnfrule": "седумдесет[ и →→];"
-          },
-          {
-            "rbnfrule": "осумдесет[ и →→];"
-          },
-          {
-            "rbnfrule": "деведесет[ и →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←сто[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← илјада[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← милион[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← милијарда[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← билион[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← билијарда[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "минус →→;"
+          ],
+          [
+            "x.x",
+            "←← кома →→;"
+          ],
+          [
+            "0",
+            "нула;"
+          ],
+          [
+            "1",
+            "една;"
+          ],
+          [
+            "2",
+            "две;"
+          ],
+          [
+            "3",
+            "=%spellout-cardinal-masculine=;"
+          ],
+          [
+            "20",
+            "дваесет[ и →→];"
+          ],
+          [
+            "30",
+            "триесет[ и →→];"
+          ],
+          [
+            "40",
+            "четириесет[ и →→];"
+          ],
+          [
+            "50",
+            "педесет[ и →→];"
+          ],
+          [
+            "60",
+            "шеесет[ и →→];"
+          ],
+          [
+            "70",
+            "седумдесет[ и →→];"
+          ],
+          [
+            "80",
+            "осумдесет[ и →→];"
+          ],
+          [
+            "90",
+            "деведесет[ и →→];"
+          ],
+          [
+            "100",
+            "←%spellout-cardinal-feminine←сто[ →→];"
+          ],
+          [
+            "1000",
+            "←%spellout-cardinal-feminine← илјада[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-masculine← милион[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-masculine← милијарда[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-masculine← билион[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-masculine← билијарда[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ]
       }
     }

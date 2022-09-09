@@ -1,153 +1,198 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "fil"
     },
     "rbnf": {
       "OrdinalRules": {
         "%digits-ordinal": [
-          {
-            "rbnfrule": "−→→;"
-          },
-          {
-            "rbnfrule": "ika=#,##0=;"
-          }
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "ika=#,##0=;"
+          ]
         ]
       },
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "=%spellout-cardinal=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal=;"
+          ]
         ],
-        "%number-times": [
-          {
-            "rbnfrule": "isáng;"
-          },
-          {
-            "rbnfrule": "dalawáng;"
-          },
-          {
-            "rbnfrule": "tatlóng;"
-          },
-          {
-            "rbnfrule": "ápat na;"
-          },
-          {
-            "rbnfrule": "limáng;"
-          },
-          {
-            "rbnfrule": "anim na;"
-          },
-          {
-            "rbnfrule": "pitóng;"
-          },
-          {
-            "rbnfrule": "walóng;"
-          },
-          {
-            "rbnfrule": "siyám na;"
-          },
-          {
-            "rbnfrule": "sampûng;"
-          },
-          {
-            "rbnfrule": "labíng-→→;"
-          },
-          {
-            "rbnfrule": "←%%number-times← pû[’t →→];"
-          },
-          {
-            "rbnfrule": "←%%number-times← daán[ at →→];"
-          },
-          {
-            "rbnfrule": "←%%number-times← libó[’t →→];"
-          }
+        "%%number-times": [
+          [
+            "1",
+            "isáng;"
+          ],
+          [
+            "2",
+            "dalawáng;"
+          ],
+          [
+            "3",
+            "tatlóng;"
+          ],
+          [
+            "4",
+            "ápat na;"
+          ],
+          [
+            "5",
+            "limáng;"
+          ],
+          [
+            "6",
+            "anim na;"
+          ],
+          [
+            "7",
+            "pitóng;"
+          ],
+          [
+            "8",
+            "walóng;"
+          ],
+          [
+            "9",
+            "siyám na;"
+          ],
+          [
+            "10",
+            "sampûng;"
+          ],
+          [
+            "11",
+            "labíng-→→;"
+          ],
+          [
+            "20",
+            "←%%number-times← pû[’t →→];"
+          ],
+          [
+            "100",
+            "←%%number-times← daán[ at →→];"
+          ],
+          [
+            "1000",
+            "←%%number-times← libó[’t →→];"
+          ]
         ],
         "%spellout-cardinal": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←← tuldok →→;"
-          },
-          {
-            "rbnfrule": "walâ;"
-          },
-          {
-            "rbnfrule": "isá;"
-          },
-          {
-            "rbnfrule": "dalawá;"
-          },
-          {
-            "rbnfrule": "tatló;"
-          },
-          {
-            "rbnfrule": "ápat;"
-          },
-          {
-            "rbnfrule": "limá;"
-          },
-          {
-            "rbnfrule": "anim;"
-          },
-          {
-            "rbnfrule": "pitó;"
-          },
-          {
-            "rbnfrule": "waló;"
-          },
-          {
-            "rbnfrule": "siyám;"
-          },
-          {
-            "rbnfrule": "sampû;"
-          },
-          {
-            "rbnfrule": "labíng-→→;"
-          },
-          {
-            "rbnfrule": "←%%number-times← pû[’t →→];"
-          },
-          {
-            "rbnfrule": "←%%number-times← daán[ at →→];"
-          },
-          {
-            "rbnfrule": "←%%number-times← libó[’t →→];"
-          },
-          {
-            "rbnfrule": "←%%number-times← milyón[ at →→];"
-          },
-          {
-            "rbnfrule": "←%%number-times← bilyón[ at →→];"
-          },
-          {
-            "rbnfrule": "←%%number-times← trilyón[ at →→];"
-          },
-          {
-            "rbnfrule": "←%%number-times← katrilyón[ at →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←← tuldok →→;"
+          ],
+          [
+            "0",
+            "walâ;"
+          ],
+          [
+            "1",
+            "isá;"
+          ],
+          [
+            "2",
+            "dalawá;"
+          ],
+          [
+            "3",
+            "tatló;"
+          ],
+          [
+            "4",
+            "ápat;"
+          ],
+          [
+            "5",
+            "limá;"
+          ],
+          [
+            "6",
+            "anim;"
+          ],
+          [
+            "7",
+            "pitó;"
+          ],
+          [
+            "8",
+            "waló;"
+          ],
+          [
+            "9",
+            "siyám;"
+          ],
+          [
+            "10",
+            "sampû;"
+          ],
+          [
+            "11",
+            "labíng-→→;"
+          ],
+          [
+            "20",
+            "←%%number-times← pû[’t →→];"
+          ],
+          [
+            "100",
+            "←%%number-times← daán[ at →→];"
+          ],
+          [
+            "1000",
+            "←%%number-times← libó[’t →→];"
+          ],
+          [
+            "1000000",
+            "←%%number-times← milyón[ at →→];"
+          ],
+          [
+            "1000000000",
+            "←%%number-times← bilyón[ at →→];"
+          ],
+          [
+            "1000000000000",
+            "←%%number-times← trilyón[ at →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%%number-times← katrilyón[ at →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-ordinal": [
-          {
-            "rbnfrule": "=#,##0.#=;"
-          },
-          {
-            "rbnfrule": "ika =%spellout-cardinal=;"
-          }
+          [
+            "x.x",
+            "=#,##0.#=;"
+          ],
+          [
+            "0",
+            "ika =%spellout-cardinal=;"
+          ]
         ]
       }
     }

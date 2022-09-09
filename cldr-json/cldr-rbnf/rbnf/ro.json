@@ -1,246 +1,322 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "ro"
     },
     "rbnf": {
       "OrdinalRules": {
         "%digits-ordinal": [
-          {
-            "rbnfrule": "−→→;"
-          },
-          {
-            "rbnfrule": "=#,##0=a;"
-          }
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0=a;"
+          ]
         ]
       },
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal-masculine=;"
+          ]
         ],
         "%spellout-cardinal-masculine": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←← virgulă →→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "unu;"
-          },
-          {
-            "rbnfrule": "doi;"
-          },
-          {
-            "rbnfrule": "trei;"
-          },
-          {
-            "rbnfrule": "patru;"
-          },
-          {
-            "rbnfrule": "cinci;"
-          },
-          {
-            "rbnfrule": "şase;"
-          },
-          {
-            "rbnfrule": "şapte;"
-          },
-          {
-            "rbnfrule": "opt;"
-          },
-          {
-            "rbnfrule": "nouă;"
-          },
-          {
-            "rbnfrule": "zece;"
-          },
-          {
-            "rbnfrule": "unsprezece;"
-          },
-          {
-            "rbnfrule": "→→sprezece;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←zeci[ şi →→];"
-          },
-          {
-            "rbnfrule": "una sută[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← sute[ →→];"
-          },
-          {
-            "rbnfrule": "una mie[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← mii[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← milion[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← milioane[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← miliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← miliarde[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← bilion[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← bilioane[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← biliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← biliarde[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←← virgulă →→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "unu;"
+          ],
+          [
+            "2",
+            "doi;"
+          ],
+          [
+            "3",
+            "trei;"
+          ],
+          [
+            "4",
+            "patru;"
+          ],
+          [
+            "5",
+            "cinci;"
+          ],
+          [
+            "6",
+            "şase;"
+          ],
+          [
+            "7",
+            "şapte;"
+          ],
+          [
+            "8",
+            "opt;"
+          ],
+          [
+            "9",
+            "nouă;"
+          ],
+          [
+            "10",
+            "zece;"
+          ],
+          [
+            "11",
+            "unsprezece;"
+          ],
+          [
+            "12",
+            "→→sprezece;"
+          ],
+          [
+            "20",
+            "←%spellout-cardinal-feminine←zeci[ şi →→];"
+          ],
+          [
+            "100",
+            "una sută[ →→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-feminine← sute[ →→];"
+          ],
+          [
+            "1000",
+            "una mie[ →→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-feminine← mii[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-neuter← milion[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-neuter← milioane[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-neuter← miliard[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-neuter← miliarde[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-neuter← bilion[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-neuter← bilioane[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-neuter← biliard[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-neuter← biliarde[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-feminine": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←← virgulă →→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "una;"
-          },
-          {
-            "rbnfrule": "două;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          },
-          {
-            "rbnfrule": "→→sprezece;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←zeci[ şi →→];"
-          },
-          {
-            "rbnfrule": "una sută[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← sute[ →→];"
-          },
-          {
-            "rbnfrule": "una mie[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← mii[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← milion[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← milioane[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← miliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← miliarde[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← bilion[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← bilioane[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← biliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← biliarde[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←← virgulă →→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "una;"
+          ],
+          [
+            "2",
+            "două;"
+          ],
+          [
+            "3",
+            "=%spellout-cardinal-masculine=;"
+          ],
+          [
+            "12",
+            "→→sprezece;"
+          ],
+          [
+            "20",
+            "←%spellout-cardinal-feminine←zeci[ şi →→];"
+          ],
+          [
+            "100",
+            "una sută[ →→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-feminine← sute[ →→];"
+          ],
+          [
+            "1000",
+            "una mie[ →→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-feminine← mii[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-neuter← milion[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-neuter← milioane[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-neuter← miliard[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-neuter← miliarde[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-neuter← bilion[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-neuter← bilioane[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-neuter← biliard[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-neuter← biliarde[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-neuter": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←← virgulă →→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "unu;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-feminine=;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←zeci[ şi →→];"
-          },
-          {
-            "rbnfrule": "una sută[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← sute[ →→];"
-          },
-          {
-            "rbnfrule": "una mie[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← mii[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← milion[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← milioane[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← miliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← miliarde[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← bilion[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← bilioane[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← biliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← biliarde[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←← virgulă →→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "unu;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-feminine=;"
+          ],
+          [
+            "20",
+            "←%spellout-cardinal-feminine←zeci[ şi →→];"
+          ],
+          [
+            "100",
+            "una sută[ →→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-feminine← sute[ →→];"
+          ],
+          [
+            "1000",
+            "una mie[ →→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-feminine← mii[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-neuter← milion[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-neuter← milioane[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-neuter← miliard[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-neuter← miliarde[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-neuter← bilion[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-neuter← bilioane[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-neuter← biliard[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-neuter← biliarde[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ]
       }
     }

@@ -1,116 +1,150 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "qu"
     },
     "rbnf": {
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "=%spellout-cardinal=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal=;"
+          ]
         ],
-        "%spellout-cardinal-with": [
-          {
-            "rbnfrule": "=%spellout-cardinal=-ni-yuq;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal=-yuq;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal=-ni-yuq;"
-          }
+        "%%spellout-cardinal-with": [
+          [
+            "0",
+            "=%spellout-cardinal=-ni-yuq;"
+          ],
+          [
+            "3",
+            "=%spellout-cardinal=-yuq;"
+          ],
+          [
+            "7",
+            "=%spellout-cardinal=-ni-yuq;"
+          ]
         ],
         "%spellout-cardinal": [
-          {
-            "rbnfrule": "mana yupay;"
-          },
-          {
-            "rbnfrule": "mana usay;"
-          },
-          {
-            "rbnfrule": "minusu →→;"
-          },
-          {
-            "rbnfrule": "←← comma →→;"
-          },
-          {
-            "rbnfrule": "chusaq;"
-          },
-          {
-            "rbnfrule": "huk;"
-          },
-          {
-            "rbnfrule": "iskay;"
-          },
-          {
-            "rbnfrule": "kinsa;"
-          },
-          {
-            "rbnfrule": "tawa;"
-          },
-          {
-            "rbnfrule": "phisqa;"
-          },
-          {
-            "rbnfrule": "suqta;"
-          },
-          {
-            "rbnfrule": "qanchis;"
-          },
-          {
-            "rbnfrule": "pusaq;"
-          },
-          {
-            "rbnfrule": "isqun;"
-          },
-          {
-            "rbnfrule": "chunka[ →%%spellout-cardinal-with→];"
-          },
-          {
-            "rbnfrule": "←← chunka[ →%%spellout-cardinal-with→];"
-          },
-          {
-            "rbnfrule": "←← pachak[ →→];"
-          },
-          {
-            "rbnfrule": "←← waranqa[ →→];"
-          },
-          {
-            "rbnfrule": "←← hunu[ →→];"
-          },
-          {
-            "rbnfrule": "←← lluna[ →→];"
-          },
-          {
-            "rbnfrule": "←← trilionu[ →→];"
-          },
-          {
-            "rbnfrule": "←← kvadrilionu[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0.#=;"
-          }
+          [
+            "NaN",
+            "mana yupay;"
+          ],
+          [
+            "Inf",
+            "mana usay;"
+          ],
+          [
+            "-x",
+            "minusu →→;"
+          ],
+          [
+            "x.x",
+            "←← comma →→;"
+          ],
+          [
+            "0",
+            "chusaq;"
+          ],
+          [
+            "1",
+            "huk;"
+          ],
+          [
+            "2",
+            "iskay;"
+          ],
+          [
+            "3",
+            "kinsa;"
+          ],
+          [
+            "4",
+            "tawa;"
+          ],
+          [
+            "5",
+            "phisqa;"
+          ],
+          [
+            "6",
+            "suqta;"
+          ],
+          [
+            "7",
+            "qanchis;"
+          ],
+          [
+            "8",
+            "pusaq;"
+          ],
+          [
+            "9",
+            "isqun;"
+          ],
+          [
+            "10",
+            "chunka[ →%%spellout-cardinal-with→];"
+          ],
+          [
+            "20",
+            "←← chunka[ →%%spellout-cardinal-with→];"
+          ],
+          [
+            "100",
+            "←← pachak[ →→];"
+          ],
+          [
+            "1000",
+            "←← waranqa[ →→];"
+          ],
+          [
+            "1000000",
+            "←← hunu[ →→];"
+          ],
+          [
+            "1000000000",
+            "←← lluna[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←← trilionu[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←← kvadrilionu[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0.#=;"
+          ]
         ],
         "%spellout-ordinal": [
-          {
-            "rbnfrule": "minusu →→;"
-          },
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal=-ñiqin;"
-          }
+          [
+            "-x",
+            "minusu →→;"
+          ],
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-cardinal=-ñiqin;"
+          ]
         ]
       }
     }

@@ -1,114 +1,146 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "lo"
     },
     "rbnf": {
       "OrdinalRules": {
         "%digits-ordinal": [
-          {
-            "rbnfrule": "ที่−→#,##0→;"
-          },
-          {
-            "rbnfrule": "ที่​=#,##0=;"
-          }
+          [
+            "-x",
+            "ที่−→#,##0→;"
+          ],
+          [
+            "0",
+            "ที่​=#,##0=;"
+          ]
         ]
       },
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "=%spellout-cardinal=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal=;"
+          ]
         ],
         "%spellout-cardinal": [
-          {
-            "rbnfrule": "ลบ​→→;"
-          },
-          {
-            "rbnfrule": "←←​จุด​→→→;"
-          },
-          {
-            "rbnfrule": "ศูนย์;"
-          },
-          {
-            "rbnfrule": "ໜຶ່ງ;"
-          },
-          {
-            "rbnfrule": "ສອງ;"
-          },
-          {
-            "rbnfrule": "ສາມ;"
-          },
-          {
-            "rbnfrule": "ສີ່;"
-          },
-          {
-            "rbnfrule": "ຫ້າ;"
-          },
-          {
-            "rbnfrule": "ຫົກ;"
-          },
-          {
-            "rbnfrule": "ເຈັດ;"
-          },
-          {
-            "rbnfrule": "ແປດ;"
-          },
-          {
-            "rbnfrule": "ເກົ້າ;"
-          },
-          {
-            "rbnfrule": "ສິບ[​→%%alt-ones→];"
-          },
-          {
-            "rbnfrule": "ຊາວ[​→%%alt-ones→];"
-          },
-          {
-            "rbnfrule": "←←​ສິບ[​→%%alt-ones→];"
-          },
-          {
-            "rbnfrule": "←←​ร้อย[​→→];"
-          },
-          {
-            "rbnfrule": "←←​พัน[​→→];"
-          },
-          {
-            "rbnfrule": "←←​หมื่น[​→→];"
-          },
-          {
-            "rbnfrule": "←←​แสน[​→→];"
-          },
-          {
-            "rbnfrule": "←←​ล้าน[​→→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "ลบ​→→;"
+          ],
+          [
+            "x.x",
+            "←←​จุด​→→→;"
+          ],
+          [
+            "0",
+            "ศูนย์;"
+          ],
+          [
+            "1",
+            "ໜຶ່ງ;"
+          ],
+          [
+            "2",
+            "ສອງ;"
+          ],
+          [
+            "3",
+            "ສາມ;"
+          ],
+          [
+            "4",
+            "ສີ່;"
+          ],
+          [
+            "5",
+            "ຫ້າ;"
+          ],
+          [
+            "6",
+            "ຫົກ;"
+          ],
+          [
+            "7",
+            "ເຈັດ;"
+          ],
+          [
+            "8",
+            "ແປດ;"
+          ],
+          [
+            "9",
+            "ເກົ້າ;"
+          ],
+          [
+            "10",
+            "ສິບ[​→%%alt-ones→];"
+          ],
+          [
+            "20",
+            "ຊາວ[​→%%alt-ones→];"
+          ],
+          [
+            "30",
+            "←←​ສິບ[​→%%alt-ones→];"
+          ],
+          [
+            "100",
+            "←←​ร้อย[​→→];"
+          ],
+          [
+            "1000",
+            "←←​พัน[​→→];"
+          ],
+          [
+            "10000",
+            "←←​หมื่น[​→→];"
+          ],
+          [
+            "100000",
+            "←←​แสน[​→→];"
+          ],
+          [
+            "1000000",
+            "←←​ล้าน[​→→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
-        "%alt-ones": [
-          {
-            "rbnfrule": "ເອັດ;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal=;"
-          }
+        "%%alt-ones": [
+          [
+            "1",
+            "ເອັດ;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal=;"
+          ]
         ],
         "%spellout-ordinal": [
-          {
-            "rbnfrule": "=#,##0.#=;"
-          },
-          {
-            "rbnfrule": "ที่​=%spellout-cardinal=;"
-          }
+          [
+            "x.x",
+            "=#,##0.#=;"
+          ],
+          [
+            "0",
+            "ที่​=%spellout-cardinal=;"
+          ]
         ]
       }
     }

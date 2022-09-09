@@ -1,733 +1,964 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "ca"
     },
     "rbnf": {
       "OrdinalRules": {
-        "%digits-ordinal-indicator-m": [
-          {
-            "rbnfrule": "è;"
-          },
-          {
-            "rbnfrule": "r;"
-          },
-          {
-            "rbnfrule": "n;"
-          },
-          {
-            "rbnfrule": "r;"
-          },
-          {
-            "rbnfrule": "t;"
-          },
-          {
-            "rbnfrule": "è;"
-          },
-          {
-            "rbnfrule": "→→;"
-          },
-          {
-            "rbnfrule": "→→;"
-          }
+        "%%digits-ordinal-indicator-m": [
+          [
+            "0",
+            "è;"
+          ],
+          [
+            "1",
+            "r;"
+          ],
+          [
+            "2",
+            "n;"
+          ],
+          [
+            "3",
+            "r;"
+          ],
+          [
+            "4",
+            "t;"
+          ],
+          [
+            "5",
+            "è;"
+          ],
+          [
+            "20",
+            "→→;"
+          ],
+          [
+            "100",
+            "→→;"
+          ]
         ],
         "%digits-ordinal-masculine": [
-          {
-            "rbnfrule": "−→→;"
-          },
-          {
-            "rbnfrule": "=#,##0==%%digits-ordinal-indicator-m=;"
-          }
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0==%%digits-ordinal-indicator-m=;"
+          ]
         ],
         "%digits-ordinal-feminine": [
-          {
-            "rbnfrule": "−→→;"
-          },
-          {
-            "rbnfrule": "=#,##0=a;"
-          }
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0=a;"
+          ]
         ],
         "%digits-ordinal": [
-          {
-            "rbnfrule": "=%digits-ordinal-masculine=;"
-          }
+          [
+            "0",
+            "=%digits-ordinal-masculine=;"
+          ]
         ]
       },
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
-        "%spellout-numbering-cents": [
-          {
-            "rbnfrule": "s;"
-          },
-          {
-            "rbnfrule": "' =%spellout-cardinal-masculine=;"
-          }
+        "%%spellout-numbering-cents": [
+          [
+            "0",
+            "s;"
+          ],
+          [
+            "1",
+            "' =%spellout-cardinal-masculine=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "menys →→;"
-          },
-          {
-            "rbnfrule": "←← coma →→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "u;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          },
-          {
-            "rbnfrule": "vint[-i-→→];"
-          },
-          {
-            "rbnfrule": "trenta[-→→];"
-          },
-          {
-            "rbnfrule": "quaranta[-→→];"
-          },
-          {
-            "rbnfrule": "cinquanta[-→→];"
-          },
-          {
-            "rbnfrule": "seixanta[-→→];"
-          },
-          {
-            "rbnfrule": "setanta[-→→];"
-          },
-          {
-            "rbnfrule": "vuitanta[-→→];"
-          },
-          {
-            "rbnfrule": "noranta[-→→];"
-          },
-          {
-            "rbnfrule": "cent[-→→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine←-cent→%%spellout-numbering-cents→;"
-          },
-          {
-            "rbnfrule": "mil[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← mil[ →→];"
-          },
-          {
-            "rbnfrule": "un milió[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← milions[ →→];"
-          },
-          {
-            "rbnfrule": "un miliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliards[ →→];"
-          },
-          {
-            "rbnfrule": "un bilió[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← bilions[ →→];"
-          },
-          {
-            "rbnfrule": "un biliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliards[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "menys →→;"
+          ],
+          [
+            "x.x",
+            "←← coma →→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "u;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-masculine=;"
+          ],
+          [
+            "20",
+            "vint[-i-→→];"
+          ],
+          [
+            "30",
+            "trenta[-→→];"
+          ],
+          [
+            "40",
+            "quaranta[-→→];"
+          ],
+          [
+            "50",
+            "cinquanta[-→→];"
+          ],
+          [
+            "60",
+            "seixanta[-→→];"
+          ],
+          [
+            "70",
+            "setanta[-→→];"
+          ],
+          [
+            "80",
+            "vuitanta[-→→];"
+          ],
+          [
+            "90",
+            "noranta[-→→];"
+          ],
+          [
+            "100",
+            "cent[-→→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-masculine←-cent→%%spellout-numbering-cents→;"
+          ],
+          [
+            "1000",
+            "mil[ →→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-masculine← mil[ →→];"
+          ],
+          [
+            "1000000",
+            "un milió[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← milions[ →→];"
+          ],
+          [
+            "1000000000",
+            "un miliard[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← miliards[ →→];"
+          ],
+          [
+            "1000000000000",
+            "un bilió[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← bilions[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "un biliard[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← biliards[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
-        "%spellout-cardinal-masculine-cents": [
-          {
-            "rbnfrule": "s;"
-          },
-          {
-            "rbnfrule": "' =%spellout-cardinal-masculine=;"
-          }
+        "%%spellout-cardinal-masculine-cents": [
+          [
+            "0",
+            "s;"
+          ],
+          [
+            "1",
+            "' =%spellout-cardinal-masculine=;"
+          ]
         ],
         "%spellout-cardinal-masculine": [
-          {
-            "rbnfrule": "menys →→;"
-          },
-          {
-            "rbnfrule": "←← coma →→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "un;"
-          },
-          {
-            "rbnfrule": "dos;"
-          },
-          {
-            "rbnfrule": "tres;"
-          },
-          {
-            "rbnfrule": "quatre;"
-          },
-          {
-            "rbnfrule": "cinc;"
-          },
-          {
-            "rbnfrule": "sis;"
-          },
-          {
-            "rbnfrule": "set;"
-          },
-          {
-            "rbnfrule": "vuit;"
-          },
-          {
-            "rbnfrule": "nou;"
-          },
-          {
-            "rbnfrule": "deu;"
-          },
-          {
-            "rbnfrule": "onze;"
-          },
-          {
-            "rbnfrule": "dotze;"
-          },
-          {
-            "rbnfrule": "tretze;"
-          },
-          {
-            "rbnfrule": "catorze;"
-          },
-          {
-            "rbnfrule": "quinze;"
-          },
-          {
-            "rbnfrule": "setze;"
-          },
-          {
-            "rbnfrule": "disset;"
-          },
-          {
-            "rbnfrule": "divuit;"
-          },
-          {
-            "rbnfrule": "dinou;"
-          },
-          {
-            "rbnfrule": "vint[-i-→→];"
-          },
-          {
-            "rbnfrule": "trenta[-→→];"
-          },
-          {
-            "rbnfrule": "quaranta[-→→];"
-          },
-          {
-            "rbnfrule": "cinquanta[-→→];"
-          },
-          {
-            "rbnfrule": "seixanta[-→→];"
-          },
-          {
-            "rbnfrule": "setanta[-→→];"
-          },
-          {
-            "rbnfrule": "vuitanta[-→→];"
-          },
-          {
-            "rbnfrule": "noranta[-→→];"
-          },
-          {
-            "rbnfrule": "cent[-→→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine←-cent→%%spellout-cardinal-masculine-cents→;"
-          },
-          {
-            "rbnfrule": "mil[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← mil[ →→];"
-          },
-          {
-            "rbnfrule": "un milió[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← milions[ →→];"
-          },
-          {
-            "rbnfrule": "un miliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliards[ →→];"
-          },
-          {
-            "rbnfrule": "un bilió[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← bilions[ →→];"
-          },
-          {
-            "rbnfrule": "un biliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliards[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "menys →→;"
+          ],
+          [
+            "x.x",
+            "←← coma →→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "un;"
+          ],
+          [
+            "2",
+            "dos;"
+          ],
+          [
+            "3",
+            "tres;"
+          ],
+          [
+            "4",
+            "quatre;"
+          ],
+          [
+            "5",
+            "cinc;"
+          ],
+          [
+            "6",
+            "sis;"
+          ],
+          [
+            "7",
+            "set;"
+          ],
+          [
+            "8",
+            "vuit;"
+          ],
+          [
+            "9",
+            "nou;"
+          ],
+          [
+            "10",
+            "deu;"
+          ],
+          [
+            "11",
+            "onze;"
+          ],
+          [
+            "12",
+            "dotze;"
+          ],
+          [
+            "13",
+            "tretze;"
+          ],
+          [
+            "14",
+            "catorze;"
+          ],
+          [
+            "15",
+            "quinze;"
+          ],
+          [
+            "16",
+            "setze;"
+          ],
+          [
+            "17",
+            "disset;"
+          ],
+          [
+            "18",
+            "divuit;"
+          ],
+          [
+            "19",
+            "dinou;"
+          ],
+          [
+            "20",
+            "vint[-i-→→];"
+          ],
+          [
+            "30",
+            "trenta[-→→];"
+          ],
+          [
+            "40",
+            "quaranta[-→→];"
+          ],
+          [
+            "50",
+            "cinquanta[-→→];"
+          ],
+          [
+            "60",
+            "seixanta[-→→];"
+          ],
+          [
+            "70",
+            "setanta[-→→];"
+          ],
+          [
+            "80",
+            "vuitanta[-→→];"
+          ],
+          [
+            "90",
+            "noranta[-→→];"
+          ],
+          [
+            "100",
+            "cent[-→→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-masculine←-cent→%%spellout-cardinal-masculine-cents→;"
+          ],
+          [
+            "1000",
+            "mil[ →→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-masculine← mil[ →→];"
+          ],
+          [
+            "1000000",
+            "un milió[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← milions[ →→];"
+          ],
+          [
+            "1000000000",
+            "un miliard[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← miliards[ →→];"
+          ],
+          [
+            "1000000000000",
+            "un bilió[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← bilions[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "un biliard[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← biliards[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
-        "%spellout-cardinal-feminine-cents": [
-          {
-            "rbnfrule": "s;"
-          },
-          {
-            "rbnfrule": "' =%spellout-cardinal-feminine=;"
-          }
+        "%%spellout-cardinal-feminine-cents": [
+          [
+            "0",
+            "s;"
+          ],
+          [
+            "1",
+            "' =%spellout-cardinal-feminine=;"
+          ]
         ],
         "%spellout-cardinal-feminine": [
-          {
-            "rbnfrule": "menys →→;"
-          },
-          {
-            "rbnfrule": "←← coma →→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "una;"
-          },
-          {
-            "rbnfrule": "dues;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          },
-          {
-            "rbnfrule": "vint[-i-→→];"
-          },
-          {
-            "rbnfrule": "trenta[-→→];"
-          },
-          {
-            "rbnfrule": "quaranta[-→→];"
-          },
-          {
-            "rbnfrule": "cinquanta[-→→];"
-          },
-          {
-            "rbnfrule": "seixanta[-→→];"
-          },
-          {
-            "rbnfrule": "setanta[-→→];"
-          },
-          {
-            "rbnfrule": "vuitanta[-→→];"
-          },
-          {
-            "rbnfrule": "noranta[-→→];"
-          },
-          {
-            "rbnfrule": "cent[-→→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine←-cent→%%spellout-cardinal-feminine-cents→;"
-          },
-          {
-            "rbnfrule": "mil[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← mil[ →→];"
-          },
-          {
-            "rbnfrule": "un milió[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← milions[ →→];"
-          },
-          {
-            "rbnfrule": "un miliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliards[ →→];"
-          },
-          {
-            "rbnfrule": "un bilió[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← bilions[ →→];"
-          },
-          {
-            "rbnfrule": "un biliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliards[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "menys →→;"
+          ],
+          [
+            "x.x",
+            "←← coma →→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "una;"
+          ],
+          [
+            "2",
+            "dues;"
+          ],
+          [
+            "3",
+            "=%spellout-cardinal-masculine=;"
+          ],
+          [
+            "20",
+            "vint[-i-→→];"
+          ],
+          [
+            "30",
+            "trenta[-→→];"
+          ],
+          [
+            "40",
+            "quaranta[-→→];"
+          ],
+          [
+            "50",
+            "cinquanta[-→→];"
+          ],
+          [
+            "60",
+            "seixanta[-→→];"
+          ],
+          [
+            "70",
+            "setanta[-→→];"
+          ],
+          [
+            "80",
+            "vuitanta[-→→];"
+          ],
+          [
+            "90",
+            "noranta[-→→];"
+          ],
+          [
+            "100",
+            "cent[-→→];"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-masculine←-cent→%%spellout-cardinal-feminine-cents→;"
+          ],
+          [
+            "1000",
+            "mil[ →→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-masculine← mil[ →→];"
+          ],
+          [
+            "1000000",
+            "un milió[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← milions[ →→];"
+          ],
+          [
+            "1000000000",
+            "un miliard[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← miliards[ →→];"
+          ],
+          [
+            "1000000000000",
+            "un bilió[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← bilions[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "un biliard[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← biliards[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
-        "%spellout-ordinal-masculine-cont": [
-          {
-            "rbnfrule": "è;"
-          },
-          {
-            "rbnfrule": "' =%spellout-ordinal-masculine=;"
-          }
+        "%%spellout-ordinal-masculine-cont": [
+          [
+            "0",
+            "è;"
+          ],
+          [
+            "1",
+            "' =%spellout-ordinal-masculine=;"
+          ]
         ],
-        "%spellout-ordinal-masculine-conts": [
-          {
-            "rbnfrule": "è;"
-          },
-          {
-            "rbnfrule": "s =%spellout-ordinal-masculine=;"
-          }
+        "%%spellout-ordinal-masculine-conts": [
+          [
+            "0",
+            "è;"
+          ],
+          [
+            "1",
+            "s =%spellout-ordinal-masculine=;"
+          ]
         ],
         "%spellout-ordinal-masculine": [
-          {
-            "rbnfrule": "menys →→;"
-          },
-          {
-            "rbnfrule": "=#,##0.#=;"
-          },
-          {
-            "rbnfrule": "zeroè;"
-          },
-          {
-            "rbnfrule": "primer;"
-          },
-          {
-            "rbnfrule": "segon;"
-          },
-          {
-            "rbnfrule": "tercer;"
-          },
-          {
-            "rbnfrule": "quart;"
-          },
-          {
-            "rbnfrule": "cinquè;"
-          },
-          {
-            "rbnfrule": "sisè;"
-          },
-          {
-            "rbnfrule": "setè;"
-          },
-          {
-            "rbnfrule": "vuitè;"
-          },
-          {
-            "rbnfrule": "novè;"
-          },
-          {
-            "rbnfrule": "desè;"
-          },
-          {
-            "rbnfrule": "onzè;"
-          },
-          {
-            "rbnfrule": "dotzè;"
-          },
-          {
-            "rbnfrule": "tretzè;"
-          },
-          {
-            "rbnfrule": "catorzè;"
-          },
-          {
-            "rbnfrule": "quinzè;"
-          },
-          {
-            "rbnfrule": "setzè;"
-          },
-          {
-            "rbnfrule": "dissetè;"
-          },
-          {
-            "rbnfrule": "divuitè;"
-          },
-          {
-            "rbnfrule": "dinovè;"
-          },
-          {
-            "rbnfrule": "vintè;"
-          },
-          {
-            "rbnfrule": "vint-i-→→;"
-          },
-          {
-            "rbnfrule": "trentè;"
-          },
-          {
-            "rbnfrule": "trenta-→→;"
-          },
-          {
-            "rbnfrule": "quarantè;"
-          },
-          {
-            "rbnfrule": "quaranta-→→;"
-          },
-          {
-            "rbnfrule": "cinquantè;"
-          },
-          {
-            "rbnfrule": "cinquanta-→→;"
-          },
-          {
-            "rbnfrule": "seixantè;"
-          },
-          {
-            "rbnfrule": "seixanta-→→;"
-          },
-          {
-            "rbnfrule": "setantè;"
-          },
-          {
-            "rbnfrule": "setanta-→→;"
-          },
-          {
-            "rbnfrule": "vuitantè;"
-          },
-          {
-            "rbnfrule": "vuitanta-→→;"
-          },
-          {
-            "rbnfrule": "norantè;"
-          },
-          {
-            "rbnfrule": "noranta-→→;"
-          },
-          {
-            "rbnfrule": "centè;"
-          },
-          {
-            "rbnfrule": "cent-→→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine←-cent→%%spellout-ordinal-masculine-cont→;"
-          },
-          {
-            "rbnfrule": "mil→%%spellout-ordinal-masculine-cont→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← mil→%%spellout-ordinal-masculine-cont→;"
-          },
-          {
-            "rbnfrule": "un milion→%%spellout-ordinal-masculine-cont→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← milion→%%spellout-ordinal-masculine-conts→;"
-          },
-          {
-            "rbnfrule": "un miliard→%%spellout-ordinal-masculine-cont→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliard→%%spellout-ordinal-masculine-conts→;"
-          },
-          {
-            "rbnfrule": "un bilion→%%spellout-ordinal-masculine-cont→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← bilion→%%spellout-ordinal-masculine-conts→;"
-          },
-          {
-            "rbnfrule": "un biliard→%%spellout-ordinal-masculine-cont→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliard→%%spellout-ordinal-masculine-conts→;"
-          },
-          {
-            "rbnfrule": "=#,##0=è;"
-          }
+          [
+            "-x",
+            "menys →→;"
+          ],
+          [
+            "x.x",
+            "=#,##0.#=;"
+          ],
+          [
+            "0",
+            "zeroè;"
+          ],
+          [
+            "1",
+            "primer;"
+          ],
+          [
+            "2",
+            "segon;"
+          ],
+          [
+            "3",
+            "tercer;"
+          ],
+          [
+            "4",
+            "quart;"
+          ],
+          [
+            "5",
+            "cinquè;"
+          ],
+          [
+            "6",
+            "sisè;"
+          ],
+          [
+            "7",
+            "setè;"
+          ],
+          [
+            "8",
+            "vuitè;"
+          ],
+          [
+            "9",
+            "novè;"
+          ],
+          [
+            "10",
+            "desè;"
+          ],
+          [
+            "11",
+            "onzè;"
+          ],
+          [
+            "12",
+            "dotzè;"
+          ],
+          [
+            "13",
+            "tretzè;"
+          ],
+          [
+            "14",
+            "catorzè;"
+          ],
+          [
+            "15",
+            "quinzè;"
+          ],
+          [
+            "16",
+            "setzè;"
+          ],
+          [
+            "17",
+            "dissetè;"
+          ],
+          [
+            "18",
+            "divuitè;"
+          ],
+          [
+            "19",
+            "dinovè;"
+          ],
+          [
+            "20",
+            "vintè;"
+          ],
+          [
+            "21",
+            "vint-i-→→;"
+          ],
+          [
+            "30",
+            "trentè;"
+          ],
+          [
+            "31",
+            "trenta-→→;"
+          ],
+          [
+            "40",
+            "quarantè;"
+          ],
+          [
+            "41",
+            "quaranta-→→;"
+          ],
+          [
+            "50",
+            "cinquantè;"
+          ],
+          [
+            "51",
+            "cinquanta-→→;"
+          ],
+          [
+            "60",
+            "seixantè;"
+          ],
+          [
+            "61",
+            "seixanta-→→;"
+          ],
+          [
+            "70",
+            "setantè;"
+          ],
+          [
+            "71",
+            "setanta-→→;"
+          ],
+          [
+            "80",
+            "vuitantè;"
+          ],
+          [
+            "81",
+            "vuitanta-→→;"
+          ],
+          [
+            "90",
+            "norantè;"
+          ],
+          [
+            "91",
+            "noranta-→→;"
+          ],
+          [
+            "100",
+            "centè;"
+          ],
+          [
+            "101",
+            "cent-→→;"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-masculine←-cent→%%spellout-ordinal-masculine-cont→;"
+          ],
+          [
+            "1000",
+            "mil→%%spellout-ordinal-masculine-cont→;"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-masculine← mil→%%spellout-ordinal-masculine-cont→;"
+          ],
+          [
+            "1000000",
+            "un milion→%%spellout-ordinal-masculine-cont→;"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← milion→%%spellout-ordinal-masculine-conts→;"
+          ],
+          [
+            "1000000000",
+            "un miliard→%%spellout-ordinal-masculine-cont→;"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← miliard→%%spellout-ordinal-masculine-conts→;"
+          ],
+          [
+            "1000000000000",
+            "un bilion→%%spellout-ordinal-masculine-cont→;"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← bilion→%%spellout-ordinal-masculine-conts→;"
+          ],
+          [
+            "1000000000000000",
+            "un biliard→%%spellout-ordinal-masculine-cont→;"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← biliard→%%spellout-ordinal-masculine-conts→;"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=è;"
+          ]
         ],
-        "%spellout-ordinal-feminine-cont": [
-          {
-            "rbnfrule": "ena;"
-          },
-          {
-            "rbnfrule": "' =%spellout-ordinal-feminine=;"
-          }
+        "%%spellout-ordinal-feminine-cont": [
+          [
+            "0",
+            "ena;"
+          ],
+          [
+            "1",
+            "' =%spellout-ordinal-feminine=;"
+          ]
         ],
-        "%spellout-ordinal-feminine-conts": [
-          {
-            "rbnfrule": "ena;"
-          },
-          {
-            "rbnfrule": "s =%spellout-ordinal-feminine=;"
-          }
+        "%%spellout-ordinal-feminine-conts": [
+          [
+            "0",
+            "ena;"
+          ],
+          [
+            "1",
+            "s =%spellout-ordinal-feminine=;"
+          ]
         ],
         "%spellout-ordinal-feminine": [
-          {
-            "rbnfrule": "menys →→;"
-          },
-          {
-            "rbnfrule": "=#,##0.#=;"
-          },
-          {
-            "rbnfrule": "zerona;"
-          },
-          {
-            "rbnfrule": "primera;"
-          },
-          {
-            "rbnfrule": "segona;"
-          },
-          {
-            "rbnfrule": "tercera;"
-          },
-          {
-            "rbnfrule": "quarta;"
-          },
-          {
-            "rbnfrule": "cinquena;"
-          },
-          {
-            "rbnfrule": "sisena;"
-          },
-          {
-            "rbnfrule": "setena;"
-          },
-          {
-            "rbnfrule": "vuitena;"
-          },
-          {
-            "rbnfrule": "novena;"
-          },
-          {
-            "rbnfrule": "desena;"
-          },
-          {
-            "rbnfrule": "onzena;"
-          },
-          {
-            "rbnfrule": "dotzena;"
-          },
-          {
-            "rbnfrule": "tretzena;"
-          },
-          {
-            "rbnfrule": "catorzena;"
-          },
-          {
-            "rbnfrule": "quinzena;"
-          },
-          {
-            "rbnfrule": "setzena;"
-          },
-          {
-            "rbnfrule": "dissetena;"
-          },
-          {
-            "rbnfrule": "divuitena;"
-          },
-          {
-            "rbnfrule": "dinovena;"
-          },
-          {
-            "rbnfrule": "vintena;"
-          },
-          {
-            "rbnfrule": "vint-i-→→;"
-          },
-          {
-            "rbnfrule": "trentena;"
-          },
-          {
-            "rbnfrule": "trenta-→→;"
-          },
-          {
-            "rbnfrule": "quarantena;"
-          },
-          {
-            "rbnfrule": "quaranta-→→;"
-          },
-          {
-            "rbnfrule": "cinquantena;"
-          },
-          {
-            "rbnfrule": "cinquanta-→→;"
-          },
-          {
-            "rbnfrule": "seixantena;"
-          },
-          {
-            "rbnfrule": "seixanta-→→;"
-          },
-          {
-            "rbnfrule": "setantena;"
-          },
-          {
-            "rbnfrule": "setanta-→→;"
-          },
-          {
-            "rbnfrule": "vuitantena;"
-          },
-          {
-            "rbnfrule": "vuitanta-→→;"
-          },
-          {
-            "rbnfrule": "norantena;"
-          },
-          {
-            "rbnfrule": "noranta-→→;"
-          },
-          {
-            "rbnfrule": "centena;"
-          },
-          {
-            "rbnfrule": "cent-→→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine←-cent→%%spellout-ordinal-feminine-cont→;"
-          },
-          {
-            "rbnfrule": "mil→%%spellout-ordinal-feminine-cont→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← mil→%%spellout-ordinal-feminine-cont→;"
-          },
-          {
-            "rbnfrule": "un milion→%%spellout-ordinal-feminine-cont→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← milion→%%spellout-ordinal-feminine-conts→;"
-          },
-          {
-            "rbnfrule": "un miliard→%%spellout-ordinal-feminine-cont→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miliard→%%spellout-ordinal-feminine-conts→;"
-          },
-          {
-            "rbnfrule": "un bilion→%%spellout-ordinal-feminine-cont→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← bilion→%%spellout-ordinal-feminine-conts→;"
-          },
-          {
-            "rbnfrule": "un biliard→%%spellout-ordinal-feminine-cont→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biliard→%%spellout-ordinal-feminine-conts→;"
-          },
-          {
-            "rbnfrule": "=#,##0=ena;"
-          }
+          [
+            "-x",
+            "menys →→;"
+          ],
+          [
+            "x.x",
+            "=#,##0.#=;"
+          ],
+          [
+            "0",
+            "zerona;"
+          ],
+          [
+            "1",
+            "primera;"
+          ],
+          [
+            "2",
+            "segona;"
+          ],
+          [
+            "3",
+            "tercera;"
+          ],
+          [
+            "4",
+            "quarta;"
+          ],
+          [
+            "5",
+            "cinquena;"
+          ],
+          [
+            "6",
+            "sisena;"
+          ],
+          [
+            "7",
+            "setena;"
+          ],
+          [
+            "8",
+            "vuitena;"
+          ],
+          [
+            "9",
+            "novena;"
+          ],
+          [
+            "10",
+            "desena;"
+          ],
+          [
+            "11",
+            "onzena;"
+          ],
+          [
+            "12",
+            "dotzena;"
+          ],
+          [
+            "13",
+            "tretzena;"
+          ],
+          [
+            "14",
+            "catorzena;"
+          ],
+          [
+            "15",
+            "quinzena;"
+          ],
+          [
+            "16",
+            "setzena;"
+          ],
+          [
+            "17",
+            "dissetena;"
+          ],
+          [
+            "18",
+            "divuitena;"
+          ],
+          [
+            "19",
+            "dinovena;"
+          ],
+          [
+            "20",
+            "vintena;"
+          ],
+          [
+            "21",
+            "vint-i-→→;"
+          ],
+          [
+            "30",
+            "trentena;"
+          ],
+          [
+            "31",
+            "trenta-→→;"
+          ],
+          [
+            "40",
+            "quarantena;"
+          ],
+          [
+            "41",
+            "quaranta-→→;"
+          ],
+          [
+            "50",
+            "cinquantena;"
+          ],
+          [
+            "51",
+            "cinquanta-→→;"
+          ],
+          [
+            "60",
+            "seixantena;"
+          ],
+          [
+            "61",
+            "seixanta-→→;"
+          ],
+          [
+            "70",
+            "setantena;"
+          ],
+          [
+            "71",
+            "setanta-→→;"
+          ],
+          [
+            "80",
+            "vuitantena;"
+          ],
+          [
+            "81",
+            "vuitanta-→→;"
+          ],
+          [
+            "90",
+            "norantena;"
+          ],
+          [
+            "91",
+            "noranta-→→;"
+          ],
+          [
+            "100",
+            "centena;"
+          ],
+          [
+            "101",
+            "cent-→→;"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-masculine←-cent→%%spellout-ordinal-feminine-cont→;"
+          ],
+          [
+            "1000",
+            "mil→%%spellout-ordinal-feminine-cont→;"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-masculine← mil→%%spellout-ordinal-feminine-cont→;"
+          ],
+          [
+            "1000000",
+            "un milion→%%spellout-ordinal-feminine-cont→;"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← milion→%%spellout-ordinal-feminine-conts→;"
+          ],
+          [
+            "1000000000",
+            "un miliard→%%spellout-ordinal-feminine-cont→;"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← miliard→%%spellout-ordinal-feminine-conts→;"
+          ],
+          [
+            "1000000000000",
+            "un bilion→%%spellout-ordinal-feminine-cont→;"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← bilion→%%spellout-ordinal-feminine-conts→;"
+          ],
+          [
+            "1000000000000000",
+            "un biliard→%%spellout-ordinal-feminine-cont→;"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← biliard→%%spellout-ordinal-feminine-conts→;"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=ena;"
+          ]
         ]
       }
     }

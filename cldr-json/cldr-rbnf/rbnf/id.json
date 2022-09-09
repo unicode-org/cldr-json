@@ -1,121 +1,156 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "id"
     },
     "rbnf": {
       "OrdinalRules": {
         "%digits-ordinal": [
-          {
-            "rbnfrule": "−ke-→#,##0→;"
-          },
-          {
-            "rbnfrule": "ke-=#,##0=;"
-          }
+          [
+            "-x",
+            "−ke-→#,##0→;"
+          ],
+          [
+            "0",
+            "ke-=#,##0=;"
+          ]
         ]
       },
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "=%spellout-cardinal=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal=;"
+          ]
         ],
         "%spellout-cardinal": [
-          {
-            "rbnfrule": "negatif →→;"
-          },
-          {
-            "rbnfrule": "←← titik →→;"
-          },
-          {
-            "rbnfrule": "kosong;"
-          },
-          {
-            "rbnfrule": "satu;"
-          },
-          {
-            "rbnfrule": "dua;"
-          },
-          {
-            "rbnfrule": "tiga;"
-          },
-          {
-            "rbnfrule": "empat;"
-          },
-          {
-            "rbnfrule": "lima;"
-          },
-          {
-            "rbnfrule": "enam;"
-          },
-          {
-            "rbnfrule": "tujuh;"
-          },
-          {
-            "rbnfrule": "delapan;"
-          },
-          {
-            "rbnfrule": "sembilan;"
-          },
-          {
-            "rbnfrule": "sepuluh;"
-          },
-          {
-            "rbnfrule": "sebelas;"
-          },
-          {
-            "rbnfrule": "→→ belas;"
-          },
-          {
-            "rbnfrule": "←← puluh[ →→];"
-          },
-          {
-            "rbnfrule": "seratus[ →→];"
-          },
-          {
-            "rbnfrule": "←← ratus[ →→];"
-          },
-          {
-            "rbnfrule": "seribu[ →→];"
-          },
-          {
-            "rbnfrule": "←← ribu[ →→];"
-          },
-          {
-            "rbnfrule": "←← juta[ →→];"
-          },
-          {
-            "rbnfrule": "←← miliar[ →→];"
-          },
-          {
-            "rbnfrule": "←← triliun[ →→];"
-          },
-          {
-            "rbnfrule": "←← kuadriliun[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0.#=;"
-          }
+          [
+            "-x",
+            "negatif →→;"
+          ],
+          [
+            "x.x",
+            "←← titik →→;"
+          ],
+          [
+            "0",
+            "kosong;"
+          ],
+          [
+            "1",
+            "satu;"
+          ],
+          [
+            "2",
+            "dua;"
+          ],
+          [
+            "3",
+            "tiga;"
+          ],
+          [
+            "4",
+            "empat;"
+          ],
+          [
+            "5",
+            "lima;"
+          ],
+          [
+            "6",
+            "enam;"
+          ],
+          [
+            "7",
+            "tujuh;"
+          ],
+          [
+            "8",
+            "delapan;"
+          ],
+          [
+            "9",
+            "sembilan;"
+          ],
+          [
+            "10",
+            "sepuluh;"
+          ],
+          [
+            "11",
+            "sebelas;"
+          ],
+          [
+            "12",
+            "→→ belas;"
+          ],
+          [
+            "20",
+            "←← puluh[ →→];"
+          ],
+          [
+            "100",
+            "seratus[ →→];"
+          ],
+          [
+            "200",
+            "←← ratus[ →→];"
+          ],
+          [
+            "1000",
+            "seribu[ →→];"
+          ],
+          [
+            "2000",
+            "←← ribu[ →→];"
+          ],
+          [
+            "1000000",
+            "←← juta[ →→];"
+          ],
+          [
+            "1000000000",
+            "←← miliar[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←← triliun[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←← kuadriliun[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0.#=;"
+          ]
         ],
         "%spellout-ordinal": [
-          {
-            "rbnfrule": "negatif →→;"
-          },
-          {
-            "rbnfrule": "=#,##0.#=;"
-          },
-          {
-            "rbnfrule": "ke=%spellout-cardinal=;"
-          }
+          [
+            "-x",
+            "negatif →→;"
+          ],
+          [
+            "x.x",
+            "=#,##0.#=;"
+          ],
+          [
+            "0",
+            "ke=%spellout-cardinal=;"
+          ]
         ]
       }
     }

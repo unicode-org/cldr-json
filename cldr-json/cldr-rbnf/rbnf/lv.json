@@ -1,233 +1,306 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "lv"
     },
     "rbnf": {
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal-masculine=;"
+          ]
         ],
-        "%spellout-prefixed": [
-          {
-            "rbnfrule": "ERROR;"
-          },
-          {
-            "rbnfrule": "vien;"
-          },
-          {
-            "rbnfrule": "div;"
-          },
-          {
-            "rbnfrule": "trīs;"
-          },
-          {
-            "rbnfrule": "četr;"
-          },
-          {
-            "rbnfrule": "piec;"
-          },
-          {
-            "rbnfrule": "seš;"
-          },
-          {
-            "rbnfrule": "septiņ;"
-          },
-          {
-            "rbnfrule": "astoņ;"
-          },
-          {
-            "rbnfrule": "deviņ;"
-          },
-          {
-            "rbnfrule": "ERROR;"
-          }
+        "%%spellout-prefixed": [
+          [
+            "0",
+            "ERROR;"
+          ],
+          [
+            "1",
+            "vien;"
+          ],
+          [
+            "2",
+            "div;"
+          ],
+          [
+            "3",
+            "trīs;"
+          ],
+          [
+            "4",
+            "četr;"
+          ],
+          [
+            "5",
+            "piec;"
+          ],
+          [
+            "6",
+            "seš;"
+          ],
+          [
+            "7",
+            "septiņ;"
+          ],
+          [
+            "8",
+            "astoņ;"
+          ],
+          [
+            "9",
+            "deviņ;"
+          ],
+          [
+            "10",
+            "ERROR;"
+          ]
         ],
         "%spellout-cardinal-masculine": [
-          {
-            "rbnfrule": "mīnus →→;"
-          },
-          {
-            "rbnfrule": "←← komats →→;"
-          },
-          {
-            "rbnfrule": "nulle;"
-          },
-          {
-            "rbnfrule": "viens;"
-          },
-          {
-            "rbnfrule": "divi;"
-          },
-          {
-            "rbnfrule": "trīs;"
-          },
-          {
-            "rbnfrule": "četri;"
-          },
-          {
-            "rbnfrule": "pieci;"
-          },
-          {
-            "rbnfrule": "seši;"
-          },
-          {
-            "rbnfrule": "septiņi;"
-          },
-          {
-            "rbnfrule": "astoņi;"
-          },
-          {
-            "rbnfrule": "deviņi;"
-          },
-          {
-            "rbnfrule": "desmit;"
-          },
-          {
-            "rbnfrule": "→%%spellout-prefixed→padsmit;"
-          },
-          {
-            "rbnfrule": "←%%spellout-prefixed←desmit[ →→];"
-          },
-          {
-            "rbnfrule": "simt[ →→];"
-          },
-          {
-            "rbnfrule": "←%%spellout-prefixed←simt[ →→];"
-          },
-          {
-            "rbnfrule": "tūkstoš[ →→];"
-          },
-          {
-            "rbnfrule": "←%%spellout-prefixed←tūkstoš[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← tūkstoši[ →→];"
-          },
-          {
-            "rbnfrule": "viens miljons[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miljoni[ →→];"
-          },
-          {
-            "rbnfrule": "viens miljards[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miljardi[ →→];"
-          },
-          {
-            "rbnfrule": "viens biljons[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biljoni[ →→];"
-          },
-          {
-            "rbnfrule": "viens biljards[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biljardi[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "mīnus →→;"
+          ],
+          [
+            "x.x",
+            "←← komats →→;"
+          ],
+          [
+            "0",
+            "nulle;"
+          ],
+          [
+            "1",
+            "viens;"
+          ],
+          [
+            "2",
+            "divi;"
+          ],
+          [
+            "3",
+            "trīs;"
+          ],
+          [
+            "4",
+            "četri;"
+          ],
+          [
+            "5",
+            "pieci;"
+          ],
+          [
+            "6",
+            "seši;"
+          ],
+          [
+            "7",
+            "septiņi;"
+          ],
+          [
+            "8",
+            "astoņi;"
+          ],
+          [
+            "9",
+            "deviņi;"
+          ],
+          [
+            "10",
+            "desmit;"
+          ],
+          [
+            "11",
+            "→%%spellout-prefixed→padsmit;"
+          ],
+          [
+            "20",
+            "←%%spellout-prefixed←desmit[ →→];"
+          ],
+          [
+            "100",
+            "simt[ →→];"
+          ],
+          [
+            "200",
+            "←%%spellout-prefixed←simt[ →→];"
+          ],
+          [
+            "1000",
+            "tūkstoš[ →→];"
+          ],
+          [
+            "2000",
+            "←%%spellout-prefixed←tūkstoš[ →→];"
+          ],
+          [
+            "10000/1000",
+            "←%spellout-cardinal-masculine← tūkstoši[ →→];"
+          ],
+          [
+            "1000000",
+            "viens miljons[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← miljoni[ →→];"
+          ],
+          [
+            "1000000000",
+            "viens miljards[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← miljardi[ →→];"
+          ],
+          [
+            "1000000000000",
+            "viens biljons[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← biljoni[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "viens biljards[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← biljardi[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-feminine": [
-          {
-            "rbnfrule": "mīnus →→;"
-          },
-          {
-            "rbnfrule": "←← komats →→;"
-          },
-          {
-            "rbnfrule": "nulle;"
-          },
-          {
-            "rbnfrule": "viena;"
-          },
-          {
-            "rbnfrule": "divas;"
-          },
-          {
-            "rbnfrule": "trīs;"
-          },
-          {
-            "rbnfrule": "četras;"
-          },
-          {
-            "rbnfrule": "piecas;"
-          },
-          {
-            "rbnfrule": "sešas;"
-          },
-          {
-            "rbnfrule": "septiņas;"
-          },
-          {
-            "rbnfrule": "astoņas;"
-          },
-          {
-            "rbnfrule": "deviņas;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          },
-          {
-            "rbnfrule": "←%%spellout-prefixed←desmit[ →→];"
-          },
-          {
-            "rbnfrule": "simt[ →→];"
-          },
-          {
-            "rbnfrule": "←%%spellout-prefixed←simt[ →→];"
-          },
-          {
-            "rbnfrule": "tūkstoš[ →→];"
-          },
-          {
-            "rbnfrule": "←%%spellout-prefixed←tūkstoš[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← tūkstoši[ →→];"
-          },
-          {
-            "rbnfrule": "viens miljons[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miljoni[ →→];"
-          },
-          {
-            "rbnfrule": "viens miljards[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← miljardi[ →→];"
-          },
-          {
-            "rbnfrule": "viens biljons[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biljoni[ →→];"
-          },
-          {
-            "rbnfrule": "viens biljards[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← biljardi[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "mīnus →→;"
+          ],
+          [
+            "x.x",
+            "←← komats →→;"
+          ],
+          [
+            "0",
+            "nulle;"
+          ],
+          [
+            "1",
+            "viena;"
+          ],
+          [
+            "2",
+            "divas;"
+          ],
+          [
+            "3",
+            "trīs;"
+          ],
+          [
+            "4",
+            "četras;"
+          ],
+          [
+            "5",
+            "piecas;"
+          ],
+          [
+            "6",
+            "sešas;"
+          ],
+          [
+            "7",
+            "septiņas;"
+          ],
+          [
+            "8",
+            "astoņas;"
+          ],
+          [
+            "9",
+            "deviņas;"
+          ],
+          [
+            "10",
+            "=%spellout-cardinal-masculine=;"
+          ],
+          [
+            "20",
+            "←%%spellout-prefixed←desmit[ →→];"
+          ],
+          [
+            "100",
+            "simt[ →→];"
+          ],
+          [
+            "200",
+            "←%%spellout-prefixed←simt[ →→];"
+          ],
+          [
+            "1000",
+            "tūkstoš[ →→];"
+          ],
+          [
+            "2000",
+            "←%%spellout-prefixed←tūkstoš[ →→];"
+          ],
+          [
+            "10000/1000",
+            "←%spellout-cardinal-masculine← tūkstoši[ →→];"
+          ],
+          [
+            "1000000",
+            "viens miljons[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← miljoni[ →→];"
+          ],
+          [
+            "1000000000",
+            "viens miljards[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← miljardi[ →→];"
+          ],
+          [
+            "1000000000000",
+            "viens biljons[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← biljoni[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "viens biljards[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← biljardi[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ]
       }
     }

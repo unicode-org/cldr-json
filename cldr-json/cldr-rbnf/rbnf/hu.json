@@ -1,348 +1,454 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "hu"
     },
     "rbnf": {
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "mínusz →→;"
-          },
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "-x",
+            "mínusz →→;"
+          ],
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "=%spellout-cardinal=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal=;"
+          ]
         ],
         "%spellout-cardinal": [
-          {
-            "rbnfrule": "mínusz →→;"
-          },
-          {
-            "rbnfrule": "←← egész →→;"
-          },
-          {
-            "rbnfrule": "nulla;"
-          },
-          {
-            "rbnfrule": "egy;"
-          },
-          {
-            "rbnfrule": "kettő;"
-          },
-          {
-            "rbnfrule": "három;"
-          },
-          {
-            "rbnfrule": "négy;"
-          },
-          {
-            "rbnfrule": "öt;"
-          },
-          {
-            "rbnfrule": "hat;"
-          },
-          {
-            "rbnfrule": "hét;"
-          },
-          {
-            "rbnfrule": "nyolc;"
-          },
-          {
-            "rbnfrule": "kilenc;"
-          },
-          {
-            "rbnfrule": "tíz;"
-          },
-          {
-            "rbnfrule": "tizen­→→;"
-          },
-          {
-            "rbnfrule": "húsz;"
-          },
-          {
-            "rbnfrule": "huszon­→→;"
-          },
-          {
-            "rbnfrule": "harminc[­→→];"
-          },
-          {
-            "rbnfrule": "negyven[­→→];"
-          },
-          {
-            "rbnfrule": "ötven[­→→];"
-          },
-          {
-            "rbnfrule": "hatvan[­→→];"
-          },
-          {
-            "rbnfrule": "hetven[­→→];"
-          },
-          {
-            "rbnfrule": "nyolcvan[­→→];"
-          },
-          {
-            "rbnfrule": "kilencven[­→→];"
-          },
-          {
-            "rbnfrule": "száz[­→→];"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-initial←­száz[­→→];"
-          },
-          {
-            "rbnfrule": "ezer[­→→];"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-initial←­ezer[­→→];"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-initial←­millió[­→→];"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-initial←­milliárd[­→→];"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-initial←­billió[­→→];"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-initial←­billiárd[­→→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "mínusz →→;"
+          ],
+          [
+            "x.x",
+            "←← egész →→;"
+          ],
+          [
+            "0",
+            "nulla;"
+          ],
+          [
+            "1",
+            "egy;"
+          ],
+          [
+            "2",
+            "kettő;"
+          ],
+          [
+            "3",
+            "három;"
+          ],
+          [
+            "4",
+            "négy;"
+          ],
+          [
+            "5",
+            "öt;"
+          ],
+          [
+            "6",
+            "hat;"
+          ],
+          [
+            "7",
+            "hét;"
+          ],
+          [
+            "8",
+            "nyolc;"
+          ],
+          [
+            "9",
+            "kilenc;"
+          ],
+          [
+            "10",
+            "tíz;"
+          ],
+          [
+            "11",
+            "tizen­→→;"
+          ],
+          [
+            "20",
+            "húsz;"
+          ],
+          [
+            "21",
+            "huszon­→→;"
+          ],
+          [
+            "30",
+            "harminc[­→→];"
+          ],
+          [
+            "40",
+            "negyven[­→→];"
+          ],
+          [
+            "50",
+            "ötven[­→→];"
+          ],
+          [
+            "60",
+            "hatvan[­→→];"
+          ],
+          [
+            "70",
+            "hetven[­→→];"
+          ],
+          [
+            "80",
+            "nyolcvan[­→→];"
+          ],
+          [
+            "90",
+            "kilencven[­→→];"
+          ],
+          [
+            "100",
+            "száz[­→→];"
+          ],
+          [
+            "200",
+            "←%%spellout-cardinal-initial←­száz[­→→];"
+          ],
+          [
+            "1000",
+            "ezer[­→→];"
+          ],
+          [
+            "2000",
+            "←%%spellout-cardinal-initial←­ezer[­→→];"
+          ],
+          [
+            "1000000",
+            "←%%spellout-cardinal-initial←­millió[­→→];"
+          ],
+          [
+            "1000000000",
+            "←%%spellout-cardinal-initial←­milliárd[­→→];"
+          ],
+          [
+            "1000000000000",
+            "←%%spellout-cardinal-initial←­billió[­→→];"
+          ],
+          [
+            "1000000000000000",
+            "←%%spellout-cardinal-initial←­billiárd[­→→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-verbose": [
-          {
-            "rbnfrule": "mínusz →→;"
-          },
-          {
-            "rbnfrule": "←← egész →→;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal=;"
-          },
-          {
-            "rbnfrule": "←←­száz[­→→];"
-          },
-          {
-            "rbnfrule": "←←­ezer[­→→];"
-          },
-          {
-            "rbnfrule": "←←­millió[­→→];"
-          },
-          {
-            "rbnfrule": "←←­milliárd[­→→];"
-          },
-          {
-            "rbnfrule": "←←­billió[­→→];"
-          },
-          {
-            "rbnfrule": "←←­billiárd[­→→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "mínusz →→;"
+          ],
+          [
+            "x.x",
+            "←← egész →→;"
+          ],
+          [
+            "0",
+            "=%spellout-cardinal=;"
+          ],
+          [
+            "100",
+            "←←­száz[­→→];"
+          ],
+          [
+            "1000",
+            "←←­ezer[­→→];"
+          ],
+          [
+            "1000000",
+            "←←­millió[­→→];"
+          ],
+          [
+            "1000000000",
+            "←←­milliárd[­→→];"
+          ],
+          [
+            "1000000000000",
+            "←←­billió[­→→];"
+          ],
+          [
+            "1000000000000000",
+            "←←­billiárd[­→→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
-        "%spellout-cardinal-initial": [
-          {
-            "rbnfrule": "egy;"
-          },
-          {
-            "rbnfrule": "két;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal=;"
-          }
+        "%%spellout-cardinal-initial": [
+          [
+            "1",
+            "egy;"
+          ],
+          [
+            "2",
+            "két;"
+          ],
+          [
+            "3",
+            "=%spellout-cardinal=;"
+          ]
         ],
         "%spellout-ordinal": [
-          {
-            "rbnfrule": "mínusz →→;"
-          },
-          {
-            "rbnfrule": "=#,##0.#=;"
-          },
-          {
-            "rbnfrule": "nulla;"
-          },
-          {
-            "rbnfrule": "első;"
-          },
-          {
-            "rbnfrule": "második;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-larger=;"
-          }
+          [
+            "-x",
+            "mínusz →→;"
+          ],
+          [
+            "x.x",
+            "=#,##0.#=;"
+          ],
+          [
+            "0",
+            "nulla;"
+          ],
+          [
+            "1",
+            "első;"
+          ],
+          [
+            "2",
+            "második;"
+          ],
+          [
+            "3",
+            "=%%spellout-ordinal-larger=;"
+          ]
         ],
-        "%spellout-ordinal-adik": [
-          {
-            "rbnfrule": "adik;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-larger=;"
-          }
+        "%%spellout-ordinal-adik": [
+          [
+            "0",
+            "adik;"
+          ],
+          [
+            "1",
+            "=%%spellout-ordinal-larger=;"
+          ]
         ],
-        "%spellout-ordinal-odik": [
-          {
-            "rbnfrule": "odik;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-larger=;"
-          }
+        "%%spellout-ordinal-odik": [
+          [
+            "0",
+            "odik;"
+          ],
+          [
+            "1",
+            "=%%spellout-ordinal-larger=;"
+          ]
         ],
-        "%spellout-ordinal-larger": [
-          {
-            "rbnfrule": "edik;"
-          },
-          {
-            "rbnfrule": "egyedik;"
-          },
-          {
-            "rbnfrule": "kettedik;"
-          },
-          {
-            "rbnfrule": "harmadik;"
-          },
-          {
-            "rbnfrule": "negyedik;"
-          },
-          {
-            "rbnfrule": "ötödik;"
-          },
-          {
-            "rbnfrule": "hatodik;"
-          },
-          {
-            "rbnfrule": "hetedik;"
-          },
-          {
-            "rbnfrule": "nyolcadik;"
-          },
-          {
-            "rbnfrule": "kilencedik;"
-          },
-          {
-            "rbnfrule": "tizedik;"
-          },
-          {
-            "rbnfrule": "tizen→→;"
-          },
-          {
-            "rbnfrule": "huszadik;"
-          },
-          {
-            "rbnfrule": "huszon→→;"
-          },
-          {
-            "rbnfrule": "harminc→%%spellout-ordinal-adik→;"
-          },
-          {
-            "rbnfrule": "negyven→→;"
-          },
-          {
-            "rbnfrule": "ötven→→;"
-          },
-          {
-            "rbnfrule": "hatvan→%%spellout-ordinal-adik→;"
-          },
-          {
-            "rbnfrule": "hetven→→;"
-          },
-          {
-            "rbnfrule": "nyolcvan→%%spellout-ordinal-adik→;"
-          },
-          {
-            "rbnfrule": "kilencven→→;"
-          },
-          {
-            "rbnfrule": "száz→%%spellout-ordinal-adik→;"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-initial←száz→%%spellout-ordinal-adik→;"
-          },
-          {
-            "rbnfrule": "ezr→→;"
-          },
-          {
-            "rbnfrule": "ezer­→→;"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-initial←­ezr→→;"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-initial←­ezer­→→;"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-initial←­milliom­→%%spellout-ordinal-odik→;"
-          },
-          {
-            "rbnfrule": "=#,##0=.;"
-          }
+        "%%spellout-ordinal-larger": [
+          [
+            "0",
+            "edik;"
+          ],
+          [
+            "1",
+            "egyedik;"
+          ],
+          [
+            "2",
+            "kettedik;"
+          ],
+          [
+            "3",
+            "harmadik;"
+          ],
+          [
+            "4",
+            "negyedik;"
+          ],
+          [
+            "5",
+            "ötödik;"
+          ],
+          [
+            "6",
+            "hatodik;"
+          ],
+          [
+            "7",
+            "hetedik;"
+          ],
+          [
+            "8",
+            "nyolcadik;"
+          ],
+          [
+            "9",
+            "kilencedik;"
+          ],
+          [
+            "10",
+            "tizedik;"
+          ],
+          [
+            "11",
+            "tizen→→;"
+          ],
+          [
+            "20",
+            "huszadik;"
+          ],
+          [
+            "21",
+            "huszon→→;"
+          ],
+          [
+            "30",
+            "harminc→%%spellout-ordinal-adik→;"
+          ],
+          [
+            "40",
+            "negyven→→;"
+          ],
+          [
+            "50",
+            "ötven→→;"
+          ],
+          [
+            "60",
+            "hatvan→%%spellout-ordinal-adik→;"
+          ],
+          [
+            "70",
+            "hetven→→;"
+          ],
+          [
+            "80",
+            "nyolcvan→%%spellout-ordinal-adik→;"
+          ],
+          [
+            "90",
+            "kilencven→→;"
+          ],
+          [
+            "100",
+            "száz→%%spellout-ordinal-adik→;"
+          ],
+          [
+            "200",
+            "←%%spellout-cardinal-initial←száz→%%spellout-ordinal-adik→;"
+          ],
+          [
+            "1000",
+            "ezr→→;"
+          ],
+          [
+            "1001",
+            "ezer­→→;"
+          ],
+          [
+            "2000",
+            "←%%spellout-cardinal-initial←­ezr→→;"
+          ],
+          [
+            "2001",
+            "←%%spellout-cardinal-initial←­ezer­→→;"
+          ],
+          [
+            "1000000",
+            "←%%spellout-cardinal-initial←­milliom­→%%spellout-ordinal-odik→;"
+          ],
+          [
+            "1000000000",
+            "=#,##0=.;"
+          ]
         ],
         "%spellout-ordinal-verbose": [
-          {
-            "rbnfrule": "mínusz →→;"
-          },
-          {
-            "rbnfrule": "=#,##0.#=;"
-          },
-          {
-            "rbnfrule": "nulladik;"
-          },
-          {
-            "rbnfrule": "első;"
-          },
-          {
-            "rbnfrule": "második;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-verbose-larger=;"
-          }
+          [
+            "-x",
+            "mínusz →→;"
+          ],
+          [
+            "x.x",
+            "=#,##0.#=;"
+          ],
+          [
+            "0",
+            "nulladik;"
+          ],
+          [
+            "1",
+            "első;"
+          ],
+          [
+            "2",
+            "második;"
+          ],
+          [
+            "3",
+            "=%%spellout-ordinal-verbose-larger=;"
+          ]
         ],
-        "%spellout-ordinal-verbose-adik": [
-          {
-            "rbnfrule": "adik;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-verbose-larger=;"
-          }
+        "%%spellout-ordinal-verbose-adik": [
+          [
+            "0",
+            "adik;"
+          ],
+          [
+            "1",
+            "=%%spellout-ordinal-verbose-larger=;"
+          ]
         ],
-        "%spellout-ordinal-verbose-odik": [
-          {
-            "rbnfrule": "odik;"
-          },
-          {
-            "rbnfrule": "=%%spellout-ordinal-verbose-larger=;"
-          }
+        "%%spellout-ordinal-verbose-odik": [
+          [
+            "0",
+            "odik;"
+          ],
+          [
+            "1",
+            "=%%spellout-ordinal-verbose-larger=;"
+          ]
         ],
-        "%spellout-ordinal-verbose-larger": [
-          {
-            "rbnfrule": "=%%spellout-ordinal-larger=;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-verbose←száz→%%spellout-ordinal-verbose-adik→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-verbose←­ezr→→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-verbose←­ezer­→→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-verbose←­milliom­→%%spellout-ordinal-verbose-odik→;"
-          },
-          {
-            "rbnfrule": "=#,##0=.;"
-          }
+        "%%spellout-ordinal-verbose-larger": [
+          [
+            "0",
+            "=%%spellout-ordinal-larger=;"
+          ],
+          [
+            "100",
+            "←%spellout-cardinal-verbose←száz→%%spellout-ordinal-verbose-adik→;"
+          ],
+          [
+            "1000",
+            "←%spellout-cardinal-verbose←­ezr→→;"
+          ],
+          [
+            "1001",
+            "←%spellout-cardinal-verbose←­ezer­→→;"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-verbose←­milliom­→%%spellout-ordinal-verbose-odik→;"
+          ],
+          [
+            "1000000000",
+            "=#,##0=.;"
+          ]
         ]
       }
     }

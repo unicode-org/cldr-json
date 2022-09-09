@@ -2,7 +2,9 @@
   "main": {
     "yue-Hant": {
       "identity": {
-        "version": {},
+        "version": {
+          "_cldrVersion": "42"
+        },
         "language": "yue",
         "script": "Hant"
       },
@@ -1067,15 +1069,33 @@
               }
             },
             "dateFormats": {
-              "full": "U (r) 年MMMdEEEE",
-              "long": "U (r) 年MMMd",
-              "medium": "r年MMMd",
+              "full": {
+                "_value": "U (r) 年MMMdEEEE",
+                "_numbers": "d=hanidays"
+              },
+              "long": {
+                "_value": "U (r) 年MMMd",
+                "_numbers": "d=hanidays"
+              },
+              "medium": {
+                "_value": "r年MMMd",
+                "_numbers": "d=hanidays"
+              },
               "short": "r/M/d"
             },
             "dateSkeletons": {
-              "full": "UMMMEEEEd",
-              "long": "UMMMd",
-              "medium": "rMMMd",
+              "full": {
+                "_value": "UMMMEEEEd",
+                "_numbers": "d=hanidays"
+              },
+              "long": {
+                "_value": "UMMMd",
+                "_numbers": "d=hanidays"
+              },
+              "medium": {
+                "_value": "rMMMd",
+                "_numbers": "d=hanidays"
+              },
               "short": "rMd"
             },
             "timeFormats": {

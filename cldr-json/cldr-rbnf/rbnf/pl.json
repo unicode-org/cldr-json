@@ -1,1145 +1,1504 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "pl"
     },
     "rbnf": {
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal-masculine=;"
+          ]
         ],
         "%spellout-cardinal-masculine": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← przecinek →%%spellout-fraction→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "jeden;"
-          },
-          {
-            "rbnfrule": "dwa;"
-          },
-          {
-            "rbnfrule": "trzy;"
-          },
-          {
-            "rbnfrule": "cztery;"
-          },
-          {
-            "rbnfrule": "pięć;"
-          },
-          {
-            "rbnfrule": "sześć;"
-          },
-          {
-            "rbnfrule": "siedem;"
-          },
-          {
-            "rbnfrule": "osiem;"
-          },
-          {
-            "rbnfrule": "dziewięć;"
-          },
-          {
-            "rbnfrule": "dziesięć;"
-          },
-          {
-            "rbnfrule": "jedenaście;"
-          },
-          {
-            "rbnfrule": "dwanaście;"
-          },
-          {
-            "rbnfrule": "trzynaście;"
-          },
-          {
-            "rbnfrule": "czternaście;"
-          },
-          {
-            "rbnfrule": "piętnaście;"
-          },
-          {
-            "rbnfrule": "szesnaście;"
-          },
-          {
-            "rbnfrule": "siedemnaście;"
-          },
-          {
-            "rbnfrule": "osiemnaście;"
-          },
-          {
-            "rbnfrule": "dziewiętnaście;"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-tens←[ →→];"
-          },
-          {
-            "rbnfrule": "sto[ →→];"
-          },
-          {
-            "rbnfrule": "dwieście[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←sta[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←set[ →→];"
-          },
-          {
-            "rbnfrule": "tysiąc[ →→];"
-          },
-          {
-            "rbnfrule": "←← $(cardinal,few{tysiące}other{tysięcy})$[ →→];"
-          },
-          {
-            "rbnfrule": "milion[ →→];"
-          },
-          {
-            "rbnfrule": "←← $(cardinal,few{miliony}other{milionów})$[ →→];"
-          },
-          {
-            "rbnfrule": "miliard[ →→];"
-          },
-          {
-            "rbnfrule": "←← $(cardinal,few{miliardy}other{miliardów})$[ →→];"
-          },
-          {
-            "rbnfrule": "bilion[ →→];"
-          },
-          {
-            "rbnfrule": "←← $(cardinal,few{biliony}other{bilionów})$[ →→];"
-          },
-          {
-            "rbnfrule": "biliard[ →→];"
-          },
-          {
-            "rbnfrule": "←← $(cardinal,few{biliardy}other{biliardów})$[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-masculine← przecinek →%%spellout-fraction→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "jeden;"
+          ],
+          [
+            "2",
+            "dwa;"
+          ],
+          [
+            "3",
+            "trzy;"
+          ],
+          [
+            "4",
+            "cztery;"
+          ],
+          [
+            "5",
+            "pięć;"
+          ],
+          [
+            "6",
+            "sześć;"
+          ],
+          [
+            "7",
+            "siedem;"
+          ],
+          [
+            "8",
+            "osiem;"
+          ],
+          [
+            "9",
+            "dziewięć;"
+          ],
+          [
+            "10",
+            "dziesięć;"
+          ],
+          [
+            "11",
+            "jedenaście;"
+          ],
+          [
+            "12",
+            "dwanaście;"
+          ],
+          [
+            "13",
+            "trzynaście;"
+          ],
+          [
+            "14",
+            "czternaście;"
+          ],
+          [
+            "15",
+            "piętnaście;"
+          ],
+          [
+            "16",
+            "szesnaście;"
+          ],
+          [
+            "17",
+            "siedemnaście;"
+          ],
+          [
+            "18",
+            "osiemnaście;"
+          ],
+          [
+            "19",
+            "dziewiętnaście;"
+          ],
+          [
+            "20",
+            "←%%spellout-cardinal-tens←[ →→];"
+          ],
+          [
+            "100",
+            "sto[ →→];"
+          ],
+          [
+            "200",
+            "dwieście[ →→];"
+          ],
+          [
+            "300",
+            "←%spellout-cardinal-feminine←sta[ →→];"
+          ],
+          [
+            "500",
+            "←%spellout-cardinal-feminine←set[ →→];"
+          ],
+          [
+            "1000",
+            "tysiąc[ →→];"
+          ],
+          [
+            "2000",
+            "←← $(cardinal,few{tysiące}other{tysięcy})$[ →→];"
+          ],
+          [
+            "1000000",
+            "milion[ →→];"
+          ],
+          [
+            "2000000",
+            "←← $(cardinal,few{miliony}other{milionów})$[ →→];"
+          ],
+          [
+            "1000000000",
+            "miliard[ →→];"
+          ],
+          [
+            "2000000000",
+            "←← $(cardinal,few{miliardy}other{miliardów})$[ →→];"
+          ],
+          [
+            "1000000000000",
+            "bilion[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←← $(cardinal,few{biliony}other{bilionów})$[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "biliard[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←← $(cardinal,few{biliardy}other{biliardów})$[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-masculine-personal": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine-personal← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "jeden;"
-          },
-          {
-            "rbnfrule": "dwaj;"
-          },
-          {
-            "rbnfrule": "trzej;"
-          },
-          {
-            "rbnfrule": "czterej;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-genitive=;"
-          },
-          {
-            "rbnfrule": "tysiąc[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{tysiące}other{tysięcy})$[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "milion[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{miliony}other{milionów})$[ →→];"
-          },
-          {
-            "rbnfrule": "miliard[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{miliardy}other{miliardów})$[ →→];"
-          },
-          {
-            "rbnfrule": "bilion[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{biliony}other{bilionów})$[ →→];"
-          },
-          {
-            "rbnfrule": "biliard[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{biliardy}other{biliardów})$[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-masculine-personal← przecinek →→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "jeden;"
+          ],
+          [
+            "2",
+            "dwaj;"
+          ],
+          [
+            "3",
+            "trzej;"
+          ],
+          [
+            "4",
+            "czterej;"
+          ],
+          [
+            "5",
+            "=%spellout-cardinal-masculine-genitive=;"
+          ],
+          [
+            "1000",
+            "tysiąc[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{tysiące}other{tysięcy})$[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "1000000",
+            "milion[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{miliony}other{milionów})$[ →→];"
+          ],
+          [
+            "1000000000",
+            "miliard[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{miliardy}other{miliardów})$[ →→];"
+          ],
+          [
+            "1000000000000",
+            "bilion[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{biliony}other{bilionów})$[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "biliard[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{biliardy}other{biliardów})$[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-feminine": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← przecinek →%%spellout-fraction→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "jedna;"
-          },
-          {
-            "rbnfrule": "dwie;"
-          },
-          {
-            "rbnfrule": "trzy;"
-          },
-          {
-            "rbnfrule": "cztery;"
-          },
-          {
-            "rbnfrule": "pięć;"
-          },
-          {
-            "rbnfrule": "sześć;"
-          },
-          {
-            "rbnfrule": "siedem;"
-          },
-          {
-            "rbnfrule": "osiem;"
-          },
-          {
-            "rbnfrule": "dziewięć;"
-          },
-          {
-            "rbnfrule": "dziesięć;"
-          },
-          {
-            "rbnfrule": "jedenaście;"
-          },
-          {
-            "rbnfrule": "dwanaście;"
-          },
-          {
-            "rbnfrule": "trzynaście;"
-          },
-          {
-            "rbnfrule": "czternaście;"
-          },
-          {
-            "rbnfrule": "piętnaście;"
-          },
-          {
-            "rbnfrule": "szesnaście;"
-          },
-          {
-            "rbnfrule": "siedemnaście;"
-          },
-          {
-            "rbnfrule": "osiemnaście;"
-          },
-          {
-            "rbnfrule": "dziewiętnaście;"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-tens←[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "sto[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "dwieście[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←sta[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←set[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "tysiąc[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{tysiące}other{tysięcy})$[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "milion[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{miliony}other{milionów})$[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "miliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{miliardy}other{miliardów})$[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "bilion[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{biliony}other{bilionów})$[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "biliard[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{biliardy}other{biliardów})$[ →%%spellout-cardinal-feminine-ones→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-feminine← przecinek →%%spellout-fraction→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "jedna;"
+          ],
+          [
+            "2",
+            "dwie;"
+          ],
+          [
+            "3",
+            "trzy;"
+          ],
+          [
+            "4",
+            "cztery;"
+          ],
+          [
+            "5",
+            "pięć;"
+          ],
+          [
+            "6",
+            "sześć;"
+          ],
+          [
+            "7",
+            "siedem;"
+          ],
+          [
+            "8",
+            "osiem;"
+          ],
+          [
+            "9",
+            "dziewięć;"
+          ],
+          [
+            "10",
+            "dziesięć;"
+          ],
+          [
+            "11",
+            "jedenaście;"
+          ],
+          [
+            "12",
+            "dwanaście;"
+          ],
+          [
+            "13",
+            "trzynaście;"
+          ],
+          [
+            "14",
+            "czternaście;"
+          ],
+          [
+            "15",
+            "piętnaście;"
+          ],
+          [
+            "16",
+            "szesnaście;"
+          ],
+          [
+            "17",
+            "siedemnaście;"
+          ],
+          [
+            "18",
+            "osiemnaście;"
+          ],
+          [
+            "19",
+            "dziewiętnaście;"
+          ],
+          [
+            "20",
+            "←%%spellout-cardinal-tens←[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "100",
+            "sto[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "200",
+            "dwieście[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "300",
+            "←%spellout-cardinal-feminine←sta[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "500",
+            "←%spellout-cardinal-feminine←set[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "1000",
+            "tysiąc[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{tysiące}other{tysięcy})$[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "1000000",
+            "milion[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{miliony}other{milionów})$[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "1000000000",
+            "miliard[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{miliardy}other{miliardów})$[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "1000000000000",
+            "bilion[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{biliony}other{bilionów})$[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "1000000000000000",
+            "biliard[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{biliardy}other{biliardów})$[ →%%spellout-cardinal-feminine-ones→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-neuter": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter← przecinek →%%spellout-fraction→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "jedno;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-neuter← przecinek →%%spellout-fraction→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "jedno;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-masculine=;"
+          ]
         ],
         "%spellout-cardinal-masculine-genitive": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine-genitive← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zera;"
-          },
-          {
-            "rbnfrule": "jednego;"
-          },
-          {
-            "rbnfrule": "dwóch;"
-          },
-          {
-            "rbnfrule": "trzech;"
-          },
-          {
-            "rbnfrule": "czterech;"
-          },
-          {
-            "rbnfrule": "pięciu;"
-          },
-          {
-            "rbnfrule": "sześciu;"
-          },
-          {
-            "rbnfrule": "siedmiu;"
-          },
-          {
-            "rbnfrule": "ośmiu;"
-          },
-          {
-            "rbnfrule": "dziewięciu;"
-          },
-          {
-            "rbnfrule": "dziesięciu;"
-          },
-          {
-            "rbnfrule": "jedenastu;"
-          },
-          {
-            "rbnfrule": "dwunastu;"
-          },
-          {
-            "rbnfrule": "trzynastu;"
-          },
-          {
-            "rbnfrule": "czternastu;"
-          },
-          {
-            "rbnfrule": "piętnastu;"
-          },
-          {
-            "rbnfrule": "szesnastu;"
-          },
-          {
-            "rbnfrule": "siedemnastu;"
-          },
-          {
-            "rbnfrule": "osiemnastu;"
-          },
-          {
-            "rbnfrule": "dziewiętnastu;"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-genitive-tens←[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "stu[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "dwustu[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←stu[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine-genitive←set[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "tysiąca[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←← tysięcy[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "miliona[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←← milionów[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "miliarda[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←← miliardów[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "biliona[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←← bilionów[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "biliarda[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←← biliardów[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-masculine-genitive← przecinek →→;"
+          ],
+          [
+            "0",
+            "zera;"
+          ],
+          [
+            "1",
+            "jednego;"
+          ],
+          [
+            "2",
+            "dwóch;"
+          ],
+          [
+            "3",
+            "trzech;"
+          ],
+          [
+            "4",
+            "czterech;"
+          ],
+          [
+            "5",
+            "pięciu;"
+          ],
+          [
+            "6",
+            "sześciu;"
+          ],
+          [
+            "7",
+            "siedmiu;"
+          ],
+          [
+            "8",
+            "ośmiu;"
+          ],
+          [
+            "9",
+            "dziewięciu;"
+          ],
+          [
+            "10",
+            "dziesięciu;"
+          ],
+          [
+            "11",
+            "jedenastu;"
+          ],
+          [
+            "12",
+            "dwunastu;"
+          ],
+          [
+            "13",
+            "trzynastu;"
+          ],
+          [
+            "14",
+            "czternastu;"
+          ],
+          [
+            "15",
+            "piętnastu;"
+          ],
+          [
+            "16",
+            "szesnastu;"
+          ],
+          [
+            "17",
+            "siedemnastu;"
+          ],
+          [
+            "18",
+            "osiemnastu;"
+          ],
+          [
+            "19",
+            "dziewiętnastu;"
+          ],
+          [
+            "20",
+            "←%%spellout-cardinal-genitive-tens←[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "100",
+            "stu[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "200",
+            "dwustu[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "300",
+            "←%spellout-cardinal-feminine←stu[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "500",
+            "←%spellout-cardinal-feminine-genitive←set[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "1000",
+            "tysiąca[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "2000",
+            "←← tysięcy[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "1000000",
+            "miliona[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "2000000",
+            "←← milionów[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "1000000000",
+            "miliarda[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "2000000000",
+            "←← miliardów[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "1000000000000",
+            "biliona[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "2000000000000",
+            "←← bilionów[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "1000000000000000",
+            "biliarda[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "2000000000000000",
+            "←← biliardów[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-feminine-genitive": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine-genitive← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zera;"
-          },
-          {
-            "rbnfrule": "jednej;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-genitive=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-feminine-genitive← przecinek →→;"
+          ],
+          [
+            "0",
+            "zera;"
+          ],
+          [
+            "1",
+            "jednej;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-masculine-genitive=;"
+          ]
         ],
         "%spellout-cardinal-neuter-genitive": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-genitive=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal-masculine-genitive=;"
+          ]
         ],
         "%spellout-cardinal-masculine-dative": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine-dative← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zeru;"
-          },
-          {
-            "rbnfrule": "jednemu;"
-          },
-          {
-            "rbnfrule": "dwóm;"
-          },
-          {
-            "rbnfrule": "trzem;"
-          },
-          {
-            "rbnfrule": "czterem;"
-          },
-          {
-            "rbnfrule": "pięciu;"
-          },
-          {
-            "rbnfrule": "sześciu;"
-          },
-          {
-            "rbnfrule": "siedmiu;"
-          },
-          {
-            "rbnfrule": "ośmiu;"
-          },
-          {
-            "rbnfrule": "dziewięciu;"
-          },
-          {
-            "rbnfrule": "dziesięciu;"
-          },
-          {
-            "rbnfrule": "jedenastu;"
-          },
-          {
-            "rbnfrule": "dwunastu;"
-          },
-          {
-            "rbnfrule": "trzynastu;"
-          },
-          {
-            "rbnfrule": "czternastu;"
-          },
-          {
-            "rbnfrule": "piętnastu;"
-          },
-          {
-            "rbnfrule": "szesnastu;"
-          },
-          {
-            "rbnfrule": "siedemnastu;"
-          },
-          {
-            "rbnfrule": "osiemnastu;"
-          },
-          {
-            "rbnfrule": "dziewiętnastu;"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-genitive-tens←[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "stu[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "dwustu[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←stu[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine-genitive←set[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "tysiącowi[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "←← tysiącom[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "milionowi[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "←← milionom[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "miliardowi[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "←← miliardom[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "bilionowi[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "←← bilionom[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "biliardowi[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "←← biliardom[ →%%spellout-cardinal-masculine-dative-ones→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-masculine-dative← przecinek →→;"
+          ],
+          [
+            "0",
+            "zeru;"
+          ],
+          [
+            "1",
+            "jednemu;"
+          ],
+          [
+            "2",
+            "dwóm;"
+          ],
+          [
+            "3",
+            "trzem;"
+          ],
+          [
+            "4",
+            "czterem;"
+          ],
+          [
+            "5",
+            "pięciu;"
+          ],
+          [
+            "6",
+            "sześciu;"
+          ],
+          [
+            "7",
+            "siedmiu;"
+          ],
+          [
+            "8",
+            "ośmiu;"
+          ],
+          [
+            "9",
+            "dziewięciu;"
+          ],
+          [
+            "10",
+            "dziesięciu;"
+          ],
+          [
+            "11",
+            "jedenastu;"
+          ],
+          [
+            "12",
+            "dwunastu;"
+          ],
+          [
+            "13",
+            "trzynastu;"
+          ],
+          [
+            "14",
+            "czternastu;"
+          ],
+          [
+            "15",
+            "piętnastu;"
+          ],
+          [
+            "16",
+            "szesnastu;"
+          ],
+          [
+            "17",
+            "siedemnastu;"
+          ],
+          [
+            "18",
+            "osiemnastu;"
+          ],
+          [
+            "19",
+            "dziewiętnastu;"
+          ],
+          [
+            "20",
+            "←%%spellout-cardinal-genitive-tens←[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "100",
+            "stu[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "200",
+            "dwustu[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "300",
+            "←%spellout-cardinal-feminine←stu[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "500",
+            "←%spellout-cardinal-feminine-genitive←set[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "1000",
+            "tysiącowi[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "2000",
+            "←← tysiącom[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "1000000",
+            "milionowi[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "2000000",
+            "←← milionom[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "1000000000",
+            "miliardowi[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "2000000000",
+            "←← miliardom[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "1000000000000",
+            "bilionowi[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "2000000000000",
+            "←← bilionom[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "1000000000000000",
+            "biliardowi[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "2000000000000000",
+            "←← biliardom[ →%%spellout-cardinal-masculine-dative-ones→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-feminine-dative": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine-dative← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zeru;"
-          },
-          {
-            "rbnfrule": "jednej;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-dative=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-feminine-dative← przecinek →→;"
+          ],
+          [
+            "0",
+            "zeru;"
+          ],
+          [
+            "1",
+            "jednej;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-masculine-dative=;"
+          ]
         ],
         "%spellout-cardinal-neuter-dative": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-dative=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal-masculine-dative=;"
+          ]
         ],
         "%spellout-cardinal-masculine-accusative": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal-masculine=;"
+          ]
         ],
         "%spellout-cardinal-masculine-accusative-animate": [
-          {
-            "rbnfrule": "minus →%spellout-cardinal-masculine-accusative-animate→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine-accusative-animate← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "jednego;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          }
+          [
+            "-x",
+            "minus →%spellout-cardinal-masculine-accusative-animate→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-masculine-accusative-animate← przecinek →→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "jednego;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-masculine=;"
+          ]
         ],
         "%spellout-cardinal-masculine-accusative-personal": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine-accusative-personal← przecinek →→;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-genitive=;"
-          },
-          {
-            "rbnfrule": "tysiąc[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{tysiące}other{tysięcy})$[ →%%spellout-cardinal-masculine-genitive-ones→];"
-          },
-          {
-            "rbnfrule": "milion[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{miliony}other{milionów})$[ →→];"
-          },
-          {
-            "rbnfrule": "miliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{miliardy}other{miliardów})$[ →→];"
-          },
-          {
-            "rbnfrule": "bilion[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{biliony}other{bilionów})$[ →→];"
-          },
-          {
-            "rbnfrule": "biliard[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,few{biliardy}other{biliardów})$[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-masculine-accusative-personal← przecinek →→;"
+          ],
+          [
+            "0",
+            "=%spellout-cardinal-masculine-genitive=;"
+          ],
+          [
+            "1000",
+            "tysiąc[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{tysiące}other{tysięcy})$[ →%%spellout-cardinal-masculine-genitive-ones→];"
+          ],
+          [
+            "1000000",
+            "milion[ →→];"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{miliony}other{milionów})$[ →→];"
+          ],
+          [
+            "1000000000",
+            "miliard[ →→];"
+          ],
+          [
+            "2000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{miliardy}other{miliardów})$[ →→];"
+          ],
+          [
+            "1000000000000",
+            "bilion[ →→];"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{biliony}other{bilionów})$[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "biliard[ →→];"
+          ],
+          [
+            "2000000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,few{biliardy}other{biliardów})$[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-feminine-accusative": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine-accusative← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "jedną;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-feminine=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-feminine-accusative← przecinek →→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "jedną;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-feminine=;"
+          ]
         ],
         "%spellout-cardinal-neuter-accusative": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-neuter-accusative← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zero;"
-          },
-          {
-            "rbnfrule": "jedno;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-neuter-accusative← przecinek →→;"
+          ],
+          [
+            "0",
+            "zero;"
+          ],
+          [
+            "1",
+            "jedno;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-masculine=;"
+          ]
         ],
         "%spellout-cardinal-masculine-instrumental": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine-instrumental← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zerem;"
-          },
-          {
-            "rbnfrule": "jednym;"
-          },
-          {
-            "rbnfrule": "dwoma;"
-          },
-          {
-            "rbnfrule": "trzema;"
-          },
-          {
-            "rbnfrule": "czterema;"
-          },
-          {
-            "rbnfrule": "pięcioma;"
-          },
-          {
-            "rbnfrule": "sześcioma;"
-          },
-          {
-            "rbnfrule": "siedmioma;"
-          },
-          {
-            "rbnfrule": "ośmioma;"
-          },
-          {
-            "rbnfrule": "dziewięcioma;"
-          },
-          {
-            "rbnfrule": "dziesięcioma;"
-          },
-          {
-            "rbnfrule": "jedenastoma;"
-          },
-          {
-            "rbnfrule": "dwunastoma;"
-          },
-          {
-            "rbnfrule": "trzynastoma;"
-          },
-          {
-            "rbnfrule": "czternastoma;"
-          },
-          {
-            "rbnfrule": "piętnastoma;"
-          },
-          {
-            "rbnfrule": "szesnastoma;"
-          },
-          {
-            "rbnfrule": "siedemnastoma;"
-          },
-          {
-            "rbnfrule": "osiemnastoma;"
-          },
-          {
-            "rbnfrule": "dziewiętnastoma;"
-          },
-          {
-            "rbnfrule": "dwudziestoma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "trzydziestoma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "czterdziestoma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "pięćdziesięcioma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "sześćdziesięcioma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "siedemdziesięcioma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "osiemdziesięcioma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "dziewięćdziesięcioma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "stu[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "dwustu[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←stu[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine-genitive←set[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "tysiącem[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "←← tysiącami[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "milionem[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "←← milionami[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "miliardem[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "←← miliardami[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "bilionem[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "←← bilionami[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "biliardem[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "←← biliardami[ →%%spellout-cardinal-masculine-instrumental-ones→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-masculine-instrumental← przecinek →→;"
+          ],
+          [
+            "0",
+            "zerem;"
+          ],
+          [
+            "1",
+            "jednym;"
+          ],
+          [
+            "2",
+            "dwoma;"
+          ],
+          [
+            "3",
+            "trzema;"
+          ],
+          [
+            "4",
+            "czterema;"
+          ],
+          [
+            "5",
+            "pięcioma;"
+          ],
+          [
+            "6",
+            "sześcioma;"
+          ],
+          [
+            "7",
+            "siedmioma;"
+          ],
+          [
+            "8",
+            "ośmioma;"
+          ],
+          [
+            "9",
+            "dziewięcioma;"
+          ],
+          [
+            "10",
+            "dziesięcioma;"
+          ],
+          [
+            "11",
+            "jedenastoma;"
+          ],
+          [
+            "12",
+            "dwunastoma;"
+          ],
+          [
+            "13",
+            "trzynastoma;"
+          ],
+          [
+            "14",
+            "czternastoma;"
+          ],
+          [
+            "15",
+            "piętnastoma;"
+          ],
+          [
+            "16",
+            "szesnastoma;"
+          ],
+          [
+            "17",
+            "siedemnastoma;"
+          ],
+          [
+            "18",
+            "osiemnastoma;"
+          ],
+          [
+            "19",
+            "dziewiętnastoma;"
+          ],
+          [
+            "20",
+            "dwudziestoma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "30",
+            "trzydziestoma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "40",
+            "czterdziestoma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "50",
+            "pięćdziesięcioma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "60",
+            "sześćdziesięcioma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "70",
+            "siedemdziesięcioma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "80",
+            "osiemdziesięcioma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "90",
+            "dziewięćdziesięcioma[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "100",
+            "stu[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "200",
+            "dwustu[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "300",
+            "←%spellout-cardinal-feminine←stu[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "500",
+            "←%spellout-cardinal-feminine-genitive←set[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "1000",
+            "tysiącem[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "2000",
+            "←← tysiącami[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "1000000",
+            "milionem[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "2000000",
+            "←← milionami[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "1000000000",
+            "miliardem[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "2000000000",
+            "←← miliardami[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "1000000000000",
+            "bilionem[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "2000000000000",
+            "←← bilionami[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "1000000000000000",
+            "biliardem[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "2000000000000000",
+            "←← biliardami[ →%%spellout-cardinal-masculine-instrumental-ones→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-feminine-instrumental": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine-instrumental← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zerem;"
-          },
-          {
-            "rbnfrule": "jedną;"
-          },
-          {
-            "rbnfrule": "dwiema;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-instrumental=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-feminine-instrumental← przecinek →→;"
+          ],
+          [
+            "0",
+            "zerem;"
+          ],
+          [
+            "1",
+            "jedną;"
+          ],
+          [
+            "2",
+            "dwiema;"
+          ],
+          [
+            "3",
+            "=%spellout-cardinal-masculine-instrumental=;"
+          ]
         ],
         "%spellout-cardinal-neuter-instrumental": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-instrumental=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal-masculine-instrumental=;"
+          ]
         ],
         "%spellout-cardinal-masculine-locative": [
-          {
-            "rbnfrule": "minus →%spellout-cardinal-masculine-locative→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine-locative← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zerze;"
-          },
-          {
-            "rbnfrule": "jednym;"
-          },
-          {
-            "rbnfrule": "dwóch;"
-          },
-          {
-            "rbnfrule": "trzech;"
-          },
-          {
-            "rbnfrule": "czterech;"
-          },
-          {
-            "rbnfrule": "pięciu;"
-          },
-          {
-            "rbnfrule": "sześciu;"
-          },
-          {
-            "rbnfrule": "siedmiu;"
-          },
-          {
-            "rbnfrule": "ośmiu;"
-          },
-          {
-            "rbnfrule": "dziewięciu;"
-          },
-          {
-            "rbnfrule": "dziesięciu;"
-          },
-          {
-            "rbnfrule": "jedenastu;"
-          },
-          {
-            "rbnfrule": "dwunastu;"
-          },
-          {
-            "rbnfrule": "trzynastu;"
-          },
-          {
-            "rbnfrule": "czternastu;"
-          },
-          {
-            "rbnfrule": "piętnastu;"
-          },
-          {
-            "rbnfrule": "szesnastu;"
-          },
-          {
-            "rbnfrule": "siedemnastu;"
-          },
-          {
-            "rbnfrule": "osiemnastu;"
-          },
-          {
-            "rbnfrule": "dziewiętnastu;"
-          },
-          {
-            "rbnfrule": "←%%spellout-cardinal-genitive-tens←[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "stu[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "dwustu[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←stu[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine-genitive←set[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "tysiącu[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "←← tysiącach[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "milionie[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "←← milionach[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "miliardzie[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "←← miliardach[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "bilionie[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "←← bilionach[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "biliardzie[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "←← biliardach[ →%%spellout-cardinal-masculine-locative-ones→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "minus →%spellout-cardinal-masculine-locative→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-masculine-locative← przecinek →→;"
+          ],
+          [
+            "0",
+            "zerze;"
+          ],
+          [
+            "1",
+            "jednym;"
+          ],
+          [
+            "2",
+            "dwóch;"
+          ],
+          [
+            "3",
+            "trzech;"
+          ],
+          [
+            "4",
+            "czterech;"
+          ],
+          [
+            "5",
+            "pięciu;"
+          ],
+          [
+            "6",
+            "sześciu;"
+          ],
+          [
+            "7",
+            "siedmiu;"
+          ],
+          [
+            "8",
+            "ośmiu;"
+          ],
+          [
+            "9",
+            "dziewięciu;"
+          ],
+          [
+            "10",
+            "dziesięciu;"
+          ],
+          [
+            "11",
+            "jedenastu;"
+          ],
+          [
+            "12",
+            "dwunastu;"
+          ],
+          [
+            "13",
+            "trzynastu;"
+          ],
+          [
+            "14",
+            "czternastu;"
+          ],
+          [
+            "15",
+            "piętnastu;"
+          ],
+          [
+            "16",
+            "szesnastu;"
+          ],
+          [
+            "17",
+            "siedemnastu;"
+          ],
+          [
+            "18",
+            "osiemnastu;"
+          ],
+          [
+            "19",
+            "dziewiętnastu;"
+          ],
+          [
+            "20",
+            "←%%spellout-cardinal-genitive-tens←[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "100",
+            "stu[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "200",
+            "dwustu[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "300",
+            "←%spellout-cardinal-feminine←stu[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "500",
+            "←%spellout-cardinal-feminine-genitive←set[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "1000",
+            "tysiącu[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "2000",
+            "←← tysiącach[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "1000000",
+            "milionie[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "2000000",
+            "←← milionach[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "1000000000",
+            "miliardzie[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "2000000000",
+            "←← miliardach[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "1000000000000",
+            "bilionie[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "2000000000000",
+            "←← bilionach[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "1000000000000000",
+            "biliardzie[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "2000000000000000",
+            "←← biliardach[ →%%spellout-cardinal-masculine-locative-ones→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-feminine-locative": [
-          {
-            "rbnfrule": "minus →→;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine-locative← przecinek →→;"
-          },
-          {
-            "rbnfrule": "zerze;"
-          },
-          {
-            "rbnfrule": "jednej;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-locative=;"
-          }
+          [
+            "-x",
+            "minus →→;"
+          ],
+          [
+            "x.x",
+            "←%spellout-cardinal-feminine-locative← przecinek →→;"
+          ],
+          [
+            "0",
+            "zerze;"
+          ],
+          [
+            "1",
+            "jednej;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-masculine-locative=;"
+          ]
         ],
-        "%spellout-cardinal-masculine-genitive-ones": [
-          {
-            "rbnfrule": "jeden;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-genitive=;"
-          }
+        "%%spellout-cardinal-masculine-genitive-ones": [
+          [
+            "1",
+            "jeden;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-masculine-genitive=;"
+          ]
         ],
-        "%spellout-cardinal-masculine-dative-ones": [
-          {
-            "rbnfrule": "jeden;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-dative=;"
-          }
+        "%%spellout-cardinal-masculine-dative-ones": [
+          [
+            "1",
+            "jeden;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-masculine-dative=;"
+          ]
         ],
-        "%spellout-cardinal-masculine-instrumental-ones": [
-          {
-            "rbnfrule": "jeden;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-instrumental=;"
-          }
+        "%%spellout-cardinal-masculine-instrumental-ones": [
+          [
+            "1",
+            "jeden;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-masculine-instrumental=;"
+          ]
         ],
-        "%spellout-cardinal-masculine-locative-ones": [
-          {
-            "rbnfrule": "jeden;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-locative=;"
-          }
+        "%%spellout-cardinal-masculine-locative-ones": [
+          [
+            "1",
+            "jeden;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-masculine-locative=;"
+          ]
         ],
-        "%spellout-cardinal-feminine-ones": [
-          {
-            "rbnfrule": "jeden;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-feminine=;"
-          }
+        "%%spellout-cardinal-feminine-ones": [
+          [
+            "1",
+            "jeden;"
+          ],
+          [
+            "2",
+            "=%spellout-cardinal-feminine=;"
+          ]
         ],
         "%spellout-cardinal-neuter-locative": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine-locative=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal-masculine-locative=;"
+          ]
         ],
-        "%spellout-cardinal-tens": [
-          {
-            "rbnfrule": "dziesięć;"
-          },
-          {
-            "rbnfrule": "dwadzieścia;"
-          },
-          {
-            "rbnfrule": "trzydzieści;"
-          },
-          {
-            "rbnfrule": "czterdzieści;"
-          },
-          {
-            "rbnfrule": "pięćdziesiąt;"
-          },
-          {
-            "rbnfrule": "sześćdziesiąt;"
-          },
-          {
-            "rbnfrule": "siedemdziesiąt;"
-          },
-          {
-            "rbnfrule": "osiemdziesiąt;"
-          },
-          {
-            "rbnfrule": "dziewięćdziesiąt;"
-          }
+        "%%spellout-cardinal-tens": [
+          [
+            "1",
+            "dziesięć;"
+          ],
+          [
+            "2",
+            "dwadzieścia;"
+          ],
+          [
+            "3",
+            "trzydzieści;"
+          ],
+          [
+            "4",
+            "czterdzieści;"
+          ],
+          [
+            "5",
+            "pięćdziesiąt;"
+          ],
+          [
+            "6",
+            "sześćdziesiąt;"
+          ],
+          [
+            "7",
+            "siedemdziesiąt;"
+          ],
+          [
+            "8",
+            "osiemdziesiąt;"
+          ],
+          [
+            "9",
+            "dziewięćdziesiąt;"
+          ]
         ],
-        "%spellout-cardinal-genitive-tens": [
-          {
-            "rbnfrule": "dziesięciu;"
-          },
-          {
-            "rbnfrule": "dwudziestu;"
-          },
-          {
-            "rbnfrule": "trzydziestu;"
-          },
-          {
-            "rbnfrule": "czterdziestu;"
-          },
-          {
-            "rbnfrule": "pięćdziesięciu;"
-          },
-          {
-            "rbnfrule": "sześćdziesięciu;"
-          },
-          {
-            "rbnfrule": "siedemdziesięciu;"
-          },
-          {
-            "rbnfrule": "osiemdziesięciu;"
-          },
-          {
-            "rbnfrule": "dziewięćdziesięciu;"
-          }
+        "%%spellout-cardinal-genitive-tens": [
+          [
+            "1",
+            "dziesięciu;"
+          ],
+          [
+            "2",
+            "dwudziestu;"
+          ],
+          [
+            "3",
+            "trzydziestu;"
+          ],
+          [
+            "4",
+            "czterdziestu;"
+          ],
+          [
+            "5",
+            "pięćdziesięciu;"
+          ],
+          [
+            "6",
+            "sześćdziesięciu;"
+          ],
+          [
+            "7",
+            "siedemdziesięciu;"
+          ],
+          [
+            "8",
+            "osiemdziesięciu;"
+          ],
+          [
+            "9",
+            "dziewięćdziesięciu;"
+          ]
         ],
-        "%spellout-fraction": [
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine←←;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine←←;"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine←←;"
-          },
-          {
-            "rbnfrule": "←%%spellout-fraction-digits←←;"
-          },
-          {
-            "rbnfrule": "←%%spellout-fraction-digits←←;"
-          },
-          {
-            "rbnfrule": "←%%spellout-fraction-digits←←;"
-          },
-          {
-            "rbnfrule": "←%%spellout-fraction-digits←←;"
-          },
-          {
-            "rbnfrule": "←%%spellout-fraction-digits←←;"
-          },
-          {
-            "rbnfrule": "←%%spellout-fraction-digits←←;"
-          },
-          {
-            "rbnfrule": "←0←;"
-          }
+        "%%spellout-fraction": [
+          [
+            "10",
+            "←%spellout-cardinal-masculine←←;"
+          ],
+          [
+            "100",
+            "←%spellout-cardinal-masculine←←;"
+          ],
+          [
+            "1000",
+            "←%spellout-cardinal-masculine←←;"
+          ],
+          [
+            "10000",
+            "←%%spellout-fraction-digits←←;"
+          ],
+          [
+            "100000",
+            "←%%spellout-fraction-digits←←;"
+          ],
+          [
+            "1000000",
+            "←%%spellout-fraction-digits←←;"
+          ],
+          [
+            "10000000",
+            "←%%spellout-fraction-digits←←;"
+          ],
+          [
+            "100000000",
+            "←%%spellout-fraction-digits←←;"
+          ],
+          [
+            "1000000000",
+            "←%%spellout-fraction-digits←←;"
+          ],
+          [
+            "10000000000",
+            "←0←;"
+          ]
         ],
-        "%spellout-fraction-digits": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          },
-          {
-            "rbnfrule": "←← →→;"
-          }
+        "%%spellout-fraction-digits": [
+          [
+            "0",
+            "=%spellout-cardinal-masculine=;"
+          ],
+          [
+            "10",
+            "←← →→;"
+          ]
         ]
       }
     }

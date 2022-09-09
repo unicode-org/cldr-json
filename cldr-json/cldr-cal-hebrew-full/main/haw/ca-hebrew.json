@@ -2,7 +2,9 @@
   "main": {
     "haw": {
       "identity": {
-        "version": {},
+        "version": {
+          "_cldrVersion": "42"
+        },
         "language": "haw"
       },
       "dates": {
@@ -275,13 +277,19 @@
               "full": "EEEE, d MMMM y G",
               "long": "d MMMM y G",
               "medium": "d MMM y G",
-              "short": "d/M/yy GGGGG"
+              "short": {
+                "_value": "d/M/yy GGGGG",
+                "_numbers": "M=romanlow"
+              }
             },
             "dateSkeletons": {
               "full": "GyMMMMEEEEd",
               "long": "GyMMMMd",
               "medium": "GyMMMd",
-              "short": "GGGGGyyMd"
+              "short": {
+                "_value": "GGGGGyyMd",
+                "_numbers": "M=romanlow"
+              }
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",

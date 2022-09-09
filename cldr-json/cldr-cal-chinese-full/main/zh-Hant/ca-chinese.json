@@ -2,7 +2,9 @@
   "main": {
     "zh-Hant": {
       "identity": {
-        "version": {},
+        "version": {
+          "_cldrVersion": "42"
+        },
         "language": "zh",
         "script": "Hant"
       },
@@ -1067,15 +1069,33 @@
               }
             },
             "dateFormats": {
-              "full": "rU年MMMd EEEE",
-              "long": "rU年MMMd",
-              "medium": "r年MMMd",
+              "full": {
+                "_value": "rU年MMMd EEEE",
+                "_numbers": "d=hanidays"
+              },
+              "long": {
+                "_value": "rU年MMMd",
+                "_numbers": "d=hanidays"
+              },
+              "medium": {
+                "_value": "r年MMMd",
+                "_numbers": "d=hanidays"
+              },
               "short": "r/M/d"
             },
             "dateSkeletons": {
-              "full": "rMMMEEEEd",
-              "long": "rMMMd",
-              "medium": "rMMMd",
+              "full": {
+                "_value": "rMMMEEEEd",
+                "_numbers": "d=hanidays"
+              },
+              "long": {
+                "_value": "rMMMd",
+                "_numbers": "d=hanidays"
+              },
+              "medium": {
+                "_value": "rMMMd",
+                "_numbers": "d=hanidays"
+              },
               "short": "rMd"
             },
             "timeFormats": {

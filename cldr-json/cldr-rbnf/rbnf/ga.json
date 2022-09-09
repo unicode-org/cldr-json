@@ -1,562 +1,728 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "ga"
     },
     "rbnf": {
       "OrdinalRules": {
         "%digits-ordinal": [
-          {
-            "rbnfrule": "−→→;"
-          },
-          {
-            "rbnfrule": "=#,##0=ú;"
-          }
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0=ú;"
+          ]
         ]
       },
       "SpelloutRules": {
-        "%lenient-parse": [
-          {
-            "rbnfrule": "& ' ' , ',' ;"
-          }
+        "%%lenient-parse": [
+          [
+            "0",
+            "& ' ' , ',' ;"
+          ]
         ],
-        "%2d-year": [
-          {
-            "rbnfrule": "agus =%spellout-numbering=;"
-          },
-          {
-            "rbnfrule": "=%%spellout-numbering-no-a=;"
-          }
+        "%%2d-year": [
+          [
+            "0",
+            "agus =%spellout-numbering=;"
+          ],
+          [
+            "10",
+            "=%%spellout-numbering-no-a=;"
+          ]
         ],
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "míneas →→;"
-          },
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          },
-          {
-            "rbnfrule": "←%%spellout-numbering-no-a← →%%2d-year→;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "-x",
+            "míneas →→;"
+          ],
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ],
+          [
+            "1000/100",
+            "←%%spellout-numbering-no-a← →%%2d-year→;"
+          ],
+          [
+            "10000",
+            "=%spellout-numbering=;"
+          ]
         ],
-        "%spellout-numbering-no-a": [
-          {
-            "rbnfrule": "náid;"
-          },
-          {
-            "rbnfrule": "aon;"
-          },
-          {
-            "rbnfrule": "dó;"
-          },
-          {
-            "rbnfrule": "trí;"
-          },
-          {
-            "rbnfrule": "ceathair;"
-          },
-          {
-            "rbnfrule": "cúig;"
-          },
-          {
-            "rbnfrule": "sé;"
-          },
-          {
-            "rbnfrule": "seacht;"
-          },
-          {
-            "rbnfrule": "ocht;"
-          },
-          {
-            "rbnfrule": "naoi;"
-          },
-          {
-            "rbnfrule": "deich;"
-          },
-          {
-            "rbnfrule": "→→ déag;"
-          },
-          {
-            "rbnfrule": "→→ dhéag;"
-          },
-          {
-            "rbnfrule": "→→ déag;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+        "%%spellout-numbering-no-a": [
+          [
+            "0",
+            "náid;"
+          ],
+          [
+            "1",
+            "aon;"
+          ],
+          [
+            "2",
+            "dó;"
+          ],
+          [
+            "3",
+            "trí;"
+          ],
+          [
+            "4",
+            "ceathair;"
+          ],
+          [
+            "5",
+            "cúig;"
+          ],
+          [
+            "6",
+            "sé;"
+          ],
+          [
+            "7",
+            "seacht;"
+          ],
+          [
+            "8",
+            "ocht;"
+          ],
+          [
+            "9",
+            "naoi;"
+          ],
+          [
+            "10",
+            "deich;"
+          ],
+          [
+            "11",
+            "→→ déag;"
+          ],
+          [
+            "12",
+            "→→ dhéag;"
+          ],
+          [
+            "13",
+            "→→ déag;"
+          ],
+          [
+            "20",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "míneas →→;"
-          },
-          {
-            "rbnfrule": "←← pointe →→;"
-          },
-          {
-            "rbnfrule": "a náid;"
-          },
-          {
-            "rbnfrule": "a haon;"
-          },
-          {
-            "rbnfrule": "a dó;"
-          },
-          {
-            "rbnfrule": "a trí;"
-          },
-          {
-            "rbnfrule": "a ceathair;"
-          },
-          {
-            "rbnfrule": "a cúig;"
-          },
-          {
-            "rbnfrule": "a sé;"
-          },
-          {
-            "rbnfrule": "a seacht;"
-          },
-          {
-            "rbnfrule": "a hocht;"
-          },
-          {
-            "rbnfrule": "a naoi;"
-          },
-          {
-            "rbnfrule": "a deich;"
-          },
-          {
-            "rbnfrule": "→→ déag;"
-          },
-          {
-            "rbnfrule": "→→ dhéag;"
-          },
-          {
-            "rbnfrule": "→→ déag;"
-          },
-          {
-            "rbnfrule": "fiche[ →→];"
-          },
-          {
-            "rbnfrule": "tríocha[ →→];"
-          },
-          {
-            "rbnfrule": "daichead[ →→];"
-          },
-          {
-            "rbnfrule": "caoga[ →→];"
-          },
-          {
-            "rbnfrule": "seasca[ →→];"
-          },
-          {
-            "rbnfrule": "seachtó[ →→];"
-          },
-          {
-            "rbnfrule": "ochtó[ →→];"
-          },
-          {
-            "rbnfrule": "nócha[ →→];"
-          },
-          {
-            "rbnfrule": "←%%hundreds←[→%%is-number→];"
-          },
-          {
-            "rbnfrule": "←%%thousands←[, →%spellout-numbering→];"
-          },
-          {
-            "rbnfrule": "←%%millions←[, →%spellout-numbering→];"
-          },
-          {
-            "rbnfrule": "←%%billions←[, →%spellout-numbering→];"
-          },
-          {
-            "rbnfrule": "←%%trillions←[, →%spellout-numbering→];"
-          },
-          {
-            "rbnfrule": "←%%quadrillions←[, →%spellout-numbering→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "míneas →→;"
+          ],
+          [
+            "x.x",
+            "←← pointe →→;"
+          ],
+          [
+            "0",
+            "a náid;"
+          ],
+          [
+            "1",
+            "a haon;"
+          ],
+          [
+            "2",
+            "a dó;"
+          ],
+          [
+            "3",
+            "a trí;"
+          ],
+          [
+            "4",
+            "a ceathair;"
+          ],
+          [
+            "5",
+            "a cúig;"
+          ],
+          [
+            "6",
+            "a sé;"
+          ],
+          [
+            "7",
+            "a seacht;"
+          ],
+          [
+            "8",
+            "a hocht;"
+          ],
+          [
+            "9",
+            "a naoi;"
+          ],
+          [
+            "10",
+            "a deich;"
+          ],
+          [
+            "11",
+            "→→ déag;"
+          ],
+          [
+            "12",
+            "→→ dhéag;"
+          ],
+          [
+            "13",
+            "→→ déag;"
+          ],
+          [
+            "20",
+            "fiche[ →→];"
+          ],
+          [
+            "30",
+            "tríocha[ →→];"
+          ],
+          [
+            "40",
+            "daichead[ →→];"
+          ],
+          [
+            "50",
+            "caoga[ →→];"
+          ],
+          [
+            "60",
+            "seasca[ →→];"
+          ],
+          [
+            "70",
+            "seachtó[ →→];"
+          ],
+          [
+            "80",
+            "ochtó[ →→];"
+          ],
+          [
+            "90",
+            "nócha[ →→];"
+          ],
+          [
+            "100",
+            "←%%hundreds←[→%%is-number→];"
+          ],
+          [
+            "1000",
+            "←%%thousands←[, →%spellout-numbering→];"
+          ],
+          [
+            "1000000",
+            "←%%millions←[, →%spellout-numbering→];"
+          ],
+          [
+            "1000000000",
+            "←%%billions←[, →%spellout-numbering→];"
+          ],
+          [
+            "1000000000000",
+            "←%%trillions←[, →%spellout-numbering→];"
+          ],
+          [
+            "1000000000000000",
+            "←%%quadrillions←[, →%spellout-numbering→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
-        "%is-number": [
-          {
-            "rbnfrule": "' is =%spellout-numbering=;"
-          },
-          {
-            "rbnfrule": "' =%spellout-numbering=;"
-          }
+        "%%is-number": [
+          [
+            "0",
+            "' is =%spellout-numbering=;"
+          ],
+          [
+            "1",
+            "' =%spellout-numbering=;"
+          ]
         ],
-        "%is-numberp": [
-          {
-            "rbnfrule": "' is =%%numberp=;"
-          },
-          {
-            "rbnfrule": "' =%%numberp=;"
-          }
+        "%%is-numberp": [
+          [
+            "0",
+            "' is =%%numberp=;"
+          ],
+          [
+            "1",
+            "' =%%numberp=;"
+          ]
         ],
-        "%numberp": [
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart=;"
-          },
-          {
-            "rbnfrule": "dó dhéag;"
-          },
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart= déag;"
-          },
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart=;"
-          }
+        "%%numberp": [
+          [
+            "0",
+            "=%%spellout-cardinal-prefixpart=;"
+          ],
+          [
+            "12",
+            "dó dhéag;"
+          ],
+          [
+            "13",
+            "=%%spellout-cardinal-prefixpart= déag;"
+          ],
+          [
+            "20",
+            "=%%spellout-cardinal-prefixpart=;"
+          ]
         ],
         "%spellout-cardinal": [
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
-        "%spellout-cardinal-prefixpart": [
-          {
-            "rbnfrule": "náid;"
-          },
-          {
-            "rbnfrule": "aon;"
-          },
-          {
-            "rbnfrule": "dhá;"
-          },
-          {
-            "rbnfrule": "trí;"
-          },
-          {
-            "rbnfrule": "ceithre;"
-          },
-          {
-            "rbnfrule": "cúig;"
-          },
-          {
-            "rbnfrule": "sé;"
-          },
-          {
-            "rbnfrule": "seacht;"
-          },
-          {
-            "rbnfrule": "ocht;"
-          },
-          {
-            "rbnfrule": "naoi;"
-          },
-          {
-            "rbnfrule": "deich;"
-          },
-          {
-            "rbnfrule": "→→;"
-          },
-          {
-            "rbnfrule": "fiche[ is →→];"
-          },
-          {
-            "rbnfrule": "tríocha[ is →→];"
-          },
-          {
-            "rbnfrule": "daichead[ is →→];"
-          },
-          {
-            "rbnfrule": "caoga[ is →→];"
-          },
-          {
-            "rbnfrule": "seasca[ is →→];"
-          },
-          {
-            "rbnfrule": "seachtó[ is →→];"
-          },
-          {
-            "rbnfrule": "ochtó[ is →→];"
-          },
-          {
-            "rbnfrule": "nócha[ is →→];"
-          },
-          {
-            "rbnfrule": "←%%hundreds←[→%%is-numberp→];"
-          },
-          {
-            "rbnfrule": "←%%thousands←[, →%%numberp→];"
-          },
-          {
-            "rbnfrule": "←%%millions←[, →%%numberp→];"
-          },
-          {
-            "rbnfrule": "←%%billions←[, →%%numberp→];"
-          },
-          {
-            "rbnfrule": "←%%trillions←[, →%%numberp→];"
-          },
-          {
-            "rbnfrule": "←%%quadrillions←[, →%%numberp→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+        "%%spellout-cardinal-prefixpart": [
+          [
+            "0",
+            "náid;"
+          ],
+          [
+            "1",
+            "aon;"
+          ],
+          [
+            "2",
+            "dhá;"
+          ],
+          [
+            "3",
+            "trí;"
+          ],
+          [
+            "4",
+            "ceithre;"
+          ],
+          [
+            "5",
+            "cúig;"
+          ],
+          [
+            "6",
+            "sé;"
+          ],
+          [
+            "7",
+            "seacht;"
+          ],
+          [
+            "8",
+            "ocht;"
+          ],
+          [
+            "9",
+            "naoi;"
+          ],
+          [
+            "10",
+            "deich;"
+          ],
+          [
+            "11",
+            "→→;"
+          ],
+          [
+            "20",
+            "fiche[ is →→];"
+          ],
+          [
+            "30",
+            "tríocha[ is →→];"
+          ],
+          [
+            "40",
+            "daichead[ is →→];"
+          ],
+          [
+            "50",
+            "caoga[ is →→];"
+          ],
+          [
+            "60",
+            "seasca[ is →→];"
+          ],
+          [
+            "70",
+            "seachtó[ is →→];"
+          ],
+          [
+            "80",
+            "ochtó[ is →→];"
+          ],
+          [
+            "90",
+            "nócha[ is →→];"
+          ],
+          [
+            "100",
+            "←%%hundreds←[→%%is-numberp→];"
+          ],
+          [
+            "1000",
+            "←%%thousands←[, →%%numberp→];"
+          ],
+          [
+            "1000000",
+            "←%%millions←[, →%%numberp→];"
+          ],
+          [
+            "1000000000",
+            "←%%billions←[, →%%numberp→];"
+          ],
+          [
+            "1000000000000",
+            "←%%trillions←[, →%%numberp→];"
+          ],
+          [
+            "1000000000000000",
+            "←%%quadrillions←[, →%%numberp→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
-        "%is": [
-          {
-            "rbnfrule": "' is;"
-          },
-          {
-            "rbnfrule": ";"
-          },
-          {
-            "rbnfrule": "→→;"
-          }
+        "%%is": [
+          [
+            "0",
+            "' is;"
+          ],
+          [
+            "1",
+            ";"
+          ],
+          [
+            "10",
+            "→→;"
+          ]
         ],
-        "%hundreds": [
-          {
-            "rbnfrule": "céad;"
-          },
-          {
-            "rbnfrule": "dhá chéad;"
-          },
-          {
-            "rbnfrule": "trí chéad;"
-          },
-          {
-            "rbnfrule": "ceithre chéad;"
-          },
-          {
-            "rbnfrule": "cúig chéad;"
-          },
-          {
-            "rbnfrule": "sé chéad;"
-          },
-          {
-            "rbnfrule": "seacht gcéad;"
-          },
-          {
-            "rbnfrule": "ocht gcéad;"
-          },
-          {
-            "rbnfrule": "naoi gcéad;"
-          }
+        "%%hundreds": [
+          [
+            "1",
+            "céad;"
+          ],
+          [
+            "2",
+            "dhá chéad;"
+          ],
+          [
+            "3",
+            "trí chéad;"
+          ],
+          [
+            "4",
+            "ceithre chéad;"
+          ],
+          [
+            "5",
+            "cúig chéad;"
+          ],
+          [
+            "6",
+            "sé chéad;"
+          ],
+          [
+            "7",
+            "seacht gcéad;"
+          ],
+          [
+            "8",
+            "ocht gcéad;"
+          ],
+          [
+            "9",
+            "naoi gcéad;"
+          ]
         ],
-        "%thousands": [
-          {
-            "rbnfrule": "míle;"
-          },
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart= =%%thousandp=;"
-          },
-          {
-            "rbnfrule": "←%%hundreds←→%%is-thousands→;"
-          }
+        "%%thousands": [
+          [
+            "1",
+            "míle;"
+          ],
+          [
+            "2",
+            "=%%spellout-cardinal-prefixpart= =%%thousandp=;"
+          ],
+          [
+            "100",
+            "←%%hundreds←→%%is-thousands→;"
+          ]
         ],
-        "%thousandp": [
-          {
-            "rbnfrule": "=%%thousand=;"
-          },
-          {
-            "rbnfrule": "=%%thousand= dhéag;"
-          },
-          {
-            "rbnfrule": "=%%thousand=;"
-          }
+        "%%thousandp": [
+          [
+            "2",
+            "=%%thousand=;"
+          ],
+          [
+            "11",
+            "=%%thousand= dhéag;"
+          ],
+          [
+            "20",
+            "=%%thousand=;"
+          ]
         ],
-        "%thousand": [
-          {
-            "rbnfrule": "míle;"
-          },
-          {
-            "rbnfrule": "mhíle;"
-          },
-          {
-            "rbnfrule": "míle;"
-          },
-          {
-            "rbnfrule": "→→;"
-          }
+        "%%thousand": [
+          [
+            "0",
+            "míle;"
+          ],
+          [
+            "1",
+            "mhíle;"
+          ],
+          [
+            "7",
+            "míle;"
+          ],
+          [
+            "11",
+            "→→;"
+          ]
         ],
-        "%is-thousands": [
-          {
-            "rbnfrule": "' =%%thousand=;"
-          },
-          {
-            "rbnfrule": "' is =%%spellout-cardinal-prefixpart= =%%thousand=;"
-          },
-          {
-            "rbnfrule": "' is =%%thousands=;"
-          },
-          {
-            "rbnfrule": "=%%is= =%%thousands=;"
-          }
+        "%%is-thousands": [
+          [
+            "0",
+            "' =%%thousand=;"
+          ],
+          [
+            "1",
+            "' is =%%spellout-cardinal-prefixpart= =%%thousand=;"
+          ],
+          [
+            "11",
+            "' is =%%thousands=;"
+          ],
+          [
+            "20",
+            "=%%is= =%%thousands=;"
+          ]
         ],
-        "%millions": [
-          {
-            "rbnfrule": "milliún;"
-          },
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart= =%%millionsp=;"
-          },
-          {
-            "rbnfrule": "←%%hundreds←→%%is-millions→;"
-          }
+        "%%millions": [
+          [
+            "1",
+            "milliún;"
+          ],
+          [
+            "2",
+            "=%%spellout-cardinal-prefixpart= =%%millionsp=;"
+          ],
+          [
+            "100",
+            "←%%hundreds←→%%is-millions→;"
+          ]
         ],
-        "%millionsp": [
-          {
-            "rbnfrule": "=%%million=;"
-          },
-          {
-            "rbnfrule": "=%%million= déag;"
-          },
-          {
-            "rbnfrule": "=%%million=;"
-          }
+        "%%millionsp": [
+          [
+            "2",
+            "=%%million=;"
+          ],
+          [
+            "11",
+            "=%%million= déag;"
+          ],
+          [
+            "20",
+            "=%%million=;"
+          ]
         ],
-        "%million": [
-          {
-            "rbnfrule": "milliún;"
-          },
-          {
-            "rbnfrule": "mhilliún;"
-          },
-          {
-            "rbnfrule": "milliún;"
-          },
-          {
-            "rbnfrule": "→→;"
-          }
+        "%%million": [
+          [
+            "0",
+            "milliún;"
+          ],
+          [
+            "1",
+            "mhilliún;"
+          ],
+          [
+            "7",
+            "milliún;"
+          ],
+          [
+            "11",
+            "→→;"
+          ]
         ],
-        "%is-millions": [
-          {
-            "rbnfrule": "' =%%million=;"
-          },
-          {
-            "rbnfrule": "' is =%%spellout-cardinal-prefixpart= =%%million=;"
-          },
-          {
-            "rbnfrule": "' is =%%millions=;"
-          },
-          {
-            "rbnfrule": "=%%is= =%%millions=;"
-          }
+        "%%is-millions": [
+          [
+            "0",
+            "' =%%million=;"
+          ],
+          [
+            "1",
+            "' is =%%spellout-cardinal-prefixpart= =%%million=;"
+          ],
+          [
+            "11",
+            "' is =%%millions=;"
+          ],
+          [
+            "20",
+            "=%%is= =%%millions=;"
+          ]
         ],
-        "%billions": [
-          {
-            "rbnfrule": "billiún;"
-          },
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart= billiún;"
-          },
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart= billiún déag;"
-          },
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart= billiún;"
-          },
-          {
-            "rbnfrule": "←%%hundreds←→%%is-billions→;"
-          }
+        "%%billions": [
+          [
+            "1",
+            "billiún;"
+          ],
+          [
+            "2",
+            "=%%spellout-cardinal-prefixpart= billiún;"
+          ],
+          [
+            "11",
+            "=%%spellout-cardinal-prefixpart= billiún déag;"
+          ],
+          [
+            "20",
+            "=%%spellout-cardinal-prefixpart= billiún;"
+          ],
+          [
+            "100",
+            "←%%hundreds←→%%is-billions→;"
+          ]
         ],
-        "%is-billions": [
-          {
-            "rbnfrule": "' billiún;"
-          },
-          {
-            "rbnfrule": "' is =%%spellout-cardinal-prefixpart= billiún;"
-          },
-          {
-            "rbnfrule": "' is =%%billions=;"
-          },
-          {
-            "rbnfrule": "=%%is= =%%billions=;"
-          }
+        "%%is-billions": [
+          [
+            "0",
+            "' billiún;"
+          ],
+          [
+            "1",
+            "' is =%%spellout-cardinal-prefixpart= billiún;"
+          ],
+          [
+            "11",
+            "' is =%%billions=;"
+          ],
+          [
+            "20",
+            "=%%is= =%%billions=;"
+          ]
         ],
-        "%trillions": [
-          {
-            "rbnfrule": "thrilliún;"
-          },
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart= =%%trillionsp=;"
-          },
-          {
-            "rbnfrule": "←%%hundreds←→%%is-trillions→;"
-          }
+        "%%trillions": [
+          [
+            "1",
+            "thrilliún;"
+          ],
+          [
+            "2",
+            "=%%spellout-cardinal-prefixpart= =%%trillionsp=;"
+          ],
+          [
+            "100",
+            "←%%hundreds←→%%is-trillions→;"
+          ]
         ],
-        "%trillionsp": [
-          {
-            "rbnfrule": "=%%trillion=;"
-          },
-          {
-            "rbnfrule": "=%%trillion= déag;"
-          },
-          {
-            "rbnfrule": "=%%trillion=;"
-          }
+        "%%trillionsp": [
+          [
+            "2",
+            "=%%trillion=;"
+          ],
+          [
+            "11",
+            "=%%trillion= déag;"
+          ],
+          [
+            "20",
+            "=%%trillion=;"
+          ]
         ],
-        "%trillion": [
-          {
-            "rbnfrule": "dtrilliún;"
-          },
-          {
-            "rbnfrule": "thrilliún;"
-          },
-          {
-            "rbnfrule": "dtrilliún;"
-          },
-          {
-            "rbnfrule": "→→;"
-          }
+        "%%trillion": [
+          [
+            "0",
+            "dtrilliún;"
+          ],
+          [
+            "1",
+            "thrilliún;"
+          ],
+          [
+            "7",
+            "dtrilliún;"
+          ],
+          [
+            "11",
+            "→→;"
+          ]
         ],
-        "%is-trillions": [
-          {
-            "rbnfrule": "' =%%trillion=;"
-          },
-          {
-            "rbnfrule": "' is =%%spellout-cardinal-prefixpart= =%%trillion=;"
-          },
-          {
-            "rbnfrule": "' is =%%trillions=;"
-          },
-          {
-            "rbnfrule": "=%%is= =%%trillions=;"
-          }
+        "%%is-trillions": [
+          [
+            "0",
+            "' =%%trillion=;"
+          ],
+          [
+            "1",
+            "' is =%%spellout-cardinal-prefixpart= =%%trillion=;"
+          ],
+          [
+            "11",
+            "' is =%%trillions=;"
+          ],
+          [
+            "20",
+            "=%%is= =%%trillions=;"
+          ]
         ],
-        "%quadrillions": [
-          {
-            "rbnfrule": "quadrilliún;"
-          },
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart= quadrilliún;"
-          },
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart= quadrilliún déag;"
-          },
-          {
-            "rbnfrule": "=%%spellout-cardinal-prefixpart= quadrilliún;"
-          },
-          {
-            "rbnfrule": "←%%hundreds←→%%is-quadrillions→;"
-          }
+        "%%quadrillions": [
+          [
+            "1",
+            "quadrilliún;"
+          ],
+          [
+            "2",
+            "=%%spellout-cardinal-prefixpart= quadrilliún;"
+          ],
+          [
+            "11",
+            "=%%spellout-cardinal-prefixpart= quadrilliún déag;"
+          ],
+          [
+            "20",
+            "=%%spellout-cardinal-prefixpart= quadrilliún;"
+          ],
+          [
+            "100",
+            "←%%hundreds←→%%is-quadrillions→;"
+          ]
         ],
-        "%is-quadrillions": [
-          {
-            "rbnfrule": "' quadrilliún;"
-          },
-          {
-            "rbnfrule": "' is =%%spellout-cardinal-prefixpart= quadrilliún;"
-          },
-          {
-            "rbnfrule": "' is =%%quadrillions=;"
-          },
-          {
-            "rbnfrule": "=%%is= =%%quadrillions=;"
-          }
+        "%%is-quadrillions": [
+          [
+            "0",
+            "' quadrilliún;"
+          ],
+          [
+            "1",
+            "' is =%%spellout-cardinal-prefixpart= quadrilliún;"
+          ],
+          [
+            "11",
+            "' is =%%quadrillions=;"
+          ],
+          [
+            "20",
+            "=%%is= =%%quadrillions=;"
+          ]
         ]
       }
     }

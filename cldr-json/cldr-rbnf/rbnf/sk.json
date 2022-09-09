@@ -1,230 +1,302 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "sk"
     },
     "rbnf": {
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          {
-            "rbnfrule": "=0.0=;"
-          },
-          {
-            "rbnfrule": "=%spellout-numbering=;"
-          }
+          [
+            "x.x",
+            "=0.0=;"
+          ],
+          [
+            "0",
+            "=%spellout-numbering=;"
+          ]
         ],
         "%spellout-numbering": [
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          }
+          [
+            "0",
+            "=%spellout-cardinal-masculine=;"
+          ]
         ],
         "%spellout-cardinal-masculine": [
-          {
-            "rbnfrule": "mínus →→;"
-          },
-          {
-            "rbnfrule": "←← čiarka →→;"
-          },
-          {
-            "rbnfrule": "nula;"
-          },
-          {
-            "rbnfrule": "jeden;"
-          },
-          {
-            "rbnfrule": "dva;"
-          },
-          {
-            "rbnfrule": "tri;"
-          },
-          {
-            "rbnfrule": "štyri;"
-          },
-          {
-            "rbnfrule": "päť;"
-          },
-          {
-            "rbnfrule": "šesť;"
-          },
-          {
-            "rbnfrule": "sedem;"
-          },
-          {
-            "rbnfrule": "osem;"
-          },
-          {
-            "rbnfrule": "deväť;"
-          },
-          {
-            "rbnfrule": "desať;"
-          },
-          {
-            "rbnfrule": "jedenásť;"
-          },
-          {
-            "rbnfrule": "dvanásť;"
-          },
-          {
-            "rbnfrule": "trinásť;"
-          },
-          {
-            "rbnfrule": "štrnásť;"
-          },
-          {
-            "rbnfrule": "pätnásť;"
-          },
-          {
-            "rbnfrule": "šestnásť;"
-          },
-          {
-            "rbnfrule": "sedemnásť;"
-          },
-          {
-            "rbnfrule": "osemnásť;"
-          },
-          {
-            "rbnfrule": "devätnásť;"
-          },
-          {
-            "rbnfrule": "dvadsať[­→→];"
-          },
-          {
-            "rbnfrule": "tridsať[­→→];"
-          },
-          {
-            "rbnfrule": "štyridsať[­→→];"
-          },
-          {
-            "rbnfrule": "←←desiat[­→→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←­sto[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíc[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{milión}few{milióny}other{miliónov})$[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{miliarda}few{miliardy}other{miliardov})$[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{bilión}few{bilióny}other{biliónov})$[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{biliarda}few{biliardy}other{biliardov})$[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "mínus →→;"
+          ],
+          [
+            "x.x",
+            "←← čiarka →→;"
+          ],
+          [
+            "0",
+            "nula;"
+          ],
+          [
+            "1",
+            "jeden;"
+          ],
+          [
+            "2",
+            "dva;"
+          ],
+          [
+            "3",
+            "tri;"
+          ],
+          [
+            "4",
+            "štyri;"
+          ],
+          [
+            "5",
+            "päť;"
+          ],
+          [
+            "6",
+            "šesť;"
+          ],
+          [
+            "7",
+            "sedem;"
+          ],
+          [
+            "8",
+            "osem;"
+          ],
+          [
+            "9",
+            "deväť;"
+          ],
+          [
+            "10",
+            "desať;"
+          ],
+          [
+            "11",
+            "jedenásť;"
+          ],
+          [
+            "12",
+            "dvanásť;"
+          ],
+          [
+            "13",
+            "trinásť;"
+          ],
+          [
+            "14",
+            "štrnásť;"
+          ],
+          [
+            "15",
+            "pätnásť;"
+          ],
+          [
+            "16",
+            "šestnásť;"
+          ],
+          [
+            "17",
+            "sedemnásť;"
+          ],
+          [
+            "18",
+            "osemnásť;"
+          ],
+          [
+            "19",
+            "devätnásť;"
+          ],
+          [
+            "20",
+            "dvadsať[­→→];"
+          ],
+          [
+            "30",
+            "tridsať[­→→];"
+          ],
+          [
+            "40",
+            "štyridsať[­→→];"
+          ],
+          [
+            "50",
+            "←←desiat[­→→];"
+          ],
+          [
+            "100",
+            "←%spellout-cardinal-feminine←­sto[ →→];"
+          ],
+          [
+            "1000",
+            "←%spellout-cardinal-feminine← tisíc[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{milión}few{milióny}other{miliónov})$[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{miliarda}few{miliardy}other{miliardov})$[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{bilión}few{bilióny}other{biliónov})$[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{biliarda}few{biliardy}other{biliardov})$[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-neuter": [
-          {
-            "rbnfrule": "mínus →→;"
-          },
-          {
-            "rbnfrule": "←← čiarka →→;"
-          },
-          {
-            "rbnfrule": "nula;"
-          },
-          {
-            "rbnfrule": "jedno;"
-          },
-          {
-            "rbnfrule": "dve;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          },
-          {
-            "rbnfrule": "dvadsať[­→→];"
-          },
-          {
-            "rbnfrule": "tridsať[­→→];"
-          },
-          {
-            "rbnfrule": "štyridsať[­→→];"
-          },
-          {
-            "rbnfrule": "←←desiat[­→→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←­sto[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíc[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{milión}few{milióny}other{miliónov})$[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{miliarda}few{miliardy}other{miliardov})$[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{bilión}few{bilióny}other{biliónov})$[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{biliarda}few{biliardy}other{biliardov})$[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "mínus →→;"
+          ],
+          [
+            "x.x",
+            "←← čiarka →→;"
+          ],
+          [
+            "0",
+            "nula;"
+          ],
+          [
+            "1",
+            "jedno;"
+          ],
+          [
+            "2",
+            "dve;"
+          ],
+          [
+            "3",
+            "=%spellout-cardinal-masculine=;"
+          ],
+          [
+            "20",
+            "dvadsať[­→→];"
+          ],
+          [
+            "30",
+            "tridsať[­→→];"
+          ],
+          [
+            "40",
+            "štyridsať[­→→];"
+          ],
+          [
+            "50",
+            "←←desiat[­→→];"
+          ],
+          [
+            "100",
+            "←%spellout-cardinal-feminine←­sto[ →→];"
+          ],
+          [
+            "1000",
+            "←%spellout-cardinal-feminine← tisíc[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{milión}few{milióny}other{miliónov})$[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{miliarda}few{miliardy}other{miliardov})$[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{bilión}few{bilióny}other{biliónov})$[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{biliarda}few{biliardy}other{biliardov})$[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ],
         "%spellout-cardinal-feminine": [
-          {
-            "rbnfrule": "mínus →→;"
-          },
-          {
-            "rbnfrule": "←← čiarka →→;"
-          },
-          {
-            "rbnfrule": "nula;"
-          },
-          {
-            "rbnfrule": "jedna;"
-          },
-          {
-            "rbnfrule": "dve;"
-          },
-          {
-            "rbnfrule": "=%spellout-cardinal-masculine=;"
-          },
-          {
-            "rbnfrule": "dvadsať[­→→];"
-          },
-          {
-            "rbnfrule": "tridsať[­→→];"
-          },
-          {
-            "rbnfrule": "štyridsať[­→→];"
-          },
-          {
-            "rbnfrule": "←←desiat[­→→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine←­sto[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-feminine← tisíc[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{milión}few{milióny}other{miliónov})$[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{miliarda}few{miliardy}other{miliardov})$[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{bilión}few{bilióny}other{biliónov})$[ →→];"
-          },
-          {
-            "rbnfrule": "←%spellout-cardinal-masculine← $(cardinal,one{biliarda}few{biliardy}other{biliardov})$[ →→];"
-          },
-          {
-            "rbnfrule": "=#,##0=;"
-          }
+          [
+            "-x",
+            "mínus →→;"
+          ],
+          [
+            "x.x",
+            "←← čiarka →→;"
+          ],
+          [
+            "0",
+            "nula;"
+          ],
+          [
+            "1",
+            "jedna;"
+          ],
+          [
+            "2",
+            "dve;"
+          ],
+          [
+            "3",
+            "=%spellout-cardinal-masculine=;"
+          ],
+          [
+            "20",
+            "dvadsať[­→→];"
+          ],
+          [
+            "30",
+            "tridsať[­→→];"
+          ],
+          [
+            "40",
+            "štyridsať[­→→];"
+          ],
+          [
+            "50",
+            "←←desiat[­→→];"
+          ],
+          [
+            "100",
+            "←%spellout-cardinal-feminine←­sto[ →→];"
+          ],
+          [
+            "1000",
+            "←%spellout-cardinal-feminine← tisíc[ →→];"
+          ],
+          [
+            "1000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{milión}few{milióny}other{miliónov})$[ →→];"
+          ],
+          [
+            "1000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{miliarda}few{miliardy}other{miliardov})$[ →→];"
+          ],
+          [
+            "1000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{bilión}few{bilióny}other{biliónov})$[ →→];"
+          ],
+          [
+            "1000000000000000",
+            "←%spellout-cardinal-masculine← $(cardinal,one{biliarda}few{biliardy}other{biliardov})$[ →→];"
+          ],
+          [
+            "1000000000000000000",
+            "=#,##0=;"
+          ]
         ]
       }
     }

@@ -1,79 +1,99 @@
 {
   "rbnf": {
     "identity": {
-      "version": {},
+      "version": {
+        "_cldrVersion": "42"
+      },
       "language": "es",
       "territory": "419"
     },
     "rbnf": {
       "OrdinalRules": {
-        "%dord-mascabbrev": [
-          {
-            "rbnfrule": "º;"
-          },
-          {
-            "rbnfrule": "ᵉʳ;"
-          },
-          {
-            "rbnfrule": "º;"
-          },
-          {
-            "rbnfrule": "ᵉʳ;"
-          },
-          {
-            "rbnfrule": "º;"
-          },
-          {
-            "rbnfrule": "→→;"
-          },
-          {
-            "rbnfrule": "→→;"
-          }
+        "%%dord-mascabbrev": [
+          [
+            "0",
+            "º;"
+          ],
+          [
+            "1",
+            "ᵉʳ;"
+          ],
+          [
+            "2",
+            "º;"
+          ],
+          [
+            "3",
+            "ᵉʳ;"
+          ],
+          [
+            "4",
+            "º;"
+          ],
+          [
+            "20",
+            "→→;"
+          ],
+          [
+            "100",
+            "→→;"
+          ]
         ],
         "%digits-ordinal-masculine-adjective": [
-          {
-            "rbnfrule": "−→→;"
-          },
-          {
-            "rbnfrule": "=#,##0==%%dord-mascabbrev=.;"
-          }
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0==%%dord-mascabbrev=.;"
+          ]
         ],
         "%digits-ordinal-masculine": [
-          {
-            "rbnfrule": "−→→;"
-          },
-          {
-            "rbnfrule": "=#,##0=º.;"
-          }
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0=º.;"
+          ]
         ],
         "%digits-ordinal-feminine": [
-          {
-            "rbnfrule": "−→→;"
-          },
-          {
-            "rbnfrule": "=#,##0=ª.;"
-          }
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0=ª.;"
+          ]
         ],
         "%digits-ordinal-masculine-plural": [
-          {
-            "rbnfrule": "−→→;"
-          },
-          {
-            "rbnfrule": "=#,##0=ᵒˢ.;"
-          }
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0=ᵒˢ.;"
+          ]
         ],
         "%digits-ordinal-feminine-plural": [
-          {
-            "rbnfrule": "−→→;"
-          },
-          {
-            "rbnfrule": "=#,##0=ᵃˢ.;"
-          }
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0=ᵃˢ.;"
+          ]
         ],
         "%digits-ordinal": [
-          {
-            "rbnfrule": "=%digits-ordinal-masculine=;"
-          }
+          [
+            "0",
+            "=%digits-ordinal-masculine=;"
+          ]
         ]
       }
     }
