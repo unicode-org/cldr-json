@@ -1,577 +1,445 @@
 {
   "rbnf": {
     "identity": {
-      "version": {
-        "_cldrVersion": "42"
-      },
+      "version": {},
       "language": "yue",
       "script": "Hans"
     },
     "rbnf": {
       "OrdinalRules": {
         "%digits-ordinal": [
-          [
-            "-x",
-            "第−→#,##0→;"
-          ],
-          [
-            "0",
-            "第=#,##0=;"
-          ]
+          {
+            "rbnfrule": "第−→#,##0→;"
+          },
+          {
+            "rbnfrule": "第=#,##0=;"
+          }
         ]
       },
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          [
-            "x.x",
-            "=0.0=;"
-          ],
-          [
-            "0",
-            "=%spellout-numbering=;"
-          ],
-          [
-            "1000",
-            "=%%spellout-numbering-year-digits=;"
-          ],
-          [
-            "10000",
-            "=%spellout-numbering=;"
-          ]
+          {
+            "rbnfrule": "=0.0=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "=%%spellout-numbering-year-digits=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          }
         ],
-        "%%spellout-numbering-year-digits": [
-          [
-            "0",
-            "=%spellout-numbering=;"
-          ],
-          [
-            "10",
-            "←←→→→;"
-          ],
-          [
-            "100",
-            "←←→→→;"
-          ],
-          [
-            "1000",
-            "←←→→→;"
-          ]
+        "%spellout-numbering-year-digits": [
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "←←→→→;"
+          },
+          {
+            "rbnfrule": "←←→→→;"
+          },
+          {
+            "rbnfrule": "←←→→→;"
+          }
         ],
         "%spellout-numbering": [
-          [
-            "-x",
-            "负→→;"
-          ],
-          [
-            "x.x",
-            "←←点→→→;"
-          ],
-          [
-            "0",
-            "零;"
-          ],
-          [
-            "1",
-            "一;"
-          ],
-          [
-            "2",
-            "二;"
-          ],
-          [
-            "3",
-            "三;"
-          ],
-          [
-            "4",
-            "四;"
-          ],
-          [
-            "5",
-            "五;"
-          ],
-          [
-            "6",
-            "六;"
-          ],
-          [
-            "7",
-            "七;"
-          ],
-          [
-            "8",
-            "八;"
-          ],
-          [
-            "9",
-            "九;"
-          ],
-          [
-            "10",
-            "十[→→];"
-          ],
-          [
-            "20",
-            "←←十[→→];"
-          ],
-          [
-            "100",
-            "←←百[→%%number2→];"
-          ],
-          [
-            "1000",
-            "←←千[→%%number3→];"
-          ],
-          [
-            "10000",
-            "←←万[→%%number4→];"
-          ],
-          [
-            "100000000",
-            "←←亿[→%%number5→];"
-          ],
-          [
-            "1000000000000",
-            "←←兆[→%%number8→];"
-          ],
-          [
-            "10000000000000000",
-            "←←京[→%%number13→];"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=;"
-          ]
+          {
+            "rbnfrule": "负→→;"
+          },
+          {
+            "rbnfrule": "←←点→→→;"
+          },
+          {
+            "rbnfrule": "零;"
+          },
+          {
+            "rbnfrule": "一;"
+          },
+          {
+            "rbnfrule": "二;"
+          },
+          {
+            "rbnfrule": "三;"
+          },
+          {
+            "rbnfrule": "四;"
+          },
+          {
+            "rbnfrule": "五;"
+          },
+          {
+            "rbnfrule": "六;"
+          },
+          {
+            "rbnfrule": "七;"
+          },
+          {
+            "rbnfrule": "八;"
+          },
+          {
+            "rbnfrule": "九;"
+          },
+          {
+            "rbnfrule": "十[→→];"
+          },
+          {
+            "rbnfrule": "←←十[→→];"
+          },
+          {
+            "rbnfrule": "←←百[→%%number2→];"
+          },
+          {
+            "rbnfrule": "←←千[→%%number3→];"
+          },
+          {
+            "rbnfrule": "←←万[→%%number4→];"
+          },
+          {
+            "rbnfrule": "←←亿[→%%number5→];"
+          },
+          {
+            "rbnfrule": "←←兆[→%%number8→];"
+          },
+          {
+            "rbnfrule": "←←京[→%%number13→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ],
-        "%%number2": [
-          [
-            "1",
-            "零=%spellout-numbering=;"
-          ],
-          [
-            "10",
-            "一=%spellout-numbering=;"
-          ],
-          [
-            "20",
-            "=%spellout-numbering=;"
-          ]
+        "%number2": [
+          {
+            "rbnfrule": "零=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "一=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          }
         ],
-        "%%number3": [
-          [
-            "1",
-            "零=%spellout-numbering=;"
-          ],
-          [
-            "10",
-            "零一=%spellout-numbering=;"
-          ],
-          [
-            "20",
-            "零=%spellout-numbering=;"
-          ],
-          [
-            "100",
-            "=%spellout-numbering=;"
-          ]
+        "%number3": [
+          {
+            "rbnfrule": "零=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "零一=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "零=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          }
         ],
-        "%%number4": [
-          [
-            "1",
-            "零=%spellout-numbering=;"
-          ],
-          [
-            "10",
-            "零一=%spellout-numbering=;"
-          ],
-          [
-            "20",
-            "零=%spellout-numbering=;"
-          ],
-          [
-            "1000",
-            "=%spellout-numbering=;"
-          ]
+        "%number4": [
+          {
+            "rbnfrule": "零=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "零一=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "零=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          }
         ],
-        "%%number5": [
-          [
-            "1",
-            "零=%spellout-numbering=;"
-          ],
-          [
-            "10",
-            "零一=%spellout-numbering=;"
-          ],
-          [
-            "20",
-            "零=%spellout-numbering=;"
-          ],
-          [
-            "10000",
-            "=%spellout-numbering=;"
-          ]
+        "%number5": [
+          {
+            "rbnfrule": "零=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "零一=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "零=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          }
         ],
-        "%%number8": [
-          [
-            "1",
-            "零=%spellout-numbering=;"
-          ],
-          [
-            "10",
-            "零一=%spellout-numbering=;"
-          ],
-          [
-            "20",
-            "零=%spellout-numbering=;"
-          ],
-          [
-            "10000000",
-            "=%spellout-numbering=;"
-          ]
+        "%number8": [
+          {
+            "rbnfrule": "零=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "零一=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "零=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          }
         ],
-        "%%number13": [
-          [
-            "1",
-            "零=%spellout-numbering=;"
-          ],
-          [
-            "10",
-            "零一=%spellout-numbering=;"
-          ],
-          [
-            "20",
-            "零=%spellout-numbering=;"
-          ],
-          [
-            "1000000000000",
-            "=%spellout-numbering=;"
-          ]
+        "%number13": [
+          {
+            "rbnfrule": "零=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "零一=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "零=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          }
         ],
         "%spellout-cardinal-financial": [
-          [
-            "-x",
-            "负→→;"
-          ],
-          [
-            "x.x",
-            "←←点→→→;"
-          ],
-          [
-            "0",
-            "零;"
-          ],
-          [
-            "1",
-            "壹;"
-          ],
-          [
-            "2",
-            "贰;"
-          ],
-          [
-            "3",
-            "叁;"
-          ],
-          [
-            "4",
-            "肆;"
-          ],
-          [
-            "5",
-            "伍;"
-          ],
-          [
-            "6",
-            "陆;"
-          ],
-          [
-            "7",
-            "柒;"
-          ],
-          [
-            "8",
-            "捌;"
-          ],
-          [
-            "9",
-            "玖;"
-          ],
-          [
-            "10",
-            "拾[→→];"
-          ],
-          [
-            "20",
-            "←←拾[→→];"
-          ],
-          [
-            "100",
-            "←←佰[→%%financialnumber2→];"
-          ],
-          [
-            "1000",
-            "←←仟[→%%financialnumber3→];"
-          ],
-          [
-            "10000",
-            "←%spellout-cardinal-financial←万[→%%financialnumber4→];"
-          ],
-          [
-            "100000000",
-            "←%spellout-cardinal-financial←亿[→%%financialnumber5→];"
-          ],
-          [
-            "1000000000000",
-            "←%spellout-cardinal-financial←兆[→%%financialnumber8→];"
-          ],
-          [
-            "10000000000000000",
-            "←%spellout-cardinal-financial←京[→%%financialnumber13→];"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=;"
-          ]
+          {
+            "rbnfrule": "负→→;"
+          },
+          {
+            "rbnfrule": "←←点→→→;"
+          },
+          {
+            "rbnfrule": "零;"
+          },
+          {
+            "rbnfrule": "壹;"
+          },
+          {
+            "rbnfrule": "贰;"
+          },
+          {
+            "rbnfrule": "叁;"
+          },
+          {
+            "rbnfrule": "肆;"
+          },
+          {
+            "rbnfrule": "伍;"
+          },
+          {
+            "rbnfrule": "陆;"
+          },
+          {
+            "rbnfrule": "柒;"
+          },
+          {
+            "rbnfrule": "捌;"
+          },
+          {
+            "rbnfrule": "玖;"
+          },
+          {
+            "rbnfrule": "拾[→→];"
+          },
+          {
+            "rbnfrule": "←←拾[→→];"
+          },
+          {
+            "rbnfrule": "←←佰[→%%financialnumber2→];"
+          },
+          {
+            "rbnfrule": "←←仟[→%%financialnumber3→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-financial←万[→%%financialnumber4→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-financial←亿[→%%financialnumber5→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-financial←兆[→%%financialnumber8→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-financial←京[→%%financialnumber13→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ],
-        "%%financialnumber2": [
-          [
-            "1",
-            "零=%spellout-cardinal-financial=;"
-          ],
-          [
-            "10",
-            "壹=%spellout-cardinal-financial=;"
-          ],
-          [
-            "20",
-            "=%spellout-cardinal-financial=;"
-          ]
+        "%financialnumber2": [
+          {
+            "rbnfrule": "零=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "壹=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-financial=;"
+          }
         ],
-        "%%financialnumber3": [
-          [
-            "1",
-            "零=%spellout-cardinal-financial=;"
-          ],
-          [
-            "10",
-            "零壹=%spellout-cardinal-financial=;"
-          ],
-          [
-            "20",
-            "零=%spellout-cardinal-financial=;"
-          ],
-          [
-            "100",
-            "=%spellout-cardinal-financial=;"
-          ]
+        "%financialnumber3": [
+          {
+            "rbnfrule": "零=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "零壹=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "零=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-financial=;"
+          }
         ],
-        "%%financialnumber4": [
-          [
-            "1",
-            "零=%spellout-cardinal-financial=;"
-          ],
-          [
-            "10",
-            "零壹=%spellout-cardinal-financial=;"
-          ],
-          [
-            "20",
-            "零=%spellout-cardinal-financial=;"
-          ],
-          [
-            "1000",
-            "=%spellout-cardinal-financial=;"
-          ]
+        "%financialnumber4": [
+          {
+            "rbnfrule": "零=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "零壹=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "零=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-financial=;"
+          }
         ],
-        "%%financialnumber5": [
-          [
-            "1",
-            "零=%spellout-cardinal-financial=;"
-          ],
-          [
-            "10",
-            "零壹=%spellout-cardinal-financial=;"
-          ],
-          [
-            "20",
-            "零=%spellout-cardinal-financial=;"
-          ],
-          [
-            "10000",
-            "=%spellout-cardinal-financial=;"
-          ]
+        "%financialnumber5": [
+          {
+            "rbnfrule": "零=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "零壹=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "零=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-financial=;"
+          }
         ],
-        "%%financialnumber8": [
-          [
-            "1",
-            "零=%spellout-cardinal-financial=;"
-          ],
-          [
-            "10",
-            "零壹=%spellout-cardinal-financial=;"
-          ],
-          [
-            "20",
-            "零=%spellout-cardinal-financial=;"
-          ],
-          [
-            "10000000",
-            "=%spellout-cardinal-financial=;"
-          ]
+        "%financialnumber8": [
+          {
+            "rbnfrule": "零=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "零壹=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "零=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-financial=;"
+          }
         ],
-        "%%financialnumber13": [
-          [
-            "1",
-            "零=%spellout-cardinal-financial=;"
-          ],
-          [
-            "10",
-            "零壹=%spellout-cardinal-financial=;"
-          ],
-          [
-            "20",
-            "零=%spellout-cardinal-financial=;"
-          ],
-          [
-            "1000000000000",
-            "=%spellout-cardinal-financial=;"
-          ]
+        "%financialnumber13": [
+          {
+            "rbnfrule": "零=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "零壹=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "零=%spellout-cardinal-financial=;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-financial=;"
+          }
         ],
         "%spellout-cardinal": [
-          [
-            "-x",
-            "负→→;"
-          ],
-          [
-            "x.x",
-            "←←点→→→;"
-          ],
-          [
-            "0",
-            "零;"
-          ],
-          [
-            "1",
-            "一;"
-          ],
-          [
-            "2",
-            "二;"
-          ],
-          [
-            "3",
-            "三;"
-          ],
-          [
-            "4",
-            "四;"
-          ],
-          [
-            "5",
-            "五;"
-          ],
-          [
-            "6",
-            "六;"
-          ],
-          [
-            "7",
-            "七;"
-          ],
-          [
-            "8",
-            "八;"
-          ],
-          [
-            "9",
-            "九;"
-          ],
-          [
-            "10",
-            "←%%cardinal-twenties←十[→%spellout-numbering→];"
-          ],
-          [
-            "21",
-            "廿[→%spellout-numbering→];"
-          ],
-          [
-            "30",
-            "←%spellout-numbering←十[→→];"
-          ],
-          [
-            "100",
-            "←%spellout-numbering←百[→%%number2→];"
-          ],
-          [
-            "1000",
-            "←%spellout-numbering←千[→%%number3→];"
-          ],
-          [
-            "10000",
-            "←%spellout-numbering←万[→%%number4→];"
-          ],
-          [
-            "100000000",
-            "←%spellout-numbering←亿[→%%number5→];"
-          ],
-          [
-            "1000000000000",
-            "←%spellout-numbering←兆[→%%number8→];"
-          ],
-          [
-            "10000000000000000",
-            "←%spellout-numbering←京[→%%number13→];"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=;"
-          ]
+          {
+            "rbnfrule": "负→→;"
+          },
+          {
+            "rbnfrule": "←←点→→→;"
+          },
+          {
+            "rbnfrule": "零;"
+          },
+          {
+            "rbnfrule": "一;"
+          },
+          {
+            "rbnfrule": "二;"
+          },
+          {
+            "rbnfrule": "三;"
+          },
+          {
+            "rbnfrule": "四;"
+          },
+          {
+            "rbnfrule": "五;"
+          },
+          {
+            "rbnfrule": "六;"
+          },
+          {
+            "rbnfrule": "七;"
+          },
+          {
+            "rbnfrule": "八;"
+          },
+          {
+            "rbnfrule": "九;"
+          },
+          {
+            "rbnfrule": "←%%cardinal-twenties←十[→%spellout-numbering→];"
+          },
+          {
+            "rbnfrule": "廿[→%spellout-numbering→];"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←十[→→];"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←百[→%%number2→];"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←千[→%%number3→];"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←万[→%%number4→];"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←亿[→%%number5→];"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←兆[→%%number8→];"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←京[→%%number13→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ],
         "%spellout-cardinal-alternate2": [
-          [
-            "-x",
-            "负→→;"
-          ],
-          [
-            "x.x",
-            "=%spellout-cardinal=;"
-          ],
-          [
-            "0",
-            "零;"
-          ],
-          [
-            "1",
-            "一;"
-          ],
-          [
-            "2",
-            "两;"
-          ],
-          [
-            "3",
-            "=%spellout-cardinal=;"
-          ]
+          {
+            "rbnfrule": "负→→;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal=;"
+          },
+          {
+            "rbnfrule": "零;"
+          },
+          {
+            "rbnfrule": "一;"
+          },
+          {
+            "rbnfrule": "两;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal=;"
+          }
         ],
-        "%%cardinal-twenties": [
-          [
-            "1",
-            ";"
-          ],
-          [
-            "2",
-            "二;"
-          ]
+        "%cardinal-twenties": [
+          {
+            "rbnfrule": ";"
+          },
+          {
+            "rbnfrule": "二;"
+          }
         ],
         "%spellout-ordinal": [
-          [
-            "x.x",
-            "=#,##0.#=;"
-          ],
-          [
-            "0",
-            "第=%spellout-numbering=;"
-          ]
+          {
+            "rbnfrule": "=#,##0.#=;"
+          },
+          {
+            "rbnfrule": "第=%spellout-numbering=;"
+          }
         ]
       }
     }

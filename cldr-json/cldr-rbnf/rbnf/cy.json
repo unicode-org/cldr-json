@@ -1,388 +1,295 @@
 {
   "rbnf": {
     "identity": {
-      "version": {
-        "_cldrVersion": "42"
-      },
+      "version": {},
       "language": "cy"
     },
     "rbnf": {
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          [
-            "x.x",
-            "=0.0=;"
-          ],
-          [
-            "0",
-            "=%spellout-numbering=;"
-          ]
+          {
+            "rbnfrule": "=0.0=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          }
         ],
         "%spellout-numbering": [
-          [
-            "0",
-            "=%spellout-cardinal-masculine=;"
-          ]
+          {
+            "rbnfrule": "=%spellout-cardinal-masculine=;"
+          }
         ],
         "%spellout-cardinal-masculine": [
-          [
-            "-x",
-            "minws →→;"
-          ],
-          [
-            "x.x",
-            "←← pwynt →→;"
-          ],
-          [
-            "0",
-            "dim;"
-          ],
-          [
-            "1",
-            "un;"
-          ],
-          [
-            "2",
-            "dau;"
-          ],
-          [
-            "3",
-            "tri;"
-          ],
-          [
-            "4",
-            "pedwar;"
-          ],
-          [
-            "5",
-            "pump;"
-          ],
-          [
-            "6",
-            "chwech;"
-          ],
-          [
-            "7",
-            "saith;"
-          ],
-          [
-            "8",
-            "wyth;"
-          ],
-          [
-            "9",
-            "naw;"
-          ],
-          [
-            "10",
-            "un deg[ →→];"
-          ],
-          [
-            "20",
-            "dau ddeg[ →→];"
-          ],
-          [
-            "30",
-            "←%spellout-cardinal-masculine-before-consonant← deg[ →→];"
-          ],
-          [
-            "100",
-            "←%spellout-cardinal-masculine-before-consonant← cant[ →→];"
-          ],
-          [
-            "1000",
-            "←%spellout-cardinal-masculine-before-consonant← mil[ →→];"
-          ],
-          [
-            "1000000",
-            "←%spellout-cardinal-masculine-before-consonant← miliwn[ →→];"
-          ],
-          [
-            "1000000000",
-            "←%spellout-cardinal-masculine-before-consonant← biliwn[ →→];"
-          ],
-          [
-            "1000000000000",
-            "←%spellout-cardinal-masculine-before-consonant← triliwn[ →→];"
-          ],
-          [
-            "1000000000000000",
-            "←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→];"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=;"
-          ]
+          {
+            "rbnfrule": "minws →→;"
+          },
+          {
+            "rbnfrule": "←← pwynt →→;"
+          },
+          {
+            "rbnfrule": "dim;"
+          },
+          {
+            "rbnfrule": "un;"
+          },
+          {
+            "rbnfrule": "dau;"
+          },
+          {
+            "rbnfrule": "tri;"
+          },
+          {
+            "rbnfrule": "pedwar;"
+          },
+          {
+            "rbnfrule": "pump;"
+          },
+          {
+            "rbnfrule": "chwech;"
+          },
+          {
+            "rbnfrule": "saith;"
+          },
+          {
+            "rbnfrule": "wyth;"
+          },
+          {
+            "rbnfrule": "naw;"
+          },
+          {
+            "rbnfrule": "un deg[ →→];"
+          },
+          {
+            "rbnfrule": "dau ddeg[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← deg[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← cant[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← mil[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← miliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← biliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← triliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ],
         "%spellout-cardinal-masculine-before-consonant": [
-          [
-            "-x",
-            "minws →→;"
-          ],
-          [
-            "x.x",
-            "←← pwynt →→;"
-          ],
-          [
-            "0",
-            "dim;"
-          ],
-          [
-            "1",
-            "un;"
-          ],
-          [
-            "2",
-            "dau;"
-          ],
-          [
-            "3",
-            "tri;"
-          ],
-          [
-            "4",
-            "pedwar;"
-          ],
-          [
-            "5",
-            "pum;"
-          ],
-          [
-            "6",
-            "chwe;"
-          ],
-          [
-            "7",
-            "saith;"
-          ],
-          [
-            "8",
-            "wyth;"
-          ],
-          [
-            "9",
-            "naw;"
-          ],
-          [
-            "10",
-            "un deg[ →→];"
-          ],
-          [
-            "20",
-            "dau ddeg[ →→];"
-          ],
-          [
-            "30",
-            "←%spellout-cardinal-masculine-before-consonant← deg[ →→];"
-          ],
-          [
-            "100",
-            "←%spellout-cardinal-masculine-before-consonant← cant[ →→];"
-          ],
-          [
-            "1000",
-            "←%spellout-cardinal-masculine-before-consonant← mil[ →→];"
-          ],
-          [
-            "1000000",
-            "←%spellout-cardinal-masculine-before-consonant← miliwn[ →→];"
-          ],
-          [
-            "1000000000",
-            "←%spellout-cardinal-masculine-before-consonant← biliwn[ →→];"
-          ],
-          [
-            "1000000000000",
-            "←%spellout-cardinal-masculine-before-consonant← triliwn[ →→];"
-          ],
-          [
-            "1000000000000000",
-            "←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→];"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=;"
-          ]
+          {
+            "rbnfrule": "minws →→;"
+          },
+          {
+            "rbnfrule": "←← pwynt →→;"
+          },
+          {
+            "rbnfrule": "dim;"
+          },
+          {
+            "rbnfrule": "un;"
+          },
+          {
+            "rbnfrule": "dau;"
+          },
+          {
+            "rbnfrule": "tri;"
+          },
+          {
+            "rbnfrule": "pedwar;"
+          },
+          {
+            "rbnfrule": "pum;"
+          },
+          {
+            "rbnfrule": "chwe;"
+          },
+          {
+            "rbnfrule": "saith;"
+          },
+          {
+            "rbnfrule": "wyth;"
+          },
+          {
+            "rbnfrule": "naw;"
+          },
+          {
+            "rbnfrule": "un deg[ →→];"
+          },
+          {
+            "rbnfrule": "dau ddeg[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← deg[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← cant[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← mil[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← miliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← biliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← triliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ],
         "%spellout-cardinal-feminine": [
-          [
-            "-x",
-            "minws →→;"
-          ],
-          [
-            "x.x",
-            "←← pwynt →→;"
-          ],
-          [
-            "0",
-            "dim;"
-          ],
-          [
-            "1",
-            "un;"
-          ],
-          [
-            "2",
-            "dwy;"
-          ],
-          [
-            "3",
-            "tair;"
-          ],
-          [
-            "4",
-            "pedair;"
-          ],
-          [
-            "5",
-            "pump;"
-          ],
-          [
-            "6",
-            "chwech;"
-          ],
-          [
-            "7",
-            "saith;"
-          ],
-          [
-            "8",
-            "wyth;"
-          ],
-          [
-            "9",
-            "naw;"
-          ],
-          [
-            "10",
-            "un deg[ →→];"
-          ],
-          [
-            "20",
-            "dau ddeg[ →→];"
-          ],
-          [
-            "30",
-            "←%spellout-cardinal-masculine-before-consonant← deg[ →→];"
-          ],
-          [
-            "100",
-            "←%spellout-cardinal-masculine-before-consonant← cant[ →→];"
-          ],
-          [
-            "1000",
-            "←%spellout-cardinal-masculine-before-consonant← mil[ →→];"
-          ],
-          [
-            "1000000",
-            "←%spellout-cardinal-masculine-before-consonant← miliwn[ →→];"
-          ],
-          [
-            "1000000000",
-            "←%spellout-cardinal-masculine-before-consonant← biliwn[ →→];"
-          ],
-          [
-            "1000000000000",
-            "←%spellout-cardinal-masculine-before-consonant← triliwn[ →→];"
-          ],
-          [
-            "1000000000000000",
-            "←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→];"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=;"
-          ]
+          {
+            "rbnfrule": "minws →→;"
+          },
+          {
+            "rbnfrule": "←← pwynt →→;"
+          },
+          {
+            "rbnfrule": "dim;"
+          },
+          {
+            "rbnfrule": "un;"
+          },
+          {
+            "rbnfrule": "dwy;"
+          },
+          {
+            "rbnfrule": "tair;"
+          },
+          {
+            "rbnfrule": "pedair;"
+          },
+          {
+            "rbnfrule": "pump;"
+          },
+          {
+            "rbnfrule": "chwech;"
+          },
+          {
+            "rbnfrule": "saith;"
+          },
+          {
+            "rbnfrule": "wyth;"
+          },
+          {
+            "rbnfrule": "naw;"
+          },
+          {
+            "rbnfrule": "un deg[ →→];"
+          },
+          {
+            "rbnfrule": "dau ddeg[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← deg[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← cant[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← mil[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← miliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← biliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← triliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ],
         "%spellout-cardinal-feminine-before-consonant": [
-          [
-            "-x",
-            "minws →→;"
-          ],
-          [
-            "x.x",
-            "←← pwynt →→;"
-          ],
-          [
-            "0",
-            "dim;"
-          ],
-          [
-            "1",
-            "un;"
-          ],
-          [
-            "2",
-            "dwy;"
-          ],
-          [
-            "3",
-            "tair;"
-          ],
-          [
-            "4",
-            "pedair;"
-          ],
-          [
-            "5",
-            "pum;"
-          ],
-          [
-            "6",
-            "chwe;"
-          ],
-          [
-            "7",
-            "saith;"
-          ],
-          [
-            "8",
-            "wyth;"
-          ],
-          [
-            "9",
-            "naw;"
-          ],
-          [
-            "10",
-            "un deg[ →→];"
-          ],
-          [
-            "20",
-            "dau ddeg[ →→];"
-          ],
-          [
-            "30",
-            "←%spellout-cardinal-masculine-before-consonant← deg[ →→];"
-          ],
-          [
-            "100",
-            "←%spellout-cardinal-masculine-before-consonant← cant[ →→];"
-          ],
-          [
-            "1000",
-            "←%spellout-cardinal-masculine-before-consonant← mil[ →→];"
-          ],
-          [
-            "1000000",
-            "←%spellout-cardinal-masculine-before-consonant← miliwn[ →→];"
-          ],
-          [
-            "1000000000",
-            "←%spellout-cardinal-masculine-before-consonant← biliwn[ →→];"
-          ],
-          [
-            "1000000000000",
-            "←%spellout-cardinal-masculine-before-consonant← triliwn[ →→];"
-          ],
-          [
-            "1000000000000000",
-            "←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→];"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=;"
-          ]
+          {
+            "rbnfrule": "minws →→;"
+          },
+          {
+            "rbnfrule": "←← pwynt →→;"
+          },
+          {
+            "rbnfrule": "dim;"
+          },
+          {
+            "rbnfrule": "un;"
+          },
+          {
+            "rbnfrule": "dwy;"
+          },
+          {
+            "rbnfrule": "tair;"
+          },
+          {
+            "rbnfrule": "pedair;"
+          },
+          {
+            "rbnfrule": "pum;"
+          },
+          {
+            "rbnfrule": "chwe;"
+          },
+          {
+            "rbnfrule": "saith;"
+          },
+          {
+            "rbnfrule": "wyth;"
+          },
+          {
+            "rbnfrule": "naw;"
+          },
+          {
+            "rbnfrule": "un deg[ →→];"
+          },
+          {
+            "rbnfrule": "dau ddeg[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← deg[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← cant[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← mil[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← miliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← biliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← triliwn[ →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-masculine-before-consonant← kwadriliwn[ →→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ]
       }
     }

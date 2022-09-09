@@ -1,264 +1,201 @@
 {
   "rbnf": {
     "identity": {
-      "version": {
-        "_cldrVersion": "42"
-      },
+      "version": {},
       "language": "kl"
     },
     "rbnf": {
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          [
-            "x.x",
-            "=0.0=;"
-          ],
-          [
-            "0",
-            "=%spellout-numbering=;"
-          ]
+          {
+            "rbnfrule": "=0.0=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          }
         ],
         "%spellout-numbering": [
-          [
-            "0",
-            "=%spellout-cardinal=;"
-          ]
+          {
+            "rbnfrule": "=%spellout-cardinal=;"
+          }
         ],
-        "%%numbertimes": [
-          [
-            "1",
-            "ataaseq;"
-          ],
-          [
-            "2",
-            "marlunnik;"
-          ],
-          [
-            "3",
-            "pingasunik;"
-          ],
-          [
-            "4",
-            "sisamanik;"
-          ],
-          [
-            "5",
-            "tallimanik;"
-          ],
-          [
-            "6",
-            "arfinilinnik;"
-          ],
-          [
-            "7",
-            "arfineq-marlunnik;"
-          ],
-          [
-            "8",
-            "arfineq-pingasunik;"
-          ],
-          [
-            "9",
-            "arfineq-sisamanik;"
-          ],
-          [
-            "10",
-            "qulinik;"
-          ],
-          [
-            "11",
-            "aqqanilinik;"
-          ],
-          [
-            "12",
-            "aqqaneq-marlunnik;"
-          ],
-          [
-            "13",
-            "aqqaneq-pingasunik;"
-          ],
-          [
-            "14",
-            "aqqaneq-sisamanik;"
-          ],
-          [
-            "15",
-            "aqqaneq-tallimanik;"
-          ],
-          [
-            "16",
-            "arfersanilinnik;"
-          ],
-          [
-            "17",
-            "arfersaneq-marlunnik;"
-          ],
-          [
-            "18",
-            "arfersaneq-pingasunik;"
-          ],
-          [
-            "19",
-            "arfersaneq-sisamanik;"
-          ],
-          [
-            "20",
-            "←%%numbertimes← qulillit[ →→];"
-          ],
-          [
-            "100",
-            "uutritit[ →→];"
-          ],
-          [
-            "200",
-            "←%%numbertimes← uutritillit[ →→];"
-          ]
+        "%numbertimes": [
+          {
+            "rbnfrule": "ataaseq;"
+          },
+          {
+            "rbnfrule": "marlunnik;"
+          },
+          {
+            "rbnfrule": "pingasunik;"
+          },
+          {
+            "rbnfrule": "sisamanik;"
+          },
+          {
+            "rbnfrule": "tallimanik;"
+          },
+          {
+            "rbnfrule": "arfinilinnik;"
+          },
+          {
+            "rbnfrule": "arfineq-marlunnik;"
+          },
+          {
+            "rbnfrule": "arfineq-pingasunik;"
+          },
+          {
+            "rbnfrule": "arfineq-sisamanik;"
+          },
+          {
+            "rbnfrule": "qulinik;"
+          },
+          {
+            "rbnfrule": "aqqanilinik;"
+          },
+          {
+            "rbnfrule": "aqqaneq-marlunnik;"
+          },
+          {
+            "rbnfrule": "aqqaneq-pingasunik;"
+          },
+          {
+            "rbnfrule": "aqqaneq-sisamanik;"
+          },
+          {
+            "rbnfrule": "aqqaneq-tallimanik;"
+          },
+          {
+            "rbnfrule": "arfersanilinnik;"
+          },
+          {
+            "rbnfrule": "arfersaneq-marlunnik;"
+          },
+          {
+            "rbnfrule": "arfersaneq-pingasunik;"
+          },
+          {
+            "rbnfrule": "arfersaneq-sisamanik;"
+          },
+          {
+            "rbnfrule": "←%%numbertimes← qulillit[ →→];"
+          },
+          {
+            "rbnfrule": "uutritit[ →→];"
+          },
+          {
+            "rbnfrule": "←%%numbertimes← uutritillit[ →→];"
+          }
         ],
         "%spellout-cardinal": [
-          [
-            "-x",
-            "minus →→;"
-          ],
-          [
-            "x.x",
-            "←← komma →→;"
-          ],
-          [
-            "0",
-            "nuulu;"
-          ],
-          [
-            "1",
-            "ataaseq;"
-          ],
-          [
-            "2",
-            "marluk;"
-          ],
-          [
-            "3",
-            "pingasut;"
-          ],
-          [
-            "4",
-            "sisamat;"
-          ],
-          [
-            "5",
-            "tallimat;"
-          ],
-          [
-            "6",
-            "arfinillit;"
-          ],
-          [
-            "7",
-            "arfineq-marluk;"
-          ],
-          [
-            "8",
-            "arfineq-pingasut;"
-          ],
-          [
-            "9",
-            "arfineq-sisamat;"
-          ],
-          [
-            "10",
-            "qulit;"
-          ],
-          [
-            "11",
-            "aqqanilit;"
-          ],
-          [
-            "12",
-            "aqqaneq-marluk;"
-          ],
-          [
-            "13",
-            "aqqaneq-pingasut;"
-          ],
-          [
-            "14",
-            "aqqaneq-sisamat;"
-          ],
-          [
-            "15",
-            "aqqaneq-tallimat;"
-          ],
-          [
-            "16",
-            "arfersanillit;"
-          ],
-          [
-            "17",
-            "arfersaneq-marluk;"
-          ],
-          [
-            "18",
-            "arfersaneq-pingasut;"
-          ],
-          [
-            "19",
-            "arfersaneq-sisamat;"
-          ],
-          [
-            "20",
-            "←%%numbertimes← qulillit[ →→];"
-          ],
-          [
-            "100",
-            "uutritit[ →→];"
-          ],
-          [
-            "200",
-            "←%%numbertimes← uutritillit[ →→];"
-          ],
-          [
-            "1000",
-            "tuusintit[ →→];"
-          ],
-          [
-            "2000",
-            "←%%numbertimes← tuusintillit[ →→];"
-          ],
-          [
-            "1000000",
-            "millionit[ →→];"
-          ],
-          [
-            "2000000",
-            "←%%numbertimes← millionillit[ →→];"
-          ],
-          [
-            "1000000000",
-            "milliardit[ →→];"
-          ],
-          [
-            "2000000000",
-            "←%%numbertimes← milliardillit[ →→];"
-          ],
-          [
-            "1000000000000",
-            "billionit[ →→];"
-          ],
-          [
-            "2000000000000",
-            "←%%numbertimes← billioniillit[ →→];"
-          ],
-          [
-            "1000000000000000",
-            "billiardit[ →→];"
-          ],
-          [
-            "2000000000000000",
-            "←%%numbertimes← billiardillit[ →→];"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=;"
-          ]
+          {
+            "rbnfrule": "minus →→;"
+          },
+          {
+            "rbnfrule": "←← komma →→;"
+          },
+          {
+            "rbnfrule": "nuulu;"
+          },
+          {
+            "rbnfrule": "ataaseq;"
+          },
+          {
+            "rbnfrule": "marluk;"
+          },
+          {
+            "rbnfrule": "pingasut;"
+          },
+          {
+            "rbnfrule": "sisamat;"
+          },
+          {
+            "rbnfrule": "tallimat;"
+          },
+          {
+            "rbnfrule": "arfinillit;"
+          },
+          {
+            "rbnfrule": "arfineq-marluk;"
+          },
+          {
+            "rbnfrule": "arfineq-pingasut;"
+          },
+          {
+            "rbnfrule": "arfineq-sisamat;"
+          },
+          {
+            "rbnfrule": "qulit;"
+          },
+          {
+            "rbnfrule": "aqqanilit;"
+          },
+          {
+            "rbnfrule": "aqqaneq-marluk;"
+          },
+          {
+            "rbnfrule": "aqqaneq-pingasut;"
+          },
+          {
+            "rbnfrule": "aqqaneq-sisamat;"
+          },
+          {
+            "rbnfrule": "aqqaneq-tallimat;"
+          },
+          {
+            "rbnfrule": "arfersanillit;"
+          },
+          {
+            "rbnfrule": "arfersaneq-marluk;"
+          },
+          {
+            "rbnfrule": "arfersaneq-pingasut;"
+          },
+          {
+            "rbnfrule": "arfersaneq-sisamat;"
+          },
+          {
+            "rbnfrule": "←%%numbertimes← qulillit[ →→];"
+          },
+          {
+            "rbnfrule": "uutritit[ →→];"
+          },
+          {
+            "rbnfrule": "←%%numbertimes← uutritillit[ →→];"
+          },
+          {
+            "rbnfrule": "tuusintit[ →→];"
+          },
+          {
+            "rbnfrule": "←%%numbertimes← tuusintillit[ →→];"
+          },
+          {
+            "rbnfrule": "millionit[ →→];"
+          },
+          {
+            "rbnfrule": "←%%numbertimes← millionillit[ →→];"
+          },
+          {
+            "rbnfrule": "milliardit[ →→];"
+          },
+          {
+            "rbnfrule": "←%%numbertimes← milliardillit[ →→];"
+          },
+          {
+            "rbnfrule": "billionit[ →→];"
+          },
+          {
+            "rbnfrule": "←%%numbertimes← billioniillit[ →→];"
+          },
+          {
+            "rbnfrule": "billiardit[ →→];"
+          },
+          {
+            "rbnfrule": "←%%numbertimes← billiardillit[ →→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ]
       }
     }

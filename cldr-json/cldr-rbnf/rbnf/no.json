@@ -1,1158 +1,884 @@
 {
   "rbnf": {
     "identity": {
-      "version": {
-        "_cldrVersion": "42"
-      },
+      "version": {},
       "language": "no"
     },
     "rbnf": {
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          [
-            "-x",
-            "minus →→;"
-          ],
-          [
-            "x.x",
-            "=0.0=;"
-          ],
-          [
-            "0",
-            "=%spellout-numbering=;"
-          ],
-          [
-            "1100/100",
-            "←←­hundre[ og →→];"
-          ],
-          [
-            "10000",
-            "=%spellout-numbering=;"
-          ]
+          {
+            "rbnfrule": "minus →→;"
+          },
+          {
+            "rbnfrule": "=0.0=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          },
+          {
+            "rbnfrule": "←←­hundre[ og →→];"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          }
         ],
         "%spellout-numbering": [
-          [
-            "0",
-            "=%%spellout-cardinal-reale=;"
-          ]
+          {
+            "rbnfrule": "=%%spellout-cardinal-reale=;"
+          }
         ],
         "%spellout-cardinal-masculine": [
-          [
-            "0",
-            "=%%spellout-cardinal-reale=;"
-          ]
+          {
+            "rbnfrule": "=%%spellout-cardinal-reale=;"
+          }
         ],
         "%spellout-cardinal-feminine": [
-          [
-            "-x",
-            "minus →→;"
-          ],
-          [
-            "x.x",
-            "←← komma →→;"
-          ],
-          [
-            "0",
-            "null;"
-          ],
-          [
-            "1",
-            "ei;"
-          ],
-          [
-            "2",
-            "=%%spellout-cardinal-reale=;"
-          ],
-          [
-            "100",
-            "hundre[ og →→];"
-          ],
-          [
-            "200",
-            "←%spellout-cardinal-neuter← hundre[ og →→];"
-          ],
-          [
-            "1000",
-            "tusen[ →%%and-small-f→];"
-          ],
-          [
-            "2000",
-            "←%spellout-cardinal-neuter← tusen[ →%%and-small-f→];"
-          ],
-          [
-            "1000000",
-            "én million[ →→];"
-          ],
-          [
-            "2000000",
-            "←%%spellout-cardinal-reale← millioner[ →→];"
-          ],
-          [
-            "1000000000",
-            "én milliard[ →→];"
-          ],
-          [
-            "2000000000",
-            "←%%spellout-cardinal-reale← milliarder[ →→];"
-          ],
-          [
-            "1000000000000",
-            "én billion[ →→];"
-          ],
-          [
-            "2000000000000",
-            "←%%spellout-cardinal-reale← billioner[ →→];"
-          ],
-          [
-            "1000000000000000",
-            "én billiard[ →→];"
-          ],
-          [
-            "2000000000000000",
-            "←%%spellout-cardinal-reale← billiarder[ →→];"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=;"
-          ]
+          {
+            "rbnfrule": "minus →→;"
+          },
+          {
+            "rbnfrule": "←← komma →→;"
+          },
+          {
+            "rbnfrule": "null;"
+          },
+          {
+            "rbnfrule": "ei;"
+          },
+          {
+            "rbnfrule": "=%%spellout-cardinal-reale=;"
+          },
+          {
+            "rbnfrule": "hundre[ og →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-neuter← hundre[ og →→];"
+          },
+          {
+            "rbnfrule": "tusen[ →%%and-small-f→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-neuter← tusen[ →%%and-small-f→];"
+          },
+          {
+            "rbnfrule": "én million[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← millioner[ →→];"
+          },
+          {
+            "rbnfrule": "én milliard[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← milliarder[ →→];"
+          },
+          {
+            "rbnfrule": "én billion[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billioner[ →→];"
+          },
+          {
+            "rbnfrule": "én billiard[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billiarder[ →→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ],
-        "%%and-small-f": [
-          [
-            "0",
-            "og =%spellout-cardinal-feminine=;"
-          ],
-          [
-            "100",
-            "=%spellout-cardinal-feminine=;"
-          ]
+        "%and-small-f": [
+          {
+            "rbnfrule": "og =%spellout-cardinal-feminine=;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-feminine=;"
+          }
         ],
         "%spellout-cardinal-neuter": [
-          [
-            "-x",
-            "minus →→;"
-          ],
-          [
-            "x.x",
-            "←← komma →→;"
-          ],
-          [
-            "0",
-            "null;"
-          ],
-          [
-            "1",
-            "ett;"
-          ],
-          [
-            "2",
-            "=%%spellout-cardinal-reale=;"
-          ],
-          [
-            "20",
-            "tjue[­→→];"
-          ],
-          [
-            "30",
-            "tretti[­→→];"
-          ],
-          [
-            "40",
-            "førti[­→→];"
-          ],
-          [
-            "50",
-            "femti[­→→];"
-          ],
-          [
-            "60",
-            "seksti[­→→];"
-          ],
-          [
-            "70",
-            "sytti[­→→];"
-          ],
-          [
-            "80",
-            "åtti[­→→];"
-          ],
-          [
-            "90",
-            "nitti[­→→];"
-          ],
-          [
-            "100",
-            "hundre[ og →→];"
-          ],
-          [
-            "200",
-            "←%spellout-cardinal-neuter← hundre[ og →→];"
-          ],
-          [
-            "1000",
-            "tusen[ →%%and-small-n→];"
-          ],
-          [
-            "2000",
-            "←%spellout-cardinal-neuter← tusen[ →%%and-small-n→];"
-          ],
-          [
-            "1000000",
-            "én million[ →→];"
-          ],
-          [
-            "2000000",
-            "←%%spellout-cardinal-reale← millioner[ →→];"
-          ],
-          [
-            "1000000000",
-            "én milliard[ →→];"
-          ],
-          [
-            "2000000000",
-            "←%%spellout-cardinal-reale← milliarder[ →→];"
-          ],
-          [
-            "1000000000000",
-            "én billion[ →→];"
-          ],
-          [
-            "2000000000000",
-            "←%%spellout-cardinal-reale← billioner[ →→];"
-          ],
-          [
-            "1000000000000000",
-            "én billiard[ →→];"
-          ],
-          [
-            "2000000000000000",
-            "←%%spellout-cardinal-reale← billiarder[ →→];"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=;"
-          ]
+          {
+            "rbnfrule": "minus →→;"
+          },
+          {
+            "rbnfrule": "←← komma →→;"
+          },
+          {
+            "rbnfrule": "null;"
+          },
+          {
+            "rbnfrule": "ett;"
+          },
+          {
+            "rbnfrule": "=%%spellout-cardinal-reale=;"
+          },
+          {
+            "rbnfrule": "tjue[­→→];"
+          },
+          {
+            "rbnfrule": "tretti[­→→];"
+          },
+          {
+            "rbnfrule": "førti[­→→];"
+          },
+          {
+            "rbnfrule": "femti[­→→];"
+          },
+          {
+            "rbnfrule": "seksti[­→→];"
+          },
+          {
+            "rbnfrule": "sytti[­→→];"
+          },
+          {
+            "rbnfrule": "åtti[­→→];"
+          },
+          {
+            "rbnfrule": "nitti[­→→];"
+          },
+          {
+            "rbnfrule": "hundre[ og →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-neuter← hundre[ og →→];"
+          },
+          {
+            "rbnfrule": "tusen[ →%%and-small-n→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-neuter← tusen[ →%%and-small-n→];"
+          },
+          {
+            "rbnfrule": "én million[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← millioner[ →→];"
+          },
+          {
+            "rbnfrule": "én milliard[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← milliarder[ →→];"
+          },
+          {
+            "rbnfrule": "én billion[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billioner[ →→];"
+          },
+          {
+            "rbnfrule": "én billiard[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billiarder[ →→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ],
-        "%%and-small-n": [
-          [
-            "0",
-            "og =%spellout-cardinal-neuter=;"
-          ],
-          [
-            "100",
-            "=%spellout-cardinal-neuter=;"
-          ]
+        "%and-small-n": [
+          {
+            "rbnfrule": "og =%spellout-cardinal-neuter=;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-neuter=;"
+          }
         ],
-        "%%spellout-cardinal-reale": [
-          [
-            "-x",
-            "minus →→;"
-          ],
-          [
-            "x.x",
-            "←← komma →→;"
-          ],
-          [
-            "0",
-            "null;"
-          ],
-          [
-            "1",
-            "én;"
-          ],
-          [
-            "2",
-            "to;"
-          ],
-          [
-            "3",
-            "tre;"
-          ],
-          [
-            "4",
-            "fire;"
-          ],
-          [
-            "5",
-            "fem;"
-          ],
-          [
-            "6",
-            "seks;"
-          ],
-          [
-            "7",
-            "sju;"
-          ],
-          [
-            "8",
-            "åtte;"
-          ],
-          [
-            "9",
-            "ni;"
-          ],
-          [
-            "10",
-            "ti;"
-          ],
-          [
-            "11",
-            "elleve;"
-          ],
-          [
-            "12",
-            "tolv;"
-          ],
-          [
-            "13",
-            "tretten;"
-          ],
-          [
-            "14",
-            "fjorten;"
-          ],
-          [
-            "15",
-            "femten;"
-          ],
-          [
-            "16",
-            "seksten;"
-          ],
-          [
-            "17",
-            "sytten;"
-          ],
-          [
-            "18",
-            "atten;"
-          ],
-          [
-            "19",
-            "nitten;"
-          ],
-          [
-            "20",
-            "tjue[­→→];"
-          ],
-          [
-            "30",
-            "tretti[­→→];"
-          ],
-          [
-            "40",
-            "førti[­→→];"
-          ],
-          [
-            "50",
-            "femti[­→→];"
-          ],
-          [
-            "60",
-            "seksti[­→→];"
-          ],
-          [
-            "70",
-            "sytti[­→→];"
-          ],
-          [
-            "80",
-            "åtti[­→→];"
-          ],
-          [
-            "90",
-            "nitti[­→→];"
-          ],
-          [
-            "100",
-            "hundre[ og →→];"
-          ],
-          [
-            "200",
-            "←%spellout-cardinal-neuter← hundre[ og →→];"
-          ],
-          [
-            "1000",
-            "tusen[ →%%and-small→];"
-          ],
-          [
-            "2000",
-            "←%spellout-cardinal-neuter← tusen[ →%%and-small→];"
-          ],
-          [
-            "1000000",
-            "én million[ →→];"
-          ],
-          [
-            "2000000",
-            "←← millioner[ →→];"
-          ],
-          [
-            "1000000000",
-            "én milliard[ →→];"
-          ],
-          [
-            "2000000000",
-            "←← milliarder[ →→];"
-          ],
-          [
-            "1000000000000",
-            "én billion[ →→];"
-          ],
-          [
-            "2000000000000",
-            "←← billioner[ →→];"
-          ],
-          [
-            "1000000000000000",
-            "én billiard[ →→];"
-          ],
-          [
-            "2000000000000000",
-            "←← billiarder[ →→];"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=;"
-          ]
+        "%spellout-cardinal-reale": [
+          {
+            "rbnfrule": "minus →→;"
+          },
+          {
+            "rbnfrule": "←← komma →→;"
+          },
+          {
+            "rbnfrule": "null;"
+          },
+          {
+            "rbnfrule": "én;"
+          },
+          {
+            "rbnfrule": "to;"
+          },
+          {
+            "rbnfrule": "tre;"
+          },
+          {
+            "rbnfrule": "fire;"
+          },
+          {
+            "rbnfrule": "fem;"
+          },
+          {
+            "rbnfrule": "seks;"
+          },
+          {
+            "rbnfrule": "sju;"
+          },
+          {
+            "rbnfrule": "åtte;"
+          },
+          {
+            "rbnfrule": "ni;"
+          },
+          {
+            "rbnfrule": "ti;"
+          },
+          {
+            "rbnfrule": "elleve;"
+          },
+          {
+            "rbnfrule": "tolv;"
+          },
+          {
+            "rbnfrule": "tretten;"
+          },
+          {
+            "rbnfrule": "fjorten;"
+          },
+          {
+            "rbnfrule": "femten;"
+          },
+          {
+            "rbnfrule": "seksten;"
+          },
+          {
+            "rbnfrule": "sytten;"
+          },
+          {
+            "rbnfrule": "atten;"
+          },
+          {
+            "rbnfrule": "nitten;"
+          },
+          {
+            "rbnfrule": "tjue[­→→];"
+          },
+          {
+            "rbnfrule": "tretti[­→→];"
+          },
+          {
+            "rbnfrule": "førti[­→→];"
+          },
+          {
+            "rbnfrule": "femti[­→→];"
+          },
+          {
+            "rbnfrule": "seksti[­→→];"
+          },
+          {
+            "rbnfrule": "sytti[­→→];"
+          },
+          {
+            "rbnfrule": "åtti[­→→];"
+          },
+          {
+            "rbnfrule": "nitti[­→→];"
+          },
+          {
+            "rbnfrule": "hundre[ og →→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-neuter← hundre[ og →→];"
+          },
+          {
+            "rbnfrule": "tusen[ →%%and-small→];"
+          },
+          {
+            "rbnfrule": "←%spellout-cardinal-neuter← tusen[ →%%and-small→];"
+          },
+          {
+            "rbnfrule": "én million[ →→];"
+          },
+          {
+            "rbnfrule": "←← millioner[ →→];"
+          },
+          {
+            "rbnfrule": "én milliard[ →→];"
+          },
+          {
+            "rbnfrule": "←← milliarder[ →→];"
+          },
+          {
+            "rbnfrule": "én billion[ →→];"
+          },
+          {
+            "rbnfrule": "←← billioner[ →→];"
+          },
+          {
+            "rbnfrule": "én billiard[ →→];"
+          },
+          {
+            "rbnfrule": "←← billiarder[ →→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ],
-        "%%and-small": [
-          [
-            "0",
-            "og =%%spellout-cardinal-reale=;"
-          ],
-          [
-            "100",
-            "=%%spellout-cardinal-reale=;"
-          ]
+        "%and-small": [
+          {
+            "rbnfrule": "og =%%spellout-cardinal-reale=;"
+          },
+          {
+            "rbnfrule": "=%%spellout-cardinal-reale=;"
+          }
         ],
         "%spellout-ordinal-masculine": [
-          [
-            "-x",
-            "minus →→;"
-          ],
-          [
-            "x.x",
-            "=#,##0.#=;"
-          ],
-          [
-            "0",
-            "nullte;"
-          ],
-          [
-            "1",
-            "første;"
-          ],
-          [
-            "2",
-            "andre;"
-          ],
-          [
-            "3",
-            "tredje;"
-          ],
-          [
-            "4",
-            "fjerde;"
-          ],
-          [
-            "5",
-            "femte;"
-          ],
-          [
-            "6",
-            "sjette;"
-          ],
-          [
-            "7",
-            "sjuende;"
-          ],
-          [
-            "8",
-            "åttende;"
-          ],
-          [
-            "9",
-            "niende;"
-          ],
-          [
-            "10",
-            "tiende;"
-          ],
-          [
-            "11",
-            "ellevte;"
-          ],
-          [
-            "12",
-            "tolvte;"
-          ],
-          [
-            "13",
-            "=%spellout-cardinal-neuter=de;"
-          ],
-          [
-            "20",
-            "tjue→%%ord-masc-nde→;"
-          ],
-          [
-            "30",
-            "tretti→%%ord-masc-nde→;"
-          ],
-          [
-            "40",
-            "førti→%%ord-masc-nde→;"
-          ],
-          [
-            "50",
-            "femti→%%ord-masc-nde→;"
-          ],
-          [
-            "60",
-            "seksti→%%ord-masc-nde→;"
-          ],
-          [
-            "70",
-            "sytti→%%ord-masc-nde→;"
-          ],
-          [
-            "80",
-            "åtti→%%ord-masc-nde→;"
-          ],
-          [
-            "90",
-            "nitti→%%ord-masc-nde→;"
-          ],
-          [
-            "100",
-            "←%spellout-numbering←­hundre→%%ord-masc-de→;"
-          ],
-          [
-            "1000",
-            "←%spellout-numbering←­tusen→%%ord-masc-de→;"
-          ],
-          [
-            "1000000",
-            "én million→%%ord-masc-te→;"
-          ],
-          [
-            "2000000",
-            "←%%spellout-cardinal-reale← million→%%ord-masc-teer→;"
-          ],
-          [
-            "1000000000",
-            "én milliard→%%ord-masc-te→;"
-          ],
-          [
-            "2000000000",
-            "←%%spellout-cardinal-reale← milliard→%%ord-masc-teer→;"
-          ],
-          [
-            "1000000000000",
-            "én billion→%%ord-masc-te→;"
-          ],
-          [
-            "2000000000000",
-            "←%%spellout-cardinal-reale← billion→%%ord-masc-teer→;"
-          ],
-          [
-            "1000000000000000",
-            "én billiard→%%ord-masc-te→;"
-          ],
-          [
-            "2000000000000000",
-            "←%%spellout-cardinal-reale← billiard→%%ord-masc-teer→;"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=.;"
-          ]
+          {
+            "rbnfrule": "minus →→;"
+          },
+          {
+            "rbnfrule": "=#,##0.#=;"
+          },
+          {
+            "rbnfrule": "nullte;"
+          },
+          {
+            "rbnfrule": "første;"
+          },
+          {
+            "rbnfrule": "andre;"
+          },
+          {
+            "rbnfrule": "tredje;"
+          },
+          {
+            "rbnfrule": "fjerde;"
+          },
+          {
+            "rbnfrule": "femte;"
+          },
+          {
+            "rbnfrule": "sjette;"
+          },
+          {
+            "rbnfrule": "sjuende;"
+          },
+          {
+            "rbnfrule": "åttende;"
+          },
+          {
+            "rbnfrule": "niende;"
+          },
+          {
+            "rbnfrule": "tiende;"
+          },
+          {
+            "rbnfrule": "ellevte;"
+          },
+          {
+            "rbnfrule": "tolvte;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-neuter=de;"
+          },
+          {
+            "rbnfrule": "tjue→%%ord-masc-nde→;"
+          },
+          {
+            "rbnfrule": "tretti→%%ord-masc-nde→;"
+          },
+          {
+            "rbnfrule": "førti→%%ord-masc-nde→;"
+          },
+          {
+            "rbnfrule": "femti→%%ord-masc-nde→;"
+          },
+          {
+            "rbnfrule": "seksti→%%ord-masc-nde→;"
+          },
+          {
+            "rbnfrule": "sytti→%%ord-masc-nde→;"
+          },
+          {
+            "rbnfrule": "åtti→%%ord-masc-nde→;"
+          },
+          {
+            "rbnfrule": "nitti→%%ord-masc-nde→;"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←­hundre→%%ord-masc-de→;"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←­tusen→%%ord-masc-de→;"
+          },
+          {
+            "rbnfrule": "én million→%%ord-masc-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← million→%%ord-masc-teer→;"
+          },
+          {
+            "rbnfrule": "én milliard→%%ord-masc-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← milliard→%%ord-masc-teer→;"
+          },
+          {
+            "rbnfrule": "én billion→%%ord-masc-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billion→%%ord-masc-teer→;"
+          },
+          {
+            "rbnfrule": "én billiard→%%ord-masc-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billiard→%%ord-masc-teer→;"
+          },
+          {
+            "rbnfrule": "=#,##0=.;"
+          }
         ],
-        "%%ord-masc-nde": [
-          [
-            "0",
-            "ende;"
-          ],
-          [
-            "1",
-            "­=%spellout-ordinal-masculine=;"
-          ]
+        "%ord-masc-nde": [
+          {
+            "rbnfrule": "ende;"
+          },
+          {
+            "rbnfrule": "­=%spellout-ordinal-masculine=;"
+          }
         ],
-        "%%ord-masc-de": [
-          [
-            "0",
-            "de;"
-          ],
-          [
-            "1",
-            "' =%spellout-ordinal-masculine=;"
-          ]
+        "%ord-masc-de": [
+          {
+            "rbnfrule": "de;"
+          },
+          {
+            "rbnfrule": "' =%spellout-ordinal-masculine=;"
+          }
         ],
-        "%%ord-masc-te": [
-          [
-            "0",
-            "te;"
-          ],
-          [
-            "1",
-            "' =%spellout-ordinal-masculine=;"
-          ]
+        "%ord-masc-te": [
+          {
+            "rbnfrule": "te;"
+          },
+          {
+            "rbnfrule": "' =%spellout-ordinal-masculine=;"
+          }
         ],
-        "%%ord-masc-teer": [
-          [
-            "0",
-            "te;"
-          ],
-          [
-            "1",
-            "er =%spellout-ordinal-masculine=;"
-          ]
+        "%ord-masc-teer": [
+          {
+            "rbnfrule": "te;"
+          },
+          {
+            "rbnfrule": "er =%spellout-ordinal-masculine=;"
+          }
         ],
         "%spellout-ordinal-neuter": [
-          [
-            "-x",
-            "minus →→;"
-          ],
-          [
-            "x.x",
-            "=#,##0.#=;"
-          ],
-          [
-            "0",
-            "nullte;"
-          ],
-          [
-            "1",
-            "første;"
-          ],
-          [
-            "2",
-            "andre;"
-          ],
-          [
-            "3",
-            "tredje;"
-          ],
-          [
-            "4",
-            "fjerde;"
-          ],
-          [
-            "5",
-            "femte;"
-          ],
-          [
-            "6",
-            "sjette;"
-          ],
-          [
-            "7",
-            "sjuende;"
-          ],
-          [
-            "8",
-            "åttende;"
-          ],
-          [
-            "9",
-            "niende;"
-          ],
-          [
-            "10",
-            "tiende;"
-          ],
-          [
-            "11",
-            "ellevte;"
-          ],
-          [
-            "12",
-            "tolvte;"
-          ],
-          [
-            "13",
-            "=%spellout-cardinal-neuter=de;"
-          ],
-          [
-            "20",
-            "tjue→%%ord-neut-nde→;"
-          ],
-          [
-            "30",
-            "tretti→%%ord-neut-nde→;"
-          ],
-          [
-            "40",
-            "førti→%%ord-neut-nde→;"
-          ],
-          [
-            "50",
-            "femti→%%ord-neut-nde→;"
-          ],
-          [
-            "60",
-            "seksti→%%ord-neut-nde→;"
-          ],
-          [
-            "70",
-            "sytti→%%ord-neut-nde→;"
-          ],
-          [
-            "80",
-            "åtti→%%ord-neut-nde→;"
-          ],
-          [
-            "90",
-            "nitti→%%ord-neut-nde→;"
-          ],
-          [
-            "100",
-            "←%spellout-numbering←­hundre→%%ord-neut-de→;"
-          ],
-          [
-            "1000",
-            "←%spellout-numbering←­tusen→%%ord-neut-de→;"
-          ],
-          [
-            "1000000",
-            "én million→%%ord-neut-te→;"
-          ],
-          [
-            "2000000",
-            "←%%spellout-cardinal-reale← million→%%ord-neut-teer→;"
-          ],
-          [
-            "1000000000",
-            "én milliard→%%ord-neut-te→;"
-          ],
-          [
-            "2000000000",
-            "←%%spellout-cardinal-reale← milliard→%%ord-neut-teer→;"
-          ],
-          [
-            "1000000000000",
-            "én billion→%%ord-neut-te→;"
-          ],
-          [
-            "2000000000000",
-            "←%%spellout-cardinal-reale← billion→%%ord-neut-teer→;"
-          ],
-          [
-            "1000000000000000",
-            "én billiard→%%ord-neut-te→;"
-          ],
-          [
-            "2000000000000000",
-            "←%%spellout-cardinal-reale← billiard→%%ord-neut-teer→;"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=.;"
-          ]
+          {
+            "rbnfrule": "minus →→;"
+          },
+          {
+            "rbnfrule": "=#,##0.#=;"
+          },
+          {
+            "rbnfrule": "nullte;"
+          },
+          {
+            "rbnfrule": "første;"
+          },
+          {
+            "rbnfrule": "andre;"
+          },
+          {
+            "rbnfrule": "tredje;"
+          },
+          {
+            "rbnfrule": "fjerde;"
+          },
+          {
+            "rbnfrule": "femte;"
+          },
+          {
+            "rbnfrule": "sjette;"
+          },
+          {
+            "rbnfrule": "sjuende;"
+          },
+          {
+            "rbnfrule": "åttende;"
+          },
+          {
+            "rbnfrule": "niende;"
+          },
+          {
+            "rbnfrule": "tiende;"
+          },
+          {
+            "rbnfrule": "ellevte;"
+          },
+          {
+            "rbnfrule": "tolvte;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-neuter=de;"
+          },
+          {
+            "rbnfrule": "tjue→%%ord-neut-nde→;"
+          },
+          {
+            "rbnfrule": "tretti→%%ord-neut-nde→;"
+          },
+          {
+            "rbnfrule": "førti→%%ord-neut-nde→;"
+          },
+          {
+            "rbnfrule": "femti→%%ord-neut-nde→;"
+          },
+          {
+            "rbnfrule": "seksti→%%ord-neut-nde→;"
+          },
+          {
+            "rbnfrule": "sytti→%%ord-neut-nde→;"
+          },
+          {
+            "rbnfrule": "åtti→%%ord-neut-nde→;"
+          },
+          {
+            "rbnfrule": "nitti→%%ord-neut-nde→;"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←­hundre→%%ord-neut-de→;"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←­tusen→%%ord-neut-de→;"
+          },
+          {
+            "rbnfrule": "én million→%%ord-neut-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← million→%%ord-neut-teer→;"
+          },
+          {
+            "rbnfrule": "én milliard→%%ord-neut-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← milliard→%%ord-neut-teer→;"
+          },
+          {
+            "rbnfrule": "én billion→%%ord-neut-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billion→%%ord-neut-teer→;"
+          },
+          {
+            "rbnfrule": "én billiard→%%ord-neut-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billiard→%%ord-neut-teer→;"
+          },
+          {
+            "rbnfrule": "=#,##0=.;"
+          }
         ],
-        "%%ord-neut-nde": [
-          [
-            "0",
-            "ende;"
-          ],
-          [
-            "1",
-            "­=%spellout-ordinal-neuter=;"
-          ]
+        "%ord-neut-nde": [
+          {
+            "rbnfrule": "ende;"
+          },
+          {
+            "rbnfrule": "­=%spellout-ordinal-neuter=;"
+          }
         ],
-        "%%ord-neut-de": [
-          [
-            "0",
-            "de;"
-          ],
-          [
-            "1",
-            "' =%spellout-ordinal-neuter=;"
-          ]
+        "%ord-neut-de": [
+          {
+            "rbnfrule": "de;"
+          },
+          {
+            "rbnfrule": "' =%spellout-ordinal-neuter=;"
+          }
         ],
-        "%%ord-neut-te": [
-          [
-            "0",
-            "te;"
-          ],
-          [
-            "1",
-            "' =%spellout-ordinal-neuter=;"
-          ]
+        "%ord-neut-te": [
+          {
+            "rbnfrule": "te;"
+          },
+          {
+            "rbnfrule": "' =%spellout-ordinal-neuter=;"
+          }
         ],
-        "%%ord-neut-teer": [
-          [
-            "0",
-            "te;"
-          ],
-          [
-            "1",
-            "er =%spellout-ordinal-neuter=;"
-          ]
+        "%ord-neut-teer": [
+          {
+            "rbnfrule": "te;"
+          },
+          {
+            "rbnfrule": "er =%spellout-ordinal-neuter=;"
+          }
         ],
         "%spellout-ordinal-feminine": [
-          [
-            "-x",
-            "minus →→;"
-          ],
-          [
-            "x.x",
-            "=#,##0.#=;"
-          ],
-          [
-            "0",
-            "nullte;"
-          ],
-          [
-            "1",
-            "første;"
-          ],
-          [
-            "2",
-            "andre;"
-          ],
-          [
-            "3",
-            "tredje;"
-          ],
-          [
-            "4",
-            "fjerde;"
-          ],
-          [
-            "5",
-            "femte;"
-          ],
-          [
-            "6",
-            "sjette;"
-          ],
-          [
-            "7",
-            "sjuende;"
-          ],
-          [
-            "8",
-            "åttende;"
-          ],
-          [
-            "9",
-            "niende;"
-          ],
-          [
-            "10",
-            "tiende;"
-          ],
-          [
-            "11",
-            "ellevte;"
-          ],
-          [
-            "12",
-            "tolvte;"
-          ],
-          [
-            "13",
-            "=%spellout-cardinal-neuter=de;"
-          ],
-          [
-            "20",
-            "tjue→%%ord-fem-nde→;"
-          ],
-          [
-            "30",
-            "tretti→%%ord-fem-nde→;"
-          ],
-          [
-            "40",
-            "førti→%%ord-fem-nde→;"
-          ],
-          [
-            "50",
-            "femti→%%ord-fem-nde→;"
-          ],
-          [
-            "60",
-            "seksti→%%ord-fem-nde→;"
-          ],
-          [
-            "70",
-            "sytti→%%ord-fem-nde→;"
-          ],
-          [
-            "80",
-            "åtti→%%ord-fem-nde→;"
-          ],
-          [
-            "90",
-            "nitti→%%ord-fem-nde→;"
-          ],
-          [
-            "100",
-            "←%spellout-numbering←­hundre→%%ord-fem-de→;"
-          ],
-          [
-            "1000",
-            "←%spellout-numbering←­tusen→%%ord-fem-de→;"
-          ],
-          [
-            "1000000",
-            "én million→%%ord-fem-te→;"
-          ],
-          [
-            "2000000",
-            "←%%spellout-cardinal-reale← million→%%ord-fem-teer→;"
-          ],
-          [
-            "1000000000",
-            "én milliard→%%ord-fem-te→;"
-          ],
-          [
-            "2000000000",
-            "←%%spellout-cardinal-reale← milliard→%%ord-fem-teer→;"
-          ],
-          [
-            "1000000000000",
-            "én billion→%%ord-fem-te→;"
-          ],
-          [
-            "2000000000000",
-            "←%%spellout-cardinal-reale← billion→%%ord-fem-teer→;"
-          ],
-          [
-            "1000000000000000",
-            "én billiard→%%ord-fem-te→;"
-          ],
-          [
-            "2000000000000000",
-            "←%%spellout-cardinal-reale← billiard→%%ord-fem-teer→;"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=.;"
-          ]
+          {
+            "rbnfrule": "minus →→;"
+          },
+          {
+            "rbnfrule": "=#,##0.#=;"
+          },
+          {
+            "rbnfrule": "nullte;"
+          },
+          {
+            "rbnfrule": "første;"
+          },
+          {
+            "rbnfrule": "andre;"
+          },
+          {
+            "rbnfrule": "tredje;"
+          },
+          {
+            "rbnfrule": "fjerde;"
+          },
+          {
+            "rbnfrule": "femte;"
+          },
+          {
+            "rbnfrule": "sjette;"
+          },
+          {
+            "rbnfrule": "sjuende;"
+          },
+          {
+            "rbnfrule": "åttende;"
+          },
+          {
+            "rbnfrule": "niende;"
+          },
+          {
+            "rbnfrule": "tiende;"
+          },
+          {
+            "rbnfrule": "ellevte;"
+          },
+          {
+            "rbnfrule": "tolvte;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-neuter=de;"
+          },
+          {
+            "rbnfrule": "tjue→%%ord-fem-nde→;"
+          },
+          {
+            "rbnfrule": "tretti→%%ord-fem-nde→;"
+          },
+          {
+            "rbnfrule": "førti→%%ord-fem-nde→;"
+          },
+          {
+            "rbnfrule": "femti→%%ord-fem-nde→;"
+          },
+          {
+            "rbnfrule": "seksti→%%ord-fem-nde→;"
+          },
+          {
+            "rbnfrule": "sytti→%%ord-fem-nde→;"
+          },
+          {
+            "rbnfrule": "åtti→%%ord-fem-nde→;"
+          },
+          {
+            "rbnfrule": "nitti→%%ord-fem-nde→;"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←­hundre→%%ord-fem-de→;"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←­tusen→%%ord-fem-de→;"
+          },
+          {
+            "rbnfrule": "én million→%%ord-fem-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← million→%%ord-fem-teer→;"
+          },
+          {
+            "rbnfrule": "én milliard→%%ord-fem-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← milliard→%%ord-fem-teer→;"
+          },
+          {
+            "rbnfrule": "én billion→%%ord-fem-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billion→%%ord-fem-teer→;"
+          },
+          {
+            "rbnfrule": "én billiard→%%ord-fem-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billiard→%%ord-fem-teer→;"
+          },
+          {
+            "rbnfrule": "=#,##0=.;"
+          }
         ],
-        "%%ord-fem-nde": [
-          [
-            "0",
-            "ende;"
-          ],
-          [
-            "1",
-            "­=%spellout-ordinal-feminine=;"
-          ]
+        "%ord-fem-nde": [
+          {
+            "rbnfrule": "ende;"
+          },
+          {
+            "rbnfrule": "­=%spellout-ordinal-feminine=;"
+          }
         ],
-        "%%ord-fem-de": [
-          [
-            "0",
-            "de;"
-          ],
-          [
-            "1",
-            "' =%spellout-ordinal-feminine=;"
-          ]
+        "%ord-fem-de": [
+          {
+            "rbnfrule": "de;"
+          },
+          {
+            "rbnfrule": "' =%spellout-ordinal-feminine=;"
+          }
         ],
-        "%%ord-fem-te": [
-          [
-            "0",
-            "te;"
-          ],
-          [
-            "1",
-            "' =%spellout-ordinal-feminine=;"
-          ]
+        "%ord-fem-te": [
+          {
+            "rbnfrule": "te;"
+          },
+          {
+            "rbnfrule": "' =%spellout-ordinal-feminine=;"
+          }
         ],
-        "%%ord-fem-teer": [
-          [
-            "0",
-            "te;"
-          ],
-          [
-            "1",
-            "er =%spellout-ordinal-feminine=;"
-          ]
+        "%ord-fem-teer": [
+          {
+            "rbnfrule": "te;"
+          },
+          {
+            "rbnfrule": "er =%spellout-ordinal-feminine=;"
+          }
         ],
         "%spellout-ordinal-plural": [
-          [
-            "-x",
-            "minus →→;"
-          ],
-          [
-            "x.x",
-            "=#,##0.#=;"
-          ],
-          [
-            "0",
-            "nullte;"
-          ],
-          [
-            "1",
-            "første;"
-          ],
-          [
-            "2",
-            "andre;"
-          ],
-          [
-            "3",
-            "tredje;"
-          ],
-          [
-            "4",
-            "fjerde;"
-          ],
-          [
-            "5",
-            "femte;"
-          ],
-          [
-            "6",
-            "sjette;"
-          ],
-          [
-            "7",
-            "sjuende;"
-          ],
-          [
-            "8",
-            "åttende;"
-          ],
-          [
-            "9",
-            "niende;"
-          ],
-          [
-            "10",
-            "tiende;"
-          ],
-          [
-            "11",
-            "ellevte;"
-          ],
-          [
-            "12",
-            "tolvte;"
-          ],
-          [
-            "13",
-            "=%spellout-cardinal-neuter=de;"
-          ],
-          [
-            "20",
-            "tjue→%%ord-plural-nde→;"
-          ],
-          [
-            "30",
-            "tretti→%%ord-plural-nde→;"
-          ],
-          [
-            "40",
-            "førti→%%ord-plural-nde→;"
-          ],
-          [
-            "50",
-            "femti→%%ord-plural-nde→;"
-          ],
-          [
-            "60",
-            "seksti→%%ord-plural-nde→;"
-          ],
-          [
-            "70",
-            "sytti→%%ord-plural-nde→;"
-          ],
-          [
-            "80",
-            "åtti→%%ord-plural-nde→;"
-          ],
-          [
-            "90",
-            "nitti→%%ord-plural-nde→;"
-          ],
-          [
-            "100",
-            "←%spellout-numbering←­hundre→%%ord-plural-de→;"
-          ],
-          [
-            "1000",
-            "←%spellout-numbering←­tusen→%%ord-plural-de→;"
-          ],
-          [
-            "1000000",
-            "én million→%%ord-plural-te→;"
-          ],
-          [
-            "2000000",
-            "←%%spellout-cardinal-reale← million→%%ord-plural-teer→;"
-          ],
-          [
-            "1000000000",
-            "én milliard→%%ord-plural-te→;"
-          ],
-          [
-            "2000000000",
-            "←%%spellout-cardinal-reale← milliard→%%ord-plural-teer→;"
-          ],
-          [
-            "1000000000000",
-            "én billion→%%ord-plural-te→;"
-          ],
-          [
-            "2000000000000",
-            "←%%spellout-cardinal-reale← billion→%%ord-plural-teer→;"
-          ],
-          [
-            "1000000000000000",
-            "én billiard→%%ord-plural-te→;"
-          ],
-          [
-            "2000000000000000",
-            "←%%spellout-cardinal-reale← billiard→%%ord-plural-teer→;"
-          ],
-          [
-            "1000000000000000000",
-            "=#,##0=.;"
-          ]
+          {
+            "rbnfrule": "minus →→;"
+          },
+          {
+            "rbnfrule": "=#,##0.#=;"
+          },
+          {
+            "rbnfrule": "nullte;"
+          },
+          {
+            "rbnfrule": "første;"
+          },
+          {
+            "rbnfrule": "andre;"
+          },
+          {
+            "rbnfrule": "tredje;"
+          },
+          {
+            "rbnfrule": "fjerde;"
+          },
+          {
+            "rbnfrule": "femte;"
+          },
+          {
+            "rbnfrule": "sjette;"
+          },
+          {
+            "rbnfrule": "sjuende;"
+          },
+          {
+            "rbnfrule": "åttende;"
+          },
+          {
+            "rbnfrule": "niende;"
+          },
+          {
+            "rbnfrule": "tiende;"
+          },
+          {
+            "rbnfrule": "ellevte;"
+          },
+          {
+            "rbnfrule": "tolvte;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal-neuter=de;"
+          },
+          {
+            "rbnfrule": "tjue→%%ord-plural-nde→;"
+          },
+          {
+            "rbnfrule": "tretti→%%ord-plural-nde→;"
+          },
+          {
+            "rbnfrule": "førti→%%ord-plural-nde→;"
+          },
+          {
+            "rbnfrule": "femti→%%ord-plural-nde→;"
+          },
+          {
+            "rbnfrule": "seksti→%%ord-plural-nde→;"
+          },
+          {
+            "rbnfrule": "sytti→%%ord-plural-nde→;"
+          },
+          {
+            "rbnfrule": "åtti→%%ord-plural-nde→;"
+          },
+          {
+            "rbnfrule": "nitti→%%ord-plural-nde→;"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←­hundre→%%ord-plural-de→;"
+          },
+          {
+            "rbnfrule": "←%spellout-numbering←­tusen→%%ord-plural-de→;"
+          },
+          {
+            "rbnfrule": "én million→%%ord-plural-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← million→%%ord-plural-teer→;"
+          },
+          {
+            "rbnfrule": "én milliard→%%ord-plural-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← milliard→%%ord-plural-teer→;"
+          },
+          {
+            "rbnfrule": "én billion→%%ord-plural-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billion→%%ord-plural-teer→;"
+          },
+          {
+            "rbnfrule": "én billiard→%%ord-plural-te→;"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-reale← billiard→%%ord-plural-teer→;"
+          },
+          {
+            "rbnfrule": "=#,##0=.;"
+          }
         ],
-        "%%ord-plural-nde": [
-          [
-            "0",
-            "ende;"
-          ],
-          [
-            "1",
-            "­=%spellout-ordinal-plural=;"
-          ]
+        "%ord-plural-nde": [
+          {
+            "rbnfrule": "ende;"
+          },
+          {
+            "rbnfrule": "­=%spellout-ordinal-plural=;"
+          }
         ],
-        "%%ord-plural-de": [
-          [
-            "0",
-            "de;"
-          ],
-          [
-            "1",
-            "' =%spellout-ordinal-plural=;"
-          ]
+        "%ord-plural-de": [
+          {
+            "rbnfrule": "de;"
+          },
+          {
+            "rbnfrule": "' =%spellout-ordinal-plural=;"
+          }
         ],
-        "%%ord-plural-te": [
-          [
-            "0",
-            "te;"
-          ],
-          [
-            "1",
-            "' =%spellout-ordinal-plural=;"
-          ]
+        "%ord-plural-te": [
+          {
+            "rbnfrule": "te;"
+          },
+          {
+            "rbnfrule": "' =%spellout-ordinal-plural=;"
+          }
         ],
-        "%%ord-plural-teer": [
-          [
-            "0",
-            "te;"
-          ],
-          [
-            "1",
-            "er =%spellout-ordinal-plural=;"
-          ]
+        "%ord-plural-teer": [
+          {
+            "rbnfrule": "te;"
+          },
+          {
+            "rbnfrule": "er =%spellout-ordinal-plural=;"
+          }
         ]
       }
     }

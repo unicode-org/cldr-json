@@ -1,138 +1,107 @@
 {
   "rbnf": {
     "identity": {
-      "version": {
-        "_cldrVersion": "42"
-      },
+      "version": {},
       "language": "su"
     },
     "rbnf": {
       "SpelloutRules": {
         "%spellout-numbering-year": [
-          [
-            "x.x",
-            "=0.0=;"
-          ],
-          [
-            "0",
-            "=%spellout-numbering=;"
-          ]
+          {
+            "rbnfrule": "=0.0=;"
+          },
+          {
+            "rbnfrule": "=%spellout-numbering=;"
+          }
         ],
         "%spellout-numbering": [
-          [
-            "0",
-            "=%spellout-cardinal=;"
-          ]
+          {
+            "rbnfrule": "=%spellout-cardinal=;"
+          }
         ],
         "%spellout-cardinal": [
-          [
-            "-x",
-            "mineus →→;"
-          ],
-          [
-            "x.x",
-            "←← titik →→;"
-          ],
-          [
-            "0",
-            "nol;"
-          ],
-          [
-            "1",
-            "hiji;"
-          ],
-          [
-            "2",
-            "dua;"
-          ],
-          [
-            "3",
-            "tilu;"
-          ],
-          [
-            "4",
-            "opat;"
-          ],
-          [
-            "5",
-            "lima;"
-          ],
-          [
-            "6",
-            "genep;"
-          ],
-          [
-            "7",
-            "tujuh;"
-          ],
-          [
-            "8",
-            "dalapan;"
-          ],
-          [
-            "9",
-            "salapan;"
-          ],
-          [
-            "10",
-            "sapuluh;"
-          ],
-          [
-            "11",
-            "sabelas;"
-          ],
-          [
-            "12",
-            "→→ belas;"
-          ],
-          [
-            "20",
-            "←← puluh[ →→];"
-          ],
-          [
-            "100",
-            "←%%spellout-cardinal-large←ratus[ →→];"
-          ],
-          [
-            "1000",
-            "←%%spellout-cardinal-large←rebu[ →→];"
-          ],
-          [
-            "1000000",
-            "←%%spellout-cardinal-large←juta[ →→];"
-          ],
-          [
-            "1000000000",
-            "←%%spellout-cardinal-large←miliar[ →→];"
-          ],
-          [
-            "1000000000000",
-            "=#,##0=;"
-          ]
+          {
+            "rbnfrule": "mineus →→;"
+          },
+          {
+            "rbnfrule": "←← titik →→;"
+          },
+          {
+            "rbnfrule": "nol;"
+          },
+          {
+            "rbnfrule": "hiji;"
+          },
+          {
+            "rbnfrule": "dua;"
+          },
+          {
+            "rbnfrule": "tilu;"
+          },
+          {
+            "rbnfrule": "opat;"
+          },
+          {
+            "rbnfrule": "lima;"
+          },
+          {
+            "rbnfrule": "genep;"
+          },
+          {
+            "rbnfrule": "tujuh;"
+          },
+          {
+            "rbnfrule": "dalapan;"
+          },
+          {
+            "rbnfrule": "salapan;"
+          },
+          {
+            "rbnfrule": "sapuluh;"
+          },
+          {
+            "rbnfrule": "sabelas;"
+          },
+          {
+            "rbnfrule": "→→ belas;"
+          },
+          {
+            "rbnfrule": "←← puluh[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-large←ratus[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-large←rebu[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-large←juta[ →→];"
+          },
+          {
+            "rbnfrule": "←%%spellout-cardinal-large←miliar[ →→];"
+          },
+          {
+            "rbnfrule": "=#,##0=;"
+          }
         ],
-        "%%spellout-cardinal-large": [
-          [
-            "1",
-            "sa;"
-          ],
-          [
-            "2",
-            "=%spellout-cardinal= ;"
-          ]
+        "%spellout-cardinal-large": [
+          {
+            "rbnfrule": "sa;"
+          },
+          {
+            "rbnfrule": "=%spellout-cardinal= ;"
+          }
         ],
         "%spellout-ordinal": [
-          [
-            "-x",
-            "mineus →→;"
-          ],
-          [
-            "x.x",
-            "=#,##0.0=;"
-          ],
-          [
-            "0",
-            "ka=%spellout-cardinal=;"
-          ]
+          {
+            "rbnfrule": "mineus →→;"
+          },
+          {
+            "rbnfrule": "=#,##0.0=;"
+          },
+          {
+            "rbnfrule": "ka=%spellout-cardinal=;"
+          }
         ]
       }
     }
