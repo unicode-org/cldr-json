@@ -1,6 +1,6 @@
 # cldr-person-names-modern
 
-A CLDR package with no packageDesc description.
+Personal Name Formatting (tech preview)
 
 This package contains the set of locales listed as modern coverage. See also the `cldr-person-names-full` package.
 
@@ -19,13 +19,11 @@ For full details, please see <https://github.com/unicode-org/cldr-json>
 CLDR does not use Github's issue tracking system to track bugs.  If you find an error in
 the data contained here, please file a new ticket at [Unicode Jira](https://unicode-org.atlassian.net/projects/CLDR/issues)
 
-### Licenses
+## License
 
-- Usage of CLDR data and software is governed by the [Unicode Terms of Use](http://www.unicode.org/copyright.html)
-a copy of which is included as [LICENSE](./LICENSE).
+Copyright © 1991-2022 Unicode, Inc.
+[Terms of Use](http://www.unicode.org/copyright.html)
 
-### Copyright
+SPDX-License-Identifier: Unicode-DFS-2016
 
-Copyright &copy; 1991-2021 Unicode, Inc.
-All rights reserved.
-[Terms of use](http://www.unicode.org/copyright.html)
+A copy of the license is included as [LICENSE](./LICENSE).
