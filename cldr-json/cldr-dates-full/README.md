@@ -9,7 +9,7 @@ This package contains the complete set of locales, including what is in the `cld
 
 ## General Info
 
-This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+This is part of the JSON distribution of [CLDR](https://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>

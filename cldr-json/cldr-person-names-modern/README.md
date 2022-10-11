@@ -9,7 +9,7 @@ This package contains the set of locales listed as modern coverage. See also the
 
 ## General Info
 
-This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+This is part of the JSON distribution of [CLDR](https://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>
