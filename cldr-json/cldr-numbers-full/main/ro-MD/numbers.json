@@ -3,7 +3,7 @@
     "ro-MD": {
       "identity": {
         "version": {
-          "_cldrVersion": "41"
+          "_cldrVersion": "42"
         },
         "language": "ro",
         "territory": "MD"
@@ -132,7 +132,9 @@
             }
           },
           "standard": "#,##0.00 ¤",
+          "standard-noCurrency": "#,##0.00",
           "accounting": "#,##0.00 ¤;(#,##0.00 ¤)",
+          "accounting-noCurrency": "#,##0.00;(#,##0.00)",
           "short": {
             "standard": {
               "1000-count-one": "0 mie ¤",
@@ -173,6 +175,7 @@
               "100000000000000-count-other": "000 tril'.' ¤"
             }
           },
+          "currencyPatternAppendISO": "{0} ¤¤",
           "unitPattern-count-one": "{0} {1}",
           "unitPattern-count-few": "{0} {1}",
           "unitPattern-count-other": "{0} de {1}"

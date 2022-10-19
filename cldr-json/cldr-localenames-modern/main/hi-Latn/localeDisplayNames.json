@@ -3,7 +3,7 @@
     "hi-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "41"
+          "_cldrVersion": "42"
         },
         "language": "en",
         "script": "Latn"
@@ -30,18 +30,19 @@
           "d0": "Transform Destination",
           "dx": "Dictionary Break Exclusions",
           "em": "Emoji Presentation Style",
-          "fw": "First day of week",
+          "fw": "Week kaa pahla din",
           "h0": "Mixed-in",
           "hc": "Hours ki Cycle (12 vs 24)",
           "i0": "Input Method",
           "k0": "Keyboard",
           "kv": "Highest Ignored",
           "lb": "Line break ki style",
-          "lw": "Line Breaks In Words Setting",
+          "lw": "Words Setting mein Line Breaks",
           "m0": "Transform Rules",
           "ms": "Measurement kaa system",
+          "mu": "Measurement Unit",
           "numbers": "Numbers",
-          "rg": "Region For Supplemental Data",
+          "rg": "Supplemental Data ke liye region",
           "s0": "Transform Source",
           "sd": "Region Subdivision",
           "ss": "Sentence Break Suppressions Type",
@@ -138,7 +139,7 @@
           },
           "d0": {
             "accents": "To Accented Characters From ASCII Sequence",
-            "ascii": "To ASCII",
+            "ascii": "ASCII",
             "casefold": "To Casefolded",
             "charname": "To Unicode Character Names",
             "digit": "To Digit Form Of Accent",
@@ -147,7 +148,7 @@
             "fwidth": "Poori width",
             "hex": "To Hexadecimal Codes",
             "hwidth": "Aadhi width",
-            "lower": "To Lowercase",
+            "lower": "Lowercase",
             "morse": "To Morse Code",
             "nfc": "To Unicode NFC",
             "nfd": "To Unicode NFD",
@@ -157,23 +158,23 @@
             "null": "No Change",
             "publish": "To Publishing Characters From ASCII",
             "remove": "To Empty String",
-            "title": "To Titlecase",
-            "upper": "To Uppercase",
+            "title": "Titlecase",
+            "upper": "Uppercase",
             "zawgyi": "To Zawgyi Myanmar Encoding"
           },
           "em": {
-            "default": "Use Default Presentation For Emoji Characters",
-            "emoji": "Prefer Emoji Presentation For Emoji Characters",
-            "text": "Prefer Text Presentation For Emoji Characters"
+            "default": "Emoji Characters ke liye Default Presentation use karein",
+            "emoji": "Emoji Characters ke liye Emoji Presentation prefer karein",
+            "text": "Emoji Characters ke liye Text Presentation prefer karein"
           },
           "fw": {
-            "fri": "First Day of Week Is Friday",
-            "mon": "First Day of Week Is Monday",
-            "sat": "First Day of Week Is Saturday",
-            "sun": "First Day of Week Is Sunday",
-            "thu": "First Day of Week Is Thursday",
-            "tue": "First Day of Week Is Tuesday",
-            "wed": "First Day of Week Is Wednesday"
+            "fri": "Week kaa pahla din Friday",
+            "mon": "Week kaa pahla din Monday",
+            "sat": "Week kaa pahla din Saturday",
+            "sun": "Week kaa pahla din Sunday",
+            "thu": "Week kaa pahla din Thursday",
+            "tue": "Week kaa pahla din Tuesday",
+            "wed": "Week kaa pahla din Wednesday"
           },
           "h0": {
             "hybrid": "Hybrid"
@@ -233,10 +234,10 @@
             "strict": "Strict Line Break Style"
           },
           "lw": {
-            "breakall": "Allow Line Breaks In All Words",
-            "keepall": "Prevent Line Breaks In All Words",
-            "normal": "Normal Line Breaks For Words",
-            "phrase": "Prevent Line Breaks In Phrases"
+            "breakall": "Sabhi Words mein Line Breaks allow karein",
+            "keepall": "Sabhi Words mein Line Breaks se bachein",
+            "normal": "Words ke liye normal Line Breaks",
+            "phrase": "Phrases mein Line Breaks se bachein"
           },
           "m0": {
             "aethiopi": "Encylopedia Aethiopica Transliteration",
@@ -277,6 +278,11 @@
             "uksystem": "Imperial Measurement System",
             "ussystem": "US Measurement System"
           },
+          "mu": {
+            "celsius": "Celsius",
+            "fahrenhe": "Fahrenheit",
+            "kelvin": "Kelvin"
+          },
           "numbers": {
             "adlm": "Adlam Digits",
             "ahom": "Ahom Digits",
@@ -305,19 +311,20 @@
             "gujr": "Gujarati Digits",
             "guru": "Gurmukhi Digits",
             "hanidays": "Chinese Calendar Day-of-Month Numerals",
-            "hanidec": "Chinese Decimal Numerals",
-            "hans": "Simplified Chinese Numerals",
-            "hansfin": "Simplified Chinese Financial Numerals",
-            "hant": "Traditional Chinese Numerals",
-            "hantfin": "Traditional Chinese Financial Numerals",
-            "hebr": "Hebrew Numerals",
+            "hanidec": "Chinese Decimal Numbers",
+            "hans": "Simplified Chinese Numbers",
+            "hansfin": "Simplified Chinese Financial Numbers",
+            "hant": "Traditional Chinese Numbers",
+            "hantfin": "Traditional Chinese Financial Numbers",
+            "hebr": "Hebrew Numbers",
             "hmng": "Pahawh Hmong Digits",
             "hmnp": "Nyiakeng Puachue Hmong Digits",
             "java": "Javanese Digits",
-            "jpan": "Japanese Numerals",
-            "jpanfin": "Japanese Financial Numerals",
+            "jpan": "Japanese Numbers",
+            "jpanfin": "Japanese Financial Numbers",
             "jpanyear": "Japanese Calendar Gannen Year Numerals",
             "kali": "Kayah Li Digits",
+            "kawi": "Kawi Digits",
             "khmr": "Khmer Digits",
             "knda": "Kannada Digits",
             "lana": "Tai Tham Hora Digits",
@@ -339,6 +346,7 @@
             "mymr": "Myanmar Digits",
             "mymrshan": "Myanmar Shan Digits",
             "mymrtlng": "Myanmar Tai Laing Digits",
+            "nagm": "Nag Mundari Digits",
             "native": "Native Digits",
             "newa": "Newa Digits",
             "nkoo": "N’Ko Digits",
@@ -346,8 +354,8 @@
             "orya": "Odia Digits",
             "osma": "Osmanya Digits",
             "rohg": "Hanifi Rohingya digits",
-            "roman": "Roman Numerals",
-            "romanlow": "Roman Lowercase Numerals",
+            "roman": "Roman Numbers",
+            "romanlow": "Roman Lowercase Numbers",
             "saur": "Saurashtra Digits",
             "segment": "Segmented Digits",
             "shrd": "Sharada Digits",
@@ -357,7 +365,7 @@
             "sund": "Sundanese Digits",
             "takr": "Takri Digits",
             "talu": "New Tai Lue Digits",
-            "taml": "Traditional Tamil Numerals",
+            "taml": "Traditional Tamil Numbers",
             "tamldec": "Tamil Digits",
             "telu": "Telugu Digits",
             "thai": "Thai Digits",

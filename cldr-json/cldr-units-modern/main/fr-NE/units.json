@@ -3,7 +3,7 @@
     "fr-NE": {
       "identity": {
         "version": {
-          "_cldrVersion": "41"
+          "_cldrVersion": "42"
         },
         "language": "fr",
         "territory": "NE"
@@ -380,6 +380,13 @@
             "unitPattern-count-other": "{0} ans",
             "perUnitPattern": "{0} par an"
           },
+          "duration-quarter": {
+            "gender": "masculine",
+            "displayName": "trimestres",
+            "unitPattern-count-one": "{0} trimestre",
+            "unitPattern-count-other": "{0} trimestres",
+            "perUnitPattern": "{0}/trimestre"
+          },
           "duration-month": {
             "gender": "masculine",
             "displayName": "mois",
@@ -723,7 +730,7 @@
             "unitPattern-count-other": "{0} milles scandinaves"
           },
           "length-point": {
-            "displayName": "points typographiques",
+            "displayName": "pt typog.",
             "unitPattern-count-one": "{0} point typographique",
             "unitPattern-count-other": "{0} points typographiques"
           },
@@ -757,7 +764,7 @@
             "unitPattern-count-one": "{0} luminosité solaire",
             "unitPattern-count-other": "{0} luminosités solaires"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "gender": "feminine",
             "displayName": "tonnes",
             "unitPattern-count-one": "{0} tonne",
@@ -1520,20 +1527,26 @@
             "unitPattern-count-other": "{0} bit"
           },
           "duration-century": {
-            "displayName": "siècles",
-            "unitPattern-count-one": "{0} siècle",
-            "unitPattern-count-other": "{0} siècles"
+            "displayName": "s.",
+            "unitPattern-count-one": "{0} s.",
+            "unitPattern-count-other": "{0} s."
           },
           "duration-decade": {
             "displayName": "décennies",
-            "unitPattern-count-one": "{0} décennie",
-            "unitPattern-count-other": "{0} décennies"
+            "unitPattern-count-one": "{0} déc.",
+            "unitPattern-count-other": "{0} déc."
           },
           "duration-year": {
             "displayName": "ans",
             "unitPattern-count-one": "{0} an",
             "unitPattern-count-other": "{0} ans",
             "perUnitPattern": "{0}/an"
+          },
+          "duration-quarter": {
+            "displayName": "trim.",
+            "unitPattern-count-one": "{0} trim.",
+            "unitPattern-count-other": "{0} trim.",
+            "perUnitPattern": "{0}/trim."
           },
           "duration-month": {
             "displayName": "m.",
@@ -1724,7 +1737,7 @@
           "graphics-dot": {
             "displayName": "pt",
             "unitPattern-count-one": "{0} pt",
-            "unitPattern-count-other": "{0} pts"
+            "unitPattern-count-other": "{0} pt"
           },
           "length-earth-radius": {
             "displayName": "R⊕",
@@ -1831,7 +1844,7 @@
             "unitPattern-count-other": "{0} smi"
           },
           "length-point": {
-            "displayName": "points typographiques",
+            "displayName": "pt typog.",
             "unitPattern-count-one": "{0} pt typog.",
             "unitPattern-count-other": "{0} pts typog."
           },
@@ -1858,7 +1871,7 @@
             "unitPattern-count-one": "{0} L☉",
             "unitPattern-count-other": "{0} L☉"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "t",
             "unitPattern-count-one": "{0} t",
             "unitPattern-count-other": "{0} t"
@@ -2351,8 +2364,8 @@
           },
           "acceleration-g-force": {
             "displayName": "G",
-            "unitPattern-count-one": "{0}G",
-            "unitPattern-count-other": "{0}G"
+            "unitPattern-count-one": "{0} force g",
+            "unitPattern-count-other": "{0} force g"
           },
           "acceleration-meter-per-square-second": {
             "displayName": "m/s²",
@@ -2561,8 +2574,8 @@
           },
           "duration-century": {
             "displayName": "s.",
-            "unitPattern-count-one": "{0} s.",
-            "unitPattern-count-other": "{0} s."
+            "unitPattern-count-one": "{0}s.",
+            "unitPattern-count-other": "{0}s."
           },
           "duration-decade": {
             "displayName": "déc.",
@@ -2574,6 +2587,12 @@
             "unitPattern-count-one": "{0}a",
             "unitPattern-count-other": "{0}a",
             "perUnitPattern": "{0}/a"
+          },
+          "duration-quarter": {
+            "displayName": "T",
+            "unitPattern-count-one": "{0} T",
+            "unitPattern-count-other": "{0} T",
+            "perUnitPattern": "{0}/T"
           },
           "duration-month": {
             "displayName": "m.",
@@ -2763,8 +2782,8 @@
           },
           "graphics-dot": {
             "displayName": "pt",
-            "unitPattern-count-one": "{0} pt",
-            "unitPattern-count-other": "{0} pts"
+            "unitPattern-count-one": "{0}pt",
+            "unitPattern-count-other": "{0}pt"
           },
           "length-earth-radius": {
             "displayName": "R⊕",
@@ -2871,7 +2890,7 @@
             "unitPattern-count-other": "{0} smi"
           },
           "length-point": {
-            "displayName": "points typographiques",
+            "displayName": "pt typog.",
             "unitPattern-count-one": "{0} pt typog.",
             "unitPattern-count-other": "{0} pts typog."
           },
@@ -2900,7 +2919,7 @@
             "unitPattern-count-one": "{0}L☉",
             "unitPattern-count-other": "{0}L☉"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "t",
             "unitPattern-count-one": "{0}t",
             "unitPattern-count-other": "{0}t"
@@ -3022,7 +3041,7 @@
           "pressure-inch-ofhg": {
             "displayName": "inHg",
             "unitPattern-count-one": "{0} inHg",
-            "unitPattern-count-other": "{0}″ Hg"
+            "unitPattern-count-other": "{0} inHg"
           },
           "pressure-bar": {
             "displayName": "bar",

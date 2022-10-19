@@ -3,7 +3,7 @@
     "as": {
       "identity": {
         "version": {
-          "_cldrVersion": "41"
+          "_cldrVersion": "42"
         },
         "language": "as"
       },
@@ -317,15 +317,15 @@
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G y MMM d",
                 "GyMMMEd": "G y MMM d, E",
-                "h": "a h",
+                "h": "h a",
                 "H": "HH",
-                "hm": "a h:mm",
+                "hm": "h:mm a",
                 "Hm": "HH:mm",
-                "hms": "a h:mm:ss",
+                "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
                 "M": "L",
-                "Md": "MM-dd",
-                "MEd": "MM-dd, E",
+                "Md": "M/d",
+                "MEd": "E, M/d",
                 "MMM": "LLL",
                 "MMMd": "MMM d",
                 "MMMEd": "MMM d, E",
@@ -338,7 +338,7 @@
                 "yyyyMEd": "E, dd-MM-y GGGGG",
                 "yyyyMMM": "MMM y G",
                 "yyyyMMMd": "d MMM y G",
-                "yyyyMMMEd": "E, d MMM y G",
+                "yyyyMMMEd": "E, MMM d, y G",
                 "yyyyMMMM": "MMMM y G",
                 "yyyyQQQ": "G y QQQ",
                 "yyyyQQQQ": "G y QQQQ"
@@ -371,8 +371,8 @@
                   "d": "d–d"
                 },
                 "Gy": {
-                  "G": "G y – G y",
-                  "y": "G y–y"
+                  "G": "y G – y G",
+                  "y": "y – y G"
                 },
                 "GyM": {
                   "G": "GGGGG M/y – GGGGG M/y",
@@ -382,7 +382,7 @@
                 "GyMd": {
                   "d": "GGGGG d/M/y – d/M/y",
                   "G": "GGGGG d/M/y – GGGGG d/M/y",
-                  "M": "GGGGG d/M/y – d/M/y",
+                  "M": "M/d/y – M/d/y GGGGG",
                   "y": "GGGGG d/M/y – d/M/y"
                 },
                 "GyMEd": {
@@ -497,6 +497,14 @@
                   "M": "G y MMMM–MMMM",
                   "y": "G y MMMM – y MMMM"
                 }
+              }
+            },
+            "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} 'at' {0}",
+                "long": "{1} 'at' {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
               }
             }
           }

@@ -3,7 +3,7 @@
     "mt": {
       "identity": {
         "version": {
-          "_cldrVersion": "41"
+          "_cldrVersion": "42"
         },
         "language": "mt"
       },
@@ -130,6 +130,7 @@
           "angle-arc-minute": {
             "displayName": "arcmin",
             "unitPattern-count-one": "{0}′",
+            "unitPattern-count-two": "{0}′",
             "unitPattern-count-few": "{0}′",
             "unitPattern-count-many": "{0}′",
             "unitPattern-count-other": "{0}′"
@@ -186,6 +187,7 @@
           "concentr-karat": {
             "displayName": "karati",
             "unitPattern-count-one": "{0} kt",
+            "unitPattern-count-two": "{0} kt",
             "unitPattern-count-few": "{0} kt",
             "unitPattern-count-many": "{0} kt",
             "unitPattern-count-other": "{0} kt"
@@ -225,9 +227,10 @@
           "consumption-liter-per-kilometer": {
             "displayName": "L/km",
             "unitPattern-count-one": "{0} litru kull kilometru",
+            "unitPattern-count-two": "{0} litri kull kilometru",
             "unitPattern-count-few": "{0} litri kull kilometru",
-            "unitPattern-count-many": "{0} litri kull kilometru",
-            "unitPattern-count-other": "{0} litri kull kilometru"
+            "unitPattern-count-many": "{0}-il litru kull kilometru",
+            "unitPattern-count-other": "{0} litru kull kilometru"
           },
           "consumption-liter-per-100-kilometer": {
             "displayName": "L/100km",
@@ -248,6 +251,7 @@
           "digital-terabyte": {
             "displayName": "terabytes",
             "unitPattern-count-one": "{0} terabyte",
+            "unitPattern-count-two": "{0} terabytes",
             "unitPattern-count-few": "{0} terabytes",
             "unitPattern-count-many": "{0} terabytes",
             "unitPattern-count-other": "{0} terabytes"
@@ -255,6 +259,7 @@
           "digital-terabit": {
             "displayName": "terabits",
             "unitPattern-count-one": "{0} terabit",
+            "unitPattern-count-two": "{0} terabits",
             "unitPattern-count-few": "{0} terabits",
             "unitPattern-count-many": "{0} terabits",
             "unitPattern-count-other": "{0} terabits"
@@ -270,13 +275,15 @@
           "digital-megabyte": {
             "displayName": "megabytes",
             "unitPattern-count-one": "{0} megabyte",
+            "unitPattern-count-two": "{0} megabytes",
             "unitPattern-count-few": "{0} megabytes",
-            "unitPattern-count-many": "{0} megabytes",
-            "unitPattern-count-other": "{0} megabytes"
+            "unitPattern-count-many": "{0}-il megabyte",
+            "unitPattern-count-other": "{0} megabyte"
           },
           "digital-megabit": {
             "displayName": "Mb",
             "unitPattern-count-one": "{0} Mb",
+            "unitPattern-count-two": "{0} Mb",
             "unitPattern-count-few": "{0} Mb",
             "unitPattern-count-many": "{0} Mb",
             "unitPattern-count-other": "{0} Mb"
@@ -309,6 +316,11 @@
             "displayName": "yr",
             "unitPattern-count-other": "{0} y",
             "perUnitPattern": "{0}/y"
+          },
+          "duration-quarter": {
+            "displayName": "qtr",
+            "unitPattern-count-other": "{0} q",
+            "perUnitPattern": "{0}/q"
           },
           "duration-month": {
             "displayName": "mon",
@@ -343,9 +355,10 @@
           "duration-millisecond": {
             "displayName": "millisekondi",
             "unitPattern-count-one": "{0} millisekonda",
+            "unitPattern-count-two": "{0} millisekondi",
             "unitPattern-count-few": "{0} millisekondi",
-            "unitPattern-count-many": "{0} millisekondi",
-            "unitPattern-count-other": "{0} millisekondi"
+            "unitPattern-count-many": "{0}-il millisekonda",
+            "unitPattern-count-other": "{0} millisekonda"
           },
           "duration-microsecond": {
             "displayName": "μs",
@@ -547,6 +560,7 @@
           "light-lux": {
             "displayName": "lx",
             "unitPattern-count-one": "{0} lx",
+            "unitPattern-count-two": "{0} lx",
             "unitPattern-count-few": "{0} lx",
             "unitPattern-count-many": "{0} lx",
             "unitPattern-count-other": "{0} lx"
@@ -563,7 +577,7 @@
             "displayName": "L☉",
             "unitPattern-count-other": "{0} L☉"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "t",
             "unitPattern-count-other": "{0} t"
           },
@@ -1055,6 +1069,7 @@
           "concentr-karat": {
             "displayName": "kt",
             "unitPattern-count-one": "{0} kt",
+            "unitPattern-count-two": "{0} kt",
             "unitPattern-count-few": "{0} kt",
             "unitPattern-count-many": "{0} kt",
             "unitPattern-count-other": "{0} kt"
@@ -1094,6 +1109,7 @@
           "consumption-liter-per-kilometer": {
             "displayName": "L/km",
             "unitPattern-count-one": "{0} L/km",
+            "unitPattern-count-two": "{0} L/km",
             "unitPattern-count-few": "{0} L/km",
             "unitPattern-count-many": "{0} L/km",
             "unitPattern-count-other": "{0} L/km"
@@ -1117,6 +1133,7 @@
           "digital-terabyte": {
             "displayName": "TB",
             "unitPattern-count-one": "{0} TB",
+            "unitPattern-count-two": "{0} TB",
             "unitPattern-count-few": "{0} TB",
             "unitPattern-count-many": "{0} TB",
             "unitPattern-count-other": "{0} TB"
@@ -1124,6 +1141,7 @@
           "digital-terabit": {
             "displayName": "Tb",
             "unitPattern-count-one": "{0} Tb",
+            "unitPattern-count-two": "{0} Tb",
             "unitPattern-count-few": "{0} Tb",
             "unitPattern-count-many": "{0} Tb",
             "unitPattern-count-other": "{0} Tb"
@@ -1139,6 +1157,7 @@
           "digital-megabyte": {
             "displayName": "MB",
             "unitPattern-count-one": "{0} MB",
+            "unitPattern-count-two": "{0} MB",
             "unitPattern-count-few": "{0} MB",
             "unitPattern-count-many": "{0} MB",
             "unitPattern-count-other": "{0} MB"
@@ -1146,6 +1165,7 @@
           "digital-megabit": {
             "displayName": "Mb",
             "unitPattern-count-one": "{0} Mb",
+            "unitPattern-count-two": "{0} Mb",
             "unitPattern-count-few": "{0} Mb",
             "unitPattern-count-many": "{0} Mb",
             "unitPattern-count-other": "{0} Mb"
@@ -1178,6 +1198,11 @@
             "displayName": "yr",
             "unitPattern-count-other": "{0} y",
             "perUnitPattern": "{0}/y"
+          },
+          "duration-quarter": {
+            "displayName": "qtr",
+            "unitPattern-count-other": "{0} q",
+            "perUnitPattern": "{0}/q"
           },
           "duration-month": {
             "displayName": "mon",
@@ -1212,6 +1237,7 @@
           "duration-millisecond": {
             "displayName": "millisek",
             "unitPattern-count-one": "{0} ms",
+            "unitPattern-count-two": "{0} ms",
             "unitPattern-count-few": "{0} ms",
             "unitPattern-count-many": "{0} ms",
             "unitPattern-count-other": "{0} ms"
@@ -1416,6 +1442,7 @@
           "light-lux": {
             "displayName": "lx",
             "unitPattern-count-one": "{0} lx",
+            "unitPattern-count-two": "{0} lx",
             "unitPattern-count-few": "{0} lx",
             "unitPattern-count-many": "{0} lx",
             "unitPattern-count-other": "{0} lx"
@@ -1432,7 +1459,7 @@
             "displayName": "L☉",
             "unitPattern-count-other": "{0} L☉"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "t",
             "unitPattern-count-other": "{0} t"
           },
@@ -1924,6 +1951,7 @@
           "concentr-karat": {
             "displayName": "kt",
             "unitPattern-count-one": "{0} kt",
+            "unitPattern-count-two": "{0} kt",
             "unitPattern-count-few": "{0} kt",
             "unitPattern-count-many": "{0} kt",
             "unitPattern-count-other": "{0} kt"
@@ -1963,6 +1991,7 @@
           "consumption-liter-per-kilometer": {
             "displayName": "L/km",
             "unitPattern-count-one": "{0} L/km",
+            "unitPattern-count-two": "{0} L/km",
             "unitPattern-count-few": "{0} L/km",
             "unitPattern-count-many": "{0} L/km",
             "unitPattern-count-other": "{0} L/km"
@@ -1986,6 +2015,7 @@
           "digital-terabyte": {
             "displayName": "TB",
             "unitPattern-count-one": "{0} TB",
+            "unitPattern-count-two": "{0} TB",
             "unitPattern-count-few": "{0} TB",
             "unitPattern-count-many": "{0} TB",
             "unitPattern-count-other": "{0} TB"
@@ -1993,6 +2023,7 @@
           "digital-terabit": {
             "displayName": "Tb",
             "unitPattern-count-one": "{0} Tb",
+            "unitPattern-count-two": "{0} Tb",
             "unitPattern-count-few": "{0} Tb",
             "unitPattern-count-many": "{0} Tb",
             "unitPattern-count-other": "{0} Tb"
@@ -2008,6 +2039,7 @@
           "digital-megabyte": {
             "displayName": "MB",
             "unitPattern-count-one": "{0} MB",
+            "unitPattern-count-two": "{0} MB",
             "unitPattern-count-few": "{0} MB",
             "unitPattern-count-many": "{0} MB",
             "unitPattern-count-other": "{0} MB"
@@ -2015,6 +2047,7 @@
           "digital-megabit": {
             "displayName": "Mb",
             "unitPattern-count-one": "{0} Mb",
+            "unitPattern-count-two": "{0} Mb",
             "unitPattern-count-few": "{0} Mb",
             "unitPattern-count-many": "{0} Mb",
             "unitPattern-count-other": "{0} Mb"
@@ -2047,6 +2080,11 @@
             "displayName": "yr",
             "unitPattern-count-other": "{0} y",
             "perUnitPattern": "{0}/y"
+          },
+          "duration-quarter": {
+            "displayName": "qtr",
+            "unitPattern-count-other": "{0} q",
+            "perUnitPattern": "{0}/q"
           },
           "duration-month": {
             "displayName": "mon",
@@ -2081,6 +2119,7 @@
           "duration-millisecond": {
             "displayName": "millisek",
             "unitPattern-count-one": "{0}ms",
+            "unitPattern-count-two": "{0}ms",
             "unitPattern-count-few": "{0}ms",
             "unitPattern-count-many": "{0}ms",
             "unitPattern-count-other": "{0}ms"
@@ -2285,6 +2324,7 @@
           "light-lux": {
             "displayName": "lx",
             "unitPattern-count-one": "{0} lx",
+            "unitPattern-count-two": "{0} lx",
             "unitPattern-count-few": "{0} lx",
             "unitPattern-count-many": "{0} lx",
             "unitPattern-count-other": "{0} lx"
@@ -2301,7 +2341,7 @@
             "displayName": "L☉",
             "unitPattern-count-other": "{0} L☉"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "t",
             "unitPattern-count-other": "{0} t"
           },

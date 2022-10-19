@@ -3,7 +3,7 @@
     "ks-Deva": {
       "identity": {
         "version": {
-          "_cldrVersion": "41"
+          "_cldrVersion": "42"
         },
         "language": "ks",
         "script": "Deva"
@@ -232,8 +232,8 @@
                   "pm": "PM"
                 },
                 "wide": {
-                  "am": "AM",
-                  "pm": "PM"
+                  "am": "ये एम",
+                  "pm": "पी एम"
                 }
               },
               "stand-alone": {
@@ -246,16 +246,16 @@
                   "pm": "PM"
                 },
                 "wide": {
-                  "am": "AM",
-                  "pm": "PM"
+                  "am": "दुपहर ब्रोंठ",
+                  "pm": "दुपहरपतॖ"
                 }
               }
             },
             "eras": {
               "eraNames": {
-                "0": "BC",
+                "0": "ईसा ब्रोंठ",
                 "0-alt-variant": "BC",
-                "1": "AD",
+                "1": "ईस्वी",
                 "1-alt-variant": "AD"
               },
               "eraAbbr": {
@@ -296,8 +296,8 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
-              "full": "{0} पेठ {1}",
-              "long": "{0} पेठ {1}",
+              "full": "{1}, {0}",
+              "long": "{1}, {0}",
               "medium": "{1}, {0}",
               "short": "{1}, {0}",
               "availableFormats": {
@@ -320,11 +320,11 @@
                 "GyMMMEd": "G y MMM d, E",
                 "h": "h a",
                 "H": "HH",
-                "hm": "h:mm a",
+                "hm": "h:mm a",
                 "Hm": "HH:mm",
-                "hms": "h:mm:ss a",
+                "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
-                "hmsv": "h:mm:ss a v",
+                "hmsv": "h:mm:ss a v",
                 "Hmsv": "HH:mm:ss v",
                 "hmv": "h:mm a v",
                 "Hmv": "HH:mm v",
@@ -339,10 +339,10 @@
                 "ms": "mm:ss",
                 "y": "y",
                 "yM": "y-MM",
-                "yMd": "y-MM-dd",
+                "yMd": "M/d/y",
                 "yMEd": "y-MM-dd, E",
                 "yMMM": "y MMM",
-                "yMMMd": "y MMM d",
+                "yMMMd": "MMM d, y",
                 "yMMMEd": "y MMM d, E",
                 "yMMMM": "y MMMM",
                 "yQQQ": "y QQQ",
@@ -503,6 +503,14 @@
                   "M": "y MMMM–MMMM",
                   "y": "y MMMM – y MMMM"
                 }
+              }
+            },
+            "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{0} पेठ {1}",
+                "long": "{0} पेठ {1}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
               }
             }
           }

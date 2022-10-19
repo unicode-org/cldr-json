@@ -173,13 +173,23 @@
 
 ### [cldr-numbers-full](./cldr-json/cldr-numbers-full/)
 
- - A CLDR package with no packageDesc description. (full)
+ - Data for number formatting. (full)
  - [![NPM version](https://img.shields.io/npm/v/cldr-numbers-full.svg?style=flat)](https://www.npmjs.org/package/cldr-numbers-full)
 
 ### [cldr-numbers-modern](./cldr-json/cldr-numbers-modern/)
 
- - A CLDR package with no packageDesc description. (modern only)
+ - Data for number formatting. (modern only)
  - [![NPM version](https://img.shields.io/npm/v/cldr-numbers-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-numbers-modern)
+
+### [cldr-person-names-full](./cldr-json/cldr-person-names-full/)
+
+ - Personal Name Formatting (tech preview) (full)
+ - [![NPM version](https://img.shields.io/npm/v/cldr-person-names-full.svg?style=flat)](https://www.npmjs.org/package/cldr-person-names-full)
+
+### [cldr-person-names-modern](./cldr-json/cldr-person-names-modern/)
+
+ - Personal Name Formatting (tech preview) (modern only)
+ - [![NPM version](https://img.shields.io/npm/v/cldr-person-names-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-person-names-modern)
 
 ### [cldr-rbnf](./cldr-json/cldr-rbnf/)
 
@@ -212,7 +222,7 @@ Package metadata is available at [`cldr-core`/cldr-packages.json](./cldr-json/cl
 
 ## General Info
 
-This is part of the JSON distribution of [CLDR](http://cldr.unicode.org/)
+This is part of the JSON distribution of [CLDR](https://cldr.unicode.org/)
 locale data for internationalization
 
 For full details, please see <https://github.com/unicode-org/cldr-json>
@@ -222,13 +232,11 @@ For full details, please see <https://github.com/unicode-org/cldr-json>
 CLDR does not use Github's issue tracking system to track bugs.  If you find an error in
 the data contained here, please file a new ticket at [Unicode Jira](https://unicode-org.atlassian.net/projects/CLDR/issues)
 
-### Licenses
+## License
 
-- Usage of CLDR data and software is governed by the [Unicode Terms of Use](http://www.unicode.org/copyright.html)
-a copy of which is included as [LICENSE](./LICENSE).
+Copyright © 1991-2022 Unicode, Inc.
+[Terms of Use](http://www.unicode.org/copyright.html)
 
-### Copyright
+SPDX-License-Identifier: Unicode-DFS-2016
 
-Copyright &copy; 1991-2021 Unicode, Inc.
-All rights reserved.
-[Terms of use](http://www.unicode.org/copyright.html)
+A copy of the license is included as [LICENSE](./LICENSE).

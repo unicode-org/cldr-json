@@ -3,7 +3,7 @@
     "mt": {
       "identity": {
         "version": {
-          "_cldrVersion": "41"
+          "_cldrVersion": "42"
         },
         "language": "mt"
       },
@@ -83,7 +83,9 @@
             }
           },
           "standard": "¤#,##0.00",
+          "standard-noCurrency": "#,##0.00",
           "accounting": "¤#,##0.00",
+          "accounting-noCurrency": "#,##0.00",
           "short": {
             "standard": {
               "1000-count-other": "¤ 0K",
@@ -100,7 +102,9 @@
               "100000000000000-count-other": "¤ 000T"
             }
           },
+          "currencyPatternAppendISO": "{0} ¤¤",
           "unitPattern-count-one": "{0} {1}",
+          "unitPattern-count-two": "{0} {1}",
           "unitPattern-count-few": "{0} {1}",
           "unitPattern-count-many": "{0} {1}",
           "unitPattern-count-other": "{0} {1}"
@@ -112,7 +116,11 @@
           "range": "{0}–{1}"
         },
         "minimalPairs": {
-          "pluralMinimalPairs-count-other": "{0}?",
+          "pluralMinimalPairs-count-one": "jum",
+          "pluralMinimalPairs-count-two": "jumejn",
+          "pluralMinimalPairs-count-few": "{0} ijiem",
+          "pluralMinimalPairs-count-many": "{0}-il jum",
+          "pluralMinimalPairs-count-other": "{0} jum",
           "other": "{0}?"
         }
       }

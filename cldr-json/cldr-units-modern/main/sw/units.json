@@ -3,7 +3,7 @@
     "sw": {
       "identity": {
         "version": {
-          "_cldrVersion": "41"
+          "_cldrVersion": "42"
         },
         "language": "sw"
       },
@@ -206,7 +206,7 @@
           },
           "concentr-milligram-ofglucose-per-deciliter": {
             "displayName": "miligramu kwa kila desilita",
-            "unitPattern-count-one": "miligramu kwa kila desilita",
+            "unitPattern-count-one": "miligramu {0} kwa kila desilita",
             "unitPattern-count-other": "miligramu {0} kwa kila desilita"
           },
           "concentr-millimole-per-liter": {
@@ -334,6 +334,12 @@
             "unitPattern-count-one": "mwaka {0}",
             "unitPattern-count-other": "miaka {0}",
             "perUnitPattern": "{0} kwa mwaka"
+          },
+          "duration-quarter": {
+            "displayName": "robo",
+            "unitPattern-count-one": "robo {0}",
+            "unitPattern-count-other": "robo {0}",
+            "perUnitPattern": "{0} kwa robo"
           },
           "duration-month": {
             "displayName": "miezi",
@@ -661,7 +667,7 @@
             "unitPattern-count-one": "ung'avu wa jua {0}",
             "unitPattern-count-other": "ung'avu wa jua {0}"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "tani mita",
             "unitPattern-count-one": "tani mita {0}",
             "unitPattern-count-other": "tani mita {0}"
@@ -1164,7 +1170,8 @@
           },
           "angle-revolution": {
             "displayName": "mzunguko",
-            "unitPattern-count-other": "{0} rev"
+            "unitPattern-count-one": "raundi {0}",
+            "unitPattern-count-other": "raundi {0}"
           },
           "angle-radian": {
             "displayName": "radiani",
@@ -1375,6 +1382,12 @@
             "unitPattern-count-one": "mwaka {0}",
             "unitPattern-count-other": "miaka {0}",
             "perUnitPattern": "{0} kwa mwaka"
+          },
+          "duration-quarter": {
+            "displayName": "robo",
+            "unitPattern-count-one": "robo {0}",
+            "unitPattern-count-other": "robo {0}",
+            "perUnitPattern": "{0} kwa robo"
           },
           "duration-month": {
             "displayName": "miezi",
@@ -1700,7 +1713,7 @@
             "unitPattern-count-one": "L☉ {0}",
             "unitPattern-count-other": "L☉ {0}"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "tani mita",
             "unitPattern-count-one": "tani mita {0}",
             "unitPattern-count-other": "tani mita {0}"
@@ -2203,7 +2216,8 @@
           },
           "angle-revolution": {
             "displayName": "mzunguko",
-            "unitPattern-count-other": "{0} rev"
+            "unitPattern-count-one": "raundi {0}",
+            "unitPattern-count-other": "raundi {0}"
           },
           "angle-radian": {
             "displayName": "radiani",
@@ -2415,6 +2429,12 @@
             "unitPattern-count-other": "miaka {0}",
             "perUnitPattern": "{0} kwa mwaka"
           },
+          "duration-quarter": {
+            "displayName": "robo",
+            "unitPattern-count-one": "robo {0}",
+            "unitPattern-count-other": "robo {0}",
+            "perUnitPattern": "{0} kwa robo"
+          },
           "duration-month": {
             "displayName": "mwezi",
             "unitPattern-count-one": "mwezi {0}",
@@ -2449,7 +2469,7 @@
             "displayName": "sekunde",
             "unitPattern-count-one": "sek {0}",
             "unitPattern-count-other": "sek {0}",
-            "perUnitPattern": "{0} kwa kila sekunde"
+            "perUnitPattern": "{0} kwa kila sek"
           },
           "duration-millisecond": {
             "displayName": "millisekunde",
@@ -2592,10 +2612,12 @@
             "unitPattern-count-other": "ppi {0}"
           },
           "graphics-dot-per-centimeter": {
+            "displayName": "dpcm",
             "unitPattern-count-one": "dpcm {0}",
             "unitPattern-count-other": "dpcm {0}"
           },
           "graphics-dot-per-inch": {
+            "displayName": "dpi",
             "unitPattern-count-one": "dpi {0}",
             "unitPattern-count-other": "dpi {0}"
           },
@@ -2654,24 +2676,24 @@
           },
           "length-mile": {
             "displayName": "maili",
-            "unitPattern-count-one": "Maili {0}",
-            "unitPattern-count-other": "Maili {0}"
+            "unitPattern-count-one": "maili {0}",
+            "unitPattern-count-other": "maili {0}"
           },
           "length-yard": {
             "displayName": "yadi",
-            "unitPattern-count-one": "Yadi {0}",
-            "unitPattern-count-other": "Yadi {0}"
+            "unitPattern-count-one": "yadi {0}",
+            "unitPattern-count-other": "yadi {0}"
           },
           "length-foot": {
             "displayName": "futi",
-            "unitPattern-count-one": "Futi {0}",
-            "unitPattern-count-other": "Futi {0}",
+            "unitPattern-count-one": "futi {0}",
+            "unitPattern-count-other": "futi {0}",
             "perUnitPattern": "{0} kwa kila futi"
           },
           "length-inch": {
-            "displayName": "Inchi",
-            "unitPattern-count-one": "Inchi {0}",
-            "unitPattern-count-other": "Inchi {0}",
+            "displayName": "inchi",
+            "unitPattern-count-one": "inchi {0}",
+            "unitPattern-count-other": "inchi {0}",
             "perUnitPattern": "{0} kwa kila inchi"
           },
           "length-parsec": {
@@ -2715,7 +2737,7 @@
             "unitPattern-count-other": "pointi {0}"
           },
           "length-solar-radius": {
-            "displayName": "nusu vipenyo vya jua",
+            "displayName": "R☉",
             "unitPattern-count-one": "R☉ {0}",
             "unitPattern-count-other": "R☉ {0}"
           },
@@ -2739,7 +2761,7 @@
             "unitPattern-count-one": "L☉ {0}",
             "unitPattern-count-other": "L☉ {0}"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "tani mita",
             "unitPattern-count-one": "tani mita {0}",
             "unitPattern-count-other": "tani mita {0}"

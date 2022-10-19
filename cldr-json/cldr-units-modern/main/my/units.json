@@ -3,7 +3,7 @@
     "my": {
       "identity": {
         "version": {
-          "_cldrVersion": "41"
+          "_cldrVersion": "42"
         },
         "language": "my"
       },
@@ -289,6 +289,11 @@
             "unitPattern-count-other": "{0} နှစ်",
             "perUnitPattern": "တစ်နှစ်လျှင် {0}"
           },
+          "duration-quarter": {
+            "displayName": "ကွာတား",
+            "unitPattern-count-other": "{0} ကွာတား",
+            "perUnitPattern": "{0}/ကွာတား"
+          },
           "duration-month": {
             "displayName": "လ",
             "unitPattern-count-other": "{0} လ",
@@ -412,24 +417,32 @@
             "unitPattern-count-other": "{0} ဟတ်ဇ်"
           },
           "graphics-em": {
-            "displayName": "em",
-            "unitPattern-count-other": "{0} em"
+            "displayName": "ပုံနှိပ်စာလုံး အရွယ်အစား",
+            "unitPattern-count-other": "{0} ems"
           },
           "graphics-pixel": {
-            "displayName": "px",
-            "unitPattern-count-other": "{0} px"
+            "displayName": "ပစ်ဆယ်",
+            "unitPattern-count-other": "{0} ပစ်ဆယ်"
           },
           "graphics-megapixel": {
-            "displayName": "MP",
-            "unitPattern-count-other": "{0} MP"
+            "displayName": "မီဂါပစ်ဆယ်",
+            "unitPattern-count-other": "{0} မီဂါပစ်ဆယ်"
           },
           "graphics-pixel-per-centimeter": {
-            "displayName": "ppcm",
-            "unitPattern-count-other": "{0} ppcm"
+            "displayName": "တစ်စင်တီမီတာပါ ပစ်ဆယ်",
+            "unitPattern-count-other": "တစ်စင်တီမီတာလျှင် {0} ပစ်ဆယ်"
           },
           "graphics-pixel-per-inch": {
-            "displayName": "ppi",
-            "unitPattern-count-other": "{0} ppi"
+            "displayName": "တစ်လက်မပါ ပစ်ဆယ်",
+            "unitPattern-count-other": "တစ်လက်မလျှင် {0} ပစ်ဆယ်"
+          },
+          "graphics-dot-per-centimeter": {
+            "displayName": "တစ်စင်တီမီတာပါ အစက်",
+            "unitPattern-count-other": "တစ်စင်တီမီတာလျှင် {0} စက်"
+          },
+          "graphics-dot-per-inch": {
+            "displayName": "တစ်လက်မပါ အစက်",
+            "unitPattern-count-other": "တစ်လက်မလျှင် {0} စက်"
           },
           "graphics-dot": {
             "displayName": "အစက်",
@@ -544,7 +557,7 @@
             "displayName": "ဆိုလာ လူမီနိုစီတီးစ်",
             "unitPattern-count-other": "{0} ဆိုလာ လူမီနိုစီးတီးစ်"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "မက်ထရစ်တန်",
             "unitPattern-count-other": "{0} မက်ထရစ်တန်"
           },
@@ -1142,6 +1155,11 @@
             "unitPattern-count-other": "{0} နှစ်",
             "perUnitPattern": "{0}/ နှစ်"
           },
+          "duration-quarter": {
+            "displayName": "qtr",
+            "unitPattern-count-other": "{0} q",
+            "perUnitPattern": "{0}/q"
+          },
           "duration-month": {
             "displayName": "လ",
             "unitPattern-count-other": "{0} လ",
@@ -1269,11 +1287,11 @@
             "unitPattern-count-other": "{0} em"
           },
           "graphics-pixel": {
-            "displayName": "px",
+            "displayName": "ပစ်ဆယ်",
             "unitPattern-count-other": "{0} px"
           },
           "graphics-megapixel": {
-            "displayName": "MP",
+            "displayName": "မီဂါပစ်ဆယ်",
             "unitPattern-count-other": "{0} MP"
           },
           "graphics-pixel-per-centimeter": {
@@ -1284,9 +1302,17 @@
             "displayName": "ppi",
             "unitPattern-count-other": "{0} ppi"
           },
+          "graphics-dot-per-centimeter": {
+            "displayName": "dpcm",
+            "unitPattern-count-other": "{0} dpcm"
+          },
+          "graphics-dot-per-inch": {
+            "displayName": "dpi",
+            "unitPattern-count-other": "{0} dpi"
+          },
           "graphics-dot": {
-            "displayName": "အစက်",
-            "unitPattern-count-other": "{0} အစက်"
+            "displayName": "ပစ်ဆယ်",
+            "unitPattern-count-other": "{0} px"
           },
           "length-earth-radius": {
             "displayName": "ကမ္ဘာ့အချင်းဝက်",
@@ -1316,7 +1342,7 @@
             "unitPattern-count-other": "{0} mm"
           },
           "length-micrometer": {
-            "displayName": "မိုက်ခရိုမီတာ",
+            "displayName": "μ မီတာ",
             "unitPattern-count-other": "{0} μm"
           },
           "length-nanometer": {
@@ -1329,7 +1355,7 @@
           },
           "length-mile": {
             "displayName": "မိုင်",
-            "unitPattern-count-other": "{0} မိုင်"
+            "unitPattern-count-other": "{0} mi"
           },
           "length-yard": {
             "displayName": "ကိုက်",
@@ -1337,13 +1363,13 @@
           },
           "length-foot": {
             "displayName": "ပေ",
-            "unitPattern-count-other": "{0} ပေ",
-            "perUnitPattern": "{0}/ပေ"
+            "unitPattern-count-other": "{0} ft",
+            "perUnitPattern": "{0}/ft"
           },
           "length-inch": {
             "displayName": "လက်မ",
             "unitPattern-count-other": "{0} လက်မ",
-            "perUnitPattern": "{0}/လက်မ"
+            "perUnitPattern": "{0}/in"
           },
           "length-parsec": {
             "displayName": "ပါစက်ခ်",
@@ -1354,19 +1380,19 @@
             "unitPattern-count-other": "{0} အလင်းနှစ်"
           },
           "length-astronomical-unit": {
-            "displayName": "နက်ခတ်တဗဒေယူနဈ",
+            "displayName": "au",
             "unitPattern-count-other": "{0} au"
           },
           "length-furlong": {
             "displayName": "ဖာလုံ",
-            "unitPattern-count-other": "{0} ဖာလုံ"
+            "unitPattern-count-other": "{0} fur"
           },
           "length-fathom": {
             "displayName": "ဖန်တမ်",
-            "unitPattern-count-other": "{0} ဖန်တမ်"
+            "unitPattern-count-other": "{0} fth"
           },
           "length-nautical-mile": {
-            "displayName": "ရေမိုင်",
+            "displayName": "nmi",
             "unitPattern-count-other": "{0} nmi"
           },
           "length-mile-scandinavian": {
@@ -1375,7 +1401,7 @@
           },
           "length-point": {
             "displayName": "ပွိုင့်",
-            "unitPattern-count-other": "{0} ပွိုင့်"
+            "unitPattern-count-other": "{0} pt"
           },
           "length-solar-radius": {
             "displayName": "ဆိုလာ ရာဒီ",
@@ -1397,7 +1423,7 @@
             "displayName": "ဆိုလာ လူမီနိုစီးတီးစ်",
             "unitPattern-count-other": "{0} L☉"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "မက်ထရစ်တန်",
             "unitPattern-count-other": "{0} t"
           },
@@ -1580,7 +1606,7 @@
             "perUnitPattern": "{0}/cm³"
           },
           "volume-cubic-mile": {
-            "displayName": "ကုဗမိုင်",
+            "displayName": "mi³",
             "unitPattern-count-other": "{0} mi³"
           },
           "volume-cubic-yard": {
@@ -1596,11 +1622,11 @@
             "unitPattern-count-other": "{0} in³"
           },
           "volume-megaliter": {
-            "displayName": "မီဂါလီတာ",
+            "displayName": "ML",
             "unitPattern-count-other": "{0} ML"
           },
           "volume-hectoliter": {
-            "displayName": "ဟက်တိုလီတာ",
+            "displayName": "hL",
             "unitPattern-count-other": "{0} hL"
           },
           "volume-liter": {
@@ -1995,6 +2021,11 @@
             "unitPattern-count-other": "{0} နှစ်",
             "perUnitPattern": "{0}/ နှစ်"
           },
+          "duration-quarter": {
+            "displayName": "qtr",
+            "unitPattern-count-other": "{0} q",
+            "perUnitPattern": "{0}/q"
+          },
           "duration-month": {
             "displayName": "လ",
             "unitPattern-count-other": "{0} လ",
@@ -2122,11 +2153,11 @@
             "unitPattern-count-other": "{0} em"
           },
           "graphics-pixel": {
-            "displayName": "px",
+            "displayName": "ပစ်ဆယ်",
             "unitPattern-count-other": "{0} px"
           },
           "graphics-megapixel": {
-            "displayName": "MP",
+            "displayName": "မီဂါပစ်ဆယ်",
             "unitPattern-count-other": "{0} MP"
           },
           "graphics-pixel-per-centimeter": {
@@ -2136,6 +2167,14 @@
           "graphics-pixel-per-inch": {
             "displayName": "ppi",
             "unitPattern-count-other": "{0} ppi"
+          },
+          "graphics-dot-per-centimeter": {
+            "displayName": "dpcm",
+            "unitPattern-count-other": "{0} dpcm"
+          },
+          "graphics-dot-per-inch": {
+            "displayName": "dpi",
+            "unitPattern-count-other": "{0} dpi"
           },
           "graphics-dot": {
             "displayName": "အစက်",
@@ -2169,7 +2208,7 @@
             "unitPattern-count-other": "{0} mm"
           },
           "length-micrometer": {
-            "displayName": "မိုက်ခရိုမီတာ",
+            "displayName": "μm",
             "unitPattern-count-other": "{0} μm"
           },
           "length-nanometer": {
@@ -2181,45 +2220,45 @@
             "unitPattern-count-other": "{0} pm"
           },
           "length-mile": {
-            "displayName": "မိုင်",
-            "unitPattern-count-other": "{0}မိုင်"
+            "displayName": "mi",
+            "unitPattern-count-other": "{0} mi"
           },
           "length-yard": {
-            "displayName": "ကိုက်",
-            "unitPattern-count-other": "{0} ကိုက်"
+            "displayName": "yd",
+            "unitPattern-count-other": "{0} yd"
           },
           "length-foot": {
-            "displayName": "ပေ",
-            "unitPattern-count-other": "{0} ပေ",
-            "perUnitPattern": "{0}/ပေ"
+            "displayName": "ft",
+            "unitPattern-count-other": "{0}′",
+            "perUnitPattern": "{0}/ft"
           },
           "length-inch": {
-            "displayName": "လက်မ",
-            "unitPattern-count-other": "{0} ″",
-            "perUnitPattern": "{0}/လက်မ"
+            "displayName": "in",
+            "unitPattern-count-other": "{0}″",
+            "perUnitPattern": "{0}/in"
           },
           "length-parsec": {
             "displayName": "ပါစက်ခ်",
             "unitPattern-count-other": "{0} pc"
           },
           "length-light-year": {
-            "displayName": "အလင်းနှစ်",
-            "unitPattern-count-other": "{0} အလင်းနှစ်"
+            "displayName": "ly",
+            "unitPattern-count-other": "{0} ly"
           },
           "length-astronomical-unit": {
-            "displayName": "နက်ခတ်တဗဒေယူနဈ",
+            "displayName": "au",
             "unitPattern-count-other": "{0} au"
           },
           "length-furlong": {
             "displayName": "ဖာလုံ",
-            "unitPattern-count-other": "{0} ဖာလုံ"
+            "unitPattern-count-other": "{0} fur"
           },
           "length-fathom": {
             "displayName": "ဖန်တမ်",
-            "unitPattern-count-other": "{0} ဖန်တမ်"
+            "unitPattern-count-other": "{0} fth"
           },
           "length-nautical-mile": {
-            "displayName": "ရေမိုင်",
+            "displayName": "nmi",
             "unitPattern-count-other": "{0} nmi"
           },
           "length-mile-scandinavian": {
@@ -2227,11 +2266,11 @@
             "unitPattern-count-other": "{0} smi"
           },
           "length-point": {
-            "displayName": "ပွိုင့်",
-            "unitPattern-count-other": "{0} ပွိုင့်"
+            "displayName": "pts",
+            "unitPattern-count-other": "{0} pt"
           },
           "length-solar-radius": {
-            "displayName": "ဆိုလာ ရာဒီ",
+            "displayName": "R☉",
             "unitPattern-count-other": "{0} R☉"
           },
           "light-lux": {
@@ -2250,7 +2289,7 @@
             "displayName": "ဆိုလာ လူမီနိုစီးတီးစ်",
             "unitPattern-count-other": "{0} L☉"
           },
-          "mass-metric-ton": {
+          "mass-tonne": {
             "displayName": "မက်ထရစ်တန်",
             "unitPattern-count-other": "{0} t"
           },
@@ -2428,32 +2467,32 @@
             "perUnitPattern": "{0}/m³"
           },
           "volume-cubic-centimeter": {
-            "displayName": "ကုဗစင်တီမီတာ",
+            "displayName": "cm³",
             "unitPattern-count-other": "{0} cm³",
             "perUnitPattern": "{0}/cm³"
           },
           "volume-cubic-mile": {
-            "displayName": "ကုဗမိုင်",
+            "displayName": "mi³",
             "unitPattern-count-other": "{0} mi³"
           },
           "volume-cubic-yard": {
-            "displayName": "ကုဗကိုက်",
+            "displayName": "yd³",
             "unitPattern-count-other": "{0} yd³"
           },
           "volume-cubic-foot": {
-            "displayName": "ကုဗပေ",
+            "displayName": "ft³",
             "unitPattern-count-other": "{0} ft³"
           },
           "volume-cubic-inch": {
-            "displayName": "ကုဗလက်မ",
+            "displayName": "in³",
             "unitPattern-count-other": "{0} in³"
           },
           "volume-megaliter": {
-            "displayName": "မီဂါလီတာ",
+            "displayName": "ML",
             "unitPattern-count-other": "{0} ML"
           },
           "volume-hectoliter": {
-            "displayName": "ဟက်တိုလီတာ",
+            "displayName": "hL",
             "unitPattern-count-other": "{0} hL"
           },
           "volume-liter": {
