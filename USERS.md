@@ -10,6 +10,7 @@ Also see the main list of CLDR users on <http://cldr.unicode.org>
 - [cldr engine (@phensley/cldr)](https://phensley.github.io/cldr-engine)
 json.json)) ([website](https://cdnjs.com/libraries/cldr-json))
 - bojanz/[currency](https://github.com/bojanz/currency)
+- [eBook Reader Dictionaries](https://github.com/BoboTiG/ebook-reader-dict)
 - [formatjs](https://formatjs.io/)
 - [globalizejs](https://github.com/globalizejs/globalize)
 - rspeer/[langcodes](https://github.com/rspeer/langcodes)
