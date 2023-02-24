@@ -2,7 +2,7 @@
 
 CLDR data for Japanese calendars.
 
-This package contains the complete set of locales, including what is in the `cldr-cal-japanese-modern` package.
+This package contains all basic locales, including what is in the `cldr-cal-japanese-modern` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-cal-japanese-full.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-japanese-full)
@@ -21,7 +21,7 @@ the data contained here, please file a new ticket at [Unicode Jira](https://unic
 
 ## License
 
-Copyright © 1991-2022 Unicode, Inc.
+Copyright © 1991-2023 Unicode, Inc.
 [Terms of Use](http://www.unicode.org/copyright.html)
 
 SPDX-License-Identifier: Unicode-DFS-2016

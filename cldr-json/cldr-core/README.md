@@ -2,6 +2,8 @@
 
 Basic CLDR supplemental data
 
+This package contains all locales present in CLDR.
+
 
 [![NPM version](https://img.shields.io/npm/v/cldr-core.svg?style=flat)](https://www.npmjs.org/package/cldr-core)
 
@@ -19,7 +21,7 @@ the data contained here, please file a new ticket at [Unicode Jira](https://unic
 
 ## License
 
-Copyright © 1991-2022 Unicode, Inc.
+Copyright © 1991-2023 Unicode, Inc.
 [Terms of Use](http://www.unicode.org/copyright.html)
 
 SPDX-License-Identifier: Unicode-DFS-2016

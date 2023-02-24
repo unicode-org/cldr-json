@@ -3,7 +3,7 @@
     "tk": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "tk"
       },
@@ -20,12 +20,12 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
-                "informal": "{prefix} {given} {given2} {surname} {surname2} {suffix}"
+                "formal": "{title} {given} {given2} {surname} {surname2}, {credentials}",
+                "informal": "{title} {given} {given2} {surname} {surname2}, {credentials}"
               },
               "addressing": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
-                "informal": "{prefix} {given} {given2} {surname} {surname2} {suffix}"
+                "formal": "{title} {given} {given2} {surname} {surname2}, {credentials}",
+                "informal": "{title} {given} {given2} {surname} {surname2}, {credentials}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",
@@ -34,12 +34,12 @@
             },
             "medium": {
               "referring": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
-                "informal": "{prefix} {given} {given2} {surname} {surname2} {suffix}"
+                "formal": "{title} {given} {given2} {surname} {surname2}, {credentials}",
+                "informal": "{title} {given} {given2} {surname} {surname2}, {credentials}"
               },
               "addressing": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
-                "informal": "{prefix} {given} {given2} {surname} {surname2} {suffix}"
+                "formal": "{title} {given} {given2} {surname} {surname2}, {credentials}",
+                "informal": "{title} {given} {given2} {surname} {surname2}, {credentials}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",
@@ -49,10 +49,10 @@
             "short": {
               "referring": {
                 "formal": "{given-initial} {given2-initial} {surname}",
-                "informal": "{given-informal} {surname-initial}"
+                "informal": "{given-initial} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -64,30 +64,30 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {given} {given2} {suffix}",
-                "informal": "{surname} {given-informal}"
+                "formal": "{surname} {given} {given2}, {credentials}",
+                "informal": "{surname} {given}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
-                "informal": "{given-informal}"
+                "formal": "{title} {surname}",
+                "informal": "{given}"
               },
               "monogram": {
                 "formal": "{surname-monogram-allCaps}{given-monogram-allCaps}{given2-monogram-allCaps}",
-                "informal": "{surname-monogram-allCaps}{given-informal-monogram-allCaps}"
+                "informal": "{surname-monogram-allCaps}{given-monogram-allCaps}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2-initial} {suffix}",
-                "informal": "{surname} {given-informal}"
+                "formal": "{surname} {given} {given2}, {credentials}",
+                "informal": "{surname} {given}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
-                "informal": "{given-informal}"
+                "formal": "{title} {surname}",
+                "informal": "{given}"
               },
               "monogram": {
                 "formal": "{surname-monogram-allCaps}",
-                "informal": "{given-informal-monogram-allCaps}"
+                "informal": "{given-monogram-allCaps}"
               }
             },
             "short": {
@@ -96,7 +96,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -109,45 +109,66 @@
             "long": {
               "referring": {
                 "formal": "{surname-core}, {given} {given2} {surname-prefix}",
-                "informal": "{surname}, {given-informal}"
+                "informal": "{surname}, {given}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname-core}, {given} {given2-initial} {surname-prefix}",
-                "informal": "{surname}, {given-informal}"
+                "formal": "{surname-core}, {given} {surname-prefix}",
+                "informal": "{surname}, {given}"
               }
             },
             "short": {
               "referring": {
                 "formal": "{surname-core}, {given-initial} {given2-initial} {surname-prefix}",
-                "informal": "{surname}, {given-informal}"
+                "informal": "{surname}, {given-initial}"
               }
             }
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Gurban"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Amangeldi",
             "surname": "Saparow"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Meretgeldi",
             "given2": "Durdyýewiç",
             "surname": "Gurbanow"
           },
-          "full": {
-            "prefix": "Prof. Dr.",
-            "given": "Gurban Saparow",
-            "given-informal": "Aman",
-            "given2": "Aman Saparow",
-            "surname-prefix": "wan den",
+          "nativeFull": {
+            "title": "jenap",
+            "given": "Atajan",
+            "given-informal": "Ataş",
+            "given2": "Saparowiç",
             "surname-core": "Gurdow",
-            "surname2": "Gurbangeldiýew",
-            "suffix": "magistr, ylymlaryň kandidaty"
+            "credentials": "magistr, ylymlaryň kandidaty"
+          },
+          "foreignG": {
+            "given": "Sinbad"
+          },
+          "foreignGS": {
+            "given": "Kete",
+            "surname": "Müller"
+          },
+          "foreignGGS": {
+            "given": "Zezilia",
+            "given2": "Hemiş",
+            "surname": "Stöber"
+          },
+          "foreignFull": {
+            "title": "ylymlaryň doktory, professor",
+            "given": "Ada Kornelia",
+            "given-informal": "Nil",
+            "given2": "Sezar Martin",
+            "surname-prefix": "fon",
+            "surname-core": "Brül",
+            "surname2": "Gonzales Domingo",
+            "generation": "kiçi",
+            "credentials": "hirurg-stomatolog lukman"
           }
         }
       }

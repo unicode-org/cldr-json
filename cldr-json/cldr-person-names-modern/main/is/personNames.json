@@ -3,7 +3,7 @@
     "is": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "is"
       },
@@ -25,11 +25,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname}, {suffix}",
+                "formal": "{given} {given2} {surname}, {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {given} {given2} {surname}",
+                "formal": "{title} {given} {given2} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -39,11 +39,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname}, {suffix}",
+                "formal": "{given} {given2-initial} {surname} {generation}, {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -57,7 +57,7 @@
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {given-initial} {surname}",
+                "formal": "{title} {given-initial} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -69,11 +69,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname}, {given} {given2}, {suffix}",
+                "formal": "{surname} {title} {given} {given2} {generation}, {credentials}",
                 "informal": "{surname}, {given-informal}"
               },
               "addressing": {
-                "formal": "{surname}, {prefix} {given} {given2}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -83,11 +83,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname}, {given} {given2-initial}, {suffix}",
+                "formal": "{surname}, {given} {given2-initial}, {credentials}",
                 "informal": "{surname}, {given-informal}"
               },
               "addressing": {
-                "formal": "{surname}, {prefix} {given} {given2-initial}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -101,7 +101,7 @@
                 "informal": "{surname}, {given-initial}"
               },
               "addressing": {
-                "formal": "{surname}, {prefix} {given-initial} {given2-initial}",
+                "formal": "{surname}, {title} {given-initial} {given2-initial}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -132,27 +132,49 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Sigurður"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Íris",
             "surname": "Adólfsdóttir"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Jón",
             "given2": "Hannes",
             "surname": "Valdimarsson"
           },
-          "full": {
-            "prefix": "dr.",
+          "nativeFull": {
+            "title": "Hr.",
+            "given": "Geir Jón",
+            "given-informal": "Geiri",
+            "given2": "Magnús Brynjar",
+            "surname-core": "Skeggjason",
+            "generation": "yngri",
+            "credentials": "þingmaður"
+          },
+          "foreignG": {
+            "given": "Sinbad"
+          },
+          "foreignGS": {
+            "given": "Käthe",
+            "surname": "Müller"
+          },
+          "foreignGGS": {
+            "given": "Zäzilia",
+            "given2": "Hamish",
+            "surname": "Stöber"
+          },
+          "foreignFull": {
+            "title": "dr.",
             "given": "Sigríður Jóna",
             "given-informal": "Sigga",
             "given2": "Valgerður Fanndís",
             "surname-prefix": "van den",
             "surname-core": "Bjarnadóttir",
             "surname2": "Jónsdóttir Möller",
-            "suffix": "M.A. í bókmenntafræði"
+            "generation": "yngri",
+            "credentials": "M.A. í bókmenntafræði"
           }
         }
       }
