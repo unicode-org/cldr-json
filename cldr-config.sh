@@ -27,3 +27,5 @@ DRAFTSTATUS="contributed"
 
 # override the version number of CLDR
 #VERSION="39.0.0"
+
+EXTRA_JSON_OPTS=""
