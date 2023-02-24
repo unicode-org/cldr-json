@@ -2,7 +2,7 @@
 
 Data for date/time formatting, including data for Gregorian calendar.
 
-This package contains all basic locales, including what is in the `cldr-dates-modern` package.
+This package contains all locales.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-dates-full.svg?style=flat)](https://www.npmjs.org/package/cldr-dates-full)

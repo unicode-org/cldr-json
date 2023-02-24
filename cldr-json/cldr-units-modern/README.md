@@ -2,7 +2,7 @@
 
 Data for units formatting.
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-units-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-units-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-units-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-units-modern)

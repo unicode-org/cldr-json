@@ -2,7 +2,7 @@
 
 Other CLDR data not defined elsewhere
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-misc-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-misc-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-misc-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-misc-modern)

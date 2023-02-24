@@ -2,7 +2,7 @@
 
 Character annotation data
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-annotations-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-annotations-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-annotations-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-annotations-modern)

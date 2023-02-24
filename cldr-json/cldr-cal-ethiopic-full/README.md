@@ -2,7 +2,7 @@
 
 CLDR data for Ethiopic calendars.
 
-This package contains all basic locales, including what is in the `cldr-cal-ethiopic-modern` package.
+This package contains all locales.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-cal-ethiopic-full.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-ethiopic-full)

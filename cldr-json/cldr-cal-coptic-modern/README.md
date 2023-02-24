@@ -2,7 +2,7 @@
 
 CLDR data for Coptic calendars.
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-cal-coptic-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-cal-coptic-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-cal-coptic-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-coptic-modern)

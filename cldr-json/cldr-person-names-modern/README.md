@@ -2,7 +2,7 @@
 
 Personal Name Formatting (tech preview)
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-person-names-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-person-names-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-person-names-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-person-names-modern)

@@ -2,7 +2,7 @@
 
 Text Segmentation data
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-segments-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-segments-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-segments-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-segments-modern)

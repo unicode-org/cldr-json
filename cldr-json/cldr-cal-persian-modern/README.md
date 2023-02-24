@@ -2,7 +2,7 @@
 
 CLDR data for Persian calendars.
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-cal-persian-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-cal-persian-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-cal-persian-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-persian-modern)

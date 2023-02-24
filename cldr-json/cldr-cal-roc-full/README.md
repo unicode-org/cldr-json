@@ -2,7 +2,7 @@
 
 CLDR data for ROC calendars.
 
-This package contains all basic locales, including what is in the `cldr-cal-roc-modern` package.
+This package contains all locales.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-cal-roc-full.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-roc-full)

@@ -2,7 +2,7 @@
 
 Other CLDR data not defined elsewhere
 
-This package contains all basic locales, including what is in the `cldr-misc-modern` package.
+This package contains all locales.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-misc-full.svg?style=flat)](https://www.npmjs.org/package/cldr-misc-full)

@@ -2,8 +2,6 @@
 
 Basic CLDR supplemental data
 
-This package contains all locales present in CLDR.
-
 
 [![NPM version](https://img.shields.io/npm/v/cldr-core.svg?style=flat)](https://www.npmjs.org/package/cldr-core)
 

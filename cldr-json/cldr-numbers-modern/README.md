@@ -2,7 +2,7 @@
 
 Data for number formatting.
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-numbers-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-numbers-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-numbers-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-numbers-modern)

@@ -2,7 +2,7 @@
 
 CLDR data for ROC calendars.
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-cal-roc-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-cal-roc-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-cal-roc-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-roc-modern)

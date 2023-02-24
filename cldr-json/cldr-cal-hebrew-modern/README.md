@@ -2,7 +2,7 @@
 
 CLDR data for Hebrew calendars.
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-cal-hebrew-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-cal-hebrew-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-cal-hebrew-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-hebrew-modern)

@@ -2,7 +2,7 @@
 
 CLDR data for Japanese calendars.
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-cal-japanese-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-cal-japanese-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-cal-japanese-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-japanese-modern)

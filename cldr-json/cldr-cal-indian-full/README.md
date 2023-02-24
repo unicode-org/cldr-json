@@ -2,7 +2,7 @@
 
 CLDR data for Indian calendars.
 
-This package contains all basic locales, including what is in the `cldr-cal-indian-modern` package.
+This package contains all locales.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-cal-indian-full.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-indian-full)
