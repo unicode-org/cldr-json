@@ -3,7 +3,7 @@
     "kk": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "kk"
       },
@@ -25,7 +25,7 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {surname}",
+                "formal": "{given} {surname} {generation}, {credentials}",
                 "informal": "{given-informal}"
               },
               "addressing": {
@@ -39,7 +39,7 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {surname}",
+                "formal": "{given} {surname} {generation}, {credentials}",
                 "informal": "{given-informal}"
               },
               "addressing": {
@@ -113,43 +113,65 @@
           "sorting": {
             "long": {
               "referring": {
-                "formal": "{given}",
+                "formal": "{surname-core}, {given} {given2} {surname-prefix}",
                 "informal": "{surname}, {given-informal}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{given}",
+                "formal": "{surname-core}, {given} {surname-prefix}",
                 "informal": "{surname}, {given-informal}"
               }
             },
             "short": {
               "referring": {
-                "formal": "{given-initial}",
+                "formal": "{surname}, {given}",
                 "informal": "{surname}, {given-informal}"
               }
             }
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Нұрлан"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Әсем",
             "surname": "Мұхамеджан"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Айдар",
             "surname": "Қасым"
           },
-          "full": {
-            "prefix": "Профессор",
-            "given": "Әлия",
-            "given2": "Гүлнар",
-            "surname-prefix": "Ван ден",
-            "surname-core": "Вольф",
-            "surname2": "Қайратқызы"
+          "nativeFull": {
+            "title": "мырза",
+            "given": "Заңғар",
+            "given-informal": "Зәке",
+            "given2": "Ермекұлы",
+            "surname-core": "Тәуекел"
+          },
+          "foreignG": {
+            "given": "Синдбад"
+          },
+          "foreignGS": {
+            "given": "Кейт",
+            "surname": "Мюллер"
+          },
+          "foreignGGS": {
+            "given": "Сесилия",
+            "given2": "Хэмиш",
+            "surname": "Штобер"
+          },
+          "foreignFull": {
+            "title": "проф.",
+            "given": "Ада Корнелия",
+            "given-informal": "Нелли",
+            "given2": "Сезар Мартин",
+            "surname-prefix": "фон",
+            "surname-core": "Брюль",
+            "surname2": "Гонсалес",
+            "generation": "Джуниор",
+            "credentials": "тіс дәрігері"
           }
         }
       }

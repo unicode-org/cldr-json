@@ -3,7 +3,7 @@
     "bn-IN": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "bn",
         "territory": "IN"
@@ -26,11 +26,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
                 "informal": "{given} {given2} {surname} {surname2}"
               },
               "addressing": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
                 "informal": "{given} {given2} {surname} {surname2}"
               },
               "monogram": {
@@ -40,11 +40,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
                 "informal": "{given} {given2} {surname} {surname2}"
               },
               "addressing": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
                 "informal": "{given} {given2} {surname} {surname2}"
               },
               "monogram": {
@@ -54,11 +54,11 @@
             },
             "short": {
               "referring": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
                 "informal": "{given} {given2} {surname} {surname2}"
               },
               "addressing": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
                 "informal": "{given} {given2} {surname} {surname2}"
               },
               "monogram": {
@@ -70,11 +70,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {surname2} {prefix} {given} {given2} {suffix}",
+                "formal": "{surname} {surname2} {title} {given} {given2} {credentials}",
                 "informal": "{surname} {surname2} {given} {given2}"
               },
               "addressing": {
-                "formal": "{surname} {surname2} {prefix} {given} {given2} {suffix}",
+                "formal": "{surname} {surname2} {title} {given} {given2} {credentials}",
                 "informal": "{surname} {surname2} {given} {given2}"
               },
               "monogram": {
@@ -84,11 +84,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {surname2} {prefix} {given} {given2} {suffix}",
+                "formal": "{surname} {surname2} {title} {given} {given2} {credentials}",
                 "informal": "{surname} {surname2} {given} {given2}"
               },
               "addressing": {
-                "formal": "{surname} {surname2} {prefix} {given} {given2} {suffix}",
+                "formal": "{surname} {surname2} {title} {given} {given2} {credentials}",
                 "informal": "{surname} {surname2} {given} {given2}"
               },
               "monogram": {
@@ -98,11 +98,11 @@
             },
             "short": {
               "referring": {
-                "formal": "{surname} {surname2} {prefix} {given} {given2} {suffix}",
+                "formal": "{surname} {surname2} {title} {given} {given2} {credentials}",
                 "informal": "{surname} {surname2} {given} {given2}"
               },
               "addressing": {
-                "formal": "{surname} {surname2} {prefix} {given} {given2} {suffix}",
+                "formal": "{surname} {surname2} {title} {given} {given2} {credentials}",
                 "informal": "{surname} {surname2} {given} {given2}"
               },
               "monogram": {
@@ -114,46 +114,68 @@
           "sorting": {
             "long": {
               "referring": {
-                "formal": "{surname} {surname2}, {prefix} {given} {given2} {suffix}",
+                "formal": "{surname} {surname2}, {title} {given} {given2} {credentials}",
                 "informal": "{surname} {surname2}, {given} {given2}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {surname2}, {prefix} {given} {given2} {suffix}",
+                "formal": "{surname} {surname2}, {title} {given} {given2} {credentials}",
                 "informal": "{surname} {surname2}, {given} {given2}"
               }
             },
             "short": {
               "referring": {
-                "formal": "{surname} {surname2}, {prefix} {given} {given2} {suffix}",
+                "formal": "{surname} {surname2}, {title} {given} {given2} {credentials}",
                 "informal": "{surname} {surname2}, {given} {given2}"
               }
             }
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "সিনবাদ"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "আইরিন",
             "surname": "অ্যাডলার"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "জন",
             "given2": "হামিশ",
             "surname": "ওয়াটসন"
           },
-          "full": {
-            "prefix": "প্রঃ ডঃ",
+          "nativeFull": {
+            "title": "শ্রী",
+            "given": "বার্ট্রাম উইলবারফোর্স",
+            "given-informal": "বার্টি",
+            "given2": "হেনরি রবার্ট",
+            "surname-core": "উস্টার",
+            "generation": "জুনিয়র",
+            "credentials": "এমপি"
+          },
+          "foreignG": {
+            "given": "সিনবাদ"
+          },
+          "foreignGS": {
+            "given": "কাথে",
+            "surname": "মুলার"
+          },
+          "foreignGGS": {
+            "given": "জাজিলিয়া",
+            "given2": "হামিশ",
+            "surname": "স্টোবা"
+          },
+          "foreignFull": {
+            "title": "প্রঃ ডঃ",
             "given": "আদা কর্নেলিয়া",
             "given-informal": "নিলে",
             "given2": "ইভা সোফিয়া",
             "surname-prefix": "ভ্যান ডেন",
             "surname-core": "উলফ",
             "surname2": "বেকার শ্মিড্ট",
-            "suffix": "এম.ডি.পিএইচ.ডি."
+            "generation": "জুনিয়র",
+            "credentials": "এম.ডি.পিএইচ.ডি."
           }
         }
       }

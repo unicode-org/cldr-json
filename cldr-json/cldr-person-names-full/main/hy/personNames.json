@@ -3,7 +3,7 @@
     "hy": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "hy"
       },
@@ -25,11 +25,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{prefix} {given} {given2} {surname} {suffix}",
+                "formal": "{credentials} {title} {given} {given2} {surname}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -39,11 +39,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname} {suffix}",
+                "formal": "{credentials} {given} {given2-initial} {surname}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -57,7 +57,7 @@
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -69,11 +69,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {given} {given2} {suffix}",
+                "formal": "{credentials} {surname} {given} {given2}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -83,11 +83,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {suffix}",
+                "formal": "{credentials} {surname} {given}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -101,7 +101,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -132,27 +132,48 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Արթուր"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Հեղինե",
             "surname": "Ադամյան"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Հովհաննես",
-            "given2": "Արմեն",
+            "given2": "Արմենի",
             "surname": "Դարբինյան"
           },
-          "full": {
-            "prefix": "դ-ր",
+          "nativeFull": {
+            "title": "պրն",
+            "given": "Հայկ",
+            "given-informal": "Հայկո",
+            "given2": "Պարգևի",
+            "surname-core": "Տեր-Պողոսյան",
+            "credentials": "բ․գ․դ․"
+          },
+          "foreignG": {
+            "given": "Սինբադ"
+          },
+          "foreignGS": {
+            "given": "Քեյթ",
+            "surname": "Մյուլեր"
+          },
+          "foreignGGS": {
+            "given": "Ցեցիլիա",
+            "given2": "Համիշ",
+            "surname": "Շտյոբեր"
+          },
+          "foreignFull": {
+            "title": "դ-ր",
             "given": "Ադա Կոռնելիա",
-            "given-informal": "Էդ",
-            "given2": "Եվա Սոֆիա",
+            "given-informal": "Նիլ",
+            "given2": "Սեզար Մարտին",
             "surname-prefix": "վան դեն",
             "surname-core": "Վոլֆ",
-            "surname2": "Բեքեր Շմիդտ",
-            "suffix": "կրտսեր"
+            "surname2": "Գոնսալես Դոմինգո",
+            "generation": "կրտսեր",
+            "credentials": "բ․գ․դ․"
           }
         }
       }

@@ -2,11 +2,23 @@
   "rbnf": {
     "identity": {
       "version": {
-        "_cldrVersion": "42"
+        "_cldrVersion": "43"
       },
       "language": "el"
     },
     "rbnf": {
+      "OrdinalRules": {
+        "%digits-ordinal": [
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0=;"
+          ]
+        ]
+      },
       "SpelloutRules": {
         "%spellout-numbering-year": [
           [
@@ -753,7 +765,7 @@
           ],
           [
             "1000000000000000000",
-            "=#,##0=.;"
+            "=#,##0=;"
           ]
         ],
         "%spellout-ordinal-feminine": [
@@ -951,7 +963,7 @@
           ],
           [
             "1000000000000000000",
-            "=#,##0=.;"
+            "=#,##0=;"
           ]
         ],
         "%spellout-ordinal-neuter": [
@@ -1145,7 +1157,7 @@
           ],
           [
             "1000000000000000000",
-            "=#,##0=.;"
+            "=#,##0=;"
           ]
         ]
       }

@@ -3,7 +3,7 @@
     "lo": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "lo"
       },
@@ -25,11 +25,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{suffix}{given}{given2}{surname}",
-                "informal": "{given-informal}{surname}"
+                "formal": "{credentials} {title} {given} {given2} {surname} {generation}",
+                "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix}{surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -39,11 +39,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{suffix}{given}{given2-initial}{surname}",
-                "informal": "{given-informal}{surname}"
+                "formal": "{credentials} {given} {given2} {surname}",
+                "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix}{surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -53,11 +53,11 @@
             },
             "short": {
               "referring": {
-                "formal": "{given-initial}{given2-initial}{surname}",
-                "informal": "{given-informal}{surname-initial}"
+                "formal": "{given} {given2} {surname}",
+                "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix}{surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -69,11 +69,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname}{given}{given2}{suffix}",
-                "informal": "{surname}{given-informal}"
+                "formal": "{credentials} {surname} {title} {given} {given2} {generation}",
+                "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix}{surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -83,11 +83,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname}{given}{given2-initial}{suffix}",
-                "informal": "{surname}{given-informal}"
+                "formal": "{credentials} {surname} {given} {given2} {generation}",
+                "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix}{surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -97,11 +97,11 @@
             },
             "short": {
               "referring": {
-                "formal": "{surname}{given-initial}{given2-initial}",
-                "informal": "{surname}{given-initial}"
+                "formal": "{surname} {given} {given2}",
+                "informal": "{surname} {given}"
               },
               "addressing": {
-                "formal": "{prefix}{surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -113,46 +113,68 @@
           "sorting": {
             "long": {
               "referring": {
-                "formal": "{surname-core},{given}{given2}{surname-prefix}",
-                "informal": "{surname},{given-informal}"
+                "formal": "{surname-core}, {given} {given2} {surname-prefix}",
+                "informal": "{surname}, {given-informal}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname-core},{given}{given2-initial}{surname-prefix}",
-                "informal": "{surname},{given-informal}"
+                "formal": "{surname-core}, {given} {given2} {surname-prefix}",
+                "informal": "{surname}, {given-informal}"
               }
             },
             "short": {
               "referring": {
-                "formal": "{surname-core},{given-initial}{given2-initial}{surname-prefix}",
-                "informal": "{surname},{given-informal}"
+                "formal": "{surname-core}, {given} {given2} {surname-prefix}",
+                "informal": "{surname}, {given-informal}"
               }
             }
           }
         },
         "sampleName": {
-          "givenOnly": {
-            "given": "ຊິນແບດ"
+          "nativeG": {
+            "given": "ເຊນດາຢາ"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "ໄອຣີນ",
             "surname": "ແອດເລີ"
           },
-          "given12Surname": {
-            "given": "ຈອນ",
+          "nativeGGS": {
+            "given": "ມາຣີ ຊູ",
             "given2": "ຮາມິຊ",
             "surname": "ວັດສັນ"
           },
-          "full": {
-            "prefix": "ສຈ. ປອ.",
+          "nativeFull": {
+            "title": "ທ.",
+            "given": "ເບີແທຣັມ ວິວເບີຟອດຊ",
+            "given-informal": "ເບີຕີ",
+            "given2": "ເຮັນຣີ ໂຣເບີດ",
+            "surname-core": "ວູສເຕີ",
+            "generation": "ຮຸ່ນລູກ",
+            "credentials": "ສ.ສ."
+          },
+          "foreignG": {
+            "given": "ຊິນແບດ"
+          },
+          "foreignGS": {
+            "given": "ເຄທີ",
+            "surname": "ມູລເລີ"
+          },
+          "foreignGGS": {
+            "given": "ຊາຊິເລຍ",
+            "given2": "ຮາມີສ",
+            "surname": "ສໂຕເບີ"
+          },
+          "foreignFull": {
+            "title": "ສຈ. ປອ.",
             "given": "ເອດາ ຄໍນີເລຍ",
             "given-informal": "ນີເລ",
-            "given2": "ເອວາ ໂຊເຟຍ",
-            "surname-prefix": "ວັນເດັນ",
-            "surname-core": "ວູຟ",
-            "surname2": "ແບັກເກີ ສະມິດ",
-            "suffix": "ດຣ. ປອ."
+            "given2": "ເຊຊາ ມາຕິນ",
+            "surname-prefix": "ວອນ",
+            "surname-core": "ບຣູລ",
+            "surname2": "ກົງຊາເລ ໂດມິງໂກ",
+            "generation": "ຮຸ່ນລູກ",
+            "credentials": "ດຣ. ປອ."
           }
         }
       }

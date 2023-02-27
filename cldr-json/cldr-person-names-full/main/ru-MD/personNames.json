@@ -3,7 +3,7 @@
     "ru-MD": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "ru",
         "territory": "MD"
@@ -26,11 +26,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname}, {suffix}",
+                "formal": "{title} {given} {given2} {surname} — {generation}, {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -40,11 +40,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2} {surname}, {suffix}",
+                "formal": "{title} {given} {given2} {surname} — {generation}, {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -58,7 +58,7 @@
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -70,11 +70,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {given} {given2}, {suffix}",
+                "formal": "{surname} {given} {given2}, {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -84,11 +84,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2-initial}, {suffix}",
+                "formal": "{surname} {given} {given2-initial}, {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -102,7 +102,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -133,27 +133,46 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Сергей"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Ирина",
             "surname": "Амосова"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Дмитрий",
-            "given2": "Альберт",
+            "given2": "Петрович",
             "surname": "Васильев"
           },
-          "full": {
-            "prefix": "проф., д-р",
-            "given": "Анна",
-            "given-informal": "Аня",
-            "given2": "Аделина",
-            "surname-prefix": "ван ден",
-            "surname-core": "Вольф",
-            "surname2": "Стоцкая",
-            "suffix": "к. м. н."
+          "nativeFull": {
+            "given": "Иван",
+            "given-informal": "Ваня",
+            "given2": "Васильевич",
+            "surname-core": "Купцов"
+          },
+          "foreignG": {
+            "given": "Синдбад"
+          },
+          "foreignGS": {
+            "given": "Кете",
+            "surname": "Мюллер"
+          },
+          "foreignGGS": {
+            "given": "Цецилия",
+            "given2": "Хэмиш",
+            "surname": "Штёбер"
+          },
+          "foreignFull": {
+            "title": "проф., д-р",
+            "given": "Ада Корнелия",
+            "given-informal": "Неле",
+            "given2": "Сезар Мартин",
+            "surname-prefix": "фон",
+            "surname-core": "Брюль",
+            "surname2": "Гонсалес Доминго",
+            "generation": "мл.",
+            "credentials": "к. м. н."
           }
         }
       }

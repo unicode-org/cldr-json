@@ -2,7 +2,7 @@
 
 CLDR data for Dangi calendars.
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-cal-dangi-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-cal-dangi-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-cal-dangi-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-dangi-modern)
@@ -21,7 +21,7 @@ the data contained here, please file a new ticket at [Unicode Jira](https://unic
 
 ## License
 
-Copyright © 1991-2022 Unicode, Inc.
+Copyright © 1991-2023 Unicode, Inc.
 [Terms of Use](http://www.unicode.org/copyright.html)
 
 SPDX-License-Identifier: Unicode-DFS-2016

@@ -3,7 +3,7 @@
     "fi": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "fi"
       },
@@ -25,11 +25,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
+                "formal": "{title} {given} {given2} {surname} {surname2}, {credentials}",
                 "informal": "{given} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname} {surname2}",
+                "formal": "{title} {surname} {surname2}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -39,11 +39,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2} {suffix}",
+                "formal": "{title} {given} {given2} {surname} {surname2}, {credentials}",
                 "informal": "{given} {given2} {surname} {surname2}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -57,7 +57,7 @@
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -69,11 +69,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {surname2} {given} {given2}, {prefix} {suffix}",
+                "formal": "{surname} {surname2} {given} {given2}, {title} {credentials}",
                 "informal": "{surname} {given}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -83,11 +83,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {surname2} {given}, {prefix}",
+                "formal": "{surname} {surname2} {given}, {title}",
                 "informal": "{surname} {given}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -101,7 +101,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -132,26 +132,47 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Louhi"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Seppo",
             "surname": "Ilmarinen"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Ulrika",
             "given2": "Wilhelmina",
-            "surname": "Johnson"
+            "surname": "Canth"
           },
-          "full": {
-            "prefix": "Professori",
-            "given": "Kristiina",
-            "given-informal": "Krisse",
-            "given2": "Julia",
+          "nativeFull": {
+            "given": "Marja-Liisa",
+            "given-informal": "Maikki",
+            "given2": "Katariina",
+            "surname-core": "Lehtola-Aalto",
+            "credentials": "kansanedustaja"
+          },
+          "foreignG": {
+            "given": "Sinbad"
+          },
+          "foreignGS": {
+            "given": "Käthe",
+            "surname": "Müller"
+          },
+          "foreignGGS": {
+            "given": "John",
+            "given2": "Hamish",
+            "surname": "Watson"
+          },
+          "foreignFull": {
+            "title": "professori",
+            "given": "Ana Christina",
+            "given-informal": "Chrissy",
+            "given2": "Lëja",
             "surname-prefix": "von",
             "surname-core": "Wright",
-            "suffix": "LT FT"
+            "surname2": "González Domingo",
+            "generation": "jr.",
+            "credentials": "MD DDS"
           }
         }
       }

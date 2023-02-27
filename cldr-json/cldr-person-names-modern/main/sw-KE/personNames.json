@@ -3,7 +3,7 @@
     "sw-KE": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "sw",
         "territory": "KE"
@@ -26,11 +26,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname} {suffix}",
+                "formal": "{given} {given2} {surname} {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -40,11 +40,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2} {surname} {suffix}",
+                "formal": "{given} {given2} {surname} {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -55,10 +55,10 @@
             "short": {
               "referring": {
                 "formal": "{given-initial} {given2-initial} {surname}",
-                "informal": "{given-informal} {surname-initial}"
+                "informal": "{given} {given2} {surname} {credentials}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -70,11 +70,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {given} {given2} {suffix}",
+                "formal": "{surname} {given} {given2} {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -84,11 +84,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2-initial} {suffix}",
+                "formal": "{surname} {given} {given2-initial} {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -102,7 +102,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -133,27 +133,49 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Hassan"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Maria",
             "surname": "Hasani"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Ali",
             "given2": "Juma",
             "surname": "Hamisi"
           },
-          "full": {
-            "prefix": "Prof. Dk.",
+          "nativeFull": {
+            "title": "Bw.",
+            "given": "Adam Juma",
+            "given-informal": "Bita",
+            "given2": "Agape Shukurani",
+            "surname-core": "Masalu",
+            "generation": "Jr",
+            "credentials": "MB"
+          },
+          "foreignG": {
+            "given": "Kevin"
+          },
+          "foreignGS": {
+            "given": "John",
+            "surname": "Mkwawa"
+          },
+          "foreignGGS": {
+            "given": "Zamara",
+            "given2": "Imani",
+            "surname": "Bukenya"
+          },
+          "foreignFull": {
+            "title": "Prof. Dk.",
             "given": "Salima",
-            "given-informal": "Neema",
+            "given-informal": "Sarah",
             "given2": "Farida",
             "surname-prefix": "mwana",
             "surname-core": "Hamisi",
             "surname2": "Musa",
-            "suffix": "M.D. Ph.D."
+            "generation": "Jr",
+            "credentials": "M.D. Ph.D."
           }
         }
       }

@@ -2,7 +2,7 @@
 
 Data for date/time formatting, including data for Gregorian calendar.
 
-This package contains the set of locales listed as modern coverage. See also the `cldr-dates-full` package.
+This package contains only the set of locales listed as modern coverage. See also the `cldr-dates-full` package.
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-dates-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-dates-modern)
@@ -21,7 +21,7 @@ the data contained here, please file a new ticket at [Unicode Jira](https://unic
 
 ## License
 
-Copyright © 1991-2022 Unicode, Inc.
+Copyright © 1991-2023 Unicode, Inc.
 [Terms of Use](http://www.unicode.org/copyright.html)
 
 SPDX-License-Identifier: Unicode-DFS-2016
