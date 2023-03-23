@@ -15,7 +15,7 @@ fi
 function explain_repo()
 {
     git rev-parse --short  HEAD
-    git describe HEAD
+    git describe --tags HEAD
 }
 
 echo "* cldr-json info"
