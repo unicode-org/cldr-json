@@ -3,7 +3,7 @@
     "ga-GB": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "ga",
         "territory": "GB"
@@ -26,11 +26,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname} {suffix}",
+                "formal": "{given} {given2} {surname} {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -40,11 +40,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname} {suffix}",
+                "formal": "{given} {given2-initial} {surname} {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -58,7 +58,7 @@
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -70,11 +70,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {given} {given2} {suffix}",
+                "formal": "{surname} {given} {given2} {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -84,11 +84,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2-initial} {suffix}",
+                "formal": "{surname} {given} {given2-initial} {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -102,7 +102,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -133,27 +133,46 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
-            "given": "Sinbad"
+          "nativeG": {
+            "given": "Hozier"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Irene",
             "surname": "Adler"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Seán",
             "given2": "Seamas",
             "surname": "Watson"
           },
-          "full": {
-            "prefix": "An tOll. An Dr.",
+          "nativeFull": {
+            "title": "An tOll. An Dr.",
+            "given": "Brigid",
+            "given2": "Aoibhe Sophia",
+            "surname-core": "de Bhulbh"
+          },
+          "foreignG": {
+            "given": "Sinbad"
+          },
+          "foreignGS": {
+            "given": "Käthe",
+            "surname": "Müller"
+          },
+          "foreignGGS": {
+            "given": "Zäzilia",
+            "given2": "Hamish",
+            "surname": "Stöber"
+          },
+          "foreignFull": {
+            "title": "Prof. Dr.",
             "given": "Ada Cornelia",
             "given-informal": "Neele",
-            "given2": "Aoibhe Sophia",
-            "surname-prefix": "van den",
-            "surname-core": "de Bhulbh",
-            "surname2": "Becker Schmidt",
-            "suffix": "M.D. Ph.D."
+            "given2": "César Martín",
+            "surname-prefix": "von",
+            "surname-core": "Brühl",
+            "surname2": "González Domingo",
+            "generation": "Jr",
+            "credentials": "M.D. Ph.D."
           }
         }
       }

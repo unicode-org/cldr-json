@@ -3,7 +3,7 @@
     "gu": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "gu"
       },
@@ -28,16 +28,16 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname} {suffix}",
+                "formal": "{given} {given2} {surname} {credentials}",
                 "informal": "{given} {given2} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
-                "formal": "{given-monogram-allCaps}.{given2-monogram-allCaps}.{surname-monogram-allCaps}",
-                "informal": "{given-informal-monogram-allCaps}.{surname-monogram-allCaps}"
+                "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",
+                "informal": "{given-informal-monogram-allCaps}{surname-monogram-allCaps}"
               }
             },
             "medium": {
@@ -46,7 +46,7 @@
                 "informal": "{given-informal} . {surname}"
               },
               "addressing": {
-                "formal": "{prefix} . {surname}",
+                "formal": "{title} . {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -56,11 +56,11 @@
             },
             "short": {
               "referring": {
-                "formal": "{given} {given2} {surname} {suffix}",
+                "formal": "{given} {given2} {surname} {credentials}",
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -72,11 +72,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {given} {given2} {suffix}",
+                "formal": "{surname} {given} {given2} {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -86,11 +86,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2-initial} {suffix}",
+                "formal": "{surname} {given} {given2-initial} {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -104,7 +104,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -116,46 +116,70 @@
           "sorting": {
             "long": {
               "referring": {
-                "formal": "{surname} {surname2}, {prefix} {given} {given2} {suffix}",
-                "informal": "{surname} {surname2}, {prefix} {given} {given2} {suffix}"
+                "formal": "{surname} {surname2}, {title} {given} {given2} {credentials}",
+                "informal": "{surname} {surname2}, {title} {given} {given2} {credentials}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {surname2}, {prefix} {given} {given2} {suffix}",
-                "informal": "{surname} {surname2}, {prefix} {given} {given2} {suffix}"
+                "formal": "{surname} {surname2}, {title} {given} {given2} {credentials}",
+                "informal": "{surname} {surname2}, {title} {given} {given2} {credentials}"
               }
             },
             "short": {
               "referring": {
-                "formal": "{surname} {surname2}, {prefix} {given} {given2} {suffix}",
-                "informal": "{surname} {surname2}, {prefix} {given} {given2} {suffix}"
+                "formal": "{surname} {surname2}, {title} {given} {given2} {credentials}",
+                "informal": "{surname} {surname2}, {title} {given} {given2} {credentials}"
               }
             }
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
+            "given": "કિરણ"
+          },
+          "nativeGS": {
+            "given": "આઇરીન",
+            "surname": "અદાણી"
+          },
+          "nativeGGS": {
+            "given": "ખુશી પટેલ",
+            "given2": "હેતલ",
+            "surname": "દવે"
+          },
+          "nativeFull": {
+            "title": "શ્રી.",
+            "given": "પટેલ ખુશી",
+            "given-informal": "કિંજલ",
+            "given2": "કિંજલ",
+            "surname-prefix": "કુમાર",
+            "surname-core": "શાહ",
+            "surname2": "પટેલ",
+            "generation": "જૂનિયર",
+            "credentials": "એમપી"
+          },
+          "foreignG": {
             "given": "સિનબાદ"
           },
-          "givenSurnameOnly": {
-            "given": "આઇરીન",
-            "surname": "એડલર"
+          "foreignGS": {
+            "given": "કૅથિ",
+            "surname": "મુલર"
           },
-          "given12Surname": {
-            "given": "જોહ્ન",
-            "given2": "હમીશ",
-            "surname": "વોટ્સન"
+          "foreignGGS": {
+            "given": "જઝિલીયા",
+            "given2": "હૅમીશ",
+            "surname": "સ્ટૂબર"
           },
-          "full": {
-            "prefix": "પ્રો. ડૉ.",
-            "given": "અડા કોરનેલિઆ",
-            "given-informal": "નીલે",
-            "given2": "ઇવા સોફિઆ",
-            "surname-prefix": "વેન ડેન",
-            "surname-core": "વોલ્ફ",
-            "surname2": "બેકર સચ્મિત",
-            "suffix": "એમ.ડી.પીએચ.ડી."
+          "foreignFull": {
+            "title": "પ્રો. ડૉ.",
+            "given": "એડા કૉર્નેલિયા",
+            "given-informal": "નીલ",
+            "given2": "સિઝર માર્ટિન",
+            "surname-prefix": "ફૉન્",
+            "surname-core": "બ્રાઑલ્",
+            "surname2": "ગૉન્ઝાલિસ ડમિંગો",
+            "generation": "જૂનિયર",
+            "credentials": "એમ.ડી.ડી.ડી.એસ."
           }
         }
       }

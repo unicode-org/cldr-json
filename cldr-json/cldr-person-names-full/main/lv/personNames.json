@@ -3,7 +3,7 @@
     "lv": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "lv"
       },
@@ -13,6 +13,7 @@
           "lv"
         ],
         "surnameFirst": [
+          "ja",
           "ko",
           "vi",
           "yue",
@@ -25,11 +26,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{suffix} {prefix} {given} {given2} {surname} {surname2}",
+                "formal": "{credentials} {given} {given2} {surname} {surname2}",
                 "informal": "{given} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -39,11 +40,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{suffix} {prefix} {given} {given2-initial} {surname} {surname2}",
+                "formal": "{credentials} {given} {given2} {surname} {surname2}",
                 "informal": "{given} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -57,7 +58,7 @@
                 "informal": "{given} {surname-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{surname}",
                 "informal": "{given}"
               },
               "monogram": {
@@ -69,11 +70,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{prefix} {suffix} {surname} {surname2} {given} {given2}",
+                "formal": "{surname} {given}",
                 "informal": "{surname} {given}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{surname} {given}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -83,11 +84,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{suffix} {surname} {given} {given2-initial}",
+                "formal": "{credentials} {surname} {given} {given2-initial}",
                 "informal": "{surname} {given}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{surname} {given}",
                 "informal": "{given}"
               },
               "monogram": {
@@ -101,7 +102,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{surname} {given}",
                 "informal": "{given}"
               },
               "monogram": {
@@ -113,13 +114,13 @@
           "sorting": {
             "long": {
               "referring": {
-                "formal": "{suffix} {surname}, {given} {given2}",
+                "formal": "{surname} {given} {given2}",
                 "informal": "{surname}, {given} {given2}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{suffix} {surname}, {given} {given2}",
+                "formal": "{surname} {given} {given2}",
                 "informal": "{surname}, {given}"
               }
             },
@@ -132,27 +133,49 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Jānis"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Aina",
             "surname": "Kalniņa"
           },
-          "given12Surname": {
-            "given": "Džons",
-            "given2": "Kārlis",
-            "surname": "Bērziņš"
+          "nativeGGS": {
+            "given": "Anna",
+            "given2": "Paula",
+            "surname": "Bērziņa"
           },
-          "full": {
-            "prefix": "Prof.",
+          "nativeFull": {
+            "title": "kungs",
+            "given": "Pēteris",
+            "given-informal": "Pēcis",
+            "given2": "Kārlis",
+            "surname-core": "Ozoliņš",
+            "generation": "jaunākais",
+            "credentials": "MP"
+          },
+          "foreignG": {
+            "given": "Sinbads"
+          },
+          "foreignGS": {
+            "given": "Keita",
+            "surname": "Millere"
+          },
+          "foreignGGS": {
+            "given": "Pīters",
+            "given2": "Džims",
+            "surname": "Millers"
+          },
+          "foreignFull": {
+            "title": "Prof.",
             "given": "Laima Kristīne",
             "given-informal": "Ella",
             "given2": "Eva Sofija",
             "surname-prefix": "van den",
-            "surname-core": "Volfs",
-            "surname2": "Bērziņš-Kalniņš",
-            "suffix": "Dr.philol."
+            "surname-core": "Volfa",
+            "surname2": "Bērziņa-Kalniņa",
+            "generation": "jaunākā",
+            "credentials": "Dr.philol."
           }
         }
       }

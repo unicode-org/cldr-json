@@ -3,7 +3,7 @@
     "vi": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "vi"
       },
@@ -26,11 +26,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname} {suffix}",
+                "formal": "{title} {given} {given2} {surname} {generation}, {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -40,11 +40,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname} {suffix}",
+                "formal": "{given} {given2-initial} {surname} {generation}, {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -58,7 +58,7 @@
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -70,11 +70,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {given2} {given} {suffix}",
+                "formal": "{credentials} {surname} {given2} {given}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {given}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -84,11 +84,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given2-initial} {given} {suffix}",
+                "formal": "{credentials} {surname} {given2-initial} {given}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {given}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -102,7 +102,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {given}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -114,13 +114,13 @@
           "sorting": {
             "long": {
               "referring": {
-                "formal": "{surname} {given2} {given} {suffix}",
+                "formal": "{surname} {given2} {given}",
                 "informal": "{surname} {given-informal}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given2-initial} {given} {suffix}",
+                "formal": "{surname} {given2-initial} {given}",
                 "informal": "{surname} {given-informal}"
               }
             },
@@ -133,22 +133,47 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Anh"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Anh",
             "surname": "Nguyễn"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Anh",
             "given2": "Văn",
             "surname": "Nguyễn"
           },
-          "full": {
-            "prefix": "Giáo sư, Tiến sĩ",
+          "nativeFull": {
+            "title": "Ông",
             "given": "Anh",
-            "given2": "Văn"
+            "given2": "Văn",
+            "surname-core": "Nguyễn",
+            "credentials": "ĐBQH"
+          },
+          "foreignG": {
+            "given": "Sinbad"
+          },
+          "foreignGS": {
+            "given": "Käthe",
+            "surname": "Müller"
+          },
+          "foreignGGS": {
+            "given": "Zäzilia",
+            "given2": "Hamish",
+            "surname": "Stöber"
+          },
+          "foreignFull": {
+            "title": "Giáo sư, Tiến sĩ",
+            "given": "Ada Cornelia",
+            "given-informal": "Neele",
+            "given2": "César Martín",
+            "surname-prefix": "von",
+            "surname-core": "Brühl",
+            "surname2": "González Domingo",
+            "generation": "Jr",
+            "credentials": "MD DDS"
           }
         }
       }

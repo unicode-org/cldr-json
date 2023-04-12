@@ -3,7 +3,7 @@
     "af": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "af"
       },
@@ -26,11 +26,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname} {suffix}",
+                "formal": "{title} {given} {given2} {surname} {generation}, {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -40,11 +40,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname} {suffix}",
-                "informal": "{given} {given2-initial} {surname} {suffix}"
+                "formal": "{given} {given2-initial} {surname} {credentials}",
+                "informal": "{given} {given2-initial} {surname} {credentials}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -58,7 +58,7 @@
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -70,11 +70,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {given} {given2} {suffix}",
+                "formal": "{surname} {given} {given2} {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -84,11 +84,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2-initial} {suffix}",
+                "formal": "{surname} {given} {given2-initial} {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -102,7 +102,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -133,27 +133,49 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Piet"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Irene",
             "surname": "Rossouw"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Jan",
             "given2": "Koos",
             "surname": "Van der Merwe"
           },
-          "full": {
-            "prefix": "Prof. dr.",
+          "nativeFull": {
+            "title": "mnr.",
+            "given": "Bertus Wilbers",
+            "given-informal": "Bertie",
+            "given2": "Henri Retief",
+            "surname-core": "Wyk",
+            "generation": "jnr.",
+            "credentials": "LP"
+          },
+          "foreignG": {
+            "given": "Sarel"
+          },
+          "foreignGS": {
+            "given": "Katryn",
+            "surname": "Müller"
+          },
+          "foreignGGS": {
+            "given": "Zalta",
+            "given2": "Herman",
+            "surname": "Stander"
+          },
+          "foreignFull": {
+            "title": "Prof. dr.",
             "given": "Cornelia Margarita",
             "given-informal": "Nellie",
             "given2": "Sofia Aletta",
             "surname-prefix": "van den",
             "surname-core": "Berg",
             "surname2": "Wessels Swart",
-            "suffix": "MBChB PhD"
+            "generation": "jnr.",
+            "credentials": "MBChB PhD"
           }
         }
       }

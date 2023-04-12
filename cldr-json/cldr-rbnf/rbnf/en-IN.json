@@ -2,24 +2,12 @@
   "rbnf": {
     "identity": {
       "version": {
-        "_cldrVersion": "42"
+        "_cldrVersion": "43"
       },
       "language": "en",
       "territory": "IN"
     },
     "rbnf": {
-      "OrdinalRules": {
-        "%digits-ordinal": [
-          [
-            "-x",
-            "−→→;"
-          ],
-          [
-            "0",
-            "=#,##0=$(ordinal,one{st}two{nd}few{rd}other{th})$;"
-          ]
-        ]
-      },
       "SpelloutRules": {
         "%%2d-year": [
           [
@@ -576,7 +564,7 @@
           ],
           [
             "1000000000000000000",
-            "=#,##0=.;"
+            "=#,##0=$(ordinal,one{st}two{nd}few{rd}other{th})$;"
           ]
         ],
         "%%and-o": [
@@ -662,7 +650,7 @@
           ],
           [
             "1000000000000000000",
-            "=#,##0=.;"
+            "=#,##0=$(ordinal,one{st}two{nd}few{rd}other{th})$;"
           ]
         ]
       }

@@ -3,7 +3,7 @@
     "sc": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "sc"
       },
@@ -25,11 +25,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{prefix} {given} {given2} {surname} {surname2}",
+                "formal": "{title} {given} {given2} {surname} {surname2}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -39,11 +39,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{prefix} {given} {given2-initial} {surname} {surname2}",
+                "formal": "{title} {given} {given2-initial} {surname} {surname2}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -57,7 +57,7 @@
                 "informal": "{given-informal} {surname-prefix} {surname-core-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -69,11 +69,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {surname2} {given} {given2} {suffix}",
+                "formal": "{credentials} {title} {surname} {surname2} {given} {given2}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname} {surname2}",
+                "formal": "{title} {surname} {surname2}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -83,11 +83,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {surname2} {prefix} {given} {given2-initial} {suffix}",
+                "formal": "{surname} {surname2} {title} {given} {given2-initial}, {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -101,7 +101,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -132,26 +132,51 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Frantziscu"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Lianora",
             "surname": "Sanna"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Giuanne",
             "given2": "Marcu",
             "surname": "Piras"
           },
-          "full": {
-            "prefix": "Dut.ra Prof.ra",
-            "given": "Maria Giusepa",
-            "given-informal": "Pipina",
-            "given2": "Giuanna Teresa",
+          "nativeFull": {
+            "title": "Sr.",
+            "given": "Antoni Baìngiu",
+            "given-informal": "Toninu",
+            "given2": "Torchitòriu Comita",
             "surname-prefix": "de",
             "surname-core": "Lacon",
-            "surname2": "Gunale"
+            "surname2": "Gunale",
+            "generation": "II",
+            "credentials": "onorèvole"
+          },
+          "foreignG": {
+            "given": "Sinbad"
+          },
+          "foreignGS": {
+            "given": "Käthe",
+            "surname": "Müller"
+          },
+          "foreignGGS": {
+            "given": "Zäzilia",
+            "given2": "Hamish",
+            "surname": "Stöber"
+          },
+          "foreignFull": {
+            "title": "Dut.ra Prof.ra",
+            "given": "Maria Giusepa",
+            "given-informal": "Pipina",
+            "given2": "Juana Teresa",
+            "surname-prefix": "von",
+            "surname-core": "Brühl",
+            "surname2": "González Domingo",
+            "generation": "Jr",
+            "credentials": "MD DDS"
           }
         }
       }

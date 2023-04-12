@@ -3,7 +3,7 @@
     "ur": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "ur"
       },
@@ -15,9 +15,6 @@
         "surnameFirst": [
           "ja",
           "ko",
-          "si",
-          "ta",
-          "te",
           "vi",
           "yue",
           "zh"
@@ -29,25 +26,25 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname} {suffix}",
+                "formal": "{given} {given2} {surname} {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
-                "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",
-                "informal": "{given-informal-monogram-allCaps}{surname-monogram-allCaps}"
+                "formal": "{given-monogram-allCaps} {given2-monogram-allCaps} {surname-monogram-allCaps}",
+                "informal": "{given-informal-monogram-allCaps} {surname-monogram-allCaps}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname} {suffix}",
+                "formal": "{given} {given2-initial} {surname} {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -61,7 +58,7 @@
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -73,25 +70,25 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {given} {given2} {suffix}",
+                "formal": "{surname} {given} {given2} {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
-                "formal": "{surname-monogram-allCaps}{given-monogram-allCaps}{given2-monogram-allCaps}",
-                "informal": "{surname-monogram-allCaps}{given-informal-monogram-allCaps}"
+                "formal": "{surname-monogram-allCaps} {given-monogram-allCaps} {given2-monogram-allCaps}",
+                "informal": "{surname-monogram-allCaps} {given-informal-monogram-allCaps}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2-initial} {suffix}",
+                "formal": "{surname} {given} {given2-initial} {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -105,7 +102,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -117,13 +114,13 @@
           "sorting": {
             "long": {
               "referring": {
-                "formal": "{surname}، {given} {given2} {suffix}",
+                "formal": "{surname}، {given} {given2} {credentials}",
                 "informal": "{surname}، {given-informal}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname}، {given} {given2-initial} {suffix}",
+                "formal": "{surname}، {given} {given2-initial} {credentials}",
                 "informal": "{surname}، {given-informal}"
               }
             },
@@ -136,27 +133,49 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "احمد"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "شازیہ",
             "surname": "اصغر"
           },
-          "given12Surname": {
-            "given": "عبدل",
-            "given2": "باری",
+          "nativeGGS": {
+            "given": "مریم",
+            "given2": "نواز",
             "surname": "خان"
           },
-          "full": {
-            "prefix": "پروفیسر ڈاکٹر",
+          "nativeFull": {
+            "title": "محترم",
+            "given": "عبد الکریم",
+            "given-informal": "پٹھان",
+            "given2": "عبد الحمید",
+            "surname-core": "سید",
+            "generation": "جونیئر",
+            "credentials": "ایم پی"
+          },
+          "foreignG": {
+            "given": "سندباد"
+          },
+          "foreignGS": {
+            "given": "حاتم",
+            "surname": "منصور"
+          },
+          "foreignGGS": {
+            "given": "محمد",
+            "given2": "ہاشم",
+            "surname": "صابری"
+          },
+          "foreignFull": {
+            "title": "پروفیسر ڈاکٹر",
             "given": "یاسمین راشد",
             "given-informal": "ملک",
             "given2": "سدرہ منیر",
-            "surname-prefix": "ندیم جاوید",
+            "surname-prefix": "ندیم",
             "surname-core": "رضا",
             "surname2": "یوسف زئی",
-            "suffix": "ایم ڈی، پی ایچ ڈی"
+            "generation": "جونيئر",
+            "credentials": "ایم ڈی ڈی ڈی ایس"
           }
         }
       }

@@ -3,7 +3,7 @@
     "zh-Hans-SG": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "zh",
         "script": "Hans",
@@ -11,10 +11,10 @@
       },
       "personNames": {
         "givenFirst": [
-          "und"
+          "und",
+          "en"
         ],
         "surnameFirst": [
-          "hu",
           "ja",
           "ko",
           "vi",
@@ -28,25 +28,25 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname} {suffix}",
+                "formal": "{given} {given2} {surname}{credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{surname} {suffix}",
+                "formal": "{surname}{title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
-                "formal": "{given-monogram-allCaps} {given2-monogram-allCaps} {surname-monogram-allCaps}",
-                "informal": "{given-informal-monogram-allCaps} {surname-monogram-allCaps}"
+                "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",
+                "informal": "{given-informal-monogram-allCaps}{surname-monogram-allCaps}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname} {suffix}",
+                "formal": "{given} {given2-initial} {surname}{credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{surname} {suffix}",
+                "formal": "{surname}{title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -60,7 +60,7 @@
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{surname} {suffix}",
+                "formal": "{surname}{title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -72,11 +72,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname}{given}{given2}{suffix}",
-                "informal": "{surname}{given-informal}"
+                "formal": "{surname} {given} {given2} {credentials}{title}",
+                "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{surname}{suffix}",
+                "formal": "{surname}{title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -86,11 +86,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname}{given}{given2}{suffix}",
-                "informal": "{surname}{given-informal}"
+                "formal": "{surname} {given} {given2} {credentials}{title}",
+                "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{surname}{suffix}",
+                "formal": "{surname}{title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -100,11 +100,11 @@
             },
             "short": {
               "referring": {
-                "formal": "{surname}{given}{given2}",
-                "informal": "{surname}{given}"
+                "formal": "{surname} {given} {given2}",
+                "informal": "{surname} {given}"
               },
               "addressing": {
-                "formal": "{surname}{suffix}",
+                "formal": "{surname}{title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -116,42 +116,67 @@
           "sorting": {
             "long": {
               "referring": {
-                "formal": "{surname-core}{given}{given2}{surname-prefix}",
-                "informal": "{surname}{given-informal}"
+                "formal": "{surname-core} {given} {given2} {surname-prefix}",
+                "informal": "{surname} {given-informal}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname-core}{given}{given2}{surname-prefix}",
-                "informal": "{surname}{given-informal}"
+                "formal": "{surname-core} {given} {given2-initial} {surname-prefix}",
+                "informal": "{surname} {given-informal}"
               }
             },
             "short": {
               "referring": {
-                "formal": "{surname-core}{given}{given2}{surname-prefix}",
-                "informal": "{surname}{given-informal}"
+                "formal": "{surname-core} {given-initial} {given2-initial} {surname-prefix}",
+                "informal": "{surname} {given-informal}"
               }
             }
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "宇瀚"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "安怡",
             "surname": "张"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "俊年",
             "given2": "杰思",
             "surname": "陈"
           },
-          "full": {
-            "given": "夏玉格",
-            "given-informal": "小宇",
-            "given2": "柏宇",
-            "suffix": "博士"
+          "nativeFull": {
+            "title": "先生",
+            "given": "德威",
+            "given-informal": "小德",
+            "given2": "东升",
+            "surname-core": "彭",
+            "generation": "小",
+            "credentials": "议员"
+          },
+          "foreignG": {
+            "given": "辛巴达"
+          },
+          "foreignGS": {
+            "given": "克特",
+            "surname": "米勒"
+          },
+          "foreignGGS": {
+            "given": "塞西莉亚",
+            "given2": "哈米什",
+            "surname": "施托贝尔"
+          },
+          "foreignFull": {
+            "title": "教授",
+            "given": "艾达·科妮莉亚",
+            "given-informal": "尼尔",
+            "given2": "塞萨尔·马丁",
+            "surname-prefix": "冯",
+            "surname-core": "布鲁赫",
+            "generation": "小",
+            "credentials": "博士"
           }
         }
       }

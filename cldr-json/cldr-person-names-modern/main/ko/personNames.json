@@ -3,7 +3,7 @@
     "ko": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "ko"
       },
@@ -26,11 +26,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname} {suffix}",
+                "formal": "{given} {given2} {surname} {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{surname} {suffix}",
+                "formal": "{surname} {title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -40,11 +40,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {surname} {suffix}",
+                "formal": "{given} {surname} {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{surname} {suffix}",
+                "formal": "{surname} {title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -58,7 +58,7 @@
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{surname} {suffix}",
+                "formal": "{surname} {title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -70,11 +70,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname}{given} {given2} {suffix}",
+                "formal": "{surname}{given} {given2} {credentials}",
                 "informal": "{surname}{given-informal}"
               },
               "addressing": {
-                "formal": "{surname} {suffix}",
+                "formal": "{surname} {title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -84,11 +84,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname}{given} {suffix}",
+                "formal": "{surname}{given} {credentials}",
                 "informal": "{surname}{given-informal}"
               },
               "addressing": {
-                "formal": "{surname} {suffix}",
+                "formal": "{surname} {title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -102,7 +102,7 @@
                 "informal": "{surname}{given-informal}"
               },
               "addressing": {
-                "formal": "{surname} {suffix}",
+                "formal": "{surname} {title}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -133,26 +133,46 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "유미"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "유미",
             "surname": "강"
           },
-          "given12Surname": {
-            "given": "존",
-            "given2": "해미쉬",
-            "surname": "왓슨"
+          "nativeGGS": {
+            "given": "소현",
+            "surname": "박"
           },
-          "full": {
+          "nativeFull": {
+            "title": "씨",
+            "given": "민규",
+            "given-informal": "민규",
+            "given2": "헨리",
+            "surname-core": "김"
+          },
+          "foreignG": {
+            "given": "신밧드"
+          },
+          "foreignGS": {
+            "given": "케테",
+            "surname": "뮐러"
+          },
+          "foreignGGS": {
+            "given": "제질리아",
+            "given2": "해미쉬",
+            "surname": "슈퇴버"
+          },
+          "foreignFull": {
+            "title": "교수",
             "given": "에이다 코넬리아",
             "given-informal": "닐",
-            "given2": "에바 소피아",
+            "given2": "세사르 마르틴",
             "surname-prefix": "폰",
             "surname-core": "볼프",
             "surname2": "베커 슈미트",
-            "suffix": "님"
+            "generation": "주니어",
+            "credentials": "박사"
           }
         }
       }

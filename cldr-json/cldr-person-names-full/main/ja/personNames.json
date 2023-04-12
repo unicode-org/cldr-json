@@ -3,7 +3,7 @@
     "ja": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "ja"
       },
@@ -14,7 +14,9 @@
         "surnameFirst": [
           "hu",
           "ja",
+          "km",
           "ko",
+          "mn",
           "vi",
           "yue",
           "zh"
@@ -26,12 +28,12 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{prefix} {given} {given2} {surname}{suffix}",
-                "informal": "{prefix} {given-informal} {surname}{suffix}"
+                "formal": "{given} {given2} {surname} {generation}{title}",
+                "informal": "{given-informal} {surname}{title}"
               },
               "addressing": {
-                "formal": "{given} {given2} {surname}{suffix}",
-                "informal": "{given-informal} {surname}{suffix}"
+                "formal": "{given} {given2} {surname} {generation}{title}",
+                "informal": "{given-informal} {surname}{title}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}",
@@ -40,12 +42,12 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2} {surname}{suffix}",
-                "informal": "{given-informal} {surname}{suffix}"
+                "formal": "{given} {given2} {surname} {generation}{title}",
+                "informal": "{given-informal} {surname}{title}"
               },
               "addressing": {
-                "formal": "{given} {surname}{suffix}",
-                "informal": "{given-informal} {surname}{suffix}"
+                "formal": "{given} {surname}{title}",
+                "informal": "{given-informal} {surname}{title}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}",
@@ -54,12 +56,12 @@
             },
             "short": {
               "referring": {
-                "formal": "{given} {surname}{suffix}",
-                "informal": "{given-informal} {surname}{suffix}"
+                "formal": "{given} {surname}{title}",
+                "informal": "{given-informal} {surname}{title}"
               },
               "addressing": {
-                "formal": "{given}{suffix}",
-                "informal": "{given-informal}{suffix}"
+                "formal": "{surname}{title}",
+                "informal": "{given-informal}{title}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}",
@@ -70,12 +72,12 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{prefix}{surname}{given2}{given}{suffix}",
-                "informal": "{prefix}{surname}{given-informal}{suffix}"
+                "formal": "{surname}{given2}{given}{title}",
+                "informal": "{surname}{given-informal}{title}"
               },
               "addressing": {
-                "formal": "{surname}{given2}{given}{suffix}",
-                "informal": "{surname}{given-informal}{suffix}"
+                "formal": "{surname}{given}{title}",
+                "informal": "{surname}{given-informal}{title}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}",
@@ -84,12 +86,12 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname}{given2}{given}{suffix}",
-                "informal": "{surname}{given-informal}{suffix}"
+                "formal": "{surname}{given}{title}",
+                "informal": "{surname}{given-informal}{title}"
               },
               "addressing": {
-                "formal": "{surname}{given}{suffix}",
-                "informal": "{surname}{given-informal}{suffix}"
+                "formal": "{surname}{given}{title}",
+                "informal": "{surname}{given-informal}{title}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}",
@@ -98,12 +100,12 @@
             },
             "short": {
               "referring": {
-                "formal": "{surname}{given}{suffix}",
-                "informal": "{surname}{given-informal}{suffix}"
+                "formal": "{surname}{given}{title}",
+                "informal": "{surname}{given-informal}{title}"
               },
               "addressing": {
-                "formal": "{surname}{suffix}",
-                "informal": "{given-informal}{suffix}"
+                "formal": "{surname}{title}",
+                "informal": "{given-informal}{title}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}",
@@ -114,44 +116,67 @@
           "sorting": {
             "long": {
               "referring": {
-                "formal": "{surname}{given2}{given}{suffix}",
-                "informal": "{surname}{given-informal}{suffix}"
+                "formal": "{surname} {given2} {given}",
+                "informal": "{surname} {given-informal}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname}{given}{suffix}",
-                "informal": "{surname}{given-informal}{suffix}"
+                "formal": "{surname} {given2} {given}",
+                "informal": "{surname} {given-informal}"
               }
             },
             "short": {
               "referring": {
-                "formal": "{surname}{given}",
-                "informal": "{surname}{given-informal}"
+                "formal": "{surname} {given}",
+                "informal": "{surname} {given-informal}"
               }
             }
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "慎太郎"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "一郎",
             "surname": "安藤"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "太郎",
             "given2": "トーマス",
             "surname": "山田"
           },
-          "full": {
-            "prefix": "ドクター",
-            "given": "英子",
-            "given-informal": "えいこ",
+          "nativeFull": {
+            "title": "さん",
+            "given": "恵子",
+            "given-informal": "けいこ",
+            "given2": "グレース",
+            "surname-core": "佐藤",
+            "generation": "ジュニア",
+            "credentials": "国会議員"
+          },
+          "foreignG": {
+            "given": "マイケル"
+          },
+          "foreignGS": {
+            "given": "アルベルト",
+            "surname": "アインシュタイン"
+          },
+          "foreignGGS": {
+            "given": "セシリア",
+            "given2": "ローズ",
+            "surname": "ブラウン"
+          },
+          "foreignFull": {
+            "title": "博士",
+            "given": "ジェニファー",
+            "given-informal": "ジェニー",
             "given2": "ソフィア",
-            "surname-core": "内田",
-            "suffix": "さん"
+            "surname-prefix": "フォン",
+            "surname-core": "スミス",
+            "generation": "ジュニア",
+            "credentials": "医学博士"
           }
         }
       }

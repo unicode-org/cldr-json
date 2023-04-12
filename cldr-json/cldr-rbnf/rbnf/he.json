@@ -2,11 +2,23 @@
   "rbnf": {
     "identity": {
       "version": {
-        "_cldrVersion": "42"
+        "_cldrVersion": "43"
       },
       "language": "he"
     },
     "rbnf": {
+      "OrdinalRules": {
+        "%digits-ordinal": [
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0=;"
+          ]
+        ]
+      },
       "SpelloutRules": {
         "%spellout-numbering-year": [
           [

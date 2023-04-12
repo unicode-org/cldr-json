@@ -3,7 +3,7 @@
     "sr-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "42"
+          "_cldrVersion": "43"
         },
         "language": "sr",
         "script": "Latn"
@@ -26,11 +26,11 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname}, {suffix}",
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -40,11 +40,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname}, {suffix}",
+                "formal": "{given} {given2-initial} {surname} {generation}, {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -58,7 +58,7 @@
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -70,11 +70,11 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {given} {given2}, {suffix}",
+                "formal": "{surname} {title} {given} {given2} {generation}, {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -84,11 +84,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2-initial}, {suffix}",
+                "formal": "{surname} {given} {given2-initial} {generation}, {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -102,7 +102,7 @@
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
-                "formal": "{prefix} {surname}",
+                "formal": "{title} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -133,27 +133,49 @@
           }
         },
         "sampleName": {
-          "givenOnly": {
+          "nativeG": {
             "given": "Ivan"
           },
-          "givenSurnameOnly": {
+          "nativeGS": {
             "given": "Irena",
             "surname": "Marković"
           },
-          "given12Surname": {
+          "nativeGGS": {
             "given": "Jovan",
             "given2": "Dragan",
             "surname": "Popović"
           },
-          "full": {
-            "prefix": "prof. dr",
+          "nativeFull": {
+            "title": "dr",
+            "given": "Slađana",
+            "given-informal": "Slađa",
+            "given2": "Vera",
+            "surname-core": "Milenković",
+            "generation": "mlađi",
+            "credentials": "dipl. inž."
+          },
+          "foreignG": {
+            "given": "Sinbad"
+          },
+          "foreignGS": {
+            "given": "Kete",
+            "surname": "Miler"
+          },
+          "foreignGGS": {
+            "given": "Cecilija",
+            "given2": "Hemiš",
+            "surname": "Šteber"
+          },
+          "foreignFull": {
+            "title": "prof. dr",
             "given": "Aleksandra",
             "given-informal": "Sanja",
             "given2": "Eva Sara",
             "surname-prefix": "van den",
             "surname-core": "Volf",
             "surname2": "Petrović Jugović",
-            "suffix": "dipl. inž."
+            "generation": "mlađi",
+            "credentials": "dipl. inž."
           }
         }
       }
