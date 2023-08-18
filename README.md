@@ -51,15 +51,10 @@ Installation using [npm](https://www.npmjs.com):
 CLDR does not use Github's issue tracking system to track bugs.  If you find an error in
 the data contained here, please file a new ticket at [Unicode Jira](https://unicode-org.atlassian.net/projects/CLDR/issues)
 
-## Licenses
+### Copyright & Licenses
 
-- Usage of CLDR data and software is governed by the [Unicode Terms of Use](http://www.unicode.org/copyright.html)
-a copy of which is included as [unicode-license.txt](./unicode-license.txt).
+Copyright © 2015-2023 Unicode, Inc. Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the United States and other countries.
 
-SPDX-License-Identifier: Unicode-DFS-2016
+The project is released under [LICENSE](./LICENSE).
 
-## Copyright
-
-Copyright &copy; 1991-2021 Unicode, Inc.
-All rights reserved.
-[Terms of use](http://www.unicode.org/copyright.html)
+A CLA is required to contribute to this project - please refer to the [CONTRIBUTING.md](https://github.com/unicode-org/.github/blob/main/.github/CONTRIBUTING.md) file (or start a Pull Request) for more information.
