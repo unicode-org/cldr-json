@@ -3,7 +3,7 @@
     "ms-SG": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "ms",
         "territory": "SG"
@@ -20,6 +20,9 @@
           "yue",
           "zh"
         ],
+        "formality": "formal",
+        "length": "medium",
+        "nativeSpaceReplacement": " ",
         "foreignSpaceReplacement": " ",
         "initial": "{0}.",
         "initialSequence": "{0} {1}",
@@ -28,11 +31,11 @@
             "long": {
               "referring": {
                 "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
-                "informal": "{title} {given} {given2} {surname} {surname2} {credentials}"
+                "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
-                "informal": "{title} {given} {given2} {surname} {surname2} {credentials}"
+                "formal": "{title} {surname}",
+                "informal": "{given-informal}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",
@@ -41,30 +44,30 @@
             },
             "medium": {
               "referring": {
-                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
-                "informal": "{title} {given} {given2} {surname} {surname2} {credentials}"
+                "formal": "{given} {given2-initial} {surname} {generation}, {credentials}",
+                "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
-                "informal": "{title} {given} {given2} {surname} {surname2} {credentials}"
+                "formal": "{title} {surname}",
+                "informal": "{given-informal}"
               },
               "monogram": {
-                "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",
-                "informal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}"
+                "formal": "{surname-monogram-allCaps}",
+                "informal": "{given-informal-monogram-allCaps}"
               }
             },
             "short": {
               "referring": {
-                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
-                "informal": "{title} {given} {given2} {surname} {surname2} {credentials}"
+                "formal": "{given-initial} {given2-initial} {surname}",
+                "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
-                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
-                "informal": "{title} {given} {given2} {surname} {surname2} {credentials}"
+                "formal": "{title} {surname}",
+                "informal": "{given-informal}"
               },
               "monogram": {
-                "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",
-                "informal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}"
+                "formal": "{surname-monogram-allCaps}",
+                "informal": "{given-informal-monogram-allCaps}"
               }
             }
           },
@@ -158,25 +161,25 @@
             "credentials": "MP"
           },
           "foreignG": {
-            "given": "Razak"
+            "given": "John"
           },
           "foreignGS": {
-            "given": "Arumugam",
-            "surname": "Pillay"
+            "given": "Kathy",
+            "surname": "Mueller"
           },
           "foreignGGS": {
-            "given": "Zazila",
-            "given2": "Harisah",
-            "surname": "Salleh"
+            "given": "Zendaya",
+            "given2": "Marie",
+            "surname": "Coleman"
           },
           "foreignFull": {
             "title": "Prof. Dr.",
-            "given": "Puteri Aida",
-            "given-informal": "Intan",
-            "given2": "Bahiyah",
-            "surname-prefix": "binti",
-            "surname-core": "Hamdan",
-            "surname2": "Ariff",
+            "given": "Ada Cornelia",
+            "given-informal": "Nelly",
+            "given2": "Martina",
+            "surname-prefix": "von",
+            "surname-core": "Bruhel",
+            "surname2": "Domingo",
             "generation": "Jr",
             "credentials": "MD DDS"
           }

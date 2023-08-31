@@ -3,7 +3,7 @@
     "zh-Hans-HK": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "zh",
         "script": "Hans",
@@ -315,7 +315,7 @@
               "full": "GyMMEEEEd",
               "long": "GyMMd",
               "medium": "GyMMd",
-              "short": "GyMd"
+              "short": "GGGGGyyMd"
             },
             "timeFormats": {
               "full": "zzzz ah:mm:ss",
@@ -361,9 +361,9 @@
                 "hms": "ah:mm:ss",
                 "Hms": "HH:mm:ss",
                 "M": "L",
-                "Md": "M/d",
-                "MEd": "M/dE",
-                "MMM": "LL",
+                "Md": "d/M",
+                "MEd": "E, d/M",
+                "MMM": "M月",
                 "MMMd": "M月d日",
                 "MMMEd": "M月d日E",
                 "MMMMd": "M月d日",
@@ -371,9 +371,9 @@
                 "ms": "mm:ss",
                 "y": "Gy年",
                 "yyyy": "Gy年",
-                "yyyyM": "Gy年M月",
-                "yyyyMd": "G y/M/d",
-                "yyyyMEd": "G y/M/dE",
+                "yyyyM": "M/yGGGGG",
+                "yyyyMd": "d/M/yGGGGG",
+                "yyyyMEd": "E, d/M/yGGGGG",
                 "yyyyMMM": "Gy年MM月",
                 "yyyyMMMd": "Gy年MM月d日",
                 "yyyyMMMEd": "Gy年MM月d日E",
@@ -448,7 +448,7 @@
                 },
                 "h": {
                   "a": "ah时至ah时",
-                  "h": "ah时至h时"
+                  "h": "ah至h时"
                 },
                 "H": {
                   "H": "HH–HH"
@@ -468,8 +468,8 @@
                   "m": "v ah:mm至h:mm"
                 },
                 "Hmv": {
-                  "H": "v HH:mm – HH:mm",
-                  "m": "v HH:mm – HH:mm"
+                  "H": "vHH:mm–HH:mm",
+                  "m": "vHH:mm–HH:mm"
                 },
                 "hv": {
                   "a": "v ah时至ah时",
@@ -504,18 +504,18 @@
                   "y": "Gy–y年"
                 },
                 "yM": {
-                  "M": "Gy年M月至M月",
+                  "M": "y年M月至y年M月",
                   "y": "Gy年M月至y年M月"
                 },
                 "yMd": {
-                  "d": "Gy/M/d – y/M/d",
-                  "M": "Gy/M/d – y/M/d",
-                  "y": "Gy/M/d – y/M/d"
+                  "d": "d/M/y至d/M/y",
+                  "M": "d/M/y至d/M/y",
+                  "y": "d/M/y至d/M/y"
                 },
                 "yMEd": {
-                  "d": "Gy/M/dE至y/M/dE",
-                  "M": "Gy/M/dE至y/M/dE",
-                  "y": "Gy/M/dE至y/M/dE"
+                  "d": "d/M/yE至d/M/yE",
+                  "M": "d/M/yE至d/M/yE",
+                  "y": "d/M/yE至d/M/yE"
                 },
                 "yMMM": {
                   "M": "Gy年M月至M月",
@@ -527,7 +527,7 @@
                   "y": "Gy年M月d日至y年M月d日"
                 },
                 "yMMMEd": {
-                  "d": "Gy年M月d日E至d日E",
+                  "d": "y年M月d日E至M月d日E",
                   "M": "Gy年M月d日E至M月d日E",
                   "y": "Gy年M月d日E至y年M月d日E"
                 },

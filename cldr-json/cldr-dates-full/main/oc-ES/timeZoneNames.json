@@ -3,7 +3,7 @@
     "oc-ES": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "oc",
         "territory": "ES"
@@ -11,11 +11,11 @@
       "dates": {
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
-          "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
-          "regionFormat": "{0}",
-          "regionFormat-type-daylight": "{0} (+1)",
-          "regionFormat-type-standard": "{0} (+0)",
+          "gmtFormat": "UTC{0}",
+          "gmtZeroFormat": "UTC",
+          "regionFormat": "ora de {0}",
+          "regionFormat-type-daylight": "{0} (ora d’estiu)",
+          "regionFormat-type-standard": "{0} (ora estandard)",
           "fallbackFormat": "{1} ({0})",
           "zone": {
             "America": {
@@ -157,6 +157,13 @@
               },
               "Unknown": {
                 "exemplarCity": "Unknown"
+              }
+            }
+          },
+          "metazone": {
+            "GMT": {
+              "long": {
+                "standard": "ora al meridian de Greenwich"
               }
             }
           }

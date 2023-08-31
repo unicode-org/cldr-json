@@ -3,7 +3,7 @@
     "is": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "is"
       },
@@ -18,6 +18,9 @@
           "yue",
           "zh"
         ],
+        "formality": "formal",
+        "length": "medium",
+        "nativeSpaceReplacement": " ",
         "foreignSpaceReplacement": " ",
         "initial": "{0}.",
         "initialSequence": "{0} {1}",
@@ -43,7 +46,7 @@
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
+                "formal": "{title} {given} {surname}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -114,7 +117,7 @@
             "long": {
               "referring": {
                 "formal": "{given} {given2} {surname-prefix} {surname-core}",
-                "informal": "{given} {surname-prefix} {surname-core}"
+                "informal": "{given-informal} {surname-prefix} {surname-core}"
               }
             },
             "medium": {
@@ -125,7 +128,7 @@
             },
             "short": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname-prefix} {surname-core}",
+                "formal": "{given-initial} {given2-initial} {surname-prefix} {surname-core}",
                 "informal": "{given-informal} {surname}"
               }
             }
@@ -170,7 +173,7 @@
             "given": "Sigríður Jóna",
             "given-informal": "Sigga",
             "given2": "Valgerður Fanndís",
-            "surname-prefix": "van den",
+            "surname-prefix": "von",
             "surname-core": "Bjarnadóttir",
             "surname2": "Jónsdóttir Möller",
             "generation": "yngri",

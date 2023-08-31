@@ -3,7 +3,7 @@
     "nl": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "nl"
       },
@@ -19,6 +19,9 @@
           "yue",
           "zh"
         ],
+        "formality": "informal",
+        "length": "medium",
+        "nativeSpaceReplacement": " ",
         "foreignSpaceReplacement": " ",
         "initial": "{0}.",
         "initialSequence": "{0}{1}",
@@ -34,8 +37,8 @@
                 "informal": "{given-informal}"
               },
               "monogram": {
-                "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-prefix-monogram}{surname-core-monogram-allCaps}",
-                "informal": "{given-informal-monogram-allCaps}{surname-prefix-monogram}{surname-core-monogram-allCaps}"
+                "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",
+                "informal": "{given-informal-monogram-allCaps}{surname-monogram-allCaps}"
               }
             },
             "medium": {
@@ -48,7 +51,7 @@
                 "informal": "{given-informal}"
               },
               "monogram": {
-                "formal": "{surname-prefix-monogram}{surname-core-monogram-allCaps}",
+                "formal": "{surname-monogram-allCaps}",
                 "informal": "{given-informal-monogram-allCaps}"
               }
             },
@@ -62,7 +65,7 @@
                 "informal": "{given-informal}"
               },
               "monogram": {
-                "formal": "{surname-prefix-monogram}{surname-core-monogram-allCaps}",
+                "formal": "{surname-monogram-allCaps}",
                 "informal": "{given-informal-monogram-allCaps}"
               }
             }
@@ -70,7 +73,7 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{title} {surname} {given} {given2} {generation} {credentials}",
+                "formal": "{surname} {title} {given} {given2} {generation}, {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
@@ -78,13 +81,13 @@
                 "informal": "{given-informal}"
               },
               "monogram": {
-                "formal": "{surname-prefix-monogram}{surname-core-monogram-allCaps}{given-monogram-allCaps}{given2-monogram-allCaps}",
-                "informal": "{surname-prefix-monogram}{surname-core-monogram-allCaps}{given-informal-monogram-allCaps}"
+                "formal": "{surname-monogram-allCaps}{given-monogram-allCaps}{given2-monogram-allCaps}",
+                "informal": "{surname-monogram-allCaps}{given-informal-monogram-allCaps}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2-initial} {generation} {credentials}",
+                "formal": "{surname} {given} {given2-initial} {generation}, {credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
@@ -92,7 +95,7 @@
                 "informal": "{given-informal}"
               },
               "monogram": {
-                "formal": "{surname-prefix-monogram}{surname-core-monogram-allCaps}",
+                "formal": "{surname-monogram-allCaps}",
                 "informal": "{given-informal-monogram-allCaps}"
               }
             },
@@ -120,13 +123,13 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname}, {given} {given2-initial} {credentials}",
+                "formal": "{surname-core}, {given} {given2-initial} {surname-prefix}",
                 "informal": "{surname}, {given-informal}"
               }
             },
             "short": {
               "referring": {
-                "formal": "{surname}, {given-initial}{given2-initial}",
+                "formal": "{surname-core}, {given-initial}{given2-initial} {surname-prefix}",
                 "informal": "{surname}, {given-informal}"
               }
             }

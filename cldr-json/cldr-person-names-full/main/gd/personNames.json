@@ -3,7 +3,7 @@
     "gd": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "gd"
       },
@@ -19,6 +19,9 @@
           "yue",
           "zh"
         ],
+        "formality": "informal",
+        "length": "short",
+        "nativeSpaceReplacement": " ",
         "foreignSpaceReplacement": " ",
         "initial": "{0}.",
         "initialSequence": "{0} {1}",
@@ -30,8 +33,8 @@
                 "informal": "{given-informal} {given2} {surname}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
-                "informal": "{given-informal} {given2}"
+                "formal": "{title-vocative} {surname-vocative}",
+                "informal": "{given-informal-vocative} {given2-vocative}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",
@@ -44,8 +47,8 @@
                 "informal": "{given-informal} {given2} {surname}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
-                "informal": "{given-informal}"
+                "formal": "{title-vocative} {surname-vocative}",
+                "informal": "{given-informal-vocative} {given2-vocative}"
               },
               "monogram": {
                 "formal": "{surname-monogram-allCaps}",
@@ -58,8 +61,8 @@
                 "informal": "{given-informal} {given2-initial}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
-                "informal": "{given-informal}"
+                "formal": "{given-vocative} {surname-vocative}",
+                "informal": "{given-informal-vocative}"
               },
               "monogram": {
                 "formal": "{surname-monogram-allCaps}",
@@ -74,8 +77,8 @@
                 "informal": "{surname} {surname2} {given-informal} {given2}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
-                "informal": "{given-informal} {given2}"
+                "formal": "{title-vocative} {surname-vocative}",
+                "informal": "{given-informal-vocative} {given2-vocative}"
               },
               "monogram": {
                 "formal": "{surname-monogram-allCaps}{given-monogram-allCaps}{given2-monogram-allCaps}",
@@ -88,8 +91,8 @@
                 "informal": "{surname} {given-informal} {given2}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
-                "informal": "{given-informal}"
+                "formal": "{title-vocative} {surname-vocative}",
+                "informal": "{given-informal-vocative} {given2-vocative}"
               },
               "monogram": {
                 "formal": "{surname-monogram-allCaps}",
@@ -102,8 +105,8 @@
                 "informal": "{given-informal} {given2-initial}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
-                "informal": "{given-informal}"
+                "formal": "{title-vocative} {surname-vocative}",
+                "informal": "{given-informal-vocative}"
               },
               "monogram": {
                 "formal": "{surname-monogram-allCaps}",
@@ -115,22 +118,18 @@
             "long": {
               "referring": {
                 "formal": "{surname-core}, {given} {given2} {surname-prefix}",
-                "informal": "{surname}, {given-informal} {given2}",
-                "informal-alt-1": "{surname-core}, {given} {given2} {surname-prefix}"
+                "informal": "{surname}, {given-informal} {given2}"
               }
             },
             "medium": {
               "referring": {
                 "formal": "{surname-core}, {given} {given2-initial} {surname-prefix}",
-                "formal-alt-1": "{surname-core}, {given} {given2} {surname-prefix}",
-                "informal": "{surname}, {given-informal} {given2}",
-                "informal-alt-1": "{surname-core}, {given} {given2} {surname-prefix}"
+                "informal": "{surname}, {given-informal} {given2}"
               }
             },
             "short": {
               "referring": {
                 "formal": "{surname-core}, {given-initial} {given2-initial} {surname-prefix}",
-                "formal-alt-1": "{surname-core}, {given} {given2} {surname-prefix}",
                 "informal": "{surname}, {given-informal} {given2}",
                 "informal-alt-1": "{surname-core}, {given-informal} {given2} {surname-prefix}"
               }
