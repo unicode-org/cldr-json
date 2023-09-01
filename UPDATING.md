@@ -34,7 +34,7 @@ Make sure your `cldr-json` directory is otherwise clean (`git status`)
 
 ### Publishing
 
-1. Run the script `cldr-generate-zips.sh` to generate zipfiles under `dist/` - these are suitable for uploading to a release page
+1. Run the script `cldr-generate-zip.sh` to generate zipfiles under `dist/` - these are suitable for uploading to a release page
 2. create a release tag such as `43.0.0` in this repository. or `43.0.0-ALPHA2`.  Create a GitHub release, use other [releases](https://github.com/unicode-org/cldr-json/releases) as a guide.
 3. npm packages can be updated as well. Each sub-subdirectory of `cldr-json/cldr-json` is a separate npm package. The following script will preview
 (dry run) publishing to npm under the `beta` tag. Check the version carefully!
