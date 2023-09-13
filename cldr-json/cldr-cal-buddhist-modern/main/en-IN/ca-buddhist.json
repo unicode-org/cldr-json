@@ -3,7 +3,7 @@
     "en-IN": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "en",
         "territory": "IN"
@@ -311,10 +311,10 @@
               }
             },
             "dateFormats": {
-              "full": "EEEE, d MMMM, y G",
+              "full": "EEEE d MMMM, y G",
               "long": "d MMMM, y G",
               "medium": "d MMM, y G",
-              "short": "d/M/y/ GGGGG"
+              "short": "dd/MM/y GGGGG"
             },
             "dateSkeletons": {
               "full": "GyMMMMEEEEd",
@@ -363,6 +363,7 @@
                 "GyMMM": "MMM, y G",
                 "GyMMMd": "d MMM, y G",
                 "GyMMMEd": "E, d MMM, y G",
+                "GyMMMEEEEd": "EEEE d MMM, y G",
                 "h": "h a",
                 "h-alt-ascii": "h a",
                 "H": "HH",
@@ -378,7 +379,9 @@
                 "MMM": "LLL",
                 "MMMd": "d MMM",
                 "MMMEd": "E, d MMM",
+                "MMMEEEEd": "EEEE d MMM",
                 "MMMMd": "d MMMM",
+                "MMMMEEEEd": "EEEE d MMMM",
                 "ms": "mm:ss",
                 "y": "y G",
                 "yyyy": "y G",
@@ -388,7 +391,9 @@
                 "yyyyMMM": "MMM, y G",
                 "yyyyMMMd": "d MMM, y G",
                 "yyyyMMMEd": "E, d MMM, y G",
+                "yyyyMMMEEEEd": "EEEE d MMM, y G",
                 "yyyyMMMM": "MMMM, y G",
+                "yyyyMMMMEEEEd": "EEEE d MMMM, y G",
                 "yyyyQQQ": "QQQ y G",
                 "yyyyQQQQ": "QQQQ y G"
               },
@@ -457,6 +462,12 @@
                   "M": "E, d MMM – E, d MMM y G",
                   "y": "E, d MMM y – E, d MMM y G"
                 },
+                "GyMMMEEEEd": {
+                  "d": "EEEE d MMM – EEEE d MMM, y G",
+                  "G": "EEEE d MMM y G – EEEE d MMM, y G",
+                  "M": "EEEE d MMM – EEEE d MMM, y G",
+                  "y": "EEEE d MMM y – EEEE d MMM, y G"
+                },
                 "h": {
                   "a": "h a – h a",
                   "h": "h – h a"
@@ -510,6 +521,10 @@
                 "MMMEd": {
                   "d": "E, d – E, d MMM",
                   "M": "E, d MMM – E, d MMM"
+                },
+                "MMMEEEEd": {
+                  "d": "EEEE d – EEEE d MMM",
+                  "M": "EEEE d MMM – EEEE d MMM"
                 },
                 "y": {
                   "y": "y–y G"

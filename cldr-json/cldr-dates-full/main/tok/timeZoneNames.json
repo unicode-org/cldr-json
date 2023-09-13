@@ -3,18 +3,18 @@
     "tok": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "tok"
       },
       "dates": {
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
-          "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
-          "regionFormat": "{0}",
-          "regionFormat-type-daylight": "{0} (+1)",
-          "regionFormat-type-standard": "{0} (+0)",
+          "gmtFormat": "tenpo UTC{0}",
+          "gmtZeroFormat": "tenpo UTC",
+          "regionFormat": "tenpo pi {0}",
+          "regionFormat-type-daylight": "tenpo seli suno pi {0}",
+          "regionFormat-type-standard": "tenpo pi {0}",
           "fallbackFormat": "{1} ({0})",
           "zone": {
             "America": {
@@ -156,6 +156,13 @@
               },
               "Unknown": {
                 "exemplarCity": "Unknown"
+              }
+            }
+          },
+          "metazone": {
+            "GMT": {
+              "long": {
+                "standard": "tenpo pi ma Keni"
               }
             }
           }

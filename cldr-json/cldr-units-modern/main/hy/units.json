@@ -3,7 +3,7 @@
     "hy": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "hy"
       },
@@ -39,6 +39,12 @@
           "10p-24": {
             "unitPrefixPattern": "յոկտո{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "ռոնտո{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "քուեկտո{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "դեկա{0}"
           },
@@ -68,6 +74,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "յոտտա{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "ռոննա{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "քուետտա{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "կիբի{0}"
@@ -112,15 +124,7 @@
           "acceleration-g-force": {
             "displayName": "ազատ անկման արագացում",
             "unitPattern-count-one": "{0} g",
-            "ablative-count-one": "{0} g",
-            "dative-count-one": "{0} g",
-            "instrumental-count-one": "{0} g",
-            "locative-count-one": "{0} g",
-            "unitPattern-count-other": "{0} g",
-            "ablative-count-other": "{0} g",
-            "dative-count-other": "{0} g",
-            "instrumental-count-other": "{0} g",
-            "locative-count-other": "{0} g"
+            "unitPattern-count-other": "{0} g"
           },
           "acceleration-meter-per-square-second": {
             "displayName": "մետրեր/վայրկյան քառակուսի",
@@ -966,16 +970,7 @@
           },
           "graphics-em": {
             "displayName": "տպագրական em",
-            "unitPattern-count-one": "{0} em",
-            "ablative-count-one": "{0} em",
-            "dative-count-one": "{0} em",
-            "instrumental-count-one": "{0} em",
-            "locative-count-one": "{0} em",
-            "unitPattern-count-other": "{0} em",
-            "ablative-count-other": "{0} em",
-            "dative-count-other": "{0} em",
-            "instrumental-count-other": "{0} em",
-            "locative-count-other": "{0} em"
+            "unitPattern-count-other": "{0} em"
           },
           "graphics-pixel": {
             "displayName": "փիքսելներ",
@@ -1037,9 +1032,9 @@
             "unitPattern-count-other": "{0} կետ"
           },
           "length-earth-radius": {
-            "displayName": "երկրային շառավիղ",
-            "unitPattern-count-one": "{0} երկրային շառավիղ",
-            "unitPattern-count-other": "{0} երկրային շառավիղ"
+            "displayName": "երկրի շառավիղ",
+            "unitPattern-count-one": "{0} երկրի շառավիղ",
+            "unitPattern-count-other": "{0} երկրի շառավիղ"
           },
           "length-kilometer": {
             "displayName": "կիլոմետրեր",
@@ -1215,7 +1210,6 @@
           },
           "length-point": {
             "displayName": "pt",
-            "unitPattern-count-one": "{0} pt",
             "unitPattern-count-other": "{0} pt"
           },
           "length-solar-radius": {
@@ -1606,6 +1600,11 @@
             "unitPattern-count-one": "{0} հանգույց",
             "unitPattern-count-other": "{0} հանգույց"
           },
+          "speed-beaufort": {
+            "displayName": "Բոֆորտ",
+            "unitPattern-count-one": "Բոֆորտ {0}",
+            "unitPattern-count-other": "Բոֆորտ {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
             "unitPattern-count-one": "{0}°",
@@ -1970,6 +1969,12 @@
           "10p-24": {
             "unitPrefixPattern": "յ{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "ռ{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "ք{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "դա{0}"
           },
@@ -2000,6 +2005,12 @@
           "10p24": {
             "unitPrefixPattern": "Յ{0}"
           },
+          "10p27": {
+            "unitPrefixPattern": "Ռ{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Ք{0}"
+          },
           "1024p1": {
             "unitPrefixPattern": "Կի{0}"
           },
@@ -2029,12 +2040,10 @@
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
-            "compoundUnitPattern1-count-one": "{0}²",
             "compoundUnitPattern1-count-other": "{0}²"
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
-            "compoundUnitPattern1-count-one": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -2062,17 +2071,14 @@
           },
           "angle-degree": {
             "displayName": "աստիճան",
-            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "angle-arc-minute": {
             "displayName": "րոպեներ",
-            "unitPattern-count-one": "{0}′",
             "unitPattern-count-other": "{0}′"
           },
           "angle-arc-second": {
             "displayName": "վայրկյաններ",
-            "unitPattern-count-one": "{0}″",
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
@@ -2157,17 +2163,14 @@
           },
           "concentr-percent": {
             "displayName": "տոկոս",
-            "unitPattern-count-one": "{0}%",
             "unitPattern-count-other": "{0}%"
           },
           "concentr-permille": {
             "displayName": "պրոմիլ",
-            "unitPattern-count-one": "{0}‰",
             "unitPattern-count-other": "{0}‰"
           },
           "concentr-permyriad": {
             "displayName": "‱",
-            "unitPattern-count-one": "{0}‱",
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
@@ -2425,7 +2428,6 @@
           },
           "graphics-em": {
             "displayName": "em",
-            "unitPattern-count-one": "{0} em",
             "unitPattern-count-other": "{0} em"
           },
           "graphics-pixel": {
@@ -2465,7 +2467,6 @@
           },
           "length-earth-radius": {
             "displayName": "R⊕",
-            "unitPattern-count-one": "{0} R⊕",
             "unitPattern-count-other": "{0} R⊕"
           },
           "length-kilometer": {
@@ -2570,12 +2571,10 @@
           },
           "length-point": {
             "displayName": "pt",
-            "unitPattern-count-one": "{0} pt",
             "unitPattern-count-other": "{0} pt"
           },
           "length-solar-radius": {
             "displayName": "R☉",
-            "unitPattern-count-one": "{0} R☉",
             "unitPattern-count-other": "{0} R☉"
           },
           "light-lux": {
@@ -2595,7 +2594,6 @@
           },
           "light-solar-luminosity": {
             "displayName": "L☉",
-            "unitPattern-count-one": "{0} L☉",
             "unitPattern-count-other": "{0} L☉"
           },
           "mass-tonne": {
@@ -2664,12 +2662,10 @@
           },
           "mass-earth-mass": {
             "displayName": "M⊕",
-            "unitPattern-count-one": "{0} M⊕",
             "unitPattern-count-other": "{0} M⊕"
           },
           "mass-solar-mass": {
             "displayName": "M☉",
-            "unitPattern-count-one": "{0} M☉",
             "unitPattern-count-other": "{0} M☉"
           },
           "mass-grain": {
@@ -2777,9 +2773,13 @@
             "unitPattern-count-one": "{0} հնգ",
             "unitPattern-count-other": "{0} հնգ"
           },
+          "speed-beaufort": {
+            "displayName": "Բֆտ",
+            "unitPattern-count-one": "Բ {0}",
+            "unitPattern-count-other": "Բ {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
-            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
@@ -2789,7 +2789,6 @@
           },
           "temperature-fahrenheit": {
             "displayName": "°F",
-            "unitPattern-count-one": "{0}°F",
             "unitPattern-count-other": "{0}°F"
           },
           "temperature-kelvin": {
@@ -2892,7 +2891,6 @@
           },
           "volume-bushel": {
             "displayName": "bu",
-            "unitPattern-count-one": "{0} bu",
             "unitPattern-count-other": "{0} bu"
           },
           "volume-gallon": {
@@ -3021,6 +3019,12 @@
           "10p-24": {
             "unitPrefixPattern": "յ{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "ռ{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "ք{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "դա{0}"
           },
@@ -3051,6 +3055,12 @@
           "10p24": {
             "unitPrefixPattern": "Յ{0}"
           },
+          "10p27": {
+            "unitPrefixPattern": "Ռ{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Ք{0}"
+          },
           "1024p1": {
             "unitPrefixPattern": "Կի{0}"
           },
@@ -3080,12 +3090,10 @@
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
-            "compoundUnitPattern1-count-one": "{0}²",
             "compoundUnitPattern1-count-other": "{0}²"
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
-            "compoundUnitPattern1-count-one": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -3113,17 +3121,14 @@
           },
           "angle-degree": {
             "displayName": "աստիճան",
-            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "angle-arc-minute": {
             "displayName": "րոպե",
-            "unitPattern-count-one": "{0}′",
             "unitPattern-count-other": "{0}′"
           },
           "angle-arc-second": {
             "displayName": "վայրկյաններ",
-            "unitPattern-count-one": "{0}″",
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
@@ -3208,17 +3213,14 @@
           },
           "concentr-percent": {
             "displayName": "%",
-            "unitPattern-count-one": "{0}%",
             "unitPattern-count-other": "{0}%"
           },
           "concentr-permille": {
             "displayName": "‰",
-            "unitPattern-count-one": "{0}‰",
             "unitPattern-count-other": "{0}‰"
           },
           "concentr-permyriad": {
             "displayName": "‱",
-            "unitPattern-count-one": "{0}‱",
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
@@ -3327,19 +3329,19 @@
             "displayName": "ա",
             "unitPattern-count-one": "{0} ա",
             "unitPattern-count-other": "{0} ա",
-            "perUnitPattern": "{0}/ամս"
+            "perUnitPattern": "{0}/ա"
           },
           "duration-week": {
             "displayName": "շ",
             "unitPattern-count-one": "{0} շ",
             "unitPattern-count-other": "{0} շ",
-            "perUnitPattern": "{0}/շաբ"
+            "perUnitPattern": "{0}/շ"
           },
           "duration-day": {
             "displayName": "օ",
             "unitPattern-count-one": "{0} օ",
             "unitPattern-count-other": "{0} օ",
-            "perUnitPattern": "{0}/օր"
+            "perUnitPattern": "{0}/օ"
           },
           "duration-hour": {
             "displayName": "ժ",
@@ -3407,7 +3409,7 @@
           "energy-foodcalorie": {
             "displayName": "կալ",
             "unitPattern-count-one": "{0} կալ",
-            "unitPattern-count-other": "{0} կալ"
+            "unitPattern-count-other": "{0}կալ"
           },
           "energy-kilojoule": {
             "displayName": "կՋ",
@@ -3476,7 +3478,6 @@
           },
           "graphics-em": {
             "displayName": "em",
-            "unitPattern-count-one": "{0} em",
             "unitPattern-count-other": "{0} em"
           },
           "graphics-pixel": {
@@ -3516,7 +3517,6 @@
           },
           "length-earth-radius": {
             "displayName": "R⊕",
-            "unitPattern-count-one": "{0} R⊕",
             "unitPattern-count-other": "{0} R⊕"
           },
           "length-kilometer": {
@@ -3600,7 +3600,7 @@
             "unitPattern-count-other": "{0} ա.մ."
           },
           "length-furlong": {
-            "displayName": "ֆուրլոնգ",
+            "displayName": "ֆուրլ․",
             "unitPattern-count-one": "{0} ֆուրլ․",
             "unitPattern-count-other": "{0} ֆուրլ․"
           },
@@ -3621,12 +3621,10 @@
           },
           "length-point": {
             "displayName": "pt",
-            "unitPattern-count-one": "{0} pt",
             "unitPattern-count-other": "{0} pt"
           },
           "length-solar-radius": {
             "displayName": "R☉",
-            "unitPattern-count-one": "{0} R☉",
             "unitPattern-count-other": "{0} R☉"
           },
           "light-lux": {
@@ -3646,13 +3644,12 @@
           },
           "light-solar-luminosity": {
             "displayName": "L☉",
-            "unitPattern-count-one": "{0} L☉",
             "unitPattern-count-other": "{0} L☉"
           },
           "mass-tonne": {
             "displayName": "տ",
-            "unitPattern-count-one": "{0} տ",
-            "unitPattern-count-other": "{0} տ"
+            "unitPattern-count-one": "{0}տ",
+            "unitPattern-count-other": "{0}տ"
           },
           "mass-kilogram": {
             "displayName": "կգ",
@@ -3715,12 +3712,10 @@
           },
           "mass-earth-mass": {
             "displayName": "M⊕",
-            "unitPattern-count-one": "{0} M⊕",
             "unitPattern-count-other": "{0} M⊕"
           },
           "mass-solar-mass": {
             "displayName": "M☉",
-            "unitPattern-count-one": "{0} M☉",
             "unitPattern-count-other": "{0} M☉"
           },
           "mass-grain": {
@@ -3828,9 +3823,13 @@
             "unitPattern-count-one": "{0} հնգ",
             "unitPattern-count-other": "{0} հնգ"
           },
+          "speed-beaufort": {
+            "displayName": "Բֆտ",
+            "unitPattern-count-one": "Բ{0}",
+            "unitPattern-count-other": "Բ{0}"
+          },
           "temperature-generic": {
             "displayName": "°",
-            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
@@ -3840,7 +3839,6 @@
           },
           "temperature-fahrenheit": {
             "displayName": "°F",
-            "unitPattern-count-one": "{0}°F",
             "unitPattern-count-other": "{0}°F"
           },
           "temperature-kelvin": {
@@ -3943,7 +3941,6 @@
           },
           "volume-bushel": {
             "displayName": "bu",
-            "unitPattern-count-one": "{0} bu",
             "unitPattern-count-other": "{0} bu"
           },
           "volume-gallon": {

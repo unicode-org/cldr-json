@@ -3,7 +3,7 @@
     "sw-KE": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "sw",
         "territory": "KE"
@@ -40,6 +40,12 @@
           "10p-24": {
             "unitPrefixPattern": "yokto{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "deka{0}"
           },
@@ -69,6 +75,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "yotta{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "kibi{0}"
@@ -163,7 +175,7 @@
             "perUnitPattern": "{0} kwa kila mita ya mraba"
           },
           "area-square-centimeter": {
-            "displayName": "sentimita za mraba",
+            "displayName": "cm²",
             "unitPattern-count-one": "sentimita {0} ya mraba",
             "unitPattern-count-other": "sentimita {0} za mraba",
             "perUnitPattern": "{0} kwa kila sentimita ya mraba"
@@ -405,7 +417,6 @@
           },
           "electric-ohm": {
             "displayName": "ohm",
-            "unitPattern-count-one": "{0} Ω",
             "unitPattern-count-other": "{0} Ω"
           },
           "electric-volt": {
@@ -614,7 +625,7 @@
             "unitPattern-count-other": "miaka {0} ya mwanga"
           },
           "length-astronomical-unit": {
-            "displayName": "vipimo vya astronomia",
+            "displayName": "kipimo cha astronomia",
             "unitPattern-count-one": "kipimo {0} cha astronomia",
             "unitPattern-count-other": "vipimo {0} vya astronomia"
           },
@@ -847,9 +858,12 @@
             "unitPattern-count-one": "noti {0}",
             "unitPattern-count-other": "noti {0}"
           },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-other": "B {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
-            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
@@ -1091,8 +1105,14 @@
           "10p-24": {
             "unitPrefixPattern": "yokto{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
-            "unitPrefixPattern": "deka{0}"
+            "unitPrefixPattern": "de{0}"
           },
           "10p2": {
             "unitPrefixPattern": "hekta{0}"
@@ -1120,6 +1140,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "yotta{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "kibi{0}"
@@ -1150,12 +1176,10 @@
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
-            "compoundUnitPattern1-count-one": "{0}²",
             "compoundUnitPattern1-count-other": "{0}²"
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
-            "compoundUnitPattern1-count-one": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -1258,7 +1282,6 @@
           },
           "concentr-milligram-ofglucose-per-deciliter": {
             "displayName": "mg/dL",
-            "unitPattern-count-one": "{0} mg/dL",
             "unitPattern-count-other": "{0} mg/dL"
           },
           "concentr-millimole-per-liter": {
@@ -1288,7 +1311,6 @@
           },
           "concentr-permyriad": {
             "displayName": "permyriadi",
-            "unitPattern-count-one": "{0}‱",
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
@@ -1456,7 +1478,6 @@
           },
           "electric-ohm": {
             "displayName": "ohm",
-            "unitPattern-count-one": "{0} Ω",
             "unitPattern-count-other": "{0} Ω"
           },
           "electric-volt": {
@@ -1552,7 +1573,7 @@
           "graphics-pixel": {
             "displayName": "pikseli",
             "unitPattern-count-one": "pikseli {0}",
-            "unitPattern-count-other": "pikseli {0}"
+            "unitPattern-count-other": "px {0}"
           },
           "graphics-megapixel": {
             "displayName": "megapikseli",
@@ -1570,12 +1591,10 @@
             "unitPattern-count-other": "ppi {0}"
           },
           "graphics-dot-per-centimeter": {
-            "displayName": "ppcm",
             "unitPattern-count-one": "dpcm {0}",
             "unitPattern-count-other": "dpcm {0}"
           },
           "graphics-dot-per-inch": {
-            "displayName": "ppi",
             "unitPattern-count-one": "dpi {0}",
             "unitPattern-count-other": "dpi {0}"
           },
@@ -1656,7 +1675,7 @@
           },
           "length-parsec": {
             "displayName": "kila sekunde",
-            "unitPattern-count-one": "pc {0}",
+            "unitPattern-count-one": "kila sekunde {0}",
             "unitPattern-count-other": "kila sekunde {0}"
           },
           "length-light-year": {
@@ -1830,7 +1849,7 @@
           },
           "pressure-millimeter-ofhg": {
             "displayName": "milimita za zebaki",
-            "unitPattern-count-one": "mmHg {0}",
+            "unitPattern-count-one": "mm Hg {0}",
             "unitPattern-count-other": "mm Hg {0}"
           },
           "pressure-pound-force-per-square-inch": {
@@ -1898,24 +1917,24 @@
             "unitPattern-count-one": "noti {0}",
             "unitPattern-count-other": "noti {0}"
           },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-other": "B {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
-            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
             "displayName": "nyuzi",
-            "unitPattern-count-one": "{0}°C",
             "unitPattern-count-other": "{0}°C"
           },
           "temperature-fahrenheit": {
             "displayName": "nyuzi za farenheiti",
-            "unitPattern-count-one": "{0}°F",
             "unitPattern-count-other": "{0}°F"
           },
           "temperature-kelvin": {
             "displayName": "K",
-            "unitPattern-count-one": "{0} K",
             "unitPattern-count-other": "{0} K"
           },
           "torque-pound-force-foot": {
@@ -2142,6 +2161,12 @@
           "10p-24": {
             "unitPrefixPattern": "yokto{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "deka{0}"
           },
@@ -2172,6 +2197,12 @@
           "10p24": {
             "unitPrefixPattern": "yotta{0}"
           },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
+          },
           "1024p1": {
             "unitPrefixPattern": "kibi{0}"
           },
@@ -2201,12 +2232,10 @@
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
-            "compoundUnitPattern1-count-one": "{0}²",
             "compoundUnitPattern1-count-other": "{0}²"
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
-            "compoundUnitPattern1-count-one": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -2309,7 +2338,6 @@
           },
           "concentr-milligram-ofglucose-per-deciliter": {
             "displayName": "mg/dL",
-            "unitPattern-count-one": "{0} mg/dL",
             "unitPattern-count-other": "{0} mg/dL"
           },
           "concentr-millimole-per-liter": {
@@ -2339,7 +2367,6 @@
           },
           "concentr-permyriad": {
             "displayName": "permyriadi",
-            "unitPattern-count-one": "{0}‱",
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
@@ -2507,7 +2534,6 @@
           },
           "electric-ohm": {
             "displayName": "ohm",
-            "unitPattern-count-one": "{0} Ω",
             "unitPattern-count-other": "{0} Ω"
           },
           "electric-volt": {
@@ -2603,7 +2629,7 @@
           "graphics-pixel": {
             "displayName": "pikseli",
             "unitPattern-count-one": "pikseli {0}",
-            "unitPattern-count-other": "pikseli {0}"
+            "unitPattern-count-other": "px {0}"
           },
           "graphics-megapixel": {
             "displayName": "megapikseli",
@@ -2707,7 +2733,7 @@
           },
           "length-parsec": {
             "displayName": "kila sekunde",
-            "unitPattern-count-one": "pc {0}",
+            "unitPattern-count-one": "kila sekunde {0}",
             "unitPattern-count-other": "kila sekunde {0}"
           },
           "length-light-year": {
@@ -2881,7 +2907,7 @@
           },
           "pressure-millimeter-ofhg": {
             "displayName": "milimita za zebaki",
-            "unitPattern-count-one": "mmHg {0}",
+            "unitPattern-count-one": "mm Hg {0}",
             "unitPattern-count-other": "mm Hg {0}"
           },
           "pressure-pound-force-per-square-inch": {
@@ -2949,24 +2975,24 @@
             "unitPattern-count-one": "noti {0}",
             "unitPattern-count-other": "noti {0}"
           },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-other": "B {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
-            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
             "displayName": "°C",
-            "unitPattern-count-one": "{0}°C",
             "unitPattern-count-other": "{0}°C"
           },
           "temperature-fahrenheit": {
             "displayName": "nyuzi za farenheiti",
-            "unitPattern-count-one": "{0}°F",
             "unitPattern-count-other": "{0}°F"
           },
           "temperature-kelvin": {
             "displayName": "K",
-            "unitPattern-count-one": "{0} K",
             "unitPattern-count-other": "{0} K"
           },
           "torque-pound-force-foot": {

@@ -3,7 +3,7 @@
     "vec": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "vec"
       },
@@ -14,8 +14,8 @@
         },
         "minimumGroupingDigits": "1",
         "symbols-numberSystem-latn": {
-          "decimal": ".",
-          "group": ",",
+          "decimal": ",",
+          "group": " ",
           "list": ";",
           "percentSign": "%",
           "plusSign": "+",
@@ -82,9 +82,9 @@
               "insertBetween": " "
             }
           },
-          "standard": "¤ #,##0.00",
+          "standard": "#,##0.00 ¤",
           "standard-noCurrency": "#,##0.00",
-          "accounting": "¤ #,##0.00",
+          "accounting": "#,##0.00 ¤",
           "accounting-noCurrency": "#,##0.00",
           "short": {
             "standard": {
@@ -102,18 +102,20 @@
               "100000000000000-count-other": "¤ 000T"
             }
           },
-          "currencyPatternAppendISO": "{0} ¤¤",
-          "unitPattern-count-other": "{0} {1}"
+          "currencyPatternAppendISO": "{0} ¤¤",
+          "unitPattern-count-one": "{0} {1}",
+          "unitPattern-count-other": "{0} {1}"
         },
         "miscPatterns-numberSystem-latn": {
           "approximately": "~{0}",
           "atLeast": "≥{0}",
           "atMost": "≤{0}",
-          "range": "{0}–{1}"
+          "range": "{0}-{1}"
         },
         "minimalPairs": {
-          "pluralMinimalPairs-count-other": "{0}?",
-          "other": "{0}?"
+          "pluralMinimalPairs-count-one": "{0} pomo",
+          "pluralMinimalPairs-count-other": "{0} pomi",
+          "other": "Ciapa la {0}ª a dreta"
         }
       }
     }

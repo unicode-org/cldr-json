@@ -3,7 +3,7 @@
     "en-CA": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "en",
         "territory": "CA"
@@ -40,6 +40,12 @@
           "10p-24": {
             "unitPrefixPattern": "yocto{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "ronto{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "quecto{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "deca{0}"
           },
@@ -69,6 +75,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "yotta{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "ronna{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "quetta{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "kibi{0}"
@@ -1057,6 +1069,11 @@
             "unitPattern-count-one": "{0} quart",
             "unitPattern-count-other": "{0} quarts"
           },
+          "pressure-gasoline-energy-density": {
+            "displayName": "of gasoline equivalent",
+            "unitPattern-count-one": "{0} of gasoline equivalent",
+            "unitPattern-count-other": "{0} of gasoline equivalent"
+          },
           "coordinateUnit": {
             "displayName": "cardinal direction",
             "east": "{0} east",
@@ -1096,6 +1113,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -1126,6 +1149,12 @@
           "10p24": {
             "unitPrefixPattern": "Y{0}"
           },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
+          },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
           },
@@ -1155,10 +1184,12 @@
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
+            "compoundUnitPattern1-count-one": "{0}²",
             "compoundUnitPattern1-count-other": "{0}²"
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
+            "compoundUnitPattern1-count-one": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -1483,7 +1514,7 @@
             "unitPattern-count-other": "{0} Cal"
           },
           "energy-kilojoule": {
-            "displayName": "kilojoules",
+            "displayName": "kilojoule",
             "unitPattern-count-one": "{0} kJ",
             "unitPattern-count-other": "{0} kJ"
           },
@@ -1493,12 +1524,12 @@
             "unitPattern-count-other": "{0} J"
           },
           "energy-kilowatt-hour": {
-            "displayName": "kW-hours",
+            "displayName": "kW-hour",
             "unitPattern-count-one": "{0} kWh",
             "unitPattern-count-other": "{0} kWh"
           },
           "energy-electronvolt": {
-            "displayName": "electronvolts",
+            "displayName": "electronvolt",
             "unitPattern-count-one": "{0} eV",
             "unitPattern-count-other": "{0} eV"
           },
@@ -1508,7 +1539,7 @@
             "unitPattern-count-other": "{0} Btu"
           },
           "energy-therm-us": {
-            "displayName": "US therms",
+            "displayName": "US therm",
             "unitPattern-count-one": "{0} US therm",
             "unitPattern-count-other": "{0} US therms"
           },
@@ -1583,11 +1614,13 @@
             "unitPattern-count-other": "{0} dpi"
           },
           "graphics-dot": {
+            "displayName": "dots",
             "unitPattern-count-one": "{0} dot",
             "unitPattern-count-other": "{0} dots"
           },
           "length-earth-radius": {
-            "displayName": "R⊕",
+            "displayName": "earth radius",
+            "unitPattern-count-one": "{0} R⊕",
             "unitPattern-count-other": "{0} R⊕"
           },
           "length-kilometer": {
@@ -1706,11 +1739,13 @@
             "unitPattern-count-other": "{0} lx"
           },
           "light-candela": {
-            "displayName": "cd",
+            "displayName": "candela",
+            "unitPattern-count-one": "{0} cd",
             "unitPattern-count-other": "{0} cd"
           },
           "light-lumen": {
-            "displayName": "lm",
+            "displayName": "lumen",
+            "unitPattern-count-one": "{0} lm",
             "unitPattern-count-other": "{0} lm"
           },
           "light-solar-luminosity": {
@@ -1838,14 +1873,14 @@
             "unitPattern-count-other": "{0} psi"
           },
           "pressure-inch-ofhg": {
-            "displayName": "in Hg",
-            "unitPattern-count-one": "{0} in Hg",
-            "unitPattern-count-other": "{0} in Hg"
+            "displayName": "inHg",
+            "unitPattern-count-one": "{0} inHg",
+            "unitPattern-count-other": "{0} inHg"
           },
           "pressure-bar": {
             "displayName": "bars",
             "unitPattern-count-one": "{0} bar",
-            "unitPattern-count-other": "{0} bars"
+            "unitPattern-count-other": "{0} bar"
           },
           "pressure-millibar": {
             "displayName": "mbar",
@@ -1904,6 +1939,7 @@
           },
           "temperature-generic": {
             "displayName": "deg",
+            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
@@ -2106,6 +2142,11 @@
             "unitPattern-count-one": "{0} qt",
             "unitPattern-count-other": "{0} qt"
           },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas-equiv",
+            "unitPattern-count-one": "{0} gas-equiv",
+            "unitPattern-count-other": "{0} gas-equiv"
+          },
           "coordinateUnit": {
             "displayName": "direction",
             "east": "{0} E",
@@ -2145,6 +2186,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -2175,6 +2222,12 @@
           "10p24": {
             "unitPrefixPattern": "Y{0}"
           },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
+          },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
           },
@@ -2204,10 +2257,12 @@
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
+            "compoundUnitPattern1-count-one": "{0}²",
             "compoundUnitPattern1-count-other": "{0}²"
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
+            "compoundUnitPattern1-count-one": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -2898,7 +2953,7 @@
           "pressure-bar": {
             "displayName": "bar",
             "unitPattern-count-one": "{0}bar",
-            "unitPattern-count-other": "{0}bars"
+            "unitPattern-count-other": "{0}bar"
           },
           "pressure-millibar": {
             "displayName": "mbar",
@@ -2957,6 +3012,7 @@
           },
           "temperature-generic": {
             "displayName": "deg",
+            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
@@ -3158,6 +3214,11 @@
             "displayName": "qt",
             "unitPattern-count-one": "{0}qt",
             "unitPattern-count-other": "{0}qt"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas-equiv",
+            "unitPattern-count-one": "{0}gas-equiv",
+            "unitPattern-count-other": "{0}gas-equiv"
           },
           "coordinateUnit": {
             "displayName": "direction",

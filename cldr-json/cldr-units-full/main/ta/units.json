@@ -3,7 +3,7 @@
     "ta": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "ta"
       },
@@ -39,6 +39,12 @@
           "10p-24": {
             "unitPrefixPattern": "யொக்டோ{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "ரோன்டோ{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "குவெக்டோ{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "டெக்கா{0}"
           },
@@ -68,6 +74,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "யாட்டா{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "ரோனா{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "குவெட்டா{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "கிபி{0}"
@@ -596,7 +608,7 @@
           "duration-day-person": {
             "unitPattern-count-one": "{0} நாள்",
             "ablative-count-one": "{0} நாளில்",
-            "accusative-count-one": "நாளை",
+            "accusative-count-one": "{0} நாளை",
             "dative-count-one": "{0} நாளுக்கு",
             "unitPattern-count-other": "{0} நாட்கள்",
             "ablative-count-other": "{0} நாட்களில்",
@@ -1426,6 +1438,11 @@
             "unitPattern-count-one": "{0} நாட்",
             "unitPattern-count-other": "{0} நாட்"
           },
+          "speed-beaufort": {
+            "displayName": "பியூஃபோர்ட்",
+            "unitPattern-count-one": "பியூஃபோர்ட் {0}",
+            "unitPattern-count-other": "பியூஃபோர்ட் {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
             "unitPattern-count-one": "{0} டிகிரி",
@@ -1760,6 +1777,12 @@
           "10p-24": {
             "unitPrefixPattern": "யொ.{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "ரோன்.{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "குவெக்.{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "டெக்.{0}"
           },
@@ -1790,6 +1813,12 @@
           "10p24": {
             "unitPrefixPattern": "யா.{0}"
           },
+          "10p27": {
+            "unitPrefixPattern": "ரோ.{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "கு.{0}"
+          },
           "1024p1": {
             "unitPrefixPattern": "கிபி{0}"
           },
@@ -1819,12 +1848,10 @@
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
-            "compoundUnitPattern1-count-one": "{0}²",
             "compoundUnitPattern1-count-other": "{0}²"
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
-            "compoundUnitPattern1-count-one": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -1947,17 +1974,14 @@
           },
           "concentr-percent": {
             "displayName": "சதவீதம்",
-            "unitPattern-count-one": "{0}%",
             "unitPattern-count-other": "{0}%"
           },
           "concentr-permille": {
             "displayName": "மில்லி ஒன்றுக்கு",
-            "unitPattern-count-one": "{0}‰",
             "unitPattern-count-other": "{0}‰"
           },
           "concentr-permyriad": {
             "displayName": "பெர்மிரியட்",
-            "unitPattern-count-one": "{0}‱",
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
@@ -1987,47 +2011,38 @@
           },
           "digital-petabyte": {
             "displayName": "PB",
-            "unitPattern-count-one": "{0} PB",
             "unitPattern-count-other": "{0} PB"
           },
           "digital-terabyte": {
             "displayName": "TB",
-            "unitPattern-count-one": "{0} TB",
             "unitPattern-count-other": "{0} TB"
           },
           "digital-terabit": {
             "displayName": "டெ.பி.",
-            "unitPattern-count-one": "{0} Tb",
             "unitPattern-count-other": "{0} Tb"
           },
           "digital-gigabyte": {
             "displayName": "கி.பைட்",
-            "unitPattern-count-one": "{0} GB",
             "unitPattern-count-other": "{0} GB"
           },
           "digital-gigabit": {
             "displayName": "கி.பிட்",
-            "unitPattern-count-one": "{0} Gb",
             "unitPattern-count-other": "{0} Gb"
           },
           "digital-megabyte": {
             "displayName": "மெ.பை.",
-            "unitPattern-count-one": "{0} MB",
             "unitPattern-count-other": "{0} MB"
           },
           "digital-megabit": {
             "displayName": "மெ.பிட்.",
-            "unitPattern-count-one": "{0} Mb",
             "unitPattern-count-other": "{0} Mb"
           },
           "digital-kilobyte": {
             "displayName": "கி.பை.",
-            "unitPattern-count-one": "{0} kB",
             "unitPattern-count-other": "{0} kB"
           },
           "digital-kilobit": {
             "displayName": "கிலோ பிட்",
-            "unitPattern-count-one": "{0} kb",
             "unitPattern-count-other": "{0} kb"
           },
           "digital-byte": {
@@ -2105,7 +2120,6 @@
           },
           "duration-microsecond": {
             "displayName": "μsecs",
-            "unitPattern-count-one": "{0} μs",
             "unitPattern-count-other": "{0} μs"
           },
           "duration-nanosecond": {
@@ -2125,7 +2139,6 @@
           },
           "electric-ohm": {
             "displayName": "ஓம்ஸ்",
-            "unitPattern-count-one": "{0} Ω",
             "unitPattern-count-other": "{0} Ω"
           },
           "electric-volt": {
@@ -2165,7 +2178,6 @@
           },
           "energy-electronvolt": {
             "displayName": "எலக்ட்ரான்வோல்ட்",
-            "unitPattern-count-one": "{0} eV",
             "unitPattern-count-other": "{0} eV"
           },
           "energy-british-thermal-unit": {
@@ -2255,7 +2267,6 @@
           },
           "length-earth-radius": {
             "displayName": "R⊕",
-            "unitPattern-count-one": "{0} R⊕",
             "unitPattern-count-other": "{0} R⊕"
           },
           "length-kilometer": {
@@ -2365,7 +2376,6 @@
           },
           "length-solar-radius": {
             "displayName": "சூரிய ஆரம்",
-            "unitPattern-count-one": "{0} R☉",
             "unitPattern-count-other": "{0} R☉"
           },
           "light-lux": {
@@ -2385,7 +2395,6 @@
           },
           "light-solar-luminosity": {
             "displayName": "சூரிய ஒளிர்வுத்தன்மை",
-            "unitPattern-count-one": "{0} L☉",
             "unitPattern-count-other": "{0} L☉"
           },
           "mass-tonne": {
@@ -2454,12 +2463,10 @@
           },
           "mass-earth-mass": {
             "displayName": "புவித் திணிவுகள்",
-            "unitPattern-count-one": "{0} M⊕",
             "unitPattern-count-other": "{0} M⊕"
           },
           "mass-solar-mass": {
             "displayName": "சூரியத் திணிவுகள்",
-            "unitPattern-count-one": "{0} M☉",
             "unitPattern-count-other": "{0} M☉"
           },
           "mass-grain": {
@@ -2504,7 +2511,6 @@
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "psi",
-            "unitPattern-count-one": "{0} psi",
             "unitPattern-count-other": "{0} psi"
           },
           "pressure-inch-ofhg": {
@@ -2524,7 +2530,6 @@
           },
           "pressure-atmosphere": {
             "displayName": "atm",
-            "unitPattern-count-one": "{0} atm",
             "unitPattern-count-other": "{0} atm"
           },
           "pressure-pascal": {
@@ -2567,9 +2572,13 @@
             "unitPattern-count-one": "{0} நா.",
             "unitPattern-count-other": "{0} நா."
           },
+          "speed-beaufort": {
+            "displayName": "பியூ.",
+            "unitPattern-count-one": "பியூ. {0}",
+            "unitPattern-count-other": "பியூ. {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
-            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
@@ -2811,6 +2820,12 @@
           "10p-24": {
             "unitPrefixPattern": "யொ.{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "ரோன்.{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "குவெக்.{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "டெக்.{0}"
           },
@@ -2841,6 +2856,12 @@
           "10p24": {
             "unitPrefixPattern": "யா.{0}"
           },
+          "10p27": {
+            "unitPrefixPattern": "ரோ.{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "கு.{0}"
+          },
           "1024p1": {
             "unitPrefixPattern": "கிபி{0}"
           },
@@ -2870,12 +2891,10 @@
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
-            "compoundUnitPattern1-count-one": "{0}²",
             "compoundUnitPattern1-count-other": "{0}²"
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
-            "compoundUnitPattern1-count-one": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -2998,17 +3017,14 @@
           },
           "concentr-percent": {
             "displayName": "%",
-            "unitPattern-count-one": "{0}%",
             "unitPattern-count-other": "{0}%"
           },
           "concentr-permille": {
             "displayName": "‰",
-            "unitPattern-count-one": "{0}‰",
             "unitPattern-count-other": "{0}‰"
           },
           "concentr-permyriad": {
             "displayName": "‱",
-            "unitPattern-count-one": "{0}‱",
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
@@ -3555,7 +3571,6 @@
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "psi",
-            "unitPattern-count-one": "{0} psi",
             "unitPattern-count-other": "{0} psi"
           },
           "pressure-inch-ofhg": {
@@ -3618,9 +3633,13 @@
             "unitPattern-count-one": "{0}நா.",
             "unitPattern-count-other": "{0}நா."
           },
+          "speed-beaufort": {
+            "displayName": "பியூ.",
+            "unitPattern-count-one": "பியூ.{0}",
+            "unitPattern-count-other": "பியூ.{0}"
+          },
           "temperature-generic": {
             "displayName": "°",
-            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {

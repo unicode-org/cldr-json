@@ -3,7 +3,7 @@
     "mr": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "mr"
       },
@@ -21,6 +21,9 @@
           "yue",
           "zh"
         ],
+        "formality": "informal",
+        "length": "medium",
+        "nativeSpaceReplacement": " ",
         "foreignSpaceReplacement": " ",
         "initial": "{0}.",
         "initialSequence": "{0} {1}",
@@ -28,12 +31,12 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{title} {given} {given2} {surname}, {credentials}",
-                "informal": "{given-informal} {surname}"
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
+                "informal": "{title} {given} {given2} {surname}, {credentials}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
-                "informal": "{given-informal}"
+                "formal": "{title} {given} {given2} {surname}, {credentials}",
+                "informal": "{title} {given} {given2} {surname}, {credentials}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",

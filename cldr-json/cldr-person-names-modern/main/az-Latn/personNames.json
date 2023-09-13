@@ -3,7 +3,7 @@
     "az-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "az",
         "script": "Latn"
@@ -19,6 +19,9 @@
           "yue",
           "zh"
         ],
+        "formality": "informal",
+        "length": "medium",
+        "nativeSpaceReplacement": " ",
         "foreignSpaceReplacement": " ",
         "initial": "{0}.",
         "initialSequence": "{0} {1}",
@@ -71,11 +74,11 @@
             "long": {
               "referring": {
                 "formal": "{surname} {given} {given2} {credentials}",
-                "informal": "{surname} {given-informal}"
+                "informal": "{surname} {given} {given2} {credentials}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
-                "informal": "{given-informal}"
+                "formal": "{surname} {given} {given2} {credentials}",
+                "informal": "{surname} {given} {given2} {credentials}"
               },
               "monogram": {
                 "formal": "{surname-monogram-allCaps}{given-monogram-allCaps}{given2-monogram-allCaps}",
@@ -84,11 +87,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2-initial} {credentials}",
-                "informal": "{surname} {given-informal}"
+                "formal": "{surname} {given} {given2} {credentials}",
+                "informal": "{surname} {given} {given2} {credentials}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
+                "formal": "{surname} {given} {given2} {credentials}",
                 "informal": "{given-informal}"
               },
               "monogram": {

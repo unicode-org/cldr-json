@@ -3,7 +3,7 @@
     "se": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "se"
       },
@@ -39,6 +39,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -68,6 +74,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "Y{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
@@ -767,6 +779,10 @@
             "displayName": "kn",
             "unitPattern-count-other": "{0} kn"
           },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-other": "B {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
             "unitPattern-count-other": "{0}°"
@@ -981,6 +997,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -1010,6 +1032,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "Y{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
@@ -1051,8 +1079,6 @@
           },
           "acceleration-g-force": {
             "displayName": "Maapallo gravitaatiovoimat",
-            "unitPattern-count-one": "{0} G",
-            "unitPattern-count-two": "{0} G",
             "unitPattern-count-other": "{0} G"
           },
           "acceleration-meter-per-square-second": {
@@ -1069,39 +1095,27 @@
           },
           "angle-degree": {
             "displayName": "grádat",
-            "unitPattern-count-one": "{0}°",
-            "unitPattern-count-two": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "angle-arc-minute": {
             "displayName": "jorbbas minuhtta",
-            "unitPattern-count-one": "{0}′",
-            "unitPattern-count-two": "{0}′",
             "unitPattern-count-other": "{0}′"
           },
           "angle-arc-second": {
             "displayName": "jorbbas sekundda",
-            "unitPattern-count-one": "{0}″",
-            "unitPattern-count-two": "{0}″",
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
             "displayName": "neliökilomehtera",
-            "unitPattern-count-one": "{0} km²",
-            "unitPattern-count-two": "{0} km²",
             "unitPattern-count-other": "{0} km²",
             "perUnitPattern": "{0}/km²"
           },
           "area-hectare": {
             "displayName": "hehtaaria",
-            "unitPattern-count-one": "{0} ha",
-            "unitPattern-count-two": "{0} ha",
             "unitPattern-count-other": "{0} ha"
           },
           "area-square-meter": {
             "displayName": "neliömehtera",
-            "unitPattern-count-one": "{0} m²",
-            "unitPattern-count-two": "{0} m²",
             "unitPattern-count-other": "{0} m²",
             "perUnitPattern": "{0}/m²"
           },
@@ -1112,15 +1126,11 @@
           },
           "area-square-mile": {
             "displayName": "eangas neliömiila",
-            "unitPattern-count-one": "{0} mi²",
-            "unitPattern-count-two": "{0} mi²",
             "unitPattern-count-other": "{0} mi²",
             "perUnitPattern": "{0}/mi²"
           },
           "area-acre": {
             "displayName": "Amerihká tynnyrinala",
-            "unitPattern-count-one": "{0} ac",
-            "unitPattern-count-two": "{0} ac",
             "unitPattern-count-other": "{0} ac"
           },
           "area-square-yard": {
@@ -1129,8 +1139,6 @@
           },
           "area-square-foot": {
             "displayName": "neliöjuolgi",
-            "unitPattern-count-one": "{0} ft²",
-            "unitPattern-count-two": "{0} ft²",
             "unitPattern-count-other": "{0} ft²"
           },
           "area-square-inch": {
@@ -1274,36 +1282,26 @@
           },
           "duration-day": {
             "displayName": "jándora",
-            "unitPattern-count-one": "{0} d",
-            "unitPattern-count-two": "{0} d",
             "unitPattern-count-other": "{0} d",
             "perUnitPattern": "{0}/d"
           },
           "duration-hour": {
             "displayName": "diibmur",
-            "unitPattern-count-one": "{0} h",
-            "unitPattern-count-two": "{0} h",
             "unitPattern-count-other": "{0} h",
             "perUnitPattern": "{0}/h"
           },
           "duration-minute": {
             "displayName": "minuhtta",
-            "unitPattern-count-one": "{0} min",
-            "unitPattern-count-two": "{0} min",
             "unitPattern-count-other": "{0} min",
             "perUnitPattern": "{0}/min"
           },
           "duration-second": {
             "displayName": "sekundda",
-            "unitPattern-count-one": "{0} s",
-            "unitPattern-count-two": "{0} s",
             "unitPattern-count-other": "{0} s",
             "perUnitPattern": "{0}/s"
           },
           "duration-millisecond": {
             "displayName": "millisekundda",
-            "unitPattern-count-one": "{0} ms",
-            "unitPattern-count-two": "{0} ms",
             "unitPattern-count-other": "{0} ms"
           },
           "duration-microsecond": {
@@ -1416,15 +1414,11 @@
           },
           "length-kilometer": {
             "displayName": "kilomehtera",
-            "unitPattern-count-one": "{0} km",
-            "unitPattern-count-two": "{0} km",
             "unitPattern-count-other": "{0} km",
             "perUnitPattern": "{0}/km"
           },
           "length-meter": {
             "displayName": "mehtera",
-            "unitPattern-count-one": "{0} m",
-            "unitPattern-count-two": "{0} m",
             "unitPattern-count-other": "{0} m",
             "perUnitPattern": "{0}/m"
           },
@@ -1434,15 +1428,11 @@
           },
           "length-centimeter": {
             "displayName": "sentimehtera",
-            "unitPattern-count-one": "{0} cm",
-            "unitPattern-count-two": "{0} cm",
             "unitPattern-count-other": "{0} cm",
             "perUnitPattern": "{0}/cm"
           },
           "length-millimeter": {
             "displayName": "millimehtera",
-            "unitPattern-count-one": "{0} mm",
-            "unitPattern-count-two": "{0} mm",
             "unitPattern-count-other": "{0} mm"
           },
           "length-micrometer": {
@@ -1455,20 +1445,14 @@
           },
           "length-picometer": {
             "displayName": "pikomehtera",
-            "unitPattern-count-one": "{0} pm",
-            "unitPattern-count-two": "{0} pm",
             "unitPattern-count-other": "{0} pm"
           },
           "length-mile": {
             "displayName": "eangas miila",
-            "unitPattern-count-one": "{0} mi",
-            "unitPattern-count-two": "{0} mi",
             "unitPattern-count-other": "{0} mi"
           },
           "length-yard": {
             "displayName": "eangas yard",
-            "unitPattern-count-one": "{0} yd",
-            "unitPattern-count-two": "{0} yd",
             "unitPattern-count-other": "{0} yd"
           },
           "length-foot": {
@@ -1491,8 +1475,6 @@
           },
           "length-light-year": {
             "displayName": "chuovgat jagi",
-            "unitPattern-count-one": "{0} ly",
-            "unitPattern-count-two": "{0} ly",
             "unitPattern-count-other": "{0} ly"
           },
           "length-astronomical-unit": {
@@ -1545,15 +1527,11 @@
           },
           "mass-kilogram": {
             "displayName": "kilogram",
-            "unitPattern-count-one": "{0} kg",
-            "unitPattern-count-two": "{0} kg",
             "unitPattern-count-other": "{0} kg",
             "perUnitPattern": "{0}/kg"
           },
           "mass-gram": {
             "displayName": "gram",
-            "unitPattern-count-one": "{0} g",
-            "unitPattern-count-two": "{0} g",
             "unitPattern-count-other": "{0} g",
             "perUnitPattern": "{0}/g"
           },
@@ -1621,14 +1599,10 @@
           },
           "power-kilowatt": {
             "displayName": "kilowatt",
-            "unitPattern-count-one": "{0} kW",
-            "unitPattern-count-two": "{0} kW",
             "unitPattern-count-other": "{0} kW"
           },
           "power-watt": {
             "displayName": "watt",
-            "unitPattern-count-one": "{0} W",
-            "unitPattern-count-two": "{0} W",
             "unitPattern-count-other": "{0} W"
           },
           "power-milliwatt": {
@@ -1661,8 +1635,6 @@
           },
           "pressure-millibar": {
             "displayName": "millibar",
-            "unitPattern-count-one": "{0} mbar",
-            "unitPattern-count-two": "{0} mbar",
             "unitPattern-count-other": "{0} mbar"
           },
           "pressure-atmosphere": {
@@ -1675,8 +1647,6 @@
           },
           "pressure-hectopascal": {
             "displayName": "hehtopascal",
-            "unitPattern-count-one": "{0} hPa",
-            "unitPattern-count-two": "{0} hPa",
             "unitPattern-count-other": "{0} hPa"
           },
           "pressure-kilopascal": {
@@ -1689,25 +1659,23 @@
           },
           "speed-kilometer-per-hour": {
             "displayName": "kilomehtera kohti diibmu",
-            "unitPattern-count-one": "{0} km/h",
-            "unitPattern-count-two": "{0} km/h",
             "unitPattern-count-other": "{0} km/h"
           },
           "speed-meter-per-second": {
             "displayName": "mehtera kohti sekunti",
-            "unitPattern-count-one": "{0} m/s",
-            "unitPattern-count-two": "{0} m/s",
             "unitPattern-count-other": "{0} m/s"
           },
           "speed-mile-per-hour": {
             "displayName": "eangas miila kohti diibmu",
-            "unitPattern-count-one": "{0} mi/h",
-            "unitPattern-count-two": "{0} mi/h",
             "unitPattern-count-other": "{0} mi/h"
           },
           "speed-knot": {
             "displayName": "kn",
             "unitPattern-count-other": "{0} kn"
+          },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-other": "B {0}"
           },
           "temperature-generic": {
             "displayName": "°",
@@ -1715,14 +1683,10 @@
           },
           "temperature-celsius": {
             "displayName": "grádat Celsius",
-            "unitPattern-count-one": "{0}°C",
-            "unitPattern-count-two": "{0}°C",
             "unitPattern-count-other": "{0}°C"
           },
           "temperature-fahrenheit": {
             "displayName": "grádat Fahrenheit",
-            "unitPattern-count-one": "{0}°F",
-            "unitPattern-count-two": "{0}°F",
             "unitPattern-count-other": "{0}°F"
           },
           "temperature-kelvin": {
@@ -1739,8 +1703,6 @@
           },
           "volume-cubic-kilometer": {
             "displayName": "kubikkilomehtera",
-            "unitPattern-count-one": "{0} km³",
-            "unitPattern-count-two": "{0} km³",
             "unitPattern-count-other": "{0} km³"
           },
           "volume-cubic-meter": {
@@ -1755,8 +1717,6 @@
           },
           "volume-cubic-mile": {
             "displayName": "eangas kubikkmiila",
-            "unitPattern-count-one": "{0} mi³",
-            "unitPattern-count-two": "{0} mi³",
             "unitPattern-count-other": "{0} mi³"
           },
           "volume-cubic-yard": {
@@ -1781,8 +1741,6 @@
           },
           "volume-liter": {
             "displayName": "lihtara",
-            "unitPattern-count-one": "{0} l",
-            "unitPattern-count-two": "{0} l",
             "unitPattern-count-other": "{0} l",
             "perUnitPattern": "{0}/l"
           },
@@ -1923,6 +1881,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -1952,6 +1916,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "Y{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
@@ -2011,20 +1981,14 @@
           },
           "angle-degree": {
             "displayName": "grádat",
-            "unitPattern-count-one": "{0}°",
-            "unitPattern-count-two": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "angle-arc-minute": {
             "displayName": "jorbbas minuhtta",
-            "unitPattern-count-one": "{0}′",
-            "unitPattern-count-two": "{0}′",
             "unitPattern-count-other": "{0}′"
           },
           "angle-arc-second": {
             "displayName": "jorbbas sekundda",
-            "unitPattern-count-one": "{0}″",
-            "unitPattern-count-two": "{0}″",
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
@@ -2054,15 +2018,11 @@
           },
           "area-square-mile": {
             "displayName": "eangas neliömiila",
-            "unitPattern-count-one": "{0} mi²",
-            "unitPattern-count-two": "{0} mi²",
             "unitPattern-count-other": "{0} mi²",
             "perUnitPattern": "{0}/mi²"
           },
           "area-acre": {
             "displayName": "Amerihká tynnyrinala",
-            "unitPattern-count-one": "{0} ac",
-            "unitPattern-count-two": "{0} ac",
             "unitPattern-count-other": "{0} ac"
           },
           "area-square-yard": {
@@ -2071,8 +2031,6 @@
           },
           "area-square-foot": {
             "displayName": "neliöjuolgi",
-            "unitPattern-count-one": "{0} ft²",
-            "unitPattern-count-two": "{0} ft²",
             "unitPattern-count-other": "{0} ft²"
           },
           "area-square-inch": {
@@ -2403,14 +2361,10 @@
           },
           "length-mile": {
             "displayName": "eangas miila",
-            "unitPattern-count-one": "{0} mi",
-            "unitPattern-count-two": "{0} mi",
             "unitPattern-count-other": "{0} mi"
           },
           "length-yard": {
             "displayName": "eangas yard",
-            "unitPattern-count-one": "{0} yd",
-            "unitPattern-count-two": "{0} yd",
             "unitPattern-count-other": "{0} yd"
           },
           "length-foot": {
@@ -2433,8 +2387,6 @@
           },
           "length-light-year": {
             "displayName": "chuovgat jagi",
-            "unitPattern-count-one": "{0} ly",
-            "unitPattern-count-two": "{0} ly",
             "unitPattern-count-other": "{0} ly"
           },
           "length-astronomical-unit": {
@@ -2643,13 +2595,15 @@
           },
           "speed-mile-per-hour": {
             "displayName": "eangas miila kohti diibmu",
-            "unitPattern-count-one": "{0} mi/h",
-            "unitPattern-count-two": "{0} mi/h",
             "unitPattern-count-other": "{0} mi/h"
           },
           "speed-knot": {
             "displayName": "kn",
             "unitPattern-count-other": "{0} kn"
+          },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-other": "B {0}"
           },
           "temperature-generic": {
             "displayName": "°",
@@ -2663,8 +2617,6 @@
           },
           "temperature-fahrenheit": {
             "displayName": "grádat Fahrenheit",
-            "unitPattern-count-one": "{0}°F",
-            "unitPattern-count-two": "{0}°F",
             "unitPattern-count-other": "{0}°F"
           },
           "temperature-kelvin": {
@@ -2697,8 +2649,6 @@
           },
           "volume-cubic-mile": {
             "displayName": "eangas kubikkmiila",
-            "unitPattern-count-one": "{0} mi³",
-            "unitPattern-count-two": "{0} mi³",
             "unitPattern-count-other": "{0} mi³"
           },
           "volume-cubic-yard": {
