@@ -3,18 +3,18 @@
     "lij": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "lij"
       },
       "dates": {
         "timeZoneNames": {
-          "hourFormat": "+HH:mm;-HH:mm",
-          "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
-          "regionFormat": "{0}",
-          "regionFormat-type-daylight": "{0} (+1)",
-          "regionFormat-type-standard": "{0} (+0)",
+          "hourFormat": "+HH:mm;−HH:mm",
+          "gmtFormat": "UTC{0}",
+          "gmtZeroFormat": "UTC",
+          "regionFormat": "oa: {0}",
+          "regionFormat-type-daylight": "oa de stæ: {0}",
+          "regionFormat-type-standard": "oa standard: {0}",
           "fallbackFormat": "{1} ({0})",
           "zone": {
             "America": {
@@ -156,6 +156,13 @@
               },
               "Unknown": {
                 "exemplarCity": "Unknown"
+              }
+            }
+          },
+          "metazone": {
+            "GMT": {
+              "long": {
+                "standard": "oa do meridian de Greenwich"
               }
             }
           }

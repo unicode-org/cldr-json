@@ -3,7 +3,7 @@
     "fr-ML": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "fr",
         "territory": "ML"
@@ -19,6 +19,9 @@
           "yue",
           "zh"
         ],
+        "formality": "formal",
+        "length": "medium",
+        "nativeSpaceReplacement": " ",
         "foreignSpaceReplacement": " ",
         "initial": "{0}.",
         "initialSequence": "{0} {1}",
@@ -40,7 +43,7 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname}",
+                "formal": "{given} {given2-initial-retain} {surname}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
@@ -54,8 +57,8 @@
             },
             "short": {
               "referring": {
-                "formal": "{given-initial} {given2-initial} {surname}",
-                "informal": "{given-informal} {surname-initial}"
+                "formal": "{given-initial-retain} {given2-initial-retain} {surname}",
+                "informal": "{given-informal} {surname-initial-retain}"
               },
               "addressing": {
                 "formal": "{title} {surname}",
@@ -84,7 +87,7 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2-initial}",
+                "formal": "{surname} {given} {given2-initial-retain}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
@@ -98,8 +101,8 @@
             },
             "short": {
               "referring": {
-                "formal": "{surname} {given-initial} {given2-initial}",
-                "informal": "{surname} {given-initial}"
+                "formal": "{surname} {given-initial-retain} {given2-initial-retain}",
+                "informal": "{surname} {given-initial-retain}"
               },
               "addressing": {
                 "formal": "{title} {surname}",
@@ -120,13 +123,13 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname-core}, {given} {given2-initial} {surname-prefix}",
+                "formal": "{surname-core}, {given} {given2-initial-retain} {surname-prefix}",
                 "informal": "{surname}, {given-informal}"
               }
             },
             "short": {
               "referring": {
-                "formal": "{surname-core}, {given-initial} {given2-initial} {surname-prefix}",
+                "formal": "{surname-core}, {given-initial-retain} {given2-initial-retain} {surname-prefix}",
                 "informal": "{surname}, {given-informal}"
               }
             }

@@ -2,7 +2,7 @@
   "annotations": {
     "identity": {
       "version": {
-        "_cldrVersion": "43"
+        "_cldrVersion": "44"
       },
       "language": "tr"
     },
@@ -1678,7 +1678,9 @@
       },
       "≮": {
         "default": [
-          "küçük değildir"
+          "eşitsizlik",
+          "küçük değildir",
+          "matematik"
         ],
         "tts": [
           "küçük değildir"
@@ -1716,7 +1718,9 @@
       },
       "≯": {
         "default": [
-          "büyük değildir"
+          "büyük değildir",
+          "eşitsizlik",
+          "matematik"
         ],
         "tts": [
           "büyük değildir"
@@ -1773,7 +1777,10 @@
       },
       "∓": {
         "default": [
-          "artı veya eksi"
+          "artı eksi",
+          "artı veya eksi",
+          "eksi artı",
+          "eksi veya artı"
         ],
         "tts": [
           "artı veya eksi"
@@ -1851,7 +1858,8 @@
       },
       "∟": {
         "default": [
-          "dik açı"
+          "dik açı",
+          "matematik"
         ],
         "tts": [
           "dik açı"
@@ -1859,7 +1867,8 @@
       },
       "∠": {
         "default": [
-          "açı"
+          "açı",
+          "dar açı"
         ],
         "tts": [
           "açı"
@@ -2081,7 +2090,9 @@
       },
       "≦": {
         "default": [
-          "küçük eşittirden büyük"
+          "eşitsizlik",
+          "küçük eşittirden büyük",
+          "matematik"
         ],
         "tts": [
           "küçük eşittirden büyük"
@@ -2089,7 +2100,9 @@
       },
       "≧": {
         "default": [
-          "büyük eşittirden küçük"
+          "büyük eşittirden küçük",
+          "eşitsizlik",
+          "matematik"
         ],
         "tts": [
           "büyük eşittirden küçük"
@@ -2097,7 +2110,9 @@
       },
       "≪": {
         "default": [
-          "çok daha küçüktür"
+          "çok daha küçüktür",
+          "eşitsizlik",
+          "matematik"
         ],
         "tts": [
           "çok daha küçüktür"
@@ -2105,7 +2120,9 @@
       },
       "≫": {
         "default": [
-          "çok daha büyüktür"
+          "çok daha büyüktür",
+          "eşizliklik",
+          "matematik"
         ],
         "tts": [
           "çok daha büyüktür"
@@ -2164,6 +2181,8 @@
       },
       "⊃": {
         "default": [
+          "küme işlemi",
+          "matematik",
           "üst küme"
         ],
         "tts": [
@@ -2180,6 +2199,8 @@
       },
       "⊇": {
         "default": [
+          "eşitlik",
+          "matematik",
           "üst küme eşittir"
         ],
         "tts": [
@@ -2188,6 +2209,7 @@
       },
       "⊕": {
         "default": [
+          "artı",
           "daire içinde artı"
         ],
         "tts": [
@@ -2316,7 +2338,9 @@
       },
       "⊿": {
         "default": [
-          "dik üçgen"
+          "dik açılı üçgen",
+          "dik üçgen",
+          "matematik"
         ],
         "tts": [
           "dik üçgen"
@@ -2372,7 +2396,9 @@
       },
       "⋒": {
         "default": [
-          "çift kesişim"
+          "çift kesişim",
+          "kesişim",
+          "matematik"
         ],
         "tts": [
           "çift kesişim"
@@ -2380,7 +2406,9 @@
       },
       "⋘": {
         "default": [
-          "çok fazla küçüktür"
+          "çok fazla küçüktür",
+          "eşitsizlik",
+          "matematik"
         ],
         "tts": [
           "çok fazla küçüktür"
@@ -2388,7 +2416,9 @@
       },
       "⋙": {
         "default": [
-          "çok fazla büyüktür"
+          "çok fazla büyüktür",
+          "eşitsizlik",
+          "matematik"
         ],
         "tts": [
           "çok fazla büyüktür"
@@ -3647,6 +3677,26 @@
         ],
         "tts": [
           "sallanan yüz"
+        ]
+      },
+      "🙂‍↔": {
+        "default": [
+          "hayır",
+          "sallama",
+          "yatay olarak sallanan yüz"
+        ],
+        "tts": [
+          "yatay olarak sallanan yüz"
+        ]
+      },
+      "🙂‍↕": {
+        "default": [
+          "dikey olarak sallanan yüz",
+          "evet",
+          "onay"
+        ],
+        "tts": [
+          "dikey olarak sallanan yüz"
         ]
       },
       "😌": {
@@ -7138,8 +7188,7 @@
       "🤶": {
         "default": [
           "anne",
-          "noel",
-          "Noel Anne"
+          "noel"
         ],
         "tts": [
           "Noel Anne"
@@ -8480,18 +8529,6 @@
           "kalpli çift"
         ]
       },
-      "👪": {
-        "default": [
-          "aile",
-          "anne",
-          "baba",
-          "çocuk",
-          "kişiler"
-        ],
-        "tts": [
-          "aile"
-        ]
-      },
       "🗣": {
         "default": [
           "bağırma",
@@ -8542,6 +8579,60 @@
         ],
         "tts": [
           "kucaklaşan insanlar"
+        ]
+      },
+      "👪": {
+        "default": [
+          "aile",
+          "anne",
+          "baba",
+          "çocuk",
+          "kişiler"
+        ],
+        "tts": [
+          "aile"
+        ]
+      },
+      "🧑‍🧑‍🧒": {
+        "default": [
+          "aile: yetişkin",
+          "aile: yetişkin, yetişkin, çocuk",
+          "çocuk",
+          "yetişkin"
+        ],
+        "tts": [
+          "aile: yetişkin, yetişkin, çocuk"
+        ]
+      },
+      "🧑‍🧑‍🧒‍🧒": {
+        "default": [
+          "aile: yetişkin",
+          "aile: yetişkin, yetişkin, çocuk, çocuk",
+          "çocuk",
+          "yetişkin"
+        ],
+        "tts": [
+          "aile: yetişkin, yetişkin, çocuk, çocuk"
+        ]
+      },
+      "🧑‍🧒": {
+        "default": [
+          "aile: yetişkin",
+          "aile: yetişkin, çocuk",
+          "çocuk"
+        ],
+        "tts": [
+          "aile: yetişkin, çocuk"
+        ]
+      },
+      "🧑‍🧒‍🧒": {
+        "default": [
+          "aile: yetişkin",
+          "aile: yetişkin, çocuk, çocuk",
+          "çocuk"
+        ],
+        "tts": [
+          "aile: yetişkin, çocuk, çocuk"
         ]
       },
       "👣": {
@@ -9461,6 +9552,18 @@
           "kanat"
         ]
       },
+      "🐦‍⬛": {
+        "default": [
+          "kara",
+          "karga",
+          "kuş",
+          "kuzgun",
+          "siyah"
+        ],
+        "tts": [
+          "siyah kuş"
+        ]
+      },
       "🪿": {
         "default": [
           "kaz",
@@ -9471,6 +9574,18 @@
         ],
         "tts": [
           "kaz"
+        ]
+      },
+      "🐦‍🔥": {
+        "default": [
+          "Anka",
+          "ateş kuşu",
+          "fantezi",
+          "reenkarnasyon",
+          "yeniden doğuş"
+        ],
+        "tts": [
+          "Anka"
         ]
       },
       "🐸": {
@@ -10183,6 +10298,17 @@
           "limon"
         ]
       },
+      "🍋‍🟩": {
+        "default": [
+          "meyve",
+          "misket limonu",
+          "narenciye",
+          "tropik"
+        ],
+        "tts": [
+          "misket limonu"
+        ]
+      },
       "🍌": {
         "default": [
           "meyve",
@@ -10483,18 +10609,27 @@
       },
       "🫛": {
         "default": [
-          "bakla",
           "baklagil",
-          "barbunya",
           "bezelye",
           "edamame",
           "fasulye",
-          "kabuk",
           "kabuklu bezelye",
           "sebze"
         ],
         "tts": [
           "kabuklu bezelye"
+        ]
+      },
+      "🍄‍🟫": {
+        "default": [
+          "doğa",
+          "gıda",
+          "kahverengi mantar",
+          "mantar",
+          "sebze"
+        ],
+        "tts": [
+          "kahverengi mantar"
         ]
       },
       "🍞": {
@@ -15740,8 +15875,7 @@
         "default": [
           "blu-ray",
           "disk",
-          "dvd",
-          "DVD disk"
+          "dvd"
         ],
         "tts": [
           "dvd"
@@ -16925,6 +17059,21 @@
         ],
         "tts": [
           "bağlantı işareti"
+        ]
+      },
+      "⛓‍💥": {
+        "default": [
+          "kelepçe",
+          "kırık zincir",
+          "kırmak",
+          "özgürlük",
+          "patlama",
+          "zincir",
+          "zincirler",
+          "zincirleri kırmak"
+        ],
+        "tts": [
+          "zincirleri kırmak"
         ]
       },
       "⛓": {

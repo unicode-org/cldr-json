@@ -3,7 +3,7 @@
     "ksh": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "ksh"
       },
@@ -39,6 +39,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -68,6 +74,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "Y{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
@@ -763,6 +775,10 @@
             "displayName": "kn",
             "unitPattern-count-other": "{0} kn"
           },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-other": "B {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
             "unitPattern-count-other": "{0}°"
@@ -977,6 +993,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -1006,6 +1028,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "Y{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
@@ -1047,8 +1075,6 @@
           },
           "acceleration-g-force": {
             "displayName": "-fache Erdbeschleunigung",
-            "unitPattern-count-zero": "{0} G",
-            "unitPattern-count-one": "{0} G",
             "unitPattern-count-other": "{0} G"
           },
           "acceleration-meter-per-square-second": {
@@ -1065,39 +1091,27 @@
           },
           "angle-degree": {
             "displayName": "Graad",
-            "unitPattern-count-zero": "{0}°",
-            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "angle-arc-minute": {
             "displayName": "Winkelmenutte",
-            "unitPattern-count-zero": "{0}′",
-            "unitPattern-count-one": "{0}′",
             "unitPattern-count-other": "{0}′"
           },
           "angle-arc-second": {
             "displayName": "Winkelsekunde",
-            "unitPattern-count-zero": "{0}″",
-            "unitPattern-count-one": "{0}″",
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
             "displayName": "Quadratkilometer",
-            "unitPattern-count-zero": "{0} km²",
-            "unitPattern-count-one": "{0} km²",
             "unitPattern-count-other": "{0} km²",
             "perUnitPattern": "{0}/km²"
           },
           "area-hectare": {
             "displayName": "hektar",
-            "unitPattern-count-zero": "{0} ha",
-            "unitPattern-count-one": "{0} ha",
             "unitPattern-count-other": "{0} ha"
           },
           "area-square-meter": {
             "displayName": "Quadratmeter",
-            "unitPattern-count-zero": "{0} m²",
-            "unitPattern-count-one": "{0} m²",
             "unitPattern-count-other": "{0} m²",
             "perUnitPattern": "{0}/m²"
           },
@@ -1108,15 +1122,11 @@
           },
           "area-square-mile": {
             "displayName": "englischen Quadratmeilen",
-            "unitPattern-count-zero": "{0} mi²",
-            "unitPattern-count-one": "{0} mi²",
             "unitPattern-count-other": "{0} mi²",
             "perUnitPattern": "{0}/mi²"
           },
           "area-acre": {
             "displayName": "angloamerikanischen Acre",
-            "unitPattern-count-zero": "{0} ac",
-            "unitPattern-count-one": "{0} ac",
             "unitPattern-count-other": "{0} ac"
           },
           "area-square-yard": {
@@ -1125,8 +1135,6 @@
           },
           "area-square-foot": {
             "displayName": "Quadratvoss",
-            "unitPattern-count-zero": "{0} ft²",
-            "unitPattern-count-one": "{0} ft²",
             "unitPattern-count-other": "{0} ft²"
           },
           "area-square-inch": {
@@ -1264,36 +1272,26 @@
           },
           "duration-day": {
             "displayName": "Dääsch",
-            "unitPattern-count-zero": "{0} d",
-            "unitPattern-count-one": "{0} d",
             "unitPattern-count-other": "{0} d",
             "perUnitPattern": "{0}/d"
           },
           "duration-hour": {
             "displayName": "Schtunde",
-            "unitPattern-count-zero": "{0} h",
-            "unitPattern-count-one": "{0} h",
             "unitPattern-count-other": "{0} h",
             "perUnitPattern": "{0}/h"
           },
           "duration-minute": {
             "displayName": "Menutte",
-            "unitPattern-count-zero": "{0} min",
-            "unitPattern-count-one": "{0} min",
             "unitPattern-count-other": "{0} min",
             "perUnitPattern": "{0}/min"
           },
           "duration-second": {
             "displayName": "Sekunde",
-            "unitPattern-count-zero": "{0} s",
-            "unitPattern-count-one": "{0} s",
             "unitPattern-count-other": "{0} s",
             "perUnitPattern": "{0}/s"
           },
           "duration-millisecond": {
             "displayName": "Millisekunde",
-            "unitPattern-count-zero": "{0} ms",
-            "unitPattern-count-one": "{0} ms",
             "unitPattern-count-other": "{0} ms"
           },
           "duration-microsecond": {
@@ -1406,15 +1404,11 @@
           },
           "length-kilometer": {
             "displayName": "Kilometer",
-            "unitPattern-count-zero": "{0} km",
-            "unitPattern-count-one": "{0} km",
             "unitPattern-count-other": "{0} km",
             "perUnitPattern": "{0}/km"
           },
           "length-meter": {
             "displayName": "Meter",
-            "unitPattern-count-zero": "{0} m",
-            "unitPattern-count-one": "{0} m",
             "unitPattern-count-other": "{0} m",
             "perUnitPattern": "{0}/m"
           },
@@ -1424,15 +1418,11 @@
           },
           "length-centimeter": {
             "displayName": "Zentimeter",
-            "unitPattern-count-zero": "{0} cm",
-            "unitPattern-count-one": "{0} cm",
             "unitPattern-count-other": "{0} cm",
             "perUnitPattern": "{0}/cm"
           },
           "length-millimeter": {
             "displayName": "Millimeter",
-            "unitPattern-count-zero": "{0} mm",
-            "unitPattern-count-one": "{0} mm",
             "unitPattern-count-other": "{0} mm"
           },
           "length-micrometer": {
@@ -1445,14 +1435,10 @@
           },
           "length-picometer": {
             "displayName": "Pikometer",
-            "unitPattern-count-zero": "{0} pm",
-            "unitPattern-count-one": "{0} pm",
             "unitPattern-count-other": "{0} pm"
           },
           "length-mile": {
             "displayName": "englischen Meilen",
-            "unitPattern-count-zero": "{0} mi",
-            "unitPattern-count-one": "{0} mi",
             "unitPattern-count-other": "{0} mi"
           },
           "length-yard": {
@@ -1531,15 +1517,11 @@
           },
           "mass-kilogram": {
             "displayName": "Kilogramm",
-            "unitPattern-count-zero": "{0} kg",
-            "unitPattern-count-one": "{0} kg",
             "unitPattern-count-other": "{0} kg",
             "perUnitPattern": "{0}/kg"
           },
           "mass-gram": {
             "displayName": "Gramm",
-            "unitPattern-count-zero": "{0} g",
-            "unitPattern-count-one": "{0} g",
             "unitPattern-count-other": "{0} g",
             "perUnitPattern": "{0}/g"
           },
@@ -1607,14 +1589,10 @@
           },
           "power-kilowatt": {
             "displayName": "Kilowatt",
-            "unitPattern-count-zero": "{0} kW",
-            "unitPattern-count-one": "{0} kW",
             "unitPattern-count-other": "{0} kW"
           },
           "power-watt": {
             "displayName": "Watt",
-            "unitPattern-count-zero": "{0} W",
-            "unitPattern-count-one": "{0} W",
             "unitPattern-count-other": "{0} W"
           },
           "power-milliwatt": {
@@ -1637,8 +1615,6 @@
           },
           "pressure-inch-ofhg": {
             "displayName": "Dumm Quecksilbersäule",
-            "unitPattern-count-zero": "{0} inHg",
-            "unitPattern-count-one": "{0} inHg",
             "unitPattern-count-other": "{0} inHg"
           },
           "pressure-bar": {
@@ -1647,8 +1623,6 @@
           },
           "pressure-millibar": {
             "displayName": "Millibar",
-            "unitPattern-count-zero": "{0} mbar",
-            "unitPattern-count-one": "{0} mbar",
             "unitPattern-count-other": "{0} mbar"
           },
           "pressure-atmosphere": {
@@ -1661,8 +1635,6 @@
           },
           "pressure-hectopascal": {
             "displayName": "Hektopascal",
-            "unitPattern-count-zero": "{0} hPa",
-            "unitPattern-count-one": "{0} hPa",
             "unitPattern-count-other": "{0} hPa"
           },
           "pressure-kilopascal": {
@@ -1675,25 +1647,23 @@
           },
           "speed-kilometer-per-hour": {
             "displayName": "Kilometer pro Schtunde",
-            "unitPattern-count-zero": "{0} km/h",
-            "unitPattern-count-one": "{0} km/h",
             "unitPattern-count-other": "{0} km/h"
           },
           "speed-meter-per-second": {
             "displayName": "Meter pro Sekunde",
-            "unitPattern-count-zero": "{0} m/s",
-            "unitPattern-count-one": "{0} m/s",
             "unitPattern-count-other": "{0} m/s"
           },
           "speed-mile-per-hour": {
             "displayName": "englischen Meilen pro Schtunde",
-            "unitPattern-count-zero": "{0} mi/h",
-            "unitPattern-count-one": "{0} mi/h",
             "unitPattern-count-other": "{0} mi/h"
           },
           "speed-knot": {
             "displayName": "kn",
             "unitPattern-count-other": "{0} kn"
+          },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-other": "B {0}"
           },
           "temperature-generic": {
             "displayName": "°",
@@ -1701,14 +1671,10 @@
           },
           "temperature-celsius": {
             "displayName": "Graad Celsius",
-            "unitPattern-count-zero": "{0}°C",
-            "unitPattern-count-one": "{0}°C",
             "unitPattern-count-other": "{0}°C"
           },
           "temperature-fahrenheit": {
             "displayName": "Graad Fahrenheit",
-            "unitPattern-count-zero": "{0}°F",
-            "unitPattern-count-one": "{0}°F",
             "unitPattern-count-other": "{0}°F"
           },
           "temperature-kelvin": {
@@ -1725,8 +1691,6 @@
           },
           "volume-cubic-kilometer": {
             "displayName": "Kubikkilometer",
-            "unitPattern-count-zero": "{0} km³",
-            "unitPattern-count-one": "{0} km³",
             "unitPattern-count-other": "{0} km³"
           },
           "volume-cubic-meter": {
@@ -1741,8 +1705,6 @@
           },
           "volume-cubic-mile": {
             "displayName": "englischen Kubikmeilen",
-            "unitPattern-count-zero": "{0} mi³",
-            "unitPattern-count-one": "{0} mi³",
             "unitPattern-count-other": "{0} mi³"
           },
           "volume-cubic-yard": {
@@ -1767,8 +1729,6 @@
           },
           "volume-liter": {
             "displayName": "Liter",
-            "unitPattern-count-zero": "{0} l",
-            "unitPattern-count-one": "{0} l",
             "unitPattern-count-other": "{0} l",
             "perUnitPattern": "{0}/l"
           },
@@ -1909,6 +1869,12 @@
           "10p-24": {
             "unitPrefixPattern": "y{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "r{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "q{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "da{0}"
           },
@@ -1938,6 +1904,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "Y{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "R{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "Q{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "Ki{0}"
@@ -1997,20 +1969,14 @@
           },
           "angle-degree": {
             "displayName": "Graad",
-            "unitPattern-count-zero": "{0}°",
-            "unitPattern-count-one": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "angle-arc-minute": {
             "displayName": "Winkelmenutte",
-            "unitPattern-count-zero": "{0}′",
-            "unitPattern-count-one": "{0}′",
             "unitPattern-count-other": "{0}′"
           },
           "angle-arc-second": {
             "displayName": "Winkelsekunde",
-            "unitPattern-count-zero": "{0}″",
-            "unitPattern-count-one": "{0}″",
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
@@ -2040,15 +2006,11 @@
           },
           "area-square-mile": {
             "displayName": "englischen Quadratmeilen",
-            "unitPattern-count-zero": "{0} mi²",
-            "unitPattern-count-one": "{0} mi²",
             "unitPattern-count-other": "{0} mi²",
             "perUnitPattern": "{0}/mi²"
           },
           "area-acre": {
             "displayName": "angloamerikanischen Acre",
-            "unitPattern-count-zero": "{0} ac",
-            "unitPattern-count-one": "{0} ac",
             "unitPattern-count-other": "{0} ac"
           },
           "area-square-yard": {
@@ -2057,8 +2019,6 @@
           },
           "area-square-foot": {
             "displayName": "Quadratvoss",
-            "unitPattern-count-zero": "{0} ft²",
-            "unitPattern-count-one": "{0} ft²",
             "unitPattern-count-other": "{0} ft²"
           },
           "area-square-inch": {
@@ -2383,8 +2343,6 @@
           },
           "length-mile": {
             "displayName": "englischen Meilen",
-            "unitPattern-count-zero": "{0} mi",
-            "unitPattern-count-one": "{0} mi",
             "unitPattern-count-other": "{0} mi"
           },
           "length-yard": {
@@ -2569,8 +2527,6 @@
           },
           "pressure-inch-ofhg": {
             "displayName": "Dumm Quecksilbersäule",
-            "unitPattern-count-zero": "{0} inHg",
-            "unitPattern-count-one": "{0} inHg",
             "unitPattern-count-other": "{0} inHg"
           },
           "pressure-bar": {
@@ -2619,13 +2575,15 @@
           },
           "speed-mile-per-hour": {
             "displayName": "englischen Meilen pro Schtunde",
-            "unitPattern-count-zero": "{0} mi/h",
-            "unitPattern-count-one": "{0} mi/h",
             "unitPattern-count-other": "{0} mi/h"
           },
           "speed-knot": {
             "displayName": "kn",
             "unitPattern-count-other": "{0} kn"
+          },
+          "speed-beaufort": {
+            "displayName": "Bft",
+            "unitPattern-count-other": "B {0}"
           },
           "temperature-generic": {
             "displayName": "°",
@@ -2639,8 +2597,6 @@
           },
           "temperature-fahrenheit": {
             "displayName": "Graad Fahrenheit",
-            "unitPattern-count-zero": "{0}°F",
-            "unitPattern-count-one": "{0}°F",
             "unitPattern-count-other": "{0}°F"
           },
           "temperature-kelvin": {
@@ -2673,8 +2629,6 @@
           },
           "volume-cubic-mile": {
             "displayName": "englischen Kubikmeilen",
-            "unitPattern-count-zero": "{0} mi³",
-            "unitPattern-count-one": "{0} mi³",
             "unitPattern-count-other": "{0} mi³"
           },
           "volume-cubic-yard": {

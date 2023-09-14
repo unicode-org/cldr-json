@@ -3,7 +3,7 @@
     "zh-Hans": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "zh",
         "script": "Hans"
@@ -20,6 +20,9 @@
           "yue",
           "zh"
         ],
+        "formality": "informal",
+        "length": "medium",
+        "nativeSpaceReplacement": {},
         "foreignSpaceReplacement": "·",
         "initial": "{0}",
         "initialSequence": "{0} {1}",
@@ -27,7 +30,7 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname}{credentials}",
+                "formal": "{generation}{given} {given2} {surname}{credentials}{title}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
@@ -41,7 +44,7 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname}{credentials}",
+                "formal": "{generation}{given} {given2-initial} {surname}{credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
@@ -71,7 +74,7 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {given} {given2} {credentials}{title}",
+                "formal": "{generation}{surname} {given} {given2} {credentials}{title}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {
@@ -85,7 +88,7 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname} {given} {given2} {credentials}{title}",
+                "formal": "{generation}{surname} {given} {given2-initial}{credentials}",
                 "informal": "{surname} {given-informal}"
               },
               "addressing": {

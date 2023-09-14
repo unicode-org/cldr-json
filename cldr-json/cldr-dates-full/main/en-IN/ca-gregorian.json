@@ -3,7 +3,7 @@
     "en-IN": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "en",
         "territory": "IN"
@@ -320,9 +320,9 @@
               }
             },
             "dateFormats": {
-              "full": "EEEE, d MMMM, y",
+              "full": "EEEE d MMMM, y",
               "long": "d MMMM y",
-              "medium": "dd-MMM-y",
+              "medium": "d MMM y",
               "short": "dd/MM/yy"
             },
             "dateSkeletons": {
@@ -372,6 +372,7 @@
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E, d MMM y G",
+                "GyMMMEEEEd": "EEEE d MMM, y G",
                 "h": "h a",
                 "h-alt-ascii": "h a",
                 "H": "HH",
@@ -394,7 +395,9 @@
                 "MMM": "LLL",
                 "MMMd": "d MMM",
                 "MMMEd": "E, d MMM",
+                "MMMEEEEd": "EEEE d MMM",
                 "MMMMd": "d MMMM",
+                "MMMMEEEEd": "EEEE d MMMM",
                 "MMMMW-count-one": "'week' W 'of' MMMM",
                 "MMMMW-count-other": "'week' W 'of' MMMM",
                 "ms": "mm:ss",
@@ -405,7 +408,9 @@
                 "yMMM": "MMM y",
                 "yMMMd": "d MMM y",
                 "yMMMEd": "E, d MMM, y",
+                "yMMMEEEEd": "EEEE d MMM, y",
                 "yMMMM": "MMMM y",
+                "yMMMMEEEEd": "EEEE d MMMM, y",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yw-count-one": "'week' w 'of' Y",
@@ -476,6 +481,12 @@
                   "M": "E, d MMM – E, d MMM y G",
                   "y": "E, d MMM y – E, d MMM y G"
                 },
+                "GyMMMEEEEd": {
+                  "d": "EEEE d MMM – EEEE d MMM y G",
+                  "G": "EEEE d MMM y G – EEEE d MMM y G",
+                  "M": "EEEE d MMM – EEEE d MMM y G",
+                  "y": "EEEE d MMM y – EEEE d MMM y G"
+                },
                 "h": {
                   "a": "h a – h a",
                   "h": "h–h a"
@@ -530,6 +541,10 @@
                   "d": "E, d – E, d MMM",
                   "M": "E, d MMM – E, d MMM"
                 },
+                "MMMEEEEd": {
+                  "d": "EEEE d – EEEE d MMM",
+                  "M": "EEEE d MMM – EEEE d MMM"
+                },
                 "y": {
                   "y": "y–y"
                 },
@@ -561,9 +576,19 @@
                   "M": "E, d MMM – E, d MMM y",
                   "y": "E, d MMM y – E, d MMM y"
                 },
+                "yMMMEEEEd": {
+                  "d": "EEEE d – EEEE d MMM y",
+                  "M": "EEEE d MMM – EEEE d MMM y",
+                  "y": "EEEE d MMM y – EEEE d MMM y"
+                },
                 "yMMMM": {
                   "M": "MMMM – MMMM y",
                   "y": "MMMM y – MMMM y"
+                },
+                "yMMMMEEEEd": {
+                  "d": "EEEE d – EEEE d MMMM y",
+                  "M": "EEEE d MMMM – EEEE d MMMM y",
+                  "y": "EEEE d MMMM y – EEEE d MMMM y"
                 }
               }
             },

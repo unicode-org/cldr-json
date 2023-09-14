@@ -3,7 +3,7 @@
     "zh-Hant": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "zh",
         "script": "Hant"
@@ -20,6 +20,9 @@
           "yue",
           "zh"
         ],
+        "formality": "formal",
+        "length": "medium",
+        "nativeSpaceReplacement": {},
         "foreignSpaceReplacement": "·",
         "initial": "{0}.",
         "initialSequence": "{0} {1}",
@@ -27,8 +30,8 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
-                "informal": "{title} {given} {given2} {surname} {surname2} {credentials}"
+                "formal": "{given}{given2}{surname}{generation}{title}，{credentials}",
+                "informal": "{given-informal}{surname}"
               },
               "addressing": {
                 "formal": "{surname} {title}",
@@ -41,8 +44,8 @@
             },
             "medium": {
               "referring": {
-                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
-                "informal": "{title} {given} {given2} {surname} {surname2} {credentials}"
+                "formal": "{given}{given2}{surname}{generation}{title}，{credentials}",
+                "informal": "{given-informal}{surname}"
               },
               "addressing": {
                 "formal": "{surname} {title}",
@@ -55,8 +58,8 @@
             },
             "short": {
               "referring": {
-                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
-                "informal": "{title} {given} {given2} {surname} {surname2} {credentials}"
+                "formal": "{given-initial}{surname}",
+                "informal": "{given-informal}{surname-initial}"
               },
               "addressing": {
                 "formal": "{surname} {title}",
@@ -71,7 +74,7 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname}{given}{given2}{generation}{credentials}",
+                "formal": "{surname} {given} {given2} {generation}{credentials}",
                 "informal": "{surname}{given-informal}"
               },
               "addressing": {
@@ -85,7 +88,7 @@
             },
             "medium": {
               "referring": {
-                "formal": "{surname}{given}{given2-initial}{generation}{credentials}",
+                "formal": "{surname}{given}{given2-initial}{generation}，{credentials}",
                 "informal": "{surname}{given-informal}"
               },
               "addressing": {
@@ -99,8 +102,8 @@
             },
             "short": {
               "referring": {
-                "formal": "{surname}{given}{given2}",
-                "informal": "{surname}{given}"
+                "formal": "{surname} {given-initial} {given2-initial}",
+                "informal": "{surname}{given-initial}"
               },
               "addressing": {
                 "formal": "{surname}{title}",
@@ -115,20 +118,20 @@
           "sorting": {
             "long": {
               "referring": {
-                "formal": "{surname}{given}{given2}",
+                "formal": "{surname} {given} {given2}",
                 "informal": "{surname}{given-informal}"
               }
             },
             "medium": {
               "referring": {
-                "formal": "{surname}{given}",
+                "formal": "{surname} {given}",
                 "informal": "{surname}{given-informal}"
               }
             },
             "short": {
               "referring": {
-                "formal": "{surname}{given}",
-                "informal": "{surname}{given-informal}"
+                "formal": "{surname} {given}",
+                "informal": "{surname} {given-informal}"
               }
             }
           }

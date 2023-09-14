@@ -3,7 +3,7 @@
     "ar-SA": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "ar",
         "territory": "SA"
@@ -40,6 +40,12 @@
           "10p-24": {
             "unitPrefixPattern": "يوكتو{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "رونتو{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "كويكتو{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "ديكا{0}"
           },
@@ -69,6 +75,12 @@
           },
           "10p24": {
             "unitPrefixPattern": "يوتا{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "رونا{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "كويتا{0}"
           },
           "1024p1": {
             "unitPrefixPattern": "كيبي{0}"
@@ -257,7 +269,7 @@
             "displayName": "فدان",
             "unitPattern-count-zero": "{0} فدان",
             "unitPattern-count-one": "فدان",
-            "unitPattern-count-two": "{0} فدان",
+            "unitPattern-count-two": "فدانان",
             "unitPattern-count-few": "{0} أفدنة",
             "unitPattern-count-many": "{0} فدانًا",
             "unitPattern-count-other": "{0} فدان"
@@ -371,11 +383,6 @@
           "concentr-permyriad": {
             "gender": "feminine",
             "displayName": "‱",
-            "unitPattern-count-zero": "{0}‱",
-            "unitPattern-count-one": "{0}‱",
-            "unitPattern-count-two": "{0}‱",
-            "unitPattern-count-few": "{0}‱",
-            "unitPattern-count-many": "{0}‱",
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
@@ -938,15 +945,6 @@
             "unitPattern-count-many": "{0} نقطة لكل بوصة",
             "unitPattern-count-other": "{0} نقطة لكل بوصة"
           },
-          "graphics-dot": {
-            "displayName": "بكسل",
-            "unitPattern-count-zero": "{0} بكسل",
-            "unitPattern-count-one": "{0} بكسل",
-            "unitPattern-count-two": "{0} بكسل",
-            "unitPattern-count-few": "{0} بكسل",
-            "unitPattern-count-many": "{0} بكسل",
-            "unitPattern-count-other": "{0} بكسل"
-          },
           "length-earth-radius": {
             "displayName": "نصف قطر أرضي",
             "unitPattern-count-zero": "{0} نصف قطر أرضي",
@@ -1273,7 +1271,7 @@
             "unitPattern-count-zero": "{0} رطل",
             "unitPattern-count-one": "{0} رطل",
             "unitPattern-count-two": "رطلان",
-            "unitPattern-count-few": "{0} أرطال",
+            "unitPattern-count-few": "{0} رطل",
             "unitPattern-count-many": "{0} رطلًا",
             "unitPattern-count-other": "{0} رطل",
             "perUnitPattern": "{0}/رطل"
@@ -1537,14 +1535,18 @@
             "unitPattern-count-many": "{0} عقدة",
             "unitPattern-count-other": "{0} عقدة"
           },
+          "speed-beaufort": {
+            "displayName": "بوفورت",
+            "unitPattern-count-zero": "بوفورت {0}",
+            "unitPattern-count-one": "بوفورت {0}",
+            "unitPattern-count-two": "بوفورت {0}",
+            "unitPattern-count-few": "بوفورت {0}",
+            "unitPattern-count-many": "بوفورت {0}",
+            "unitPattern-count-other": "بوفورت {0}"
+          },
           "temperature-generic": {
             "gender": "feminine",
             "displayName": "°",
-            "unitPattern-count-zero": "{0}°",
-            "unitPattern-count-one": "{0}°",
-            "unitPattern-count-two": "{0}°",
-            "unitPattern-count-few": "{0}°",
-            "unitPattern-count-many": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
@@ -1656,12 +1658,12 @@
           },
           "volume-cubic-inch": {
             "displayName": "بوصة مكعبة",
-            "unitPattern-count-zero": "{0} بوصة مكعبة",
-            "unitPattern-count-one": "{0} بوصة مكعبة",
+            "unitPattern-count-zero": "{0} بوصة³",
+            "unitPattern-count-one": "{0} بوصة³",
             "unitPattern-count-two": "بوصتان مكعبات",
             "unitPattern-count-few": "{0} بوصات مكعبة",
-            "unitPattern-count-many": "{0} بوصة مكعبة",
-            "unitPattern-count-other": "{0} بوصة مكعبة"
+            "unitPattern-count-many": "{0} بوصة³",
+            "unitPattern-count-other": "{0} بوصة³"
           },
           "volume-megaliter": {
             "gender": "masculine",
@@ -1956,6 +1958,12 @@
           "10p-24": {
             "unitPrefixPattern": "يك{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "رونتو{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "كويكتو{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "دا{0}"
           },
@@ -1963,7 +1971,7 @@
             "unitPrefixPattern": "ه{0}"
           },
           "10p3": {
-            "unitPrefixPattern": "ك{0}"
+            "unitPrefixPattern": "كيلو{0}"
           },
           "10p6": {
             "unitPrefixPattern": "مغ{0}"
@@ -1984,51 +1992,47 @@
             "unitPrefixPattern": "زت{0}"
           },
           "10p24": {
-            "unitPrefixPattern": "يو{0}"
+            "unitPrefixPattern": "ي{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "رونا{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "كويتا.{0}"
           },
           "1024p1": {
-            "unitPrefixPattern": "كيبي{0}"
+            "unitPrefixPattern": "كيبي.{0}"
           },
           "1024p2": {
-            "unitPrefixPattern": "ميبي{0}"
+            "unitPrefixPattern": "ميبي.{0}"
           },
           "1024p3": {
-            "unitPrefixPattern": "غيبي{0}"
+            "unitPrefixPattern": "غيبي.{0}"
           },
           "1024p4": {
-            "unitPrefixPattern": "تيبي{0}"
+            "unitPrefixPattern": "تيبي.{0}"
           },
           "1024p5": {
-            "unitPrefixPattern": "بيبي{0}"
+            "unitPrefixPattern": "بيبي.{0}"
           },
           "1024p6": {
-            "unitPrefixPattern": "إكسبي{0}"
+            "unitPrefixPattern": "إكسبي.{0}"
           },
           "1024p7": {
-            "unitPrefixPattern": "زيبي{0}"
+            "unitPrefixPattern": "زيبي.{0}"
           },
           "1024p8": {
-            "unitPrefixPattern": "يوبي{0}"
+            "unitPrefixPattern": "يوبي.{0}"
           },
           "per": {
             "compoundUnitPattern": "{0}/{1}"
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
-            "compoundUnitPattern1-count-zero": "{0}²",
-            "compoundUnitPattern1-count-one": "{0}²",
-            "compoundUnitPattern1-count-two": "{0}²",
-            "compoundUnitPattern1-count-few": "{0}²",
-            "compoundUnitPattern1-count-many": "{0}²",
             "compoundUnitPattern1-count-other": "{0}²"
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
-            "compoundUnitPattern1-count-zero": "{0}³",
-            "compoundUnitPattern1-count-one": "{0}³",
-            "compoundUnitPattern1-count-two": "{0}³",
-            "compoundUnitPattern1-count-few": "{0}³",
-            "compoundUnitPattern1-count-many": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -2257,11 +2261,6 @@
           },
           "concentr-permyriad": {
             "displayName": "‱",
-            "unitPattern-count-zero": "{0}‱",
-            "unitPattern-count-one": "{0}‱",
-            "unitPattern-count-two": "{0}‱",
-            "unitPattern-count-few": "{0}‱",
-            "unitPattern-count-many": "{0}‱",
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
@@ -2762,7 +2761,7 @@
             "displayName": "نقطة/سم",
             "unitPattern-count-zero": "{0} نقطة/سم",
             "unitPattern-count-one": "{0} نقطة/سم",
-            "unitPattern-count-two": "{0} بكسل/سم",
+            "unitPattern-count-two": "{0} نقطتان/سم",
             "unitPattern-count-few": "{0} نقاط/سم",
             "unitPattern-count-many": "{0} نقطة/سم",
             "unitPattern-count-other": "{0} نقطة/سم"
@@ -2771,19 +2770,10 @@
             "displayName": "نقطة لكل بوصة",
             "unitPattern-count-zero": "{0} نقطة/بوصة",
             "unitPattern-count-one": "{0} نقطة/بوصة",
-            "unitPattern-count-two": "{0} بكسل/بوصة",
+            "unitPattern-count-two": "نقطة/بوصة",
             "unitPattern-count-few": "{0} نقاط/بوصة",
             "unitPattern-count-many": "{0} نقطة/بوصة",
             "unitPattern-count-other": "{0} نقطة/بوصة"
-          },
-          "graphics-dot": {
-            "displayName": "بكسل",
-            "unitPattern-count-zero": "{0} بكسل",
-            "unitPattern-count-one": "{0} بكسل",
-            "unitPattern-count-two": "{0} بكسل",
-            "unitPattern-count-few": "{0} بكسل",
-            "unitPattern-count-many": "{0} بكسل",
-            "unitPattern-count-other": "{0} بكسل"
           },
           "length-earth-radius": {
             "displayName": "نق أرضي",
@@ -2805,7 +2795,7 @@
             "perUnitPattern": "{0}/كم"
           },
           "length-meter": {
-            "displayName": "متر",
+            "displayName": "م",
             "unitPattern-count-zero": "{0} متر",
             "unitPattern-count-one": "متر",
             "unitPattern-count-two": "متران",
@@ -3343,13 +3333,17 @@
             "unitPattern-count-many": "{0} عقدة",
             "unitPattern-count-other": "{0} عقدة"
           },
+          "speed-beaufort": {
+            "displayName": "بوفورت",
+            "unitPattern-count-zero": "بوفورت {0}",
+            "unitPattern-count-one": "بوفورت {0}",
+            "unitPattern-count-two": "بوفورت {0}",
+            "unitPattern-count-few": "بوفورت {0}",
+            "unitPattern-count-many": "بوفورت {0}",
+            "unitPattern-count-other": "بوفورت {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
-            "unitPattern-count-zero": "{0}°",
-            "unitPattern-count-one": "{0}°",
-            "unitPattern-count-two": "{0}°",
-            "unitPattern-count-few": "{0}°",
-            "unitPattern-count-many": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
@@ -3456,7 +3450,7 @@
           "volume-cubic-inch": {
             "displayName": "بوصة مكعبة",
             "unitPattern-count-zero": "{0} بوصة³",
-            "unitPattern-count-one": "{0} بوصة مكعبة",
+            "unitPattern-count-one": "{0} بوصة³",
             "unitPattern-count-two": "{0} بوصة³",
             "unitPattern-count-few": "{0} بوصة³",
             "unitPattern-count-many": "{0} بوصة³",
@@ -3747,6 +3741,12 @@
           "10p-24": {
             "unitPrefixPattern": "يك{0}"
           },
+          "10p-27": {
+            "unitPrefixPattern": "ر{0}"
+          },
+          "10p-30": {
+            "unitPrefixPattern": "كويكتو.{0}"
+          },
           "10p1": {
             "unitPrefixPattern": "دا{0}"
           },
@@ -3775,51 +3775,47 @@
             "unitPrefixPattern": "زت{0}"
           },
           "10p24": {
-            "unitPrefixPattern": "يو{0}"
+            "unitPrefixPattern": "ي{0}"
+          },
+          "10p27": {
+            "unitPrefixPattern": "رونا.{0}"
+          },
+          "10p30": {
+            "unitPrefixPattern": "كويتا.{0}"
           },
           "1024p1": {
-            "unitPrefixPattern": "كيبي{0}"
+            "unitPrefixPattern": "كيبي.{0}"
           },
           "1024p2": {
-            "unitPrefixPattern": "ميبي{0}"
+            "unitPrefixPattern": "ميبي.{0}"
           },
           "1024p3": {
-            "unitPrefixPattern": "غيبي{0}"
+            "unitPrefixPattern": "غيبي.{0}"
           },
           "1024p4": {
-            "unitPrefixPattern": "تيبي{0}"
+            "unitPrefixPattern": "تيبي.{0}"
           },
           "1024p5": {
-            "unitPrefixPattern": "بيبي{0}"
+            "unitPrefixPattern": "بيبي.{0}"
           },
           "1024p6": {
-            "unitPrefixPattern": "إكسبي{0}"
+            "unitPrefixPattern": "إكسبي.{0}"
           },
           "1024p7": {
-            "unitPrefixPattern": "زيبي{0}"
+            "unitPrefixPattern": "زيبي.{0}"
           },
           "1024p8": {
-            "unitPrefixPattern": "يوبي{0}"
+            "unitPrefixPattern": "يوبي.{0}"
           },
           "per": {
             "compoundUnitPattern": "{0}/{1}"
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
-            "compoundUnitPattern1-count-zero": "{0}²",
-            "compoundUnitPattern1-count-one": "{0}²",
-            "compoundUnitPattern1-count-two": "{0}²",
-            "compoundUnitPattern1-count-few": "{0}²",
-            "compoundUnitPattern1-count-many": "{0}²",
             "compoundUnitPattern1-count-other": "{0}²"
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
-            "compoundUnitPattern1-count-zero": "{0}³",
-            "compoundUnitPattern1-count-one": "{0}³",
-            "compoundUnitPattern1-count-two": "{0}³",
-            "compoundUnitPattern1-count-few": "{0}³",
-            "compoundUnitPattern1-count-many": "{0}³",
             "compoundUnitPattern1-count-other": "{0}³"
           },
           "times": {
@@ -4218,7 +4214,7 @@
             "unitPattern-count-other": "{0} عقد"
           },
           "duration-year": {
-            "displayName": "سنة",
+            "displayName": "سنوات",
             "unitPattern-count-zero": "{0} سنة",
             "unitPattern-count-one": "سنة",
             "unitPattern-count-two": "سنتان",
@@ -4559,22 +4555,13 @@
             "unitPattern-count-other": "{0} ن/سم"
           },
           "graphics-dot-per-inch": {
-            "displayName": "ن/بوصة",
+            "displayName": "نقطة لكل بوصة",
             "unitPattern-count-zero": "{0} ن/بوصة",
             "unitPattern-count-one": "{0} ن/بوصة",
             "unitPattern-count-two": "{0} ن/بوصة",
             "unitPattern-count-few": "{0} ن/بوصة",
             "unitPattern-count-many": "{0} ن/بوصة",
             "unitPattern-count-other": "{0} ن/بوصة"
-          },
-          "graphics-dot": {
-            "displayName": "بكسل",
-            "unitPattern-count-zero": "{0} بكسل",
-            "unitPattern-count-one": "{0} بكسل",
-            "unitPattern-count-two": "{0} بكسل",
-            "unitPattern-count-few": "{0} بكسل",
-            "unitPattern-count-many": "{0} بكسل",
-            "unitPattern-count-other": "{0} بكسل"
           },
           "length-earth-radius": {
             "displayName": "نق أرضي",
@@ -4673,7 +4660,7 @@
             "displayName": "ياردة",
             "unitPattern-count-zero": "{0} ياردة",
             "unitPattern-count-one": "{0} ياردة",
-            "unitPattern-count-two": "ياردتان",
+            "unitPattern-count-two": "{0} ياردة",
             "unitPattern-count-few": "{0} ياردة",
             "unitPattern-count-many": "{0} ياردة",
             "unitPattern-count-other": "{0} ياردة"
@@ -4682,8 +4669,8 @@
             "displayName": "قدم",
             "unitPattern-count-zero": "{0} قدم",
             "unitPattern-count-one": "قدم",
-            "unitPattern-count-two": "قدمان",
-            "unitPattern-count-few": "{0} أقدام",
+            "unitPattern-count-two": "{0} قدم",
+            "unitPattern-count-few": "{0} قدم",
             "unitPattern-count-many": "{0} قدمًا",
             "unitPattern-count-other": "{0} قدم",
             "perUnitPattern": "{0}/قدم"
@@ -4692,8 +4679,8 @@
             "displayName": "بوصة",
             "unitPattern-count-zero": "{0} بوصة",
             "unitPattern-count-one": "{0} بوصة",
-            "unitPattern-count-two": "{0} بوصة",
-            "unitPattern-count-few": "{0} بوصة",
+            "unitPattern-count-two": "بوصتان",
+            "unitPattern-count-few": "{0} بوصات",
             "unitPattern-count-many": "{0} بوصة",
             "unitPattern-count-other": "{0} بوصة",
             "perUnitPattern": "{0}/بوصة"
@@ -5120,9 +5107,9 @@
             "displayName": "ميل/س",
             "unitPattern-count-zero": "{0} ميل/س",
             "unitPattern-count-one": "{0} ميل/س",
-            "unitPattern-count-two": "{0} ميل/س",
-            "unitPattern-count-few": "{0} ميل/س",
-            "unitPattern-count-many": "{0} ميل/س",
+            "unitPattern-count-two": "ميلان/س",
+            "unitPattern-count-few": "{0} أميال/س",
+            "unitPattern-count-many": "{0} ميلًا/س",
             "unitPattern-count-other": "{0} ميل/س"
           },
           "speed-knot": {
@@ -5134,13 +5121,17 @@
             "unitPattern-count-many": "{0} عقدة",
             "unitPattern-count-other": "{0} عقدة"
           },
+          "speed-beaufort": {
+            "displayName": "بوفورت",
+            "unitPattern-count-zero": "بوفورت {0}",
+            "unitPattern-count-one": "بوفورت {0}",
+            "unitPattern-count-two": "بوفورت {0}",
+            "unitPattern-count-few": "بوفورت {0}",
+            "unitPattern-count-many": "بوفورت {0}",
+            "unitPattern-count-other": "بوفورت {0}"
+          },
           "temperature-generic": {
             "displayName": "°",
-            "unitPattern-count-zero": "{0}°",
-            "unitPattern-count-one": "{0}°",
-            "unitPattern-count-two": "{0}°",
-            "unitPattern-count-few": "{0}°",
-            "unitPattern-count-many": "{0}°",
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
@@ -5395,7 +5386,7 @@
             "displayName": "أونصة س",
             "unitPattern-count-zero": "{0} أونصة س",
             "unitPattern-count-one": "أونصة س",
-            "unitPattern-count-two": "أونصتان سائلتان",
+            "unitPattern-count-two": "{0} أونصة س",
             "unitPattern-count-few": "{0} أونصة س",
             "unitPattern-count-many": "{0} أونصة س",
             "unitPattern-count-other": "{0} أونصة س"

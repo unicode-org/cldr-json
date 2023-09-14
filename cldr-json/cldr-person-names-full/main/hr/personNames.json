@@ -3,7 +3,7 @@
     "hr": {
       "identity": {
         "version": {
-          "_cldrVersion": "43"
+          "_cldrVersion": "44"
         },
         "language": "hr"
       },
@@ -13,11 +13,15 @@
           "hr"
         ],
         "surnameFirst": [
+          "ja",
           "ko",
           "vi",
           "yue",
           "zh"
         ],
+        "formality": "formal",
+        "length": "medium",
+        "nativeSpaceReplacement": " ",
         "foreignSpaceReplacement": " ",
         "initial": "{0}.",
         "initialSequence": "{0} {1}",
@@ -25,7 +29,7 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{title} {given} {given2} {surname} {surname2}, {credentials}",
+                "formal": "{title} {given} {given2} {surname} {generation}, {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
@@ -69,7 +73,7 @@
           "surnameFirst": {
             "long": {
               "referring": {
-                "formal": "{surname} {surname2} {title} {given} {given2}, {credentials}",
+                "formal": "{surname}, {title} {given} {given2} {generation}, {credentials}",
                 "informal": "{surname}, {given-informal}"
               },
               "addressing": {
@@ -83,7 +87,7 @@
             },
             "medium": {
               "referring": {
-                "formal": "{title} {surname} {surname2} {given} {given2}, {credentials}",
+                "formal": "{surname}, {given} {given2-initial} {generation}, {credentials}",
                 "informal": "{surname}, {given-informal}"
               },
               "addressing": {
