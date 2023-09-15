@@ -40,7 +40,7 @@ Make sure your `cldr-json` directory is otherwise clean (`git status`)
 (dry run) publishing to npm under the `beta` tag. Check the version carefully!
 
 ```shell
-(cd cldr-json; for repo in $(ls); do (cd $repo; npm publish --tag beta --dry-run); done)
+(cd cldr-json; npm login; for repo in $(ls); do (cd $repo; npm publish --tag beta --dry-run); done)
 ```
 
 ### Customization
