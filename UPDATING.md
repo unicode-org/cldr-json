@@ -34,7 +34,7 @@ Make sure your `cldr-json` directory is otherwise clean (`git status`)
 
 ### Publishing
 
-1. Edit the file `cldr-config.sh` and set `VERSION` appropriately; for example, `VERSION="44.0.0-ALPHA2"`.
+1. Create the file `local-config.sh`, make it executable, and set `VERSION` appropriately; for example, `VERSION="44.0.0-ALPHA2"`.
 2. Run the script `cldr-generate-zip.sh` to generate zipfiles under `dist/`; their names will include `VERSION`, for example: `cldr-44.0.0-ALPHA2-json-full.zip`.
 3. Create a release tag matching VERSION in this repository.  Create a GitHub release, use other [releases](https://github.com/unicode-org/cldr-json/releases) as a guide.
 4. Update the npm packages. Each sub-subdirectory of `cldr-json/cldr-json` is a separate npm package. The following script will preview
