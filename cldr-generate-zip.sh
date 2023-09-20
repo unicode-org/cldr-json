@@ -1,6 +1,6 @@
 #!/bin/bash
 # 
-#     Copyright © 1991-2020 Unicode, Inc. All rights reserved. Distributed under
+#     Copyright © 1991-2023 Unicode, Inc. All rights reserved. Distributed under
 # the Terms of Use in http://www.unicode.org/copyright.html.
 #
 # Creates JSON data under ./cldr-json in this directory.
@@ -10,6 +10,12 @@ if [ -x ./local-config.sh ];
 then
     echo "Using local-config.sh"
     . ./local-config.sh
+fi
+
+if [[ -z "$VERSION" ]];
+then
+    echo "VERSION is undefined, exiting from $0"
+    exit 1
 fi
 
 set -x
