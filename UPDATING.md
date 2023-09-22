@@ -16,6 +16,7 @@ Check out repos (If you use a different directory layout, see Customization)
 1. Check out this repo [`cldr-json`](https://github.com/unicode-org/cldr-json). (Note: Big.)
 2. Check out the [`cldr-staging`](https://github.com/unicode-org/cldr-staging) repo as a sibling to cldr-json. This will be the data source. (Note: Very big.) Use a release tag if possible.
 3. Check out the [`cldr`](https://github.com/unicode-org/cldr) repo as a sibling to cldr-json and set it up so [maven builds are possible](https://cldr.unicode.org/development/maven).
+4. Create the file `local-config.sh`, make it executable, and set `VERSION` appropriately; for example, `VERSION="44.0.0-ALPHA2"`.
 
 Make sure your `cldr-json` directory is otherwise clean (`git status`)
 
@@ -34,10 +35,9 @@ Make sure your `cldr-json` directory is otherwise clean (`git status`)
 
 ### Publishing
 
-1. Create the file `local-config.sh`, make it executable, and set `VERSION` appropriately; for example, `VERSION="44.0.0-ALPHA2"`.
-2. Run the script `cldr-generate-zip.sh` to generate zipfiles under `dist/`; their names will include `VERSION`, for example: `cldr-44.0.0-ALPHA2-json-full.zip`.
-3. Create a release tag matching VERSION in this repository.  Create a GitHub release, use other [releases](https://github.com/unicode-org/cldr-json/releases) as a guide.
-4. Update the npm packages. Each sub-subdirectory of `cldr-json/cldr-json` is a separate npm package. The following script will preview
+1. Run the script `cldr-generate-zip.sh` to generate zipfiles under `dist/`; their names will include `VERSION`, for example: `cldr-44.0.0-ALPHA2-json-full.zip`.
+2. Create a release tag matching VERSION in this repository.  Create a GitHub release, use other [releases](https://github.com/unicode-org/cldr-json/releases) as a guide.
+3. Update the npm packages. Each sub-subdirectory of `cldr-json/cldr-json` is a separate npm package. The following script will preview
 (dry run) publishing to npm under the `beta` tag. Check the version carefully!
 
 ```shell
@@ -46,7 +46,7 @@ Make sure your `cldr-json` directory is otherwise clean (`git status`)
   - `npm login` is needed, otherwise a dry run may seem to succeed but without `--dry-run` there may be a mysterious error message such as `npm ERR! 404  'cldr-annotations-derived-full@44.0.0' is not in this registry.`
   - `--tag` should be followed by `alpha`, `beta`, or `latest`. It should NOT be followed by a full tag such as `44.0.0-ALPHA2` since that would result in `npm ERR! Tag name must not be a valid SemVer range: 44.0.0-ALPHA2`.
 
-5. Upload the zipfiles from `dist/` to the release page, by dragging and dropping them where it says "Attach binaries by dropping them here or selecting them."
+4. Upload the zipfiles from `dist/` to the release page, by dragging and dropping them where it says "Attach binaries by dropping them here or selecting them."
 
 ### Customization
 
