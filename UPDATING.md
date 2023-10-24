@@ -33,6 +33,13 @@ Make sure your `cldr-json` directory is otherwise clean (`git status`)
 - If a `cldr-json/supplemental` or `cldr-json/other` or other such subdirectory shows up not prefixed with `cldr-`, there's probably something wrong with the `cldr-json` mapping.
   - Sadly, there is no documentation about how to update the tooling. TODO: [CLDR-16445](https://unicode-org.atlassian.net/browse/CLDR-16445)
 
+### Updating the Repository
+
+1. Run `git checkout -b ...` to create a new branch.
+2. Run `git status` to check whether there are any newly added files/directories such as for new locales.
+3. If there are newly added files, and they are all appropriate to add, run `git add cldr-json` to add the entire nested `cldr-json` subdirectory.
+4. Make a pull request (`git commit ...`, `git push`, ...), get it approved, and merge it.
+
 ### Publishing
 
 1. Run the script `cldr-generate-zip.sh` to generate zipfiles under `dist/`; their names will include `VERSION`, for example: `cldr-44.0.0-ALPHA2-json-full.zip`.
