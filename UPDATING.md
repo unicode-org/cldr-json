@@ -36,8 +36,8 @@ Make sure your `cldr-json` directory is otherwise clean (`git status`)
 ### Updating the Repository
 
 1. Run `git checkout -b ...` to create a new branch.
-2. Run `git status` to check whether there are any newly added files/directories such as for new locales.
-3. If there are newly added files, and they are all appropriate to add, run `git add cldr-json` to add the entire nested `cldr-json` subdirectory.
+2. Run `git status` to check whether there are any newly added files/directories such as for new locales, or removed files/directories.  If you see any files or directories named `other…`, stop, because there's a generation problem.
+3. Run `git add cldr-json` to add the entire nested `cldr-json` subdirectory.
 4. Make a pull request (`git commit ...`, `git push`, ...), get it approved, and merge it.
 
 ### Publishing
