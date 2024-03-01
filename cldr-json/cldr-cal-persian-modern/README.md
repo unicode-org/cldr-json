@@ -2,7 +2,7 @@
 
 CLDR data for Persian calendars.
 
-This package contains only the set of locales listed as modern coverage. See also the `cldr-cal-persian-full` package.
+**Deprecated** This package contains only the set of locales listed as modern coverage. Use `cldr-cal-persian-full` and locale coverage data instead. The -modern packages are scheduled to be removed in v46, see [CLDR-16465](https://unicode-org.atlassian.net/browse/CLDR-16465).
 
 
 [![NPM version](https://img.shields.io/npm/v/cldr-cal-persian-modern.svg?style=flat)](https://www.npmjs.org/package/cldr-cal-persian-modern)
@@ -24,6 +24,6 @@ the data contained here, please file a new ticket at [Unicode Jira](https://unic
 Copyright © 1991-2024 Unicode, Inc.
 [Terms of Use](http://www.unicode.org/copyright.html)
 
-SPDX-License-Identifier: Unicode-DFS-2016
+SPDX-License-Identifier: Unicode-3.0
 
 A copy of the license is included as [LICENSE](./LICENSE).

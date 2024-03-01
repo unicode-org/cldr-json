@@ -24,6 +24,6 @@ the data contained here, please file a new ticket at [Unicode Jira](https://unic
 Copyright © 1991-2024 Unicode, Inc.
 [Terms of Use](http://www.unicode.org/copyright.html)
 
-SPDX-License-Identifier: Unicode-DFS-2016
+SPDX-License-Identifier: Unicode-3.0
 
 A copy of the license is included as [LICENSE](./LICENSE).
