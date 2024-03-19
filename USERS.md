@@ -17,6 +17,7 @@ Also see the main list of CLDR users on <http://cldr.unicode.org>
 - [rspeer/langcodes](https://github.com/rspeer/langcodes)
 - [eemeli/make-plural](https://github.com/eemeli/make-plural) (transpiles the plural category rules to JavaScript)
 - [unicode.org/icu4x](https://github.com/unicode-org/icu4x)
+- [GrammAcc/linearmoney](https://github.com/GrammAcc/linearmoney)
 
 ### Licenses
 
