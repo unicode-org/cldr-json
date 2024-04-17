@@ -9,7 +9,7 @@ Although XML (not JSON) is the "official" format for all CLDR data, this data is
 corresponding XML, using the CLDR tooling.
 
 This JSON data is generated using only data that has achieved
-`draft="contributed"` or `draft="approved"` status in the CLDR. This is the same threshhold
+`draft="contributed"` or `draft="approved"` status in the CLDR. This is the same threshold
 as is used by the [ICU](https://icu.unicode.org) (International Components for Unicode).
 
 See [UPDATING.md](./UPDATING.md) for details on building or customizing this data yourself.
@@ -24,7 +24,7 @@ which use this data.
 Because the CLDR is so large and contains so many different types of information, the JSON data
 here is grouped into packages by functionality. For each type of functionality, there are two
 available packages: The "modern" packages, which contain the set of locales listed as modern
-coverage targets by the CLDR subcomittee, and the "full" packages, which contain the complete
+coverage targets by the CLDR subcommittee, and the "full" packages, which contain the complete
 set of locales, including those in the corresponding modern packages.
 
 See [PACKAGES.md](./PACKAGES.md) for the full package list.
