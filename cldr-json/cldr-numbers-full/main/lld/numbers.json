@@ -1,0 +1,155 @@
+{
+  "main": {
+    "lld": {
+      "identity": {
+        "language": "lld"
+      },
+      "numbers": {
+        "defaultNumberingSystem": "latn",
+        "otherNumberingSystems": {
+          "native": "latn"
+        },
+        "minimumGroupingDigits": "1",
+        "symbols-numberSystem-latn": {
+          "decimal": ",",
+          "group": ".",
+          "list": ";",
+          "percentSign": "%",
+          "plusSign": "+",
+          "minusSign": "-",
+          "approximatelySign": "~",
+          "exponential": "E",
+          "superscriptingExponent": "×",
+          "perMille": "‰",
+          "infinity": "∞",
+          "nan": "NaN",
+          "timeSeparator": ":"
+        },
+        "decimalFormats-numberSystem-latn": {
+          "standard": "#,##0.###",
+          "long": {
+            "decimalFormat": {
+              "1000-count-one": "mile",
+              "1000-count-other": "0 mile",
+              "10000-count-one": "00 mile",
+              "10000-count-other": "00 mile",
+              "100000-count-one": "000 mile",
+              "100000-count-other": "000 mile",
+              "1000000-count-one": "0 miliun",
+              "1000000-count-other": "0 miliuns",
+              "10000000-count-one": "00 miliuns",
+              "10000000-count-other": "00 miliuns",
+              "100000000-count-one": "000 miliuns",
+              "100000000-count-other": "000 miliuns",
+              "1000000000-count-one": "0 miliard",
+              "1000000000-count-other": "0 miliarg",
+              "10000000000-count-one": "00 miliarg",
+              "10000000000-count-other": "00 miliarg",
+              "100000000000-count-one": "000 miliarg",
+              "100000000000-count-other": "000 miliarg",
+              "1000000000000-count-one": "0 biliun",
+              "1000000000000-count-other": "0 biliuns",
+              "10000000000000-count-one": "00 biliuns",
+              "10000000000000-count-other": "00 biliuns",
+              "100000000000000-count-one": "000 biliuns",
+              "100000000000000-count-other": "000 biliuns"
+            }
+          },
+          "short": {
+            "decimalFormat": {
+              "1000-count-one": "0m",
+              "1000-count-other": "0m",
+              "10000-count-one": "00m",
+              "10000-count-other": "00m",
+              "100000-count-one": "000m",
+              "100000-count-other": "000m",
+              "1000000-count-one": "0 Mln",
+              "1000000-count-other": "0 Mln",
+              "10000000-count-one": "00 Mln",
+              "10000000-count-other": "00 Mln",
+              "100000000-count-one": "000 Mln",
+              "100000000-count-other": "000 Mln",
+              "1000000000-count-one": "0 Mlg",
+              "1000000000-count-other": "0 Mlg",
+              "10000000000-count-one": "00 Mlg",
+              "10000000000-count-other": "00 Mlg",
+              "100000000000-count-one": "000 Mlg",
+              "100000000000-count-other": "000 Mlg",
+              "1000000000000-count-one": "0 Bln",
+              "1000000000000-count-other": "0 Bln",
+              "10000000000000-count-one": "00 Bln",
+              "10000000000000-count-other": "00 Bln",
+              "100000000000000-count-one": "000 Bln",
+              "100000000000000-count-other": "000 Bln"
+            }
+          }
+        },
+        "scientificFormats-numberSystem-latn": {
+          "standard": "#E0"
+        },
+        "percentFormats-numberSystem-latn": {
+          "standard": "#,##0%"
+        },
+        "currencyFormats-numberSystem-latn": {
+          "currencySpacing": {
+            "beforeCurrency": {
+              "currencyMatch": "[[:^S:]&[:^Z:]]",
+              "surroundingMatch": "[:digit:]",
+              "insertBetween": " "
+            },
+            "afterCurrency": {
+              "currencyMatch": "[[:^S:]&[:^Z:]]",
+              "surroundingMatch": "[:digit:]",
+              "insertBetween": " "
+            }
+          },
+          "standard": "#,##0.00 ¤",
+          "standard-noCurrency": "#,##0.00",
+          "accounting": "#,##0.00 ¤",
+          "accounting-noCurrency": "#,##0.00",
+          "short": {
+            "standard": {
+              "1000-count-one": "0m ¤",
+              "1000-count-other": "0m ¤",
+              "10000-count-one": "00m ¤",
+              "10000-count-other": "00m ¤",
+              "100000-count-one": "000m ¤",
+              "100000-count-other": "000m ¤",
+              "1000000-count-one": "0 Mln ¤",
+              "1000000-count-other": "0 Mln ¤",
+              "10000000-count-one": "00 Mln ¤",
+              "10000000-count-other": "00 Mln ¤",
+              "100000000-count-one": "000 Mln ¤",
+              "100000000-count-other": "000 Mln ¤",
+              "1000000000-count-one": "0 Mlg ¤",
+              "1000000000-count-other": "0 Mlg ¤",
+              "10000000000-count-one": "00 Mlg ¤",
+              "10000000000-count-other": "00 Mlg ¤",
+              "100000000000-count-one": "000 Mlg ¤",
+              "100000000000-count-other": "000 Mlg ¤",
+              "1000000000000-count-one": "0 Bln ¤",
+              "1000000000000-count-other": "0 Bln ¤",
+              "10000000000000-count-one": "00 Bln ¤",
+              "10000000000000-count-other": "00 Bln ¤",
+              "100000000000000-count-one": "000 Bln ¤",
+              "100000000000000-count-other": "000 Bln ¤"
+            }
+          },
+          "currencyPatternAppendISO": "{0} ¤¤",
+          "unitPattern-count-other": "{0} {1}"
+        },
+        "miscPatterns-numberSystem-latn": {
+          "approximately": "~{0}",
+          "atLeast": "≥{0}",
+          "atMost": "≤{0}",
+          "range": "{0}–{1}"
+        },
+        "minimalPairs": {
+          "pluralMinimalPairs-count-one": "{0} de",
+          "pluralMinimalPairs-count-other": "{0} dis",
+          "other": "Té la {0} a man dërta."
+        }
+      }
+    }
+  }
+}

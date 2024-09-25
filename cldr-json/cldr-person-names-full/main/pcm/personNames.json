@@ -2,9 +2,6 @@
   "main": {
     "pcm": {
       "identity": {
-        "version": {
-          "_cldrVersion": "45"
-        },
         "language": "pcm"
       },
       "personNames": {
@@ -26,7 +23,7 @@
         "nativeSpaceReplacement": " ",
         "foreignSpaceReplacement": " ",
         "initial": "{0}.",
-        "initialSequence": "{0} {1}",
+        "initialSequence": "{0}{1}",
         "personName": {
           "givenFirst": {
             "long": {
@@ -59,7 +56,7 @@
             },
             "short": {
               "referring": {
-                "formal": "{given-initial} {given2-initial} {surname}",
+                "formal": "{given-initial}{given2-initial} {surname}",
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
@@ -103,7 +100,7 @@
             },
             "short": {
               "referring": {
-                "formal": "{surname} {given-initial} {given2-initial}",
+                "formal": "{surname} {given-initial}{given2-initial}",
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
@@ -131,7 +128,7 @@
             },
             "short": {
               "referring": {
-                "formal": "{surname}, {given-initial} {given2-initial}",
+                "formal": "{surname-core}, {given-initial}{given2-initial} {surname-prefix}",
                 "informal": "{surname}, {given-informal}"
               }
             }
