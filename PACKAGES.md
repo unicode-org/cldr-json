@@ -111,6 +111,11 @@
  - Text Segmentation data
  - [![NPM version](https://img.shields.io/npm/v/cldr-segments-full.svg?style=flat)](https://www.npmjs.org/package/cldr-segments-full)
 
+### [cldr-transforms-full](./cldr-json/cldr-transforms-full/)
+
+ - Transform data
+ - [![NPM version](https://img.shields.io/npm/v/cldr-transforms-full.svg?style=flat)](https://www.npmjs.org/package/cldr-transforms-full)
+
 ### [cldr-units-full](./cldr-json/cldr-units-full/)
 
  - Data for units formatting.
