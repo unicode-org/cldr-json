@@ -2,9 +2,6 @@
   "main": {
     "vec": {
       "identity": {
-        "version": {
-          "_cldrVersion": "45"
-        },
         "language": "vec"
       },
       "numbers": {
@@ -32,34 +29,58 @@
           "standard": "#,##0.###",
           "long": {
             "decimalFormat": {
-              "1000-count-other": "0K",
-              "10000-count-other": "00K",
-              "100000-count-other": "000K",
-              "1000000-count-other": "0M",
-              "10000000-count-other": "00M",
-              "100000000-count-other": "000M",
-              "1000000000-count-other": "0G",
-              "10000000000-count-other": "00G",
-              "100000000000-count-other": "000G",
-              "1000000000000-count-other": "0T",
-              "10000000000000-count-other": "00T",
-              "100000000000000-count-other": "000T"
+              "1000-count-one": "mile",
+              "1000-count-other": "0 mila",
+              "10000-count-one": "00 mila",
+              "10000-count-other": "00 mila",
+              "100000-count-one": "000 mila",
+              "100000-count-other": "000 mila",
+              "1000000-count-one": "0 milion",
+              "1000000-count-other": "0 milioni",
+              "10000000-count-one": "00 milioni",
+              "10000000-count-other": "00 milioni",
+              "100000000-count-one": "000 milioni",
+              "100000000-count-other": "000 milioni",
+              "1000000000-count-one": "0 miliardo",
+              "1000000000-count-other": "0 miliardi",
+              "10000000000-count-one": "00 miliardi",
+              "10000000000-count-other": "00 miliardi",
+              "100000000000-count-one": "000 miliardi",
+              "100000000000-count-other": "000 miliardi",
+              "1000000000000-count-one": "0 bilion",
+              "1000000000000-count-other": "0 bilioni",
+              "10000000000000-count-one": "00 bilioni",
+              "10000000000000-count-other": "00 bilioni",
+              "100000000000000-count-one": "000 bilioni",
+              "100000000000000-count-other": "000 bilioni"
             }
           },
           "short": {
             "decimalFormat": {
-              "1000-count-other": "0K",
-              "10000-count-other": "00K",
-              "100000-count-other": "000K",
-              "1000000-count-other": "0M",
-              "10000000-count-other": "00M",
-              "100000000-count-other": "000M",
-              "1000000000-count-other": "0G",
-              "10000000000-count-other": "00G",
-              "100000000000-count-other": "000G",
-              "1000000000000-count-other": "0T",
-              "10000000000000-count-other": "00T",
-              "100000000000000-count-other": "000T"
+              "1000-count-one": "0",
+              "1000-count-other": "0 mila",
+              "10000-count-one": "00 mila",
+              "10000-count-other": "00 mila",
+              "100000-count-one": "000 mila",
+              "100000-count-other": "000 mila",
+              "1000000-count-one": "0 mln",
+              "1000000-count-other": "0 mln",
+              "10000000-count-one": "00 mln",
+              "10000000-count-other": "00 mln",
+              "100000000-count-one": "000 mln",
+              "100000000-count-other": "000 mln",
+              "1000000000-count-one": "0 mld",
+              "1000000000-count-other": "0 mld",
+              "10000000000-count-one": "00 mld",
+              "10000000000-count-other": "00 mld",
+              "100000000000-count-one": "000 mld",
+              "100000000000-count-other": "000 mld",
+              "1000000000000-count-one": "0 bln",
+              "1000000000000-count-other": "0 bln",
+              "10000000000000-count-one": "00 bln",
+              "10000000000000-count-other": "00 bln",
+              "100000000000000-count-one": "000 bln",
+              "100000000000000-count-other": "000 bln"
             }
           }
         },
@@ -88,22 +109,34 @@
           "accounting-noCurrency": "#,##0.00",
           "short": {
             "standard": {
-              "1000-count-other": "¤ 0K",
-              "10000-count-other": "¤ 00K",
-              "100000-count-other": "¤ 000K",
-              "1000000-count-other": "¤ 0M",
-              "10000000-count-other": "¤ 00M",
-              "100000000-count-other": "¤ 000M",
-              "1000000000-count-other": "¤ 0G",
-              "10000000000-count-other": "¤ 00G",
-              "100000000000-count-other": "¤ 000G",
-              "1000000000000-count-other": "¤ 0T",
-              "10000000000000-count-other": "¤ 00T",
-              "100000000000000-count-other": "¤ 000T"
+              "1000-count-one": "0",
+              "1000-count-other": "0",
+              "10000-count-one": "0",
+              "10000-count-other": "0",
+              "100000-count-one": "0",
+              "100000-count-other": "0",
+              "1000000-count-one": "0 mln ¤",
+              "1000000-count-other": "0 mln ¤",
+              "10000000-count-one": "00 mln ¤",
+              "10000000-count-other": "00 mln ¤",
+              "100000000-count-one": "000 mln ¤",
+              "100000000-count-other": "000 mln ¤",
+              "1000000000-count-one": "0 mld ¤",
+              "1000000000-count-other": "0 mld ¤",
+              "10000000000-count-one": "00 mld ¤",
+              "10000000000-count-other": "00 mld ¤",
+              "100000000000-count-one": "000 mld ¤",
+              "100000000000-count-other": "000 mld ¤",
+              "1000000000000-count-one": "0 bln ¤",
+              "1000000000000-count-other": "0 bln ¤",
+              "10000000000000-count-one": "00 bln ¤",
+              "10000000000000-count-other": "00 bln ¤",
+              "100000000000000-count-one": "000 bln ¤",
+              "100000000000000-count-other": "000 bln ¤"
             }
           },
           "currencyPatternAppendISO": "{0} ¤¤",
-          "unitPattern-count-one": "{0} {1}",
+          "unitPattern-count-one": "{0} {1}",
           "unitPattern-count-other": "{0} {1}"
         },
         "miscPatterns-numberSystem-latn": {

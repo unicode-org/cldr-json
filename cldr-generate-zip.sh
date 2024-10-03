@@ -20,8 +20,8 @@ fi
 
 set -x
 ( cd ${OUT} && cp ../LICENSE LICENSE )
-( cd ${OUT} && zip -r cldr-${VERSION}-json-full.zip LICENSE cldr-core cldr-rbnf cldr-*-full cldr-bcp47 )
-( cd ${OUT} && zip -r cldr-${VERSION}-json-modern.zip LICENSE cldr-core cldr-rbnf cldr-*-modern cldr-bcp47 )
+( cd ${OUT} && zip -r cldr-${VERSION}-json-full.zip LICENSE cldr-core cldr-rbnf cldr-*-full cldr-bcp47 cldr-transforms )
+#( cd ${OUT} && zip -r cldr-${VERSION}-json-modern.zip LICENSE cldr-core cldr-rbnf cldr-*-modern cldr-bcp47 cldr-transforms )
 ( cd ${OUT} && rm LICENSE )
 
 mv -v ${OUT}/*.zip ${DIST}/
