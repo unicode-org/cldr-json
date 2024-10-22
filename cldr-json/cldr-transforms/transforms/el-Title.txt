@@ -1,4 +1,3 @@
-
 ::NFD();
 # Remove \0301 following Greek, with possible intervening 0308 marks.
 # [[:Greek:] & [:Ll:]] [\u0308]? { \u0301 → ;
@@ -9,4 +8,3 @@
 # Otherwise all lowercase go to upper (titlecase stay as is)
 ([:Lowercase:]) → &Any-Title($1) ;
 ::NFC();
-

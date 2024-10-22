@@ -1,4 +1,3 @@
-
 # Copyright (C) 2011-2013, Apple Inc. and others. All Rights Reserved.
 # Remove \0301 following Greek, with possible intervening 0308 marks.
 ::NFD();
@@ -8,4 +7,3 @@
 [:Greek:] [^[:ccc=Not_Reordered:][:ccc=Iota_Subscript:]]*? { \u0345 → ;
 ::NFC();
 ::Any-Upper();
-

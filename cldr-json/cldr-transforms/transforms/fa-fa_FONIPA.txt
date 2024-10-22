@@ -1,4 +1,3 @@
-
 [\u200c \u200d] → ;  # Strip off ZWJ and ZWNJ.
 ::NFD;
 # Rewrite similarly-looking Arabic letters to Persian.
@@ -104,4 +103,3 @@ $BOUNDARY {و} $BOUNDARY → va;
 ([$IPA_CONSONANT|$VOWEL]){ّ} → $1;
 [ ّ ٔ ً ٰ ] → ;
 ::NFC;
-
