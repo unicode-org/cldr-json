@@ -87,7 +87,7 @@ jobs:
                 rm -rf cldr-json
                 echo "::endgroup::"
                 echo "::group::Build"
-                bash cldr-generate-json.sh
+                bash MVN_OPTS="-s cldr/.github/workflows/mvn-settings.xml" cldr-generate-json.sh
                 echo "::endgroup::"
                 echo "::group::Status"
                 git status || true
