@@ -96,6 +96,8 @@ jobs:
                 bash cldr-generate-zip.sh
                 cp PACKAGES.md dist/
                 echo "::endgroup::"
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - name: Upload dist
               uses: actions/upload-artifact@v4
               with:
