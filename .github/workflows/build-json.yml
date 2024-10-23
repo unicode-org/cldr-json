@@ -1,0 +1,62 @@
+name: build-json
+
+on:
+  workflow_dispatch:
+    inputs:
+        git-ref:
+            description: Git Ref to build (Optional)
+            required: false
+        version:
+            description: Package Version (e.g. 46.0.0 or 46.0.0-BETA2 )
+            required: true
+        cldr-repo:
+            description: CLDR (tool) repo to use
+            required: true
+            default: 'unicode-org/cldr'
+        cldr-ref:
+            description: 'CLDR (tool) ref/tag/branch to use'
+            required: true
+            default: 'main'
+        data-repo:
+            description: Data (staging) repo to use
+            required: true
+            default: 'unicode-org/cldr-staging'
+        data-ref:
+            description: 'Data (staging) ref/tag/branch to use'
+            required: true
+            default: 'main'
+        data-dir:
+            description: 'Path in Data repo'
+            required: true
+            default: 'production/'
+
+jobs:
+    build:
+        name: Build cldr-json
+        runs-on: ubuntu-latest
+        steps:
+            - name: Set up JDK
+              uses: actions/setup-java@v4
+              with:
+                java-version: 11
+                distribution: 'temurin'
+            - name: Clone json
+              uses: actions/checkout@v4
+              with:
+                ref: ${{ github.event.inputs.git-ref }}
+                path: cldr-json
+            - name: Clone CLDR
+              uses: actions/checkout@v4
+              with:
+                ref: ${{ github.event.inputs.cldr-ref }}
+                lfs: false
+                repository: ${{ github.event.inputs.cldr-repo }}
+                path: cldr
+            - name: Clone Data
+              uses: actions/checkout@v4
+              with:
+                ref: ${{ github.event.inputs.data-ref }}
+                repository: ${{ github.event.inputs.data-repo }}
+                sparse-checkout: ${{ github.event.inputs.data-dir }}
+                path: cldr-staging
+
