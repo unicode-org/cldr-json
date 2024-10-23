@@ -52,6 +52,13 @@ jobs:
                 lfs: false
                 repository: ${{ github.event.inputs.cldr-repo }}
                 path: cldr
+            - name: Cache local Maven repository
+              uses: actions/cache@v4
+              with:
+                  path: ~/.m2/repository
+                  key: ${{ runner.os }}-maven-${{ hashFiles('cldr/tools/**/pom.xml') }}
+                  restore-keys: |
+                      ${{ runner.os }}-maven-
             - name: Clone Data
               uses: actions/checkout@v4
               with:
@@ -59,4 +66,43 @@ jobs:
                 repository: ${{ github.event.inputs.data-repo }}
                 sparse-checkout: ${{ github.event.inputs.data-dir }}
                 path: cldr-staging
+            - name: Setup Config
+              run: |
+                cd cldr-json
+                echo VERSION=${{ github.event.inputs.version }} > local-config.sh
+                echo CLDR_DIR=../cldr >> local-config.sh
+                echo INDATA=../cldr-staging/${{ github.event.inputs.data-dir }} >> local-config.sh
+                cat local-config.sh
+                chmod a+rx local-config.sh
+                bash cldr-identify.sh | tee ../cldr-identity.txt
+            - name: Upload cldr-identity.txt
+              uses: actions/upload-artifact@v4
+              with:
+                  name: cldr-identity
+                  path: ./cldr-identity.txt
+            - name: Build JSON
+              run: |
+                cd cldr-json
+                echo "::group::Cleanup"
+                rm -rf cldr-json
+                echo "::endgroup::"
+                echo "::group::Build"
+                env MVN_OPTS="-s ../cldr/.github/workflows/mvn-settings.xml" bash ./cldr-generate-json.sh
+                echo "::endgroup::"
+                echo "::group::Status"
+                git status || true
+                echo "::endgroup::"
+                echo "::group::Zip"
+                bash cldr-generate-zip.sh
+                cp PACKAGES.md dist/
+                echo "::endgroup::"
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            - name: Upload dist
+              uses: actions/upload-artifact@v4
+              with:
+                name: cldr-json
+                path: ./cldr-json/dist
+
+
 

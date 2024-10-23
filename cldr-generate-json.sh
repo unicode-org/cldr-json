@@ -22,7 +22,7 @@ fi
 mkdir -p -v ${OUT} ${INDATA}/seed/main ${INDATA}/seed/annotations ${DIST}
 MAIN_CLASS=org.unicode.cldr.json.Ldml2JsonConverter
 export MAVEN_OPTS="-Xmx16384m -Dexec.cleanupDaemonThreads=false -Dexec.mainClass=${MAIN_CLASS}"
-MVN="mvn --file=${CLDR_DIR}/tools/pom.xml -pl cldr-code"
+MVN="mvn ${MVN_OPTS} --file=${CLDR_DIR}/tools/pom.xml -pl cldr-code"
 MVN_COMPILE="${MVN} compile"
 MVN_EXEC="${MVN} -DCLDR_DIR=${INDATA} exec:java"
 
