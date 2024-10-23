@@ -79,5 +79,32 @@ jobs:
               with:
                   name: cldr-identity
                   path: ./cldr-identity.txt
+            - name: Build JSON
+              run: |
+                cd cldr-json
+                echo "::group::Cleanup"
+                rm -rf cldr-json
+                echo "::endgroup::"
+                echo "::group::Build"
+                bash cldr-generate-json.sh
+                echo "::endgroup::"
+                echo "::group::Status"
+                git status || true
+                echo "::endgroup::"
+                echo "::group::Zip"
+                bash cldr-generate-zip.sh
+                cp PACKAGES.md dist/
+                echo "::endgroup::"
+            - name: Upload dist
+              uses: actions/upload-artifact@v4
+              with:
+                name: cldr-json
+                path: ./cldr-json/dist
+            - name: Upload dist
+              uses: actions/upload-artifact@v4
+              with:
+                name: cldr-json
+                path: ./cldr-json/dist
+
 
 
