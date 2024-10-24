@@ -2,9 +2,6 @@
   "main": {
     "ti": {
       "identity": {
-        "version": {
-          "_cldrVersion": "45"
-        },
         "language": "ti"
       },
       "dates": {
@@ -12,9 +9,9 @@
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
-          "regionFormat": "ግዜ {0}",
-          "regionFormat-type-daylight": "ግዜ ክረምቲ {0}",
-          "regionFormat-type-standard": "ምዱብ ግዜ {0}",
+          "regionFormat": "ግዘ {0}",
+          "regionFormat-type-daylight": "ናይ {0} መዓልቲ ግዘ",
+          "regionFormat-type-standard": "ናይ መደበኛ ጊዜ {0} ግዘ",
           "fallbackFormat": "{1} ({0})",
           "zone": {
             "America": {
@@ -420,7 +417,7 @@
                 "exemplarCity": "ቅድስቲ ሉስያ"
               },
               "St_Thomas": {
-                "exemplarCity": "ሰይንት ቶማስ"
+                "exemplarCity": "ቅዱስ ቶማስ"
               },
               "St_Vincent": {
                 "exemplarCity": "ቅዱስ ቪንሰንት"
@@ -530,7 +527,7 @@
               },
               "Dublin": {
                 "long": {
-                  "daylight": "Irish Standard Time"
+                  "daylight": "ናይ መደበኛ አይሪሽ ግዘ"
                 },
                 "exemplarCity": "ደብሊን"
               },
@@ -882,9 +879,6 @@
               },
               "Chita": {
                 "exemplarCity": "ቺታ"
-              },
-              "Choibalsan": {
-                "exemplarCity": "ቾይባልሳን"
               },
               "Colombo": {
                 "exemplarCity": "ኮሎምቦ"
@@ -1325,9 +1319,14 @@
           "metazone": {
             "Acre": {
               "long": {
-                "generic": "ግዜ ኣክሪ",
-                "standard": "ምዱብ ግዜ ኣክሪ",
+                "generic": "ግዘ አክሪ",
+                "standard": "ናይ መደበኛ ግዘ ኣክሪ",
                 "daylight": "ግዜ ክረምቲ ኣክሪ"
+              }
+            },
+            "Afghanistan": {
+              "long": {
+                "standard": "ናይ አፍጋኒስታን ግዘ"
               }
             },
             "Africa_Central": {
@@ -1348,36 +1347,146 @@
             "Africa_Western": {
               "long": {
                 "generic": "ግዜ ምዕራብ ኣፍሪቃ",
-                "standard": "ምዱብ ግዜ ምዕራብ ኣፍሪቃ",
+                "standard": "ናይ መደበኛ ግዘ ምዕራብ ኣፍሪቃ",
                 "daylight": "ግዜ ክረምቲ ምዕራብ ኣፍሪቃ"
               }
             },
             "Alaska": {
               "long": {
-                "generic": "ግዜ ኣላስካ",
-                "standard": "ምዱብ ግዜ ኣላስካ",
-                "daylight": "ግዜ ክረምቲ ኣላስካ"
+                "generic": "ግዘ አላስካ",
+                "standard": "ናይ መደበኛ ግዘ አላስካ",
+                "daylight": "ናይ መዓልቲ ግዘ አላስካ"
               }
             },
             "Amazon": {
               "long": {
                 "generic": "ግዜ ኣማዞን",
-                "standard": "ምዱብ ግዜ ኣማዞን",
+                "standard": "ናይ መደበኛ ግዘ ኣማዞን",
                 "daylight": "ግዜ ክረምቲ ኣማዞን"
+              }
+            },
+            "America_Central": {
+              "long": {
+                "generic": "ማእከላይ አመሪካ ግዘ",
+                "standard": "ናይ መደበኛ ግዘ ማእከላይ አመሪካ",
+                "daylight": "ናይ መዓልቲ ግዘ ማእከላይ አመሪካ"
+              }
+            },
+            "America_Eastern": {
+              "long": {
+                "generic": "ናይ ምብራቓዊ ግዘ",
+                "standard": "ናይ መደበኛ ግዘ ምብራቓዊ ኣመሪካ",
+                "daylight": "ናይ መዓልቲ ግዘ ምብራቓዊ አመሪካ"
+              }
+            },
+            "America_Mountain": {
+              "long": {
+                "generic": "ናይ ጎቦ ግዘ",
+                "standard": "ናይ መደበኛ ግዘ ጎቦ ኣመሪካ",
+                "daylight": "ናይ መዓልቲ ግዘ ጎቦ አመሪካ"
+              }
+            },
+            "America_Pacific": {
+              "long": {
+                "generic": "ናይ ፓስፊክ ግዘ",
+                "standard": "ናይ መደበኛ ግዘ ፓስፊክ",
+                "daylight": "ናይ መዓልቲ ግዘ ፓስፊክ"
+              }
+            },
+            "Apia": {
+              "long": {
+                "generic": "ናይ አፒያ ግዘ",
+                "standard": "ናይ መደበኛ አፒያ ግዘ",
+                "daylight": "ናይ መዓልቲ አፒያ ግዘ"
+              }
+            },
+            "Arabian": {
+              "long": {
+                "generic": "ናይ አረብ ግዘ",
+                "standard": "ናይ መደበኛ አረብ ግዘ",
+                "daylight": "ናይ መዓልቲ አረብ ግዘ"
               }
             },
             "Argentina": {
               "long": {
                 "generic": "ግዜ ኣርጀንቲና",
-                "standard": "ምዱብ ግዜ ኣርጀንቲና",
+                "standard": "ናይ መደበኛ ግዘ ኣርጀንቲና",
                 "daylight": "ግዜ ክረምቲ ኣርጀንቲና"
+              }
+            },
+            "Argentina_Western": {
+              "long": {
+                "generic": "ግዜ ምዕራባዊ ኣርጀንቲና",
+                "standard": "ናይ መደበኛ ግዘ ምዕራባዊ ኣርጀንቲና",
+                "daylight": "ግዜ ክረምቲ ምዕራባዊ ኣርጀንቲና"
+              }
+            },
+            "Armenia": {
+              "long": {
+                "generic": "ናይ አርሜኒያ ግዘ",
+                "standard": "ናይ መደበኛ አርሜኒያ ግዘ",
+                "daylight": "ናይ ክረምቲ አርሜኒያ ግዘ"
+              }
+            },
+            "Atlantic": {
+              "long": {
+                "generic": "ናይ አትላንቲክ ግዘ",
+                "standard": "ናይ መደበኛ ግዘ አትላንቲክ",
+                "daylight": "ናይ መዓልቲ ግዘ አትላንቲክ"
+              }
+            },
+            "Australia_Central": {
+              "long": {
+                "generic": "ናይ አውስራሊያ ግዘ",
+                "standard": "ናይ ማዕከላይ መደበኛ አውስራሊያ ግዘ",
+                "daylight": "ናይ ማዕከላይ መዓልቲ አውስራሊያ ግዘ"
+              }
+            },
+            "Australia_CentralWestern": {
+              "long": {
+                "generic": "ናይ ምዕራባዊ አውስራሊያ ግዘ",
+                "standard": "ናይ ምዕራባዊ መደበኛ አውስራሊያ ግዘ",
+                "daylight": "ናይ ምዕራባዊ መዓልቲ አውስራሊያ ግዘ"
+              }
+            },
+            "Australia_Eastern": {
+              "long": {
+                "generic": "ናይ ምብራቓዊ ኣውስትራልያ ግዘ",
+                "standard": "ናይ ምብራቓዊ መደበኛ ኣውስትራልያ ግዘ",
+                "daylight": "ናይ ምብራቓዊ መዓልቲ ኣውስትራልያ ግዘ"
+              }
+            },
+            "Australia_Western": {
+              "long": {
+                "generic": "ናይ ምዕራባዊ አውስትራሊያ ግዘ",
+                "standard": "ናይ ምዕራባዊ መደበኛ አውስትራሊያ ግዘ",
+                "daylight": "ናይ ምዕራባዊ መዓልቲ አውስትራሊያ ግዘ"
+              }
+            },
+            "Azerbaijan": {
+              "long": {
+                "generic": "ናይ አዘርባዣን ግዘ",
+                "standard": "ናይ መደበኛ አዘርባዣን ግዘ",
+                "daylight": "ናይ ክረምቲ አዘርባዣን ግዘ"
               }
             },
             "Azores": {
               "long": {
-                "generic": "ግዜ ኣዞረስ",
-                "standard": "ምዱብ ግዜ ኣዞረስ",
-                "daylight": "ግዜ ክረምቲ ኣዞረስ"
+                "generic": "ናይ አዞረስ ግዘ",
+                "standard": "ናይ መደበኛ ግዘ ኣዞረስ",
+                "daylight": "ናይ ክረምቲ አዞረስ ግዘ"
+              }
+            },
+            "Bangladesh": {
+              "long": {
+                "generic": "ናይ ባንግላዲሽ ግዘ",
+                "standard": "ናይ መደበኛ ባንግላዲሽ ግዘ",
+                "daylight": "ናይ ክረምቲ ባንግላዲሽ ግዘ"
+              }
+            },
+            "Bhutan": {
+              "long": {
+                "standard": "ናይ ቡህታን ግዘ"
               }
             },
             "Bolivia": {
@@ -1388,35 +1497,98 @@
             "Brasilia": {
               "long": {
                 "generic": "ግዜ ብራዚልያ",
-                "standard": "ምዱብ ግዜ ብራዚልያ",
+                "standard": "ናይ መደበኛ ግዘ ብራዚልያ",
                 "daylight": "ግዜ ክረምቲ ብራዚልያ"
+              }
+            },
+            "Brunei": {
+              "long": {
+                "standard": "ናይ ብሩኔ ዳሩሳሌም ግዘ"
               }
             },
             "Cape_Verde": {
               "long": {
                 "generic": "ግዜ ኬፕ ቨርደ",
-                "standard": "ምዱብ ግዜ ኬፕ ቨርደ",
+                "standard": "ናይ መደበኛ ግዘ ኬፕ ቨርደ",
                 "daylight": "ግዜ ክረምቲ ኬፕ ቨርደ"
+              }
+            },
+            "Chamorro": {
+              "long": {
+                "standard": "ናይ መደበኛ ቻሞሮ ግዘ"
+              }
+            },
+            "Chatham": {
+              "long": {
+                "generic": "ናይ ቻትሃም ግዘ",
+                "standard": "ናይ መደበኛ ቻትሃም ግዘ",
+                "daylight": "ናይ መዓልቲ ቻትሃም ግዘ"
               }
             },
             "Chile": {
               "long": {
                 "generic": "ግዜ ቺሌ",
-                "standard": "ምዱብ ግዜ ቺሌ",
+                "standard": "ናይ መደበኛ ግዘ ቺሌ",
                 "daylight": "ግዜ ክረምቲ ቺሌ"
+              }
+            },
+            "China": {
+              "long": {
+                "generic": "ናይ ቻይና ግዘ",
+                "standard": "ናይ መደበኛ ቻይና ግዘ",
+                "daylight": "ናይ መዓልቲ ቻይና ግዘ"
+              }
+            },
+            "Christmas": {
+              "long": {
+                "standard": "ናይ ልደት ደሴት ግዘ"
+              }
+            },
+            "Cocos": {
+              "long": {
+                "standard": "ናይ ኮኮስ ደሴት ግዘ"
               }
             },
             "Colombia": {
               "long": {
                 "generic": "ግዜ ኮሎምብያ",
-                "standard": "ምዱብ ግዜ ኮሎምብያ",
+                "standard": "ናይ መደበኛ ግዘ ኮሎምብያ",
                 "daylight": "ግዜ ክረምቲ ኮሎምብያ"
+              }
+            },
+            "Cook": {
+              "long": {
+                "generic": "ናይ ኩክ ደሴት ግዘ",
+                "standard": "ናይ መደበኛ ኩክ ደሴት ግዘ",
+                "daylight": "ናይ ፍርቂ ክረምቲ ኩክ ደሴት ግዘ"
+              }
+            },
+            "Cuba": {
+              "long": {
+                "generic": "ናይ ኩባ ግዘ",
+                "standard": "ናይ መደበኛ ግዘ ኩባ",
+                "daylight": "ናይ መዓልቲ ግዘ ኩባ"
+              }
+            },
+            "Davis": {
+              "long": {
+                "standard": "ናይ ዴቪስ ግዘ"
+              }
+            },
+            "DumontDUrville": {
+              "long": {
+                "standard": "ናይ ዱሞ-ዱርቪል ግዘ"
+              }
+            },
+            "East_Timor": {
+              "long": {
+                "standard": "ናይ ምብራቅ ቲሞር ግዘ"
               }
             },
             "Easter": {
               "long": {
                 "generic": "ግዜ ደሴት ፋሲካ",
-                "standard": "ምዱብ ግዜ ደሴት ፋሲካ",
+                "standard": "ናይ መደበኛ ግዘ ደሴት ፋሲካ",
                 "daylight": "ግዜ ክረምቲ ደሴት ፋሲካ"
               }
             },
@@ -1427,23 +1599,42 @@
             },
             "Europe_Central": {
               "long": {
-                "generic": "ግዜ ማእከላይ ኤውሮጳ",
-                "standard": "ምዱብ ግዜ ማእከላይ ኤውሮጳ",
+                "generic": "ናይ ማእከላይ ኤውሮጳ ግዘ",
+                "standard": "ናይ መደበኛ ግዘ ማእከላይ ኤውሮጳ",
                 "daylight": "ግዜ ክረምቲ ኤውሮጳ"
               }
             },
             "Europe_Eastern": {
               "long": {
-                "generic": "ግዜ ምብራቕ ኤውሮጳ",
-                "standard": "ምዱብ ግዜ ምብራቕ ኤውሮጳ",
+                "generic": "ናይ ምብራቕ ኤውሮጳ ግዘ",
+                "standard": "ናይ መደበኛ ግዘ ምብራቕ ኤውሮጳ",
                 "daylight": "ግዜ ክረምቲ ምብራቕ ኤውሮጳ"
+              }
+            },
+            "Europe_Further_Eastern": {
+              "long": {
+                "standard": "ናይ ርሑቕ-ምብራቕ ኤውሮጳዊ ግዘ"
+              }
+            },
+            "Europe_Western": {
+              "long": {
+                "generic": "ናይ ምዕራባዊ ኤውሮጳዊ ግዘ",
+                "standard": "ናይ መደበኛ ምዕራባዊ ኤውሮጳዊ ግዘ",
+                "daylight": "ናይ ክረምቲ ምዕራባዊ ኤውሮጳዊ ግዘ"
               }
             },
             "Falkland": {
               "long": {
                 "generic": "ግዜ ደሴታት ፎክላንድ",
-                "standard": "ምዱብ ግዜ ደሴታት ፎክላንድ",
+                "standard": "ናይ መደበኛ ግዘ ደሴታት ፎክላንድ",
                 "daylight": "ግዜ ከረምቲ ደሴታት ፎክላንድ"
+              }
+            },
+            "Fiji": {
+              "long": {
+                "generic": "ናይ ፊጂ ግዘ",
+                "standard": "ናይ መደበኛ ፊጂ ግዘ",
+                "daylight": "ናይ ክረምቲ ፊጂ ግዘ"
               }
             },
             "French_Guiana": {
@@ -1453,7 +1644,7 @@
             },
             "French_Southern": {
               "long": {
-                "standard": "ግዜ ፈረንሳዊ ደቡባዊ ግዝኣታትን ኣንታርቲክን"
+                "standard": "ናይ ደቡባዊን ኣንታርቲክ ግዘ"
               }
             },
             "Galapagos": {
@@ -1461,9 +1652,45 @@
                 "standard": "ግዜ ጋላፓጎስ"
               }
             },
+            "Gambier": {
+              "long": {
+                "standard": "ናይ ጋምቢየር ግዘ"
+              }
+            },
+            "Georgia": {
+              "long": {
+                "generic": "ናይ ጆርጂያ ግዘ",
+                "standard": "ናይ መደበኛ ጆርጂያ ግዘ",
+                "daylight": "ናይ ክረምቲ ጆርጂያ ግዘ"
+              }
+            },
+            "Gilbert_Islands": {
+              "long": {
+                "standard": "ናይ ጊልበርት ደሴታት ግዘ"
+              }
+            },
             "GMT": {
               "long": {
                 "standard": "GMT"
+              }
+            },
+            "Greenland_Eastern": {
+              "long": {
+                "generic": "ናይ ምብራቓዊ ግዘ ግሪንላንድ",
+                "standard": "ናይ መደበኛ ምብራቓዊ ግዘ ግሪንላንድ",
+                "daylight": "ናይ መዓልቲ ምብራቓዊ ግዘ ግሪንላንድ"
+              }
+            },
+            "Greenland_Western": {
+              "long": {
+                "generic": "ናይ ምዕራብ ግሪንላንድ ግዘ",
+                "standard": "ናይ መደበኛ ምዕራብ ግሪንላንድ ግዘ",
+                "daylight": "ናይ መዓልቲ ምዕራብ ግሪንላንድ ግዘ"
+              }
+            },
+            "Gulf": {
+              "long": {
+                "standard": "ናይ መደበኛ ገልፍ ግዘ"
               }
             },
             "Guyana": {
@@ -1471,62 +1698,352 @@
                 "standard": "ግዜ ጉያና"
               }
             },
+            "Hawaii_Aleutian": {
+              "long": {
+                "generic": "ናይ ሃዋይ-ኣሌውቲያን ግዘ",
+                "standard": "ናይ መደበኛ ሃዋይ-ኣሌውቲያን ግዘ",
+                "daylight": "ናይ መዓልቲ ሃዋይ-ኣሌውቲያን ግዘ"
+              }
+            },
+            "Hong_Kong": {
+              "long": {
+                "generic": "ናይ ሆንግ ኮንግ ግዘ",
+                "standard": "ናይ መደበኛ ሆንግ ኮንግ ግዘ",
+                "daylight": "ናይ ክረምቲ ሆንግ ኮንግ ግዘ"
+              }
+            },
+            "Hovd": {
+              "long": {
+                "generic": "ናይ ሆቭድ ግዘ",
+                "standard": "ናይ መደበኛ ሆቭድ ግዘ",
+                "daylight": "ናይ ክረምቲ ሆቭድ ግዘ"
+              }
+            },
+            "India": {
+              "long": {
+                "standard": "ናይ መደበኛ ህንድ ግዘ"
+              }
+            },
             "Indian_Ocean": {
               "long": {
                 "standard": "ግዜ ህንዳዊ ውቅያኖስ"
               }
             },
+            "Indochina": {
+              "long": {
+                "standard": "ናይ ኢንዶቻይና ግዘ"
+              }
+            },
             "Indonesia_Central": {
               "long": {
-                "standard": "ግዜ ማእከላይ ኢንዶነዥያ"
+                "standard": "ናይ ማእከላይ ኢንዶነዥያ ግዘ"
               }
             },
             "Indonesia_Eastern": {
               "long": {
-                "standard": "ግዜ ምብራቓዊ ኢንዶነዥያ"
+                "standard": "ናይ ምብራቓዊ ኢንዶነዥያ ግዘ"
               }
             },
             "Indonesia_Western": {
               "long": {
-                "standard": "ግዜ ምዕራባዊ ኢንዶነዥያ"
+                "standard": "ናይ ምዕራባዊ ኢንዶነዥያ ግዘ"
+              }
+            },
+            "Iran": {
+              "long": {
+                "generic": "ናይ ኢራን ግዘ",
+                "standard": "ናይ መደበኛ ኢራን ግዘ",
+                "daylight": "ናይ መዓልቲ ኢራን ግዘ"
+              }
+            },
+            "Irkutsk": {
+              "long": {
+                "generic": "ናይ ኢርኩትስክ ግዘ",
+                "standard": "ናይ መደበኛ ኢርኩትስክ ግዘ",
+                "daylight": "ናይ ክረምቲ ኢርኩትስክ ግዘ"
+              }
+            },
+            "Israel": {
+              "long": {
+                "generic": "ናይ እስራኤል ግዘ",
+                "standard": "ናይ መደበኛ እስራኤል ግዘ",
+                "daylight": "ናይ መዓልቲ እስራኤል ግዘ"
+              }
+            },
+            "Japan": {
+              "long": {
+                "generic": "ናይ ጃፓን ግዘ",
+                "standard": "ናይ መደበኛ ጃፓን ግዘ",
+                "daylight": "ናይ መዓልቲ ጃፓን ግዘ"
+              }
+            },
+            "Kazakhstan": {
+              "long": {
+                "standard": "ናይ ካዛኪስታን ግዘ"
+              }
+            },
+            "Kazakhstan_Eastern": {
+              "long": {
+                "standard": "ናይ ምብራቅ ካዛኪስታን ግዘ"
+              }
+            },
+            "Kazakhstan_Western": {
+              "long": {
+                "standard": "ናይ ምዕራብ ካዛኪስታን ግዘ"
+              }
+            },
+            "Korea": {
+              "long": {
+                "generic": "ናይ ኮሪያን ግዘ",
+                "standard": "ናይ መደበኛ ኮሪያን ግዘ",
+                "daylight": "ናይ መዓልቲ ኮሪያን ግዘ"
+              }
+            },
+            "Kosrae": {
+              "long": {
+                "standard": "ናይ ኮርሳይ ግዘ"
+              }
+            },
+            "Krasnoyarsk": {
+              "long": {
+                "generic": "ናይ ክራንስኖያርክ ግዘ",
+                "standard": "ናይ መደበኛ ክራንስኖያርክ ግዘ",
+                "daylight": "ናይ ክረምቲ ክራንስኖያርክ ግዘ"
+              }
+            },
+            "Kyrgystan": {
+              "long": {
+                "standard": "ናይ ክርጅስታን ግዘ"
+              }
+            },
+            "Line_Islands": {
+              "long": {
+                "standard": "ናይ ላይን ደሴታት ግዘ"
+              }
+            },
+            "Lord_Howe": {
+              "long": {
+                "generic": "ናይ ሎርድ ሆው ግዘ",
+                "standard": "ናይ መድበኛ ሎርድ ሆው ግዘ",
+                "daylight": "ናይ መዓልቲ ሎርድ ሆው ግዘ"
+              }
+            },
+            "Magadan": {
+              "long": {
+                "generic": "ናይ ሜጋዳን ግዘ",
+                "standard": "ናይ መደበኛ ሜጋዳን ግዘ",
+                "daylight": "ናይ ክረምቲ ሜጋዳን ግዘ"
               }
             },
             "Malaysia": {
               "long": {
-                "standard": "ግዜ ማለዥያ"
+                "standard": "ናይ ማሌዢያ ግዘ"
+              }
+            },
+            "Maldives": {
+              "long": {
+                "standard": "ናይ ሞልዲቭስ ግዘ"
+              }
+            },
+            "Marquesas": {
+              "long": {
+                "standard": "ናይ ማርኩዌሳስ ግዘ"
+              }
+            },
+            "Marshall_Islands": {
+              "long": {
+                "standard": "ናይ ማርሻል ደሴታት ግዘ"
               }
             },
             "Mauritius": {
               "long": {
                 "generic": "ግዜ ማውሪሸስ",
-                "standard": "ምዱብ ግዜ ማውሪሸስ",
+                "standard": "ናይ መደበኛ ግዘ ማውሪሸስ",
                 "daylight": "ግዜ ክረምቲ ማውሪሸስ"
+              }
+            },
+            "Mawson": {
+              "long": {
+                "standard": "ናይ ማውሶን ግዘ"
+              }
+            },
+            "Mexico_Pacific": {
+              "long": {
+                "generic": "ናይ ሜክሲኮ ፓስፊክ ግዘ",
+                "standard": "ናይ መደበኛ ሜክሲኮ ፓስፊክ ግዘ",
+                "daylight": "ናይ መዓልቲ ሜክሲኮ ፓስፊክ ግዘ"
+              }
+            },
+            "Mongolia": {
+              "long": {
+                "generic": "ናይ ኡላንባታር ግዘ",
+                "standard": "ናይ መደበኛ ኡላንባታር ግዘ",
+                "daylight": "ናይ ክረምቲ ኡላንባታር ግዘ"
+              }
+            },
+            "Moscow": {
+              "long": {
+                "generic": "ናይ ሞስኮው ግዘ",
+                "standard": "ናይ መደበኛ ሞስኮው ግዘ",
+                "daylight": "ናይ ክረምቲ ሞስኮው ግዘ"
+              }
+            },
+            "Myanmar": {
+              "long": {
+                "standard": "ናይ ምያንማር ግዘ"
+              }
+            },
+            "Nauru": {
+              "long": {
+                "standard": "ናይ ናውሩ ግዘ"
+              }
+            },
+            "Nepal": {
+              "long": {
+                "standard": "ናይ ኔፓል ግዘ"
+              }
+            },
+            "New_Caledonia": {
+              "long": {
+                "generic": "ናይ ኒው ካሌዶኒያ ግዘ",
+                "standard": "ናይ መደበኛ ኒው ካሌዶኒያ ግዘ",
+                "daylight": "ናይ ክረምቲ ኒው ካሌዶኒያ ግዘ"
+              }
+            },
+            "New_Zealand": {
+              "long": {
+                "generic": "ናይ ኒው ዚላንድ ግዘ",
+                "standard": "ናይ መደበኛ ኒው ዚላንድ ግዘ",
+                "daylight": "ናይ መዓልቲ ኒው ዚላንድ ግዘ"
+              }
+            },
+            "Newfoundland": {
+              "long": {
+                "generic": "ናይ ኒውፋውንድላንድ ግዘ",
+                "standard": "ናይ መደበኛ ኒውፋውንድላንድ ግዘ",
+                "daylight": "ናይ መዓልቲ ኒውፋውንድላንድ ግዘ"
+              }
+            },
+            "Niue": {
+              "long": {
+                "standard": "ናይ ኒዌ ግዘ"
+              }
+            },
+            "Norfolk": {
+              "long": {
+                "generic": "ናይ ኖርፎልክ ደሴት ግዘ",
+                "standard": "ናይ መደበኛ ኖርፎልክ ደሴት ግዘ",
+                "daylight": "ናይ መዓልቲ ኖርፎልክ ደሴት ግዘ"
               }
             },
             "Noronha": {
               "long": {
                 "generic": "ግዜ ፈርናንዶ ደ ኖሮንያ",
-                "standard": "ምዱብ ግዜ ፈርናንዶ ደ ኖሮንያ",
+                "standard": "ናይ መደበኛ ግዘ ፈርናንዶ ደ ኖሮንያ",
                 "daylight": "ግዜ ክረምቲ ፈርናንዶ ደ ኖሮንያ"
+              }
+            },
+            "Novosibirsk": {
+              "long": {
+                "generic": "ናይ ኖቮሲሪስክ ግዘ",
+                "standard": "ናይ መደበኛ ኖቮሲሪስክ ግዘ",
+                "daylight": "ናይ ክረምቲ ኖቮሲሪስክ ግዘ"
+              }
+            },
+            "Omsk": {
+              "long": {
+                "generic": "ናይ ኦምስክ ግዘ",
+                "standard": "ናይ መደበኛ ኦምስክ ግዘ",
+                "daylight": "ናይ ክረምቲ ኦምስክ ግዘ"
+              }
+            },
+            "Pakistan": {
+              "long": {
+                "generic": "ናይ ፓኪስታን ግዘ",
+                "standard": "ናይ መደበኛ ፓኪስታን ግዘ",
+                "daylight": "ናይ ክረምቲ ፓኪስታን ግዘ"
+              }
+            },
+            "Palau": {
+              "long": {
+                "standard": "ናይ ፓላው ግዘ"
+              }
+            },
+            "Papua_New_Guinea": {
+              "long": {
+                "standard": "ናይ ፓፗ ኒው ጊኒ ግዘ"
               }
             },
             "Paraguay": {
               "long": {
                 "generic": "ግዜ ፓራጓይ",
-                "standard": "ምዱብ ግዜ ፓራጓይ",
+                "standard": "ናይ መደበኛ ግዘ ፓራጓይ",
                 "daylight": "ግዜ ክረምቲ ፓራጓይ"
               }
             },
             "Peru": {
               "long": {
                 "generic": "ግዜ ፔሩ",
-                "standard": "ምዱብ ግዜ ፔሩ",
+                "standard": "ናይ መደበኛ ግዘ ፔሩ",
                 "daylight": "ግዜ ክረምቲ ፔሩ"
+              }
+            },
+            "Philippines": {
+              "long": {
+                "generic": "ናይ ፊሊፒን ግዘ",
+                "standard": "ናይ መደበኛ ፊሊፒን ግዘ",
+                "daylight": "ናይ ክረምቲ ፊሊፒን ግዘ"
+              }
+            },
+            "Phoenix_Islands": {
+              "long": {
+                "standard": "ናይ ፊኒክስ ደሴታት ግዘ"
+              }
+            },
+            "Pierre_Miquelon": {
+              "long": {
+                "generic": "ናይ ቅዱስ ፒየርን ሚከሎን ግዘ",
+                "standard": "ናይ መደበኛ ቅዱስ ፒየርን ሚከሎን ግዘ",
+                "daylight": "ናይ መዓልቲ ቅዱስ ፒየርን ሚከሎን ግዘ"
+              }
+            },
+            "Pitcairn": {
+              "long": {
+                "standard": "ናይ ፒትቻይርን ግዘ"
+              }
+            },
+            "Ponape": {
+              "long": {
+                "standard": "ናይ ፖናፔ ግዘ"
+              }
+            },
+            "Pyongyang": {
+              "long": {
+                "standard": "ናይ ፕዮንግያንግ ግዘ"
               }
             },
             "Reunion": {
               "long": {
                 "standard": "ግዜ ርዩንየን"
+              }
+            },
+            "Rothera": {
+              "long": {
+                "standard": "ናይ ሮቴራ ግዘ"
+              }
+            },
+            "Sakhalin": {
+              "long": {
+                "generic": "ናይ ሳክሃሊን ግዘ",
+                "standard": "ናይ መደበኛ ሳክሃሊን ግዘ",
+                "daylight": "ናይ ክረምቲ ሳክሃሊን ግዘ"
+              }
+            },
+            "Samoa": {
+              "long": {
+                "generic": "ናይ ሳሞዋ ግዘ",
+                "standard": "ናይ መደበኛ ሳሞዋ ግዘ",
+                "daylight": "ናይ መዓልቲ ሳሞዋ ግዘ"
               }
             },
             "Seychelles": {
@@ -1536,7 +2053,12 @@
             },
             "Singapore": {
               "long": {
-                "standard": "ግዜ ሲንጋፖር"
+                "standard": "ናይ መደበኛ ሲጋፖር ግዘ"
+              }
+            },
+            "Solomon": {
+              "long": {
+                "standard": "ናይ ሶሎሞን ደሴታት ግዘ"
               }
             },
             "South_Georgia": {
@@ -1549,16 +2071,129 @@
                 "standard": "ግዜ ሱሪናም"
               }
             },
+            "Syowa": {
+              "long": {
+                "standard": "ናይ ስዮዋ ግዘ"
+              }
+            },
+            "Tahiti": {
+              "long": {
+                "standard": "ናይ ቲሂቲ ግዘ"
+              }
+            },
+            "Taipei": {
+              "long": {
+                "generic": "ናይ ቴፒ ግዘ",
+                "standard": "ናይ መደበኛ ቴፒ ግዘ",
+                "daylight": "ናይ መዓልቲ ቴፒ ግዘ"
+              }
+            },
+            "Tajikistan": {
+              "long": {
+                "standard": "ናይ ታጃክስታን ግዘ"
+              }
+            },
+            "Tokelau": {
+              "long": {
+                "standard": "ናይ ቶኬላው ግዘ"
+              }
+            },
+            "Tonga": {
+              "long": {
+                "generic": "ናይ ቶንጋ ግዘ",
+                "standard": "ናይ መደበኛ ቶንጋ ግዘ",
+                "daylight": "ናይ ክረምቲ ቶንጋ ግዘ"
+              }
+            },
+            "Truk": {
+              "long": {
+                "standard": "ናይ ቹክ ግዘ"
+              }
+            },
+            "Turkmenistan": {
+              "long": {
+                "generic": "ናይ ቱርክሜኒስታን ግዘ",
+                "standard": "ናይ መደበኛ ቱርክሜኒስታን ግዘ",
+                "daylight": "ናይ ክረምቲ ቱርክሜኒስታን ግዘ"
+              }
+            },
+            "Tuvalu": {
+              "long": {
+                "standard": "ናይ ቱቫሉ ግዘ"
+              }
+            },
             "Uruguay": {
               "long": {
                 "generic": "ግዜ ኡራጓይ",
-                "standard": "ምዱብ ግዜ ኡራጓይ",
+                "standard": "ናይ መደበኛ ግዘ ኡራጓይ",
                 "daylight": "ግዜ ክረምቲ ኡራጓይ"
+              }
+            },
+            "Uzbekistan": {
+              "long": {
+                "generic": "ናይ ኡዝቤኪስታን ግዘ",
+                "standard": "ናይ መደበኛ ኡዝቤኪስታን ግዘ",
+                "daylight": "ናይ ክረምቲ ኡዝቤኪስታን ግዘ"
+              }
+            },
+            "Vanuatu": {
+              "long": {
+                "generic": "ናይ ቫኗታው ግዘ",
+                "standard": "ናይ መደበኛ ቫኗታው ግዘ",
+                "daylight": "ናይ ክረምቲ ቫኗታው ግዘ"
               }
             },
             "Venezuela": {
               "long": {
                 "standard": "ግዜ ቬኔዝዌላ"
+              }
+            },
+            "Vladivostok": {
+              "long": {
+                "generic": "ናይ ቭላዲቮስቶክ ግዘ",
+                "standard": "ናይ መደበኛ ቭላዲቮስቶክ ግዘ",
+                "daylight": "ናይ ክረምቲ ቭላዲቮስቶክ ግዘ"
+              }
+            },
+            "Volgograd": {
+              "long": {
+                "generic": "ናይ ቮልጎግራድ ግዘ",
+                "standard": "ናይ መደበኛ ቮልጎግራድ ግዘ",
+                "daylight": "ናይ ክረምቲ ቮልጎግራድ ግዘ"
+              }
+            },
+            "Vostok": {
+              "long": {
+                "standard": "ናይ ቮስቶክ ግዘ"
+              }
+            },
+            "Wake": {
+              "long": {
+                "standard": "ናይ ዌክ ደሴት ግዘ"
+              }
+            },
+            "Wallis": {
+              "long": {
+                "standard": "ናይ ዌልስን ፉቷ ግዘ"
+              }
+            },
+            "Yakutsk": {
+              "long": {
+                "generic": "ናይ ያኩትስክ ግዘ",
+                "standard": "ናይ መደበኛ ያኩትስክ ግዘ",
+                "daylight": "ናይ ክረምቲ ያኩትስክ ግዘ"
+              }
+            },
+            "Yekaterinburg": {
+              "long": {
+                "generic": "ናይ ያክተርኒበርግ ግዘ",
+                "standard": "ናይ መደበኛ ያክተርኒበርግ ግዘ",
+                "daylight": "ናይ ክረምቲ ያክተርኒበርግ ግዘ"
+              }
+            },
+            "Yukon": {
+              "long": {
+                "standard": "ናይ ዩኮን ግዘ"
               }
             }
           }

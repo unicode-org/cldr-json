@@ -2,9 +2,6 @@
   "main": {
     "sv-FI": {
       "identity": {
-        "version": {
-          "_cldrVersion": "45"
-        },
         "language": "sv",
         "territory": "FI"
       },
@@ -26,7 +23,7 @@
             "unitPrefixPattern": "nano{0}"
           },
           "10p-12": {
-            "unitPrefixPattern": "pico{0}"
+            "unitPrefixPattern": "piko{0}"
           },
           "10p-15": {
             "unitPrefixPattern": "femto{0}"
@@ -268,9 +265,12 @@
             "genitive-count-other": "{0} karats"
           },
           "concentr-milligram-ofglucose-per-deciliter": {
+            "gender": "neuter",
             "displayName": "milligram per deciliter",
             "unitPattern-count-one": "{0} milligram per deciliter",
-            "unitPattern-count-other": "{0} milligram per deciliter"
+            "genitive-count-one": "{0} milligram per deciliters",
+            "unitPattern-count-other": "{0} milligram per deciliter",
+            "genitive-count-other": "{0} milligram per deciliters"
           },
           "concentr-millimole-per-liter": {
             "gender": "common",
@@ -595,7 +595,9 @@
             "gender": "common",
             "displayName": "kilokalorier",
             "unitPattern-count-one": "{0} kilokalori",
-            "unitPattern-count-other": "{0} kilokalorier"
+            "genitive-count-one": "{0} kilokaloris",
+            "unitPattern-count-other": "{0} kilokalorier",
+            "genitive-count-other": "{0} kilokaloriers"
           },
           "energy-calorie": {
             "gender": "common",
@@ -891,9 +893,12 @@
             "genitive-count-other": "{0} mils"
           },
           "length-point": {
+            "gender": "common",
             "displayName": "punkter",
             "unitPattern-count-one": "{0} pkt",
-            "unitPattern-count-other": "{0} pkt"
+            "genitive-count-one": "{0} punkts",
+            "unitPattern-count-other": "{0} pkt",
+            "genitive-count-other": "{0} punkters"
           },
           "length-solar-radius": {
             "gender": "common",
@@ -1078,9 +1083,12 @@
             "unitPattern-count-other": "{0} hästkrafter"
           },
           "pressure-millimeter-ofhg": {
+            "gender": "common",
             "displayName": "millimeter kvicksilver",
             "unitPattern-count-one": "{0} millimeter kvicksilver",
-            "unitPattern-count-other": "{0} millimeter kvicksilver"
+            "genitive-count-one": "{0} millimeter kvicksilvers",
+            "unitPattern-count-other": "{0} millimeter kvicksilver",
+            "genitive-count-other": "{0} millimeter kvicksilvers"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "pund per kvadrattum",
@@ -1448,6 +1456,31 @@
             "displayName": "br. quart",
             "unitPattern-count-one": "{0} brittisk quart",
             "unitPattern-count-other": "{0} brittiska quarts"
+          },
+          "speed-light-speed": {
+            "gender": "neuter",
+            "displayName": "ljus",
+            "unitPattern-count-one": "{0} ljus",
+            "genitive-count-one": "{0} ljus",
+            "unitPattern-count-other": "{0} ljus",
+            "genitive-count-other": "{0} ljus"
+          },
+          "concentr-portion-per-1e9": {
+            "gender": "common",
+            "displayName": "miljarddelar",
+            "unitPattern-count-one": "{0} miljarddel",
+            "genitive-count-one": "{0} miljarddels",
+            "unitPattern-count-other": "{0} miljarddelar",
+            "genitive-count-other": "{0} miljarddelars"
+          },
+          "duration-night": {
+            "gender": "common",
+            "displayName": "nätter",
+            "unitPattern-count-one": "{0} natt",
+            "genitive-count-one": "{0} natts",
+            "unitPattern-count-other": "{0} nätter",
+            "genitive-count-other": "{0} nätters",
+            "perUnitPattern": "{0} per natt"
           },
           "coordinateUnit": {
             "displayName": "kompassriktning",
@@ -2408,6 +2441,21 @@
             "displayName": "br. qt",
             "unitPattern-count-one": "{0} br. qt",
             "unitPattern-count-other": "{0} br. qt"
+          },
+          "speed-light-speed": {
+            "displayName": "ljus",
+            "unitPattern-count-one": "{0} ljus",
+            "unitPattern-count-other": "{0} ljus"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "ppb",
+            "unitPattern-count-other": "{0} ppb"
+          },
+          "duration-night": {
+            "displayName": "nätter",
+            "unitPattern-count-one": "{0} natt",
+            "unitPattern-count-other": "{0} nätter",
+            "perUnitPattern": "{0}/natt"
           },
           "coordinateUnit": {
             "displayName": "väderstreck",
@@ -3466,6 +3514,22 @@
             "displayName": "br. qt",
             "unitPattern-count-one": "{0}br.qt",
             "unitPattern-count-other": "{0}br.qt"
+          },
+          "speed-light-speed": {
+            "displayName": "ljs",
+            "unitPattern-count-one": "{0}ljs",
+            "unitPattern-count-other": "{0}ljs"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "ppb",
+            "unitPattern-count-one": "{0}ppb",
+            "unitPattern-count-other": "{0}ppb"
+          },
+          "duration-night": {
+            "displayName": "nttr",
+            "unitPattern-count-one": "{0}ntt",
+            "unitPattern-count-other": "{0}nttr",
+            "perUnitPattern": "{0}/ntt"
           },
           "coordinateUnit": {
             "displayName": "riktning",
