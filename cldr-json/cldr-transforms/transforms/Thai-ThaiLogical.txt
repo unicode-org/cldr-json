@@ -1,4 +1,3 @@
-
 # This reverses the Thai LogicalOrderException vowels, and does (part of) spaces
 # The rules that convert space into semicolon are in another file;
 # since they have to come BEFORE the break iterator
@@ -13,4 +12,3 @@ $thai_non_reversing = [$thai - $thai_reversing ];
 ( $thai_reversing ) ( $thai_non_reversing ) → $2 $1;
 # other direction
 $2 $1 ← ( $thai_non_reversing ) ( $thai_reversing ) ;
-

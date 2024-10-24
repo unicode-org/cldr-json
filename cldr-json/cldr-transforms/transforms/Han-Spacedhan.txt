@@ -1,4 +1,3 @@
-
 # Only intended for internal use
 # Make sure Han are normalized, including characters that contain them.
 # The first set in the filter is computed with http://unicode.org/cldr/utility/list-unicodeset.jsp?a=[:tonfkd:/XXX/:]-[:ideographic:]-[:sc=han:]
@@ -32,4 +31,3 @@ $initialPunct = [:Ps:][:Pi:];
 # remove spacing between ideographs and other letters
 ← [:Ideographic:] { ' ' } [:Letter:] ;
 ← [:Letter:] [:Mark:]* { ' ' } [:Ideographic:] ;
-

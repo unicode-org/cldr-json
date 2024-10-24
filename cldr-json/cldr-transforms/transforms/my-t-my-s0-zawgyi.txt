@@ -1,4 +1,3 @@
-
 # This transform converts Zawgyi "encoded" Burmese into proper
 # unicode. Zawgyi is a popular encoding scheme in Myanmar. It uses
 # the Myanmar unicode range but assigns different characters or
@@ -228,4 +227,3 @@ $wspace = [\u0020\u00a0\u1680\u2000-\u200d\u2060\u202f\u205f\u3000\ufeff];
 \u200b+ $ → ;
 # Fix multiple spaces around ZWSP to single ZWSP.
 $wspace* \u200b $wspace* → \u200b;
-

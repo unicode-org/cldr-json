@@ -1,4 +1,3 @@
-
 # Make any string of letters after a cased letter be lower
 ::NFD();
 [:cased:] [:case-ignorable:]* {I } [^[:ccc=Not_Reordered:][:ccc=Above:]]* [:ccc=Above:] → i \u0307;
@@ -12,4 +11,3 @@
 [:Soft_Dotted:] [^[:ccc=Not_Reordered:][:ccc=Above:]]* { \u0307 → ;
 ([:Lowercase:]) → &Any-Upper($1) ;
 ::NFC();
-
