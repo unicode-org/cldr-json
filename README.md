@@ -22,12 +22,10 @@ which use this data.
 ## Package Organization
 
 Because the CLDR is so large and contains so many different types of information, the JSON data
-here is grouped into packages by functionality. For each type of functionality, there are two
-available packages: The "modern" packages, which contain the set of locales listed as modern
-coverage targets by the CLDR subcommittee, and the "full" packages, which contain the complete
-set of locales, including those in the corresponding modern packages.
+here is grouped into packages by functionality.
 
-See [PACKAGES.md](./PACKAGES.md) for the full package list.
+See [PACKAGES.md](./PACKAGES.md) for the full package list and details of each package.
+
 ## Downloading
 ### Tagged Releases
 
