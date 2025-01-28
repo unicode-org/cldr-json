@@ -10,7 +10,7 @@
 # In our rules, we also convert Arabic punctuation characters to Latin.
 # These appears to be used in Maldivian text, for example in the Universal
 # Declaration of Human Rights.
-::[[:Block=Thaana:][،؛؟٪٫٬]\uFDF2] ;
+::[[:block=thaana:][،؛؟٪٫٬]\uFDF2] ;
 ::NFD;
 $wordBoundary = [^[:L:][:M:][:N:]] ;
 $vowel = [\u07A6-\u07AF] ;
