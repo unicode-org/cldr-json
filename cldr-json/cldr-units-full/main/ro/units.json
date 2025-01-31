@@ -2,9 +2,6 @@
   "main": {
     "ro": {
       "identity": {
-        "version": {
-          "_cldrVersion": "44.1"
-        },
         "language": "ro"
       },
       "units": {
@@ -157,7 +154,7 @@
             "gender": "feminine",
             "displayName": "forță g",
             "unitPattern-count-one": "{0} forță g",
-            "genitive-count-one": "{0} forță g",
+            "genitive-count-one": "unei forțe g",
             "unitPattern-count-few": "{0} forță g",
             "genitive-count-few": "{0} forță g",
             "unitPattern-count-other": "{0} forță g",
@@ -315,10 +312,14 @@
             "genitive-count-other": "{0} de carate"
           },
           "concentr-milligram-ofglucose-per-deciliter": {
+            "gender": "neuter",
             "displayName": "miligrame pe decilitru",
             "unitPattern-count-one": "{0} miligram pe decilitru",
+            "genitive-count-one": "unui miligram pe decilitru",
             "unitPattern-count-few": "{0} miligrame pe decilitru",
-            "unitPattern-count-other": "{0} de miligrame pe decilitru"
+            "genitive-count-few": "{0} miligrame pe decilitru",
+            "unitPattern-count-other": "{0} de miligrame pe decilitru",
+            "genitive-count-other": "{0} de miligrame pe decilitru"
           },
           "concentr-millimole-per-liter": {
             "gender": "masculine",
@@ -711,10 +712,14 @@
             "genitive-count-other": "{0} de volți"
           },
           "energy-kilocalorie": {
+            "gender": "feminine",
             "displayName": "kilocalorii",
             "unitPattern-count-one": "{0} kilocalorie",
+            "genitive-count-one": "unei kilocalorii",
             "unitPattern-count-few": "{0} kilocalorii",
-            "unitPattern-count-other": "{0} de kilocalorii"
+            "genitive-count-few": "{0} kilocalorii",
+            "unitPattern-count-other": "{0} de kilocalorii",
+            "genitive-count-other": "{0} de kilocalorii"
           },
           "energy-calorie": {
             "gender": "feminine",
@@ -849,7 +854,12 @@
           "graphics-em": {
             "gender": "masculine",
             "displayName": "em tipografic",
-            "unitPattern-count-other": "{0} em"
+            "unitPattern-count-one": "{0} em",
+            "genitive-count-one": "unui em",
+            "unitPattern-count-few": "{0} em",
+            "genitive-count-few": "{0} em",
+            "unitPattern-count-other": "{0} de em",
+            "genitive-count-other": "{0} de em"
           },
           "graphics-pixel": {
             "gender": "masculine",
@@ -1067,10 +1077,14 @@
             "genitive-count-other": "{0} de mile scandinave"
           },
           "length-point": {
+            "gender": "neuter",
             "displayName": "puncte",
             "unitPattern-count-one": "{0} punct tipografic",
+            "genitive-count-one": "unui punct tipografic",
             "unitPattern-count-few": "{0} puncte tipografice",
-            "unitPattern-count-other": "{0} de puncte tipografice"
+            "genitive-count-few": "{0} puncte tipografice",
+            "unitPattern-count-other": "{0} de puncte tipografice",
+            "genitive-count-other": "{0} de puncte tipografice"
           },
           "length-solar-radius": {
             "displayName": "raze solare",
@@ -1289,10 +1303,14 @@
             "unitPattern-count-other": "{0} de cai putere"
           },
           "pressure-millimeter-ofhg": {
+            "gender": "masculine",
             "displayName": "milimetri coloană de mercur",
             "unitPattern-count-one": "{0} milimetru coloană de mercur",
+            "genitive-count-one": "unui milimetru coloană de mercur",
             "unitPattern-count-few": "{0} milimetri coloană de mercur",
-            "unitPattern-count-other": "{0} de milimetri coloană de mercur"
+            "genitive-count-few": "{0} milimetri coloană de mercur",
+            "unitPattern-count-other": "{0} de milimetri coloană de mercur",
+            "genitive-count-other": "{0} de milimetri coloană de mercur"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "livre pe inch pătrat",
@@ -1718,6 +1736,37 @@
             "unitPattern-count-one": "{0} quart imperial",
             "unitPattern-count-few": "{0} quarte imperiale",
             "unitPattern-count-other": "{0} de quarte imperiale"
+          },
+          "speed-light-speed": {
+            "gender": "feminine",
+            "displayName": "lumină",
+            "unitPattern-count-one": "{0} lumină",
+            "genitive-count-one": "{0} lumină",
+            "unitPattern-count-few": "{0} lumină",
+            "genitive-count-few": "{0} lumină",
+            "unitPattern-count-other": "{0} lumină",
+            "genitive-count-other": "{0} lumină"
+          },
+          "concentr-portion-per-1e9": {
+            "gender": "feminine",
+            "displayName": "părți pe miliard",
+            "unitPattern-count-one": "{0} parte pe miliard",
+            "genitive-count-one": "unei părți pe miliard",
+            "unitPattern-count-few": "{0} părți pe miliard",
+            "genitive-count-few": "{0} părți pe miliard",
+            "unitPattern-count-other": "{0} de părți pe miliard",
+            "genitive-count-other": "{0} de părți pe miliard"
+          },
+          "duration-night": {
+            "gender": "feminine",
+            "displayName": "noapte",
+            "unitPattern-count-one": "{0}/noapte",
+            "genitive-count-one": "unei nopți",
+            "unitPattern-count-few": "{0} nopți",
+            "genitive-count-few": "{0} nopți",
+            "unitPattern-count-other": "{0} de nopți",
+            "genitive-count-other": "{0} de nopți",
+            "perUnitPattern": "{0}/noapte"
           },
           "coordinateUnit": {
             "displayName": "punct cardinal",
@@ -2704,6 +2753,23 @@
             "unitPattern-count-one": "{0} qt imp.",
             "unitPattern-count-few": "{0} qt imp.",
             "unitPattern-count-other": "{0} qt imp."
+          },
+          "speed-light-speed": {
+            "displayName": "lumină",
+            "unitPattern-count-one": "{0} lumină",
+            "unitPattern-count-few": "{0} lumină",
+            "unitPattern-count-other": "{0} lumină"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "părți/miliard",
+            "unitPattern-count-other": "{0} ppb"
+          },
+          "duration-night": {
+            "displayName": "nopți",
+            "unitPattern-count-one": "{0} noapte",
+            "unitPattern-count-few": "{0} nopți",
+            "unitPattern-count-other": "{0} de nopți",
+            "perUnitPattern": "{0}/noapte"
           },
           "coordinateUnit": {
             "displayName": "direcție",
@@ -3698,6 +3764,23 @@
             "unitPattern-count-one": "{0} qt im",
             "unitPattern-count-few": "{0} qt im",
             "unitPattern-count-other": "{0} qt im"
+          },
+          "speed-light-speed": {
+            "displayName": "lumină",
+            "unitPattern-count-one": "{0} lumină",
+            "unitPattern-count-few": "{0} lumină",
+            "unitPattern-count-other": "{0} lumină"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "părți/miliard",
+            "unitPattern-count-other": "{0} ppb"
+          },
+          "duration-night": {
+            "displayName": "nopți",
+            "unitPattern-count-one": "{0} noapte",
+            "unitPattern-count-few": "{0} nopți",
+            "unitPattern-count-other": "{0} de nopți",
+            "perUnitPattern": "{0}/noapte"
           },
           "coordinateUnit": {
             "displayName": "direcție",

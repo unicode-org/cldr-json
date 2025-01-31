@@ -2,9 +2,6 @@
   "main": {
     "ga": {
       "identity": {
-        "version": {
-          "_cldrVersion": "44.1"
-        },
         "language": "ga"
       },
       "personNames": {
@@ -28,12 +25,12 @@
           "givenFirst": {
             "long": {
               "referring": {
-                "formal": "{given} {given2} {surname} {credentials}",
-                "informal": "{given-informal} {surname}"
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
+                "informal": "{title} {given} {given2} {surname} {surname2} {credentials}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
-                "informal": "{given-informal}"
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
+                "informal": "{title} {given} {given2} {surname} {surname2} {credentials}"
               },
               "monogram": {
                 "formal": "{given-monogram-allCaps}{given2-monogram-allCaps}{surname-monogram-allCaps}",
@@ -42,11 +39,11 @@
             },
             "medium": {
               "referring": {
-                "formal": "{given} {given2-initial} {surname} {credentials}",
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
                 "informal": "{given-informal} {surname}"
               },
               "addressing": {
-                "formal": "{title} {surname}",
+                "formal": "{title} {given} {given2} {surname} {surname2} {credentials}",
                 "informal": "{given-informal}"
               },
               "monogram": {
@@ -116,7 +113,7 @@
           "sorting": {
             "long": {
               "referring": {
-                "formal": "{surname-prefix} {surname-core}, {given} {given2}",
+                "formal": "{surname} {surname2}, {title} {given} {given2} {credentials}",
                 "informal": "{surname}, {given-informal}"
               }
             },

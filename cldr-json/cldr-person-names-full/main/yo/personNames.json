@@ -2,9 +2,6 @@
   "main": {
     "yo": {
       "identity": {
-        "version": {
-          "_cldrVersion": "44.1"
-        },
         "language": "yo"
       },
       "personNames": {
@@ -23,7 +20,7 @@
         "nativeSpaceReplacement": " ",
         "foreignSpaceReplacement": " ",
         "initial": "{0}.",
-        "initialSequence": "{0} {1}",
+        "initialSequence": "{0}{1}",
         "personName": {
           "givenFirst": {
             "long": {
@@ -56,7 +53,7 @@
             },
             "short": {
               "referring": {
-                "formal": "{given-initial} {given2-initial} {surname}",
+                "formal": "{given} {given2} {surname} {credentials}",
                 "informal": "{given-informal} {surname-initial}"
               },
               "addressing": {
@@ -100,7 +97,7 @@
             },
             "short": {
               "referring": {
-                "formal": "{surname} {given-initial} {given2-initial}",
+                "formal": "{surname} {given} {given2} {credentials}",
                 "informal": "{surname} {given-initial}"
               },
               "addressing": {
@@ -128,7 +125,7 @@
             },
             "short": {
               "referring": {
-                "formal": "{surname-core}, {given-initial} {given2-initial} {surname-prefix}",
+                "formal": "{surname-core}, {given} {given2} {surname-prefix}",
                 "informal": "{surname}, {given-informal}"
               }
             }

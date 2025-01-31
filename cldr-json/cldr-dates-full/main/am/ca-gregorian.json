@@ -2,9 +2,6 @@
   "main": {
     "am": {
       "identity": {
-        "version": {
-          "_cldrVersion": "44.1"
-        },
         "language": "am"
       },
       "dates": {
@@ -260,7 +257,7 @@
                   "noon": "ቀትር",
                   "pm": "ከሰዓት",
                   "morning1": "ጥዋት",
-                  "afternoon1": "ከሰዓት በኋላ",
+                  "afternoon1": "ከሰዓት",
                   "evening1": "ምሽት",
                   "night1": "ሌሊት"
                 },
@@ -270,7 +267,7 @@
                   "noon": "ቀትር",
                   "pm": "ከ",
                   "morning1": "ጥዋት",
-                  "afternoon1": "ከሰዓት በኋላ",
+                  "afternoon1": "ከሰዓት",
                   "evening1": "ማታ",
                   "night1": "ሌሊት"
                 },
@@ -280,7 +277,7 @@
                   "noon": "ቀትር",
                   "pm": "ከሰዓት",
                   "morning1": "ጥዋት",
-                  "afternoon1": "ከሰዓት በኋላ",
+                  "afternoon1": "ከሰዓት",
                   "evening1": "ምሽት",
                   "night1": "ሌሊት"
                 }
@@ -297,17 +294,17 @@
                 "0": "ዓ/ዓ",
                 "0-alt-variant": "ዓ/ዓ",
                 "1": "ዓ/ም",
-                "1-alt-variant": "መዓ"
+                "1-alt-variant": "ዓ/ም"
               },
               "eraNarrow": {
                 "0": "ዓ/ዓ",
                 "0-alt-variant": "ዓ/ዓ",
                 "1": "ዓ/ም",
-                "1-alt-variant": "መዓ"
+                "1-alt-variant": "ዓ/ም"
               }
             },
             "dateFormats": {
-              "full": "y MMMM d, EEEE",
+              "full": "EEEE d MMMM y",
               "long": "d MMMM y",
               "medium": "d MMM y",
               "short": "dd/MM/y"
@@ -336,55 +333,56 @@
               "medium": "{1} {0}",
               "short": "{1} {0}",
               "availableFormats": {
-                "Bh": "h B",
-                "Bhm": "h:mm B",
-                "Bhms": "h:mm:ss B",
+                "Bh": "B h",
+                "Bhm": "B h:mm",
+                "Bhms": "B h:mm:ss",
                 "d": "d",
                 "E": "ccc",
-                "EBhm": "E h:mm B",
-                "EBhms": "E h:mm:ss B",
+                "EBhm": "E B h:mm",
+                "EBhms": "E B h:mm:ss",
                 "Ed": "E d",
-                "Ehm": "E h:mm a",
+                "Ehm": "E a h:mm",
                 "EHm": "E HH:mm",
-                "Ehms": "E h:mm:ss a",
+                "Ehms": "E a h:mm:ss",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
-                "GyMd": "M/d/y GGGGG",
+                "GyMd": "d/M/y GGGGG",
                 "GyMMM": "MMM y G",
-                "GyMMMd": "G y MMM d",
-                "GyMMMEd": "G y MMM d, E",
-                "h": "h a",
+                "GyMMMd": "MMM d y G",
+                "GyMMMEd": "E MMM d y G",
+                "h": "a h",
                 "H": "H",
-                "hm": "h:mm a",
+                "hm": "a h:mm",
                 "Hm": "HH:mm",
-                "hms": "h:mm:ss a",
+                "hms": "a h:mm:ss",
                 "Hms": "HH:mm:ss",
                 "hmsv": "h:mm:ss a v",
                 "Hmsv": "HH:mm:ss v",
                 "hmv": "h:mm a v",
                 "Hmv": "HH:mm v",
                 "M": "L",
-                "Md": "M/d",
-                "MEd": "E፣ M/d",
+                "Md": "d/M",
+                "MEd": "E፣ d/M",
                 "MMM": "LLL",
                 "MMMd": "MMM d",
                 "MMMEd": "E፣ MMM d",
                 "MMMMd": "MMMM d",
                 "MMMMEd": "E፣ MMMM d",
-                "MMMMW-count-one": "ሳምንት W የ MMMM",
-                "MMMMW-count-other": "ሳምንት W የ MMMM",
+                "MMMMW-count-one": "የMMMM Wኛ ሳምንት",
+                "MMMMW-count-other": "የMMMM Wኛ ሳምንት",
                 "ms": "mm:ss",
                 "y": "y",
                 "yM": "M/y",
                 "yMd": "d/M/y",
                 "yMEd": "E፣ d/M/y",
                 "yMMM": "MMM y",
-                "yMMMd": "d MMM y",
+                "yMMMd": "MMM d y",
                 "yMMMEd": "E፣ MMM d y",
                 "yMMMM": "MMMM y",
-                "yQQQ": "QQQ y",
-                "yQQQQ": "QQQQ y",
-                "yw-count-other": "'week' w 'of' Y"
+                "yQQQ": "y QQQ",
+                "yQQQQ": "y QQQQ",
+                "yw-count-one": "የY wኛ ሳምንት",
+                "yw-count-other": "የY wኛ ሳምንት"
               },
               "appendItems": {
                 "Day": "{0} ({2}: {1})",
@@ -402,11 +400,11 @@
               "intervalFormats": {
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
-                  "B": "h B – h B",
+                  "B": "h B – h B",
                   "h": "h–h B"
                 },
                 "Bhm": {
-                  "B": "h:mm B – h:mm B",
+                  "B": "h:mm B – h:mm B",
                   "h": "h:mm–h:mm B",
                   "m": "h:mm–h:mm B"
                 },
@@ -414,7 +412,7 @@
                   "d": "d–d"
                 },
                 "Gy": {
-                  "G": "G y – G y",
+                  "G": "G y – G y",
                   "y": "G y–y"
                 },
                 "GyM": {
@@ -425,14 +423,14 @@
                 "GyMd": {
                   "d": "GGGGG d/M/y – d/M/y",
                   "G": "GGGGG d/M/y – GGGGG d/M/y",
-                  "M": "GGGGG d/M/y – d/M/y",
+                  "M": "GGGGG y-MM-dd – y-MM-dd",
                   "y": "GGGGG d/M/y – d/M/y"
                 },
                 "GyMEd": {
-                  "d": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "G": "GGGGG y-MM-dd, E – GGGGG y-MM-dd, E",
-                  "M": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "y": "GGGGG y-MM-dd, E – y-MM-dd, E"
+                  "d": "GGGGG y-MM-dd, E – y-MM-dd, E",
+                  "G": "GGGGG y-MM-dd, E – GGGGG y-MM-dd, E",
+                  "M": "GGGGG y-MM-dd, E – y-MM-dd, E",
+                  "y": "GGGGG y-MM-dd, E – y-MM-dd, E"
                 },
                 "GyMMM": {
                   "G": "G MMM y – G MMM y",
@@ -452,14 +450,14 @@
                   "y": "G E፣ MMM d፣ y – E፣ MMM d፣ y"
                 },
                 "h": {
-                  "a": "h a – h a",
+                  "a": "h a – h a",
                   "h": "h – h a"
                 },
                 "H": {
                   "H": "HH–HH"
                 },
                 "hm": {
-                  "a": "h:mm a – h:mm a",
+                  "a": "h:mm a – h:mm a",
                   "h": "h:mm – h:mm a",
                   "m": "h:mm – h:mm a"
                 },
@@ -468,7 +466,7 @@
                   "m": "HH:mm–HH:mm"
                 },
                 "hmv": {
-                  "a": "h:mm a – h:mm a v",
+                  "a": "h:mm a – h:mm a v",
                   "h": "h:mm – h:mm a v",
                   "m": "h:mm – h:mm a v"
                 },
@@ -477,7 +475,7 @@
                   "m": "HH:mm–HH:mm v"
                 },
                 "hv": {
-                  "a": "h a – h a v",
+                  "a": "h a – h a v",
                   "h": "h – h a v"
                 },
                 "Hv": {
@@ -499,11 +497,11 @@
                 },
                 "MMMd": {
                   "d": "MMM d–d",
-                  "M": "MMM d – MMM d"
+                  "M": "MMM d – MMM d"
                 },
                 "MMMEd": {
                   "d": "E d – E d፣ MMM",
-                  "M": "MMM d, E – MMM d, E"
+                  "M": "MMM d, E – MMM d, E"
                 },
                 "y": {
                   "y": "y–y"
@@ -518,7 +516,7 @@
                   "y": "d/M/y – d/M/y"
                 },
                 "yMEd": {
-                  "d": "y-MM-dd, E – y-MM-dd, E",
+                  "d": "y-MM-dd, E – y-MM-dd, E",
                   "M": "E d/M/ – E d/M፣ y",
                   "y": "E፣ d/M/y – E፣ d/M/y"
                 },

@@ -81,4 +81,13 @@ INDATA=../cldr-staging-other/production
 
 ## License & Copyright
 
-See [README.md](./README.md)
+- Usage of CLDR data and software is governed by the [Unicode Terms of Use](http://www.unicode.org/copyright.html)
+a copy of which is included as [unicode-license.txt](./unicode-license.txt).
+
+SPDX-License-Identifier: Unicode-DFS-2016
+
+## Copyright
+
+Copyright &copy; 1991-2025 Unicode, Inc.
+All rights reserved.
+[Terms of use](http://www.unicode.org/copyright.html)

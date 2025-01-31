@@ -2,15 +2,12 @@
   "main": {
     "ig": {
       "identity": {
-        "version": {
-          "_cldrVersion": "44.1"
-        },
         "language": "ig"
       },
       "units": {
         "long": {
           "10p-1": {
-            "unitPrefixPattern": "d{0}"
+            "unitPrefixPattern": "deci{0}"
           },
           "10p-2": {
             "unitPrefixPattern": "c{0}"
@@ -19,7 +16,7 @@
             "unitPrefixPattern": "m{0}"
           },
           "10p-6": {
-            "unitPrefixPattern": "μ{0}"
+            "unitPrefixPattern": "obere{0}"
           },
           "10p-9": {
             "unitPrefixPattern": "n{0}"
@@ -55,13 +52,13 @@
             "unitPrefixPattern": "k{0}"
           },
           "10p6": {
-            "unitPrefixPattern": "M{0}"
+            "unitPrefixPattern": "mega{0}"
           },
           "10p9": {
-            "unitPrefixPattern": "G{0}"
+            "unitPrefixPattern": "giga{0}"
           },
           "10p12": {
-            "unitPrefixPattern": "T{0}"
+            "unitPrefixPattern": "tera{0}"
           },
           "10p15": {
             "unitPrefixPattern": "P{0}"
@@ -106,15 +103,15 @@
             "unitPrefixPattern": "Yi{0}"
           },
           "per": {
-            "compoundUnitPattern": "{0}/{1}"
+            "compoundUnitPattern": "{0} per {1}"
           },
           "power2": {
             "compoundUnitPattern1": "{0}²",
-            "compoundUnitPattern1-count-other": "{0} square"
+            "compoundUnitPattern1-count-other": "{0} sukwia"
           },
           "power3": {
             "compoundUnitPattern1": "{0}³",
-            "compoundUnitPattern1-count-other": "{0} cubic"
+            "compoundUnitPattern1-count-other": "{0} kubik"
           },
           "times": {
             "compoundUnitPattern": "{0}⋅{1}"
@@ -290,15 +287,15 @@
           },
           "duration-century": {
             "displayName": "Ọtụtụ nari afọ",
-            "unitPattern-count-other": "{0} c"
+            "unitPattern-count-other": "{0} Ọtụtụ nari afọ"
           },
           "duration-decade": {
             "displayName": "Ọtụtụ afọ iri",
-            "unitPattern-count-other": "{0} dec"
+            "unitPattern-count-other": "{0} Ọtụtụ afọ iri"
           },
           "duration-year": {
             "displayName": "Ọtụtụ Afọ",
-            "unitPattern-count-other": "{0} y",
+            "unitPattern-count-other": "{0} Ọtụtụ Afọ",
             "perUnitPattern": "{0}/y"
           },
           "duration-quarter": {
@@ -308,33 +305,33 @@
           },
           "duration-month": {
             "displayName": "Ọtụtụ Ọnwa",
-            "unitPattern-count-other": "{0} m",
-            "perUnitPattern": "{0}/m"
+            "unitPattern-count-other": "{0} Ọnwa",
+            "perUnitPattern": "{0} kwa Ọnwa"
           },
           "duration-week": {
             "displayName": "Ọtụtụ Izu",
-            "unitPattern-count-other": "{0} w",
-            "perUnitPattern": "{0}/w"
+            "unitPattern-count-other": "{0} Ọtụtụ Izu",
+            "perUnitPattern": "{0} kwa Izu"
           },
           "duration-day": {
             "displayName": "Ọtụtụ Ubochi",
-            "unitPattern-count-other": "{0} d",
+            "unitPattern-count-other": "{0} Ọtụtụ Ubochi",
             "perUnitPattern": "{0}/d"
           },
           "duration-hour": {
-            "displayName": "hr",
-            "unitPattern-count-other": "{0} h",
+            "displayName": "Ọtụtụ awa",
+            "unitPattern-count-other": "{0} Ọtụtụ awa",
             "perUnitPattern": "{0}/h"
           },
           "duration-minute": {
-            "displayName": "min",
-            "unitPattern-count-other": "{0} min",
-            "perUnitPattern": "{0}/min"
+            "displayName": "nkeji",
+            "unitPattern-count-other": "{0} nkeji",
+            "perUnitPattern": "{0} kwa nkeji"
           },
           "duration-second": {
-            "displayName": "sec",
-            "unitPattern-count-other": "{0} s",
-            "perUnitPattern": "{0}/s"
+            "displayName": "sekọnd",
+            "unitPattern-count-other": "{0} sekọnd",
+            "perUnitPattern": "{0} kwa sekọnd"
           },
           "duration-millisecond": {
             "displayName": "ms",
@@ -434,19 +431,19 @@
           },
           "graphics-pixel": {
             "displayName": "px",
-            "unitPattern-count-other": "{0} px"
+            "unitPattern-count-other": "{0} pixels"
           },
           "graphics-megapixel": {
-            "displayName": "MP",
+            "displayName": "megapixels",
             "unitPattern-count-other": "{0} MP"
           },
           "graphics-pixel-per-centimeter": {
-            "displayName": "ppcm",
-            "unitPattern-count-other": "{0} ppcm"
+            "displayName": "pixels per centimeter",
+            "unitPattern-count-other": "{0} pixels per centimeter"
           },
           "graphics-pixel-per-inch": {
-            "displayName": "ppi",
-            "unitPattern-count-other": "{0} ppi"
+            "displayName": "pixels per inch",
+            "unitPattern-count-other": "{0} pixels per inch"
           },
           "graphics-dot-per-centimeter": {
             "displayName": "ntụpọ kwa sentimita",
@@ -882,12 +879,25 @@
             "displayName": "qt Imp",
             "unitPattern-count-other": "{0} qt Imp."
           },
+          "speed-light-speed": {
+            "displayName": "ìhè",
+            "unitPattern-count-other": "{0} ìhè"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "akụkụ kwa ijeri",
+            "unitPattern-count-other": "{0} akụkụ kwa ijeri"
+          },
+          "duration-night": {
+            "displayName": "Ọtụtụ abali",
+            "unitPattern-count-other": "{0} Ọtụtụ abali",
+            "perUnitPattern": "{0} kwa abali"
+          },
           "coordinateUnit": {
-            "displayName": "direction",
+            "displayName": "cardinal direction",
             "east": "{0}E",
-            "north": "{0}N",
-            "south": "{0}S",
-            "west": "{0}W"
+            "north": "{0} north",
+            "south": "{0} south",
+            "west": "{0} west"
           }
         },
         "short": {
@@ -1190,22 +1200,22 @@
           },
           "duration-month": {
             "displayName": "mon",
-            "unitPattern-count-other": "{0} m",
+            "unitPattern-count-other": "{0} mths",
             "perUnitPattern": "{0}/m"
           },
           "duration-week": {
             "displayName": "wk",
-            "unitPattern-count-other": "{0} w",
+            "unitPattern-count-other": "{0} wks",
             "perUnitPattern": "{0}/w"
           },
           "duration-day": {
-            "displayName": "day",
-            "unitPattern-count-other": "{0} d",
+            "displayName": "Ọtụtụ Ubochi",
+            "unitPattern-count-other": "{0} Ọtụtụ Ubochi",
             "perUnitPattern": "{0}/d"
           },
           "duration-hour": {
-            "displayName": "hr",
-            "unitPattern-count-other": "{0} h",
+            "displayName": "Ọtụtụ awa",
+            "unitPattern-count-other": "{0} awa",
             "perUnitPattern": "{0}/h"
           },
           "duration-minute": {
@@ -1331,11 +1341,11 @@
             "unitPattern-count-other": "{0} ppi"
           },
           "graphics-dot-per-centimeter": {
-            "displayName": "nksm",
-            "unitPattern-count-other": "{0} nksm"
+            "displayName": "dpcm",
+            "unitPattern-count-other": "{0} dpcm"
           },
           "graphics-dot-per-inch": {
-            "displayName": "nki",
+            "displayName": "dpi",
             "unitPattern-count-other": "{0} nki"
           },
           "graphics-dot": {
@@ -1737,7 +1747,7 @@
             "unitPattern-count-other": "{0} bbl"
           },
           "volume-dessert-spoon": {
-            "displayName": "dstspn",
+            "displayName": "ngaji mégharia onu",
             "unitPattern-count-other": "{0} dstspn"
           },
           "volume-dessert-spoon-imperial": {
@@ -1763,6 +1773,19 @@
           "volume-quart-imperial": {
             "displayName": "qt Imp",
             "unitPattern-count-other": "{0} qt Imp."
+          },
+          "speed-light-speed": {
+            "displayName": "ìhè",
+            "unitPattern-count-other": "{0} ìhè"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "akụkụ/ijeri",
+            "unitPattern-count-other": "{0} ppb"
+          },
+          "duration-night": {
+            "displayName": "Ọtụtụ abali",
+            "unitPattern-count-other": "{0} Ọtụtụ abali",
+            "perUnitPattern": "{0}/abali"
           },
           "coordinateUnit": {
             "displayName": "direction",
@@ -2072,22 +2095,22 @@
           },
           "duration-month": {
             "displayName": "mon",
-            "unitPattern-count-other": "{0} m",
+            "unitPattern-count-other": "{0} mths",
             "perUnitPattern": "{0}/m"
           },
           "duration-week": {
             "displayName": "wk",
-            "unitPattern-count-other": "{0} w",
+            "unitPattern-count-other": "{0} wks",
             "perUnitPattern": "{0}/w"
           },
           "duration-day": {
-            "displayName": "day",
-            "unitPattern-count-other": "{0} d",
+            "displayName": "Ubochi",
+            "unitPattern-count-other": "{0} Ọtụtụ Ubochi",
             "perUnitPattern": "{0}/d"
           },
           "duration-hour": {
-            "displayName": "hr",
-            "unitPattern-count-other": "{0} h",
+            "displayName": "awa",
+            "unitPattern-count-other": "{0} awa",
             "perUnitPattern": "{0}/h"
           },
           "duration-minute": {
@@ -2205,20 +2228,20 @@
             "unitPattern-count-other": "{0}MP"
           },
           "graphics-pixel-per-centimeter": {
-            "displayName": "pksm",
-            "unitPattern-count-other": "{0}pksm"
+            "displayName": "ppcm",
+            "unitPattern-count-other": "{0} ppcm"
           },
           "graphics-pixel-per-inch": {
-            "displayName": "pki",
-            "unitPattern-count-other": "{0}pki"
+            "displayName": "ppi",
+            "unitPattern-count-other": "{0} ppi"
           },
           "graphics-dot-per-centimeter": {
-            "displayName": "nksm",
-            "unitPattern-count-other": "{0}nksm"
+            "displayName": "dpcm",
+            "unitPattern-count-other": "{0}dpcm"
           },
           "graphics-dot-per-inch": {
-            "displayName": "nki",
-            "unitPattern-count-other": "{0}nki"
+            "displayName": "dpi",
+            "unitPattern-count-other": "{0}dpi"
           },
           "graphics-dot": {
             "displayName": "ntụpọ",
@@ -2619,7 +2642,7 @@
             "unitPattern-count-other": "{0} bbl"
           },
           "volume-dessert-spoon": {
-            "displayName": "dstspn",
+            "displayName": "ngaji mégharia onu",
             "unitPattern-count-other": "{0} dstspn"
           },
           "volume-dessert-spoon-imperial": {
@@ -2645,6 +2668,19 @@
           "volume-quart-imperial": {
             "displayName": "qt Imp",
             "unitPattern-count-other": "{0} qt Imp."
+          },
+          "speed-light-speed": {
+            "displayName": "ìhè",
+            "unitPattern-count-other": "{0}ìhè"
+          },
+          "concentr-portion-per-1e9": {
+            "displayName": "akụkụ/ijeri",
+            "unitPattern-count-other": "{0} ppb"
+          },
+          "duration-night": {
+            "displayName": "Ọtụtụ abali",
+            "unitPattern-count-other": "{0}Ọtụtụ abali",
+            "perUnitPattern": "{0}/abali"
           },
           "coordinateUnit": {
             "displayName": "direction",
