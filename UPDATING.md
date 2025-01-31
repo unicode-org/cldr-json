@@ -26,6 +26,7 @@ Make sure your `cldr-json` directory is otherwise clean (`git status`)
 2. *Delete* the `cldr-json/cldr-json` subdirectory (the subdirectory of `cldr-json`).  This way, git will tell you what has changed, and you can see if any files failed to regenerate or were newly added.
 3. Run the script `cldr-generate-json.sh`
 4. Data will be updated in the recreated `cldr-json` subdirectory.
+5. Also note that the `PACKAGES.md` file at the TOP level may be updateed, make sure to commit this as well.
 
 #### Troubleshooting
 
@@ -45,7 +46,7 @@ Make sure your `cldr-json` directory is otherwise clean (`git status`)
 1. Run the script `cldr-generate-zip.sh` to generate zipfiles under `dist/`; their names will include `VERSION`, for example: `cldr-44.0.0-ALPHA2-json-full.zip`.
 2. Create a release tag matching VERSION in this repository.  Create a GitHub release, use other [releases](https://github.com/unicode-org/cldr-json/releases) as a guide.  Make sure the release is marked as "pre-release" if it isn't final.
 3. Update the npm packages. Each sub-subdirectory of `cldr-json/cldr-json` is a separate npm package. The following script will preview
-(dry run) publishing to npm under the `beta` tag. Check the version carefully!
+(dry run) publishing to npm under the `beta` tag. Check the version carefully—not to put too fine a point on it, but once published, a particular version number cannot be republished. (Tags may be moved as needed.)
 
 ```shell
 (cd cldr-json; npm login; for repo in $(ls); do (cd $repo; npm publish --tag beta --dry-run); done)
