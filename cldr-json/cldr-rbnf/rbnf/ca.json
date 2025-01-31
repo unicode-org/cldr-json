@@ -5,38 +5,10 @@
     },
     "rbnf": {
       "OrdinalRules": {
-        "%%digits-ordinal-indicator-m": [
+        "%digits-ordinal": [
           [
             "0",
-            "è;"
-          ],
-          [
-            "1",
-            "r;"
-          ],
-          [
-            "2",
-            "n;"
-          ],
-          [
-            "3",
-            "r;"
-          ],
-          [
-            "4",
-            "t;"
-          ],
-          [
-            "5",
-            "è;"
-          ],
-          [
-            "20",
-            "→→;"
-          ],
-          [
-            "100",
-            "→→;"
+            "=%digits-ordinal-masculine=;"
           ]
         ],
         "%digits-ordinal-masculine": [
@@ -46,7 +18,17 @@
           ],
           [
             "0",
-            "=#,##0==%%digits-ordinal-indicator-m=;"
+            "=#,##0=$(ordinal,one{r}two{n}few{t}other{è})$;"
+          ]
+        ],
+        "%digits-ordinal-masculine-plural": [
+          [
+            "-x",
+            "−→→;"
+          ],
+          [
+            "0",
+            "=#,##0=$(ordinal,one{rs}few{ts}other{ns})$;"
           ]
         ],
         "%digits-ordinal-feminine": [
@@ -59,10 +41,14 @@
             "=#,##0=a;"
           ]
         ],
-        "%digits-ordinal": [
+        "%digits-ordinal-feminine-plural": [
+          [
+            "-x",
+            "−→→;"
+          ],
           [
             "0",
-            "=%digits-ordinal-masculine=;"
+            "=#,##0=es;"
           ]
         ]
       },
@@ -75,16 +61,6 @@
           [
             "0",
             "=%spellout-numbering=;"
-          ]
-        ],
-        "%%spellout-numbering-cents": [
-          [
-            "0",
-            "s;"
-          ],
-          [
-            "1",
-            "' =%spellout-cardinal-masculine=;"
           ]
         ],
         "%spellout-numbering": [
@@ -142,11 +118,11 @@
           ],
           [
             "100",
-            "cent[-→→];"
+            "cent[ →→];"
           ],
           [
             "200",
-            "←%spellout-cardinal-masculine←-cent→%%spellout-numbering-cents→;"
+            "←%spellout-cardinal-masculine←-cents[ →→];"
           ],
           [
             "1000",
@@ -165,14 +141,6 @@
             "←%spellout-cardinal-masculine← milions[ →→];"
           ],
           [
-            "1000000000",
-            "un miliard[ →→];"
-          ],
-          [
-            "2000000000",
-            "←%spellout-cardinal-masculine← miliards[ →→];"
-          ],
-          [
             "1000000000000",
             "un bilió[ →→];"
           ],
@@ -181,26 +149,8 @@
             "←%spellout-cardinal-masculine← bilions[ →→];"
           ],
           [
-            "1000000000000000",
-            "un biliard[ →→];"
-          ],
-          [
-            "2000000000000000",
-            "←%spellout-cardinal-masculine← biliards[ →→];"
-          ],
-          [
             "1000000000000000000",
             "=#,##0=;"
-          ]
-        ],
-        "%%spellout-cardinal-masculine-cents": [
-          [
-            "0",
-            "s;"
-          ],
-          [
-            "1",
-            "' =%spellout-cardinal-masculine=;"
           ]
         ],
         "%spellout-cardinal-masculine": [
@@ -326,11 +276,11 @@
           ],
           [
             "100",
-            "cent[-→→];"
+            "cent[ →→];"
           ],
           [
             "200",
-            "←%spellout-cardinal-masculine←-cent→%%spellout-cardinal-masculine-cents→;"
+            "←%spellout-cardinal-masculine←-cents[ →→];"
           ],
           [
             "1000",
@@ -338,7 +288,7 @@
           ],
           [
             "2000",
-            "←%spellout-cardinal-masculine← mil[ →→];"
+            "←← mil[ →→];"
           ],
           [
             "1000000",
@@ -346,15 +296,7 @@
           ],
           [
             "2000000",
-            "←%spellout-cardinal-masculine← milions[ →→];"
-          ],
-          [
-            "1000000000",
-            "un miliard[ →→];"
-          ],
-          [
-            "2000000000",
-            "←%spellout-cardinal-masculine← miliards[ →→];"
+            "←← milions[ →→];"
           ],
           [
             "1000000000000",
@@ -362,29 +304,11 @@
           ],
           [
             "2000000000000",
-            "←%spellout-cardinal-masculine← bilions[ →→];"
-          ],
-          [
-            "1000000000000000",
-            "un biliard[ →→];"
-          ],
-          [
-            "2000000000000000",
-            "←%spellout-cardinal-masculine← biliards[ →→];"
+            "←← bilions[ →→];"
           ],
           [
             "1000000000000000000",
             "=#,##0=;"
-          ]
-        ],
-        "%%spellout-cardinal-feminine-cents": [
-          [
-            "0",
-            "s;"
-          ],
-          [
-            "1",
-            "' =%spellout-cardinal-feminine=;"
           ]
         ],
         "%spellout-cardinal-feminine": [
@@ -446,11 +370,11 @@
           ],
           [
             "100",
-            "cent[-→→];"
+            "cent[ →→];"
           ],
           [
             "200",
-            "←%spellout-cardinal-masculine←-cent→%%spellout-cardinal-feminine-cents→;"
+            "←←-centes[ →→];"
           ],
           [
             "1000",
@@ -458,7 +382,7 @@
           ],
           [
             "2000",
-            "←%spellout-cardinal-masculine← mil[ →→];"
+            "←← mil[ →→];"
           ],
           [
             "1000000",
@@ -469,14 +393,6 @@
             "←%spellout-cardinal-masculine← milions[ →→];"
           ],
           [
-            "1000000000",
-            "un miliard[ →→];"
-          ],
-          [
-            "2000000000",
-            "←%spellout-cardinal-masculine← miliards[ →→];"
-          ],
-          [
             "1000000000000",
             "un bilió[ →→];"
           ],
@@ -485,16 +401,34 @@
             "←%spellout-cardinal-masculine← bilions[ →→];"
           ],
           [
-            "1000000000000000",
-            "un biliard[ →→];"
-          ],
-          [
-            "2000000000000000",
-            "←%spellout-cardinal-masculine← biliards[ →→];"
-          ],
-          [
             "1000000000000000000",
             "=#,##0=;"
+          ]
+        ],
+        "%%spellout-ordinal-masculine-large": [
+          [
+            "0",
+            ";"
+          ],
+          [
+            "1",
+            "unè;"
+          ],
+          [
+            "2",
+            "dosè;"
+          ],
+          [
+            "3",
+            "tresè;"
+          ],
+          [
+            "4",
+            "quatrè;"
+          ],
+          [
+            "5",
+            "=%spellout-ordinal-masculine=;"
           ]
         ],
         "%%spellout-ordinal-masculine-cont": [
@@ -504,7 +438,7 @@
           ],
           [
             "1",
-            "' =%spellout-ordinal-masculine=;"
+            "' =%%spellout-ordinal-masculine-large=;"
           ]
         ],
         "%%spellout-ordinal-masculine-conts": [
@@ -514,7 +448,7 @@
           ],
           [
             "1",
-            "s =%spellout-ordinal-masculine=;"
+            "s =%%spellout-ordinal-masculine-large=;"
           ]
         ],
         "%spellout-ordinal-masculine": [
@@ -672,15 +606,11 @@
           ],
           [
             "100",
-            "centè;"
-          ],
-          [
-            "101",
-            "cent-→→;"
+            "cent→%%spellout-ordinal-masculine-cont→;"
           ],
           [
             "200",
-            "←%spellout-cardinal-masculine←-cent→%%spellout-ordinal-masculine-cont→;"
+            "←%spellout-cardinal-masculine←-cent→%%spellout-ordinal-masculine-conts→;"
           ],
           [
             "1000",
@@ -699,14 +629,6 @@
             "←%spellout-cardinal-masculine← milion→%%spellout-ordinal-masculine-conts→;"
           ],
           [
-            "1000000000",
-            "un miliard→%%spellout-ordinal-masculine-cont→;"
-          ],
-          [
-            "2000000000",
-            "←%spellout-cardinal-masculine← miliard→%%spellout-ordinal-masculine-conts→;"
-          ],
-          [
             "1000000000000",
             "un bilion→%%spellout-ordinal-masculine-cont→;"
           ],
@@ -715,16 +637,34 @@
             "←%spellout-cardinal-masculine← bilion→%%spellout-ordinal-masculine-conts→;"
           ],
           [
-            "1000000000000000",
-            "un biliard→%%spellout-ordinal-masculine-cont→;"
-          ],
-          [
-            "2000000000000000",
-            "←%spellout-cardinal-masculine← biliard→%%spellout-ordinal-masculine-conts→;"
-          ],
-          [
             "1000000000000000000",
             "=#,##0=è;"
+          ]
+        ],
+        "%%spellout-ordinal-feminine-large": [
+          [
+            "0",
+            ";"
+          ],
+          [
+            "1",
+            "unena;"
+          ],
+          [
+            "2",
+            "dosena;"
+          ],
+          [
+            "3",
+            "tresena;"
+          ],
+          [
+            "4",
+            "quatrena;"
+          ],
+          [
+            "5",
+            "=%spellout-ordinal-feminine=;"
           ]
         ],
         "%%spellout-ordinal-feminine-cont": [
@@ -734,7 +674,7 @@
           ],
           [
             "1",
-            "' =%spellout-ordinal-feminine=;"
+            "' =%%spellout-ordinal-feminine-large=;"
           ]
         ],
         "%%spellout-ordinal-feminine-conts": [
@@ -744,7 +684,7 @@
           ],
           [
             "1",
-            "s =%spellout-ordinal-feminine=;"
+            "s =%%spellout-ordinal-feminine-large=;"
           ]
         ],
         "%spellout-ordinal-feminine": [
@@ -902,15 +842,11 @@
           ],
           [
             "100",
-            "centena;"
-          ],
-          [
-            "101",
-            "cent-→→;"
+            "cent→%%spellout-ordinal-feminine-cont→;"
           ],
           [
             "200",
-            "←%spellout-cardinal-masculine←-cent→%%spellout-ordinal-feminine-cont→;"
+            "←%spellout-cardinal-masculine←-cent→%%spellout-ordinal-feminine-conts→;"
           ],
           [
             "1000",
@@ -918,7 +854,7 @@
           ],
           [
             "2000",
-            "←%spellout-cardinal-masculine← mil→%%spellout-ordinal-feminine-cont→;"
+            "←%spellout-cardinal-masculine← mil→%%spellout-ordinal-feminine-conts→;"
           ],
           [
             "1000000",
@@ -929,14 +865,6 @@
             "←%spellout-cardinal-masculine← milion→%%spellout-ordinal-feminine-conts→;"
           ],
           [
-            "1000000000",
-            "un miliard→%%spellout-ordinal-feminine-cont→;"
-          ],
-          [
-            "2000000000",
-            "←%spellout-cardinal-masculine← miliard→%%spellout-ordinal-feminine-conts→;"
-          ],
-          [
             "1000000000000",
             "un bilion→%%spellout-ordinal-feminine-cont→;"
           ],
@@ -945,16 +873,258 @@
             "←%spellout-cardinal-masculine← bilion→%%spellout-ordinal-feminine-conts→;"
           ],
           [
-            "1000000000000000",
-            "un biliard→%%spellout-ordinal-feminine-cont→;"
+            "1000000000000000000",
+            "=#,##0=a;"
+          ]
+        ],
+        "%spellout-ordinal-masculine-plural": [
+          [
+            "0",
+            "=%spellout-ordinal-masculine=s;"
+          ]
+        ],
+        "%%spellout-ordinal-feminine-large-plural": [
+          [
+            "0",
+            ";"
           ],
           [
-            "2000000000000000",
-            "←%spellout-cardinal-masculine← biliard→%%spellout-ordinal-feminine-conts→;"
+            "1",
+            "unenes;"
+          ],
+          [
+            "2",
+            "dosenes;"
+          ],
+          [
+            "3",
+            "tresenes;"
+          ],
+          [
+            "4",
+            "quatrenes;"
+          ],
+          [
+            "5",
+            "=%spellout-ordinal-feminine-plural=;"
+          ]
+        ],
+        "%%spellout-ordinal-feminine-cont-plural": [
+          [
+            "0",
+            "enes;"
+          ],
+          [
+            "1",
+            "' =%%spellout-ordinal-feminine-large-plural=;"
+          ]
+        ],
+        "%%spellout-ordinal-feminine-conts-plural": [
+          [
+            "0",
+            "enes;"
+          ],
+          [
+            "1",
+            "s =%%spellout-ordinal-feminine-large-plural=;"
+          ]
+        ],
+        "%spellout-ordinal-feminine-plural": [
+          [
+            "-x",
+            "menys →→;"
+          ],
+          [
+            "x.x",
+            "=#,##0.#=;"
+          ],
+          [
+            "0",
+            "zeroenes;"
+          ],
+          [
+            "1",
+            "primeres;"
+          ],
+          [
+            "2",
+            "segones;"
+          ],
+          [
+            "3",
+            "terceres;"
+          ],
+          [
+            "4",
+            "quartes;"
+          ],
+          [
+            "5",
+            "cinquenes;"
+          ],
+          [
+            "6",
+            "sisenes;"
+          ],
+          [
+            "7",
+            "setenes;"
+          ],
+          [
+            "8",
+            "vuitenes;"
+          ],
+          [
+            "9",
+            "novenes;"
+          ],
+          [
+            "10",
+            "desenes;"
+          ],
+          [
+            "11",
+            "onzenes;"
+          ],
+          [
+            "12",
+            "dotzenes;"
+          ],
+          [
+            "13",
+            "tretzenes;"
+          ],
+          [
+            "14",
+            "catorzenes;"
+          ],
+          [
+            "15",
+            "quinzenes;"
+          ],
+          [
+            "16",
+            "setzenes;"
+          ],
+          [
+            "17",
+            "dissetenes;"
+          ],
+          [
+            "18",
+            "divuitenes;"
+          ],
+          [
+            "19",
+            "dinovenes;"
+          ],
+          [
+            "20",
+            "vintenes;"
+          ],
+          [
+            "21",
+            "vint-i-→%%spellout-ordinal-feminine-large-plural→;"
+          ],
+          [
+            "30",
+            "trentenes;"
+          ],
+          [
+            "31",
+            "trenta-→%%spellout-ordinal-feminine-large-plural→;"
+          ],
+          [
+            "40",
+            "quarantenes;"
+          ],
+          [
+            "41",
+            "quaranta-→%%spellout-ordinal-feminine-large-plural→;"
+          ],
+          [
+            "50",
+            "cinquantenes;"
+          ],
+          [
+            "51",
+            "cinquanta-→%%spellout-ordinal-feminine-large-plural→;"
+          ],
+          [
+            "60",
+            "seixantenes;"
+          ],
+          [
+            "61",
+            "seixanta-→%%spellout-ordinal-feminine-large-plural→;"
+          ],
+          [
+            "70",
+            "setantenes;"
+          ],
+          [
+            "71",
+            "setanta-→%%spellout-ordinal-feminine-large-plural→;"
+          ],
+          [
+            "80",
+            "vuitantenes;"
+          ],
+          [
+            "81",
+            "vuitanta-→%%spellout-ordinal-feminine-large-plural→;"
+          ],
+          [
+            "90",
+            "norantenes;"
+          ],
+          [
+            "91",
+            "noranta-→%%spellout-ordinal-feminine-large-plural→;"
+          ],
+          [
+            "100",
+            "cent→%%spellout-ordinal-feminine-cont-plural→;"
+          ],
+          [
+            "200",
+            "←%spellout-cardinal-masculine←-cent→%%spellout-ordinal-feminine-conts-plural→;"
+          ],
+          [
+            "1000",
+            "mil→%%spellout-ordinal-feminine-cont-plural→;"
+          ],
+          [
+            "2000",
+            "←%spellout-cardinal-masculine← mil→%%spellout-ordinal-feminine-cont-plural→;"
+          ],
+          [
+            "1000000",
+            "milionenes;"
+          ],
+          [
+            "1000001",
+            "un milió→%%spellout-ordinal-feminine-cont-plural→;"
+          ],
+          [
+            "2000000",
+            "←%spellout-cardinal-masculine← milion→%%spellout-ordinal-feminine-conts-plural→;"
+          ],
+          [
+            "1000000000000",
+            "bilionenes;"
+          ],
+          [
+            "1000000000001",
+            "un bilió→%%spellout-ordinal-feminine-cont-plural→;"
+          ],
+          [
+            "2000000000000",
+            "←%spellout-cardinal-masculine← bilion→%%spellout-ordinal-feminine-conts-plural→;"
           ],
           [
             "1000000000000000000",
-            "=#,##0=ena;"
+            "=#,##0=es;"
           ]
         ]
       }
