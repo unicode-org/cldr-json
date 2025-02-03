@@ -111,6 +111,11 @@
  - Text Segmentation data
  - [![NPM version](https://img.shields.io/npm/v/cldr-segments-full.svg?style=flat)](https://www.npmjs.org/package/cldr-segments-full)
 
+### [cldr-subdivisions-full](./cldr-json/cldr-subdivisions-full/)
+
+ - Translated versions of locale display name elements: subdivisions.
+ - [![NPM version](https://img.shields.io/npm/v/cldr-subdivisions-full.svg?style=flat)](https://www.npmjs.org/package/cldr-subdivisions-full)
+
 ### [cldr-transforms-full](./cldr-json/cldr-transforms-full/)
 
  - Transform data
@@ -139,7 +144,7 @@ the data contained here, please file a new ticket at [Unicode Jira](https://unic
 
 ## License
 
-Copyright © 1991-2024 Unicode, Inc.
+Copyright © 1991-2025 Unicode, Inc.
 [Terms of Use](http://www.unicode.org/copyright.html)
 
 SPDX-License-Identifier: Unicode-3.0
