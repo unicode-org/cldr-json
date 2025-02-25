@@ -1,9 +1,11 @@
-# cldr-subdivisions
+# cldr-subdivisions-full
 
 Translated versions of locale display name elements: subdivisions.
 
+This package contains all locales.
 
-[![NPM version](https://img.shields.io/npm/v/cldr-subdivisions.svg?style=flat)](https://www.npmjs.org/package/cldr-subdivisions)
+
+[![NPM version](https://img.shields.io/npm/v/cldr-subdivisions-full.svg?style=flat)](https://www.npmjs.org/package/cldr-subdivisions-full)
 
 ## General Info
 
