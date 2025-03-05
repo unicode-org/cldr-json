@@ -37,12 +37,12 @@ else
 fi
 
 for type in ${TYPES}; do
-    JSON_ARG="-m ${MATCH} -p true -o true -r true -t ${type} -d ${OUT} -s ${DRAFTSTATUS} -V ${VERSION} ${EXTRA_JSON_OPTS}"
     if [[ ! -f "${CLDR_JAR}" ]];
     then
+        JSON_ARG="-m ${MATCH} -p true -o true -r true -t ${type} -d ${OUT} -s ${DRAFTSTATUS} -V ${VERSION} ${EXTRA_JSON_OPTS}"
         ${MVN_EXEC}  "-Dexec.args=${JSON_ARG}" || exit 1
     else
-        ${MVN_EXEC} ${JSON_ARG} || exit 1
+        ${MVN_EXEC} -m "${MATCH}" -p true -o true -r true -t ${type} -d ${OUT} -s ${DRAFTSTATUS} -V ${VERSION} ${EXTRA_JSON_OPTS} || exit 1
     fi
 done
 
