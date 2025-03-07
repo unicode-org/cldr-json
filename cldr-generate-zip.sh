@@ -20,7 +20,11 @@ fi
 
 set -x
 ( cd ${OUT} && cp ../LICENSE LICENSE )
+<<<<<<< HEAD
 ( cd ${OUT} && zip -x "*.DS_Store" -r cldr-${VERSION}-json-full.zip LICENSE cldr-core cldr-rbnf cldr-*-full cldr-bcp47 cldr-transforms )
+=======
+( cd ${OUT} && zip -x "*/.DS_Store" -r cldr-${VERSION}-json-full.zip LICENSE cldr-core cldr-rbnf cldr-*-full cldr-bcp47 cldr-transforms )
+>>>>>>> origin/main
 #( cd ${OUT} && zip -r cldr-${VERSION}-json-modern.zip LICENSE cldr-core cldr-rbnf cldr-*-modern cldr-bcp47 cldr-transforms )
 ( cd ${OUT} && rm LICENSE )
 
