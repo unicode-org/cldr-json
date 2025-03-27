@@ -28,3 +28,4 @@ This project is distributed by the [Unicode Consortium Terms of Use](./LICENSE)
 Copyright © 1991-2020 Unicode, Inc.
 All rights reserved.
 [Terms of use](http://www.unicode.org/copyright.html)
+USERS.md
