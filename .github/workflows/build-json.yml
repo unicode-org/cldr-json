@@ -41,12 +41,12 @@ jobs:
                 java-version: 11
                 distribution: 'temurin'
             - name: Clone json
-              uses: actions/checkout@v4
+              uses: actions/checkout@v5
               with:
                 ref: ${{ github.event.inputs.git-ref }}
                 path: cldr-json
             - name: Clone CLDR
-              uses: actions/checkout@v4
+              uses: actions/checkout@v5
               with:
                 ref: ${{ github.event.inputs.cldr-ref }}
                 lfs: false
@@ -60,7 +60,7 @@ jobs:
                   restore-keys: |
                       ${{ runner.os }}-maven-
             - name: Clone Data
-              uses: actions/checkout@v4
+              uses: actions/checkout@v5
               with:
                 ref: ${{ github.event.inputs.data-ref }}
                 repository: ${{ github.event.inputs.data-repo }}
