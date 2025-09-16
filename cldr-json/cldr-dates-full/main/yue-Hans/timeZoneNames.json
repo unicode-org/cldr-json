@@ -10,9 +10,10 @@
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
+          "gmtUnknownFormat": "GMT+?",
           "regionFormat": "{0}时间",
-          "regionFormat-type-daylight": "{0} (+1)",
-          "regionFormat-type-standard": "{0} (+0)",
+          "regionFormat-type-daylight": "{0}夏令时间",
+          "regionFormat-type-standard": "{0}标准时间",
           "fallbackFormat": "{1} ({0})",
           "zone": {
             "Pacific": {
@@ -57,10 +58,6 @@
                 "exemplarCity": "关岛"
               },
               "Enderbury": {
-                "_type": "zone",
-                "exemplarCity": "恩得伯理岛"
-              },
-              "Kanton": {
                 "_type": "zone",
                 "exemplarCity": "坎顿"
               },
@@ -1001,6 +998,10 @@
                 "_type": "zone",
                 "exemplarCity": "圣约翰"
               },
+              "Coyhaique": {
+                "_type": "zone",
+                "exemplarCity": "科伊艾克"
+              },
               "Punta_Arenas": {
                 "_type": "zone",
                 "exemplarCity": "蓬塔阿雷纳斯"
@@ -1767,9 +1768,7 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "西非时间",
-                "standard": "西非标准时间",
-                "daylight": "西非夏令时间"
+                "standard": "西非时间"
               }
             },
             "Alaska": {
@@ -2155,6 +2154,11 @@
             "Guyana": {
               "long": {
                 "standard": "盖亚那时间"
+              }
+            },
+            "Hawaii": {
+              "long": {
+                "standard": "夏威夷-阿留申标准时间"
               }
             },
             "Hawaii_Aleutian": {

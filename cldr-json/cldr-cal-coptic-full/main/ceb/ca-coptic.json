@@ -196,7 +196,7 @@
                   "4": "4"
                 },
                 "wide": {
-                  "1": "unang quarter",
+                  "1": "ika-1 nga quarter",
                   "2": "ika-2 nga quarter",
                   "3": "ika-3 nga quarter",
                   "4": "ika-4 nga quarter"
@@ -216,7 +216,7 @@
                   "4": "4"
                 },
                 "wide": {
-                  "1": "unang quarter",
+                  "1": "ika-1 nga quarter",
                   "2": "ika-2 nga quarter",
                   "3": "ika-3 nga quarter",
                   "4": "ika-4 nga quarter"
@@ -255,16 +255,13 @@
             },
             "eras": {
               "eraNames": {
-                "0": "ERA0",
-                "1": "ERA1"
+                "1": "AM"
               },
               "eraAbbr": {
-                "0": "ERA0",
-                "1": "ERA1"
+                "1": "AM"
               },
               "eraNarrow": {
-                "0": "ERA0",
-                "1": "ERA1"
+                "1": "AM"
               }
             },
             "dateFormats": {
@@ -302,15 +299,19 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "d E",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyM": "G y-MM",
                 "GyMd": "M/d/y GGGGG",
+                "GyMEd": "G y-MM-dd, E",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "MMM d, y G",
                 "GyMMMEd": "E, MMM d, y G",
@@ -320,6 +321,8 @@
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "M/d",
                 "MEd": "E, M/d",
@@ -397,7 +400,7 @@
                   "d": "MMM d – d, y G",
                   "G": "MMM d, y G – MMM d, y G",
                   "M": "MMM d – MMM d, y G",
-                  "y": "G y MMM d – y MMM d"
+                  "y": "MMM d, y – MMM d, y G"
                 },
                 "GyMMMEd": {
                   "d": "E, MMM d – E, MMM d, y G",
@@ -500,6 +503,14 @@
               "standard": {
                 "full": "{1} 'sa' {0}",
                 "long": "{1} 'sa' {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
+              "standard": {
+                "full": "{1}, {0}",
+                "long": "{1}, {0}",
                 "medium": "{1}, {0}",
                 "short": "{1}, {0}"
               }

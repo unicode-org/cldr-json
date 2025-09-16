@@ -9,6 +9,7 @@
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
+          "gmtUnknownFormat": "GMT+?",
           "regionFormat": "časové pásmo {0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -17,11 +18,6 @@
             "Pacific": {
               "Honolulu": {
                 "_type": "zone",
-                "short": {
-                  "generic": "HST",
-                  "standard": "HST",
-                  "daylight": "HDT"
-                },
                 "exemplarCity": "Honolulu"
               },
               "Easter": {
@@ -46,7 +42,7 @@
               },
               "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "Enderbury"
+                "exemplarCity": "Canton"
               },
               "Noumea": {
                 "_type": "zone",
@@ -55,6 +51,10 @@
               "Marquesas": {
                 "_type": "zone",
                 "exemplarCity": "Markézy"
+              },
+              "Wallis": {
+                "_type": "zone",
+                "exemplarCity": "Wallis & Futuna"
               }
             },
             "Etc": {
@@ -444,6 +444,16 @@
               }
             },
             "America": {
+              "Argentina": {
+                "Rio_Gallegos": {
+                  "_type": "zone",
+                  "exemplarCity": "Río Gallegos"
+                },
+                "Tucuman": {
+                  "_type": "zone",
+                  "exemplarCity": "Tucumán"
+                }
+              },
               "Cordoba": {
                 "_type": "zone",
                 "exemplarCity": "Córdoba"
@@ -467,6 +477,10 @@
               "Belem": {
                 "_type": "zone",
                 "exemplarCity": "Belém"
+              },
+              "Araguaina": {
+                "_type": "zone",
+                "exemplarCity": "Araguaína"
               },
               "Sao_Paulo": {
                 "_type": "zone",
@@ -555,6 +569,10 @@
               "Cancun": {
                 "_type": "zone",
                 "exemplarCity": "Cancún"
+              },
+              "Miquelon": {
+                "_type": "zone",
+                "exemplarCity": "Saint-Pierre"
               },
               "Puerto_Rico": {
                 "_type": "zone",
@@ -788,9 +806,7 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "západoafrický čas",
-                "standard": "západoafrický štandardný čas",
-                "daylight": "západoafrický letný čas"
+                "standard": "západoafrický čas"
               }
             },
             "Alaska": {
@@ -1181,6 +1197,11 @@
             "Guyana": {
               "long": {
                 "standard": "guyanský čas"
+              }
+            },
+            "Hawaii": {
+              "long": {
+                "standard": "havajsko-aleutský štandardný čas"
               }
             },
             "Hawaii_Aleutian": {

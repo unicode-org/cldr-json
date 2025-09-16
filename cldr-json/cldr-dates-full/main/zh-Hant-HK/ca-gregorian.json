@@ -336,25 +336,29 @@
               "short": "ahmm"
             },
             "dateTimeFormats": {
-              "full": "{1} {0}",
-              "long": "{1} {0}",
-              "medium": "{1} {0}",
-              "short": "{1} {0}",
+              "full": "{1}{0}",
+              "long": "{1}{0}",
+              "medium": "{1}{0}",
+              "short": "{1}{0}",
               "availableFormats": {
                 "Bh": "Bh時",
                 "Bhm": "Bh:mm",
                 "Bhms": "Bh:mm:ss",
                 "d": "d日",
                 "E": "ccc",
-                "EBhm": "E Bh:mm",
-                "EBhms": "E Bh:mm:ss",
+                "EBh": "EBh時",
+                "EBhm": "EBh:mm",
+                "EBhms": "EBh:mm:ss",
                 "Ed": "d E",
+                "Eh": "Eah時",
                 "Ehm": "E ah:mm",
                 "EHm": "E HH:mm",
                 "Ehms": "E ah:mm:ss",
                 "EHms": "E HH:mm:ss",
                 "Gy": "Gy年",
+                "GyM": "Gy/M",
                 "GyMd": "G y/M/d",
+                "GyMEd": "Gy/M/d（E）",
                 "GyMMM": "Gy年M月",
                 "GyMMMd": "Gy年M月d日",
                 "GyMMMEd": "Gy年M月d日E",
@@ -368,6 +372,8 @@
                 "Hmsv": "HH:mm:ss [v]",
                 "hmv": "ah:mm [v]",
                 "Hmv": "HH:mm [v]",
+                "hv": "vah時",
+                "Hv": "vH時",
                 "M": "M月",
                 "Md": "d/M",
                 "MEd": "d/M（E）",
@@ -557,10 +563,18 @@
             },
             "dateTimeFormats-atTime": {
               "standard": {
-                "full": "{1} {0}",
-                "long": "{1} {0}",
-                "medium": "{1} {0}",
-                "short": "{1} {0}"
+                "full": "{1}{0}",
+                "long": "{1}{0}",
+                "medium": "{1}{0}",
+                "short": "{1}{0}"
+              }
+            },
+            "dateTimeFormats-relative": {
+              "standard": {
+                "full": "{1}{0}",
+                "long": "{1}{0}",
+                "medium": "{1}{0}",
+                "short": "{1}{0}"
               }
             }
           }

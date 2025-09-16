@@ -332,15 +332,19 @@
                 "Bhms": "h.mm.ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h.mm B",
                 "EBhms": "E h.mm.ss B",
                 "Ed": "E, d",
+                "Eh": "E h a",
                 "Ehm": "E h.mm a",
                 "EHm": "E HH.mm",
                 "Ehms": "E h.mm.ss a",
                 "EHms": "E HH.mm.ss",
                 "Gy": "y G",
-                "GyMd": "d/M/y GGGGG",
+                "GyM": "M/y G",
+                "GyMd": "d/M/y G",
+                "GyMEd": "E, d/M/y G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E, d MMM y G",
@@ -350,6 +354,8 @@
                 "Hm": "HH.mm",
                 "hms": "h.mm.ss a",
                 "Hms": "HH.mm.ss",
+                "hv": "h a v",
+                "Hv": "HH'j' v",
                 "M": "L",
                 "Md": "d/M",
                 "MEd": "E, d/M",
@@ -528,6 +534,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} 'pukul' {0}",
+                "long": "{1} 'pukul' {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1} 'pukul' {0}",
                 "long": "{1} 'pukul' {0}",
@@ -895,7 +909,7 @@
                 "MEd": "MM-dd, E",
                 "MMM": "LLL",
                 "MMMd": "MMM d",
-                "MMMEd": "MMM d",
+                "MMMEd": "MMM d, E",
                 "MMMMd": "MMMM d",
                 "MMMMW-count-other": "MMMM 'week' W",
                 "ms": "mm:ss",

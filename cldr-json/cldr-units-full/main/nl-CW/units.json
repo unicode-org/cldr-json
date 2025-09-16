@@ -247,13 +247,19 @@
           "concentr-item": {
             "gender": "neuter",
             "displayName": "onderdelen",
-            "unitPattern-count-one": "{0} ond.",
+            "unitPattern-count-one": "{0} onderdeel",
             "unitPattern-count-other": "{0} onderdelen"
           },
-          "concentr-permillion": {
+          "concentr-part": {
+            "displayName": "deel",
+            "unitPattern-count-one": "{0} deel",
+            "unitPattern-count-other": "{0} delen"
+          },
+          "concentr-part-per-1e6": {
             "gender": "common",
-            "displayName": "ppm",
-            "unitPattern-count-other": "{0} ppm"
+            "displayName": "parts per million",
+            "unitPattern-count-one": "{0} part per million",
+            "unitPattern-count-other": "{0} parts per million"
           },
           "concentr-percent": {
             "gender": "neuter",
@@ -277,6 +283,11 @@
             "gender": "common",
             "displayName": "mol",
             "unitPattern-count-other": "{0} mol"
+          },
+          "concentr-ofglucose": {
+            "displayName": "Glc",
+            "unitPattern-count-one": "{0} glucose",
+            "unitPattern-count-other": "{0} glucose"
           },
           "consumption-liter-per-kilometer": {
             "gender": "common",
@@ -903,6 +914,11 @@
             "unitPattern-count-one": "{0} millimeter-kwikdruk",
             "unitPattern-count-other": "{0} millimeter-kwikdruk"
           },
+          "pressure-ofhg": {
+            "displayName": "kwik",
+            "unitPattern-count-one": "{0} kwik",
+            "unitPattern-count-other": "{0} kwik"
+          },
           "pressure-pound-force-per-square-inch": {
             "displayName": "psi",
             "unitPattern-count-other": "{0} psi"
@@ -1107,6 +1123,11 @@
             "unitPattern-count-one": "{0} metrische cup",
             "unitPattern-count-other": "{0} metrische cup"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "metrische fluid ounces",
+            "unitPattern-count-one": "{0} metrische fluid ounce",
+            "unitPattern-count-other": "{0} metrische fluid ounces"
+          },
           "volume-acre-foot": {
             "displayName": "acre-feet",
             "unitPattern-count-one": "{0} acre-foot",
@@ -1143,11 +1164,19 @@
             "unitPattern-count-one": "{0} pint",
             "unitPattern-count-other": "{0} pint"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "gender": "common",
             "displayName": "cup",
             "unitPattern-count-one": "{0} cup",
             "unitPattern-count-other": "{0} cup"
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "gender": "common",
@@ -1220,16 +1249,182 @@
             "unitPattern-count-one": "{0} imp. quart",
             "unitPattern-count-other": "{0} imp. quarts"
           },
+          "angle-steradian": {
+            "displayName": "ste­ra­diaal",
+            "unitPattern-count-one": "{0} ste­ra­diaal",
+            "unitPattern-count-other": "{0} ste­ra­dialen"
+          },
+          "concentr-katal": {
+            "displayName": "katal",
+            "unitPattern-count-one": "{0} katal",
+            "unitPattern-count-other": "{0} katals"
+          },
+          "electric-coulomb": {
+            "displayName": "coulomb",
+            "unitPattern-count-one": "{0} coulomb",
+            "unitPattern-count-other": "{0} coulomb"
+          },
+          "electric-farad": {
+            "displayName": "farad",
+            "unitPattern-count-one": "{0} farad",
+            "unitPattern-count-other": "{0} farad"
+          },
+          "electric-henry": {
+            "displayName": "henry",
+            "unitPattern-count-one": "{0} henry",
+            "unitPattern-count-other": "{0} henry's"
+          },
+          "electric-siemens": {
+            "displayName": "siemens",
+            "unitPattern-count-one": "{0} siemens",
+            "unitPattern-count-other": "{0} siemens"
+          },
+          "energy-calorie-it": {
+            "displayName": "calorieën [IT]",
+            "unitPattern-count-one": "{0} calorie [IT]",
+            "unitPattern-count-other": "{0} calorieën [IT]"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "becquerel",
+            "unitPattern-count-one": "{0} becquerel",
+            "unitPattern-count-other": "{0} becquerels"
+          },
+          "energy-sievert": {
+            "displayName": "sievert",
+            "unitPattern-count-one": "{0} sievert",
+            "unitPattern-count-other": "{0} sieverts"
+          },
+          "energy-gray": {
+            "displayName": "gray",
+            "unitPattern-count-one": "{0} gray",
+            "unitPattern-count-other": "{0} gray"
+          },
+          "force-kilogram-force": {
+            "displayName": "kilogramkracht",
+            "unitPattern-count-one": "{0} kilogramkracht",
+            "unitPattern-count-other": "{0} kilogramkracht"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "tesla",
+            "unitPattern-count-one": "{0} tesla",
+            "unitPattern-count-other": "{0} tesla"
+          },
+          "magnetic-weber": {
+            "displayName": "weber",
+            "unitPattern-count-one": "{0} weber",
+            "unitPattern-count-other": "{0} weber"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
           "speed-light-speed": {
             "gender": "neuter",
             "displayName": "licht",
             "unitPattern-count-one": "{0} licht",
             "unitPattern-count-other": "{0} licht"
           },
-          "concentr-portion-per-1e9": {
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
             "gender": "common",
-            "displayName": "ppb",
-            "unitPattern-count-other": "{0} ppb"
+            "displayName": "parts per billion",
+            "unitPattern-count-one": "{0} part per billion",
+            "unitPattern-count-other": "{0} parts per billion"
           },
           "duration-night": {
             "gender": "common",
@@ -1452,8 +1647,13 @@
             "unitPattern-count-one": "{0} ond.",
             "unitPattern-count-other": "{0} ond."
           },
-          "concentr-permillion": {
-            "displayName": "ppm",
+          "concentr-part": {
+            "displayName": "deel",
+            "unitPattern-count-one": "{0} deel",
+            "unitPattern-count-other": "{0} delen"
+          },
+          "concentr-part-per-1e6": {
+            "displayName": "parts/million",
             "unitPattern-count-other": "{0} ppm"
           },
           "concentr-percent": {
@@ -1471,6 +1671,10 @@
           "concentr-mole": {
             "displayName": "mol",
             "unitPattern-count-other": "{0} mol"
+          },
+          "concentr-ofglucose": {
+            "displayName": "Glc",
+            "unitPattern-count-other": "{0} Glc"
           },
           "consumption-liter-per-kilometer": {
             "displayName": "l/km",
@@ -1925,6 +2129,10 @@
             "unitPattern-count-one": "{0} mmHg",
             "unitPattern-count-other": "{0} mmHg"
           },
+          "pressure-ofhg": {
+            "displayName": "Hg",
+            "unitPattern-count-other": "{0} Hg"
+          },
           "pressure-pound-force-per-square-inch": {
             "displayName": "psi",
             "unitPattern-count-other": "{0} psi"
@@ -2076,6 +2284,10 @@
             "displayName": "metrische cup",
             "unitPattern-count-other": "{0} mc"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "fl oz m.",
+            "unitPattern-count-other": "{0} fl oz m."
+          },
           "volume-acre-foot": {
             "displayName": "acre ft",
             "unitPattern-count-other": "{0} ac ft"
@@ -2104,10 +2316,18 @@
             "displayName": "pt",
             "unitPattern-count-other": "{0} pt"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "displayName": "cup",
             "unitPattern-count-one": "{0} cup",
             "unitPattern-count-other": "{0} cup"
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "displayName": "fl oz",
@@ -2166,13 +2386,165 @@
             "unitPattern-count-one": "{0} imp. qt",
             "unitPattern-count-other": "{0} imp. qt"
           },
+          "angle-steradian": {
+            "displayName": "sr",
+            "unitPattern-count-other": "{0} sr"
+          },
+          "concentr-katal": {
+            "displayName": "kat",
+            "unitPattern-count-other": "{0} kat"
+          },
+          "electric-coulomb": {
+            "displayName": "C",
+            "unitPattern-count-other": "{0} C"
+          },
+          "electric-farad": {
+            "displayName": "F",
+            "unitPattern-count-other": "{0} F"
+          },
+          "electric-henry": {
+            "displayName": "H",
+            "unitPattern-count-other": "{0} H"
+          },
+          "electric-siemens": {
+            "displayName": "S",
+            "unitPattern-count-other": "{0} S"
+          },
+          "energy-calorie-it": {
+            "displayName": "cal-IT",
+            "unitPattern-count-other": "{0} cal-IT"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "Bq",
+            "unitPattern-count-other": "{0} Bq"
+          },
+          "energy-sievert": {
+            "displayName": "Sv",
+            "unitPattern-count-other": "{0} Sv"
+          },
+          "energy-gray": {
+            "displayName": "Gy",
+            "unitPattern-count-other": "{0} Gy"
+          },
+          "force-kilogram-force": {
+            "displayName": "kgf",
+            "unitPattern-count-other": "{0} kgf"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "T",
+            "unitPattern-count-other": "{0} T"
+          },
+          "magnetic-weber": {
+            "displayName": "Wb",
+            "unitPattern-count-other": "{0} Wb"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
           "speed-light-speed": {
             "displayName": "licht",
             "unitPattern-count-one": "{0} licht",
             "unitPattern-count-other": "{0} licht"
           },
-          "concentr-portion-per-1e9": {
-            "displayName": "ppb",
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
+            "displayName": "parts/billion",
             "unitPattern-count-other": "{0} ppb"
           },
           "duration-night": {
@@ -2395,8 +2767,13 @@
             "unitPattern-count-one": "{0} ond.",
             "unitPattern-count-other": "{0} ond."
           },
-          "concentr-permillion": {
-            "displayName": "ppm",
+          "concentr-part": {
+            "displayName": "deel",
+            "unitPattern-count-one": "{0} deel",
+            "unitPattern-count-other": "{0} delen"
+          },
+          "concentr-part-per-1e6": {
+            "displayName": "parts/million",
             "unitPattern-count-other": "{0} ppm"
           },
           "concentr-percent": {
@@ -2414,6 +2791,10 @@
           "concentr-mole": {
             "displayName": "mol",
             "unitPattern-count-other": "{0} mol"
+          },
+          "concentr-ofglucose": {
+            "displayName": "Glc",
+            "unitPattern-count-other": "{0} Glc"
           },
           "consumption-liter-per-kilometer": {
             "displayName": "l/km",
@@ -2871,6 +3252,10 @@
             "unitPattern-count-one": "{0} mmHg",
             "unitPattern-count-other": "{0} mmHg"
           },
+          "pressure-ofhg": {
+            "displayName": "Hg",
+            "unitPattern-count-other": "{0} Hg"
+          },
           "pressure-pound-force-per-square-inch": {
             "displayName": "psi",
             "unitPattern-count-other": "{0} psi"
@@ -3024,6 +3409,10 @@
             "unitPattern-count-one": "{0}mc",
             "unitPattern-count-other": "{0}mc"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "fl oz m.",
+            "unitPattern-count-other": "{0} fl oz m."
+          },
           "volume-acre-foot": {
             "displayName": "acre ft",
             "unitPattern-count-other": "{0} ac ft"
@@ -3052,10 +3441,18 @@
             "displayName": "pt",
             "unitPattern-count-other": "{0} pt"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "displayName": "cup",
             "unitPattern-count-one": "{0} c",
             "unitPattern-count-other": "{0} c"
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "displayName": "fl oz",
@@ -3115,13 +3512,165 @@
             "unitPattern-count-one": "{0} imp. qt",
             "unitPattern-count-other": "{0} imp. qt"
           },
+          "angle-steradian": {
+            "displayName": "sr",
+            "unitPattern-count-other": "{0} sr"
+          },
+          "concentr-katal": {
+            "displayName": "kat",
+            "unitPattern-count-other": "{0} kat"
+          },
+          "electric-coulomb": {
+            "displayName": "C",
+            "unitPattern-count-other": "{0} C"
+          },
+          "electric-farad": {
+            "displayName": "F",
+            "unitPattern-count-other": "{0} F"
+          },
+          "electric-henry": {
+            "displayName": "H",
+            "unitPattern-count-other": "{0} H"
+          },
+          "electric-siemens": {
+            "displayName": "S",
+            "unitPattern-count-other": "{0} S"
+          },
+          "energy-calorie-it": {
+            "displayName": "cal-IT",
+            "unitPattern-count-other": "{0} cal-IT"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "Bq",
+            "unitPattern-count-other": "{0} Bq"
+          },
+          "energy-sievert": {
+            "displayName": "Sv",
+            "unitPattern-count-other": "{0} Sv"
+          },
+          "energy-gray": {
+            "displayName": "Gy",
+            "unitPattern-count-other": "{0} Gy"
+          },
+          "force-kilogram-force": {
+            "displayName": "kgf",
+            "unitPattern-count-other": "{0} kgf"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "T",
+            "unitPattern-count-other": "{0} T"
+          },
+          "magnetic-weber": {
+            "displayName": "Wb",
+            "unitPattern-count-other": "{0} Wb"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
           "speed-light-speed": {
             "displayName": "licht",
             "unitPattern-count-one": "{0}licht",
             "unitPattern-count-other": "{0}licht"
           },
-          "concentr-portion-per-1e9": {
-            "displayName": "ppb",
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
+            "displayName": "parts/billion",
             "unitPattern-count-other": "{0} ppb"
           },
           "duration-night": {

@@ -9,6 +9,7 @@
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
+          "gmtUnknownFormat": "GMT+?",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "Tìde samhraidh: {0}",
           "regionFormat-type-standard": "Bun-àm: {0}",
@@ -17,11 +18,6 @@
             "Pacific": {
               "Honolulu": {
                 "_type": "zone",
-                "short": {
-                  "generic": "HST",
-                  "standard": "HST",
-                  "daylight": "HDT"
-                },
                 "exemplarCity": "Honolulu"
               },
               "Easter": {
@@ -46,7 +42,11 @@
               },
               "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "Enderbury"
+                "exemplarCity": "Eilean Canton"
+              },
+              "Noumea": {
+                "_type": "zone",
+                "exemplarCity": "Nouméa"
               },
               "Nauru": {
                 "_type": "zone",
@@ -271,6 +271,10 @@
                 "_type": "zone",
                 "exemplarCity": "Cancún"
               },
+              "Miquelon": {
+                "_type": "zone",
+                "exemplarCity": "Saint-Pierre"
+              },
               "Puerto_Rico": {
                 "_type": "zone",
                 "exemplarCity": "Porto Rìceo"
@@ -379,6 +383,10 @@
                 "_type": "zone",
                 "exemplarCity": "Pràg"
               },
+              "Busingen": {
+                "_type": "zone",
+                "exemplarCity": "Büsingen"
+              },
               "Copenhagen": {
                 "_type": "zone",
                 "exemplarCity": "Beirbh"
@@ -457,6 +465,10 @@
               }
             },
             "Antarctica": {
+              "Syowa": {
+                "_type": "zone",
+                "exemplarCity": "Showa"
+              },
               "DumontDUrville": {
                 "_type": "zone",
                 "exemplarCity": "Dumont-d’Urville"
@@ -629,6 +641,10 @@
                 "_type": "zone",
                 "exemplarCity": "Nollaig"
               },
+              "Comoro": {
+                "_type": "zone",
+                "exemplarCity": "Comores"
+              },
               "Mauritius": {
                 "_type": "zone",
                 "exemplarCity": "Na h-Eileanan Mhoiriseas"
@@ -719,9 +735,7 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "Àm Afraga an Iar",
-                "standard": "Bun-àm Afraga an Iar",
-                "daylight": "Tìde Samhraidh Afraga an Iar"
+                "standard": "Àm Afraga an Iar"
               }
             },
             "Alaska": {
@@ -1164,6 +1178,14 @@
                 "standard": "Àm Guidheàna"
               }
             },
+            "Hawaii": {
+              "long": {
+                "standard": "Bun-àm nan Eileanan Hawai’i ’s Aleutach"
+              },
+              "short": {
+                "standard": "HAST"
+              }
+            },
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "Àm nan Eileanan Hawai’i ’s Aleutach",
@@ -1185,9 +1207,9 @@
             },
             "Hovd": {
               "long": {
-                "generic": "Àm Hovd",
-                "standard": "Bun-àm Hovd",
-                "daylight": "Tìde samhraidh Hovd"
+                "generic": "Àm Khovd",
+                "standard": "Bun-àm Khovd",
+                "daylight": "Tìde samhraidh Khovd"
               }
             },
             "India": {

@@ -302,15 +302,19 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "E d",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyM": "MM/y G",
                 "GyMd": "dd/MM/y GGGGG",
+                "GyMEd": "E dd/MM/y G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d 'de' MMM 'de' 'su' y G",
                 "GyMMMEd": "E d 'de' MMM 'de' 'su' y G",
@@ -324,6 +328,8 @@
                 "Hmsv": "HH:mm:ss v",
                 "hmv": "h:mm a v",
                 "Hmv": "HH:mm v",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "dd/MM",
                 "MEd": "E dd/MM",
@@ -331,8 +337,8 @@
                 "MMMd": "d 'de' MMM",
                 "MMMEd": "E d 'de' MMM",
                 "MMMMd": "d 'de' MMMM",
-                "MMMMW-count-one": "'chida' W 'de' MMMM",
-                "MMMMW-count-other": "'chida' W 'de' MMMM",
+                "MMMMW-count-one": "W'a' 'chida' 'de' MMMM",
+                "MMMMW-count-other": "W'a' 'chida' 'de' MMMM",
                 "ms": "mm:ss",
                 "y": "y",
                 "yM": "MM/Y",
@@ -344,8 +350,8 @@
                 "yMMMM": "MMMM 'de' 'su' y",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ 'de' 'su' y",
-                "yw-count-one": "'chida' w 'de' 'su' Y",
-                "yw-count-other": "'chida' w 'de' 'su' Y"
+                "yw-count-one": "w'a' 'chida' 'de' 'su' Y",
+                "yw-count-other": "w'a' 'chida' 'de' 'su' Y"
               },
               "appendItems": {
                 "Day": "{0} ({2}: {1})",
@@ -504,6 +510,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} 'a' 'sas' {0}",
+                "long": "{1} 'a' 'sas' {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1} 'a' 'sas' {0}",
                 "long": "{1} 'a' 'sas' {0}",

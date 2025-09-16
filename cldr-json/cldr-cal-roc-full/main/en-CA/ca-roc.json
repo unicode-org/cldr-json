@@ -314,7 +314,7 @@
               "full": "EEEE, MMMM d, y G",
               "long": "MMMM d, y G",
               "medium": "MMM d, y G",
-              "short": "M/d/y GGGGG",
+              "short": "M/d/y G",
               "short-alt-variant": "d/M/y GGGGG"
             },
             "dateSkeletons": {
@@ -350,9 +350,12 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "E d",
+                "Eh": "E h a",
+                "Eh-alt-ascii": "E h a",
                 "Ehm": "E h:mm a",
                 "Ehm-alt-ascii": "E h:mm a",
                 "EHm": "E HH:mm",
@@ -360,7 +363,9 @@
                 "Ehms-alt-ascii": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
-                "GyMd": "M/d/y GGGGG",
+                "GyM": "M/y G",
+                "GyMd": "M/d/y G",
+                "GyMEd": "E, M/d/y G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "MMM d, y G",
                 "GyMMMEd": "E, MMM d, y G",
@@ -373,6 +378,9 @@
                 "hms": "h:mm:ss a",
                 "hms-alt-ascii": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
+                "hv": "h a v",
+                "hv-alt-ascii": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "M/d",
                 "Md-alt-variant": "d/M",
@@ -385,10 +393,10 @@
                 "ms": "mm:ss",
                 "y": "y G",
                 "yyyy": "y G",
-                "yyyyM": "M/y GGGGG",
-                "yyyyMd": "M/d/y GGGGG",
+                "yyyyM": "M/y G",
+                "yyyyMd": "M/d/y G",
                 "yyyyMd-alt-variant": "d/M/y GGGGG",
-                "yyyyMEd": "E, M/d/y GGGGG",
+                "yyyyMEd": "E, M/d/y G",
                 "yyyyMEd-alt-variant": "E, d/M/y GGGGG",
                 "yyyyMMM": "MMM y G",
                 "yyyyMMMd": "MMM d, y G",
@@ -564,6 +572,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} 'at' {0}",
+                "long": "{1} 'at' {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1} 'at' {0}",
                 "long": "{1} 'at' {0}",

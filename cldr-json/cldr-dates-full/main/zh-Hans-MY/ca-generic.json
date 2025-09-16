@@ -340,15 +340,19 @@
                 "Bhms": "Bh:mm:ss",
                 "d": "d日",
                 "E": "ccc",
-                "EBhm": "EB h:mm",
+                "EBh": "EBh时",
+                "EBhm": "EBh:mm",
                 "EBhms": "EB h:mm:ss",
                 "Ed": "d日E",
+                "Eh": "Eah时",
                 "Ehm": "Ea h:mm",
                 "EHm": "E HH:mm",
                 "Ehms": "Ea h:mm:ss",
                 "EHms": "E HH:mm:ss",
                 "Gy": "Gy年",
+                "GyM": "Gy/M",
                 "GyMd": "Gy/M/d",
+                "GyMEd": "Gy/M/d E",
                 "GyMEEEEd": "Gy年M月d日EEEE",
                 "GyMMM": "Gy年M月",
                 "GyMMMd": "Gy年M月d日",
@@ -359,6 +363,8 @@
                 "Hm": "HH:mm",
                 "hms": "ah:mm:ss",
                 "Hms": "HH:mm:ss",
+                "hv": "vah时",
+                "Hv": "vH时",
                 "M": "L",
                 "Md": "M/d",
                 "MEd": "M/dE",
@@ -536,6 +542,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} {0}",
+                "long": "{1} {0}",
+                "medium": "{1} {0}",
+                "short": "{1} {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1} {0}",
                 "long": "{1} {0}",
@@ -909,7 +923,7 @@
                 "MEd": "MM-dd, E",
                 "MMM": "LLL",
                 "MMMd": "MMM d",
-                "MMMEd": "MMM d",
+                "MMMEd": "MMM d, E",
                 "MMMMd": "MMMM d",
                 "MMMMW-count-other": "MMMM 'week' W",
                 "ms": "mm:ss",
@@ -1042,7 +1056,7 @@
                 },
                 "MMMEd": {
                   "d": "MMM d, E – MMM d, E",
-                  "M": "MMM d, E – MMM d, E"
+                  "M": "MMMd日 E – MMMd日 E"
                 },
                 "y": {
                   "y": "y–y"
@@ -1057,27 +1071,27 @@
                   "y": "y-MM-dd – y-MM-dd"
                 },
                 "yMEd": {
-                  "d": "y-MM-dd, E – y-MM-dd, E",
-                  "M": "y-MM-dd, E – y-MM-dd, E",
-                  "y": "y-MM-dd, E – y-MM-dd, E"
+                  "d": "y-MM-dd E – y-MM-dd E",
+                  "M": "y-MM-dd E – y-MM-dd E",
+                  "y": "y-MM-dd E – y-MM-dd E"
                 },
                 "yMMM": {
-                  "M": "y MMM–MMM",
-                  "y": "y MMM – y MMM"
+                  "M": "y年MMM–MMM",
+                  "y": "y年MMM – y年MMM"
                 },
                 "yMMMd": {
-                  "d": "y MMM d–d",
-                  "M": "y MMM d – MMM d",
-                  "y": "y MMM d – y MMM d"
+                  "d": "y年MMMd–d日",
+                  "M": "y年MMMd日 – MMMd日",
+                  "y": "y年MMMd日 – y年MMMd日"
                 },
                 "yMMMEd": {
-                  "d": "y MMM d, E – MMM d, E",
-                  "M": "y MMM d, E – MMM d, E",
-                  "y": "y MMM d, E – y MMM d, E"
+                  "d": "y年MMMd日 E – MMMd日 E",
+                  "M": "y年MMMd日 E – MMMd日 E",
+                  "y": "y年MMMd日 E – y年MMMd日 E"
                 },
                 "yMMMM": {
-                  "M": "y MMMM–MMMM",
-                  "y": "y MMMM – y MMMM"
+                  "M": "y年MMM–MMM",
+                  "y": "y年MMMM – y年MMMM"
                 }
               }
             },

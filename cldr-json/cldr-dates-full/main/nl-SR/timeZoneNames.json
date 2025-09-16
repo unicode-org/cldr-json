@@ -10,6 +10,7 @@
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
+          "gmtUnknownFormat": "GMT+?",
           "regionFormat": "tijd in {0}",
           "regionFormat-type-daylight": "zomertijd in {0}",
           "regionFormat-type-standard": "standaardtijd in {0}",
@@ -18,16 +19,15 @@
             "Pacific": {
               "Honolulu": {
                 "_type": "zone",
-                "short": {
-                  "generic": "HST",
-                  "standard": "HST",
-                  "daylight": "HDT"
-                },
                 "exemplarCity": "Honolulu"
               },
               "Easter": {
                 "_type": "zone",
                 "exemplarCity": "Paaseiland"
+              },
+              "Galapagos": {
+                "_type": "zone",
+                "exemplarCity": "Galápagos"
               },
               "Truk": {
                 "_type": "zone",
@@ -39,7 +39,7 @@
               },
               "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "Enderbury"
+                "exemplarCity": "Kanton"
               },
               "Noumea": {
                 "_type": "zone",
@@ -52,6 +52,10 @@
               "Gambier": {
                 "_type": "zone",
                 "exemplarCity": "Îles Gambier"
+              },
+              "Wallis": {
+                "_type": "zone",
+                "exemplarCity": "Wallis & Futuna"
               }
             },
             "Etc": {
@@ -90,6 +94,10 @@
                 "_type": "zone",
                 "exemplarCity": "Praag"
               },
+              "Busingen": {
+                "_type": "zone",
+                "exemplarCity": "Büsingen"
+              },
               "Berlin": {
                 "_type": "zone",
                 "exemplarCity": "Berlijn"
@@ -126,6 +134,10 @@
               "Luxembourg": {
                 "_type": "zone",
                 "exemplarCity": "Luxemburg"
+              },
+              "Chisinau": {
+                "_type": "zone",
+                "exemplarCity": "Chișinău"
               },
               "Warsaw": {
                 "_type": "zone",
@@ -176,6 +188,10 @@
               "Bahrain": {
                 "_type": "zone",
                 "exemplarCity": "Bahrein"
+              },
+              "Urumqi": {
+                "_type": "zone",
+                "exemplarCity": "Ürümqi"
               },
               "Shanghai": {
                 "_type": "zone",
@@ -232,6 +248,10 @@
               "Rangoon": {
                 "_type": "zone",
                 "exemplarCity": "Rangoon"
+              },
+              "Hovd": {
+                "_type": "zone",
+                "exemplarCity": "Khovd"
               },
               "Macau": {
                 "_type": "zone",
@@ -291,6 +311,10 @@
               }
             },
             "Antarctica": {
+              "Syowa": {
+                "_type": "zone",
+                "exemplarCity": "Showa"
+              },
               "DumontDUrville": {
                 "_type": "zone",
                 "exemplarCity": "Dumont-d’Urville"
@@ -315,13 +339,25 @@
                 "_type": "zone",
                 "exemplarCity": "Saint-Barthélemy"
               },
+              "Eirunepe": {
+                "_type": "zone",
+                "exemplarCity": "Eirunepé"
+              },
               "Cuiaba": {
                 "_type": "zone",
                 "exemplarCity": "Cuiabá"
               },
+              "Santarem": {
+                "_type": "zone",
+                "exemplarCity": "Santarém"
+              },
               "Belem": {
                 "_type": "zone",
                 "exemplarCity": "Belém"
+              },
+              "Araguaina": {
+                "_type": "zone",
+                "exemplarCity": "Araguaína"
               },
               "Sao_Paulo": {
                 "_type": "zone",
@@ -342,6 +378,10 @@
               "St_Johns": {
                 "_type": "zone",
                 "exemplarCity": "Saint John’s"
+              },
+              "Bogota": {
+                "_type": "zone",
+                "exemplarCity": "Bogotá"
               },
               "Curacao": {
                 "_type": "zone",
@@ -386,6 +426,10 @@
               "Cancun": {
                 "_type": "zone",
                 "exemplarCity": "Cancun"
+              },
+              "Miquelon": {
+                "_type": "zone",
+                "exemplarCity": "Saint-Pierre"
               },
               "Asuncion": {
                 "_type": "zone",
@@ -467,6 +511,10 @@
                 "_type": "zone",
                 "exemplarCity": "Chagosarchipel"
               },
+              "Comoro": {
+                "_type": "zone",
+                "exemplarCity": "Comores"
+              },
               "Maldives": {
                 "_type": "zone",
                 "exemplarCity": "Maldiven"
@@ -511,6 +559,10 @@
                 "_type": "zone",
                 "exemplarCity": "Caïro"
               },
+              "El_Aaiun": {
+                "_type": "zone",
+                "exemplarCity": "El Aaiún"
+              },
               "Asmera": {
                 "_type": "zone",
                 "exemplarCity": "Asmara"
@@ -526,6 +578,10 @@
               "Sao_Tome": {
                 "_type": "zone",
                 "exemplarCity": "Sao Tomé"
+              },
+              "Ndjamena": {
+                "_type": "zone",
+                "exemplarCity": "N’Djamena"
               },
               "Lome": {
                 "_type": "zone",
@@ -563,9 +619,7 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "West-Afrikaanse tijd",
-                "standard": "West-Afrikaanse standaardtijd",
-                "daylight": "West-Afrikaanse zomertijd"
+                "standard": "West-Afrikaanse tijd"
               }
             },
             "Alaska": {
@@ -972,6 +1026,13 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Groenlandse tijd",
+                "standard": "Groenlandse standaardtijd",
+                "daylight": "Groenlandse zomertijd"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Oost-Groenlandse tijd",
@@ -999,6 +1060,14 @@
             "Guyana": {
               "long": {
                 "standard": "Guyaanse tijd"
+              }
+            },
+            "Hawaii": {
+              "long": {
+                "standard": "Hawaii-Aleoetische standaardtijd"
+              },
+              "short": {
+                "standard": "HAST"
               }
             },
             "Hawaii_Aleutian": {
@@ -1457,6 +1526,13 @@
             "Truk": {
               "long": {
                 "standard": "Chuukse tijd"
+              }
+            },
+            "Turkey": {
+              "long": {
+                "generic": "Turkse tijd",
+                "standard": "Turkse standaardtijd",
+                "daylight": "Turkse zomertijd"
               }
             },
             "Turkmenistan": {

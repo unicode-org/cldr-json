@@ -268,7 +268,7 @@
                   "pm": "ከ",
                   "morning1": "ጥዋት",
                   "afternoon1": "ከሰዓት",
-                  "evening1": "ማታ",
+                  "evening1": "ምሽት",
                   "night1": "ሌሊት"
                 },
                 "wide": {
@@ -332,15 +332,19 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "E d",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyM": "G y-MM",
                 "GyMd": "M/d/y GGGGG",
+                "GyMEd": "G y-MM-dd, E",
                 "GyMMM": "G y MMM",
                 "GyMMMd": "MMM d፣ y G",
                 "GyMMMEd": "E MMM d፣ y G",
@@ -350,6 +354,8 @@
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "M/d",
                 "MEd": "E፣ M/d",
@@ -370,9 +376,9 @@
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yyyy": "G y",
-                "yyyyM": "GGGGG y-MM",
-                "yyyyMd": "GGGGG y-MM-dd",
-                "yyyyMEd": "GGGGG y-MM-dd, E",
+                "yyyyM": "G y-MM",
+                "yyyyMd": "G y-MM-dd",
+                "yyyyMEd": "G y-MM-dd, E",
                 "yyyyMMM": "G y MMM",
                 "yyyyMMMd": "G y MMM d",
                 "yyyyMMMEd": "G y MMM d, E",
@@ -412,21 +418,21 @@
                   "y": "G y–y"
                 },
                 "GyM": {
-                  "G": "GGGGG y-MM – GGGGG y-MM",
-                  "M": "GGGGG y-MM – y-MM",
-                  "y": "GGGGG y-MM – y-MM"
+                  "G": "G y-MM – G y-MM",
+                  "M": "G y-MM – y-MM",
+                  "y": "G y-MM – y-MM"
                 },
                 "GyMd": {
-                  "d": "GGGGG y-MM-dd – y-MM-dd",
-                  "G": "GGGGG y-MM-dd – GGGGG y-MM-dd",
-                  "M": "GGGGG y-MM-dd – y-MM-dd",
-                  "y": "GGGGG y-MM-dd – y-MM-dd"
+                  "d": "G y-MM-dd – y-MM-dd",
+                  "G": "G y-MM-dd – G y-MM-dd",
+                  "M": "G y-MM-dd – y-MM-dd",
+                  "y": "G y-MM-dd – y-MM-dd"
                 },
                 "GyMEd": {
-                  "d": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "G": "GGGGG y-MM-dd, E – GGGGG y-MM-dd, E",
-                  "M": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "y": "GGGGG y-MM-dd, E – y-MM-dd, E"
+                  "d": "G y-MM-dd, E – y-MM-dd, E",
+                  "G": "G y-MM-dd, E – G y-MM-dd, E",
+                  "M": "G y-MM-dd, E – y-MM-dd, E",
+                  "y": "G y-MM-dd, E – y-MM-dd, E"
                 },
                 "GyMMM": {
                   "G": "G y MMM – G y MMM",
@@ -542,6 +548,14 @@
                 "long": "{1} {0}",
                 "medium": "{1} {0}",
                 "short": "{1} {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
+              "standard": {
+                "full": "{1} በ {0}",
+                "long": "{1} በ {0}",
+                "medium": "{1} በ {0}",
+                "short": "{1} በ {0}"
               }
             }
           },
@@ -807,7 +821,7 @@
                   "pm": "ከ",
                   "morning1": "ጥዋት",
                   "afternoon1": "ከሰዓት",
-                  "evening1": "ማታ",
+                  "evening1": "ምሽት",
                   "night1": "ሌሊት"
                 },
                 "wide": {
@@ -904,7 +918,7 @@
                 "MEd": "MM-dd, E",
                 "MMM": "LLL",
                 "MMMd": "MMM d",
-                "MMMEd": "MMM d",
+                "MMMEd": "MMM d, E",
                 "MMMMd": "MMMM d",
                 "MMMMW-count-other": "MMMM 'week' W",
                 "ms": "mm:ss",

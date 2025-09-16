@@ -286,8 +286,8 @@
                 },
                 "wide": {
                   "midnight": "midnatt",
-                  "am": "förmiddag",
-                  "pm": "eftermiddag",
+                  "am": "fm",
+                  "pm": "em",
                   "morning1": "morgon",
                   "morning2": "förmiddag",
                   "afternoon1": "eftermiddag",
@@ -310,8 +310,8 @@
             "dateFormats": {
               "full": "EEEE d MMMM y G",
               "long": "d MMMM y G",
-              "medium": "d MMM y G",
-              "short": "G y-MM-dd"
+              "medium": "d.M.y G",
+              "short": "d.M.y G"
             },
             "dateSkeletons": {
               "full": "GyMMMMEEEEd",
@@ -346,15 +346,19 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "E d",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyM": "y-MM G",
                 "GyMd": "y-MM-dd GGGGG",
+                "GyMEd": "E y-MM-dd G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
                 "GyMMMEd": "E d MMM y G",
@@ -364,6 +368,8 @@
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "d/M",
                 "MEd": "E d/M",
@@ -425,9 +431,9 @@
                   "y": "M/y–M/y GGGGG"
                 },
                 "GyMd": {
-                  "d": "d/M/y–d/M/y GGGGG",
+                  "d": "d.M.y–d.M.y GGGGG",
                   "G": "y-MM-dd GGGGG – y-MM-dd GGGGG",
-                  "M": "d/M/y–d/M/y GGGGG",
+                  "M": "d.M.y–d.M.y GGGGG",
                   "y": "y-MM-dd – y-MM-dd GGGGG"
                 },
                 "GyMEd": {
@@ -545,6 +551,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} 'kl'. {0}",
+                "long": "{1} 'kl'. {0}",
+                "medium": "{1} {0}",
+                "short": "{1} {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1} 'kl'. {0}",
                 "long": "{1} 'kl'. {0}",

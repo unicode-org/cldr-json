@@ -293,13 +293,16 @@
             },
             "eras": {
               "eraNames": {
-                "0": "伊斯蘭曆"
+                "0": "伊斯蘭曆",
+                "1": "BH"
               },
               "eraAbbr": {
-                "0": "伊斯蘭曆"
+                "0": "伊斯蘭曆",
+                "1": "BH"
               },
               "eraNarrow": {
-                "0": "伊斯蘭曆"
+                "0": "伊斯蘭曆",
+                "1": "BH"
               }
             },
             "dateFormats": {
@@ -337,15 +340,19 @@
                 "Bhms": "Bh:mm:ss",
                 "d": "d日",
                 "E": "ccc",
+                "EBh": "EB h時",
                 "EBhm": "E Bh:mm",
                 "EBhms": "E Bh:mm:ss",
                 "Ed": "d日（E）",
+                "Eh": "E ah 時",
                 "Ehm": "E ah:mm",
                 "EHm": "E HH:mm",
                 "Ehms": "E Bh:mm:ss",
                 "EHms": "E HH:mm:ss",
                 "Gy": "Gy年",
+                "GyM": "Gy/M",
                 "GyMd": "GGGGG y/M/d",
+                "GyMEd": "Gy-MM-dd E",
                 "GyMMM": "Gy年M月",
                 "GyMMMd": "Gy年M月d日",
                 "GyMMMEd": "Gy年M月d日E",
@@ -355,6 +362,8 @@
                 "Hm": "H:mm",
                 "hms": "Bh:mm:ss",
                 "Hms": "H:mm:ss",
+                "hv": "ah時 v",
+                "Hv": "HH'h' v",
                 "M": "M月",
                 "Md": "d/M",
                 "MEd": "d/M（E）",
@@ -407,21 +416,21 @@
                   "y": "G y–y"
                 },
                 "GyM": {
-                  "G": "GGGGG y-MM – GGGGG y-MM",
-                  "M": "GGGGG y-MM – y-MM",
-                  "y": "GGGGG y-MM – y-MM"
+                  "G": "G y-MM – G y-MM",
+                  "M": "G y-MM – y-MM",
+                  "y": "G y-MM – y-MM"
                 },
                 "GyMd": {
-                  "d": "GGGGG y-MM-dd – y-MM-dd",
-                  "G": "GGGGG y-MM-dd – GGGGG y-MM-dd",
-                  "M": "GGGGG y-MM-dd – y-MM-dd",
-                  "y": "GGGGG y-MM-dd – y-MM-dd"
+                  "d": "G y-MM-dd – y-MM-dd",
+                  "G": "G y-MM-dd – G y-MM-dd",
+                  "M": "G y-MM-dd – y-MM-dd",
+                  "y": "G y-MM-dd – y-MM-dd"
                 },
                 "GyMEd": {
-                  "d": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "G": "GGGGG y-MM-dd, E – GGGGG y-MM-dd, E",
-                  "M": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "y": "GGGGG y-MM-dd, E – y-MM-dd, E"
+                  "d": "G y-MM-dd, E – y-MM-dd, E",
+                  "G": "G y-MM-dd, E – G y-MM-dd, E",
+                  "M": "G y-MM-dd, E – y-MM-dd, E",
+                  "y": "G y-MM-dd, E – y-MM-dd, E"
                 },
                 "GyMMM": {
                   "G": "G y MMM – G y MMM",
@@ -544,6 +553,14 @@
                 "long": "{1} {0}",
                 "medium": "{1} {0}",
                 "short": "{1} {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
+              "standard": {
+                "full": "{1} {0}",
+                "long": "{1}{0}",
+                "medium": "{1}{0}",
+                "short": "{1}{0}"
               }
             }
           }

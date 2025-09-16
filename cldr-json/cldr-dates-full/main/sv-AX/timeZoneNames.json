@@ -10,6 +10,7 @@
           "hourFormat": "+HH:mm;−HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
+          "gmtUnknownFormat": "GMT+?",
           "regionFormat": "{0}tid",
           "regionFormat-type-daylight": "{0} (sommartid)",
           "regionFormat-type-standard": "{0} (normaltid)",
@@ -18,11 +19,6 @@
             "Pacific": {
               "Honolulu": {
                 "_type": "zone",
-                "short": {
-                  "generic": "Honolulutid",
-                  "standard": "Honolulunormaltid",
-                  "daylight": "Honolulusommartid"
-                },
                 "exemplarCity": "Honolulu"
               },
               "Easter": {
@@ -43,7 +39,7 @@
               },
               "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "Enderbury"
+                "exemplarCity": "Kantonatollen"
               },
               "Noumea": {
                 "_type": "zone",
@@ -290,6 +286,10 @@
               }
             },
             "Antarctica": {
+              "Syowa": {
+                "_type": "zone",
+                "exemplarCity": "Showa"
+              },
               "DumontDUrville": {
                 "_type": "zone",
                 "exemplarCity": "Dumont-d’Urville"
@@ -406,6 +406,10 @@
                 "_type": "zone",
                 "exemplarCity": "Bahía de Banderas"
               },
+              "Mexico_City": {
+                "_type": "zone",
+                "exemplarCity": "Ciudad de México"
+              },
               "Merida": {
                 "_type": "zone",
                 "exemplarCity": "Mérida"
@@ -413,6 +417,10 @@
               "Cancun": {
                 "_type": "zone",
                 "exemplarCity": "Cancún"
+              },
+              "Miquelon": {
+                "_type": "zone",
+                "exemplarCity": "Saint-Pierre"
               },
               "Asuncion": {
                 "_type": "zone",
@@ -606,9 +614,7 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "västafrikansk tid",
-                "standard": "västafrikansk normaltid",
-                "daylight": "västafrikansk sommartid"
+                "standard": "västafrikansk tid"
               }
             },
             "Alaska": {
@@ -1014,11 +1020,16 @@
                 "standard": "Guyanatid"
               }
             },
+            "Hawaii": {
+              "long": {
+                "standard": "Honolulu, normaltid"
+              }
+            },
             "Hawaii_Aleutian": {
               "long": {
-                "generic": "Honolulutid",
-                "standard": "Honolulu, normaltid",
-                "daylight": "Honolulu, sommartid"
+                "generic": "aleutisk tid",
+                "standard": "aleutisk normaltid",
+                "daylight": "aleutisk sommartid"
               }
             },
             "Hong_Kong": {
@@ -1462,6 +1473,13 @@
             "Truk": {
               "long": {
                 "standard": "Chuuktid"
+              }
+            },
+            "Turkey": {
+              "long": {
+                "generic": "turkisk tid",
+                "standard": "turkisk normaltid",
+                "daylight": "turkisk sommartid"
               }
             },
             "Turkmenistan": {

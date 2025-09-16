@@ -130,13 +130,13 @@
             "days": {
               "format": {
                 "abbreviated": {
-                  "sun": "周日",
-                  "mon": "周一",
-                  "tue": "周二",
-                  "wed": "周三",
-                  "thu": "周四",
-                  "fri": "周五",
-                  "sat": "周六"
+                  "sun": "星期日",
+                  "mon": "星期一",
+                  "tue": "星期二",
+                  "wed": "星期三",
+                  "thu": "星期四",
+                  "fri": "星期五",
+                  "sat": "星期六"
                 },
                 "narrow": {
                   "sun": "日",
@@ -148,13 +148,13 @@
                   "sat": "六"
                 },
                 "short": {
-                  "sun": "周日",
-                  "mon": "周一",
-                  "tue": "周二",
-                  "wed": "周三",
-                  "thu": "周四",
-                  "fri": "周五",
-                  "sat": "周六"
+                  "sun": "日",
+                  "mon": "一",
+                  "tue": "二",
+                  "wed": "三",
+                  "thu": "四",
+                  "fri": "五",
+                  "sat": "六"
                 },
                 "wide": {
                   "sun": "星期日",
@@ -168,13 +168,13 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "sun": "周日",
-                  "mon": "周一",
-                  "tue": "周二",
-                  "wed": "周三",
-                  "thu": "周四",
-                  "fri": "周五",
-                  "sat": "周六"
+                  "sun": "星期日",
+                  "mon": "星期一",
+                  "tue": "星期二",
+                  "wed": "星期三",
+                  "thu": "星期四",
+                  "fri": "星期五",
+                  "sat": "星期六"
                 },
                 "narrow": {
                   "sun": "日",
@@ -186,13 +186,13 @@
                   "sat": "六"
                 },
                 "short": {
-                  "sun": "周日",
-                  "mon": "周一",
-                  "tue": "周二",
-                  "wed": "周三",
-                  "thu": "周四",
-                  "fri": "周五",
-                  "sat": "周六"
+                  "sun": "日",
+                  "mon": "一",
+                  "tue": "二",
+                  "wed": "三",
+                  "thu": "四",
+                  "fri": "五",
+                  "sat": "六"
                 },
                 "wide": {
                   "sun": "星期日",
@@ -251,8 +251,8 @@
               "format": {
                 "abbreviated": {
                   "midnight": "午夜",
-                  "am": "上午",
-                  "pm": "下午",
+                  "am": "上昼",
+                  "pm": "下昼",
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
@@ -262,8 +262,8 @@
                 },
                 "narrow": {
                   "midnight": "午夜",
-                  "am": "上午",
-                  "pm": "下午",
+                  "am": "上昼",
+                  "pm": "下昼",
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
@@ -273,8 +273,8 @@
                 },
                 "wide": {
                   "midnight": "午夜",
-                  "am": "上午",
-                  "pm": "下午",
+                  "am": "上昼",
+                  "pm": "下昼",
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
@@ -286,8 +286,8 @@
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "午夜",
-                  "am": "上午",
-                  "pm": "下午",
+                  "am": "上昼",
+                  "pm": "下昼",
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
@@ -297,8 +297,8 @@
                 },
                 "narrow": {
                   "midnight": "午夜",
-                  "am": "上午",
-                  "pm": "下午",
+                  "am": "上昼",
+                  "pm": "下昼",
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
@@ -308,8 +308,8 @@
                 },
                 "wide": {
                   "midnight": "午夜",
-                  "am": "上午",
-                  "pm": "下午",
+                  "am": "上昼",
+                  "pm": "下昼",
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
@@ -1067,11 +1067,11 @@
             },
             "dateFormats": {
               "full": {
-                "_value": "rU年MMMdEEEE",
+                "_value": "U (r) 年MMMdEEEE",
                 "_numbers": "d=hanidays"
               },
               "long": {
-                "_value": "rU年MMMd",
+                "_value": "U (r) 年MMMd",
                 "_numbers": "d=hanidays"
               },
               "medium": {
@@ -1082,24 +1082,24 @@
             },
             "dateSkeletons": {
               "full": {
-                "_value": "rMMMEEEEd",
+                "_value": "UMMMEEEEd",
                 "_numbers": "d=hanidays"
               },
               "long": {
-                "_value": "rMMMd",
+                "_value": "UMMMd",
                 "_numbers": "d=hanidays"
               },
               "medium": "rMMMd",
               "short": "rMd"
             },
             "timeFormats": {
-              "full": "zzzz HH:mm:ss",
-              "long": "z HH:mm:ss",
+              "full": "HH:mm:ss [zzzz]",
+              "long": "HH:mm:ss [z]",
               "medium": "HH:mm:ss",
               "short": "HH:mm"
             },
             "timeSkeletons": {
-              "full": "HHmmsszzzz",
+              "full": "HHmmssz",
               "long": "HHmmssz",
               "medium": "HHmmss",
               "short": "HHmm"
@@ -1115,6 +1115,7 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d日",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "d日E",
@@ -1131,9 +1132,11 @@
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "MMM",
-                "Md": "M-d",
-                "MEd": "M-dE",
+                "Md": "M/d",
+                "MEd": "M/dE",
                 "MMM": "LLL",
                 "MMMd": "MMMd日",
                 "MMMEd": "MMMd日E",
@@ -1172,7 +1175,7 @@
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
-                "intervalFormatFallback": "{0}–{1}",
+                "intervalFormatFallback": "{0}至{1}",
                 "Bh": {
                   "B": "h B – h B",
                   "h": "h–h B"
@@ -1186,8 +1189,8 @@
                   "d": "d日至d日"
                 },
                 "h": {
-                  "a": "ah至ah时",
-                  "h": "ah至h时"
+                  "a": "ah时至ah时",
+                  "h": "ah时至h时"
                 },
                 "H": {
                   "H": "HH–HH"
@@ -1202,31 +1205,31 @@
                   "m": "HH:mm–HH:mm"
                 },
                 "hmv": {
-                  "a": "vah:mm至ah:mm",
-                  "h": "vah:mm至h:mm",
-                  "m": "vah:mm至h:mm"
+                  "a": "ah:mm至ah:mm [v]",
+                  "h": "ah:mm至h:mm [v]",
+                  "m": "ah:mm至h:mm [v]"
                 },
                 "Hmv": {
-                  "H": "HH:mm至HH:mm v",
-                  "m": "HH:mm至HH:mm v"
+                  "H": "HH:mm–HH:mm [v]",
+                  "m": "HH:mm–HH:mm [v]"
                 },
                 "hv": {
-                  "a": "vah至ah时",
-                  "h": "vah至h时"
+                  "a": "ah时至ah时 [v]",
+                  "h": "ah时至h时 [v]"
                 },
                 "Hv": {
-                  "H": "HH–HH v"
+                  "H": "HH–HH [v]"
                 },
                 "M": {
-                  "M": "L至L"
+                  "M": "MMM至MMM"
                 },
                 "Md": {
-                  "d": "M-d至M-d",
-                  "M": "M-d至M-d"
+                  "d": "M/d至M/d",
+                  "M": "M/d至M/d"
                 },
                 "MEd": {
-                  "d": "M-dE至M-dE",
-                  "M": "M-dE至M-dE"
+                  "d": "M/dE至M/dE",
+                  "M": "M/dE至M/dE"
                 },
                 "MMM": {
                   "M": "LLL至LLL"
@@ -1246,18 +1249,18 @@
                   "y": "rU至rU"
                 },
                 "yM": {
-                  "M": "r-M至r-M",
-                  "y": "r-M至r-M"
+                  "M": "r/M至r/M",
+                  "y": "r/M至r/M"
                 },
                 "yMd": {
-                  "d": "r-M-d至r-M-d",
-                  "M": "r-M-d至r-M-d",
-                  "y": "r-M-d至r-M-d"
+                  "d": "r/M/d至r/M/d",
+                  "M": "r/M/d至r/M/d",
+                  "y": "r/M/d至r/M/d"
                 },
                 "yMEd": {
-                  "d": "r-M-dE至r-M-dE",
-                  "M": "r-M-dE至r-M-dE",
-                  "y": "r-M-dE至r-M-dE"
+                  "d": "r/M/dE至r/M/dE",
+                  "M": "r/M/dE至r/M/dE",
+                  "y": "r/M/dE至r/M/dE"
                 },
                 "yMMM": {
                   "M": "rU年MMM至MMM",
@@ -1280,6 +1283,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} {0}",
+                "long": "{1} {0}",
+                "medium": "{1} {0}",
+                "short": "{1} {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1} {0}",
                 "long": "{1} {0}",

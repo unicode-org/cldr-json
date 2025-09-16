@@ -9,6 +9,7 @@
           "hourFormat": "+HH:mm;–HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
+          "gmtUnknownFormat": "GMT+?",
           "regionFormat": "{0} aldeko ordua",
           "regionFormat-type-daylight": "{0} (udako ordua)",
           "regionFormat-type-standard": "{0} aldeko ordu estandarra",
@@ -17,11 +18,6 @@
             "Pacific": {
               "Honolulu": {
                 "_type": "zone",
-                "short": {
-                  "generic": "HST",
-                  "standard": "HST",
-                  "daylight": "HDT"
-                },
                 "exemplarCity": "Honolulu"
               },
               "Easter": {
@@ -42,7 +38,7 @@
               },
               "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "Enderbury"
+                "exemplarCity": "Canton"
               },
               "Noumea": {
                 "_type": "zone",
@@ -55,6 +51,10 @@
               "Efate": {
                 "_type": "zone",
                 "exemplarCity": "Éfaté"
+              },
+              "Wallis": {
+                "_type": "zone",
+                "exemplarCity": "Wallis & Futuna"
               }
             },
             "Etc": {
@@ -78,6 +78,10 @@
                 "exemplarCity": "Aingira"
               },
               "Argentina": {
+                "Rio_Gallegos": {
+                  "_type": "zone",
+                  "exemplarCity": "Río Gallegos"
+                },
                 "Tucuman": {
                   "_type": "zone",
                   "exemplarCity": "Tucumán"
@@ -103,6 +107,10 @@
                 "_type": "zone",
                 "exemplarCity": "Santarém"
               },
+              "Belem": {
+                "_type": "zone",
+                "exemplarCity": "Belém"
+              },
               "Araguaina": {
                 "_type": "zone",
                 "exemplarCity": "Araguaína"
@@ -126,6 +134,10 @@
               "St_Johns": {
                 "_type": "zone",
                 "exemplarCity": "Saint John’s"
+              },
+              "Bogota": {
+                "_type": "zone",
+                "exemplarCity": "Bogotá"
               },
               "Havana": {
                 "_type": "zone",
@@ -344,6 +356,10 @@
                 "_type": "zone",
                 "exemplarCity": "Monako"
               },
+              "Chisinau": {
+                "_type": "zone",
+                "exemplarCity": "Chișinău"
+              },
               "Warsaw": {
                 "_type": "zone",
                 "exemplarCity": "Varsovia"
@@ -532,6 +548,10 @@
               }
             },
             "Antarctica": {
+              "Syowa": {
+                "_type": "zone",
+                "exemplarCity": "Showa"
+              },
               "DumontDUrville": {
                 "_type": "zone",
                 "exemplarCity": "Dumont-d’Urville"
@@ -609,6 +629,10 @@
               "Ndjamena": {
                 "_type": "zone",
                 "exemplarCity": "N’djamena"
+              },
+              "Lome": {
+                "_type": "zone",
+                "exemplarCity": "Lomé"
               }
             },
             "Atlantic": {
@@ -638,6 +662,10 @@
               }
             },
             "Indian": {
+              "Comoro": {
+                "_type": "zone",
+                "exemplarCity": "Comores"
+              },
               "Mauritius": {
                 "_type": "zone",
                 "exemplarCity": "Maurizio"
@@ -686,9 +714,7 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "Afrikako mendebaldeko ordua",
-                "standard": "Afrikako mendebaldeko ordu estandarra",
-                "daylight": "Afrikako mendebaldeko udako ordua"
+                "standard": "Afrikako mendebaldeko ordua"
               }
             },
             "Alaska": {
@@ -1122,6 +1148,14 @@
             "Guyana": {
               "long": {
                 "standard": "Guyanako ordua"
+              }
+            },
+            "Hawaii": {
+              "long": {
+                "standard": "Hawaii-Aleutiar uharteetako ordu estandarra"
+              },
+              "short": {
+                "standard": "HAST"
               }
             },
             "Hawaii_Aleutian": {

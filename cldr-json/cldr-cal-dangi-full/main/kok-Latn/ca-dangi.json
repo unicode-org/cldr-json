@@ -223,7 +223,7 @@
                   "1": "1lem timhoinallem",
                   "2": "2rem timhoinallem",
                   "3": "3rem timhoinallem",
-                  "4": "4tem timhoinallem"
+                  "4": "4them timhoinallem"
                 }
               },
               "stand-alone": {
@@ -243,37 +243,67 @@
                   "1": "1lem timhoinallem",
                   "2": "2rem timhoinallem",
                   "3": "3rem timhoinallem",
-                  "4": "4tem timhoinallem"
+                  "4": "4them timhoinallem"
                 }
               }
             },
             "dayPeriods": {
               "format": {
                 "abbreviated": {
+                  "midnight": "modhyan",
                   "am": "AM",
-                  "pm": "PM"
+                  "pm": "PM",
+                  "morning1": "sokall",
+                  "afternoon1": "donpar",
+                  "evening1": "sanj",
+                  "night1": "rat"
                 },
                 "narrow": {
-                  "am": "AM",
-                  "pm": "PM"
+                  "midnight": "md",
+                  "am": "a",
+                  "pm": "p",
+                  "morning1": "sk",
+                  "afternoon1": "dp",
+                  "evening1": "sj",
+                  "night1": "rt"
                 },
                 "wide": {
+                  "midnight": "modhyanrat",
                   "am": "sokallim",
-                  "pm": "sanje"
+                  "pm": "sanje",
+                  "morning1": "sokallim",
+                  "afternoon1": "donparam",
+                  "evening1": "sanje",
+                  "night1": "rati"
                 }
               },
               "stand-alone": {
                 "abbreviated": {
+                  "midnight": "modhyan",
                   "am": "AM",
-                  "pm": "PM"
+                  "pm": "PM",
+                  "morning1": "sokall",
+                  "afternoon1": "donpar",
+                  "evening1": "sanj",
+                  "night1": "rat"
                 },
                 "narrow": {
+                  "midnight": "md",
                   "am": "AM",
-                  "pm": "PM"
+                  "pm": "PM",
+                  "morning1": "sk",
+                  "afternoon1": "dp",
+                  "evening1": "sj",
+                  "night1": "rt"
                 },
                 "wide": {
+                  "midnight": "modhyanrat",
                   "am": "sokallim",
-                  "pm": "sanje"
+                  "pm": "sanje",
+                  "morning1": "sokallim",
+                  "afternoon1": "donparam",
+                  "evening1": "sanje",
+                  "night1": "rati"
                 }
               }
             },
@@ -1058,6 +1088,7 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "d, E",
@@ -1074,6 +1105,8 @@
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "MM-dd",
                 "MEd": "MM-dd, E",
@@ -1219,6 +1252,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} {0}",
+                "long": "{1} {0}",
+                "medium": "{1} {0}",
+                "short": "{1} {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1} {0}",
                 "long": "{1} {0}",

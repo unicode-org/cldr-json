@@ -194,7 +194,7 @@
                   "1": "1lem timhoinallem",
                   "2": "2rem timhoinallem",
                   "3": "3rem timhoinallem",
-                  "4": "4tem timhoinallem"
+                  "4": "4them timhoinallem"
                 }
               },
               "stand-alone": {
@@ -214,37 +214,67 @@
                   "1": "1lem timhoinallem",
                   "2": "2rem timhoinallem",
                   "3": "3rem timhoinallem",
-                  "4": "4tem timhoinallem"
+                  "4": "4them timhoinallem"
                 }
               }
             },
             "dayPeriods": {
               "format": {
                 "abbreviated": {
+                  "midnight": "modhyan",
                   "am": "AM",
-                  "pm": "PM"
+                  "pm": "PM",
+                  "morning1": "sokall",
+                  "afternoon1": "donpar",
+                  "evening1": "sanj",
+                  "night1": "rat"
                 },
                 "narrow": {
-                  "am": "AM",
-                  "pm": "PM"
+                  "midnight": "md",
+                  "am": "a",
+                  "pm": "p",
+                  "morning1": "sk",
+                  "afternoon1": "dp",
+                  "evening1": "sj",
+                  "night1": "rt"
                 },
                 "wide": {
+                  "midnight": "modhyanrat",
                   "am": "sokallim",
-                  "pm": "sanje"
+                  "pm": "sanje",
+                  "morning1": "sokallim",
+                  "afternoon1": "donparam",
+                  "evening1": "sanje",
+                  "night1": "rati"
                 }
               },
               "stand-alone": {
                 "abbreviated": {
+                  "midnight": "modhyan",
                   "am": "AM",
-                  "pm": "PM"
+                  "pm": "PM",
+                  "morning1": "sokall",
+                  "afternoon1": "donpar",
+                  "evening1": "sanj",
+                  "night1": "rat"
                 },
                 "narrow": {
+                  "midnight": "md",
                   "am": "AM",
-                  "pm": "PM"
+                  "pm": "PM",
+                  "morning1": "sk",
+                  "afternoon1": "dp",
+                  "evening1": "sj",
+                  "night1": "rt"
                 },
                 "wide": {
+                  "midnight": "modhyanrat",
                   "am": "sokallim",
-                  "pm": "sanje"
+                  "pm": "sanje",
+                  "morning1": "sokallim",
+                  "afternoon1": "donparam",
+                  "evening1": "sanje",
+                  "night1": "rati"
                 }
               }
             },
@@ -298,25 +328,29 @@
               "medium": "{1}, {0}",
               "short": "{1}, {0}",
               "availableFormats": {
-                "Bh": "B h",
+                "Bh": "B h 'vaztam'",
                 "Bhm": "B h:mm",
                 "Bhms": "B h:mm:ss",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E B h 'vaztam'",
                 "EBhm": "E B h:mm",
                 "EBhms": "E B h:mm:ss",
                 "Ed": "d, E",
+                "Eh": "E a h 'vaztam'",
                 "Ehm": "E a h:mm",
                 "EHm": "E HH:mm",
                 "Ehms": "E a h:mm:ss",
                 "EHms": "E HH:mm:ss",
-                "Gy": "y G",
+                "Gy": "G y",
+                "GyM": "M/y G",
                 "GyMd": "d-M-y G",
+                "GyMEd": "E, d-M-y G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM, y G",
                 "GyMMMEd": "E, d MMM, y G",
-                "h": "a h",
-                "H": "HH",
+                "h": "a h 'vaztam'",
+                "H": "HH'v'",
                 "hm": "a h:mm",
                 "Hm": "HH:mm",
                 "hms": "a h:mm:ss",
@@ -325,6 +359,8 @@
                 "Hmsv": "HH:mm:ss v",
                 "hmv": "a h:mm v",
                 "Hmv": "HH:mm v",
+                "hv": "a h 'vaztam' v",
+                "Hv": "HH'v' v",
                 "M": "L",
                 "Md": "d/M",
                 "MEd": "dd-MM, E",
@@ -332,10 +368,11 @@
                 "MMMd": "d MMM",
                 "MMMEd": "E, d MMM",
                 "MMMMd": "d MMMM",
+                "MMMMW-count-one": "MMMM -'acho' 'suman' W",
                 "MMMMW-count-other": "MMMM -'acho' 'suman' W",
                 "ms": "mm:ss",
                 "y": "y",
-                "yM": "M-y",
+                "yM": "M/y",
                 "yMd": "d-M-y",
                 "yMEd": "E, d-M-y",
                 "yMMM": "MMM y",
@@ -344,6 +381,7 @@
                 "yMMMM": "MMMM y",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
+                "yw-count-one": "Y -'acho' 'suman' w",
                 "yw-count-other": "Y -'acho' 'suman' w"
               },
               "appendItems": {
@@ -362,8 +400,8 @@
               "intervalFormats": {
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
-                  "B": "B h – B h",
-                  "h": "B h – h"
+                  "B": "B h 'vaztam' – B h 'vaztam'",
+                  "h": "B h – h 'vaztam'"
                 },
                 "Bhm": {
                   "B": "B h:mm – B h:mm",
@@ -374,8 +412,8 @@
                   "d": "d – d"
                 },
                 "Gy": {
-                  "G": "y G – y G",
-                  "y": "y – y G"
+                  "G": "G y – G y",
+                  "y": "G y–y"
                 },
                 "GyM": {
                   "G": "M/y G – M/y G",
@@ -412,11 +450,11 @@
                   "y": "E, d MMM, y – E, d MMM, y G"
                 },
                 "h": {
-                  "a": "a h – a h",
-                  "h": "a h–h"
+                  "a": "a h 'vaztam' – a h 'vaztam'",
+                  "h": "a h–h 'vaztam'"
                 },
                 "H": {
-                  "H": "HH – HH"
+                  "H": "HH–HH'v'"
                 },
                 "hm": {
                   "a": "a h:mm – a h:mm",
@@ -437,11 +475,11 @@
                   "m": "HH:mm – HH:mm v"
                 },
                 "hv": {
-                  "a": "a h – a h v",
-                  "h": "a h–h v"
+                  "a": "a h 'vaztam' – a h 'vaztam' v",
+                  "h": "a h–h 'vaztam' v"
                 },
                 "Hv": {
-                  "H": "HH – HH v"
+                  "H": "HH–HH'v' v"
                 },
                 "M": {
                   "M": "M – M"
@@ -503,6 +541,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1}, {0} 'vaztam'",
+                "long": "{1}, {0} 'vaztam'",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1}, {0} 'vaztam'",
                 "long": "{1}, {0} 'vaztam'",
