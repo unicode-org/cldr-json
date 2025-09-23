@@ -18,6 +18,14 @@ then
     exit 1
 fi
 
+if [[ "$INDATA" == "generate" ]];
+then
+    export INDATA="target/data"
+    mkdir -p "${INDATA}"
+    mvn -s "${CLDR_DIR}/.github/workflows/mvn-settings.xml" -B -DCLDR_DIR=${CLDR_DIR} -DCLDR_GITHUB_ANNOTATIONS=true --file=${CLDR_DIR}/tools/pom.xml -pl cldr-code  \
+        exec:java -Dexec.mainClass=org.unicode.cldr.tool.GenerateProductionData -Dexec.args="-d ${INDATA}/common"
+fi
+
 # for now, seed has to exist.
 mkdir -p -v ${OUT} ${INDATA}/seed/main ${INDATA}/seed/annotations ${DIST}
 MAIN_CLASS=org.unicode.cldr.json.Ldml2JsonConverter
@@ -34,6 +42,11 @@ for type in ${TYPES}; do
 done
 
 echo "Finshed converting '${TYPES}' to ${OUT}"
+
+if [[ "$INDATA" == "target/data" ]];
+then
+    rm -r "$INDATA"
+fi
 
 if [ -x ./local-config.sh ];
 then

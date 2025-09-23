@@ -61,6 +61,7 @@ jobs:
                       ${{ runner.os }}-maven-
             - name: Clone Data
               uses: actions/checkout@v5
+              if: ${{ github.event.inputs.data-repo != 'generate' }}
               with:
                 ref: ${{ github.event.inputs.data-ref }}
                 repository: ${{ github.event.inputs.data-repo }}
@@ -70,8 +71,6 @@ jobs:
               run: |
                 cd cldr-json
                 echo VERSION=${{ github.event.inputs.version }} > local-config.sh
-                echo CLDR_DIR=../cldr >> local-config.sh
-                echo INDATA=../cldr-staging/${{ github.event.inputs.data-dir }} >> local-config.sh
                 cat local-config.sh
                 chmod a+rx local-config.sh
                 bash cldr-identify.sh | tee ../cldr-identity.txt
