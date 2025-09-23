@@ -9,9 +9,9 @@ CLDR_DIR=../cldr
 # output of generated JSON
 OUT=./cldr-json
 
-# input data, assumed to be in a parallel repo
+# input data, "generate" or a path to
 # <https://github.com/unicode-org/cldr-staging.git>
-INDATA=../cldr-staging/production
+INDATA=generate
 
 # output of .zip files
 DIST=./dist
