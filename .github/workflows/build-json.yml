@@ -1,5 +1,8 @@
 name: build-json
 
+permissions:
+  packages: read
+
 on:
   workflow_dispatch:
     inputs:
@@ -22,7 +25,7 @@ on:
             required: true
             default: 'unicode-org/cldr-staging'
         data-ref:
-            description: 'Data (staging) ref/tag/branch to use'
+            description: 'Data (staging) ref/tag/branch to use (if "GENERATE", generate production data)'
             required: true
             default: 'main'
         data-dir:
@@ -61,11 +64,25 @@ jobs:
                       ${{ runner.os }}-maven-
             - name: Clone Data
               uses: actions/checkout@v5
+              if: github.event.inputs.data-ref != 'GENERATE'
               with:
                 ref: ${{ github.event.inputs.data-ref }}
                 repository: ${{ github.event.inputs.data-repo }}
                 sparse-checkout: ${{ github.event.inputs.data-dir }}
                 path: cldr-staging
+            - name: Generate Production
+              if: github.event.inputs.data-ref == 'GENERATE'
+              run: |
+                cd cldr
+                mkdir -p ../cldr-staging/${{ github.event.inputs.data-dir }}
+                echo "::group::Build cldr-code"
+                mvn -s ../cldr/.github/workflows/mvn-settings.xml -B compile install package -DskipTests=true --file=tools/pom.xml -pl cldr-code
+                echo "::endgroup::"
+                echo "::group::GenerateProductionData"
+                mvn -s ../cldr/.github/workflows/mvn-settings.xml -B -DCLDR_DIR=$(pwd) -DCLDR_GITHUB_ANNOTATIONS=true --file=tools/pom.xml -pl cldr-code exec:java -Dexec.mainClass=org.unicode.cldr.tool.GenerateProductionData
+                echo "::endgroup::"
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - name: Setup Config
               run: |
                 cd cldr-json
@@ -87,7 +104,7 @@ jobs:
                 rm -rf cldr-json
                 echo "::endgroup::"
                 echo "::group::Build"
-                env MVN_OPTS="-s ../cldr/.github/workflows/mvn-settings.xml" bash ./cldr-generate-json.sh
+                env MVN_OPTS="-B -s ../cldr/.github/workflows/mvn-settings.xml" bash ./cldr-generate-json.sh
                 echo "::endgroup::"
                 echo "::group::Status"
                 git status || true
