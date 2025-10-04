@@ -14,12 +14,12 @@ fi
 
 function explain_repo()
 {
-    git rev-parse --short  HEAD
+    git remote get-url origin | sed -E 's/git@github.com:|https:\/\/github.com\/|.git//g'
     git describe --tags HEAD
 }
 
 echo "* cldr-json info"
-echo "- DATA: unicode-org/cldr-staging: " $(cd ${INDATA}; explain_repo)
-echo "- TOOL: unicode-org/cldr: " $(cd ${CLDR_DIR}; explain_repo)
-echo "- SCRIPT: unicode-org/cldr-json: " $(explain_repo)
+echo "- DATA: " $(cd ${INDATA}; explain_repo)
+echo "- TOOL: " $(cd ${CLDR_DIR}; explain_repo)
+echo "- SCRIPT: " $(explain_repo)
 
