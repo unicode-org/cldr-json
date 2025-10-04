@@ -21,11 +21,11 @@ on:
             required: true
             default: 'main'
         data-repo:
-            description: Data (staging) repo to use
+            description: 'Data (staging) repo to use (if "GENERATE", generate production data)'
             required: true
             default: 'unicode-org/cldr-staging'
         data-ref:
-            description: 'Data (staging) ref/tag/branch to use (if "GENERATE", generate production data)'
+            description: 'Data (staging) ref/tag/branch to use'
             required: true
             default: 'main'
         data-dir:
@@ -73,7 +73,7 @@ jobs:
                 sparse-checkout: ${{ github.event.inputs.data-dir }}
                 path: cldr-staging
             - name: Generate Production
-              if: github.event.inputs.data-ref == 'GENERATE'
+              if: github.event.inputs.data-repo == 'GENERATE'
               run: |
                 cd cldr
                 mkdir -p ../cldr-staging/${{ github.event.inputs.data-dir }}
