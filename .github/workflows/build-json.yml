@@ -44,12 +44,12 @@ jobs:
                 java-version: 11
                 distribution: 'temurin'
             - name: Clone cldr-json
-              uses: actions/checkout@v5
+              uses: actions/checkout@v6
               with:
                 ref: ${{ github.event.inputs.git-ref }}
                 path: cldr-json
             - name: Clone cldr
-              uses: actions/checkout@v5
+              uses: actions/checkout@v6
               with:
                 ref: ${{ github.event.inputs.cldr-ref }}
                 lfs: false
@@ -63,7 +63,7 @@ jobs:
                   restore-keys: |
                       ${{ runner.os }}-maven-
             - name: Clone cldr-staging
-              uses: actions/checkout@v5
+              uses: actions/checkout@v6
               # 'generate' will generate production data in the build script
               if: ${{ github.event.inputs.data-repo != 'generate' }}
               with:
