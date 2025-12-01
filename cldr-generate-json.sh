@@ -33,8 +33,9 @@ then
     ${MVN} exec:java -Dexec.mainClass=org.unicode.cldr.tool.GenerateProductionData -DCLDR_DIR=${CLDR_DIR} -Dexec.args="-d ${INDATA}/common"
 fi
 
+mkdir -p ${OUT}
 # for now, seed has to exist.
-mkdir -p -v ${OUT} ${INDATA}/seed/main ${INDATA}/seed/annotations ${DIST}
+mkdir -p -v ${INDATA}/seed/{main,annotations}
 
 for type in ${TYPES}; do
     ${MVN} exec:java -Dexec.mainClass=org.unicode.cldr.json.Ldml2JsonConverter -DCLDR_DIR=${INDATA} -Dexec.args="-m ${MATCH} -p true -o true -r true -t ${type} -d ${OUT} -s ${DRAFTSTATUS} -V ${VERSION} ${EXTRA_JSON_OPTS}"

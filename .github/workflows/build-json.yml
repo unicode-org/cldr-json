@@ -2,6 +2,7 @@ name: build-json
 
 permissions:
   packages: read
+  contents: write
 
 on:
   workflow_dispatch:
@@ -11,7 +12,7 @@ on:
             required: false
         version:
             description: Package Version (e.g. 46.0.0 or 46.0.0-BETA2 )
-            required: true
+            required: false
         cldr-repo:
             description: CLDR (tool) repo to use
             required: true
@@ -32,6 +33,11 @@ on:
             description: 'Path in Data repo'
             required: false
             default: 'production/'
+        push-changes:
+            description: 'Push changes to the cldr-json repo'
+            type: boolean
+            default: false
+            required: true
 
 jobs:
     build:
@@ -48,6 +54,7 @@ jobs:
               with:
                 ref: ${{ github.event.inputs.git-ref }}
                 path: cldr-json
+                fetch-depth: 0
             - name: Clone cldr
               uses: actions/checkout@v5
               with:
@@ -55,6 +62,7 @@ jobs:
                 lfs: false
                 repository: ${{ github.event.inputs.cldr-repo }}
                 path: cldr
+                fetch-depth: 0
             - name: Cache local Maven repository
               uses: actions/cache@v4
               with:
@@ -71,12 +79,12 @@ jobs:
                 repository: ${{ github.event.inputs.data-repo }}
                 sparse-checkout: ${{ github.event.inputs.data-dir }}
                 path: cldr-staging
+                fetch-depth: 0
             - name: Setup Config
               working-directory: cldr-json
               run: |
-                echo VERSION=${{ github.event.inputs.version }} > local-config.sh
-                cat local-config.sh
-                chmod a+rx local-config.sh
+                [ -n "${{ github.event.inputs.version }}" ] && echo VERSION=${{ github.event.inputs.version }} > local-config.sh
+                chmod +x local-config.sh || true
                 bash cldr-identify.sh | tee ../cldr-identity.txt
             - name: Upload cldr-identity.txt
               uses: actions/upload-artifact@v4
@@ -103,6 +111,15 @@ jobs:
               with:
                 name: cldr-json
                 path: ./cldr-json/dist
+            - name: Push changes
+              if: ${{ github.event.inputs.push-changes }}
+              working-directory: cldr-json
+              run: |
+                git config --global user.name "GitHub Actions"
+                git config --global user.email "actions@github.com"
+                git add cldr-json
+                git commit --verbose -F - < (echo "Automated update; echo; cat ../cldr-identity.txt")
+                git push --verbose
 
 
 
