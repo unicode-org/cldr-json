@@ -79,7 +79,7 @@ jobs:
                 chmod a+rx local-config.sh
                 bash cldr-identify.sh | tee ../cldr-identity.txt
             - name: Upload cldr-identity.txt
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v5
               with:
                   name: cldr-identity
                   path: ./cldr-identity.txt
@@ -99,7 +99,7 @@ jobs:
                 bash cldr-generate-zip.sh
                 cp PACKAGES.md dist/
             - name: Upload dist
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v5
               with:
                 name: cldr-json
                 path: ./cldr-json/dist
