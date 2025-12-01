@@ -19,7 +19,12 @@ function explain_repo()
 }
 
 echo "* cldr-json info"
-echo "- DATA: " $(cd ${INDATA}; explain_repo)
+if [[ "$INDATA" == "generate" ]]
+then
+    echo "- DATA: " $(cd ${CLDR_DIR}; explain_repo) "(generated)"
+else 
+    echo "- DATA: " $(cd ${INDATA}; explain_repo)
+fi
 echo "- TOOL: " $(cd ${CLDR_DIR}; explain_repo)
 echo "- SCRIPT: " $(explain_repo)
 

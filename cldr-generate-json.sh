@@ -5,6 +5,8 @@
 #
 # Creates JSON data under ./cldr-json in this directory.
 
+set -e
+
 . ./cldr-config.sh
 if [ -x ./local-config.sh ];
 then
@@ -18,27 +20,24 @@ then
     exit 1
 fi
 
+export MAVEN_OPTS="-Xmx16384m -Dexec.cleanupDaemonThreads=false"
+MVN="mvn ${MVN_OPTS} --file=${CLDR_DIR}/tools/pom.xml -pl cldr-code"
+
+set -x
+${MVN} compile
+
 if [[ "$INDATA" == "generate" ]];
 then
     export INDATA="target/data"
     mkdir -p "${INDATA}"
-    mvn -s "${CLDR_DIR}/.github/workflows/mvn-settings.xml" -B -DCLDR_DIR=${CLDR_DIR} -DCLDR_GITHUB_ANNOTATIONS=true --file=${CLDR_DIR}/tools/pom.xml -pl cldr-code  \
-        exec:java -Dexec.mainClass=org.unicode.cldr.tool.GenerateProductionData -Dexec.args="-d ${INDATA}/common"
+    ${MVN} exec:java -Dexec.mainClass=org.unicode.cldr.tool.GenerateProductionData -DCLDR_DIR=${CLDR_DIR} -Dexec.args="-d ${INDATA}/common"
 fi
 
 # for now, seed has to exist.
 mkdir -p -v ${OUT} ${INDATA}/seed/main ${INDATA}/seed/annotations ${DIST}
-MAIN_CLASS=org.unicode.cldr.json.Ldml2JsonConverter
-export MAVEN_OPTS="-Xmx16384m -Dexec.cleanupDaemonThreads=false -Dexec.mainClass=${MAIN_CLASS}"
-MVN="mvn ${MVN_OPTS} --file=${CLDR_DIR}/tools/pom.xml -pl cldr-code"
-MVN_COMPILE="${MVN} compile"
-MVN_EXEC="${MVN} -DCLDR_DIR=${INDATA} exec:java"
-
-set -x
-${MVN_COMPILE} || exit 1
 
 for type in ${TYPES}; do
-    ${MVN_EXEC}  -Dexec.args="-m ${MATCH} -p true -o true -r true -t ${type} -d ${OUT} -s ${DRAFTSTATUS} -V ${VERSION} ${EXTRA_JSON_OPTS}" || exit 1
+    ${MVN} exec:java -Dexec.mainClass=org.unicode.cldr.json.Ldml2JsonConverter -DCLDR_DIR=${INDATA} -Dexec.args="-m ${MATCH} -p true -o true -r true -t ${type} -d ${OUT} -s ${DRAFTSTATUS} -V ${VERSION} ${EXTRA_JSON_OPTS}"
 done
 
 echo "Finshed converting '${TYPES}' to ${OUT}"

@@ -21,16 +21,16 @@ on:
             required: true
             default: 'main'
         data-repo:
-            description: 'Data (staging) repo to use (if "GENERATE", generate production data)'
+            description: 'Data (staging) repo to use (if "generate", generate production data)'
             required: true
-            default: 'unicode-org/cldr-staging'
+            default: 'generate'
         data-ref:
             description: 'Data (staging) ref/tag/branch to use'
-            required: true
+            required: false
             default: 'main'
         data-dir:
             description: 'Path in Data repo'
-            required: true
+            required: false
             default: 'production/'
 
 jobs:
@@ -43,12 +43,12 @@ jobs:
               with:
                 java-version: 11
                 distribution: 'temurin'
-            - name: Clone json
+            - name: Clone cldr-json
               uses: actions/checkout@v5
               with:
                 ref: ${{ github.event.inputs.git-ref }}
                 path: cldr-json
-            - name: Clone CLDR
+            - name: Clone cldr
               uses: actions/checkout@v5
               with:
                 ref: ${{ github.event.inputs.cldr-ref }}
@@ -62,32 +62,18 @@ jobs:
                   key: ${{ runner.os }}-maven-${{ hashFiles('cldr/tools/**/pom.xml') }}
                   restore-keys: |
                       ${{ runner.os }}-maven-
-            - name: Clone Data
+            - name: Clone cldr-staging
               uses: actions/checkout@v5
-              # 'GENERATE' will generate here, in the action.
-              # 'generate' will generate in the build script, currently broken.
-              if: ${{ github.event.inputs.data-repo != 'GENERATE' && github.event.inputs.data-repo != 'generate' }}
+              # 'generate' will generate production data in the build script
+              if: ${{ github.event.inputs.data-repo != 'generate' }}
               with:
                 ref: ${{ github.event.inputs.data-ref }}
                 repository: ${{ github.event.inputs.data-repo }}
                 sparse-checkout: ${{ github.event.inputs.data-dir }}
                 path: cldr-staging
-            - name: Generate Production
-              if: github.event.inputs.data-repo == 'GENERATE'
-              run: |
-                cd cldr
-                mkdir -p ../cldr-staging/${{ github.event.inputs.data-dir }}
-                echo "::group::Build cldr-code"
-                mvn -s ../cldr/.github/workflows/mvn-settings.xml -B compile install package -DskipTests=true --file=tools/pom.xml -pl cldr-code
-                echo "::endgroup::"
-                echo "::group::GenerateProductionData"
-                mvn -s ../cldr/.github/workflows/mvn-settings.xml -B -DCLDR_DIR=$(pwd) -DCLDR_GITHUB_ANNOTATIONS=true --file=tools/pom.xml -pl cldr-code exec:java -Dexec.mainClass=org.unicode.cldr.tool.GenerateProductionData
-                echo "::endgroup::"
-              env:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - name: Setup Config
+              working-directory: cldr-json
               run: |
-                cd cldr-json
                 echo VERSION=${{ github.event.inputs.version }} > local-config.sh
                 cat local-config.sh
                 chmod a+rx local-config.sh
@@ -98,23 +84,20 @@ jobs:
                   name: cldr-identity
                   path: ./cldr-identity.txt
             - name: Build JSON
+              working-directory: cldr-json
               run: |
-                cd cldr-json
-                echo "::group::Cleanup"
                 rm -rf cldr-json
-                echo "::endgroup::"
-                echo "::group::Build"
                 env MVN_OPTS="-B -s ../cldr/.github/workflows/mvn-settings.xml" bash ./cldr-generate-json.sh
-                echo "::endgroup::"
-                echo "::group::Status"
-                git status || true
-                echo "::endgroup::"
-                echo "::group::Zip"
-                bash cldr-generate-zip.sh
-                cp PACKAGES.md dist/
-                echo "::endgroup::"
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            - name: Git status
+              working-directory: cldr-json
+              run: git status || true
+            - name: Create ZIP
+              working-directory: cldr-json
+              run: |
+                bash cldr-generate-zip.sh
+                cp PACKAGES.md dist/
             - name: Upload dist
               uses: actions/upload-artifact@v4
               with:
