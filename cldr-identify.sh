@@ -15,10 +15,9 @@ fi
 function explain_repo()
 {
     git remote get-url origin | sed -E 's/git@github.com:|https:\/\/github.com\/|.git//g'
-    git describe --tags HEAD
+    git describe --tags --always HEAD
 }
 
-echo "* cldr-json info"
 if [[ "$INDATA" == "generate" ]]
 then
     echo "- DATA: " $(cd ${CLDR_DIR}; explain_repo) "(generated)"
