@@ -107,12 +107,12 @@
               "format": {
                 "abbreviated": {
                   "sun": "CN",
-                  "mon": "Th 2",
-                  "tue": "Th 3",
-                  "wed": "Th 4",
-                  "thu": "Th 5",
-                  "fri": "Th 6",
-                  "sat": "Th 7"
+                  "mon": "Thứ 2",
+                  "tue": "Thứ 3",
+                  "wed": "Thứ 4",
+                  "thu": "Thứ 5",
+                  "fri": "Thứ 6",
+                  "sat": "Thứ 7"
                 },
                 "narrow": {
                   "sun": "CN",
@@ -145,12 +145,12 @@
               "stand-alone": {
                 "abbreviated": {
                   "sun": "CN",
-                  "mon": "Th 2",
-                  "tue": "Th 3",
-                  "wed": "Th 4",
-                  "thu": "Th 5",
-                  "fri": "Th 6",
-                  "sat": "Th 7"
+                  "mon": "Thứ 2",
+                  "tue": "Thứ 3",
+                  "wed": "Thứ 4",
+                  "thu": "Thứ 5",
+                  "fri": "Thứ 6",
+                  "sat": "Thứ 7"
                 },
                 "narrow": {
                   "sun": "CN",
@@ -291,16 +291,13 @@
             },
             "eras": {
               "eraNames": {
-                "0": "ERA0",
-                "1": "ERA1"
+                "1": "AM"
               },
               "eraAbbr": {
-                "0": "ERA0",
-                "1": "ERA1"
+                "1": "AM"
               },
               "eraNarrow": {
-                "0": "ERA0",
-                "1": "ERA1"
+                "1": "AM"
               }
             },
             "dateFormats": {
@@ -338,15 +335,19 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "h 'giờ' B E",
                 "EBhm": "h:mm B E",
                 "EBhms": "h:mm:ss B E",
                 "Ed": "E, 'ngày' d",
+                "Eh": "h a E",
                 "Ehm": "h:mm a E",
                 "EHm": "HH:mm E",
                 "Ehms": "h:mm:ss a E",
                 "EHms": "HH:mm:ss E",
                 "Gy": "y G",
+                "GyM": "M/y G",
                 "GyMd": "d/M/y GGGGG",
+                "GyMEd": "E d/M/y G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM, y G",
                 "GyMMMEd": "E, d MMM, y G",
@@ -356,6 +357,8 @@
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
+                "hv": "h 'giờ' a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "d/M",
                 "MEd": "E, d/M",
@@ -536,6 +539,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "'lúc' {0} {1}",
+                "long": "'lúc' {0} {1}",
+                "medium": "{0} {1}",
+                "short": "{0} {1}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "'lúc' {0} {1}",
                 "long": "'lúc' {0} {1}",

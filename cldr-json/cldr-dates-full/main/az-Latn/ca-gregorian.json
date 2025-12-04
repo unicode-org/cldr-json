@@ -351,15 +351,19 @@
                 "Bhms": "B h:mm:ss",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E B h:mm",
                 "EBhms": "E B h:mm:ss",
                 "Ed": "d E",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
-                "GyMd": "GGGGG d MMM y",
+                "GyM": "G M y",
+                "GyMd": "G d M y",
+                "GyMEd": "G d M y, E",
                 "GyMMM": "G MMM y",
                 "GyMMMd": "G d MMM y",
                 "GyMMMEd": "G d MMM y, E",
@@ -373,6 +377,8 @@
                 "Hmsv": "HH:mm:ss v",
                 "hmv": "h:mm a v",
                 "Hmv": "HH:mm v",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "dd.MM",
                 "MEd": "dd.MM, E",
@@ -412,13 +418,13 @@
               "intervalFormats": {
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
-                  "B": "h B – h B",
-                  "h": "h–h B"
+                  "B": "B h – B h",
+                  "h": "B h–h"
                 },
                 "Bhm": {
-                  "B": "h:mm B – h:mm B",
-                  "h": "h:mm–h:mm B",
-                  "m": "h:mm–h:mm B"
+                  "B": "B h:mm–B h:mm",
+                  "h": "B h:mm–h:mm",
+                  "m": "B h:mm–h:mm"
                 },
                 "d": {
                   "d": "d–d"
@@ -456,7 +462,7 @@
                   "y": "G d MMM y – d MMM y"
                 },
                 "GyMMMEd": {
-                  "d": "G d MMM, E – d MMM y, E",
+                  "d": "G d MMM, E – d MMM, E, y",
                   "G": "G d MMM y, E – d MMM y, E",
                   "M": "G d MMM, E – d MMM y, E",
                   "y": "G d MMM y, E – d MMM y, E"
@@ -537,13 +543,13 @@
                   "y": "MMM y – MMM y"
                 },
                 "yMMMd": {
-                  "d": "y MMM d–d",
-                  "M": "d MMM y – d MMM",
+                  "d": "d – d MMM y",
+                  "M": "d MMM – d MMM y",
                   "y": "d MMM y – d MMM y"
                 },
                 "yMMMEd": {
-                  "d": "d MMM y, E – d MMM, E",
-                  "M": "d MMM y, E – d MMM, E",
+                  "d": "E, d MMM – E, d MMM y",
+                  "M": "E, d MMM – E, d MMM y",
                   "y": "d MMM y, E – d MMM y, E"
                 },
                 "yMMMM": {
@@ -555,7 +561,15 @@
             "dateTimeFormats-atTime": {
               "standard": {
                 "full": "{1}/{0}",
-                "long": "{1} 'at' {0}",
+                "long": "{1}/{0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
+              "standard": {
+                "full": "{1}/{0}",
+                "long": "{1}/{0}",
                 "medium": "{1}, {0}",
                 "short": "{1}, {0}"
               }

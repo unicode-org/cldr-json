@@ -238,7 +238,7 @@
                   "pm": "du.",
                   "morning1": "reggel",
                   "morning2": "de.",
-                  "afternoon1": "du.",
+                  "afternoon1": "délután",
                   "evening1": "este",
                   "night1": "éjjel",
                   "night2": "hajnal"
@@ -276,7 +276,7 @@
                   "pm": "du.",
                   "morning1": "reggel",
                   "morning2": "de.",
-                  "afternoon1": "du.",
+                  "afternoon1": "délután",
                   "evening1": "este",
                   "night1": "éjjel",
                   "night2": "hajnal"
@@ -1049,15 +1049,19 @@
                 "Bhms": "B h:mm:ss",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E B h",
                 "EBhm": "E h:mm",
                 "EBhms": "E h:mm:ss",
                 "Ed": "d., E",
+                "Eh": "E a h",
                 "Ehm": "E h:mm",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y.",
-                "GyMd": "GGGGG y/MM/dd",
+                "GyM": "G y. M.",
+                "GyMd": "G y. M. d.",
+                "GyMEd": "E, M/d/y G",
                 "GyMMM": "G y. MMM",
                 "GyMMMd": "G y. MMM d.",
                 "GyMMMEd": "G y. MMM d., E",
@@ -1067,6 +1071,8 @@
                 "Hm": "H:mm",
                 "hms": "a h:mm:ss",
                 "Hms": "H:mm:ss",
+                "hv": "a h v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "M. d.",
                 "MEd": "M. d., E",
@@ -1119,21 +1125,21 @@
                   "y": "G y–y"
                 },
                 "GyM": {
-                  "G": "GGGGG y-MM – GGGGG y-MM",
-                  "M": "GGGGG y-MM – y-MM",
-                  "y": "GGGGG y-MM – y-MM"
+                  "G": "G y-MM – G y-MM",
+                  "M": "G y-MM – y-MM",
+                  "y": "G y-MM – y-MM"
                 },
                 "GyMd": {
-                  "d": "GGGGG y-MM-dd – y-MM-dd",
-                  "G": "GGGGG y-MM-dd – GGGGG y-MM-dd",
-                  "M": "GGGGG y-MM-dd – y-MM-dd",
-                  "y": "GGGGG y-MM-dd – y-MM-dd"
+                  "d": "G y-MM-dd – y-MM-dd",
+                  "G": "G y-MM-dd – G y-MM-dd",
+                  "M": "G y-MM-dd – y-MM-dd",
+                  "y": "G y-MM-dd – y-MM-dd"
                 },
                 "GyMEd": {
-                  "d": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "G": "GGGGG y-MM-dd, E – GGGGG y-MM-dd, E",
-                  "M": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "y": "GGGGG y-MM-dd, E – y-MM-dd, E"
+                  "d": "G y-MM-dd, E – y-MM-dd, E",
+                  "G": "G y-MM-dd, E – G y-MM-dd, E",
+                  "M": "G y-MM-dd, E – y-MM-dd, E",
+                  "y": "G y-MM-dd, E – y-MM-dd, E"
                 },
                 "GyMMM": {
                   "G": "G y MMM – G y MMM",
@@ -1247,8 +1253,16 @@
               "standard": {
                 "full": "{1} {0}",
                 "long": "{1} {0}",
-                "medium": "{1} {0}",
-                "short": "{1} {0}"
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
+              "standard": {
+                "full": "{1} {0}",
+                "long": "{1} {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
               }
             }
           }

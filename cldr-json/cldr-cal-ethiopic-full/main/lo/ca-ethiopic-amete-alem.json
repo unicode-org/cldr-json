@@ -291,13 +291,13 @@
             },
             "eras": {
               "eraNames": {
-                "0": "ERA0"
+                "0": "AA"
               },
               "eraAbbr": {
-                "0": "ERA0"
+                "0": "AA"
               },
               "eraNarrow": {
-                "0": "ERA0"
+                "0": "AA"
               }
             },
             "dateFormats": {
@@ -335,15 +335,19 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "E d",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyM": "G M/y",
                 "GyMd": "d/M/GGGGG y",
+                "GyMEd": "E, G d/M/y",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "G d MMM y",
                 "GyMMMEd": "E, MMM d, y G",
@@ -353,6 +357,8 @@
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "d/M",
                 "MEd": "E, d/M",
@@ -419,7 +425,7 @@
                   "d": "E, d/M GGGGG y – E, d/M GGGGG y",
                   "G": "E, d/M GGGGG y – E, d/M GGGGG y",
                   "M": "E, d/M GGGGG y – E, d/M GGGGG y",
-                  "y": "GGGGG y-MM-dd, E – y-MM-dd, E"
+                  "y": "G y-MM-dd, E – y-MM-dd, E"
                 },
                 "GyMMM": {
                   "G": "G y MMM – G y MMM",
@@ -530,6 +536,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1}, {0}",
+                "long": "{1}, {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1}, {0}",
                 "long": "{1}, {0}",

@@ -205,7 +205,7 @@
                 "wide": {
                   "1": "1er trimestre",
                   "2": "2.º trimestre",
-                  "3": "3.º trimestre",
+                  "3": "3er trimestre",
                   "4": "4.º trimestre"
                 }
               },
@@ -225,7 +225,7 @@
                 "wide": {
                   "1": "1er trimestre",
                   "2": "2.º trimestre",
-                  "3": "3.º trimestre",
+                  "3": "3er trimestre",
                   "4": "4.º trimestre"
                 }
               }
@@ -336,15 +336,19 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "E d",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
+                "GyM": "MM-y G",
                 "GyMd": "d/M/y GGGGG",
+                "GyMEd": "E, dd-MM-y G",
                 "GyMMM": "MMM 'de' y G",
                 "GyMMMd": "d 'de' MMM 'de' y G",
                 "GyMMMEd": "E, d 'de' MMM 'de' y G",
@@ -357,6 +361,8 @@
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
+                "hv": "h a v",
+                "Hv": "H 'h' v",
                 "M": "L",
                 "Md": "d/M",
                 "MEd": "E, d/M",
@@ -538,6 +544,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} 'a' 'las' {0}",
+                "long": "{1} 'a' 'las' {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1}, {0}",
                 "long": "{1}, {0}",

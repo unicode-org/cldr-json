@@ -13,7 +13,7 @@
         "minimumGroupingDigits": "1",
         "symbols-numberSystem-latn": {
           "decimal": ".",
-          "group": "’",
+          "group": "'",
           "list": ";",
           "percentSign": "%",
           "plusSign": "+",
@@ -85,6 +85,12 @@
             }
           }
         },
+        "rationalFormats-numberSystem-latn": {
+          "rationalPattern": "{0}⁄{1}",
+          "integerAndRationalPattern": "{0} {1}",
+          "integerAndRationalPattern-alt-superSub": "{0}⁠{1}",
+          "rationalUsage": "sometimes"
+        },
         "scientificFormats-numberSystem-latn": {
           "standard": "#E0"
         },
@@ -105,10 +111,10 @@
             }
           },
           "standard": "¤ #,##0.00;¤-#,##0.00",
-          "standard-alphaNextToNumber": "¤ #,##0.00",
+          "standard-alphaNextToNumber": "¤ #,##0.00;¤-#,##0.00",
           "standard-noCurrency": "#,##0.00",
           "accounting": "¤ #,##0.00;¤-#,##0.00",
-          "accounting-alphaNextToNumber": "¤ #,##0.00",
+          "accounting-alphaNextToNumber": "¤ #,##0.00;¤-#,##0.00",
           "accounting-noCurrency": "#,##0.00",
           "short": {
             "standard": {
@@ -117,25 +123,27 @@
               "10000-count-one": "0",
               "10000-count-other": "0",
               "100000-count-one": "0",
+              "100000-count-one-alt-alphaNextToNumber": "0",
               "100000-count-other": "0",
-              "1000000-count-one": "0 Mio'.' ¤",
-              "1000000-count-other": "0 Mio'.' ¤",
-              "10000000-count-one": "00 Mio'.' ¤",
-              "10000000-count-other": "00 Mio'.' ¤",
-              "100000000-count-one": "000 Mio'.' ¤",
-              "100000000-count-other": "000 Mio'.' ¤",
-              "1000000000-count-one": "0 Mrd'.' ¤",
-              "1000000000-count-other": "0 Mrd'.' ¤",
-              "10000000000-count-one": "00 Mrd'.' ¤",
-              "10000000000-count-other": "00 Mrd'.' ¤",
-              "100000000000-count-one": "000 Mrd'.' ¤",
-              "100000000000-count-other": "000 Mrd'.' ¤",
-              "1000000000000-count-one": "0 Bio'.' ¤",
-              "1000000000000-count-other": "0 Bio'.' ¤",
-              "10000000000000-count-one": "00 Bio'.' ¤",
-              "10000000000000-count-other": "00 Bio'.' ¤",
-              "100000000000000-count-one": "000 Bio'.' ¤",
-              "100000000000000-count-other": "000 Bio'.' ¤"
+              "100000-count-other-alt-alphaNextToNumber": "0",
+              "1000000-count-one": "¤ 0 Mio'.'",
+              "1000000-count-other": "¤ 0 Mio'.'",
+              "10000000-count-one": "¤ 00 Mio'.'",
+              "10000000-count-other": "¤ 00 Mio'.'",
+              "100000000-count-one": "¤ 000 Mio'.'",
+              "100000000-count-other": "¤ 000 Mio'.'",
+              "1000000000-count-one": "¤ 0 Mrd'.'",
+              "1000000000-count-other": "¤ 0 Mrd'.'",
+              "10000000000-count-one": "¤ 00 Mrd'.'",
+              "10000000000-count-other": "¤ 00 Mrd'.'",
+              "100000000000-count-one": "¤ 000 Mrd'.'",
+              "100000000000-count-other": "¤ 000 Mrd'.'",
+              "1000000000000-count-one": "¤ 0 Bio'.'",
+              "1000000000000-count-other": "¤ 0 Bio'.'",
+              "10000000000000-count-one": "¤ 00 Bio'.'",
+              "10000000000000-count-other": "¤ 00 Bio'.'",
+              "100000000000000-count-one": "¤ 000 Bio'.'",
+              "100000000000000-count-other": "¤ 000 Bio'.'"
             }
           },
           "currencyPatternAppendISO": "{0} ¤¤",

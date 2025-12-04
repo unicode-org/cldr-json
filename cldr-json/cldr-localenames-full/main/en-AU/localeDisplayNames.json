@@ -31,15 +31,15 @@
           "currency": "Currency",
           "d0": "Transform Destination",
           "dx": "Dictionary Break Exclusions",
-          "em": "Emoji Presentation Style",
+          "em": "Emoji Presentation",
           "fw": "First day of week",
           "h0": "Mixed-in",
           "hc": "Hour Cycle (12 vs 24)",
           "i0": "Input Method",
           "k0": "Keyboard",
           "kv": "Highest Ignored",
-          "lb": "Line Break Style",
-          "lw": "Line Breaks In Words Setting",
+          "lb": "CJK Line Break",
+          "lw": "Line Breaks within Words",
           "m0": "Transform Rules",
           "ms": "Measurement System",
           "mu": "Measurement Unit",
@@ -47,7 +47,7 @@
           "rg": "Region For Supplemental Data",
           "s0": "Transform Source",
           "sd": "Region Subdivision",
-          "ss": "Sentence Break Suppressions Type",
+          "ss": "Sentence Break After Abbr.",
           "t": "Transform",
           "t0": "Machine Translated",
           "timezone": "Time Zone",
@@ -58,6 +58,7 @@
         "types": {
           "calendar": {
             "buddhist": "Buddhist Calendar",
+            "core": "Minguo",
             "chinese": "Chinese Calendar",
             "coptic": "Coptic Calendar",
             "dangi": "Korean Calendar",
@@ -71,13 +72,15 @@
             "islamic-rgsa": "Hijri Calendar (Saudi Arabia, sighting)",
             "islamic-tbla": "Hijri Calendar (tabular, astronomical epoch)",
             "islamic-umalqura": "Hijri Calendar (Umm al-Qura)",
-            "iso8601": "ISO-8601 Calendar",
+            "iso8601": "Gregorian Calendar (ISO 8601 Weeks)",
+            "iso8601-alt-variant": "ISO 8601 Weeks",
             "japanese": "Japanese Calendar",
             "persian": "Persian Calendar",
             "roc": "Minguo Calendar"
           },
           "cf": {
             "account": "Accounting Currency Format",
+            "core": "Standard",
             "standard": "Standard Currency Format"
           },
           "colAlternate": {
@@ -98,13 +101,12 @@
             "yes": "Sort Case Sensitive"
           },
           "collation": {
-            "big5han": "Traditional Chinese Sort Order - Big5",
             "compat": "Previous Sort Order, for compatibility",
+            "core": "Zhuyin",
             "dictionary": "Dictionary Sort Order",
             "ducet": "Default Unicode Sort Order",
             "emoji": "Emoji Sort Order",
             "eor": "European Ordering Rules",
-            "gb2312han": "Simplified Chinese Sort Order - GB2312",
             "phonebook": "Phonebook Sort Order",
             "phonetic": "Phonetic Sort Order",
             "pinyin": "Pinyin Sort Order",
@@ -164,24 +166,26 @@
             "zawgyi": "To Zawgyi Myanmar Encoding"
           },
           "em": {
-            "default": "Use Default Presentation For Emoji Characters",
-            "emoji": "Prefer Emoji Presentation For Emoji Characters",
-            "text": "Prefer Text Presentation For Emoji Characters"
+            "default": "Default Presentation For Emoji",
+            "core": "Text",
+            "emoji": "Emoji Presentation For Emoji",
+            "text": "Text Presentation For Emoji"
           },
           "fw": {
-            "fri": "First Day of Week Is Friday",
-            "mon": "First Day of Week Is Monday",
-            "sat": "First Day of Week Is Saturday",
-            "sun": "First Day of Week Is Sunday",
-            "thu": "First Day of Week Is Thursday",
-            "tue": "First Day of Week Is Tuesday",
-            "wed": "First Day of Week Is Wednesday"
+            "fri": "First day of week: Friday",
+            "mon": "First day of week: Monday",
+            "sat": "First day of week: Saturday",
+            "sun": "First day of week: Sunday",
+            "thu": "First day of week: Thursday",
+            "tue": "First day of week: Tuesday",
+            "wed": "First day of week: Wednesday"
           },
           "h0": {
             "hybrid": "Hybrid"
           },
           "hc": {
             "h11": "12-Hour System (0–11)",
+            "core": "24 (1–24)",
             "h12": "12-Hour System (1–12)",
             "h23": "24-Hour System (0–23)",
             "h24": "24-Hour System (1–24)"
@@ -225,17 +229,20 @@
           },
           "kv": {
             "currency": "Ignore Symbols affects spaces, punctuation, all symbols",
+            "core": "Shift spaces, punctuation, non-currency symbols",
             "punct": "Ignore Symbols affects spaces and punctuation only",
             "space": "Ignore Symbols affects spaces only",
             "symbol": "Ignore Symbols affects spaces, punctuation, non-currency symbols"
           },
           "lb": {
             "loose": "Loose Line Break Style",
+            "core": "Strict",
             "normal": "Normal Line Break Style",
             "strict": "Strict Line Break Style"
           },
           "lw": {
             "breakall": "Allow Line Breaks In All Words",
+            "core": "Keep in phrases",
             "keepall": "Prevent Line Breaks In All Words",
             "normal": "Normal Line Breaks For Words",
             "phrase": "Prevent Line Breaks In Phrases"
@@ -276,6 +283,7 @@
           },
           "ms": {
             "metric": "Metric System",
+            "core": "US",
             "uksystem": "Imperial Measurement System",
             "ussystem": "US Measurement System"
           },
@@ -290,6 +298,7 @@
             "arab": "Arabic-Indic Digits",
             "arabext": "Extended Arabic-Indic Digits",
             "arabext-alt-short": "X Arabic-Indic Digits",
+            "core": "Traditional numerals",
             "armn": "Armenian Numerals",
             "armnlow": "Armenian Lowercase Numerals",
             "bali": "Balinese Digits",
@@ -381,6 +390,7 @@
             "tibt": "Tibetan Digits",
             "tirh": "Tirhuta Digits",
             "tnsa": "Tangsa Digits",
+            "tols": "Tolong Siki Digits",
             "traditional": "Traditional Numerals",
             "vaii": "Vai Digits",
             "wara": "Warang Citi Digits",
@@ -397,13 +407,15 @@
           },
           "ss": {
             "none": "Sentence Breaks Without Abbreviation Handling",
+            "core": "On",
             "standard": "Suppress Sentence Breaks After Standard Abbreviations"
           },
           "t0": {
             "und": "Unspecified Machine Translation"
           },
           "va": {
-            "posix": "POSIX Compliant Locale"
+            "posix": "POSIX Compliant Locale",
+            "core": "POSIX variant"
           }
         },
         "codePatterns": {

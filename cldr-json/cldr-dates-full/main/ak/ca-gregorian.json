@@ -24,18 +24,18 @@
                   "12": "Ɔpɛnimma"
                 },
                 "narrow": {
-                  "1": "Ɔ",
-                  "2": "Ɔ",
-                  "3": "Ɔ",
+                  "1": "Ɔp",
+                  "2": "Ɔg",
+                  "3": "Ɔb",
                   "4": "O",
                   "5": "K",
                   "6": "A",
-                  "7": "K",
-                  "8": "Ɔ",
-                  "9": "Ɛ",
-                  "10": "A",
-                  "11": "O",
-                  "12": "Ɔ"
+                  "7": "Ku",
+                  "8": "A",
+                  "9": "S",
+                  "10": "O",
+                  "11": "N",
+                  "12": "D"
                 },
                 "wide": {
                   "1": "Ɔpɛpɔn",
@@ -100,7 +100,7 @@
             "days": {
               "format": {
                 "abbreviated": {
-                  "sun": "Kwe",
+                  "sun": "Kwa",
                   "mon": "Dwo",
                   "tue": "Ben",
                   "wed": "Wuk",
@@ -118,7 +118,7 @@
                   "sat": "M"
                 },
                 "short": {
-                  "sun": "Kwe",
+                  "sun": "Kwa",
                   "mon": "Dwo",
                   "tue": "Ben",
                   "wed": "Wuk",
@@ -127,7 +127,7 @@
                   "sat": "Mem"
                 },
                 "wide": {
-                  "sun": "Kwasiada",
+                  "sun": "Sun",
                   "mon": "Dwoada",
                   "tue": "Benada",
                   "wed": "Wukuada",
@@ -138,7 +138,7 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "sun": "Kwe",
+                  "sun": "Kwa",
                   "mon": "Dwo",
                   "tue": "Ben",
                   "wed": "Wuk",
@@ -156,7 +156,7 @@
                   "sat": "M"
                 },
                 "short": {
-                  "sun": "Kwe",
+                  "sun": "Kwa",
                   "mon": "Dwo",
                   "tue": "Ben",
                   "wed": "Wuk",
@@ -165,7 +165,7 @@
                   "sat": "Mem"
                 },
                 "wide": {
-                  "sun": "Kwasiada",
+                  "sun": "Sun",
                   "mon": "Dwoada",
                   "tue": "Benada",
                   "wed": "Wukuada",
@@ -221,25 +221,25 @@
               "format": {
                 "abbreviated": {
                   "am": "AN",
-                  "pm": "EW"
+                  "pm": "ANW"
                 },
                 "narrow": {
-                  "am": "AN",
-                  "pm": "EW"
+                  "am": "an",
+                  "pm": "anw"
                 },
                 "wide": {
                   "am": "AN",
-                  "pm": "EW"
+                  "pm": "ANW"
                 }
               },
               "stand-alone": {
                 "abbreviated": {
                   "am": "AN",
-                  "pm": "EW"
+                  "pm": "ANW"
                 },
                 "narrow": {
                   "am": "AN",
-                  "pm": "EW"
+                  "pm": "ANW"
                 },
                 "wide": {
                   "am": "AN",
@@ -268,10 +268,10 @@
               }
             },
             "dateFormats": {
-              "full": "EEE, MMMM d, y",
-              "long": "MMMM d, y",
-              "medium": "MMM d, y",
-              "short": "M/d/yy"
+              "full": "EEE, d, MMMM, y",
+              "long": "d, MMMM, y",
+              "medium": "d, MMM, y",
+              "short": "d/M/yy"
             },
             "dateSkeletons": {
               "full": "yMMMMEEEEdd",
@@ -302,15 +302,19 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "d, E",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
-                "GyMd": "GGGGG y-MM-dd",
+                "GyM": "G y-MM",
+                "GyMd": "G y-MM-dd",
+                "GyMEd": "G y-MM-dd, E",
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G y MMM d",
                 "GyMMMEd": "G y MMM d, E",
@@ -324,6 +328,8 @@
                 "Hmsv": "HH:mm:ss v",
                 "hmv": "h:mm a v",
                 "Hmv": "HH:mm v",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "M/d",
                 "MEd": "E, M/d",
@@ -506,6 +512,14 @@
               "standard": {
                 "full": "{1} 'wɔ' {0}",
                 "long": "{1} 'wɔ' {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
+              "standard": {
+                "full": "{1}, {0}",
+                "long": "{1}, {0}",
                 "medium": "{1}, {0}",
                 "short": "{1}, {0}"
               }

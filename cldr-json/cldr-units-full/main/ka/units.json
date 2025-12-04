@@ -228,7 +228,12 @@
             "unitPattern-count-one": "{0} ერთეული",
             "unitPattern-count-other": "{0} ერთეული"
           },
-          "concentr-permillion": {
+          "concentr-part": {
+            "displayName": "წილი",
+            "unitPattern-count-one": "{0} წილი",
+            "unitPattern-count-other": "{0} წილი"
+          },
+          "concentr-part-per-1e6": {
             "displayName": "ნაწილი მილიონზე",
             "unitPattern-count-one": "{0} ნაწილი მილიონზე",
             "unitPattern-count-other": "{0} ნაწილი მილიონზე"
@@ -248,8 +253,14 @@
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
-            "displayName": "mol",
-            "unitPattern-count-other": "{0} mol"
+            "displayName": "მოლი",
+            "unitPattern-count-one": "{0} მოლი",
+            "unitPattern-count-other": "{0} მოლი"
+          },
+          "concentr-ofglucose": {
+            "displayName": "გლუკოზის",
+            "unitPattern-count-one": "გლუკოზის {0}",
+            "unitPattern-count-other": "გლუკოზის {0}"
           },
           "consumption-liter-per-kilometer": {
             "displayName": "ლიტრი კილომეტრზე",
@@ -469,8 +480,9 @@
             "unitPattern-count-other": "{0} lbf"
           },
           "force-newton": {
-            "displayName": "N",
-            "unitPattern-count-other": "{0} N"
+            "displayName": "ნიუტონი",
+            "unitPattern-count-one": "{0} ნიუტონი",
+            "unitPattern-count-other": "{0} ნიუტონი"
           },
           "force-kilowatt-hour-per-100-kilometer": {
             "displayName": "კვტსთ/100კმ",
@@ -700,9 +712,9 @@
             "unitPattern-count-other": "{0} მიკროგრამი"
           },
           "mass-ton": {
-            "displayName": "ტონა",
-            "unitPattern-count-one": "{0} ტონა",
-            "unitPattern-count-other": "{0} ტ"
+            "displayName": "აშშ მოკლე ტონა",
+            "unitPattern-count-one": "{0} აშშ მოკლე ტონა",
+            "unitPattern-count-other": "{0} აშშ მოკლე ტონა"
           },
           "mass-stone": {
             "displayName": "სტოუნი",
@@ -782,9 +794,14 @@
             "unitPattern-count-other": "{0} ცხენის ძალა"
           },
           "pressure-millimeter-ofhg": {
-            "displayName": "მილიმეტრი ვერცხლისწყლის სვეტისა",
-            "unitPattern-count-one": "{0} მილიმეტრი ვერცხლისწყლის სვეტისა",
-            "unitPattern-count-other": "{0} მილიმეტრი ვერცხლისწყლის სვეტისა"
+            "displayName": "მილიმეტრი ვერცხლისწყლის სვეტი",
+            "unitPattern-count-one": "{0} მილიმეტრი ვერცხლისწყლის სვეტი",
+            "unitPattern-count-other": "{0} მილიმეტრი ვერცხლისწყლის სვეტი"
+          },
+          "pressure-ofhg": {
+            "displayName": "ვერცხლისწყალი",
+            "unitPattern-count-one": "{0} ვერცხლისწყალი",
+            "unitPattern-count-other": "{0} ვერცხლისწყალი"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "ფუნტი კვადრატულ დუიმზე",
@@ -792,9 +809,9 @@
             "unitPattern-count-other": "{0} ფუნტი კვადრატულ დუიმზე"
           },
           "pressure-inch-ofhg": {
-            "displayName": "ვერცხლისწყლის დუიმი",
-            "unitPattern-count-one": "{0} ვერცხლისწყლის დუიმი",
-            "unitPattern-count-other": "{0} ვერცხლისწყლის დუიმი"
+            "displayName": "დუიმი ვერცხლისწყალი",
+            "unitPattern-count-one": "{0} დუიმი ვერცხლისწყალი",
+            "unitPattern-count-other": "{0} დუიმი ვერცხლისწყალი"
           },
           "pressure-bar": {
             "displayName": "ბარი",
@@ -963,6 +980,11 @@
             "unitPattern-count-one": "{0} მეტრული ჭიქა",
             "unitPattern-count-other": "{0} მეტრული ჭიქა"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "მეტრული თხევადი უნცია",
+            "unitPattern-count-one": "{0} მეტრული თხევადი უნცია",
+            "unitPattern-count-other": "{0} მეტრული თხევადი უნცია"
+          },
           "volume-acre-foot": {
             "displayName": "აკრი-ფუტი",
             "unitPattern-count-one": "{0} აკრი-ფუტი",
@@ -995,10 +1017,18 @@
             "unitPattern-count-one": "{0} პინტა",
             "unitPattern-count-other": "{0} პინტა"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "displayName": "ჭიქა",
             "unitPattern-count-one": "{0} ჭიქა",
             "unitPattern-count-other": "{0} ჭიქა"
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "displayName": "თხევადი უნცია",
@@ -1060,11 +1090,177 @@
             "unitPattern-count-one": "{0} ბრიტანული კვარტი",
             "unitPattern-count-other": "{0} ბრიტანული კვარტი"
           },
-          "speed-light-speed": {
-            "displayName": "light",
-            "unitPattern-count-other": "{0} light"
+          "angle-steradian": {
+            "displayName": "სტერადიანი",
+            "unitPattern-count-one": "{0} სტერადიანი",
+            "unitPattern-count-other": "{0} სტერადიანი"
           },
-          "concentr-portion-per-1e9": {
+          "concentr-katal": {
+            "displayName": "კატალი",
+            "unitPattern-count-one": "{0} კატალი",
+            "unitPattern-count-other": "{0} კატალი"
+          },
+          "electric-coulomb": {
+            "displayName": "კულონი",
+            "unitPattern-count-one": "{0} კულონი",
+            "unitPattern-count-other": "{0} კულონი"
+          },
+          "electric-farad": {
+            "displayName": "ფარადა",
+            "unitPattern-count-one": "{0} ფარადა",
+            "unitPattern-count-other": "{0} ფარადა"
+          },
+          "electric-henry": {
+            "displayName": "ჰენრი",
+            "unitPattern-count-one": "{0} ჰენრი",
+            "unitPattern-count-other": "{0} ჰენრი"
+          },
+          "electric-siemens": {
+            "displayName": "სიმენსი",
+            "unitPattern-count-one": "{0} სიმენსი",
+            "unitPattern-count-other": "{0} სიმენსი"
+          },
+          "energy-calorie-it": {
+            "displayName": "კალორია [IT]",
+            "unitPattern-count-one": "{0} კალორია [IT]",
+            "unitPattern-count-other": "{0} კალორია [IT]"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "ბეკერელი",
+            "unitPattern-count-one": "{0} ბეკერელი",
+            "unitPattern-count-other": "{0} ბეკერელი"
+          },
+          "energy-sievert": {
+            "displayName": "ზივერტი",
+            "unitPattern-count-one": "{0} ზივერტი",
+            "unitPattern-count-other": "{0} ზივერტი"
+          },
+          "energy-gray": {
+            "displayName": "გრეი",
+            "unitPattern-count-one": "{0} გრეი",
+            "unitPattern-count-other": "{0} გრეი"
+          },
+          "force-kilogram-force": {
+            "displayName": "კილოგრამძალა",
+            "unitPattern-count-one": "{0} კილოგრამძალა",
+            "unitPattern-count-other": "{0} კილოგრამძალა"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "ტესლა",
+            "unitPattern-count-one": "{0} ტესლა",
+            "unitPattern-count-other": "{0} ტესლა"
+          },
+          "magnetic-weber": {
+            "displayName": "ვებერი",
+            "unitPattern-count-one": "{0} ვებერი",
+            "unitPattern-count-other": "{0} ვებერი"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
+          "speed-light-speed": {
+            "displayName": "სინათლის სიჩქარე",
+            "unitPattern-count-one": "{0} სინათლის სიჩქარე",
+            "unitPattern-count-other": "{0}-მაგი სინათლის სიჩქარე"
+          },
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
             "displayName": "ნაწილი მილიარდზე",
             "unitPattern-count-one": "{0} ნაწილი მილიარდზე",
             "unitPattern-count-other": "{0} ნაწილი მილიარდზე"
@@ -1303,7 +1499,12 @@
             "unitPattern-count-one": "{0} ერთე.",
             "unitPattern-count-other": "{0} ერთე."
           },
-          "concentr-permillion": {
+          "concentr-part": {
+            "displayName": "წ.",
+            "unitPattern-count-one": "{0} წ.",
+            "unitPattern-count-other": "{0} წ."
+          },
+          "concentr-part-per-1e6": {
             "displayName": "ნაწილი/მილიონზე",
             "unitPattern-count-other": "{0} ppm"
           },
@@ -1320,8 +1521,14 @@
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
-            "displayName": "mol",
-            "unitPattern-count-other": "{0} mol"
+            "displayName": "მოლ",
+            "unitPattern-count-one": "{0} მოლ",
+            "unitPattern-count-other": "{0} მოლ"
+          },
+          "concentr-ofglucose": {
+            "displayName": "Glc",
+            "unitPattern-count-one": "{0} Glc",
+            "unitPattern-count-other": "{0} Glc"
           },
           "consumption-liter-per-kilometer": {
             "displayName": "ლიტრი/კმ",
@@ -1359,8 +1566,9 @@
             "unitPattern-count-other": "{0} ტბიტი"
           },
           "digital-gigabyte": {
-            "displayName": "GB",
-            "unitPattern-count-other": "{0} GB"
+            "displayName": "გიგაბაიტი",
+            "unitPattern-count-one": "{0} გიგაბაიტი",
+            "unitPattern-count-other": "{0} გიგაბაიტი"
           },
           "digital-gigabit": {
             "displayName": "გბიტი",
@@ -1368,8 +1576,9 @@
             "unitPattern-count-other": "{0} გბიტი"
           },
           "digital-megabyte": {
-            "displayName": "MB",
-            "unitPattern-count-other": "{0} MB"
+            "displayName": "მეგაბაიტი",
+            "unitPattern-count-one": "{0} მეგაბაიტი",
+            "unitPattern-count-other": "{0} მეგაბაიტი"
           },
           "digital-megabit": {
             "displayName": "მბიტი",
@@ -1539,8 +1748,9 @@
             "unitPattern-count-other": "{0} lbf"
           },
           "force-newton": {
-            "displayName": "N",
-            "unitPattern-count-other": "{0} N"
+            "displayName": "ნ",
+            "unitPattern-count-one": "{0} ნ",
+            "unitPattern-count-other": "{0} ნ"
           },
           "force-kilowatt-hour-per-100-kilometer": {
             "displayName": "კვტსთ/100კმ",
@@ -1743,9 +1953,9 @@
             "unitPattern-count-other": "{0} ☉ სხივიერობა"
           },
           "mass-tonne": {
-            "displayName": "მტ",
-            "unitPattern-count-one": "{0} მტ",
-            "unitPattern-count-other": "{0} მტ"
+            "displayName": "ტ",
+            "unitPattern-count-one": "{0} ტონა",
+            "unitPattern-count-other": "{0} ტონა"
           },
           "mass-kilogram": {
             "displayName": "კილოგრამი",
@@ -1770,9 +1980,9 @@
             "unitPattern-count-other": "{0} მკგ"
           },
           "mass-ton": {
-            "displayName": "ტონა",
-            "unitPattern-count-one": "{0} ტ",
-            "unitPattern-count-other": "{0} ტ"
+            "displayName": "მოკ. ტონა",
+            "unitPattern-count-one": "{0} მოკ. ტონა",
+            "unitPattern-count-other": "{0} მოკ. ტონა"
           },
           "mass-stone": {
             "displayName": "სტოუნი",
@@ -1850,9 +2060,13 @@
             "unitPattern-count-other": "{0} ცხ. ძ."
           },
           "pressure-millimeter-ofhg": {
-            "displayName": "მმ ვწყ. სვ.",
-            "unitPattern-count-one": "{0} მმ ვწყ. სვ.",
-            "unitPattern-count-other": "{0} მმ ვწყ. სვ."
+            "displayName": "მმ.ვწყ. სვ.",
+            "unitPattern-count-one": "{0} მმ.ვწყ. სვ.",
+            "unitPattern-count-other": "{0} მმ.ვწყ. სვ."
+          },
+          "pressure-ofhg": {
+            "displayName": "Hg",
+            "unitPattern-count-other": "{0} Hg"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "ფნტ. კვ. დმ.",
@@ -1860,9 +2074,9 @@
             "unitPattern-count-other": "{0} ფნტ. კვ. დმ."
           },
           "pressure-inch-ofhg": {
-            "displayName": "ვრც. დმ.",
-            "unitPattern-count-one": "{0} ვრც. დმ.",
-            "unitPattern-count-other": "{0} ვრც. დმ."
+            "displayName": "დუიმი ვერცხლისწყალი",
+            "unitPattern-count-one": "{0} დუიმი ვერცხლისწყალი",
+            "unitPattern-count-other": "{0} დუიმი ვერცხლისწყალი"
           },
           "pressure-bar": {
             "displayName": "ბარი",
@@ -1920,7 +2134,7 @@
             "unitPattern-count-other": "{0} კვძ."
           },
           "speed-beaufort": {
-            "displayName": "Bft",
+            "displayName": "ბოფორტი",
             "unitPattern-count-other": "B {0}"
           },
           "temperature-generic": {
@@ -2027,6 +2241,11 @@
             "unitPattern-count-one": "{0} მეტრ. ჭიქა",
             "unitPattern-count-other": "{0} მეტრ. ჭიქა"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "მეტრული თხევადი უნცია",
+            "unitPattern-count-one": "{0} მეტრული თხევადი უნცია",
+            "unitPattern-count-other": "{0} მეტრული თხევადი უნცია"
+          },
           "volume-acre-foot": {
             "displayName": "აკრ.ფტ.",
             "unitPattern-count-one": "{0} აკრ.ფტ.",
@@ -2059,10 +2278,18 @@
             "unitPattern-count-one": "{0} პინტა",
             "unitPattern-count-other": "{0} პინტა"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "displayName": "ჭიქა",
             "unitPattern-count-one": "{0} ჭიქა",
             "unitPattern-count-other": "{0} ჭიქა"
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "displayName": "თხ. უნცია",
@@ -2124,11 +2351,177 @@
             "unitPattern-count-one": "{0} ბრიტ. კვარტი",
             "unitPattern-count-other": "{0} ბრიტ. კვარტი"
           },
-          "speed-light-speed": {
-            "displayName": "light",
-            "unitPattern-count-other": "{0} light"
+          "angle-steradian": {
+            "displayName": "სრ",
+            "unitPattern-count-one": "{0} სრ",
+            "unitPattern-count-other": "{0} სრ"
           },
-          "concentr-portion-per-1e9": {
+          "concentr-katal": {
+            "displayName": "კატ",
+            "unitPattern-count-one": "{0} კატ",
+            "unitPattern-count-other": "{0} კატ"
+          },
+          "electric-coulomb": {
+            "displayName": "კულ",
+            "unitPattern-count-one": "{0} კულ",
+            "unitPattern-count-other": "{0} კულ"
+          },
+          "electric-farad": {
+            "displayName": "ფ",
+            "unitPattern-count-one": "{0} ფ",
+            "unitPattern-count-other": "{0} ფ"
+          },
+          "electric-henry": {
+            "displayName": "ჰ",
+            "unitPattern-count-one": "{0} ჰ",
+            "unitPattern-count-other": "{0} ჰ"
+          },
+          "electric-siemens": {
+            "displayName": "სიმ",
+            "unitPattern-count-one": "{0} სიმ",
+            "unitPattern-count-other": "{0} სიმ"
+          },
+          "energy-calorie-it": {
+            "displayName": "კალ-IT",
+            "unitPattern-count-one": "{0} კალ-IT",
+            "unitPattern-count-other": "{0} კალ-IT"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "ბკ",
+            "unitPattern-count-one": "{0} ბკ",
+            "unitPattern-count-other": "{0} ბკ"
+          },
+          "energy-sievert": {
+            "displayName": "ზვ",
+            "unitPattern-count-one": "{0} ზვ",
+            "unitPattern-count-other": "{0} ზვ"
+          },
+          "energy-gray": {
+            "displayName": "გრ",
+            "unitPattern-count-one": "{0} გრ",
+            "unitPattern-count-other": "{0} გრ"
+          },
+          "force-kilogram-force": {
+            "displayName": "კგძ",
+            "unitPattern-count-one": "{0} კგძ",
+            "unitPattern-count-other": "{0} კგძ"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "ტლ",
+            "unitPattern-count-one": "{0} ტლ",
+            "unitPattern-count-other": "{0} ტლ"
+          },
+          "magnetic-weber": {
+            "displayName": "ვბ",
+            "unitPattern-count-one": "{0} ვბ",
+            "unitPattern-count-other": "{0} ვბ"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
+          "speed-light-speed": {
+            "displayName": "სინათლის სიჩქ.",
+            "unitPattern-count-one": "{0} სინათლის სიჩქ.",
+            "unitPattern-count-other": "{0}-მაგი სინათლის სიჩქ."
+          },
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
             "displayName": "ნაწილი/მილიარდზე",
             "unitPattern-count-one": "{0} ნ/მ",
             "unitPattern-count-other": "{0} ნ/მ"
@@ -2259,7 +2652,7 @@
             "compoundUnitPattern": "{0}⋅{1}"
           },
           "acceleration-g-force": {
-            "displayName": "ინ. ძ.",
+            "displayName": "ინერციის ძალა",
             "unitPattern-count-one": "{0} ინ. ძ.",
             "unitPattern-count-other": "{0} ინ. ძ."
           },
@@ -2367,7 +2760,12 @@
             "unitPattern-count-one": "{0} ერთე.",
             "unitPattern-count-other": "{0} ერთე."
           },
-          "concentr-permillion": {
+          "concentr-part": {
+            "displayName": "წ.",
+            "unitPattern-count-one": "{0} წ.",
+            "unitPattern-count-other": "{0} წ."
+          },
+          "concentr-part-per-1e6": {
             "displayName": "ნაწილი/მილიონზე",
             "unitPattern-count-other": "{0} ppm"
           },
@@ -2384,8 +2782,14 @@
             "unitPattern-count-other": "{0}‱"
           },
           "concentr-mole": {
-            "displayName": "mol",
-            "unitPattern-count-other": "{0} mol"
+            "displayName": "მოლ",
+            "unitPattern-count-one": "{0} მოლ",
+            "unitPattern-count-other": "{0} მოლ"
+          },
+          "concentr-ofglucose": {
+            "displayName": "Glc",
+            "unitPattern-count-one": "{0} Glc",
+            "unitPattern-count-other": "{0} Glc"
           },
           "consumption-liter-per-kilometer": {
             "displayName": "ლიტრი/კმ",
@@ -2423,8 +2827,9 @@
             "unitPattern-count-other": "{0} ტბიტი"
           },
           "digital-gigabyte": {
-            "displayName": "GB",
-            "unitPattern-count-other": "{0} GB"
+            "displayName": "გბაიტი",
+            "unitPattern-count-one": "{0} გბაიტი",
+            "unitPattern-count-other": "{0} გბაიტი"
           },
           "digital-gigabit": {
             "displayName": "გბიტი",
@@ -2432,8 +2837,9 @@
             "unitPattern-count-other": "{0} გბიტი"
           },
           "digital-megabyte": {
-            "displayName": "MB",
-            "unitPattern-count-other": "{0} MB"
+            "displayName": "მეგაბაიტი",
+            "unitPattern-count-one": "{0} მეგაბაიტი",
+            "unitPattern-count-other": "{0} მეგაბაიტი"
           },
           "digital-megabit": {
             "displayName": "მბიტი",
@@ -2539,14 +2945,14 @@
             "unitPattern-count-other": "{0} ა"
           },
           "electric-milliampere": {
-            "displayName": "მილიამპ.",
-            "unitPattern-count-one": "{0} მამპ.",
-            "unitPattern-count-other": "{0} მამპ."
+            "displayName": "მილიამპერი",
+            "unitPattern-count-one": "{0} მილიამპერი",
+            "unitPattern-count-other": "{0} მილიამპერი"
           },
           "electric-ohm": {
             "displayName": "ომი",
-            "unitPattern-count-one": "{0} ომ",
-            "unitPattern-count-other": "{0} ომ"
+            "unitPattern-count-one": "{0} ომი",
+            "unitPattern-count-other": "{0} ომი"
           },
           "electric-volt": {
             "displayName": "ვოლტი",
@@ -2579,9 +2985,9 @@
             "unitPattern-count-other": "{0} ჯ"
           },
           "energy-kilowatt-hour": {
-            "displayName": "კვტსთ",
-            "unitPattern-count-one": "{0} კვტსთ",
-            "unitPattern-count-other": "{0} კვტსთ"
+            "displayName": "კვტ.სთ",
+            "unitPattern-count-one": "{0} კვტ.სთ",
+            "unitPattern-count-other": "{0} კვტ.სთ"
           },
           "energy-electronvolt": {
             "displayName": "ევ",
@@ -2603,8 +3009,9 @@
             "unitPattern-count-other": "{0} lbf"
           },
           "force-newton": {
-            "displayName": "N",
-            "unitPattern-count-other": "{0} N"
+            "displayName": "ნ",
+            "unitPattern-count-one": "{0} ნ",
+            "unitPattern-count-other": "{0} ნ"
           },
           "force-kilowatt-hour-per-100-kilometer": {
             "displayName": "კვტსთ/100კმ",
@@ -2653,8 +3060,8 @@
           },
           "graphics-pixel-per-inch": {
             "displayName": "პიქს/დუიმზე",
-            "unitPattern-count-one": "{0} პიქს/დუიმზე",
-            "unitPattern-count-other": "{0} პიქს/დუიმზე"
+            "unitPattern-count-one": "{0} პიქს/დუიმი",
+            "unitPattern-count-other": "{0} პიქს/დუიმი"
           },
           "graphics-dot-per-centimeter": {
             "displayName": "წერტ/სმ-ზე",
@@ -2807,9 +3214,9 @@
             "unitPattern-count-other": "{0} ☉ სხივიერობა"
           },
           "mass-tonne": {
-            "displayName": "მტ",
-            "unitPattern-count-one": "{0} მტ",
-            "unitPattern-count-other": "{0} მტ"
+            "displayName": "ტ",
+            "unitPattern-count-one": "{0} ტ",
+            "unitPattern-count-other": "{0} ტ"
           },
           "mass-kilogram": {
             "displayName": "კგ",
@@ -2834,9 +3241,9 @@
             "unitPattern-count-other": "{0}მკგ"
           },
           "mass-ton": {
-            "displayName": "ტონა",
-            "unitPattern-count-one": "{0}ტ",
-            "unitPattern-count-other": "{0}ტ"
+            "displayName": "მ.ტონა",
+            "unitPattern-count-one": "{0}მ.ტონა",
+            "unitPattern-count-other": "{0}მ.ტონა"
           },
           "mass-stone": {
             "displayName": "სტოუნი",
@@ -2844,7 +3251,7 @@
             "unitPattern-count-other": "{0} სტოუნი"
           },
           "mass-pound": {
-            "displayName": "ფუნტი",
+            "displayName": "ფნტ",
             "unitPattern-count-one": "{0} ფნტ",
             "unitPattern-count-other": "{0} ფნტ",
             "perUnitPattern": "{0}/ფნტ"
@@ -2861,7 +3268,7 @@
             "unitPattern-count-other": "{0} ტრ. უნც."
           },
           "mass-carat": {
-            "displayName": "კარატი",
+            "displayName": "კარ",
             "unitPattern-count-one": "{0} კარ.",
             "unitPattern-count-other": "{0} კარ."
           },
@@ -2914,19 +3321,23 @@
             "unitPattern-count-other": "{0}ცხ.ძ."
           },
           "pressure-millimeter-ofhg": {
-            "displayName": "მმ ვწყ. სვ.",
-            "unitPattern-count-one": "{0} მმ ვწყ. სვ.",
-            "unitPattern-count-other": "{0} მმ ვწყ. სვ."
+            "displayName": "მმ.ვწყ. სვ.",
+            "unitPattern-count-one": "{0} მმ.ვწყ. სვ.",
+            "unitPattern-count-other": "{0} მმ.ვწყ. სვ."
+          },
+          "pressure-ofhg": {
+            "displayName": "Hg",
+            "unitPattern-count-other": "{0} Hg"
           },
           "pressure-pound-force-per-square-inch": {
-            "displayName": "ფნტ. კვ. დმ.",
-            "unitPattern-count-one": "{0} ფნტ. კვ. დმ.",
-            "unitPattern-count-other": "{0} ფნტ. კვ. დმ."
+            "displayName": "ფუნტი კვადრატულ დუიმზე",
+            "unitPattern-count-one": "{0} ფუნტი კვადრატულ დუიმზე",
+            "unitPattern-count-other": "{0} ფუნტი კვადრატულ დუიმზე"
           },
           "pressure-inch-ofhg": {
-            "displayName": "ვრც. დმ.",
-            "unitPattern-count-one": "{0} ვრც. დმ.",
-            "unitPattern-count-other": "{0} ვრც. დმ."
+            "displayName": "დუიმი ვერცხლისწყალი",
+            "unitPattern-count-one": "{0} დუიმი ვერცხლისწყალი",
+            "unitPattern-count-other": "{0} დუიმი ვერცხლისწყალი"
           },
           "pressure-bar": {
             "displayName": "ბარი",
@@ -2984,7 +3395,7 @@
             "unitPattern-count-other": "{0} კვძ."
           },
           "speed-beaufort": {
-            "displayName": "Bft",
+            "displayName": "ბოფორტი",
             "unitPattern-count-other": "B {0}"
           },
           "temperature-generic": {
@@ -3031,7 +3442,7 @@
             "perUnitPattern": "{0}/სმ³"
           },
           "volume-cubic-mile": {
-            "displayName": "კუბური მილი",
+            "displayName": "მილი³",
             "unitPattern-count-one": "{0} მილი³",
             "unitPattern-count-other": "{0} მილი³"
           },
@@ -3091,6 +3502,11 @@
             "unitPattern-count-one": "{0} მეტრ. ჭიქა",
             "unitPattern-count-other": "{0} მეტრ. ჭიქა"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "მეტრული თხევადი უნცია",
+            "unitPattern-count-one": "{0} მეტრული თხევადი უნცია",
+            "unitPattern-count-other": "{0} მეტრული თხევადი უნცია"
+          },
           "volume-acre-foot": {
             "displayName": "აკრ.ფტ.",
             "unitPattern-count-one": "{0} აკრ.ფტ.",
@@ -3123,10 +3539,18 @@
             "unitPattern-count-one": "{0} პინტა",
             "unitPattern-count-other": "{0} პინტა"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "displayName": "ჭიქა",
             "unitPattern-count-one": "{0} ჭიქა",
             "unitPattern-count-other": "{0} ჭიქა"
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "displayName": "თხ. უნცია",
@@ -3134,24 +3558,24 @@
             "unitPattern-count-other": "{0} თხ. უნცია"
           },
           "volume-fluid-ounce-imperial": {
-            "displayName": "ბრიტ. თხევ. უნც.",
-            "unitPattern-count-one": "{0} ბრიტ. თხევ. უნც.",
-            "unitPattern-count-other": "{0} ბრიტ. თხევ. უნც."
+            "displayName": "ბრიტანული თხევადი უნცია",
+            "unitPattern-count-one": "{0} ბრიტანული თხევადი უნცია",
+            "unitPattern-count-other": "{0} ბრიტანული თხევადი უნცია"
           },
           "volume-tablespoon": {
-            "displayName": "ს. კოვზი",
-            "unitPattern-count-one": "{0} ს. კოვზი",
-            "unitPattern-count-other": "{0} ს. კოვზი"
+            "displayName": "ს.კ.",
+            "unitPattern-count-one": "{0} ს.კ.",
+            "unitPattern-count-other": "{0} ს.კ."
           },
           "volume-teaspoon": {
-            "displayName": "ჩ. კოვზი",
-            "unitPattern-count-one": "{0} ჩ. კოვზი",
-            "unitPattern-count-other": "{0} ჩ. კოვზი"
+            "displayName": "ჩ.კ.",
+            "unitPattern-count-one": "{0} ჩ.კ.",
+            "unitPattern-count-other": "{0} ჩ.კ."
           },
           "volume-barrel": {
             "displayName": "ბარელი",
-            "unitPattern-count-one": "{0} ბარ.",
-            "unitPattern-count-other": "{0} ბარ."
+            "unitPattern-count-one": "{0} ბარელი",
+            "unitPattern-count-other": "{0} ბარელი"
           },
           "volume-dessert-spoon": {
             "displayName": "დესერტის კოვზი",
@@ -3169,9 +3593,9 @@
             "unitPattern-count-other": "{0} წვეთი"
           },
           "volume-dram": {
-            "displayName": "ბრიტ. თხევადი დრაქმა",
-            "unitPattern-count-one": "{0} ბრიტ. თხევ. დრაქმა",
-            "unitPattern-count-other": "{0} ბრიტ. თხევ. დრაქმა"
+            "displayName": "ბრიტანული თხევადი დრაქმა",
+            "unitPattern-count-one": "{0} ბრიტანული თხევადი დრაქმა",
+            "unitPattern-count-other": "{0} ბრიტანული თხევადი დრაქმა"
           },
           "volume-jigger": {
             "displayName": "ჯიგერი",
@@ -3188,11 +3612,177 @@
             "unitPattern-count-one": "{0} ბრიტ. კვარტი",
             "unitPattern-count-other": "{0} ბრიტ. კვარტი"
           },
-          "speed-light-speed": {
-            "displayName": "light",
-            "unitPattern-count-other": "{0} light"
+          "angle-steradian": {
+            "displayName": "სრ",
+            "unitPattern-count-one": "{0} სრ",
+            "unitPattern-count-other": "{0} სრ"
           },
-          "concentr-portion-per-1e9": {
+          "concentr-katal": {
+            "displayName": "კატ",
+            "unitPattern-count-one": "{0} კატ",
+            "unitPattern-count-other": "{0} კატ"
+          },
+          "electric-coulomb": {
+            "displayName": "კულ",
+            "unitPattern-count-one": "{0} კულ",
+            "unitPattern-count-other": "{0} კულ"
+          },
+          "electric-farad": {
+            "displayName": "ფ",
+            "unitPattern-count-one": "{0} ფ",
+            "unitPattern-count-other": "{0} ფ"
+          },
+          "electric-henry": {
+            "displayName": "ჰ",
+            "unitPattern-count-one": "{0} ჰ",
+            "unitPattern-count-other": "{0} ჰ"
+          },
+          "electric-siemens": {
+            "displayName": "სიმ",
+            "unitPattern-count-one": "{0} სიმ",
+            "unitPattern-count-other": "{0} სიმ"
+          },
+          "energy-calorie-it": {
+            "displayName": "კალ-IT",
+            "unitPattern-count-one": "{0} კალ-IT",
+            "unitPattern-count-other": "{0} კალ-IT"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "ბკ",
+            "unitPattern-count-one": "{0} ბკ",
+            "unitPattern-count-other": "{0} ბკ"
+          },
+          "energy-sievert": {
+            "displayName": "ზვ",
+            "unitPattern-count-one": "{0} ზვ",
+            "unitPattern-count-other": "{0} ზვ"
+          },
+          "energy-gray": {
+            "displayName": "გრ",
+            "unitPattern-count-one": "{0} გრ",
+            "unitPattern-count-other": "{0} გრ"
+          },
+          "force-kilogram-force": {
+            "displayName": "კგძ",
+            "unitPattern-count-one": "{0} კგძ",
+            "unitPattern-count-other": "{0} კგძ"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "ტლ",
+            "unitPattern-count-one": "{0} ტლ",
+            "unitPattern-count-other": "{0} ტლ"
+          },
+          "magnetic-weber": {
+            "displayName": "ვბ",
+            "unitPattern-count-one": "{0} ვბ",
+            "unitPattern-count-other": "{0} ვბ"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
+          "speed-light-speed": {
+            "displayName": "c",
+            "unitPattern-count-one": "{0} სინათლის სიჩქ.",
+            "unitPattern-count-other": "{0}-მაგი სინათლის სიჩქ."
+          },
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
             "displayName": "ნ/მ",
             "unitPattern-count-one": "{0} ნ/მ",
             "unitPattern-count-other": "{0} ნ/მ"

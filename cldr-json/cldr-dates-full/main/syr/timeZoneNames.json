@@ -9,16 +9,17 @@
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
-          "regionFormat": "ܥܕܢܐ {0}",
-          "regionFormat-type-daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ {0}",
-          "regionFormat-type-standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ {0}",
+          "gmtUnknownFormat": "GMT+?",
+          "regionFormat": "ܥܕܢܐ ܕ{0}",
+          "regionFormat-type-daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕ{0}",
+          "regionFormat-type-standard": "ܥܕܢ {0} ܡܫܘܚܬܢܝܬܐ",
           "fallbackFormat": "{1} ({0})",
           "zone": {
             "Etc": {
               "UTC": {
                 "_type": "zone",
                 "long": {
-                  "standard": "ܥܕܢܘܬܐ ܬܒܠܝܬܐ ܡܛܟܘܣܬܐ"
+                  "standard": "ܥܕܢܐ ܬܒܠܝܬܐ ܡܛܘܟܣܬܐ"
                 },
                 "short": {
                   "standard": "UTC"
@@ -26,7 +27,7 @@
               },
               "Unknown": {
                 "_type": "zone",
-                "exemplarCity": "ܡܕܝܢܬܐ ܠܐ ܝܕܥܝܬܐ"
+                "exemplarCity": "ܐܬܪܐ ܠܐ ܝܕܝܥܐ"
               }
             },
             "Europe": {
@@ -64,7 +65,7 @@
               },
               "Zurich": {
                 "_type": "zone",
-                "exemplarCity": "ܙܝܘܪܚ"
+                "exemplarCity": "ܙܝܘܪܟ"
               },
               "Prague": {
                 "_type": "zone",
@@ -101,7 +102,7 @@
               "London": {
                 "_type": "zone",
                 "long": {
-                  "daylight": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܒܪܝܛܢܝܐ"
+                  "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܒܪܝܛܢܝܐ"
                 },
                 "exemplarCity": "ܠܘܢܕܘܢ"
               },
@@ -138,7 +139,7 @@
               },
               "Rome": {
                 "_type": "zone",
-                "exemplarCity": "ܪܘܡܝ"
+                "exemplarCity": "ܪܗܘܡܐ"
               },
               "Jersey": {
                 "_type": "zone",
@@ -272,7 +273,7 @@
             "Asia": {
               "Dubai": {
                 "_type": "zone",
-                "exemplarCity": "ܕܘܒܐܝ"
+                "exemplarCity": "ܕܘܒܝ"
               },
               "Kabul": {
                 "_type": "zone",
@@ -552,7 +553,7 @@
               },
               "Riyadh": {
                 "_type": "zone",
-                "exemplarCity": "ܪܝܐܕ"
+                "exemplarCity": "ܪܝܐܨ"
               },
               "Singapore": {
                 "_type": "zone",
@@ -668,7 +669,7 @@
               },
               "St_Barthelemy": {
                 "_type": "zone",
-                "exemplarCity": "ܡܪ ܒܪ ܬܘܠܡܝ"
+                "exemplarCity": "ܡܪܝ ܒܪ ܬܘܠܡܝ"
               },
               "La_Paz": {
                 "_type": "zone",
@@ -840,7 +841,11 @@
               },
               "St_Johns": {
                 "_type": "zone",
-                "exemplarCity": "ܡܪ ܝܘܚܢܢ"
+                "exemplarCity": "ܡܪܝ ܝܘܚܢܢ"
+              },
+              "Coyhaique": {
+                "_type": "zone",
+                "exemplarCity": "ܟܘܝܐܝܟܐ"
               },
               "Punta_Arenas": {
                 "_type": "zone",
@@ -1166,7 +1171,7 @@
               },
               "St_Vincent": {
                 "_type": "zone",
-                "exemplarCity": "ܡܪ ܒܢܣܢܬ"
+                "exemplarCity": "ܡܪܝ ܒܢܣܢܬ"
               },
               "Caracas": {
                 "_type": "zone",
@@ -1178,7 +1183,7 @@
               },
               "St_Thomas": {
                 "_type": "zone",
-                "exemplarCity": "ܡܪ ܬܐܘܡܐ"
+                "exemplarCity": "ܡܪܝ ܬܐܘܡܐ"
               }
             },
             "Africa": {
@@ -1236,7 +1241,7 @@
               },
               "Cairo": {
                 "_type": "zone",
-                "exemplarCity": "ܩܐܗܖ̈ܗ"
+                "exemplarCity": "ܩܐܗܪܗ"
               },
               "El_Aaiun": {
                 "_type": "zone",
@@ -1474,7 +1479,7 @@
                 "_type": "zone",
                 "exemplarCity": "ܓܘܐܡ"
               },
-              "Kanton": {
+              "Enderbury": {
                 "_type": "zone",
                 "exemplarCity": "ܟܐܢܬܘܢ"
               },
@@ -1636,7 +1641,7 @@
             "Atlantic": {
               "Bermuda": {
                 "_type": "zone",
-                "exemplarCity": "ܒܝܪܡܝܘܕܐ"
+                "exemplarCity": "ܒܝܪܡܘܕܐ"
               },
               "Cape_Verde": {
                 "_type": "zone",
@@ -1758,9 +1763,7 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "ܥܕܢܐ ܕܡܥܪܒ ܐܦܪܝܩܐ",
-                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܡܥܪܒ ܐܦܪܝܩܐ",
-                "daylight": "ܥܕܢܐ ܩܝܬܝܬܐ ܕܡܥܪܒ ܐܦܪܝܩܐ"
+                "standard": "ܥܕܢܐ ܕܡܥܪܒ ܐܦܪܝܩܐ"
               }
             },
             "Alaska": {
@@ -1838,6 +1841,13 @@
                 "generic": "ܥܕܢܐ ܕܐܟܬܘܒ",
                 "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܐܟܬܘܒ",
                 "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܐܟܬܘܒ"
+              }
+            },
+            "Arabian": {
+              "long": {
+                "generic": "ܥܕܢܐ ܕܐܪܒܝܐ",
+                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܐܪܒܝܐ",
+                "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܐܪܒܝܐ"
               }
             },
             "Argentina": {
@@ -1984,7 +1994,7 @@
             },
             "Cocos": {
               "long": {
-                "standard": "ܥܕܢܐ ܕܓܙܝܖ̈ܐ ܕܟܘܟܘܣ"
+                "standard": "ܥܕܢܐ ܕܓܙܝܪ̈ܐ ܕܟܘܟܘܣ"
               }
             },
             "Colombia": {
@@ -2003,9 +2013,9 @@
             },
             "Cuba": {
               "long": {
-                "generic": "ܥܕܢܐ ܕܟܘܒܐ",
-                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܟܘܒܐ",
-                "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܟܘܒܐ"
+                "generic": "ܥܕܢܐ ܕܩܘܒܐ",
+                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܩܘܒܐ",
+                "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܩܘܒܐ"
               }
             },
             "Davis": {
@@ -2141,6 +2151,11 @@
                 "standard": "ܥܕܢܐ ܕܓܘܝܐܢܐ"
               }
             },
+            "Hawaii": {
+              "long": {
+                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܗܐܘܐܝܝ ܐܠܘܫܝܢ"
+              }
+            },
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "ܥܕܢܐ ܕܗܐܘܐܝܝ ܐܠܘܫܝܢ",
@@ -2227,6 +2242,11 @@
                 "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܦܝܬܪܘܦܒܠܒܣܟܝ-ܟܐܡܟܬܣܟܝ"
               }
             },
+            "Kazakhstan": {
+              "long": {
+                "standard": "ܥܕܢܐ ܕܟܙܩܣܬܐܢ"
+              }
+            },
             "Kazakhstan_Eastern": {
               "long": {
                 "standard": "ܥܕܢܐ ܕܡܕܢܚ ܟܙܩܣܬܐܢ"
@@ -2242,6 +2262,11 @@
                 "generic": "ܥܕܢܐ ܕܟܘܪܝܝܐ",
                 "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܟܘܪܝܝܐ",
                 "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܟܘܪܝܝܐ"
+              }
+            },
+            "Kosrae": {
+              "long": {
+                "standard": "ܥܕܢܐ ܟܘܣܪܐܝ"
               }
             },
             "Krasnoyarsk": {

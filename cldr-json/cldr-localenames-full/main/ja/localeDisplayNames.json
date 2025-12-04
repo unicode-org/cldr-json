@@ -19,18 +19,21 @@
           "calendar": "暦法",
           "cf": "通貨フォーマット",
           "colAlternate": "記号を無視した並べ替え",
-          "colBackwards": "アクセント（逆方向）による並べ替え",
+          "colBackwards": "逆順アクセントによる並べ替え",
           "colCaseFirst": "大文字順/小文字順による並べ替え",
           "colCaseLevel": "大文字小文字を区別した並べ替え",
           "collation": "並べ替え順序",
           "colNormalization": "正規化による並べ替え",
           "colNumeric": "数値による並べ替え",
-          "colStrength": "強度による並べ替え",
+          "colStrength": "照合強度",
           "currency": "通貨",
+          "em": "絵文字表示方法",
           "hc": "時間制(12 / 24)",
           "lb": "禁則処理",
+          "lw": "単語途中の改行",
           "ms": "単位系",
           "numbers": "数値書式",
+          "ss": "略語の後の文分割",
           "timezone": "タイムゾーン",
           "va": "ロケールのバリアント",
           "x": "私用"
@@ -38,6 +41,7 @@
         "types": {
           "calendar": {
             "buddhist": "仏暦",
+            "core": "中華民国暦",
             "chinese": "中国暦",
             "coptic": "コプト暦",
             "dangi": "ダンギ暦",
@@ -56,6 +60,7 @@
           },
           "cf": {
             "account": "会計通貨フォーマット",
+            "core": "標準",
             "standard": "標準通貨フォーマット"
           },
           "colAlternate": {
@@ -76,21 +81,20 @@
             "yes": "大文字小文字を区別して並べ替え"
           },
           "collation": {
-            "big5han": "繁体字中国語順(Big5)",
             "compat": "以前の順序（互換性）",
+            "core": "注音",
             "dictionary": "辞書順",
-            "ducet": "ユニコード照合順",
+            "ducet": "デフォルトUnicode照合順",
             "eor": "ヨーロッパ言語文字の並べ替え規則",
-            "gb2312han": "簡体字中国語順(GB2312)",
             "phonebook": "電話帳順",
-            "phonetic": "音声順による並べ替え",
+            "phonetic": "読み順",
             "pinyin": "ピンイン順",
             "search": "汎用検索",
             "searchjl": "ハングル語頭子音による並べ替え",
             "standard": "標準並べ替え順序",
             "stroke": "画数順",
-            "traditional": "トラディッショナル",
-            "unihan": "部首順",
+            "traditional": "伝統的並べ替え順序",
+            "unihan": "部首画数順",
             "zhuyin": "注音順"
           },
           "colNormalization": {
@@ -113,16 +117,24 @@
             "hwidth": "半角",
             "npinyin": "数字"
           },
+          "em": {
+            "core": "テキスト"
+          },
           "hc": {
             "h11": "12時間制(0〜11)",
+            "core": "24時間制(1〜24)",
             "h12": "12時間制(1〜12)",
             "h23": "24時間制(0〜23)",
             "h24": "24時間制(1〜24)"
           },
           "lb": {
             "loose": "禁則処理(弱)",
+            "core": "強",
             "normal": "禁則処理(標準)",
             "strict": "禁則処理(強)"
+          },
+          "lw": {
+            "core": "文節単位"
           },
           "m0": {
             "bgn": "BGN",
@@ -130,6 +142,7 @@
           },
           "ms": {
             "metric": "メートル法",
+            "core": "米国",
             "uksystem": "ヤード・ポンド法",
             "ussystem": "米慣習単位"
           },
@@ -195,6 +208,9 @@
             "tibt": "チベット数字",
             "traditional": "従来の記数法",
             "vaii": "ヴァイ文字の記数法"
+          },
+          "ss": {
+            "core": "オン"
           }
         },
         "codePatterns": {

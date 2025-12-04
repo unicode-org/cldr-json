@@ -9,6 +9,7 @@
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
+          "gmtUnknownFormat": "GMT+?",
           "regionFormat": "{0} ᎠᏟᎢᎵᏒ",
           "regionFormat-type-daylight": "{0} ᎪᎯ ᎢᎦ ᎠᏟᎢᎵᏒ",
           "regionFormat-type-standard": "{0} ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ",
@@ -17,11 +18,6 @@
             "Pacific": {
               "Honolulu": {
                 "_type": "zone",
-                "short": {
-                  "generic": "HST",
-                  "standard": "HST",
-                  "daylight": "HDT"
-                },
                 "exemplarCity": "ᎭᏃᎷᎷ"
               },
               "Pago_Pago": {
@@ -61,10 +57,6 @@
                 "exemplarCity": "ᏆᎻ"
               },
               "Enderbury": {
-                "_type": "zone",
-                "exemplarCity": "ᎡᏂᏇᎵ"
-              },
-              "Kanton": {
                 "_type": "zone",
                 "exemplarCity": "ᎧᏛᏂ"
               },
@@ -1005,6 +997,10 @@
                 "_type": "zone",
                 "exemplarCity": "ᎤᏓᏅᏘ ᏣᏂ ᎤᏤᎵ"
               },
+              "Coyhaique": {
+                "_type": "zone",
+                "exemplarCity": "ᎪᎭᎢᏇ"
+              },
               "Punta_Arenas": {
                 "_type": "zone",
                 "exemplarCity": "ᏊᏔ ᎡᏫᎾᏍ"
@@ -1764,9 +1760,7 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "ᏭᏕᎵᎬ ᎬᎿᎨᏍᏛ ᎠᏟᎢᎵᏒ",
-                "standard": "ᏭᏕᎵᎬ ᎬᎿᎨᏍᏛ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ",
-                "daylight": "ᏭᏕᎵᎬ ᎬᎿᎨᏍᏛ ᎪᎩ ᎠᏟᎢᎵᏒ"
+                "standard": "ᏭᏕᎵᎬ ᎬᎿᎨᏍᏛ ᎠᏟᎢᎵᏒ"
               }
             },
             "Alaska": {
@@ -2144,6 +2138,14 @@
             "Guyana": {
               "long": {
                 "standard": "ᎦᏯᎾ ᎠᏟᎢᎵᏒ"
+              }
+            },
+            "Hawaii": {
+              "long": {
+                "standard": "ᎭᏩᏱ-ᎠᎵᏳᏏᎠᏂ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ"
+              },
+              "short": {
+                "standard": "HAST"
               }
             },
             "Hawaii_Aleutian": {

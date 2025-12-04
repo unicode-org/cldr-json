@@ -291,23 +291,23 @@
             },
             "eras": {
               "eraNames": {
-                "0": "ERA0",
-                "1": "ERA1"
+                "0": "AA",
+                "1": "AM"
               },
               "eraAbbr": {
-                "0": "ERA0",
-                "1": "ERA1"
+                "0": "AA",
+                "1": "AM"
               },
               "eraNarrow": {
-                "0": "ERA0",
-                "1": "ERA1"
+                "0": "AA",
+                "1": "AM"
               }
             },
             "dateFormats": {
               "full": "EEEE, MMMM d y G",
               "long": "MMMM d y G",
               "medium": "MMM d y G",
-              "short": "M/d/y GGGGG"
+              "short": "M/d/y G"
             },
             "dateSkeletons": {
               "full": "GyMMMMEEEEd",
@@ -338,15 +338,19 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "E d",
+                "Eh": "E, h a",
                 "Ehm": "E, h a mm",
                 "EHm": "E, HH:mm",
                 "Ehms": "E, h a mm:ss",
                 "EHms": "E, HH:mm:ss",
                 "Gy": "y G",
-                "GyMd": "M/d/y GGGGG",
+                "GyM": "M/y G",
+                "GyMd": "M/d/y G",
+                "GyMEd": "E, M/d/y G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "MMM d y G",
                 "GyMMMEd": "E, MMM d y G",
@@ -356,6 +360,8 @@
                 "Hm": "HH:mm",
                 "hms": "h a mm:ss",
                 "Hms": "HH:mm:ss",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "M/d",
                 "MEd": "E, M/d",
@@ -366,9 +372,9 @@
                 "ms": "mm:ss",
                 "y": "y G",
                 "yyyy": "y G",
-                "yyyyM": "M/y GGGGG",
-                "yyyyMd": "M/d/y GGGGG",
-                "yyyyMEd": "E, M/d/y GGGGG",
+                "yyyyM": "M/y G",
+                "yyyyMd": "M/d/y G",
+                "yyyyMEd": "E, M/d/y G",
                 "yyyyMMM": "MMM y G",
                 "yyyyMMMd": "MMM d y G",
                 "yyyyMMMEd": "E, MMM d y G",
@@ -533,6 +539,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1}, {0}",
+                "long": "{1}, {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1}, {0}",
                 "long": "{1}, {0}",

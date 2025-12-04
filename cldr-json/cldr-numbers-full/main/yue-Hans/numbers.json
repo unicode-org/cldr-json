@@ -9,8 +9,8 @@
         "defaultNumberingSystem": "latn",
         "otherNumberingSystems": {
           "native": "hanidec",
-          "traditional": "hans",
-          "finance": "hansfin"
+          "traditional": "hant",
+          "finance": "hantfin"
         },
         "minimumGroupingDigits": "1",
         "symbols-numberSystem-hanidec": {
@@ -47,7 +47,7 @@
           "standard": "#,##0.###",
           "long": {
             "decimalFormat": {
-              "1000-count-other": "0",
+              "1000-count-other": "0千",
               "10000-count-other": "0万",
               "100000-count-other": "00万",
               "1000000-count-other": "000万",
@@ -63,7 +63,7 @@
           },
           "short": {
             "decimalFormat": {
-              "1000-count-other": "0",
+              "1000-count-other": "0千",
               "10000-count-other": "0万",
               "100000-count-other": "00万",
               "1000000-count-other": "000万",
@@ -82,7 +82,7 @@
           "standard": "#,##0.###",
           "long": {
             "decimalFormat": {
-              "1000-count-other": "0",
+              "1000-count-other": "0千",
               "10000-count-other": "0万",
               "100000-count-other": "00万",
               "1000000-count-other": "000万",
@@ -98,7 +98,7 @@
           },
           "short": {
             "decimalFormat": {
-              "1000-count-other": "0",
+              "1000-count-other": "0千",
               "10000-count-other": "0万",
               "100000-count-other": "00万",
               "1000000-count-other": "000万",
@@ -112,6 +112,18 @@
               "100000000000000-count-other": "000兆"
             }
           }
+        },
+        "rationalFormats-numberSystem-hanidec": {
+          "rationalPattern": "{0}⁄{1}",
+          "integerAndRationalPattern": "{0} {1}",
+          "integerAndRationalPattern-alt-superSub": "{0}⁠{1}",
+          "rationalUsage": "sometimes"
+        },
+        "rationalFormats-numberSystem-latn": {
+          "rationalPattern": "{0}⁄{1}",
+          "integerAndRationalPattern": "{0} {1}",
+          "integerAndRationalPattern-alt-superSub": "{0}⁠{1}",
+          "rationalUsage": "sometimes"
         },
         "scientificFormats-numberSystem-hanidec": {
           "standard": "#E0"
@@ -146,18 +158,30 @@
           "accounting-noCurrency": "#,##0.00;(#,##0.00)",
           "short": {
             "standard": {
-              "1000-count-other": "0",
+              "1000-count-other": "¤0千",
+              "1000-count-other-alt-alphaNextToNumber": "¤ 0千",
               "10000-count-other": "¤0万",
+              "10000-count-other-alt-alphaNextToNumber": "¤ 0万",
               "100000-count-other": "¤00万",
+              "100000-count-other-alt-alphaNextToNumber": "¤ 00万",
               "1000000-count-other": "¤000万",
+              "1000000-count-other-alt-alphaNextToNumber": "¤ 000万",
               "10000000-count-other": "¤0000万",
+              "10000000-count-other-alt-alphaNextToNumber": "¤ 0000万",
               "100000000-count-other": "¤0亿",
+              "100000000-count-other-alt-alphaNextToNumber": "¤ 0亿",
               "1000000000-count-other": "¤00亿",
+              "1000000000-count-other-alt-alphaNextToNumber": "¤ 00亿",
               "10000000000-count-other": "¤000亿",
+              "10000000000-count-other-alt-alphaNextToNumber": "¤ 000亿",
               "100000000000-count-other": "¤0000亿",
+              "100000000000-count-other-alt-alphaNextToNumber": "¤ 0000亿",
               "1000000000000-count-other": "¤0兆",
+              "1000000000000-count-other-alt-alphaNextToNumber": "¤ 0兆",
               "10000000000000-count-other": "¤00兆",
-              "100000000000000-count-other": "¤000兆"
+              "10000000000000-count-other-alt-alphaNextToNumber": "¤ 00兆",
+              "100000000000000-count-other": "¤000兆",
+              "100000000000000-count-other-alt-alphaNextToNumber": "¤ 000兆"
             }
           },
           "currencyPatternAppendISO": "{0} ¤¤",
@@ -184,18 +208,30 @@
           "accounting-noCurrency": "#,##0.00;(#,##0.00)",
           "short": {
             "standard": {
-              "1000-count-other": "0",
+              "1000-count-other": "¤0千",
+              "1000-count-other-alt-alphaNextToNumber": "¤ 0千",
               "10000-count-other": "¤0万",
+              "10000-count-other-alt-alphaNextToNumber": "¤ 0万",
               "100000-count-other": "¤00万",
+              "100000-count-other-alt-alphaNextToNumber": "¤ 00万",
               "1000000-count-other": "¤000万",
+              "1000000-count-other-alt-alphaNextToNumber": "¤ 000万",
               "10000000-count-other": "¤0000万",
+              "10000000-count-other-alt-alphaNextToNumber": "¤ 0000万",
               "100000000-count-other": "¤0亿",
+              "100000000-count-other-alt-alphaNextToNumber": "¤ 0亿",
               "1000000000-count-other": "¤00亿",
+              "1000000000-count-other-alt-alphaNextToNumber": "¤ 00亿",
               "10000000000-count-other": "¤000亿",
+              "10000000000-count-other-alt-alphaNextToNumber": "¤ 000亿",
               "100000000000-count-other": "¤0000亿",
+              "100000000000-count-other-alt-alphaNextToNumber": "¤ 0000亿",
               "1000000000000-count-other": "¤0兆",
+              "1000000000000-count-other-alt-alphaNextToNumber": "¤ 0兆",
               "10000000000000-count-other": "¤00兆",
-              "100000000000000-count-other": "¤000兆"
+              "10000000000000-count-other-alt-alphaNextToNumber": "¤ 00兆",
+              "100000000000000-count-other": "¤000兆",
+              "100000000000000-count-other-alt-alphaNextToNumber": "¤ 000兆"
             }
           },
           "currencyPatternAppendISO": "{0} ¤¤",

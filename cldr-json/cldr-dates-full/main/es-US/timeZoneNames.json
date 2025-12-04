@@ -10,6 +10,7 @@
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
+          "gmtUnknownFormat": "GMT+?",
           "regionFormat": "hora de {0}",
           "regionFormat-type-daylight": "hora de verano de {0}",
           "regionFormat-type-standard": "hora estándar de {0}",
@@ -18,11 +19,6 @@
             "Pacific": {
               "Honolulu": {
                 "_type": "zone",
-                "short": {
-                  "generic": "HST",
-                  "standard": "HST",
-                  "daylight": "HDT"
-                },
                 "exemplarCity": "Honolulu"
               },
               "Easter": {
@@ -47,7 +43,7 @@
               },
               "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "Enderbury"
+                "exemplarCity": "Isla Kanton"
               },
               "Saipan": {
                 "_type": "zone",
@@ -68,6 +64,10 @@
               "Wake": {
                 "_type": "zone",
                 "exemplarCity": "Wake"
+              },
+              "Wallis": {
+                "_type": "zone",
+                "exemplarCity": "Wallis & Futuna"
               }
             },
             "Etc": {
@@ -82,7 +82,7 @@
               },
               "Unknown": {
                 "_type": "zone",
-                "exemplarCity": "ciudad desconocida"
+                "exemplarCity": "Ciudad desconocida"
               }
             },
             "Asia": {
@@ -189,6 +189,10 @@
               "Rangoon": {
                 "_type": "zone",
                 "exemplarCity": "Yangón (Rangún)"
+              },
+              "Hovd": {
+                "_type": "zone",
+                "exemplarCity": "Khovd"
               },
               "Ulaanbaatar": {
                 "_type": "zone",
@@ -722,6 +726,10 @@
               }
             },
             "Antarctica": {
+              "Syowa": {
+                "_type": "zone",
+                "exemplarCity": "Showa"
+              },
               "DumontDUrville": {
                 "_type": "zone",
                 "exemplarCity": "Dumont-d’Urville"
@@ -918,9 +926,7 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "hora de África occidental",
-                "standard": "hora estándar de África occidental",
-                "daylight": "hora de verano de África occidental"
+                "standard": "hora de África occidental"
               }
             },
             "Alaska": {
@@ -1324,6 +1330,14 @@
             "Guyana": {
               "long": {
                 "standard": "hora de Guyana"
+              }
+            },
+            "Hawaii": {
+              "long": {
+                "standard": "hora estándar de Hawái-Aleutianas"
+              },
+              "short": {
+                "standard": "HST"
               }
             },
             "Hawaii_Aleutian": {
@@ -1779,6 +1793,13 @@
             "Truk": {
               "long": {
                 "standard": "hora de Chuuk"
+              }
+            },
+            "Turkey": {
+              "long": {
+                "generic": "Hora de Turquía",
+                "standard": "Hora estándar de Turquía",
+                "daylight": "Hora de verano de Turquía"
               }
             },
             "Turkmenistan": {

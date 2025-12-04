@@ -9,8 +9,9 @@
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
+          "gmtUnknownFormat": "GMT+?",
           "regionFormat": "{0} సమయం",
-          "regionFormat-type-daylight": "{0} పగటి వెలుతురు సమయం",
+          "regionFormat-type-daylight": "{0} పగటి కాంతి సమయం",
           "regionFormat-type-standard": "{0} ప్రామాణిక సమయం",
           "fallbackFormat": "{1} ({0})",
           "zone": {
@@ -57,11 +58,7 @@
               },
               "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "ఎండర్బెరీ"
-              },
-              "Kanton": {
-                "_type": "zone",
-                "exemplarCity": "కాంతోన్"
+                "exemplarCity": "క్యాంటన్ దీవి"
               },
               "Kiritimati": {
                 "_type": "zone",
@@ -89,7 +86,7 @@
               },
               "Norfolk": {
                 "_type": "zone",
-                "exemplarCity": "నోర్ఫోక్"
+                "exemplarCity": "నార్ఫక్ దీవి"
               },
               "Nauru": {
                 "_type": "zone",
@@ -101,7 +98,7 @@
               },
               "Chatham": {
                 "_type": "zone",
-                "exemplarCity": "చాథమ్"
+                "exemplarCity": "చాథమ్ దీవులు"
               },
               "Auckland": {
                 "_type": "zone",
@@ -157,7 +154,7 @@
               },
               "Wake": {
                 "_type": "zone",
-                "exemplarCity": "వేక్"
+                "exemplarCity": "వేక్ దీవి"
               },
               "Efate": {
                 "_type": "zone",
@@ -165,7 +162,7 @@
               },
               "Wallis": {
                 "_type": "zone",
-                "exemplarCity": "వాల్లిస్"
+                "exemplarCity": "వాల్లిస్ & ఫ్యూటునా"
               },
               "Apia": {
                 "_type": "zone",
@@ -184,7 +181,7 @@
               },
               "Unknown": {
                 "_type": "zone",
-                "exemplarCity": "తెలియని నగరం"
+                "exemplarCity": "తెలియని లొకేషన్"
               }
             },
             "Europe": {
@@ -1000,6 +997,10 @@
                 "_type": "zone",
                 "exemplarCity": "సెయింట్ జాన్స్"
               },
+              "Coyhaique": {
+                "_type": "zone",
+                "exemplarCity": "కొయాయ్కె"
+              },
               "Punta_Arenas": {
                 "_type": "zone",
                 "exemplarCity": "పుంటా అరీనస్"
@@ -1386,7 +1387,7 @@
               },
               "Djibouti": {
                 "_type": "zone",
-                "exemplarCity": "డిజ్బౌటి"
+                "exemplarCity": "జిబూటి"
               },
               "Algiers": {
                 "_type": "zone",
@@ -1592,7 +1593,7 @@
               },
               "Macquarie": {
                 "_type": "zone",
-                "exemplarCity": "మకారీ"
+                "exemplarCity": "మకారీ దీవి"
               }
             },
             "Australia": {
@@ -1638,7 +1639,7 @@
               },
               "Lord_Howe": {
                 "_type": "zone",
-                "exemplarCity": "లార్డ్ హౌ"
+                "exemplarCity": "లార్డ్ హౌ దీవి"
               }
             },
             "Atlantic": {
@@ -1686,11 +1687,11 @@
             "Indian": {
               "Cocos": {
                 "_type": "zone",
-                "exemplarCity": "కోకోస్"
+                "exemplarCity": "కోకోస్ దీవులు"
               },
               "Christmas": {
                 "_type": "zone",
-                "exemplarCity": "క్రిస్మస్"
+                "exemplarCity": "క్రిస్మస్ దీవి"
               },
               "Chagos": {
                 "_type": "zone",
@@ -1766,9 +1767,7 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "పశ్చిమ ఆఫ్రికా సమయం",
-                "standard": "పశ్చిమ ఆఫ్రికా ప్రామాణిక సమయం",
-                "daylight": "పశ్చిమ ఆఫ్రికా వేసవి సమయం"
+                "standard": "పశ్చిమ ఆఫ్రికా సమయం"
               }
             },
             "Alaska": {
@@ -1829,9 +1828,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "ఏపియా సమయం",
-                "standard": "ఏపియా ప్రామాణిక సమయం",
-                "daylight": "ఏపియా పగటి సమయం"
+                "generic": "సమోవా సమయం",
+                "standard": "సమోవా ప్రామాణిక సమయం",
+                "daylight": "సమోవా పగటి వెలుతురు సమయం"
               }
             },
             "Aqtau": {
@@ -1951,7 +1950,7 @@
             },
             "Brunei": {
               "long": {
-                "standard": "బ్రూనే దరుసలామ్ సమయం"
+                "standard": "బ్రూనై దారుసలామ్ సమయం"
               }
             },
             "Cape_Verde": {
@@ -2151,6 +2150,11 @@
                 "standard": "గయానా సమయం"
               }
             },
+            "Hawaii": {
+              "long": {
+                "standard": "హవాయ్-అల్యూషియన్ ప్రామాణిక సమయం"
+              }
+            },
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "హవాయ్-అల్యూషియన్ సమయం",
@@ -2293,7 +2297,7 @@
               "long": {
                 "generic": "లార్డ్ హోవ్ సమయం",
                 "standard": "లార్డ్ హోవ్ ప్రామాణిక సమయం",
-                "daylight": "లార్డ్ హోవ్ పగటి సమయం"
+                "daylight": "లార్డ్ హోవ్ పగటి వెలుతురు సమయం"
               }
             },
             "Macau": {
@@ -2408,7 +2412,7 @@
               "long": {
                 "generic": "నార్ఫోక్ దీవి సమయం",
                 "standard": "నార్ఫోక్ దీవి ప్రామాణిక సమయం",
-                "daylight": "నార్ఫోక్ దీవి పగటి సమయం"
+                "daylight": "నార్ఫోక్ దీవి పగటి వెలుతురు సమయం"
               }
             },
             "Noronha": {
@@ -2499,7 +2503,7 @@
             },
             "Pyongyang": {
               "long": {
-                "standard": "ప్యోంగాంగ్ సమయం"
+                "standard": "ఉత్తర కొరియా సమయం"
               }
             },
             "Qyzylorda": {
@@ -2577,9 +2581,9 @@
             },
             "Taipei": {
               "long": {
-                "generic": "తైపీ సమయం",
-                "standard": "తైపీ ప్రామాణిక సమయం",
-                "daylight": "తైపీ పగటి వెలుతురు సమయం"
+                "generic": "తైవాన్ సమయం",
+                "standard": "తైవాన్ ప్రామాణిక సమయం",
+                "daylight": "తైవాన్ పగటి వెలుతురు సమయం"
               }
             },
             "Tajikistan": {
@@ -2602,6 +2606,13 @@
             "Truk": {
               "long": {
                 "standard": "చక్ సమయం"
+              }
+            },
+            "Turkey": {
+              "long": {
+                "generic": "టర్కీ సమయం",
+                "standard": "టర్కీ ప్రామాణిక సమయం",
+                "daylight": "టర్కీ వేసవి సమయం"
               }
             },
             "Turkmenistan": {

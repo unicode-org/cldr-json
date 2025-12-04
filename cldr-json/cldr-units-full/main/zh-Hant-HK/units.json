@@ -207,9 +207,13 @@
             "displayName": "個項目",
             "unitPattern-count-other": "{0} 個項目"
           },
-          "concentr-permillion": {
-            "displayName": "百萬分率",
-            "unitPattern-count-other": "{0} 百萬分率"
+          "concentr-part": {
+            "displayName": "等份",
+            "unitPattern-count-other": "{0} 等份"
+          },
+          "concentr-part-per-1e6": {
+            "displayName": "百萬分比",
+            "unitPattern-count-other": "{0} 百萬分比"
           },
           "concentr-percent": {
             "displayName": "百分比",
@@ -226,6 +230,10 @@
           "concentr-mole": {
             "displayName": "莫耳",
             "unitPattern-count-other": "{0} 莫耳"
+          },
+          "concentr-ofglucose": {
+            "displayName": "葡萄糖",
+            "unitPattern-count-other": "{0} 葡萄糖"
           },
           "consumption-liter-per-kilometer": {
             "displayName": "公升/公里",
@@ -558,7 +566,7 @@
           },
           "light-lumen": {
             "displayName": "流明",
-            "unitPattern-count-other": "{0} 流明"
+            "unitPattern-count-other": "{0} lm"
           },
           "light-solar-luminosity": {
             "displayName": "太陽光度",
@@ -655,6 +663,10 @@
           "pressure-millimeter-ofhg": {
             "displayName": "毫米汞柱",
             "unitPattern-count-other": "{0} 毫米汞柱"
+          },
+          "pressure-ofhg": {
+            "displayName": "汞柱",
+            "unitPattern-count-other": "{0} 汞柱"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "磅/平方吋",
@@ -799,6 +811,10 @@
             "displayName": "公制量杯",
             "unitPattern-count-other": "{0} 公制量杯"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "公制液安士",
+            "unitPattern-count-other": "{0} 公制液安士"
+          },
           "volume-acre-foot": {
             "displayName": "英畝呎",
             "unitPattern-count-other": "{0} 英畝呎"
@@ -825,9 +841,17 @@
             "displayName": "品脫",
             "unitPattern-count-other": "{0} 品脫"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "displayName": "量杯",
             "unitPattern-count-other": "{0} 量杯"
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "displayName": "液安士",
@@ -877,13 +901,165 @@
             "displayName": "英制夸脫",
             "unitPattern-count-other": "{0} 英制夸脫"
           },
-          "speed-light-speed": {
-            "displayName": "light",
-            "unitPattern-count-other": "{0} light"
+          "angle-steradian": {
+            "displayName": "球面度",
+            "unitPattern-count-other": "{0} 球面度"
           },
-          "concentr-portion-per-1e9": {
-            "displayName": "十億分點濃度",
-            "unitPattern-count-other": "{0} 十億分點濃度"
+          "concentr-katal": {
+            "displayName": "開特",
+            "unitPattern-count-other": "{0} 開特"
+          },
+          "electric-coulomb": {
+            "displayName": "庫侖",
+            "unitPattern-count-other": "{0} 庫侖"
+          },
+          "electric-farad": {
+            "displayName": "法拉",
+            "unitPattern-count-other": "{0} 法拉"
+          },
+          "electric-henry": {
+            "displayName": "亨利",
+            "unitPattern-count-other": "{0} 亨利"
+          },
+          "electric-siemens": {
+            "displayName": "西門子",
+            "unitPattern-count-other": "{0} 西門子"
+          },
+          "energy-calorie-it": {
+            "displayName": "國際蒸汽表卡路里",
+            "unitPattern-count-other": "{0} 國際蒸汽表卡路里"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "貝克勒爾",
+            "unitPattern-count-other": "{0} 貝克勒爾"
+          },
+          "energy-sievert": {
+            "displayName": "希沃特",
+            "unitPattern-count-other": "{0} 希沃特"
+          },
+          "energy-gray": {
+            "displayName": "戈瑞",
+            "unitPattern-count-other": "{0} 戈瑞"
+          },
+          "force-kilogram-force": {
+            "displayName": "公斤力",
+            "unitPattern-count-other": "{0} 公斤力"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "特斯拉",
+            "unitPattern-count-other": "{0} 特斯拉"
+          },
+          "magnetic-weber": {
+            "displayName": "韋伯",
+            "unitPattern-count-other": "{0} 韋伯"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
+          "speed-light-speed": {
+            "displayName": "光速",
+            "unitPattern-count-other": "{0} 倍光速"
+          },
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
+            "displayName": "十億分比",
+            "unitPattern-count-other": "十億分之{0}"
           },
           "duration-night": {
             "displayName": "夜",
@@ -1098,9 +1274,13 @@
             "displayName": "個項目",
             "unitPattern-count-other": "{0} 個項目"
           },
-          "concentr-permillion": {
-            "displayName": "百萬分率",
-            "unitPattern-count-other": "{0} 百萬分率"
+          "concentr-part": {
+            "displayName": "等份",
+            "unitPattern-count-other": "{0}等份"
+          },
+          "concentr-part-per-1e6": {
+            "displayName": "百萬分比",
+            "unitPattern-count-other": "{0} 百萬分比"
           },
           "concentr-percent": {
             "displayName": "百分比",
@@ -1117,6 +1297,10 @@
           "concentr-mole": {
             "displayName": "莫耳",
             "unitPattern-count-other": "{0} 莫耳"
+          },
+          "concentr-ofglucose": {
+            "displayName": "葡萄糖",
+            "unitPattern-count-other": "{0}葡萄糖"
           },
           "consumption-liter-per-kilometer": {
             "displayName": "公升/公里",
@@ -1395,7 +1579,7 @@
           },
           "length-foot": {
             "displayName": "呎",
-            "unitPattern-count-other": "{0} 呎",
+            "unitPattern-count-other": "{0}英尺",
             "perUnitPattern": "{0} 每呎"
           },
           "length-inch": {
@@ -1449,7 +1633,7 @@
           },
           "light-lumen": {
             "displayName": "流明",
-            "unitPattern-count-other": "{0} 流明"
+            "unitPattern-count-other": "{0} lm"
           },
           "light-solar-luminosity": {
             "displayName": "L☉",
@@ -1546,6 +1730,10 @@
           "pressure-millimeter-ofhg": {
             "displayName": "毫米汞柱",
             "unitPattern-count-other": "{0} 毫米汞柱"
+          },
+          "pressure-ofhg": {
+            "displayName": "Hg",
+            "unitPattern-count-other": "{0} Hg"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "磅每平方吋",
@@ -1690,6 +1878,10 @@
             "displayName": "公制量杯",
             "unitPattern-count-other": "{0} 公制量杯"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "公制液安士",
+            "unitPattern-count-other": "{0} 公制液安士"
+          },
           "volume-acre-foot": {
             "displayName": "英畝呎",
             "unitPattern-count-other": "{0} 英畝呎"
@@ -1716,9 +1908,17 @@
             "displayName": "品脫",
             "unitPattern-count-other": "{0} 品脫"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "displayName": "量杯",
             "unitPattern-count-other": "{0} 量杯"
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "displayName": "液安士",
@@ -1768,12 +1968,164 @@
             "displayName": "英制夸脫",
             "unitPattern-count-other": "{0} 英制夸脫"
           },
-          "speed-light-speed": {
-            "displayName": "light",
-            "unitPattern-count-other": "{0} light"
+          "angle-steradian": {
+            "displayName": "球面度",
+            "unitPattern-count-other": "{0}球面度"
           },
-          "concentr-portion-per-1e9": {
-            "displayName": "濃度/十億",
+          "concentr-katal": {
+            "displayName": "開特",
+            "unitPattern-count-other": "{0}開特"
+          },
+          "electric-coulomb": {
+            "displayName": "庫侖",
+            "unitPattern-count-other": "{0} 庫侖"
+          },
+          "electric-farad": {
+            "displayName": "法拉",
+            "unitPattern-count-other": "{0} 法拉"
+          },
+          "electric-henry": {
+            "displayName": "亨利",
+            "unitPattern-count-other": "{0} 亨利"
+          },
+          "electric-siemens": {
+            "displayName": "西門子",
+            "unitPattern-count-other": "{0} S"
+          },
+          "energy-calorie-it": {
+            "displayName": "國際蒸汽表卡",
+            "unitPattern-count-other": "{0} 國際蒸汽表卡"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "貝克",
+            "unitPattern-count-other": "{0} 貝克"
+          },
+          "energy-sievert": {
+            "displayName": "希",
+            "unitPattern-count-other": "{0} 希"
+          },
+          "energy-gray": {
+            "displayName": "戈",
+            "unitPattern-count-other": "{0} 戈"
+          },
+          "force-kilogram-force": {
+            "displayName": "公斤力",
+            "unitPattern-count-other": "{0}公斤力"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "特斯拉",
+            "unitPattern-count-other": "{0}特斯拉"
+          },
+          "magnetic-weber": {
+            "displayName": "韋伯",
+            "unitPattern-count-other": "{0}韋伯"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
+          "speed-light-speed": {
+            "displayName": "光速",
+            "unitPattern-count-other": "{0} 倍光速"
+          },
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
+            "displayName": "十億分比",
             "unitPattern-count-other": "{0} ppb"
           },
           "duration-night": {
@@ -1989,8 +2341,12 @@
             "displayName": "個項目",
             "unitPattern-count-other": "{0} 個項目"
           },
-          "concentr-permillion": {
-            "displayName": "百萬分率",
+          "concentr-part": {
+            "displayName": "等份",
+            "unitPattern-count-other": "{0}等份"
+          },
+          "concentr-part-per-1e6": {
+            "displayName": "百萬分比",
             "unitPattern-count-other": "{0} ppm"
           },
           "concentr-percent": {
@@ -2008,6 +2364,10 @@
           "concentr-mole": {
             "displayName": "莫耳",
             "unitPattern-count-other": "{0}莫耳"
+          },
+          "concentr-ofglucose": {
+            "displayName": "葡萄糖",
+            "unitPattern-count-other": "{0}葡萄糖"
           },
           "consumption-liter-per-kilometer": {
             "displayName": "公升/公里",
@@ -2289,8 +2649,8 @@
           },
           "length-foot": {
             "displayName": "呎",
-            "unitPattern-count-other": "{0}呎",
-            "perUnitPattern": "{0} 每呎"
+            "unitPattern-count-other": "{0}英尺",
+            "perUnitPattern": "{0}/英尺"
           },
           "length-inch": {
             "displayName": "吋",
@@ -2342,8 +2702,8 @@
             "unitPattern-count-other": "{0}坎德拉"
           },
           "light-lumen": {
-            "displayName": "流明",
-            "unitPattern-count-other": "{0}流明"
+            "displayName": "lm",
+            "unitPattern-count-other": "{0}lm"
           },
           "light-solar-luminosity": {
             "displayName": "L☉",
@@ -2440,6 +2800,10 @@
           "pressure-millimeter-ofhg": {
             "displayName": "毫米汞柱",
             "unitPattern-count-other": "{0}mmHg"
+          },
+          "pressure-ofhg": {
+            "displayName": "Hg",
+            "unitPattern-count-other": "{0} Hg"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "磅每平方吋",
@@ -2584,6 +2948,10 @@
             "displayName": "公制量杯",
             "unitPattern-count-other": "{0} 量杯"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "公制液穴士",
+            "unitPattern-count-other": "{0}公制液盎司"
+          },
           "volume-acre-foot": {
             "displayName": "英畝呎",
             "unitPattern-count-other": "{0}英畝英尺"
@@ -2610,9 +2978,17 @@
             "displayName": "品脫",
             "unitPattern-count-other": "{0}品脫"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "displayName": "量杯",
             "unitPattern-count-other": "{0}杯"
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "displayName": "液安士",
@@ -2662,12 +3038,164 @@
             "displayName": "英制夸脫",
             "unitPattern-count-other": "{0}英制夸脫"
           },
+          "angle-steradian": {
+            "displayName": "球面度",
+            "unitPattern-count-other": "{0}球面度"
+          },
+          "concentr-katal": {
+            "displayName": "開特",
+            "unitPattern-count-other": "{0}開特"
+          },
+          "electric-coulomb": {
+            "displayName": "庫侖",
+            "unitPattern-count-other": "{0} 庫侖"
+          },
+          "electric-farad": {
+            "displayName": "法拉",
+            "unitPattern-count-other": "{0} 法拉"
+          },
+          "electric-henry": {
+            "displayName": "亨利",
+            "unitPattern-count-other": "{0} 亨利"
+          },
+          "electric-siemens": {
+            "displayName": "西門子",
+            "unitPattern-count-other": "{0} S"
+          },
+          "energy-calorie-it": {
+            "displayName": "卡路里-IT",
+            "unitPattern-count-other": "{0} 卡路里-IT"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "貝克",
+            "unitPattern-count-other": "{0}貝克"
+          },
+          "energy-sievert": {
+            "displayName": "希",
+            "unitPattern-count-other": "{0}希"
+          },
+          "energy-gray": {
+            "displayName": "戈",
+            "unitPattern-count-other": "{0}戈"
+          },
+          "force-kilogram-force": {
+            "displayName": "公斤力",
+            "unitPattern-count-other": "{0}公斤力"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "特斯拉",
+            "unitPattern-count-other": "{0}特斯拉"
+          },
+          "magnetic-weber": {
+            "displayName": "韋伯",
+            "unitPattern-count-other": "{0}韋伯"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
           "speed-light-speed": {
-            "displayName": "light",
+            "displayName": "光速",
             "unitPattern-count-other": "{0}夜"
           },
-          "concentr-portion-per-1e9": {
-            "displayName": "濃度/十億",
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
+            "displayName": "ppb",
             "unitPattern-count-other": "{0}ppb"
           },
           "duration-night": {

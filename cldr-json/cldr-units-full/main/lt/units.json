@@ -677,7 +677,14 @@
             "instrumental-count-other": "{0} elementų",
             "locative-count-other": "{0} elementų"
           },
-          "concentr-permillion": {
+          "concentr-part": {
+            "displayName": "dalelė",
+            "unitPattern-count-one": "{0} dalelė",
+            "unitPattern-count-few": "{0} dalelės",
+            "unitPattern-count-many": "{0} dalelės",
+            "unitPattern-count-other": "{0} dalelių"
+          },
+          "concentr-part-per-1e6": {
             "gender": "feminine",
             "displayName": "milijoninės dalys",
             "unitPattern-count-one": "{0} milijoninė dalis",
@@ -793,6 +800,13 @@
             "genitive-count-other": "{0} molių",
             "instrumental-count-other": "{0} molių",
             "locative-count-other": "{0} molių"
+          },
+          "concentr-ofglucose": {
+            "displayName": "gliukozė",
+            "unitPattern-count-one": "gliukozės kiekis – {0}",
+            "unitPattern-count-few": "gliukozės kiekis – {0}",
+            "unitPattern-count-many": "gliukozės kiekis – {0}",
+            "unitPattern-count-other": "gliukozės kiekis – {0}"
           },
           "consumption-liter-per-kilometer": {
             "gender": "masculine",
@@ -2242,8 +2256,8 @@
             "accusative-count-few": "{0} centimetrus",
             "dative-count-few": "{0} centimetrams",
             "genitive-count-few": "{0} centimetrų",
-            "instrumental-count-few": "{0} centimetruose",
-            "locative-count-few": "{0} centimetrai",
+            "instrumental-count-few": "{0} centimetrais",
+            "locative-count-few": "{0} centimetruose",
             "unitPattern-count-many": "{0} centimetro",
             "accusative-count-many": "{0} centimetro",
             "dative-count-many": "{0} centimetro",
@@ -2539,7 +2553,7 @@
             "genitive-count-one": "{0} kandelos",
             "instrumental-count-one": "{0} kandela",
             "locative-count-one": "{0} kandeloje",
-            "unitPattern-count-few": "{0} cd",
+            "unitPattern-count-few": "{0} kandelos",
             "accusative-count-few": "{0} kandelas",
             "dative-count-few": "{0} kandeloms",
             "genitive-count-few": "{0} kandelų",
@@ -2993,6 +3007,10 @@
             "genitive-count-other": "{0} gysidabrio stulpelio milimetrų",
             "instrumental-count-other": "{0} gysidabrio stulpelio milimetrų",
             "locative-count-other": "{0} gysidabrio stulpelio milimetrų"
+          },
+          "pressure-ofhg": {
+            "displayName": "Hg",
+            "unitPattern-count-other": "{0} Hg"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "svarai kv. colyje",
@@ -3720,6 +3738,10 @@
             "instrumental-count-other": "{0} matavimo puodelių",
             "locative-count-other": "{0} matavimo puodelių"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "metrinės skysčio uncijos",
+            "unitPattern-count-other": "{0} fl oz m."
+          },
           "volume-acre-foot": {
             "displayName": "pėdos akre",
             "unitPattern-count-one": "{0} pėda akre",
@@ -3764,12 +3786,20 @@
             "unitPattern-count-many": "{0} pintos",
             "unitPattern-count-other": "{0} pintų"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "displayName": "stiklinės",
             "unitPattern-count-one": "{0} stiklinė",
             "unitPattern-count-few": "{0} stiklinės",
             "unitPattern-count-many": "{0} stiklinės",
             "unitPattern-count-other": "{0} stiklinių"
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "displayName": "skysčio uncijos",
@@ -3855,37 +3885,228 @@
             "unitPattern-count-many": "{0} imp. kvortos",
             "unitPattern-count-other": "{0} imp. kvortų"
           },
-          "speed-light-speed": {
-            "displayName": "light",
-            "unitPattern-count-other": "{0} light"
+          "angle-steradian": {
+            "displayName": "steradianai",
+            "unitPattern-count-one": "{0} steradianas",
+            "unitPattern-count-few": "{0} steradianai",
+            "unitPattern-count-many": "{0} steradiano",
+            "unitPattern-count-other": "{0} steradianų"
           },
-          "concentr-portion-per-1e9": {
+          "concentr-katal": {
+            "displayName": "kat",
+            "unitPattern-count-other": "{0} kat"
+          },
+          "electric-coulomb": {
+            "displayName": "kulonai",
+            "unitPattern-count-one": "{0} kulonas",
+            "unitPattern-count-few": "{0} kulonai",
+            "unitPattern-count-many": "{0} kulono",
+            "unitPattern-count-other": "{0} kulonų"
+          },
+          "electric-farad": {
+            "displayName": "faradai",
+            "unitPattern-count-one": "{0} faradas",
+            "unitPattern-count-few": "{0} faradai",
+            "unitPattern-count-many": "{0} farado",
+            "unitPattern-count-other": "{0} faradų"
+          },
+          "electric-henry": {
+            "displayName": "henriai",
+            "unitPattern-count-one": "{0} henris",
+            "unitPattern-count-few": "{0} henriai",
+            "unitPattern-count-many": "{0} henrio",
+            "unitPattern-count-other": "{0} henrių"
+          },
+          "electric-siemens": {
+            "displayName": "simensai",
+            "unitPattern-count-one": "{0} simensas",
+            "unitPattern-count-few": "{0} simensai",
+            "unitPattern-count-many": "{0} simenso",
+            "unitPattern-count-other": "{0} simensų"
+          },
+          "energy-calorie-it": {
+            "displayName": "kal.",
+            "unitPattern-count-one": "{0} kalorija",
+            "unitPattern-count-few": "{0} kalorijos",
+            "unitPattern-count-many": "{0} kalorijos",
+            "unitPattern-count-other": "{0} kalorijų"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "bekereliai",
+            "unitPattern-count-one": "{0} < NBTSP>bekerelis",
+            "unitPattern-count-few": "{0} bekereliai",
+            "unitPattern-count-many": "{0} bekerelio",
+            "unitPattern-count-other": "{0} bekerelių"
+          },
+          "energy-sievert": {
+            "displayName": "sivertai",
+            "unitPattern-count-one": "{0} sivertas",
+            "unitPattern-count-few": "{0} sivertai",
+            "unitPattern-count-many": "{0} siverto",
+            "unitPattern-count-other": "{0} sivertų"
+          },
+          "energy-gray": {
+            "displayName": "grėjai",
+            "unitPattern-count-one": "{0} grėjus",
+            "unitPattern-count-few": "{0} grėjai",
+            "unitPattern-count-many": "{0} grėjaus",
+            "unitPattern-count-other": "{0} grėjų"
+          },
+          "force-kilogram-force": {
+            "displayName": "kilogramo jėga",
+            "unitPattern-count-one": "{0} kilogramo jėga",
+            "unitPattern-count-few": "{0} kilogramo jėgos",
+            "unitPattern-count-many": "{0} kilogramo jėgos",
+            "unitPattern-count-other": "{0} kilogramo jėgų"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "tesla",
+            "unitPattern-count-one": "{0} tesla",
+            "unitPattern-count-few": "{0} teslos",
+            "unitPattern-count-many": "{0} teslos",
+            "unitPattern-count-other": "{0} teslų"
+          },
+          "magnetic-weber": {
+            "displayName": "vėberis",
+            "unitPattern-count-one": "{0} vėberis",
+            "unitPattern-count-few": "{0} vėberiai",
+            "unitPattern-count-many": "{0} vėberio",
+            "unitPattern-count-other": "{0} vėberių"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
+          "speed-light-speed": {
+            "displayName": "šviesos greitis",
+            "unitPattern-count-one": "{0} šm",
+            "unitPattern-count-few": "{0} šm",
+            "unitPattern-count-many": "{0} šm",
+            "unitPattern-count-other": "{0} šm"
+          },
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
             "gender": "feminine",
-            "displayName": "milijoninės dalelytės",
-            "unitPattern-count-one": "{0} milijoninė dalelytė",
-            "accusative-count-one": "{0} milijoninę dalelytę",
-            "dative-count-one": "{0} milijoninei dalelytei",
-            "genitive-count-one": "{0} milijoninės dalelytės",
-            "instrumental-count-one": "{0} milijonine dalelyte",
-            "locative-count-one": "{0} milijoninėje dalelytėje",
-            "unitPattern-count-few": "{0} milijoninės dalelytės",
-            "accusative-count-few": "{0} milijonines dalelytes",
-            "dative-count-few": "{0} milijoninėms dalelytėms",
-            "genitive-count-few": "{0} milijoninių dalelyčių",
-            "instrumental-count-few": "{0} milijoninėmis dalelytėmis",
-            "locative-count-few": "{0} milijoninėse dalelytėse",
-            "unitPattern-count-many": "{0} milijoninės dalelytės",
-            "accusative-count-many": "{0} milijoninės dalelytės",
-            "dative-count-many": "{0} milijoninės dalelytės",
-            "genitive-count-many": "{0} milijoninės dalelytės",
-            "instrumental-count-many": "{0} milijoninės dalelytės",
-            "locative-count-many": "{0} milijoninės dalelytės",
-            "unitPattern-count-other": "{0} milijoninių dalelyčių",
-            "accusative-count-other": "{0} milijoninių dalelyčių",
-            "dative-count-other": "{0} milijoninių dalelyčių",
-            "genitive-count-other": "{0} milijoninių dalelyčių",
-            "instrumental-count-other": "{0} milijoninių dalelyčių",
-            "locative-count-other": "{0} milijoninių dalelyčių"
+            "displayName": "milijardinės dalys",
+            "unitPattern-count-one": "{0} milijardinė dalis",
+            "accusative-count-one": "{0} milijardinę dalį",
+            "dative-count-one": "{0} milijardinei daliai",
+            "genitive-count-one": "{0} milijardinės dalies",
+            "instrumental-count-one": "{0} milijardine dalimi",
+            "locative-count-one": "{0} milijardinėje dalyje",
+            "unitPattern-count-few": "{0} milijardinės dalys",
+            "accusative-count-few": "{0} milijardines dalis",
+            "dative-count-few": "{0} milijardinėms dalims",
+            "genitive-count-few": "{0} milijardinių dalių",
+            "instrumental-count-few": "{0} milijardinėmis dalimis",
+            "locative-count-few": "{0} milijardinėse dalyse",
+            "unitPattern-count-many": "{0} milijardinės dalies",
+            "accusative-count-many": "{0} milijardinės dalies",
+            "dative-count-many": "{0} milijardinės dalies",
+            "genitive-count-many": "{0} milijardinės dalies",
+            "instrumental-count-many": "{0} milijardinės dalies",
+            "locative-count-many": "{0} milijardinės dalies",
+            "unitPattern-count-other": "{0} milijardinių dalių",
+            "accusative-count-other": "{0} milijardinių dalių",
+            "dative-count-other": "{0} milijardinių dalių",
+            "genitive-count-other": "{0} milijardinių dalių",
+            "instrumental-count-other": "{0} milijardinių dalių",
+            "locative-count-other": "{0} milijardinių dalių"
           },
           "duration-night": {
             "gender": "feminine",
@@ -4154,7 +4375,14 @@
             "unitPattern-count-many": "{0} elem.",
             "unitPattern-count-other": "{0} elem."
           },
-          "concentr-permillion": {
+          "concentr-part": {
+            "displayName": "dalelė",
+            "unitPattern-count-one": "{0} dalelė",
+            "unitPattern-count-few": "{0} dalelės",
+            "unitPattern-count-many": "{0} dalelės",
+            "unitPattern-count-other": "{0} dalelių"
+          },
+          "concentr-part-per-1e6": {
             "displayName": "ppm",
             "unitPattern-count-other": "{0} ppm"
           },
@@ -4179,6 +4407,10 @@
           "concentr-mole": {
             "displayName": "mol",
             "unitPattern-count-other": "{0} mol"
+          },
+          "concentr-ofglucose": {
+            "displayName": "gliukozė",
+            "unitPattern-count-other": "{0} Glc"
           },
           "consumption-liter-per-kilometer": {
             "displayName": "l/km",
@@ -4369,7 +4601,7 @@
             "unitPattern-count-other": "{0} kcal"
           },
           "energy-calorie": {
-            "displayName": "cal",
+            "displayName": "kal.",
             "unitPattern-count-other": "{0} cal"
           },
           "energy-foodcalorie": {
@@ -4544,10 +4776,10 @@
           },
           "length-light-year": {
             "displayName": "šviesmečiai",
-            "unitPattern-count-one": "{0} šm.",
-            "unitPattern-count-few": "{0} šm.",
-            "unitPattern-count-many": "{0} šm.",
-            "unitPattern-count-other": "{0} šm."
+            "unitPattern-count-one": "{0} šviesm.",
+            "unitPattern-count-few": "{0} šviesm.",
+            "unitPattern-count-many": "{0} šviesm.",
+            "unitPattern-count-other": "{0} šviesm."
           },
           "length-astronomical-unit": {
             "displayName": "AV",
@@ -4711,6 +4943,10 @@
           "pressure-millimeter-ofhg": {
             "displayName": "mm Hg",
             "unitPattern-count-other": "{0} mm Hg"
+          },
+          "pressure-ofhg": {
+            "displayName": "Hg",
+            "unitPattern-count-other": "{0} Hg"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "lb in²",
@@ -4891,6 +5127,10 @@
             "unitPattern-count-many": "{0} mat. puodelio",
             "unitPattern-count-other": "{0} mat. puodelių"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "fl oz m.",
+            "unitPattern-count-other": "{0} fl oz m."
+          },
           "volume-acre-foot": {
             "displayName": "pėda akre",
             "unitPattern-count-one": "{0} ft akre",
@@ -4929,12 +5169,20 @@
             "displayName": "pintos",
             "unitPattern-count-other": "{0} pt"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "displayName": "stikl.",
             "unitPattern-count-one": "{0} stikl.",
             "unitPattern-count-few": "{0} stikl.",
             "unitPattern-count-many": "{0} stikl.",
             "unitPattern-count-other": "{0} stikl."
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "displayName": "skysčio oz",
@@ -5017,16 +5265,174 @@
             "unitPattern-count-many": "{0} imp. kv.",
             "unitPattern-count-other": "{0} imp. kv."
           },
-          "speed-light-speed": {
-            "displayName": "light",
-            "unitPattern-count-other": "{0} light"
+          "angle-steradian": {
+            "displayName": "sr",
+            "unitPattern-count-other": "{0} sr"
           },
-          "concentr-portion-per-1e9": {
-            "displayName": "dalelytė/mln.",
-            "unitPattern-count-one": "{0} dalelytė/mln.",
-            "unitPattern-count-few": "{0} dalelytės/mln.",
-            "unitPattern-count-many": "{0} dalelytės/mln.",
-            "unitPattern-count-other": "{0} dalelyčių/mln."
+          "concentr-katal": {
+            "displayName": "kat",
+            "unitPattern-count-other": "{0} kat"
+          },
+          "electric-coulomb": {
+            "displayName": "C",
+            "unitPattern-count-other": "{0} C"
+          },
+          "electric-farad": {
+            "displayName": "F",
+            "unitPattern-count-other": "{0} F"
+          },
+          "electric-henry": {
+            "displayName": "H",
+            "unitPattern-count-other": "{0} H"
+          },
+          "electric-siemens": {
+            "displayName": "S",
+            "unitPattern-count-other": "{0} S"
+          },
+          "energy-calorie-it": {
+            "displayName": "cal",
+            "unitPattern-count-one": "{0} cal",
+            "unitPattern-count-few": "{0} cal",
+            "unitPattern-count-many": "{0} cal",
+            "unitPattern-count-other": "{0} cal"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "Bq",
+            "unitPattern-count-other": "{0} Bq"
+          },
+          "energy-sievert": {
+            "displayName": "Sv",
+            "unitPattern-count-other": "{0} Sv"
+          },
+          "energy-gray": {
+            "displayName": "Gy",
+            "unitPattern-count-other": "{0} Gy"
+          },
+          "force-kilogram-force": {
+            "displayName": "kgf",
+            "unitPattern-count-other": "{0} kgf"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "T",
+            "unitPattern-count-other": "{0} T"
+          },
+          "magnetic-weber": {
+            "displayName": "Wb",
+            "unitPattern-count-other": "{0} Wb"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
+          "speed-light-speed": {
+            "displayName": "šm",
+            "unitPattern-count-one": "{0} šm",
+            "unitPattern-count-few": "{0} šm",
+            "unitPattern-count-many": "{0} šm",
+            "unitPattern-count-other": "{0} šm"
+          },
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
+            "displayName": "dalis/mlrd.",
+            "unitPattern-count-one": "{0} dal./mlrd.",
+            "unitPattern-count-few": "{0} dal./mlrd.",
+            "unitPattern-count-many": "{0} dal./mlrd.",
+            "unitPattern-count-other": "{0} dal./mlrd."
           },
           "duration-night": {
             "displayName": "nakt.",
@@ -5274,7 +5680,14 @@
             "unitPattern-count-many": "{0} elem.",
             "unitPattern-count-other": "{0} elem."
           },
-          "concentr-permillion": {
+          "concentr-part": {
+            "displayName": "dalelė",
+            "unitPattern-count-one": "{0} dal.",
+            "unitPattern-count-few": "{0} dal.",
+            "unitPattern-count-many": "{0} dal.",
+            "unitPattern-count-other": "{0} dal."
+          },
+          "concentr-part-per-1e6": {
             "displayName": "ppm",
             "unitPattern-count-other": "{0} ppm"
           },
@@ -5299,6 +5712,10 @@
           "concentr-mole": {
             "displayName": "mol",
             "unitPattern-count-other": "{0} mol"
+          },
+          "concentr-ofglucose": {
+            "displayName": "gliukozė",
+            "unitPattern-count-other": "{0} Glc"
           },
           "consumption-liter-per-kilometer": {
             "displayName": "l/km",
@@ -5489,7 +5906,7 @@
             "unitPattern-count-other": "{0} kcal"
           },
           "energy-calorie": {
-            "displayName": "cal",
+            "displayName": "kal.",
             "unitPattern-count-other": "{0} cal"
           },
           "energy-foodcalorie": {
@@ -5664,10 +6081,10 @@
           },
           "length-light-year": {
             "displayName": "šviesmečiai",
-            "unitPattern-count-one": "{0} šm.",
-            "unitPattern-count-few": "{0} šm.",
-            "unitPattern-count-many": "{0} šm.",
-            "unitPattern-count-other": "{0} šm."
+            "unitPattern-count-one": "{0} šviesm.",
+            "unitPattern-count-few": "{0} šviesm.",
+            "unitPattern-count-many": "{0} šviesm.",
+            "unitPattern-count-other": "{0} šviesm."
           },
           "length-astronomical-unit": {
             "displayName": "AV",
@@ -5831,6 +6248,10 @@
           "pressure-millimeter-ofhg": {
             "displayName": "mm Hg",
             "unitPattern-count-other": "{0} mm Hg"
+          },
+          "pressure-ofhg": {
+            "displayName": "Hg",
+            "unitPattern-count-other": "{0} Hg"
           },
           "pressure-pound-force-per-square-inch": {
             "displayName": "lb in²",
@@ -6014,6 +6435,10 @@
             "unitPattern-count-many": "{0} mat. puodelio",
             "unitPattern-count-other": "{0} mat. puodelių"
           },
+          "volume-fluid-ounce-metric": {
+            "displayName": "fl oz m.",
+            "unitPattern-count-other": "{0} fl oz m."
+          },
           "volume-acre-foot": {
             "displayName": "ft akre",
             "unitPattern-count-one": "{0} ft akre",
@@ -6052,12 +6477,20 @@
             "displayName": "pintos",
             "unitPattern-count-other": "{0} pt"
           },
+          "volume-pint-imperial": {
+            "displayName": "pint Imp.",
+            "unitPattern-count-other": "{0} pt Imp."
+          },
           "volume-cup": {
             "displayName": "stikl.",
             "unitPattern-count-one": "{0} stikl.",
             "unitPattern-count-few": "{0} stikl.",
             "unitPattern-count-many": "{0} stikl.",
             "unitPattern-count-other": "{0} stikl."
+          },
+          "volume-cup-imperial": {
+            "displayName": "cup Imp.",
+            "unitPattern-count-other": "{0} cup Imp."
           },
           "volume-fluid-ounce": {
             "displayName": "skysčio oz",
@@ -6140,16 +6573,174 @@
             "unitPattern-count-many": "{0} imp. kv.",
             "unitPattern-count-other": "{0} imp. kv."
           },
-          "speed-light-speed": {
-            "displayName": "light",
-            "unitPattern-count-other": "{0} light"
+          "angle-steradian": {
+            "displayName": "sr",
+            "unitPattern-count-other": "{0} sr"
           },
-          "concentr-portion-per-1e9": {
-            "displayName": "dalelytė/mln.",
-            "unitPattern-count-one": "{0} dalelytė/mln.",
-            "unitPattern-count-few": "{0} dalelytės/mln.",
-            "unitPattern-count-many": "{0} dalelytės/mln.",
-            "unitPattern-count-other": "{0} dalelyčių/mln."
+          "concentr-katal": {
+            "displayName": "kat",
+            "unitPattern-count-other": "{0} kat"
+          },
+          "electric-coulomb": {
+            "displayName": "C",
+            "unitPattern-count-other": "{0} C"
+          },
+          "electric-farad": {
+            "displayName": "F",
+            "unitPattern-count-other": "{0} F"
+          },
+          "electric-henry": {
+            "displayName": "H",
+            "unitPattern-count-other": "{0} H"
+          },
+          "electric-siemens": {
+            "displayName": "S",
+            "unitPattern-count-other": "{0} S"
+          },
+          "energy-calorie-it": {
+            "displayName": "cal",
+            "unitPattern-count-one": "{0} cal",
+            "unitPattern-count-few": "{0} cal",
+            "unitPattern-count-many": "{0} cal",
+            "unitPattern-count-other": "{0} cal"
+          },
+          "energy-british-thermal-unit-it": {
+            "displayName": "BTU-IT",
+            "unitPattern-count-other": "{0} BTU-IT"
+          },
+          "energy-becquerel": {
+            "displayName": "Bq",
+            "unitPattern-count-other": "{0} Bq"
+          },
+          "energy-sievert": {
+            "displayName": "Sv",
+            "unitPattern-count-other": "{0} Sv"
+          },
+          "energy-gray": {
+            "displayName": "Gy",
+            "unitPattern-count-other": "{0} Gy"
+          },
+          "force-kilogram-force": {
+            "displayName": "kgf",
+            "unitPattern-count-other": "{0} kgf"
+          },
+          "length-rod": {
+            "displayName": "rod",
+            "unitPattern-count-other": "{0} rod"
+          },
+          "length-chain": {
+            "displayName": "chain",
+            "unitPattern-count-other": "{0} chain"
+          },
+          "magnetic-tesla": {
+            "displayName": "T",
+            "unitPattern-count-other": "{0} T"
+          },
+          "magnetic-weber": {
+            "displayName": "Wb",
+            "unitPattern-count-other": "{0} Wb"
+          },
+          "temperature-rankine": {
+            "displayName": "°R",
+            "unitPattern-count-other": "{0} °R"
+          },
+          "duration-fortnight": {
+            "displayName": "fortnight",
+            "unitPattern-count-other": "{0} fw"
+          },
+          "mass-slug": {
+            "displayName": "slug",
+            "unitPattern-count-other": "{0} slug"
+          },
+          "pressure-gasoline-energy-density": {
+            "displayName": "gas E",
+            "unitPattern-count-other": "{0} gas E"
+          },
+          "length-rin": {
+            "displayName": "rin [JP]",
+            "unitPattern-count-other": "{0} rin [JP]"
+          },
+          "length-sun": {
+            "displayName": "sun [JP]",
+            "unitPattern-count-other": "{0} sun [JP]"
+          },
+          "length-shaku-length": {
+            "displayName": "shaku [JP]",
+            "unitPattern-count-other": "{0} shaku [JP]"
+          },
+          "length-shaku-cloth": {
+            "displayName": "shaku [cloth, JP]",
+            "unitPattern-count-other": "{0} shaku [cloth, JP]"
+          },
+          "length-ken": {
+            "displayName": "ken [JP]",
+            "unitPattern-count-other": "{0} ken [JP]"
+          },
+          "length-jo-jp": {
+            "displayName": "jo [JP]",
+            "unitPattern-count-other": "{0} jo [JP]"
+          },
+          "length-ri-jp": {
+            "displayName": "ri [JP]",
+            "unitPattern-count-other": "{0} ri [JP]"
+          },
+          "area-bu-jp": {
+            "displayName": "bu [JP]",
+            "unitPattern-count-other": "{0} bu [JP]"
+          },
+          "area-se-jp": {
+            "displayName": "se [JP]",
+            "unitPattern-count-other": "{0} se [JP]"
+          },
+          "area-cho": {
+            "displayName": "cho [JP]",
+            "unitPattern-count-other": "{0} cho [JP]"
+          },
+          "volume-kosaji": {
+            "displayName": "kosaji [JP]",
+            "unitPattern-count-other": "{0} kosaji [JP]"
+          },
+          "volume-osaji": {
+            "displayName": "osaji [JP]",
+            "unitPattern-count-other": "{0} osaji [JP]"
+          },
+          "volume-cup-jp": {
+            "displayName": "cup [JP]",
+            "unitPattern-count-other": "{0} cup [JP]"
+          },
+          "volume-shaku": {
+            "displayName": "shaku [vol, JP]",
+            "unitPattern-count-other": "{0} shaku [vol, JP]"
+          },
+          "volume-sai": {
+            "displayName": "sai [JP]",
+            "unitPattern-count-other": "{0} sai [JP]"
+          },
+          "volume-to-jp": {
+            "displayName": "to [JP]",
+            "unitPattern-count-other": "{0} to [JP]"
+          },
+          "volume-koku": {
+            "displayName": "koku [JP]",
+            "unitPattern-count-other": "{0} koku [JP]"
+          },
+          "speed-light-speed": {
+            "displayName": "šm",
+            "unitPattern-count-one": "{0} šm",
+            "unitPattern-count-few": "{0} šm",
+            "unitPattern-count-many": "{0} šm",
+            "unitPattern-count-other": "{0} šm"
+          },
+          "mass-fun": {
+            "displayName": "fun [JP]",
+            "unitPattern-count-other": "{0} fun [JP]"
+          },
+          "concentr-part-per-1e9": {
+            "displayName": "dalis/mlrd.",
+            "unitPattern-count-one": "{0} dal./mlrd.",
+            "unitPattern-count-few": "{0} dal./mlrd.",
+            "unitPattern-count-many": "{0} dal./mlrd.",
+            "unitPattern-count-other": "{0} dal./mlrd."
           },
           "duration-night": {
             "displayName": "nakt.",

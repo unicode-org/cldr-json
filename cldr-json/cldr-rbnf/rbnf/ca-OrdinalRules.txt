@@ -1,0 +1,14 @@
+%digits-ordinal:
+0: =%digits-ordinal-masculine=;
+%digits-ordinal-masculine:
+-x: −>>;
+0: =#,##0=$(ordinal,one{r}two{n}few{t}other{è})$;
+%digits-ordinal-masculine-plural:
+-x: −>>;
+0: =#,##0=$(ordinal,one{rs}few{ts}other{ns})$;
+%digits-ordinal-feminine:
+-x: −>>;
+0: =#,##0=a;
+%digits-ordinal-feminine-plural:
+-x: −>>;
+0: =#,##0=es;

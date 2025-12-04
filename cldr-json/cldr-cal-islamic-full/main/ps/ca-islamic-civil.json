@@ -14,7 +14,7 @@
                   "2": "صفر",
                   "3": "ربيع",
                   "4": "ربيع II",
-                  "5": "جماد",
+                  "5": "جماد I",
                   "6": "جماد ۲",
                   "7": "رجب",
                   "8": "شعبان",
@@ -40,9 +40,9 @@
                 "wide": {
                   "1": "محرم",
                   "2": "صفر",
-                  "3": "ربيع",
+                  "3": "ربیع اول",
                   "4": "ربيع II",
-                  "5": "جماعه",
+                  "5": "جمادي اول",
                   "6": "جماعه II",
                   "7": "رجب",
                   "8": "شعبان",
@@ -58,7 +58,7 @@
                   "2": "صفر",
                   "3": "ربيع",
                   "4": "ربيع II",
-                  "5": "جماد",
+                  "5": "جماد I",
                   "6": "جماد ۲",
                   "7": "رجب",
                   "8": "شعبان",
@@ -84,9 +84,9 @@
                 "wide": {
                   "1": "محرم",
                   "2": "صفر",
-                  "3": "ربيع",
+                  "3": "ربیع اول",
                   "4": "ربيع II",
-                  "5": "جماعه",
+                  "5": "جمادي اول",
                   "6": "جماعه II",
                   "7": "رجب",
                   "8": "شعبان",
@@ -249,18 +249,21 @@
             },
             "eras": {
               "eraNames": {
-                "0": "AH"
+                "0": "AH",
+                "1": "BH"
               },
               "eraAbbr": {
-                "0": "AH"
+                "0": "AH",
+                "1": "BH"
               },
               "eraNarrow": {
-                "0": "AH"
+                "0": "AH",
+                "1": "BH"
               }
             },
             "dateFormats": {
-              "full": "EEEE د G y د MMMM d",
-              "long": "د G y د MMMM d",
+              "full": "G y MMMM d, EEEE",
+              "long": "G y MMMM d",
               "medium": "G y MMM d",
               "short": "GGGGG y/M/d"
             },
@@ -293,15 +296,19 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "d, E",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyM": "M/y G",
                 "GyMd": "M/d/y GGGGG",
+                "GyMEd": "E, M/d/y G",
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G y MMM d",
                 "GyMMMEd": "G y MMM d, E",
@@ -311,6 +318,8 @@
                 "Hm": "H:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "H:mm:ss",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "M/d",
                 "MEd": "MM-dd, E",
@@ -456,18 +465,18 @@
                   "y": "G y–y"
                 },
                 "yM": {
-                  "M": "GGGGG y-MM – y-MM",
-                  "y": "GGGGG y-MM – y-MM"
+                  "M": "G y-MM – y-MM",
+                  "y": "G y-MM – y-MM"
                 },
                 "yMd": {
-                  "d": "GGGGG y-MM-dd – y-MM-dd",
-                  "M": "GGGGG y-MM-dd – y-MM-dd",
-                  "y": "GGGGG y-MM-dd – y-MM-dd"
+                  "d": "G y-MM-dd – y-MM-dd",
+                  "M": "G y-MM-dd – y-MM-dd",
+                  "y": "G y-MM-dd – y-MM-dd"
                 },
                 "yMEd": {
-                  "d": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "M": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "y": "GGGGG y-MM-dd, E – y-MM-dd, E"
+                  "d": "G y-MM-dd, E – y-MM-dd, E",
+                  "M": "G y-MM-dd, E – y-MM-dd, E",
+                  "y": "G y-MM-dd, E – y-MM-dd, E"
                 },
                 "yMMM": {
                   "M": "G y MMM–MMM",
@@ -490,6 +499,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} {0}",
+                "long": "{1} {0}",
+                "medium": "{1} {0}",
+                "short": "{1} {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1} {0}",
                 "long": "{1} {0}",

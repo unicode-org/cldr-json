@@ -112,11 +112,11 @@
                 "narrow": {
                   "sun": "آچر",
                   "mon": "سو",
-                  "tue": "اڱارو",
+                  "tue": "اڱ",
                   "wed": "اربع",
                   "thu": "خم",
-                  "fri": "جمعو",
-                  "sat": "ڇنڇر"
+                  "fri": "جم",
+                  "sat": "ڇن"
                 },
                 "short": {
                   "sun": "آچر",
@@ -150,11 +150,11 @@
                 "narrow": {
                   "sun": "آچر",
                   "mon": "سو",
-                  "tue": "اڱارو",
+                  "tue": "اڱ",
                   "wed": "اربع",
                   "thu": "خم",
-                  "fri": "جمعو",
-                  "sat": "ڇنڇر"
+                  "fri": "جم",
+                  "sat": "ڇن"
                 },
                 "short": {
                   "sun": "آچر",
@@ -179,10 +179,10 @@
             "quarters": {
               "format": {
                 "abbreviated": {
-                  "1": "Q1",
-                  "2": "Q2",
-                  "3": "Q3",
-                  "4": "Q5"
+                  "1": "پهرين ٽماهي",
+                  "2": "ٻين ٽماهي",
+                  "3": "ٽين ٽماهي",
+                  "4": "چوٿين ٽماهي"
                 },
                 "narrow": {
                   "1": "1",
@@ -199,10 +199,10 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "1": "Q1",
-                  "2": "Q2",
-                  "3": "Q3",
-                  "4": "Q4"
+                  "1": "پهرين ٽماهي",
+                  "2": "ٻين ٽماهي",
+                  "3": "ٽين ٽماهي",
+                  "4": "چوٿين ٽماهي"
                 },
                 "narrow": {
                   "1": "1",
@@ -221,12 +221,12 @@
             "dayPeriods": {
               "format": {
                 "abbreviated": {
-                  "am": "صبح، منجهند",
-                  "pm": "شام، منجهند"
+                  "am": "صبح",
+                  "pm": "شام"
                 },
                 "narrow": {
-                  "am": "صبح، منجهند",
-                  "pm": "منجهند، شام"
+                  "am": "صبح",
+                  "pm": "شام"
                 },
                 "wide": {
                   "am": "صبح، منجهند",
@@ -235,12 +235,12 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "am": "صبح، منجهند",
-                  "pm": "منجهند، شام"
+                  "am": "صبح",
+                  "pm": "شام"
                 },
                 "narrow": {
-                  "am": "صبح، منجهند",
-                  "pm": "منجهند، شام"
+                  "am": "صبح",
+                  "pm": "شام"
                 },
                 "wide": {
                   "am": "صبح، منجهند",
@@ -971,7 +971,7 @@
               "full": "G y MMMM d, EEEE",
               "long": "G y MMMM d",
               "medium": "G y MMM d",
-              "short": "GGGGG y-MM-dd"
+              "short": "G y-MM-dd"
             },
             "dateSkeletons": {
               "full": "GyMMMMEEEEd",
@@ -1002,15 +1002,19 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "d, E",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
+                "GyM": "G y-MM",
                 "GyMd": "M/d/y GGGGG",
+                "GyMEd": "G y-MM-dd, E",
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G y MMM d",
                 "GyMMMEd": "G y MMM d, E",
@@ -1020,6 +1024,8 @@
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "MM-dd",
                 "MEd": "MM-dd, E",
@@ -1030,9 +1036,9 @@
                 "ms": "mm:ss",
                 "y": "G y",
                 "yyyy": "G y",
-                "yyyyM": "GGGGG y-MM",
-                "yyyyMd": "GGGGG y-MM-dd",
-                "yyyyMEd": "GGGGG y-MM-dd, E",
+                "yyyyM": "G y-MM",
+                "yyyyMd": "G y-MM-dd",
+                "yyyyMEd": "G y-MM-dd, E",
                 "yyyyMMM": "G y MMM",
                 "yyyyMMMd": "G y MMM d",
                 "yyyyMMMEd": "G y MMM d, E",
@@ -1072,21 +1078,21 @@
                   "y": "G y–y"
                 },
                 "GyM": {
-                  "G": "GGGGG y-MM – GGGGG y-MM",
-                  "M": "GGGGG y-MM – y-MM",
-                  "y": "GGGGG y-MM – y-MM"
+                  "G": "G y-MM – G y-MM",
+                  "M": "G y-MM – y-MM",
+                  "y": "G y-MM – y-MM"
                 },
                 "GyMd": {
-                  "d": "GGGGG y-MM-dd – y-MM-dd",
-                  "G": "GGGGG y-MM-dd – GGGGG y-MM-dd",
-                  "M": "GGGGG y-MM-dd – y-MM-dd",
-                  "y": "GGGGG y-MM-dd – y-MM-dd"
+                  "d": "G y-MM-dd – y-MM-dd",
+                  "G": "G y-MM-dd – G y-MM-dd",
+                  "M": "G y-MM-dd – y-MM-dd",
+                  "y": "G y-MM-dd – y-MM-dd"
                 },
                 "GyMEd": {
-                  "d": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "G": "GGGGG y-MM-dd, E – GGGGG y-MM-dd, E",
-                  "M": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "y": "GGGGG y-MM-dd, E – y-MM-dd, E"
+                  "d": "G y-MM-dd, E – y-MM-dd, E",
+                  "G": "G y-MM-dd, E – G y-MM-dd, E",
+                  "M": "G y-MM-dd, E – y-MM-dd, E",
+                  "y": "G y-MM-dd, E – y-MM-dd, E"
                 },
                 "GyMMM": {
                   "G": "G y MMM – G y MMM",
@@ -1163,18 +1169,18 @@
                   "y": "G y–y"
                 },
                 "yM": {
-                  "M": "GGGGG y-MM – y-MM",
-                  "y": "GGGGG y-MM – y-MM"
+                  "M": "G y-MM – y-MM",
+                  "y": "G y-MM – y-MM"
                 },
                 "yMd": {
-                  "d": "GGGGG y-MM-dd – y-MM-dd",
-                  "M": "GGGGG y-MM-dd – y-MM-dd",
-                  "y": "GGGGG y-MM-dd – y-MM-dd"
+                  "d": "G y-MM-dd – y-MM-dd",
+                  "M": "G y-MM-dd – y-MM-dd",
+                  "y": "G y-MM-dd – y-MM-dd"
                 },
                 "yMEd": {
-                  "d": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "M": "GGGGG y-MM-dd, E – y-MM-dd, E",
-                  "y": "GGGGG y-MM-dd, E – y-MM-dd, E"
+                  "d": "G y-MM-dd, E – y-MM-dd, E",
+                  "M": "G y-MM-dd, E – y-MM-dd, E",
+                  "y": "G y-MM-dd, E – y-MM-dd, E"
                 },
                 "yMMM": {
                   "M": "G y MMM–MMM",
@@ -1197,6 +1203,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} {0}",
+                "long": "{1} {0}",
+                "medium": "{1} {0}",
+                "short": "{1} {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1} {0}",
                 "long": "{1} {0}",

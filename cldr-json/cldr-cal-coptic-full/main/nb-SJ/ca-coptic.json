@@ -292,16 +292,13 @@
             },
             "eras": {
               "eraNames": {
-                "0": "0. tidsalder",
-                "1": "1. tidsalder"
+                "1": "AM"
               },
               "eraAbbr": {
-                "0": "0. t.a.",
-                "1": "1. t.a."
+                "1": "AM"
               },
               "eraNarrow": {
-                "0": "TA0",
-                "1": "TA1"
+                "1": "AM"
               }
             },
             "dateFormats": {
@@ -343,24 +340,30 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d.",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "E d.",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
-                "GyMd": "dd.MM.y GGGGG",
+                "GyM": "M.y G",
+                "GyMd": "dd.MM.y G",
+                "GyMEd": "E d.M.y G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d. MMM y G",
                 "GyMMMEd": "E d. MMM y G",
                 "h": "h a",
-                "H": "HH",
+                "H": "H",
                 "hm": "h:mm a",
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
+                "hv": "h a v",
+                "Hv": "HH't' v",
                 "M": "L.",
                 "Md": "d.M.",
                 "MEd": "E d.M",
@@ -540,6 +543,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} 'kl'. {0}",
+                "long": "{1} 'kl'. {0}",
+                "medium": "{1} {0}",
+                "short": "{1} {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1} 'kl'. {0}",
                 "long": "{1} 'kl'. {0}",

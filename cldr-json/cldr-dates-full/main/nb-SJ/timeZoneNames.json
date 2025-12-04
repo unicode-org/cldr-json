@@ -10,6 +10,7 @@
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
+          "gmtUnknownFormat": "GMT+?",
           "regionFormat": "tidssone for {0}",
           "regionFormat-type-daylight": "sommertid – {0}",
           "regionFormat-type-standard": "normaltid – {0}",
@@ -18,11 +19,6 @@
             "Pacific": {
               "Honolulu": {
                 "_type": "zone",
-                "short": {
-                  "generic": "HST",
-                  "standard": "HST",
-                  "daylight": "HDT"
-                },
                 "exemplarCity": "Honolulu"
               },
               "Easter": {
@@ -43,10 +39,6 @@
               },
               "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "Enderbury"
-              },
-              "Kanton": {
-                "_type": "zone",
                 "exemplarCity": "Kantonøya"
               },
               "Noumea": {
@@ -56,6 +48,10 @@
               "Norfolk": {
                 "_type": "zone",
                 "exemplarCity": "Norfolkøya"
+              },
+              "Wallis": {
+                "_type": "zone",
+                "exemplarCity": "Wallis & Futuna"
               }
             },
             "Etc": {
@@ -232,6 +228,10 @@
                 "_type": "zone",
                 "exemplarCity": "Yangon"
               },
+              "Hovd": {
+                "_type": "zone",
+                "exemplarCity": "Khovd"
+              },
               "Ulaanbaatar": {
                 "_type": "zone",
                 "exemplarCity": "Ulan Bator"
@@ -290,6 +290,10 @@
               }
             },
             "Antarctica": {
+              "Syowa": {
+                "_type": "zone",
+                "exemplarCity": "Showa"
+              },
               "DumontDUrville": {
                 "_type": "zone",
                 "exemplarCity": "Dumont-d’Urville"
@@ -297,6 +301,10 @@
             },
             "America": {
               "Argentina": {
+                "Rio_Gallegos": {
+                  "_type": "zone",
+                  "exemplarCity": "Río Gallegos"
+                },
                 "Tucuman": {
                   "_type": "zone",
                   "exemplarCity": "Tucumán"
@@ -309,6 +317,10 @@
               "St_Barthelemy": {
                 "_type": "zone",
                 "exemplarCity": "Saint-Barthélemy"
+              },
+              "Eirunepe": {
+                "_type": "zone",
+                "exemplarCity": "Eirunepé"
               },
               "Cuiaba": {
                 "_type": "zone",
@@ -378,6 +390,10 @@
                 "_type": "zone",
                 "exemplarCity": "Ciudad Juárez"
               },
+              "Mazatlan": {
+                "_type": "zone",
+                "exemplarCity": "Mazatlán"
+              },
               "Bahia_Banderas": {
                 "_type": "zone",
                 "exemplarCity": "Bahía Banderas"
@@ -393,6 +409,10 @@
               "Cancun": {
                 "_type": "zone",
                 "exemplarCity": "Cancún"
+              },
+              "Miquelon": {
+                "_type": "zone",
+                "exemplarCity": "Saint-Pierre"
               },
               "Asuncion": {
                 "_type": "zone",
@@ -542,6 +562,10 @@
                 "_type": "zone",
                 "exemplarCity": "São Tomé"
               },
+              "Ndjamena": {
+                "_type": "zone",
+                "exemplarCity": "N’Djamena"
+              },
               "Lome": {
                 "_type": "zone",
                 "exemplarCity": "Lomé"
@@ -582,9 +606,7 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "vestafrikansk tid",
-                "standard": "vestafrikansk normaltid",
-                "daylight": "vestafrikansk sommertid"
+                "standard": "vestafrikansk tid"
               }
             },
             "Alaska": {
@@ -1018,6 +1040,14 @@
             "Guyana": {
               "long": {
                 "standard": "guyansk tid"
+              }
+            },
+            "Hawaii": {
+              "long": {
+                "standard": "normaltid for Hawaii og Aleutene"
+              },
+              "short": {
+                "standard": "HAST"
               }
             },
             "Hawaii_Aleutian": {

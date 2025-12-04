@@ -1,0 +1,14 @@
+%digits-ordinal-masculine:
+-x: −>>;
+x.x: =#,##,##0.0=;
+0: =#,##,##0=$(ordinal,one{ला}two{रा}few{था}many{ठा}other{वाँ})$;
+%digits-ordinal-masculine-oblique:
+-x: −>>;
+x.x: =#,##,##0.0=;
+0: =#,##,##0=$(ordinal,one{ले}two{रे}few{थे}many{ठे}other{वें})$;
+%digits-ordinal-feminine:
+-x: −>>;
+x.x: =#,##,##0.0=;
+0: =#,##,##0=$(ordinal,one{ली}two{री}few{थी}many{ठी}other{वीँ})$;
+%digits-ordinal:
+0: =%digits-ordinal-masculine=;

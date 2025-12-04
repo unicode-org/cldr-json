@@ -338,15 +338,19 @@
                 "Bhms": "B h:mm:ss",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E B h-ին",
                 "EBhm": "E B h:mm-ին",
                 "EBhms": "E B h:mm:ss",
                 "Ed": "d, ccc",
+                "Eh": "E h a",
                 "Ehm": "E, h:mm a",
                 "EHm": "E, HH:mm",
                 "Ehms": "E, h:mm:ss a",
                 "EHms": "E, HH:mm:ss",
                 "Gy": "G y թ.",
-                "GyMd": "dd.MM.y GGGGG",
+                "GyM": "G MM.y",
+                "GyMd": "GGGGG dd.MM.y",
+                "GyMEd": "G dd.MM.y, E",
                 "GyMMM": "G y թ. MMM",
                 "GyMMMd": "G y թ․ MMM d",
                 "GyMMMEd": "G y թ. MMM d, E",
@@ -360,20 +364,22 @@
                 "Hmsv": "HH:mm:ss v",
                 "hmv": "h:mm a v",
                 "Hmv": "HH:mm v",
+                "hv": "h a v",
+                "Hv": "ժ․ HH v",
                 "M": "L",
                 "Md": "dd.MM",
                 "MEd": "dd.MM, E",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
-                "MMMEd": "d MMM, E",
-                "MMMMd": "d MMMM",
+                "MMMEd": "MMM d, E",
+                "MMMMd": "MMMM d",
                 "MMMMW-count-one": "MMMM W-ին շաբաթ",
                 "MMMMW-count-other": "MMMM W-րդ շաբաթ",
                 "ms": "mm:ss",
                 "y": "y",
                 "yM": "MM.y",
                 "yMd": "dd.MM.y",
-                "yMEd": "d.MM.y թ., E",
+                "yMEd": "d.MM.y, E",
                 "yMMM": "y թ. LLL",
                 "yMMMd": "d MMM, y թ.",
                 "yMMMEd": "y թ. MMM d, E",
@@ -411,7 +417,7 @@
                   "d": "d–d"
                 },
                 "Gy": {
-                  "G": "G y – G y",
+                  "G": "G y թ․ – G y թ․",
                   "y": "G y–y թթ․"
                 },
                 "GyM": {
@@ -540,6 +546,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1}, {0}",
+                "long": "{1}, {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1}, {0}",
                 "long": "{1}, {0}",

@@ -10,41 +10,12 @@
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
           "gmtZeroFormat": "GMT",
+          "gmtUnknownFormat": "GMT+?",
           "regionFormat": "{0} Time",
-          "regionFormat-type-daylight": "{0} Daylight Saving Time",
+          "regionFormat-type-daylight": "{0} Daylight Time",
           "regionFormat-type-standard": "{0} Standard Time",
           "fallbackFormat": "{1} ({0})",
           "zone": {
-            "Pacific": {
-              "Honolulu": {
-                "_type": "zone",
-                "short": {
-                  "generic": "HST",
-                  "standard": "HST",
-                  "daylight": "HDT"
-                }
-              },
-              "Easter": {
-                "_type": "zone",
-                "exemplarCity": "Easter Island"
-              },
-              "Truk": {
-                "_type": "zone",
-                "exemplarCity": "Chuuk"
-              },
-              "Ponape": {
-                "_type": "zone",
-                "exemplarCity": "Pohnpei"
-              },
-              "Norfolk": {
-                "_type": "zone",
-                "exemplarCity": "Norfolk Island"
-              },
-              "Wake": {
-                "_type": "zone",
-                "exemplarCity": "Wake Island"
-              }
-            },
             "Etc": {
               "UTC": {
                 "_type": "zone",
@@ -57,29 +28,127 @@
               },
               "Unknown": {
                 "_type": "zone",
-                "exemplarCity": "Unknown City"
+                "exemplarCity": "Unknown Location"
+              }
+            },
+            "Europe": {
+              "Tirane": {
+                "_type": "zone",
+                "exemplarCity": "Tirana"
+              },
+              "Busingen": {
+                "_type": "zone",
+                "exemplarCity": "Büsingen"
+              },
+              "London": {
+                "_type": "zone",
+                "long": {
+                  "daylight": "British Summer Time"
+                }
+              },
+              "Dublin": {
+                "_type": "zone",
+                "long": {
+                  "daylight": "Irish Standard Time"
+                }
+              },
+              "Chisinau": {
+                "_type": "zone",
+                "exemplarCity": "Chișinău"
+              },
+              "Kiev": {
+                "_type": "zone",
+                "exemplarCity": "Kyiv"
               }
             },
             "Antarctica": {
+              "Rothera": {
+                "_type": "zone",
+                "exemplarCity": "Rothera Station"
+              },
+              "Palmer": {
+                "_type": "zone",
+                "exemplarCity": "Palmer Land"
+              },
+              "Troll": {
+                "_type": "zone",
+                "exemplarCity": "Troll Station"
+              },
+              "Syowa": {
+                "_type": "zone",
+                "exemplarCity": "Showa Station"
+              },
+              "Mawson": {
+                "_type": "zone",
+                "exemplarCity": "Mawson Station"
+              },
+              "Vostok": {
+                "_type": "zone",
+                "exemplarCity": "Vostok Station"
+              },
+              "Casey": {
+                "_type": "zone",
+                "exemplarCity": "Casey Station"
+              },
               "DumontDUrville": {
                 "_type": "zone",
-                "exemplarCity": "Dumont-d’Urville"
+                "exemplarCity": "Dumont d’Urville Station"
+              },
+              "McMurdo": {
+                "_type": "zone",
+                "exemplarCity": "McMurdo Station"
               },
               "Macquarie": {
                 "_type": "zone",
                 "exemplarCity": "Macquarie Island"
               }
             },
-            "Australia": {
-              "Lord_Howe": {
-                "_type": "zone",
-                "exemplarCity": "Lord Howe Island"
-              }
-            },
             "America": {
+              "Argentina": {
+                "Rio_Gallegos": {
+                  "_type": "zone",
+                  "exemplarCity": "Río Gallegos"
+                },
+                "Tucuman": {
+                  "_type": "zone",
+                  "exemplarCity": "Tucumán"
+                }
+              },
+              "Cordoba": {
+                "_type": "zone",
+                "exemplarCity": "Córdoba"
+              },
               "St_Barthelemy": {
                 "_type": "zone",
                 "exemplarCity": "Saint-Barthélemy"
+              },
+              "Eirunepe": {
+                "_type": "zone",
+                "exemplarCity": "Eirunepé"
+              },
+              "Cuiaba": {
+                "_type": "zone",
+                "exemplarCity": "Cuiabá"
+              },
+              "Santarem": {
+                "_type": "zone",
+                "exemplarCity": "Santarém"
+              },
+              "Belem": {
+                "_type": "zone",
+                "exemplarCity": "Belém"
+              },
+              "Araguaina": {
+                "_type": "zone",
+                "exemplarCity": "Araguaína"
+              },
+              "Sao_Paulo": {
+                "_type": "zone",
+                "exemplarCity": "São Paulo"
+              },
+              "Maceio": {
+                "_type": "zone",
+                "exemplarCity": "Maceió"
               },
               "Noronha": {
                 "_type": "zone",
@@ -92,6 +161,10 @@
               "St_Johns": {
                 "_type": "zone",
                 "exemplarCity": "Saint John’s"
+              },
+              "Bogota": {
+                "_type": "zone",
+                "exemplarCity": "Bogotá"
               },
               "Curacao": {
                 "_type": "zone",
@@ -117,9 +190,17 @@
                 "_type": "zone",
                 "exemplarCity": "Ciudad Juárez"
               },
+              "Mazatlan": {
+                "_type": "zone",
+                "exemplarCity": "Mazatlán"
+              },
               "Bahia_Banderas": {
                 "_type": "zone",
                 "exemplarCity": "Bahía de Banderas"
+              },
+              "Mexico_City": {
+                "_type": "zone",
+                "exemplarCity": "Mexico City"
               },
               "Merida": {
                 "_type": "zone",
@@ -128,6 +209,10 @@
               "Cancun": {
                 "_type": "zone",
                 "exemplarCity": "Cancún"
+              },
+              "Miquelon": {
+                "_type": "zone",
+                "exemplarCity": "Saint-Pierre"
               },
               "Asuncion": {
                 "_type": "zone",
@@ -196,6 +281,12 @@
                 "exemplarCity": "Saint Thomas"
               }
             },
+            "Australia": {
+              "Lord_Howe": {
+                "_type": "zone",
+                "exemplarCity": "Lord Howe Island"
+              }
+            },
             "Indian": {
               "Cocos": {
                 "_type": "zone",
@@ -205,61 +296,113 @@
                 "_type": "zone",
                 "exemplarCity": "Christmas Island"
               },
+              "Chagos": {
+                "_type": "zone",
+                "exemplarCity": "Chagos Archipelago"
+              },
+              "Comoro": {
+                "_type": "zone",
+                "exemplarCity": "Comoros"
+              },
               "Reunion": {
                 "_type": "zone",
                 "exemplarCity": "Réunion"
+              },
+              "Mahe": {
+                "_type": "zone",
+                "exemplarCity": "Mahé"
+              },
+              "Kerguelen": {
+                "_type": "zone",
+                "exemplarCity": "Kerguelen Islands"
               }
             },
-            "Africa": {
-              "Asmera": {
+            "Pacific": {
+              "Easter": {
                 "_type": "zone",
-                "exemplarCity": "Asmara"
+                "exemplarCity": "Easter Island"
               },
-              "Sao_Tome": {
+              "Galapagos": {
                 "_type": "zone",
-                "exemplarCity": "São Tomé"
-              }
-            },
-            "Atlantic": {
-              "Faeroe": {
-                "_type": "zone",
-                "exemplarCity": "Faroe"
+                "exemplarCity": "Galápagos Islands"
               },
-              "St_Helena": {
+              "Truk": {
                 "_type": "zone",
-                "exemplarCity": "Saint Helena"
-              }
-            },
-            "Europe": {
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "British Summer Time"
-                }
+                "exemplarCity": "Chuuk"
               },
-              "Dublin": {
+              "Ponape": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Irish Standard Time"
-                }
+                "exemplarCity": "Pohnpei"
               },
-              "Kiev": {
+              "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "Kyiv"
+                "exemplarCity": "Canton Island"
+              },
+              "Kwajalein": {
+                "_type": "zone",
+                "exemplarCity": "Kwajalein Atoll"
+              },
+              "Noumea": {
+                "_type": "zone",
+                "exemplarCity": "Nouméa"
+              },
+              "Norfolk": {
+                "_type": "zone",
+                "exemplarCity": "Norfolk Island"
+              },
+              "Chatham": {
+                "_type": "zone",
+                "exemplarCity": "Chatham Islands"
+              },
+              "Marquesas": {
+                "_type": "zone",
+                "exemplarCity": "Marquesas Islands"
+              },
+              "Pitcairn": {
+                "_type": "zone",
+                "exemplarCity": "Pitcairn Islands"
+              },
+              "Midway": {
+                "_type": "zone",
+                "exemplarCity": "Midway Atoll"
+              },
+              "Wake": {
+                "_type": "zone",
+                "exemplarCity": "Wake Island"
+              },
+              "Wallis": {
+                "_type": "zone",
+                "exemplarCity": "Wallis & Futuna"
               }
             },
             "Asia": {
+              "Urumqi": {
+                "_type": "zone",
+                "exemplarCity": "Ürümqi"
+              },
               "Calcutta": {
                 "_type": "zone",
                 "exemplarCity": "Kolkata"
+              },
+              "Aqtau": {
+                "_type": "zone",
+                "exemplarCity": "Aktau"
               },
               "Qostanay": {
                 "_type": "zone",
                 "exemplarCity": "Kostanay"
               },
+              "Qyzylorda": {
+                "_type": "zone",
+                "exemplarCity": "Kyzylorda"
+              },
               "Rangoon": {
                 "_type": "zone",
-                "exemplarCity": "Rangoon"
+                "exemplarCity": "Yangon"
+              },
+              "Hovd": {
+                "_type": "zone",
+                "exemplarCity": "Khovd"
               },
               "Macau": {
                 "_type": "zone",
@@ -272,6 +415,42 @@
               "Saigon": {
                 "_type": "zone",
                 "exemplarCity": "Ho Chi Minh City"
+              }
+            },
+            "Africa": {
+              "El_Aaiun": {
+                "_type": "zone",
+                "exemplarCity": "El Aaiún"
+              },
+              "Asmera": {
+                "_type": "zone",
+                "exemplarCity": "Asmara"
+              },
+              "Sao_Tome": {
+                "_type": "zone",
+                "exemplarCity": "São Tomé"
+              },
+              "Ndjamena": {
+                "_type": "zone",
+                "exemplarCity": "N’Djamena"
+              },
+              "Lome": {
+                "_type": "zone",
+                "exemplarCity": "Lomé"
+              }
+            },
+            "Atlantic": {
+              "Canary": {
+                "_type": "zone",
+                "exemplarCity": "Canaries"
+              },
+              "Faeroe": {
+                "_type": "zone",
+                "exemplarCity": "Faroes"
+              },
+              "St_Helena": {
+                "_type": "zone",
+                "exemplarCity": "Saint Helena"
               }
             }
           },
@@ -286,9 +465,6 @@
             "Afghanistan": {
               "long": {
                 "standard": "Afghanistan Time"
-              },
-              "short": {
-                "standard": "AFT"
               }
             },
             "Africa_Central": {
@@ -308,16 +484,14 @@
             },
             "Africa_Western": {
               "long": {
-                "generic": "West Africa Time",
-                "standard": "West Africa Standard Time",
-                "daylight": "West Africa Summer Time"
+                "standard": "West Africa Time"
               }
             },
             "Alaska": {
               "long": {
                 "generic": "Alaska Time",
                 "standard": "Alaska Standard Time",
-                "daylight": "Alaska Daylight Saving Time"
+                "daylight": "Alaska Daylight Time"
               },
               "short": {
                 "generic": "AKT",
@@ -343,7 +517,7 @@
               "long": {
                 "generic": "Central Time",
                 "standard": "Central Standard Time",
-                "daylight": "Central Daylight Saving Time"
+                "daylight": "Central Daylight Time"
               },
               "short": {
                 "generic": "CT",
@@ -355,7 +529,7 @@
               "long": {
                 "generic": "Eastern Time",
                 "standard": "Eastern Standard Time",
-                "daylight": "Eastern Daylight Saving Time"
+                "daylight": "Eastern Daylight Time"
               },
               "short": {
                 "generic": "ET",
@@ -427,9 +601,6 @@
                 "generic": "Argentina Time",
                 "standard": "Argentina Standard Time",
                 "daylight": "Argentina Summer Time"
-              },
-              "short": {
-                "generic": "ART"
               }
             },
             "Argentina_Western": {
@@ -470,11 +641,6 @@
                 "generic": "Australian Central Western Time",
                 "standard": "Australian Central Western Standard Time",
                 "daylight": "Australian Central Western Daylight Time"
-              },
-              "short": {
-                "generic": "ACWT",
-                "standard": "ACWST",
-                "daylight": "ACWDT"
               }
             },
             "Australia_Eastern": {
@@ -482,11 +648,6 @@
                 "generic": "Australian Eastern Time",
                 "standard": "Australian Eastern Standard Time",
                 "daylight": "Australian Eastern Daylight Time"
-              },
-              "short": {
-                "generic": "AET",
-                "standard": "AEST",
-                "daylight": "AEDT"
               }
             },
             "Australia_Western": {
@@ -494,10 +655,6 @@
                 "generic": "Australian Western Time",
                 "standard": "Australian Western Standard Time",
                 "daylight": "Australian Western Daylight Time"
-              },
-              "short": {
-                "standard": "AWST",
-                "daylight": "AWDT"
               }
             },
             "Azerbaijan": {
@@ -519,17 +676,11 @@
                 "generic": "Bangladesh Time",
                 "standard": "Bangladesh Standard Time",
                 "daylight": "Bangladesh Summer Time"
-              },
-              "short": {
-                "standard": "BST"
               }
             },
             "Bhutan": {
               "long": {
                 "standard": "Bhutan Time"
-              },
-              "short": {
-                "standard": "BTT"
               }
             },
             "Bolivia": {
@@ -542,18 +693,11 @@
                 "generic": "Brasilia Time",
                 "standard": "Brasilia Standard Time",
                 "daylight": "Brasilia Summer Time"
-              },
-              "short": {
-                "generic": "BRT",
-                "daylight": "BRST"
               }
             },
             "Brunei": {
               "long": {
                 "standard": "Brunei Time"
-              },
-              "short": {
-                "standard": "BNT"
               }
             },
             "Cape_Verde": {
@@ -578,10 +722,6 @@
                 "generic": "Chatham Time",
                 "standard": "Chatham Standard Time",
                 "daylight": "Chatham Daylight Time"
-              },
-              "short": {
-                "standard": "CHAST",
-                "daylight": "CHADT"
               }
             },
             "Chile": {
@@ -601,17 +741,11 @@
             "Christmas": {
               "long": {
                 "standard": "Christmas Island Time"
-              },
-              "short": {
-                "standard": "CXT"
               }
             },
             "Cocos": {
               "long": {
                 "standard": "Cocos Islands Time"
-              },
-              "short": {
-                "standard": "CCT"
               }
             },
             "Colombia": {
@@ -619,9 +753,6 @@
                 "generic": "Colombia Time",
                 "standard": "Colombia Standard Time",
                 "daylight": "Colombia Summer Time"
-              },
-              "short": {
-                "daylight": "COST"
               }
             },
             "Cook": {
@@ -651,9 +782,6 @@
             "East_Timor": {
               "long": {
                 "standard": "Timor-Leste Time"
-              },
-              "short": {
-                "standard": "TLT"
               }
             },
             "Easter": {
@@ -661,18 +789,11 @@
                 "generic": "Easter Island Time",
                 "standard": "Easter Island Standard Time",
                 "daylight": "Easter Island Summer Time"
-              },
-              "short": {
-                "standard": "EAST",
-                "daylight": "EASST"
               }
             },
             "Ecuador": {
               "long": {
                 "standard": "Ecuador Time"
-              },
-              "short": {
-                "standard": "ECT"
               }
             },
             "Europe_Central": {
@@ -706,10 +827,6 @@
                 "generic": "Falkland Islands Time",
                 "standard": "Falkland Islands Standard Time",
                 "daylight": "Falkland Islands Summer Time"
-              },
-              "short": {
-                "generic": "FKT",
-                "daylight": "FKST"
               }
             },
             "Fiji": {
@@ -732,9 +849,6 @@
             "Galapagos": {
               "long": {
                 "standard": "Galapagos Time"
-              },
-              "short": {
-                "standard": "GALT"
               }
             },
             "Gambier": {
@@ -774,9 +888,6 @@
                 "generic": "East Greenland Time",
                 "standard": "East Greenland Standard Time",
                 "daylight": "East Greenland Summer Time"
-              },
-              "short": {
-                "generic": "EGT"
               }
             },
             "Greenland_Western": {
@@ -794,17 +905,19 @@
             "Gulf": {
               "long": {
                 "standard": "Gulf Standard Time"
-              },
-              "short": {
-                "standard": "Gulf Time"
               }
             },
             "Guyana": {
               "long": {
                 "standard": "Guyana Time"
+              }
+            },
+            "Hawaii": {
+              "long": {
+                "standard": "Hawaii-Aleutian Standard Time"
               },
               "short": {
-                "standard": "GYT"
+                "standard": "HST"
               }
             },
             "Hawaii_Aleutian": {
@@ -828,17 +941,14 @@
             },
             "Hovd": {
               "long": {
-                "generic": "Hovd Time",
-                "standard": "Hovd Standard Time",
-                "daylight": "Hovd Summer Time"
+                "generic": "Khovd Time",
+                "standard": "Khovd Standard Time",
+                "daylight": "Khovd Summer Time"
               }
             },
             "India": {
               "long": {
                 "standard": "India Standard Time"
-              },
-              "short": {
-                "standard": "IST"
               }
             },
             "Indian_Ocean": {
@@ -849,44 +959,28 @@
             "Indochina": {
               "long": {
                 "standard": "Indochina Time"
-              },
-              "short": {
-                "standard": "ICT"
               }
             },
             "Indonesia_Central": {
               "long": {
                 "standard": "Central Indonesia Time"
-              },
-              "short": {
-                "standard": "WITA"
               }
             },
             "Indonesia_Eastern": {
               "long": {
                 "standard": "Eastern Indonesia Time"
-              },
-              "short": {
-                "standard": "WIT"
               }
             },
             "Indonesia_Western": {
               "long": {
                 "standard": "Western Indonesia Time"
-              },
-              "short": {
-                "standard": "WIB"
               }
             },
             "Iran": {
               "long": {
                 "generic": "Iran Time",
                 "standard": "Iran Standard Time",
-                "daylight": "Iran Daylight Saving Time"
-              },
-              "short": {
-                "standard": "IRST",
-                "daylight": "IRDT"
+                "daylight": "Iran Daylight Time"
               }
             },
             "Irkutsk": {
@@ -990,17 +1084,11 @@
             "Malaysia": {
               "long": {
                 "standard": "Malaysia Time"
-              },
-              "short": {
-                "standard": "MYT"
               }
             },
             "Maldives": {
               "long": {
                 "standard": "Maldives Time"
-              },
-              "short": {
-                "standard": "MVT"
               }
             },
             "Marquesas": {
@@ -1059,9 +1147,6 @@
             "Nepal": {
               "long": {
                 "standard": "Nepal Time"
-              },
-              "short": {
-                "standard": "NPT"
               }
             },
             "New_Caledonia": {
@@ -1107,9 +1192,6 @@
                 "generic": "Fernando de Noronha Time",
                 "standard": "Fernando de Noronha Standard Time",
                 "daylight": "Fernando de Noronha Summer Time"
-              },
-              "short": {
-                "generic": "FNT"
               }
             },
             "North_Mariana": {
@@ -1136,9 +1218,6 @@
                 "generic": "Pakistan Time",
                 "standard": "Pakistan Standard Time",
                 "daylight": "Pakistan Summer Time"
-              },
-              "short": {
-                "standard": "PKT"
               }
             },
             "Palau": {
@@ -1156,10 +1235,6 @@
                 "generic": "Paraguay Time",
                 "standard": "Paraguay Standard Time",
                 "daylight": "Paraguay Summer Time"
-              },
-              "short": {
-                "generic": "PYT",
-                "daylight": "PYST"
               }
             },
             "Peru": {
@@ -1167,9 +1242,6 @@
                 "generic": "Peru Time",
                 "standard": "Peru Standard Time",
                 "daylight": "Peru Summer Time"
-              },
-              "short": {
-                "generic": "PET"
               }
             },
             "Philippines": {
@@ -1188,7 +1260,7 @@
               "long": {
                 "generic": "Saint-Pierre-et-Miquelon Time",
                 "standard": "Saint-Pierre-et-Miquelon Standard Time",
-                "daylight": "Saint-Pierre-et-Miquelon Daylight Saving Time"
+                "daylight": "Saint-Pierre-et-Miquelon Daylight Time"
               },
               "short": {
                 "generic": "PMT",
@@ -1213,9 +1285,9 @@
             },
             "Qyzylorda": {
               "long": {
-                "generic": "Qyzylorda Time",
-                "standard": "Qyzylorda Standard Time",
-                "daylight": "Qyzylorda Summer Time"
+                "generic": "Kyzylorda Time",
+                "standard": "Kyzylorda Standard Time",
+                "daylight": "Kyzylorda Summer Time"
               }
             },
             "Reunion": {
@@ -1246,7 +1318,7 @@
               "long": {
                 "generic": "American Samoa Time",
                 "standard": "American Samoa Standard Time",
-                "daylight": "Samoan Time"
+                "daylight": "American Samoa Daylight Time"
               }
             },
             "Seychelles": {
@@ -1313,6 +1385,13 @@
                 "standard": "Chuuk Time"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Türkiye Time",
+                "standard": "Türkiye Standard Time",
+                "daylight": "Türkiye Summer Time"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Turkmenistan Time",
@@ -1330,10 +1409,6 @@
                 "generic": "Uruguay Time",
                 "standard": "Uruguay Standard Time",
                 "daylight": "Uruguay Summer Time"
-              },
-              "short": {
-                "standard": "UYT",
-                "daylight": "UYST"
               }
             },
             "Uzbekistan": {
@@ -1353,9 +1428,6 @@
             "Venezuela": {
               "long": {
                 "standard": "Venezuela Time"
-              },
-              "short": {
-                "standard": "VET"
               }
             },
             "Vladivostok": {

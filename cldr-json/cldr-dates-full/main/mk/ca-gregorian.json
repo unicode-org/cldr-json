@@ -312,8 +312,8 @@
             "dateFormats": {
               "full": "EEEE, d MMMM y 'г'.",
               "long": "d MMMM y 'г'.",
-              "medium": "d.M.y 'г'.",
-              "short": "d.M.yy"
+              "medium": "d MMM y 'г'.",
+              "short": "d.M.y 'г'."
             },
             "dateSkeletons": {
               "full": "yMMMMEEEEd",
@@ -344,20 +344,24 @@
                 "Bhms": "h:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
                 "Ed": "E, d",
+                "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y 'г'. G",
+                "GyM": "M.y 'г'. G",
                 "GyMd": "d.M.y 'г'. G",
+                "GyMEd": "E, d.M.y 'г'. G",
                 "GyMMM": "MMM y 'г'. G",
                 "GyMMMd": "d MMM y 'г'. G",
                 "GyMMMEd": "E, d MMM y 'г'. G",
                 "h": "h a",
-                "H": "HH",
+                "H": "H",
                 "hm": "h:mm a",
                 "Hm": "HH:mm",
                 "hms": "h:mm:ss a",
@@ -366,6 +370,8 @@
                 "Hmsv": "HH:mm:ss v",
                 "hmv": "h:mm a v",
                 "Hmv": "HH:mm v",
+                "hv": "h a v",
+                "Hv": "HH 'ч'. v",
                 "M": "L",
                 "Md": "d.M",
                 "Mdd": "d.M",
@@ -555,7 +561,15 @@
                 "full": "{1}, 'во' {0}",
                 "long": "{1}, 'во' {0}",
                 "medium": "{1}, 'во' {0}",
-                "short": "{1}, 'во' {0}"
+                "short": "{1}, {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
+              "standard": {
+                "full": "{1} 'во' {0}",
+                "long": "{1} 'во' {0}",
+                "medium": "{1}, {0}",
+                "short": "{1}, {0}"
               }
             }
           }

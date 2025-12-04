@@ -232,10 +232,10 @@
                   "midnight": "mn",
                   "am": "v",
                   "pm": "n",
-                  "morning1": "o",
-                  "afternoon1": "m",
-                  "evening1": "a",
-                  "night1": "n"
+                  "morning1": "die oggend",
+                  "afternoon1": "in die middag",
+                  "evening1": "in die aand",
+                  "night1": "in die nag"
                 },
                 "wide": {
                   "midnight": "middernag",
@@ -258,13 +258,13 @@
                   "night1": "nag"
                 },
                 "narrow": {
-                  "midnight": "mn",
-                  "am": "v",
-                  "pm": "n",
-                  "morning1": "o",
-                  "afternoon1": "m",
-                  "evening1": "a",
-                  "night1": "n"
+                  "midnight": "middernag",
+                  "am": "vm.",
+                  "pm": "nm.",
+                  "morning1": "oggend",
+                  "afternoon1": "middag",
+                  "evening1": "aand",
+                  "night1": "nag"
                 },
                 "wide": {
                   "midnight": "middernag",
@@ -332,15 +332,19 @@
                 "Bhms": "hh:mm:ss B",
                 "d": "d",
                 "E": "ccc",
+                "EBh": "E h B",
                 "EBhm": "E hh:mm B",
                 "EBhms": "E hh:mm:ss B",
                 "Ed": "E d",
+                "Eh": "E h a",
                 "Ehm": "E hh:mm a",
                 "EHm": "E HH:mm",
                 "Ehms": "E hh:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
-                "GyMd": "GGGGG y-MM-dd",
+                "GyM": "G y-MM",
+                "GyMd": "G y-MM-dd",
+                "GyMEd": "G y-MM-dd, E",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "dd MMM y G",
                 "GyMMMEd": "E dd MMM y G",
@@ -354,6 +358,8 @@
                 "Hmsv": "HH:mm:ss v",
                 "hmv": "h:mm a v",
                 "Hmv": "HH:mm v",
+                "hv": "h a v",
+                "Hv": "HH'h' v",
                 "M": "L",
                 "Md": "dd-MM",
                 "MEd": "E d/M",
@@ -535,6 +541,14 @@
               }
             },
             "dateTimeFormats-atTime": {
+              "standard": {
+                "full": "{1} 'om' {0}",
+                "long": "{1} 'om' {0}",
+                "medium": "{1} {0}",
+                "short": "{1} {0}"
+              }
+            },
+            "dateTimeFormats-relative": {
               "standard": {
                 "full": "{1} 'om' {0}",
                 "long": "{1} 'om' {0}",
