@@ -56,7 +56,7 @@ jobs:
                 repository: ${{ github.event.inputs.cldr-repo }}
                 path: cldr
             - name: Cache local Maven repository
-              uses: actions/cache@v4
+              uses: actions/cache@v5
               with:
                   path: ~/.m2/repository
                   key: ${{ runner.os }}-maven-${{ hashFiles('cldr/tools/**/pom.xml') }}
