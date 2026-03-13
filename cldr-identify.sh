@@ -14,17 +14,20 @@ fi
 
 function explain_repo()
 {
-    git remote get-url origin | sed -E 's/git@github.com:|https:\/\/github.com\/|.git//g'
+    # set 'UPSTREAM_CLDR_JSON=upstream' etc. in local-config.sh to rename the remote
+    UPSTREAM_VAR=$(echo upstream-$1 | tr a-z- A-Z_)
+    UPSTREAM=${!UPSTREAM_VAR:-origin}
+    git remote get-url ${UPSTREAM} | sed -E 's/git@github.com:|https:\/\/github.com\/|.git//g'
     git describe --tags HEAD
 }
 
 echo "* cldr-json info"
 if [[ "$INDATA" == "generate" ]]
 then
-    echo "- DATA: " $(cd ${CLDR_DIR}; explain_repo) "(generated)"
-else 
-    echo "- DATA: " $(cd ${INDATA}; explain_repo)
+    echo "- DATA: " $(cd ${CLDR_DIR}; explain_repo cldr) "(generated)"
+else
+    echo "- DATA: " $(cd ${INDATA}; explain_repo cldr-staging)
 fi
-echo "- TOOL: " $(cd ${CLDR_DIR}; explain_repo)
-echo "- SCRIPT: " $(explain_repo)
+echo "- TOOL: " $(cd ${CLDR_DIR}; explain_repo cldr)
+echo "- SCRIPT: " $(explain_repo cldr-json)
 
