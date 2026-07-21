@@ -97,6 +97,16 @@
                 }
               }
             },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "one": "{0} रोजी",
+                  "two": "{0} रोजी",
+                  "few": "{0} रोजी",
+                  "other": "{0} रोजी"
+                }
+              }
+            },
             "days": {
               "format": {
                 "abbreviated": {
@@ -291,10 +301,10 @@
             },
             "eras": {
               "eraNames": {
-                "0": "ईसवीसनपूर्व",
-                "0-alt-variant": "ईसापूर्व युग",
+                "0": "ई. स. पू.",
+                "0-alt-variant": "ई. स. पू. कालखंड",
                 "1": "ईसवीसन",
-                "1-alt-variant": "ख्रिस्तयुग"
+                "1-alt-variant": "इ. स. कालखंड"
               },
               "eraAbbr": {
                 "0": "ई. स. पू.",
@@ -334,6 +344,10 @@
               "short": "ahmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "/",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1}, {0}",
               "long": "{1}, {0}",
               "medium": "{1}, {0}",
@@ -359,7 +373,14 @@
                 "GyMEd": "G y-MM-dd, E",
                 "GyMMM": "MMM G y",
                 "GyMMMd": "d MMM, G y",
+                "GyMMMddd": "G y MMM ddd",
                 "GyMMMEd": "E, d MMM, G y",
+                "GyMMMEddd": "G y MMM ddd, E",
+                "GyMMMM": "G y MMMM",
+                "GyMMMMd": "G y MMMM d",
+                "GyMMMMddd": "G y MMMM ddd",
+                "GyMMMMEd": "G y MMMM d, E",
+                "GyMMMMEddd": "G y MMMM ddd, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -378,8 +399,13 @@
                 "MMdd": "dd-MM",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
+                "MMMddd": "MMM ddd",
                 "MMMEd": "E, d MMM",
+                "MMMEddd": "MMM ddd, E",
                 "MMMMd": "d MMMM",
+                "MMMMddd": "ddd MMMM",
+                "MMMMEd": "d MMMM E",
+                "MMMMEddd": "ddd MMMM E",
                 "MMMMW-count-one": "MMMM चा W रा आठवडा",
                 "MMMMW-count-other": "MMMM चा W रा आठवडा",
                 "ms": "mm:ss",
@@ -390,27 +416,38 @@
                 "yMM": "MM-y",
                 "yMMM": "MMM y",
                 "yMMMd": "d MMM, y",
+                "yMMMddd": "y MMM ddd",
                 "yMMMEd": "E, d, MMM y",
+                "yMMMEddd": "y MMM ddd, E",
                 "yMMMM": "MMMM y",
+                "yMMMMddd": "y MMMM ddd",
+                "yMMMMEddd": "y MMMM ddd, E",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yw-count-one": "Y चा w वा आठवडा",
                 "yw-count-other": "Y चा w वा आठवडा"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{1} {0}",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -516,6 +553,10 @@
                   "d": "E, d MMM – E, d MMM",
                   "M": "E, d MMM – E, d MMM"
                 },
+                "MMMMd": {
+                  "d": "MMMM d–d",
+                  "M": "MMMM d – MMMM d"
+                },
                 "y": {
                   "y": "y – y"
                 },
@@ -563,8 +604,8 @@
             },
             "dateTimeFormats-relative": {
               "standard": {
-                "full": "{1}, {0}",
-                "long": "{1}, {0}",
+                "full": "{1}, {0} वाजता",
+                "long": "{1}, {0} वाजता",
                 "medium": "{1}, {0}",
                 "short": "{1}, {0}"
               }

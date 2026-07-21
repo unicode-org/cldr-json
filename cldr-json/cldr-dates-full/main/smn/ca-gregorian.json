@@ -274,7 +274,7 @@
               "short": "d.M.y"
             },
             "dateSkeletons": {
-              "full": "yMMMMccccd",
+              "full": "yMMMMEEEEd",
               "long": "yMMMMd",
               "medium": "yMMMd",
               "short": "yMd"
@@ -292,6 +292,10 @@
               "short": "Hmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -317,7 +321,14 @@
                 "GyMEd": "G y-MM-dd, E",
                 "GyMMM": "LLL y G",
                 "GyMMMd": "MMM d. y G",
+                "GyMMMddd": "G y MMM ddd",
                 "GyMMMEd": "E, MMM d. y G",
+                "GyMMMEddd": "G y MMM ddd, E",
+                "GyMMMM": "G y MMMM",
+                "GyMMMMd": "G y MMMM d",
+                "GyMMMMddd": "G y MMMM ddd",
+                "GyMMMMEd": "G y MMMM d, E",
+                "GyMMMMEddd": "G y MMMM ddd, E",
                 "h": "h a",
                 "H": "H",
                 "hm": "h.mm a",
@@ -335,8 +346,13 @@
                 "MEd": "E d.M.",
                 "MMM": "LLL",
                 "MMMd": "MMM d.",
+                "MMMddd": "MMM ddd",
                 "MMMEd": "E, MMM d.",
+                "MMMEddd": "MMM ddd, E",
                 "MMMMd": "MMMM d.",
+                "MMMMddd": "MMMM ddd",
+                "MMMMEd": "MMMM d, E",
+                "MMMMEddd": "MMMM ddd, E",
                 "MMMMW-count-one": "'okko' W, MMMM",
                 "MMMMW-count-two": "'okko' W, MMMM",
                 "MMMMW-count-other": "'okko' W, MMMM",
@@ -347,8 +363,12 @@
                 "yMEd": "E d.M.y",
                 "yMMM": "LLL y",
                 "yMMMd": "MMM d. y",
+                "yMMMddd": "y MMM ddd",
                 "yMMMEd": "ccc, MMM d. y",
+                "yMMMEddd": "y MMM ddd, E",
                 "yMMMM": "LLLL y",
+                "yMMMMddd": "y MMMM ddd",
+                "yMMMMEddd": "y MMMM ddd, E",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yw-count-one": "'okko' w, Y",
@@ -356,19 +376,26 @@
                 "yw-count-other": "'okko' w, Y"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{1} {0}",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0}–{1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -473,6 +500,10 @@
                 "MMMEd": {
                   "d": "MMMM E d. – E d.",
                   "M": "MMMM E d. – MMMM E d."
+                },
+                "MMMMd": {
+                  "d": "MMMM d–d",
+                  "M": "MMMM d – MMMM d"
                 },
                 "y": {
                   "y": "y–y"

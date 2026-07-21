@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} Lokaci",
           "regionFormat-type-daylight": "{0} Lokacin Rana",
           "regionFormat-type-standard": "{0} Daidaitaccen Lokaci",
@@ -38,18 +40,6 @@
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Lokacin Bazara na Birtaniya"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Tsayayyen Lokacin Irish"
-                }
               },
               "Chisinau": {
                 "_type": "zone",
@@ -356,6 +346,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Lokacin Acre",
+                "standard": "Tsayayyen Lokacin Acre",
+                "daylight": "Lokacin Bazara na Acre"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Lokacin Afghanistan"
@@ -425,9 +422,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "Lokacin Apia",
+                "generic": "Lokacin Yammacin Samoa",
                 "standard": "Tsayayyen Lokacin Apia",
-                "daylight": "Lokacin Rana na Apia"
+                "daylight": "Lokacin Rana na Yammacin Samoa"
               }
             },
             "Arabian": {
@@ -529,6 +526,13 @@
                 "generic": "Lokacin Brasillia",
                 "standard": "Tsayayyen Lokacin Brasillia",
                 "daylight": "Lokacin Bazara na Brasillia"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Lokacin Birtaniya",
+                "standard": "Lokacin Greenwich a Ingila",
+                "daylight": "Lokacin Bazara na Birtaniya"
               }
             },
             "Brunei": {
@@ -704,6 +708,13 @@
                 "standard": "Lokacin Greenwich a Ingila"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Lokacin Greenland",
+                "standard": "Tsayayyen Lokacin Greenland",
+                "daylight": "Lokacin Bazara na Greenland"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Lokacin Gabas na Greenland",
@@ -730,7 +741,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Tsayayyen Lokacin Hawaii-Aleutian"
+                "standard": "Lokacin Hawaii"
               }
             },
             "Hawaii_Aleutian": {
@@ -791,6 +802,13 @@
                 "daylight": "Lokacin Rana na Iran"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Lokacin Ireland",
+                "standard": "Lokacin Greenwich a Ingila",
+                "daylight": "Tsayayyen Lokacin Ireland"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Lokacin Irkutsk",
@@ -810,6 +828,13 @@
                 "generic": "Lokacin Japan",
                 "standard": "Tsayayyen lokacin Japan",
                 "daylight": "Lokacin Hasken Rana na Japan"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Lokacin Kamchatka",
+                "standard": "Tsayayyen Lokacin Kamchatka",
+                "daylight": "Lokacin Bazara na Kamchatka"
               }
             },
             "Kazakhstan": {
@@ -1074,11 +1099,16 @@
                 "daylight": "Lokacin Bazara na Sakhalin"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Lokacin Samara",
+                "standard": "Tsayayyen Lokacin Samara",
+                "daylight": "Lokacin Bazara na Samara"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Lokacin Samoa",
-                "standard": "Tsayayyen Lokacin Samoa",
-                "daylight": "Lokacin Rana na Vote Samoa"
+                "standard": "Tsayayyen Lokacin Samoa"
               }
             },
             "Seychelles": {
@@ -1145,6 +1175,13 @@
                 "standard": "Lokacin Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Lokacin Türkiye",
+                "standard": "Tsayayyen Lokacin Türkiye",
+                "daylight": "Lokacin Bazara na Türkiye"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Lokacin Turkmenistan",
@@ -1162,6 +1199,11 @@
                 "generic": "Lokacin Uruguay",
                 "standard": "Tsayayyen Lokacin Uruguay",
                 "daylight": "Lokacin Bazara na Uruguay"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Lokacin Ürümqi"
               }
             },
             "Uzbekistan": {

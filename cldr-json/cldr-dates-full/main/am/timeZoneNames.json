@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HHmm;-HHmm",
           "gmtFormat": "ጂ ኤም ቲ{0}",
-          "gmtZeroFormat": "ጂ ኤም ቲ",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "ጂ ኤም ቲ+",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} ሰዓት",
           "regionFormat-type-daylight": "{0} የቀን ብርሃን ሰዓት",
           "regionFormat-type-standard": "{0} መደበኛ ሰዓት",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "የብሪትሽ የበጋ ሰዓት አቆጣጠር"
-                },
                 "exemplarCity": "ለንደን"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "የአይሪሽ መደበኛ ሰዓት አቆጣጠር"
-                },
                 "exemplarCity": "ደብሊን"
               },
               "Isle_of_Man": {
@@ -1734,6 +1730,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "የኤከር ሰዓት አቆጣጠር",
+                "standard": "የኤከር መደበኛ ሰዓት አቆጣጠር",
+                "daylight": "የኤከር ክረምት ሰዓት አቆጣጠር"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "የአፍጋኒስታን ሰዓት"
@@ -1916,6 +1919,13 @@
                 "daylight": "የብራዚላ የበጋ ሰዓት አቆጣጠር"
               }
             },
+            "British": {
+              "long": {
+                "generic": "የብሪትሽ ሰዓት አቆጣጠር",
+                "standard": "ግሪንዊች ማዕከላዊ ሰዓት አቆጣጠር",
+                "daylight": "የብሪትሽ የበጋ ሰዓት አቆጣጠር"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "የብሩኔይ ዳሩሳላም ሰዓት"
@@ -2086,7 +2096,14 @@
             },
             "GMT": {
               "long": {
-                "standard": "ግሪንዊች ማዕከላዊ ሰዓት"
+                "standard": "ግሪንዊች ማዕከላዊ ሰዓት አቆጣጠር"
+              }
+            },
+            "Greenland": {
+              "long": {
+                "generic": "የግሪንላንድ ሰዓት",
+                "standard": "የግሪንላንድ መደበኛ ሰዓት",
+                "daylight": "የግሪንላንድ ክረምት ሰዓት"
               }
             },
             "Greenland_Eastern": {
@@ -2121,7 +2138,7 @@
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "የሃዋይ አሌኡት ሰዓት አቆጣጠር",
-                "standard": "የሃዋይ አሌኡት መደበኛ ሰዓት አቆጣጠር",
+                "standard": "የሃዋይ-አሌኡት መደበኛ ሰዓት አቆጣጠር",
                 "daylight": "የሃዋይ አሌኡት የቀን ሰዓት አቆጣጠር"
               }
             },
@@ -2174,6 +2191,13 @@
                 "generic": "የኢራን ሰዓት",
                 "standard": "የኢራን መደበኛ ሰዓት",
                 "daylight": "የኢራን የቀን ብርሃን ሰዓት"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "የአይሪሽ ሰዓት አቆጣጠር",
+                "standard": "ግሪንዊች ማዕከላዊ ሰዓት አቆጣጠር",
+                "daylight": "የአይሪሽ መደበኛ ሰዓት አቆጣጠር"
               }
             },
             "Irkutsk": {
@@ -2475,9 +2499,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "የሳሞዋ ሰዓት",
-                "standard": "የሳሞዋ መደበኛ ሰዓት",
-                "daylight": "የሳሞዋ የበጋ ሰዓት"
+                "standard": "የሳሞዋ መደበኛ ሰዓት"
               }
             },
             "Seychelles": {
@@ -2544,6 +2566,13 @@
                 "standard": "የቹክ ሰዓት"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "የተርኪ ሰዓት አቆጣጠር",
+                "standard": "የተርኪ መደበኛ ሰዓት አቆጣጠር",
+                "daylight": "የተርኪ ክረምት ሰዓት አቆጣጠር"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "የቱርክመኒስታን ሰዓት",
@@ -2561,6 +2590,11 @@
                 "generic": "የኡራጓይ ሰዓት",
                 "standard": "የኡራጓይ መደበኛ ሰዓት",
                 "daylight": "የኡራጓይ ክረምት ሰዓት"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "የኡሩምኪ ሰዓት አቆጣጠር"
               }
             },
             "Uzbekistan": {

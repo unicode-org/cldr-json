@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} (Ortszeit)",
           "regionFormat-type-daylight": "{0} (Sommerzeit)",
           "regionFormat-type-standard": "{0} (Normalzeit)",
@@ -98,21 +100,9 @@
                 "_type": "zone",
                 "exemplarCity": "Kopenhagen"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Britische Sommerzeit"
-                }
-              },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Athen"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Irische Sommerzeit"
-                }
               },
               "Rome": {
                 "_type": "zone",
@@ -152,7 +142,7 @@
               },
               "Saratov": {
                 "_type": "zone",
-                "exemplarCity": "Saratov"
+                "exemplarCity": "Saratow"
               },
               "Astrakhan": {
                 "_type": "zone",
@@ -182,7 +172,7 @@
               },
               "Brunei": {
                 "_type": "zone",
-                "exemplarCity": "Brunei"
+                "exemplarCity": "Brunei Darussalam"
               },
               "Urumqi": {
                 "_type": "zone",
@@ -246,7 +236,7 @@
               },
               "Macau": {
                 "_type": "zone",
-                "exemplarCity": "Macao"
+                "exemplarCity": "Macau"
               },
               "Katmandu": {
                 "_type": "zone",
@@ -692,13 +682,6 @@
                 "daylight": "Alaska-Sommerzeit"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Almaty-Zeit",
-                "standard": "Almaty-Normalzeit",
-                "daylight": "Almaty-Sommerzeit"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Amazonas-Zeit",
@@ -746,20 +729,6 @@
                 "generic": "Apia-Zeit",
                 "standard": "Apia-Normalzeit",
                 "daylight": "Apia-Sommerzeit"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Aqtau-Zeit",
-                "standard": "Aqtau-Normalzeit",
-                "daylight": "Aqtau-Sommerzeit"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Aqtöbe-Zeit",
-                "standard": "Aqtöbe-Normalzeit",
-                "daylight": "Aqtöbe-Sommerzeit"
               }
             },
             "Arabian": {
@@ -863,9 +832,16 @@
                 "daylight": "Brasília-Sommerzeit"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Britische Zeit",
+                "standard": "Mittlere Greenwich-Zeit",
+                "daylight": "Britische Sommerzeit"
+              }
+            },
             "Brunei": {
               "long": {
-                "standard": "Brunei-Zeit"
+                "standard": "Brunei-Darussalam-Zeit"
               }
             },
             "Cape_Verde": {
@@ -1056,23 +1032,25 @@
                 "standard": "Mittlere Greenwich-Zeit"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grönländische Zeit",
+                "standard": "Grönländische Normalzeit",
+                "daylight": "Grönländische Sommerzeit"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
-                "generic": "Ostgrönland-Zeit",
-                "standard": "Ostgrönland-Normalzeit",
-                "daylight": "Ostgrönland-Sommerzeit"
+                "generic": "Ostgrönländische Zeit",
+                "standard": "Ostgrönländische Normalzeit",
+                "daylight": "Ostgrönländische Sommerzeit"
               }
             },
             "Greenland_Western": {
               "long": {
-                "generic": "Westgrönland-Zeit",
-                "standard": "Westgrönland-Normalzeit",
-                "daylight": "Westgrönland-Sommerzeit"
-              }
-            },
-            "Guam": {
-              "long": {
-                "standard": "Guam-Zeit"
+                "generic": "Westgrönländische Zeit",
+                "standard": "Westgrönländische Normalzeit",
+                "daylight": "Westgrönländische Sommerzeit"
               }
             },
             "Gulf": {
@@ -1087,7 +1065,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaii-Aleuten-Normalzeit"
+                "standard": "Hawaii-Normalzeit"
               }
             },
             "Hawaii_Aleutian": {
@@ -1146,6 +1124,13 @@
                 "generic": "Iranische Zeit",
                 "standard": "Iranische Normalzeit",
                 "daylight": "Iranische Sommerzeit"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Irische Zeit",
+                "standard": "Mittlere Greenwich-Zeit",
+                "daylight": "Irische Sommerzeit"
               }
             },
             "Irkutsk": {
@@ -1215,11 +1200,6 @@
                 "standard": "Kirgisische Zeit"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Sri-Lanka-Zeit"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Linieninseln-Zeit"
@@ -1230,13 +1210,6 @@
                 "generic": "Lord-Howe-Zeit",
                 "standard": "Lord-Howe-Normalzeit",
                 "daylight": "Lord-Howe-Sommerzeit"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Macau-Zeit",
-                "standard": "Macau-Normalzeit",
-                "daylight": "Macau-Sommerzeit"
               }
             },
             "Magadan": {
@@ -1354,11 +1327,6 @@
                 "daylight": "Fernando-de-Noronha-Sommerzeit"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Nördliche-Marianen-Zeit"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Nowosibirsker Zeit",
@@ -1438,13 +1406,6 @@
                 "standard": "Pjöngjang-Zeit"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Quysylorda-Zeit",
-                "standard": "Quysylorda-Normalzeit",
-                "daylight": "Qysylorda-Sommerzeit"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Réunion-Zeit"
@@ -1471,9 +1432,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa-Zeit",
-                "standard": "Samoa-Normalzeit",
-                "daylight": "Samoa-Sommerzeit"
+                "standard": "Samoa-Normalzeit"
               }
             },
             "Seychelles": {
@@ -1488,7 +1447,7 @@
             },
             "Solomon": {
               "long": {
-                "standard": "Salomoninseln-Zeit"
+                "standard": "Salomonen-Zeit"
               }
             },
             "South_Georgia": {
@@ -1564,6 +1523,11 @@
                 "generic": "Uruguayische Zeit",
                 "standard": "Uruguayische Normalzeit",
                 "daylight": "Uruguayische Sommerzeit"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ürümqi-Zeit"
               }
             },
             "Uzbekistan": {

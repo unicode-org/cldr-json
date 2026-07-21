@@ -11,7 +11,7 @@
               "format": {
                 "abbreviated": {
                   "1": "תשרי",
-                  "2": "חשון",
+                  "2": "חשוון",
                   "3": "כסלו",
                   "4": "טבת",
                   "5": "שבט",
@@ -20,7 +20,7 @@
                   "7-yeartype-leap": "אדר ב׳",
                   "8": "ניסן",
                   "9": "אייר",
-                  "10": "סיון",
+                  "10": "סיוון",
                   "11": "תמוז",
                   "12": "אב",
                   "13": "אלול"
@@ -61,7 +61,7 @@
               "stand-alone": {
                 "abbreviated": {
                   "1": "תשרי",
-                  "2": "חשון",
+                  "2": "חשוון",
                   "3": "כסלו",
                   "4": "טבת",
                   "5": "שבט",
@@ -70,7 +70,7 @@
                   "7-yeartype-leap": "אדר ב׳",
                   "8": "ניסן",
                   "9": "אייר",
-                  "10": "סיון",
+                  "10": "סיוון",
                   "11": "תמוז",
                   "12": "אב",
                   "13": "אלול"
@@ -106,6 +106,13 @@
                   "11": "תמוז",
                   "12": "אב",
                   "13": "אלול"
+                }
+              }
+            },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "other": "{0}"
                 }
               }
             },
@@ -279,8 +286,8 @@
                 },
                 "narrow": {
                   "midnight": "חצות",
-                  "am": "לפנה״צ",
-                  "pm": "אחה״צ",
+                  "am": "AM",
+                  "pm": "PM",
                   "morning1": "בוקר",
                   "afternoon1": "צהריים",
                   "afternoon2": "אחה״צ",
@@ -361,6 +368,10 @@
               "short": "Hmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": ".",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1}, {0}",
               "long": "{1}, {0}",
               "medium": "{1}, {0}",
@@ -386,7 +397,9 @@
                 "GyMEd": "G y-MM-dd, E",
                 "GyMMM": "MMMM y G",
                 "GyMMMd": "d בMMMM y G",
+                "GyMMMddd": "ddd בMMM y G",
                 "GyMMMEd": "E, d בMMMM y G",
+                "GyMMMEddd": "E, ddd בMMM y G",
                 "h": "‏h a",
                 "H": "H",
                 "hm": "h:mm a",
@@ -394,14 +407,17 @@
                 "hms": "h:mm:ss a",
                 "Hms": "H:mm:ss",
                 "hv": "h a v",
-                "Hv": "H v",
+                "Hv": "HH v",
                 "M": "MMMM",
                 "Md": "d בMMMM",
                 "MEd": "E, d בMMMM",
                 "MMM": "MMMM",
                 "MMMd": "d בMMMM",
+                "MMMddd": "ddd בMMM",
                 "MMMEd": "E, d בMMMM",
+                "MMMEddd": "E, ddd בMMM",
                 "MMMMd": "d בMMMM",
+                "MMMMddd": "ddd‏ בMMMM",
                 "MMMMEd": "E, d בMMMM",
                 "ms": "mm:ss",
                 "y": "y",
@@ -412,25 +428,34 @@
                 "yyyyMM": "MM/y G",
                 "yyyyMMM": "MMMM y",
                 "yyyyMMMd": "d בMMMM y",
+                "yyyyMMMddd": "ddd‏ בMMMM‏, y‏ G",
                 "yyyyMMMEd": "E, d בMMMM y",
+                "yyyyMMMEddd": "E,‏ ‏ddd בMMMM‏, y‏ G",
                 "yyyyMMMM": "MMMM y",
                 "yyyyQQQ": "QQQ y בשעה G",
                 "yyyyQQQQ": "QQQQ y בשעה G"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{1} {0}",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h בB – h בB",
@@ -538,6 +563,10 @@
                 },
                 "MMMM": {
                   "M": "LLLL–LLLL"
+                },
+                "MMMMd": {
+                  "d": "d–d בMMMM",
+                  "M": "d בMMMM – ‏d בMMMM"
                 },
                 "y": {
                   "y": "y–y"

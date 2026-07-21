@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;−HH:mm",
           "gmtFormat": "GMT {0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC {0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "({0})",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -121,21 +123,9 @@
                 "_type": "zone",
                 "exemplarCity": "Pariis"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Briti suveaeg"
-                }
-              },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Ateena"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Iiri suveaeg"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -239,10 +229,6 @@
                 "_type": "zone",
                 "exemplarCity": "Teheran"
               },
-              "Tokyo": {
-                "_type": "zone",
-                "exemplarCity": "Tōkyō"
-              },
               "Bishkek": {
                 "_type": "zone",
                 "exemplarCity": "Biškek"
@@ -285,7 +271,7 @@
               },
               "Hovd": {
                 "_type": "zone",
-                "exemplarCity": "Khovd"
+                "exemplarCity": "Hovd"
               },
               "Macau": {
                 "_type": "zone",
@@ -475,7 +461,7 @@
               },
               "Bahia_Banderas": {
                 "_type": "zone",
-                "exemplarCity": "Bahia Banderas"
+                "exemplarCity": "Bahía de Banderas"
               },
               "Mexico_City": {
                 "_type": "zone",
@@ -699,13 +685,6 @@
                 "daylight": "Alaska suveaeg"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Almatõ aeg",
-                "standard": "Almatõ standardaeg",
-                "daylight": "Almatõ suveaeg"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Amazonase aeg",
@@ -753,20 +732,6 @@
                 "generic": "Apia aeg",
                 "standard": "Apia standardaeg",
                 "daylight": "Apia suveaeg"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Aktau aeg",
-                "standard": "Aktau standardaeg",
-                "daylight": "Aktau suveaeg"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Aktöbe aeg",
-                "standard": "Aktöbe standardaeg",
-                "daylight": "Aktöbe suveaeg"
               }
             },
             "Arabian": {
@@ -868,6 +833,13 @@
                 "generic": "Brasiilia aeg",
                 "standard": "Brasiilia standardaeg",
                 "daylight": "Brasiilia suveaeg"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Briti aeg",
+                "standard": "Greenwichi aeg",
+                "daylight": "Briti suveaeg"
               }
             },
             "Brunei": {
@@ -1069,11 +1041,6 @@
                 "daylight": "Lääne-Gröönimaa suveaeg"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Guami standardaeg"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Pärsia lahe standardaeg"
@@ -1086,7 +1053,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaii-Aleuudi standardaeg"
+                "standard": "Hawaii aeg"
               }
             },
             "Hawaii_Aleutian": {
@@ -1145,6 +1112,13 @@
                 "generic": "Iraani aeg",
                 "standard": "Iraani standardaeg",
                 "daylight": "Iraani suveaeg"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Iiri aeg",
+                "standard": "Greenwichi aeg",
+                "daylight": "Iiri suveaeg"
               }
             },
             "Irkutsk": {
@@ -1214,11 +1188,6 @@
                 "standard": "Kõrgõzstani aeg"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Sri Lanka aeg"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Line’i saarte aeg"
@@ -1229,13 +1198,6 @@
                 "generic": "Lord Howe’i aeg",
                 "standard": "Lord Howe’i standardaeg",
                 "daylight": "Lord Howe’i suveaeg"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Macau aeg",
-                "standard": "Macau standardaeg",
-                "daylight": "Macau suveaeg"
               }
             },
             "Magadan": {
@@ -1353,11 +1315,6 @@
                 "daylight": "Fernando de Noronha suveaeg"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Põhja-Mariaani aeg"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Novosibirski aeg",
@@ -1437,13 +1394,6 @@
                 "standard": "Pyongyangi aeg"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Kõzõlorda aeg",
-                "standard": "Kõzõlorda standardaeg",
-                "daylight": "Kõzõlorda suveaeg"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Réunioni aeg"
@@ -1470,9 +1420,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa aeg",
-                "standard": "Samoa standardaeg",
-                "daylight": "Samoa suveaeg"
+                "standard": "Samoa standardaeg"
               }
             },
             "Seychelles": {
@@ -1563,6 +1511,11 @@
                 "generic": "Uruguay aeg",
                 "standard": "Uruguay standardaeg",
                 "daylight": "Uruguay suveaeg"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ürümqi aeg"
               }
             },
             "Uzbekistan": {

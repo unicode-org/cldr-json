@@ -25,18 +25,34 @@
           "collation": "Rendezési sorrend",
           "colNormalization": "Normalizált rendezés",
           "colNumeric": "Numerikus rendezés",
+          "colReorder": "Írásmódok/blokkok átrendezése",
           "colStrength": "Rendezés erőssége",
           "currency": "Pénznem",
+          "d0": "Transzformációs cél",
+          "dx": "Szótári elválasztási kivételek",
           "em": "Emoji megjelenítése",
+          "fw": "A hét első napja",
+          "h0": "Vegyes",
           "hc": "Óraformátum (12 – 24)",
+          "i0": "Beviteli módszer",
+          "k0": "Billentyűzet",
+          "kv": "Legmagasabb figyelmen kívül hagyott",
           "lb": "Sortörés stílusa",
           "lw": "Szavakon belüli sortörések",
+          "m0": "Transzformációs szabályok",
           "ms": "Mértékegységrendszer",
+          "mu": "Mértékegység",
           "numbers": "Számok",
+          "rg": "Régió kiegészítő adatokhoz",
+          "s0": "Forrás transzformáció",
+          "sd": "Régió közigazgatási egysége",
           "ss": "Mondattörés rövidítés után",
+          "t": "Transzformáció",
+          "t0": "Gépi fordítású",
           "timezone": "Időzóna",
           "va": "Földrajzi helyvariáns",
-          "x": "Privát használatra"
+          "x": "Privát használatra",
+          "x0": "Magánhasználatú transzformáció"
         },
         "types": {
           "calendar": {
@@ -73,6 +89,7 @@
           },
           "colCaseFirst": {
             "lower": "Kisbetűs szavak rendezése előre",
+            "core": "Nagybetűs",
             "no": "Kisbetűs-nagybetűs szavak normál rendezése",
             "upper": "Nagybetűs szavak rendezése előre"
           },
@@ -106,8 +123,12 @@
             "no": "Számjegyek egyedi rendezése",
             "yes": "Számjegyek numerikus rendezése"
           },
+          "colReorder": {
+            "core": "Szimbólumok"
+          },
           "colStrength": {
             "identical": "Összes rendezése",
+            "core": "Alap, ékezetek, kis- és nagybetűk, variánsok",
             "primary": "Csak az alapbetűk rendezése",
             "quaternary": "Ékezetek/kisbetű-nagybetű/szélesség/kanák rendezése",
             "secondary": "Ékezetek rendezése",
@@ -122,11 +143,16 @@
             "core": "Szöveg"
           },
           "hc": {
-            "h11": "12 órás rendszer (0–11)",
+            "c12": "12 órás rendszer",
             "core": "24 (1–24)",
+            "c24": "24 órás rendszer",
+            "h11": "12 órás rendszer (0–11)",
             "h12": "12 órás rendszer (0–12)",
             "h23": "24 órás rendszer (0–23)",
             "h24": "24 órás rendszer (0–24)"
+          },
+          "kv": {
+            "core": "Szóközök, írásjelek és nem pénznemjelek eltolása"
           },
           "lb": {
             "loose": "Tág stílusú sortörés",
@@ -150,6 +176,7 @@
           "numbers": {
             "arab": "Arab-indiai számjegyek",
             "arabext": "Kibővített arab-indiai számjegyek",
+            "core": "Hagyományos számjegyek",
             "armn": "Örmény számok",
             "armnlow": "Örmény kisbetűs számok",
             "beng": "Bengáli számjegyek",
@@ -195,7 +222,17 @@
           },
           "ss": {
             "core": "Be"
+          },
+          "t0": {
+            "und": "Meghatározatlan gépi fordítás"
+          },
+          "va": {
+            "core": "POSIX-variáns"
           }
+        },
+        "typeValues": {
+          "no": "Ki",
+          "yes": "Be"
         },
         "codePatterns": {
           "language": "Nyelv: {0}",

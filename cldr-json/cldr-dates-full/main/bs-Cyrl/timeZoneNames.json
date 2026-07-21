@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Време: {0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -256,9 +258,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Британско љетње вријеме"
-                },
                 "exemplarCity": "Лондон"
               },
               "Guernsey": {
@@ -283,9 +282,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ирско стандардно вријеме"
-                },
                 "exemplarCity": "Даблин"
               },
               "Isle_of_Man": {
@@ -1774,13 +1770,6 @@
                 "daylight": "Аљаска љетње вријеме"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Алмати време",
-                "standard": "Алмати стандардно време",
-                "daylight": "Алмати летње рачунање времена"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Амазон вријеме",
@@ -1828,20 +1817,6 @@
                 "generic": "Апија вријеме",
                 "standard": "Апија стандардно вријеме",
                 "daylight": "Апија љетње рачунање времена"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Акватау време",
-                "standard": "Акватау стандардно време",
-                "daylight": "Акватау летње рачунање времена"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Акутобе време",
-                "standard": "Акутобе стандардно време",
-                "daylight": "Акутобе летње рачунање времена"
               }
             },
             "Arabian": {
@@ -1943,6 +1918,12 @@
                 "generic": "Бразилија вријеме",
                 "standard": "Бразилија стандардно вријеме",
                 "daylight": "Бразилија љетње рачунање времена"
+              }
+            },
+            "British": {
+              "long": {
+                "standard": "Гриничко средње вријеме",
+                "daylight": "Британско љетње вријеме"
               }
             },
             "Brunei": {
@@ -2132,11 +2113,6 @@
                 "daylight": "Западни Гренланд љетње рачунање времена"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Гуам стандардно време"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Заливско вријеме"
@@ -2210,6 +2186,12 @@
                 "daylight": "Иран љетње рачунање времена"
               }
             },
+            "Irish": {
+              "long": {
+                "standard": "Гриничко средње вријеме",
+                "daylight": "Ирско стандардно вријеме"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Иркуцк вријеме",
@@ -2277,11 +2259,6 @@
                 "standard": "Киргистан вријеме"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Шри Ланка време"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Лине Острва вријеме"
@@ -2292,13 +2269,6 @@
                 "generic": "Лорд Хов вријеме",
                 "standard": "Лорд Хов стандардно вријеме",
                 "daylight": "Лорд Хов љетње рачунање времена"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Макао време",
-                "standard": "Макао стандардно време",
-                "daylight": "Макао летње рачунање вемена"
               }
             },
             "Magadan": {
@@ -2416,11 +2386,6 @@
                 "daylight": "Фернандо де Нороња љетње рачунање времена"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Северна Маријанска Острва време"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Новосибирско вријеме",
@@ -2500,13 +2465,6 @@
                 "standard": "Пјонгјанг вријеме"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Кизилорда време",
-                "standard": "Кизилорда стандардно време",
-                "daylight": "Кизилорда летње рачунање времена"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Реинион вријеме"
@@ -2533,9 +2491,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Самоа вријеме",
-                "standard": "Самоа стандардно вријеме",
-                "daylight": "Самоа љетње рачунање времена"
+                "standard": "Самоа стандардно вријеме"
               }
             },
             "Seychelles": {

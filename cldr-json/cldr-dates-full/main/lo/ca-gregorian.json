@@ -97,6 +97,14 @@
                 }
               }
             },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "one": "{0}",
+                  "other": "{0}"
+                }
+              }
+            },
             "days": {
               "format": {
                 "abbreviated": {
@@ -328,6 +336,10 @@
               "short": "Hmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "/",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1}, {0}",
               "long": "{1}, {0}",
               "medium": "{1}, {0}",
@@ -353,7 +365,14 @@
                 "GyMEd": "E, G d/M/y",
                 "GyMMM": "MMM, G y",
                 "GyMMMd": "d MMMM, G y",
+                "GyMMMddd": "ddd MMM, G y",
                 "GyMMMEd": "E d MMMM, G y",
+                "GyMMMEddd": "E, ddd MMM, G y",
+                "GyMMMM": "MMMM G y",
+                "GyMMMMd": "d MMMM, G y",
+                "GyMMMMddd": "ddd MMMM, G y",
+                "GyMMMMEd": "E, d MMMM, G y",
+                "GyMMMMEddd": "E, ddd MMMM, G y",
                 "h": "h ໂມງa",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -371,8 +390,13 @@
                 "MEd": "E, d/M",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
+                "MMMddd": "ddd MMM",
                 "MMMEd": "E d MMM",
+                "MMMEddd": "E, ddd MMM",
                 "MMMMd": "d MMMM",
+                "MMMMddd": "ddd MMMM",
+                "MMMMEd": "E, d MMMM",
+                "MMMMEddd": "E, ddd MMMM",
                 "MMMMW-count-other": "ອາທິດທີ່ W ຂອງເດືອນ M",
                 "ms": "mm:ss",
                 "y": "y",
@@ -381,26 +405,39 @@
                 "yMEd": "E, d/M/y",
                 "yMMM": "MMM y",
                 "yMMMd": "d MMM y",
+                "yMMMddd": "ddd MMM y",
                 "yMMMEd": "E, d MMM y",
+                "yMMMEddd": "E, ddd MMM y",
                 "yMMMM": "MMMM y",
+                "yMMMMd": "d MMMM y",
+                "yMMMMddd": "ddd MMMM y",
+                "yMMMMEd": "E, d MMMM, y",
+                "yMMMMEddd": "E, ddd MMMM y",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yw-count-other": "ອາທິດທີ່ w ຂອງປີ Y"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{1}, {0}",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0} – {1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -505,6 +542,10 @@
                 "MMMEd": {
                   "d": "E, d/MM – E, d/MM",
                   "M": "E, d/MM – E, d/MM"
+                },
+                "MMMMd": {
+                  "d": "d – d MMMM",
+                  "M": "d MMMM – d MMMM"
                 },
                 "y": {
                   "y": "y–y"

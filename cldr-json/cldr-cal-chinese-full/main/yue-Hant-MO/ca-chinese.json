@@ -128,6 +128,13 @@
                 }
               }
             },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "other": "{0}日"
+                }
+              }
+            },
             "days": {
               "format": {
                 "abbreviated": {
@@ -257,7 +264,7 @@
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
-                  "afternoon2": "下晝",
+                  "afternoon2": "下午",
                   "evening1": "夜晚",
                   "night1": "凌晨"
                 },
@@ -268,7 +275,7 @@
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
-                  "afternoon2": "下晝",
+                  "afternoon2": "下午",
                   "evening1": "夜晚",
                   "night1": "凌晨"
                 },
@@ -279,7 +286,7 @@
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
-                  "afternoon2": "下晝",
+                  "afternoon2": "下午",
                   "evening1": "夜晚",
                   "night1": "凌晨"
                 }
@@ -292,7 +299,7 @@
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
-                  "afternoon2": "下晝",
+                  "afternoon2": "下午",
                   "evening1": "夜晚",
                   "night1": "凌晨"
                 },
@@ -303,18 +310,18 @@
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
-                  "afternoon2": "下晝",
+                  "afternoon2": "下午",
                   "evening1": "夜晚",
                   "night1": "凌晨"
                 },
                 "wide": {
                   "midnight": "午夜",
-                  "am": "上晝",
-                  "pm": "下晝",
+                  "am": "上午",
+                  "pm": "下午",
                   "morning1": "清晨",
                   "morning2": "朝早",
                   "afternoon1": "中午",
-                  "afternoon2": "下晝",
+                  "afternoon2": "下午",
                   "evening1": "夜晚",
                   "night1": "凌晨"
                 }
@@ -1106,6 +1113,10 @@
               "short": "ahmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "/",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -1163,19 +1174,26 @@
                 "yyyyQQQQ": "rU年QQQQ"
               },
               "appendItems": {
+                "Date-Timezone": "{0} ({1})",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{0} ({1})",
+                "Era": "{1}{0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
-                "Timezone": "{0} {1}",
+                "Time-Day-Of-Week": "{1}{0}",
+                "Timezone": "{0} ({1})",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}日至{1}日"
+                },
                 "intervalFormatFallback": "{0}至{1}",
                 "Bh": {
                   "B": "h B – h B",

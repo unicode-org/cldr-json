@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "{0} GMT",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} game",
           "regionFormat-type-daylight": "{0} ŋkekemeɣeyiɣi",
           "regionFormat-type-standard": "{0} game ɖoɖoea",
@@ -68,18 +70,6 @@
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "British dzomeŋɔli gaƒoƒo me"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Ireland nutome gaƒoƒo me"
-                }
               },
               "Chisinau": {
                 "_type": "zone",
@@ -547,6 +537,13 @@
                 "daylight": "Brasilia dzomeŋɔli gaƒoƒo me"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Britain gaƒoƒo",
+                "standard": "Greenwich gaƒoƒo",
+                "daylight": "British dzomeŋɔli gaƒoƒo me"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Brunei Darussalam gaƒoƒo me"
@@ -741,7 +738,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaii-Aleutia nutome gaƒoƒo me"
+                "standard": "Hawaii nutome gaƒoƒo me"
               }
             },
             "Hawaii_Aleutian": {
@@ -800,6 +797,13 @@
                 "generic": "Iran gaƒoƒo me",
                 "standard": "Iran nutome gaƒoƒo me",
                 "daylight": "Iran kele gaƒoƒo me"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Ireland gaƒoƒo",
+                "standard": "Greenwich gaƒoƒo",
+                "daylight": "Ireland nutome gaƒoƒo me"
               }
             },
             "Irkutsk": {
@@ -1082,9 +1086,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa gaƒoƒo me",
-                "standard": "Samoa nutome gaƒoƒo me",
-                "daylight": "Samoa kele gaƒoƒo me"
+                "standard": "Samoa nutome gaƒoƒo me"
               }
             },
             "Seychelles": {

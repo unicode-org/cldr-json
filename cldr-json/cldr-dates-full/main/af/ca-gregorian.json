@@ -97,6 +97,14 @@
                 }
               }
             },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "few": "{0}e",
+                  "other": "{0}e"
+                }
+              }
+            },
             "days": {
               "format": {
                 "abbreviated": {
@@ -233,9 +241,9 @@
                   "am": "v",
                   "pm": "n",
                   "morning1": "die oggend",
-                  "afternoon1": "in die middag",
-                  "evening1": "in die aand",
-                  "night1": "in die nag"
+                  "afternoon1": "die middag",
+                  "evening1": "die aand",
+                  "night1": "die nag"
                 },
                 "wide": {
                   "midnight": "middernag",
@@ -322,6 +330,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -342,12 +354,19 @@
                 "Ehms": "E hh:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
-                "GyM": "G y-MM",
-                "GyMd": "G y-MM-dd",
-                "GyMEd": "G y-MM-dd, E",
+                "GyM": "y-MM G",
+                "GyMd": "y-MM-dd G",
+                "GyMEd": "E y-MM-dd G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "dd MMM y G",
+                "GyMMMddd": "ddd MMM y G",
                 "GyMMMEd": "E dd MMM y G",
+                "GyMMMEddd": "E ddd MMM y G",
+                "GyMMMM": "MMMM y G",
+                "GyMMMMd": "d MMMM y G",
+                "GyMMMMddd": "ddd MMMM y G",
+                "GyMMMMEd": "E d MMMM y G",
+                "GyMMMMEddd": "E ddd MMMM y G",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -365,9 +384,13 @@
                 "MEd": "E d/M",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
+                "MMMddd": "ddd MMM",
                 "MMMEd": "E d MMM",
+                "MMMEddd": "E ddd MMM",
                 "MMMMd": "d MMMM",
+                "MMMMddd": "ddd MMMM",
                 "MMMMEd": "E d MMMM",
+                "MMMMEddd": "E ddd MMMM",
                 "MMMMW-count-one": "'week' W 'van' MMMM",
                 "MMMMW-count-other": "'week' W 'van' MMMM",
                 "ms": "mm:ss",
@@ -377,27 +400,40 @@
                 "yMEd": "E y-MM-dd",
                 "yMMM": "MMM y",
                 "yMMMd": "d MMM y",
+                "yMMMddd": "ddd MMM y",
                 "yMMMEd": "E d MMM y",
+                "yMMMEddd": "E ddd MMM y",
                 "yMMMM": "MMMM y",
+                "yMMMMd": "d MMMM y",
+                "yMMMMddd": "ddd MMMM y",
+                "yMMMMEd": "E d MMMM y",
+                "yMMMMEddd": "E ddd MMMM y",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yw-count-one": "'week' w 'van' Y",
                 "yw-count-other": "'week' w 'van' Y"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1} {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -502,6 +538,10 @@
                 "MMMEd": {
                   "d": "E d MMM – E d MMM",
                   "M": "E d MMM – E d MMM"
+                },
+                "MMMMd": {
+                  "d": "MMMM d–d",
+                  "M": "MMMM d – MMMM d"
                 },
                 "y": {
                   "y": "y–y"

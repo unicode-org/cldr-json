@@ -98,6 +98,14 @@
                 }
               }
             },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "one": "{0}:a",
+                  "other": "{0}:e"
+                }
+              }
+            },
             "days": {
               "format": {
                 "abbreviated": {
@@ -222,8 +230,8 @@
               "format": {
                 "abbreviated": {
                   "midnight": "midnatt",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "på morg.",
                   "morning2": "på förm.",
                   "afternoon1": "på efterm.",
@@ -232,8 +240,8 @@
                 },
                 "narrow": {
                   "midnight": "midn.",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "på morg.",
                   "morning2": "på förm.",
                   "afternoon1": "på efterm.",
@@ -242,8 +250,8 @@
                 },
                 "wide": {
                   "midnight": "midnatt",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "på morgonen",
                   "morning2": "på förmiddagen",
                   "afternoon1": "på eftermiddagen",
@@ -254,8 +262,8 @@
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "midnatt",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "morgon",
                   "morning2": "förm.",
                   "afternoon1": "efterm.",
@@ -264,8 +272,8 @@
                 },
                 "narrow": {
                   "midnight": "midn.",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "morg.",
                   "morning2": "förm.",
                   "afternoon1": "efterm.",
@@ -274,8 +282,8 @@
                 },
                 "wide": {
                   "midnight": "midnatt",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "morgon",
                   "morning2": "förmiddag",
                   "afternoon1": "eftermiddag",
@@ -333,6 +341,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": ".",
+                "numericTimeSeparator": "."
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -358,7 +370,14 @@
                 "GyMEd": "E d.M.y G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
+                "GyMMMddd": "ddd MMM y G",
                 "GyMMMEd": "E d MMM y G",
+                "GyMMMEddd": "E ddd MMM y G",
+                "GyMMMM": "MMMM y G",
+                "GyMMMMd": "d MMMM y G",
+                "GyMMMMddd": "ddd MMMM y G",
+                "GyMMMMEd": "E d MMMM y G",
+                "GyMMMMEddd": "E ddd MMMM y G",
                 "h": "h a",
                 "H": "H",
                 "hm": "h.mm a",
@@ -378,9 +397,13 @@
                 "MMdd": "dd.MM",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
+                "MMMddd": "ddd MMM",
                 "MMMEd": "E d MMM",
+                "MMMEddd": "E ddd MMM",
                 "MMMMd": "d MMMM",
+                "MMMMddd": "ddd MMMM",
                 "MMMMEd": "E d MMMM",
+                "MMMMEddd": "E ddd MMMM",
                 "MMMMW-count-one": "'vecka' W 'i' MMMM",
                 "MMMMW-count-other": "'vecka' W 'i' MMMM",
                 "ms": "mm.ss",
@@ -391,27 +414,40 @@
                 "yMM": "M.y",
                 "yMMM": "MMM y",
                 "yMMMd": "d MMM y",
+                "yMMMddd": "ddd MMM y",
                 "yMMMEd": "E d MMM y",
+                "yMMMEddd": "E ddd MMM y",
                 "yMMMM": "MMMM y",
+                "yMMMMd": "d MMMM y",
+                "yMMMMddd": "ddd MMMM y",
+                "yMMMMEd": "E d MMMM y",
+                "yMMMMEddd": "E ddd MMMM y",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yw-count-one": "'vecka' w, Y",
                 "yw-count-other": "'vecka' w, Y"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1} {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0}–{1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0}–{1}",
                 "Bh": {
                   "B": "h B–h B",
@@ -426,7 +462,7 @@
                   "d": "d–d"
                 },
                 "Gy": {
-                  "G": "y G – y G",
+                  "G": "y G–y G",
                   "y": "y–y G"
                 },
                 "GyM": {
@@ -516,6 +552,10 @@
                 "MMMEd": {
                   "d": "E d–E d MMM",
                   "M": "E d MMM–E d MMM"
+                },
+                "MMMMd": {
+                  "d": "d–d MMMM",
+                  "M": "d MMMM–d MMMM"
                 },
                 "y": {
                   "y": "y–y"

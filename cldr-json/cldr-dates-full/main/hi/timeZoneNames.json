@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} समय",
           "regionFormat-type-daylight": "{0} डेलाइट समय",
           "regionFormat-type-standard": "{0} मानक समय",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ब्रिटिश ग्रीष्मकालीन समय"
-                },
                 "exemplarCity": "लंदन"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "आइरिश मानक समय"
-                },
                 "exemplarCity": "डबलिन"
               },
               "Isle_of_Man": {
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "एकर समय",
+                "standard": "एकर का मानक समय",
+                "daylight": "एकर ग्रीष्मकालीन समय"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "अफ़गानिस्तान समय"
@@ -1920,6 +1923,13 @@
                 "daylight": "ब्राज़ीलिया ग्रीष्मकालीन समय"
               }
             },
+            "British": {
+              "long": {
+                "generic": "ब्रिटिश समय",
+                "standard": "ग्रीनविच मीन टाइम",
+                "daylight": "ब्रिटिश ग्रीष्मकालीन समय"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "ब्रूनेई दारूस्सलम समय"
@@ -2093,6 +2103,13 @@
                 "standard": "ग्रीनविच मीन टाइम"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "ग्रीनलैंड समय",
+                "standard": "ग्रीनलैंड मानक समय",
+                "daylight": "ग्रीनलैंड ग्रीष्मकालीन समय"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "पूर्वी ग्रीनलैंड समय",
@@ -2119,7 +2136,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "हवाई–आल्यूशन मानक समय"
+                "standard": "हवाई समय"
               }
             },
             "Hawaii_Aleutian": {
@@ -2183,6 +2200,13 @@
                 "daylight": "ईरान डेलाइट समय"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "आयरिश समय",
+                "standard": "ग्रीनविच मीन टाइम",
+                "daylight": "आइरिश मानक समय"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "इर्कुत्स्क समय",
@@ -2206,9 +2230,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "पेट्रोपेवलास्क-कैमचात्सकी समय",
-                "standard": "पेट्रोपेवलास्क-कैमचात्सकी मानक समय",
-                "daylight": "पेट्रोपेवलास्क-कैमचात्सकी ग्रीष्मकालीन समय"
+                "generic": "कैमचात्का समय",
+                "standard": "कैमचात्का मानक समय",
+                "daylight": "कैमचात्का ग्रीष्मकालीन समय"
               }
             },
             "Kazakhstan": {
@@ -2482,9 +2506,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "समोआ समय",
-                "standard": "समोआ मानक समय",
-                "daylight": "समोआ डेलाइट समय"
+                "standard": "समोआ मानक समय"
               }
             },
             "Seychelles": {
@@ -2551,6 +2573,13 @@
                 "standard": "चुक समय"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "तुर्किये समय",
+                "standard": "तुर्किये मानक समय",
+                "daylight": "तुर्किये समर टाइम"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "तुर्कमेनिस्तान समय",
@@ -2568,6 +2597,11 @@
                 "generic": "उरुग्वे समय",
                 "standard": "उरुग्वे मानक समय",
                 "daylight": "उरुग्वे ग्रीष्मकालीन समय"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ऊरूमची समय"
               }
             },
             "Uzbekistan": {

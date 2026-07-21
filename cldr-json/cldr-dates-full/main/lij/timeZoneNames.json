@@ -7,9 +7,11 @@
       "dates": {
         "timeZoneNames": {
           "hourFormat": "+HH:mm;−HH:mm",
-          "gmtFormat": "UTC{0}",
-          "gmtZeroFormat": "UTC",
-          "gmtUnknownFormat": "GMT+?",
+          "gmtFormat": "GMT{0}",
+          "gmtFormat-alt-utc": "UTC{0}",
+          "gmtUnknownFormat": "UTC+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "oa: {0}",
           "regionFormat-type-daylight": "oa de stæ: {0}",
           "regionFormat-type-standard": "oa standard: {0}",
@@ -18,9 +20,16 @@
             "Etc": {
               "UTC": {
                 "_type": "zone",
+                "long": {
+                  "standard": "tempo universale coordinou"
+                },
                 "short": {
                   "standard": "UTC"
                 }
+              },
+              "Unknown": {
+                "_type": "zone",
+                "exemplarCity": "pòsto desconosciuo"
               }
             },
             "Europe": {
@@ -68,7 +77,7 @@
               },
               "St_Barthelemy": {
                 "_type": "zone",
-                "exemplarCity": "St. Barthélemy"
+                "exemplarCity": "San Bertomê"
               },
               "Eirunepe": {
                 "_type": "zone",
@@ -114,9 +123,17 @@
                 "_type": "zone",
                 "exemplarCity": "Bogotá"
               },
+              "Costa_Rica": {
+                "_type": "zone",
+                "exemplarCity": "Còsta Rica"
+              },
               "Curacao": {
                 "_type": "zone",
                 "exemplarCity": "Curaçao"
+              },
+              "Grenada": {
+                "_type": "zone",
+                "exemplarCity": "Granada"
               },
               "Godthab": {
                 "_type": "zone",
@@ -126,6 +143,10 @@
                 "_type": "zone",
                 "exemplarCity": "Ittoqqortoormiit"
               },
+              "Guadeloupe": {
+                "_type": "zone",
+                "exemplarCity": "Guadaluppa"
+              },
               "St_Kitts": {
                 "_type": "zone",
                 "exemplarCity": "St. Kitts"
@@ -133,6 +154,10 @@
               "St_Lucia": {
                 "_type": "zone",
                 "exemplarCity": "St. Lucia"
+              },
+              "Martinique": {
+                "_type": "zone",
+                "exemplarCity": "Martinica"
               },
               "Ciudad_Juarez": {
                 "_type": "zone",
@@ -148,7 +173,7 @@
               },
               "Mexico_City": {
                 "_type": "zone",
-                "exemplarCity": "Ciudad de México"
+                "exemplarCity": "Çittæ do Mescico"
               },
               "Merida": {
                 "_type": "zone",
@@ -337,9 +362,154 @@
             }
           },
           "metazone": {
+            "Alaska": {
+              "long": {
+                "generic": "oa de l’Alaska",
+                "standard": "oa standard de l’Alaska",
+                "daylight": "oa de stæ de l’Alaska"
+              }
+            },
+            "Apia": {
+              "long": {
+                "generic": "oa de Samoa",
+                "standard": "oa standard de Samoa",
+                "daylight": "oa de stæ de Samoa"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "oa britannica",
+                "standard": "oa do meridian de Greenwich",
+                "daylight": "oa de stæ britannica"
+              }
+            },
+            "Brunei": {
+              "long": {
+                "standard": "oa do Brunei"
+              }
+            },
+            "Cape_Verde": {
+              "long": {
+                "generic": "oa de Cao Verde",
+                "standard": "oa standard de Cao Verde",
+                "daylight": "oa de stæ de Cao Verde"
+              }
+            },
+            "DumontDUrville": {
+              "long": {
+                "standard": "oa de Dumont d’Urville"
+              }
+            },
+            "East_Timor": {
+              "long": {
+                "standard": "oa de Timor-Leste"
+              }
+            },
             "GMT": {
               "long": {
                 "standard": "oa do meridian de Greenwich"
+              }
+            },
+            "Greenland": {
+              "long": {
+                "generic": "oa da Groenlandia",
+                "standard": "oa standard da Groenlandia",
+                "daylight": "oa de stæ da Groenlandia"
+              }
+            },
+            "Greenland_Eastern": {
+              "long": {
+                "generic": "oa da Groenlandia de levante",
+                "standard": "oa standard da Groenlandia de levante",
+                "daylight": "oa de stæ da Groenlandia de levante"
+              }
+            },
+            "Greenland_Western": {
+              "long": {
+                "generic": "oa da Groenlandia de ponente",
+                "standard": "oa standard da Groenlandia de ponente",
+                "daylight": "oa de stæ da Groenlandia de ponente"
+              }
+            },
+            "Hawaii": {
+              "long": {
+                "standard": "oa standard de Hawaii"
+              }
+            },
+            "Hawaii_Aleutian": {
+              "long": {
+                "generic": "oa de Hawaii-Aleutiñe",
+                "standard": "oa standard de Hawaii-Aleutiñe",
+                "daylight": "oa de stæ de Hawaii-Aleutiñe"
+              }
+            },
+            "Hovd": {
+              "long": {
+                "generic": "oa de Khovd",
+                "standard": "oa standard de Khovd",
+                "daylight": "oa de stæ de Khovd"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "oa d’Irlanda",
+                "standard": "oa do meridian de Greenwich",
+                "daylight": "oa de stæ d’Irlanda"
+              }
+            },
+            "Japan": {
+              "long": {
+                "generic": "oa do Giapon",
+                "standard": "oa standard do Giapon",
+                "daylight": "oa de stæ do Giapon"
+              }
+            },
+            "Kazakhstan": {
+              "long": {
+                "standard": "oa do Kazakistan"
+              }
+            },
+            "Mexico_Pacific": {
+              "long": {
+                "generic": "oa do Paçifico mescicaña",
+                "standard": "oa standard do Paçifico mescicaña",
+                "daylight": "oa de stæ do Paçifico mescicaña"
+              }
+            },
+            "Newfoundland": {
+              "long": {
+                "generic": "oa de Tæraneuva",
+                "standard": "oa standard de Tæraneuva",
+                "daylight": "oa de stæ de Tæraneuva"
+              }
+            },
+            "Pierre_Miquelon": {
+              "long": {
+                "generic": "oa de San Pê e Miquelon",
+                "standard": "oa standard de San Pê e Miquelon",
+                "daylight": "oa de stæ de San Pê e Miquelon"
+              }
+            },
+            "Pyongyang": {
+              "long": {
+                "standard": "oa da Corea do Nòrd"
+              }
+            },
+            "Samoa": {
+              "long": {
+                "standard": "oa standard de Samoa americañe"
+              }
+            },
+            "Taipei": {
+              "long": {
+                "generic": "oa de Taiwan",
+                "standard": "oa standard de Taiwan",
+                "daylight": "oa de stæ de Taiwan"
+              }
+            },
+            "Yukon": {
+              "long": {
+                "standard": "oa do Yukon"
               }
             }
           }

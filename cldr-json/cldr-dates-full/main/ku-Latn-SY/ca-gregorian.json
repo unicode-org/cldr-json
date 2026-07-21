@@ -294,6 +294,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -319,7 +323,14 @@
                 "GyMEd": "G d/M/y, E",
                 "GyMMM": "G MMM y",
                 "GyMMMd": "G d MMM, y",
+                "GyMMMddd": "G y MMM ddd",
                 "GyMMMEd": "G d MMM y, E",
+                "GyMMMEddd": "G y MMM ddd, E",
+                "GyMMMM": "G y MMMM",
+                "GyMMMMd": "G y MMMM d",
+                "GyMMMMddd": "G y MMMM ddd",
+                "GyMMMMEd": "G y MMMM d, E",
+                "GyMMMMEddd": "G y MMMM ddd, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -337,8 +348,13 @@
                 "MEd": "d/M, E",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
+                "MMMddd": "MMM ddd",
                 "MMMEd": "d MMM, E",
+                "MMMEddd": "MMM ddd, E",
                 "MMMMd": "d'ê' MMMM'ê'",
+                "MMMMddd": "MMMM ddd",
+                "MMMMEd": "MMMM d, E",
+                "MMMMEddd": "MMMM ddd, E",
                 "MMMMW-count-one": "'hefteya' W'an' 'ya' MMMM'ê'",
                 "MMMMW-count-other": "'hefteya' W'an' 'ya' MMMM'ê'",
                 "ms": "mm:ss",
@@ -348,27 +364,38 @@
                 "yMEd": "dd.MM.y, E",
                 "yMMM": "MMM, y",
                 "yMMMd": "d MMM, y",
+                "yMMMddd": "y MMM ddd",
                 "yMMMEd": "d MMM y, E",
+                "yMMMEddd": "y MMM ddd, E",
                 "yMMMM": "MMMM'a' y'an'",
+                "yMMMMddd": "y MMMM ddd",
+                "yMMMMEddd": "y MMMM ddd, E",
                 "yQQQ": "QQQ, y",
                 "yQQQQ": "QQQQ 'ya' y'an'",
                 "yw-count-one": "'hefteya' w'an' 'ya' Y'an'",
                 "yw-count-other": "'hefteya' w'an' 'ya' Y'an'"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{1} {0}",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -473,6 +500,10 @@
                 "MMMEd": {
                   "d": "d MMM, E – d MMM, E",
                   "M": "d MMM, E – d MMM, E"
+                },
+                "MMMMd": {
+                  "d": "MMMM d–d",
+                  "M": "MMMM d – MMMM d"
                 },
                 "y": {
                   "y": "y – y"

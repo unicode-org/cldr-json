@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}时间",
           "regionFormat-type-daylight": "{0}夏令时间",
           "regionFormat-type-standard": "{0}标准时间",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "英国夏令时间"
-                },
                 "exemplarCity": "伦敦"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "爱尔兰标准时间"
-                },
                 "exemplarCity": "都柏林"
               },
               "Isle_of_Man": {
@@ -1777,13 +1773,6 @@
                 "daylight": "阿拉斯加夏令时间"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "阿拉木图时间",
-                "standard": "阿拉木图标准时间",
-                "daylight": "阿拉木图夏令时间"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "亚马逊时间",
@@ -1831,20 +1820,6 @@
                 "generic": "阿皮亚时间",
                 "standard": "阿皮亚标准时间",
                 "daylight": "阿皮亚夏令时间"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "阿克套时间",
-                "standard": "阿克套标准时间",
-                "daylight": "阿克套夏令时间"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "阿克托别时间",
-                "standard": "阿克托别标准时间",
-                "daylight": "阿克托别夏令时间"
               }
             },
             "Arabian": {
@@ -1946,6 +1921,13 @@
                 "generic": "巴西利亚时间",
                 "standard": "巴西利亚标准时间",
                 "daylight": "巴西利亚夏令时间"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "英国时间",
+                "standard": "格林尼治标准时间",
+                "daylight": "英国夏令时间"
               }
             },
             "Brunei": {
@@ -2126,6 +2108,13 @@
                 "standard": "格林尼治标准时间"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "格陵兰岛时间",
+                "standard": "格陵兰岛标准时间",
+                "daylight": "格陵兰岛夏令时间"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "格陵兰岛东部时间",
@@ -2140,11 +2129,6 @@
                 "daylight": "格陵兰岛西部夏令时间"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "关岛时间"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "海湾标准时间"
@@ -2157,7 +2141,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "夏威夷-阿留申标准时间"
+                "standard": "夏威夷-阿留申标准时"
               }
             },
             "Hawaii_Aleutian": {
@@ -2216,6 +2200,13 @@
                 "generic": "伊朗时间",
                 "standard": "伊朗标准时间",
                 "daylight": "伊朗夏令时间"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "爱尔兰时间",
+                "standard": "格林尼治标准时间",
+                "daylight": "爱尔兰标准时间"
               }
             },
             "Irkutsk": {
@@ -2285,11 +2276,6 @@
                 "standard": "吉尔吉斯斯坦时间"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "兰卡时间"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "莱恩群岛时间"
@@ -2300,13 +2286,6 @@
                 "generic": "豪勋爵岛时间",
                 "standard": "豪勋爵岛标准时间",
                 "daylight": "豪勋爵岛夏令时间"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "澳门时间",
-                "standard": "澳门标准时间",
-                "daylight": "澳门夏令时间"
               }
             },
             "Magadan": {
@@ -2424,11 +2403,6 @@
                 "daylight": "费尔南多-迪诺罗尼亚岛夏令时间"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "北马里亚纳群岛时间"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "新西伯利亚时间",
@@ -2508,13 +2482,6 @@
                 "standard": "平壤时间"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "克孜洛尔达时间",
-                "standard": "克孜洛尔达标准时间",
-                "daylight": "克孜洛尔达夏令时间"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "留尼汪时间"
@@ -2541,9 +2508,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "萨摩亚时间",
-                "standard": "萨摩亚标准时间",
-                "daylight": "萨摩亚夏令时间"
+                "standard": "萨摩亚标准时间"
               }
             },
             "Seychelles": {
@@ -2634,6 +2599,11 @@
                 "generic": "乌拉圭时间",
                 "standard": "乌拉圭标准时间",
                 "daylight": "乌拉圭夏令时间"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "乌鲁木齐时间"
               }
             },
             "Uzbekistan": {

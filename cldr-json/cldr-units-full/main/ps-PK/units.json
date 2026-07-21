@@ -8,7 +8,7 @@
       "units": {
         "long": {
           "10p-1": {
-            "unitPrefixPattern": "پرېکړه{0}"
+            "unitPrefixPattern": "ډیسی میتره{0}"
           },
           "10p-2": {
             "unitPrefixPattern": "سانتي {0}"
@@ -41,7 +41,7 @@
             "unitPrefixPattern": "رونټو{0}"
           },
           "10p-30": {
-            "unitPrefixPattern": "کویټو{0}"
+            "unitPrefixPattern": "کویکټو{0}"
           },
           "10p1": {
             "unitPrefixPattern": "ډیکا {0}"
@@ -80,28 +80,28 @@
             "unitPrefixPattern": "کوټه{0}"
           },
           "1024p1": {
-            "unitPrefixPattern": "kibi{0}"
+            "unitPrefixPattern": "کیبي{0}"
           },
           "1024p2": {
-            "unitPrefixPattern": "mebi{0}"
+            "unitPrefixPattern": "میبي{0}"
           },
           "1024p3": {
-            "unitPrefixPattern": "gibi{0}"
+            "unitPrefixPattern": "ګیبي{0}"
           },
           "1024p4": {
-            "unitPrefixPattern": "tebi{0}"
+            "unitPrefixPattern": "ټیبي{0}"
           },
           "1024p5": {
-            "unitPrefixPattern": "pebi{0}"
+            "unitPrefixPattern": "پیبي{0}"
           },
           "1024p6": {
-            "unitPrefixPattern": "exbi{0}"
+            "unitPrefixPattern": "ایګزبی{0}"
           },
           "1024p7": {
-            "unitPrefixPattern": "zebi{0}"
+            "unitPrefixPattern": "زیبی{0}"
           },
           "1024p8": {
-            "unitPrefixPattern": "yobi{0}"
+            "unitPrefixPattern": "یوبي{0}"
           },
           "per": {
             "compoundUnitPattern": "{0}في {1}"
@@ -275,7 +275,7 @@
             "unitPattern-count-other": "{0} ليټرز في ۱۰۰ کيلو مترز"
           },
           "consumption-mile-per-gallon": {
-            "displayName": "ميلز في ګيلن",
+            "displayName": "میلونه/ګیلن",
             "unitPattern-count-one": "{0} ميل في ګيلن",
             "unitPattern-count-other": "{0} ميلز في ګيلن"
           },
@@ -330,14 +330,12 @@
             "unitPattern-count-other": "{0} کيلو بټس"
           },
           "digital-byte": {
-            "displayName": "بايټس",
-            "unitPattern-count-one": "{0} بايټ",
-            "unitPattern-count-other": "{0} بايټس"
+            "displayName": "byte",
+            "unitPattern-count-other": "{0} byte"
           },
           "digital-bit": {
-            "displayName": "بټس",
-            "unitPattern-count-one": "{0} بټ",
-            "unitPattern-count-other": "{0} بټس"
+            "displayName": "bit",
+            "unitPattern-count-other": "{0} bit"
           },
           "duration-century": {
             "displayName": "پېړۍ",
@@ -407,7 +405,8 @@
           },
           "duration-nanosecond": {
             "displayName": "نينو ثانيې",
-            "unitPattern-count-other": "{0} ns"
+            "unitPattern-count-one": "{0} نینو ثانیه",
+            "unitPattern-count-other": "{0} نینو ثانیې"
           },
           "electric-ampere": {
             "displayName": "ايمپيرز",
@@ -430,9 +429,9 @@
             "unitPattern-count-other": "{0} وولټس"
           },
           "energy-kilocalorie": {
-            "displayName": "کيلو کيلريز",
-            "unitPattern-count-one": "{0} کيلو کيلري",
-            "unitPattern-count-other": "{0} کيلو کيلريز"
+            "displayName": "کيلو کالوري",
+            "unitPattern-count-one": "{0} کيلو کالوري",
+            "unitPattern-count-other": "{0} کيلو کالوري"
           },
           "energy-calorie": {
             "displayName": "کيلريز",
@@ -441,7 +440,7 @@
           },
           "energy-foodcalorie": {
             "displayName": "کيلريز",
-            "unitPattern-count-one": "{0} کيلري",
+            "unitPattern-count-one": "{0} kcal",
             "unitPattern-count-other": "{0} کيلريز"
           },
           "energy-kilojoule": {
@@ -471,7 +470,7 @@
           },
           "energy-therm-us": {
             "displayName": "متحده ایالاتو ترمامونه",
-            "unitPattern-count-one": "{0} US تهرم",
+            "unitPattern-count-one": "{0} د متحده ایالاتو تهرم",
             "unitPattern-count-other": "{0} US تهرم"
           },
           "force-pound-force": {
@@ -479,10 +478,18 @@
             "unitPattern-count-one": "{0} د قوې پاونډ",
             "unitPattern-count-other": "{0} د قوې پاونډز"
           },
+          "force-poundal": {
+            "displayName": "pdl",
+            "unitPattern-count-other": "{0} pdl"
+          },
           "force-newton": {
             "displayName": "نيوټنز",
             "unitPattern-count-one": "{0} نيوټن",
             "unitPattern-count-other": "{0} نيوټنز"
+          },
+          "force-dyne": {
+            "displayName": "dyn",
+            "unitPattern-count-other": "{0} dyn"
           },
           "force-kilowatt-hour-per-100-kilometer": {
             "displayName": "kWh/100km",
@@ -612,6 +619,10 @@
             "unitPattern-count-other": "{0} انچے",
             "perUnitPattern": "{0} هر انچ"
           },
+          "length-mil": {
+            "displayName": "mil [US]",
+            "unitPattern-count-other": "{0} mil [US]"
+          },
           "length-parsec": {
             "displayName": "پارسيکس",
             "unitPattern-count-one": "{0} پارسيکس",
@@ -643,7 +654,7 @@
             "unitPattern-count-other": "{0} بحري ميلونه"
           },
           "length-mile-scandinavian": {
-            "displayName": "سکېنډنيوين ميل",
+            "displayName": "سکینډینویايي مایلز",
             "unitPattern-count-one": "{0} سکېنډنيوين ميل",
             "unitPattern-count-other": "{0} سکېنډنيوين ميلونه"
           },
@@ -992,7 +1003,7 @@
             "perUnitPattern": "{0} في ګيلن"
           },
           "volume-gallon-imperial": {
-            "displayName": "امپراطوري ګیلن",
+            "displayName": "Imp. gal",
             "unitPattern-count-other": "{0} gal Imp.",
             "perUnitPattern": "{0}/gal Imp."
           },
@@ -1043,9 +1054,9 @@
             "unitPattern-count-other": "{0} بېرلز"
           },
           "volume-dessert-spoon": {
-            "displayName": "مچ چمچ",
-            "unitPattern-count-one": "{0} مچ چمچ",
-            "unitPattern-count-other": "{0} مچ چمچ"
+            "displayName": "د ډیزرټ کاچوغي",
+            "unitPattern-count-one": "{0} د ډیزرټ کاچوغي",
+            "unitPattern-count-other": "{0} د ډیزرټ کاچوغي"
           },
           "volume-dessert-spoon-imperial": {
             "displayName": "Imp. dessert spoons",
@@ -1053,19 +1064,19 @@
             "unitPattern-count-other": "{0} Imp. dessert spoons"
           },
           "volume-drop": {
-            "displayName": "څاڅک",
-            "unitPattern-count-one": "{0} څاڅک",
-            "unitPattern-count-other": "{0} څاڅک"
+            "displayName": "څاڅکی",
+            "unitPattern-count-one": "{0} څاڅکی",
+            "unitPattern-count-other": "{0} څاڅکي"
           },
           "volume-dram": {
-            "displayName": "ډرام",
-            "unitPattern-count-one": "{0} ډرام",
-            "unitPattern-count-other": "{0} ډرام"
+            "displayName": "ډرامونه",
+            "unitPattern-count-one": "{0} ډرامونه",
+            "unitPattern-count-other": "{0} ډرامونه"
           },
           "volume-jigger": {
-            "displayName": "جګر",
-            "unitPattern-count-one": "{0} جګر",
-            "unitPattern-count-other": "{0} جګر"
+            "displayName": "جیګرونه",
+            "unitPattern-count-one": "{0} جګرونه",
+            "unitPattern-count-other": "{0} جګرونه"
           },
           "volume-pinch": {
             "displayName": "چنه",
@@ -1109,7 +1120,7 @@
           "energy-calorie-it": {
             "displayName": "کالوري [IT]",
             "unitPattern-count-one": "{0} کالوري [IT]",
-            "unitPattern-count-other": "{0} cal-IT"
+            "unitPattern-count-other": "{0} کالوري-IT"
           },
           "energy-british-thermal-unit-it": {
             "displayName": "BTU-IT",
@@ -1402,7 +1413,7 @@
             "unitPattern-count-other": "{0}′"
           },
           "angle-arc-second": {
-            "displayName": "آرکسیکس",
+            "displayName": "arcsec",
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
@@ -1624,7 +1635,7 @@
             "unitPattern-count-other": "{0} μs"
           },
           "duration-nanosecond": {
-            "displayName": "ns",
+            "displayName": "نینو ثانیې",
             "unitPattern-count-other": "{0} ns"
           },
           "electric-ampere": {
@@ -1644,7 +1655,7 @@
             "unitPattern-count-other": "{0} V"
           },
           "energy-kilocalorie": {
-            "displayName": "kcal",
+            "displayName": "کیلو کالوري",
             "unitPattern-count-other": "{0} kcal"
           },
           "energy-calorie": {
@@ -1660,7 +1671,7 @@
             "unitPattern-count-other": "{0} J"
           },
           "energy-kilowatt-hour": {
-            "displayName": "kW-hour",
+            "displayName": "kWh",
             "unitPattern-count-other": "{0} kWh"
           },
           "energy-electronvolt": {
@@ -1673,16 +1684,24 @@
           },
           "energy-therm-us": {
             "displayName": "US تهرم",
-            "unitPattern-count-one": "{0} US تهرم",
-            "unitPattern-count-other": "{0} US therm"
+            "unitPattern-count-one": "{0} د متحده ایالاتو تهرم",
+            "unitPattern-count-other": "{0} د متحده ایالاتو تهرم"
           },
           "force-pound-force": {
             "displayName": "پاونډ قوه",
             "unitPattern-count-other": "{0} lbf"
           },
+          "force-poundal": {
+            "displayName": "pdl",
+            "unitPattern-count-other": "{0} pdl"
+          },
           "force-newton": {
             "displayName": "نيوټن",
             "unitPattern-count-other": "{0} N"
+          },
+          "force-dyne": {
+            "displayName": "dyn",
+            "unitPattern-count-other": "{0} dyn"
           },
           "force-kilowatt-hour-per-100-kilometer": {
             "displayName": "kWh/100km",
@@ -1790,6 +1809,10 @@
             "displayName": "انچے",
             "unitPattern-count-other": "{0} in",
             "perUnitPattern": "{0}/in"
+          },
+          "length-mil": {
+            "displayName": "mil [US]",
+            "unitPattern-count-other": "{0} mil [US]"
           },
           "length-parsec": {
             "displayName": "پارسيکس",
@@ -2006,11 +2029,11 @@
             "unitPattern-count-other": "{0}°"
           },
           "temperature-celsius": {
-            "displayName": "deg. C",
+            "displayName": "°C",
             "unitPattern-count-other": "{0}°C"
           },
           "temperature-fahrenheit": {
-            "displayName": "deg. F",
+            "displayName": "°F",
             "unitPattern-count-other": "{0}°F"
           },
           "temperature-kelvin": {
@@ -2154,27 +2177,28 @@
             "unitPattern-count-other": "{0} bbl"
           },
           "volume-dessert-spoon": {
-            "displayName": "dstspn",
-            "unitPattern-count-other": "{0} dstspn"
+            "displayName": "د ډیزرټ کاچوغي",
+            "unitPattern-count-one": "{0} ډيزرټ کاچوغي",
+            "unitPattern-count-other": "{0} ډيزرټ کاچوغي"
           },
           "volume-dessert-spoon-imperial": {
             "displayName": "dstspn Imp",
             "unitPattern-count-other": "{0} dstspn Imp"
           },
           "volume-drop": {
-            "displayName": "څاڅک",
-            "unitPattern-count-one": "{0} څاڅک",
-            "unitPattern-count-other": "{0} څاڅک"
+            "displayName": "څاڅکي",
+            "unitPattern-count-one": "{0} څاڅکی",
+            "unitPattern-count-other": "{0} څاڅکي"
           },
           "volume-dram": {
-            "displayName": "ډرام مایع",
-            "unitPattern-count-one": "{0} ډرام",
-            "unitPattern-count-other": "{0} ډرام"
+            "displayName": "ډرامونه",
+            "unitPattern-count-one": "{0} ډرامونه",
+            "unitPattern-count-other": "{0} ډرامونه"
           },
           "volume-jigger": {
-            "displayName": "جګر",
-            "unitPattern-count-one": "{0} جګر",
-            "unitPattern-count-other": "{0} جګر"
+            "displayName": "جیګرونه",
+            "unitPattern-count-one": "{0} جګرونه",
+            "unitPattern-count-other": "{0} جګرونه"
           },
           "volume-pinch": {
             "displayName": "چنه",
@@ -2498,7 +2522,7 @@
             "unitPattern-count-other": "{0}′"
           },
           "angle-arc-second": {
-            "displayName": "آرکسیکس",
+            "displayName": "arcsec",
             "unitPattern-count-other": "{0}″"
           },
           "area-square-kilometer": {
@@ -2722,7 +2746,7 @@
             "unitPattern-count-other": "{0} μs"
           },
           "duration-nanosecond": {
-            "displayName": "ns",
+            "displayName": "نینو ثانیې",
             "unitPattern-count-other": "{0} ns"
           },
           "electric-ampere": {
@@ -2742,7 +2766,7 @@
             "unitPattern-count-other": "{0} V"
           },
           "energy-kilocalorie": {
-            "displayName": "kcal",
+            "displayName": "کیلو کالوري",
             "unitPattern-count-other": "{0} kcal"
           },
           "energy-calorie": {
@@ -2758,7 +2782,7 @@
             "unitPattern-count-other": "{0} J"
           },
           "energy-kilowatt-hour": {
-            "displayName": "kW-hour",
+            "displayName": "kWh",
             "unitPattern-count-other": "{0} kWh"
           },
           "energy-electronvolt": {
@@ -2771,17 +2795,25 @@
           },
           "energy-therm-us": {
             "displayName": "US تهرم",
-            "unitPattern-count-one": "{0}US تهرم",
-            "unitPattern-count-other": "{0}US تهرم"
+            "unitPattern-count-one": "{0} د متحده ایالاتو تهرم",
+            "unitPattern-count-other": "{0} د متحده ایالاتو تهرم"
           },
           "force-pound-force": {
             "displayName": "lbf",
             "unitPattern-count-one": "{0}lbf",
             "unitPattern-count-other": "{0} lbf"
           },
+          "force-poundal": {
+            "displayName": "pdl",
+            "unitPattern-count-other": "{0} pdl"
+          },
           "force-newton": {
             "displayName": "نيوټن",
             "unitPattern-count-other": "{0} N"
+          },
+          "force-dyne": {
+            "displayName": "dyn",
+            "unitPattern-count-other": "{0} dyn"
           },
           "force-kilowatt-hour-per-100-kilometer": {
             "displayName": "kWh/100km",
@@ -2894,6 +2926,10 @@
             "unitPattern-count-one": "{0}″",
             "unitPattern-count-other": "{0}″",
             "perUnitPattern": "{0}/in"
+          },
+          "length-mil": {
+            "displayName": "mil [US]",
+            "unitPattern-count-other": "{0} mil [US]"
           },
           "length-parsec": {
             "displayName": "پارسيکس",
@@ -3117,7 +3153,7 @@
             "unitPattern-count-other": "{0}°C"
           },
           "temperature-fahrenheit": {
-            "displayName": "deg. F",
+            "displayName": "°F",
             "unitPattern-count-other": "{0}°F"
           },
           "temperature-kelvin": {
@@ -3264,9 +3300,9 @@
             "unitPattern-count-other": "{0} bbl"
           },
           "volume-dessert-spoon": {
-            "displayName": "dstspn",
-            "unitPattern-count-one": "{0}dsp",
-            "unitPattern-count-other": "{0}dsp"
+            "displayName": "د ډیزرټ کاچوغي",
+            "unitPattern-count-one": "{0}ډيزرټ کاچوغي",
+            "unitPattern-count-other": "{0}ډيزرټ کاچوغي"
           },
           "volume-dessert-spoon-imperial": {
             "displayName": "dsp Imp",
@@ -3274,19 +3310,19 @@
             "unitPattern-count-other": "{0}dsp-Imp"
           },
           "volume-drop": {
-            "displayName": "څاڅک",
-            "unitPattern-count-one": "{0} څاڅک",
-            "unitPattern-count-other": "{0} څاڅک"
+            "displayName": "څاڅکی",
+            "unitPattern-count-one": "{0} څاڅکی",
+            "unitPattern-count-other": "{0} څاڅکی"
           },
           "volume-dram": {
-            "displayName": "ډرام مایع",
-            "unitPattern-count-one": "{0}fl.dr.",
-            "unitPattern-count-other": "{0}fl.dr."
+            "displayName": "مایع ډرام",
+            "unitPattern-count-one": "{0}مایع ډرام",
+            "unitPattern-count-other": "{0}مایع ډرام"
           },
           "volume-jigger": {
-            "displayName": "جګر",
-            "unitPattern-count-one": "{0} جګر",
-            "unitPattern-count-other": "{0} جګر"
+            "displayName": "جیګرونه",
+            "unitPattern-count-one": "{0} جګرونه",
+            "unitPattern-count-other": "{0} جګرونه"
           },
           "volume-pinch": {
             "displayName": "چنه",

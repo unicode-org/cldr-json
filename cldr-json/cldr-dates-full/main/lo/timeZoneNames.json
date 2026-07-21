@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "ເວລາ {0}",
           "regionFormat-type-daylight": "ເວລາກາງເວັນ {0}",
           "regionFormat-type-standard": "ເວລາມາດຕະຖານ {0}",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ເວ​ລາ​ລະ​ດູ​ຮ້ອນ​ອັງ​ກິດ"
-                },
                 "exemplarCity": "ລອນດອນ"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ເວ​ລາ​ມາດ​ຕະ​ຖານ​ໄອ​ຣິ​ຊ"
-                },
                 "exemplarCity": "ດັບບລິນ"
               },
               "Isle_of_Man": {
@@ -1773,13 +1769,6 @@
                 "daylight": "ເວລາກາງເວັນອະລັສກາ"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "ເວລາອໍມາຕີ",
-                "standard": "ເວລາມາດຕະຖານອໍມາຕີ",
-                "daylight": "ເວລາລະດູຮ້ອນອໍມາຕີ"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "ເວລາຕາມເຂດອາເມຊອນ",
@@ -1820,20 +1809,6 @@
                 "generic": "ເວລາເອເພຍ",
                 "standard": "ເວລາມາດຕະຖານເອເພຍ",
                 "daylight": "ເວລາກາງເວັນອາເພຍ"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "ເວລາອັດຕາອູ",
-                "standard": "ເວລາມາດຕະຖານອັດຕາອູ",
-                "daylight": "ເວລາລະດູຮ້ອນອັດຕາອູ"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "ເວລາອັດໂຕເບ",
-                "standard": "ເວລາມາດຕະຖານອັດໂຕເບ",
-                "daylight": "ເວລາລະດູຮ້ອນອັດໂຕເບ"
               }
             },
             "Arabian": {
@@ -1935,6 +1910,13 @@
                 "generic": "ເວລາຕາມເຂດບຣາຊິເລຍ",
                 "standard": "ເວລາມາດຕາຖານເບຣຊີເລຍ",
                 "daylight": "ເວລາຕາມເຂດລະດູຮ້ອນຕາມເຂດບຣາຊີເລຍ"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "ເວລາອັງກິດ",
+                "standard": "ເວ​ລາກຣີນ​ວິ​ຊ",
+                "daylight": "ເວ​ລາ​ລະ​ດູ​ຮ້ອນ​ອັງ​ກິດ"
               }
             },
             "Brunei": {
@@ -2115,6 +2097,13 @@
                 "standard": "ເວ​ລາກຣີນ​ວິ​ຊ"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "ເວລາກຣີນແລນ",
+                "standard": "ເວລາມາດຕະຖານກຣີນແລນ",
+                "daylight": "ເວລາລະດູຮ້ອນກຣີນແລນ"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "ເວລາຕາເວັນອອກຂອງກຣີນແລນ",
@@ -2129,11 +2118,6 @@
                 "daylight": "ເວລາຕອນທ່ຽງກຣີນແລນຕາເວັນຕົກ"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "ເວລາກວມ"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "ເວ​ລາ​ກູ​ລ​໌ຟ"
@@ -2146,7 +2130,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "ເວລາມາດຕະຖານຮາວາຍ-ເອລູທຽນ"
+                "standard": "ເວລາຮາວາຍ"
               }
             },
             "Hawaii_Aleutian": {
@@ -2207,6 +2191,13 @@
                 "daylight": "ເວ​ລາ​ຕອນ​ທ່ຽງ​ອີ​ຣາ​ນ"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "ເວ​ລາ​​ໄອ​ຣິ​ຊ",
+                "standard": "ເວ​ລາກຣີນ​ວິ​ຊ",
+                "daylight": "ເວ​ລາ​ມາດ​ຕະ​ຖານ​ໄອ​ຣິ​ຊ"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ເວ​ລ​າອີ​ຄຸດ​ສ​ຄ໌",
@@ -2226,6 +2217,13 @@
                 "generic": "ເວ​ລາ​ຍີ່​ປຸ່ນ",
                 "standard": "ເວ​ລາ​ມາດ​ຕະ​ຖານ​ຍີ່​ປຸ່ນ",
                 "daylight": "ເວ​ລາ​ຕອນ​ທ່ຽງ​ຍີ່​ປຸ່ນ"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "ເວລາຄຳຊາດຄາ",
+                "standard": "ເວລາມາດຕະຖານຄຳຊາດຄາ",
+                "daylight": "ເວລາລະດູຮ້ອນຄຳຊາດຄາ"
               }
             },
             "Kazakhstan": {
@@ -2267,11 +2265,6 @@
                 "standard": "ເວລາເຄຍກິສຖານ"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "ເວລາລັງກາ"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "ເວ​ລາ​ໝູ່​ເກາະ​ລາຍ"
@@ -2282,13 +2275,6 @@
                 "generic": "ເວ​ລາ​ລອດ​ເຮົາ",
                 "standard": "ເວ​ລາ​ມາດ​ຕະ​ຖານ​ລອດ​ເຮົາ",
                 "daylight": "​ເວ​ລ​ສາ​ຕອນ​​ທ່ຽງ​ລອດ​ເຮົາ​"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "ເວລາມາເກົາ",
-                "standard": "ເວລາມາດຕະຖານມາເກົາ",
-                "daylight": "ເວລາລະດູຮ້ອນມາເກົາ"
               }
             },
             "Magadan": {
@@ -2406,11 +2392,6 @@
                 "daylight": "ເວລາລະດູຮ້ອນເຟນັນໂດເດໂນຮອນຮາ"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "ເວລາຫມູ່ເກາະມາເຣຍນາເຫນືອ"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "ເວ​ລາ​ໂນ​ໂບ​ຊິ​ບິ​ສ​ຄ໌",
@@ -2490,13 +2471,6 @@
                 "standard": "ເວລາປຽງຢາງ"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "ເວລາຄີວລໍດາ",
-                "standard": "ເວລາມາດຕະຖານຄີວລໍດາ",
-                "daylight": "ເວລາລະດູຮ້ອນຄີວລໍດາ"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "ເວ​ລາ​ເຣ​ອູ​ນິ​ຢົງ"
@@ -2514,11 +2488,16 @@
                 "daylight": "ເວ​ລາ​ລະ​ດູ​ຮ້ອນຊາ​ຮາ​ລິນ"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "ເວ​ລາ​ຊາມາຣາ",
+                "standard": "ເວ​ລາ​ມາດ​ຕະ​ຖານຊາມາຣາ",
+                "daylight": "ເວລາລະດູຮ້ອນຊາມາຣາ"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "ເວລາຊາມົວ",
-                "standard": "ເວລາມາດຕະຖານຊາມົວ",
-                "daylight": "ເວລາລະດູຮ້ອນຊາມົວ"
+                "standard": "ເວລາມາດຕະຖານຊາມົວ"
               }
             },
             "Seychelles": {
@@ -2585,6 +2564,13 @@
                 "standard": "ເວລາຊຸກ"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "ເວລາຕຸຣກີ",
+                "standard": "ເວລາມາດຕະຖານຕຸຣກີ",
+                "daylight": "ເວລາລະດູຮ້ອນຕຸຣກີ"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "ເວລາຕວກເມນິສຖານ",
@@ -2602,6 +2588,11 @@
                 "generic": "​ເວ​ລາ​ອູ​ຣູ​ກວຍ",
                 "standard": "ເວ​ລາ​ມາດ​ຕະ​ຖານ​ອູ​ຣູ​ກວຍ",
                 "daylight": "ເວ​ລາ​ລະ​ດູ​ຮ້ອນ​ອູ​ຣູ​ກວຍ"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ເວລາອູຣູມຊີ"
               }
             },
             "Uzbekistan": {

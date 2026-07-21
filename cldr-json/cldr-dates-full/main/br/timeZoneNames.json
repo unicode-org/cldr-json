@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "UTC{0}",
-          "gmtZeroFormat": "UTC",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "UTC+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "eur {0}",
           "regionFormat-type-daylight": "eur hañv {0}",
           "regionFormat-type-standard": "eur cʼhoañv {0}",
@@ -221,9 +223,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "eur hañv Breizh-Veur"
-                },
                 "exemplarCity": "Londrez"
               },
               "Guernsey": {
@@ -240,9 +239,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "eur cʼhoañv Iwerzhon"
-                },
                 "exemplarCity": "Dulenn"
               },
               "Isle_of_Man": {
@@ -626,6 +622,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "eur Acre",
+                "standard": "eur cʼhoañv Acre",
+                "daylight": "eur hañv Acre"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "eur Afghanistan"
@@ -656,13 +659,6 @@
                 "generic": "eur Alaska",
                 "standard": "eur cʼhoañv Alaska",
                 "daylight": "eur hañv Alaska"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "eur Almaty",
-                "standard": "eur cʼhoañv Almaty",
-                "daylight": "eur hañv Almaty"
               }
             },
             "Amazon": {
@@ -815,6 +811,13 @@
                 "daylight": "eur hañv Brasília"
               }
             },
+            "British": {
+              "long": {
+                "generic": "eur Breizh-Veur",
+                "standard": "amzer keitat Greenwich (AKG)",
+                "daylight": "eur hañv Breizh-Veur"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "eur Brunei"
@@ -896,7 +899,7 @@
             },
             "East_Timor": {
               "long": {
-                "standard": "eur Timor ar Reter"
+                "standard": "eur Timor-Leste"
               }
             },
             "Easter": {
@@ -988,6 +991,13 @@
                 "standard": "amzer keitat Greenwich (AKG)"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "eur Greunland",
+                "standard": "eur cʼhoañv Greunland",
+                "daylight": "eur hañv Greunland"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "eur Greunland ar Reter",
@@ -1002,11 +1012,6 @@
                 "daylight": "eur hañv Greunland ar Cʼhornôg"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "eur cʼhoañv Guam"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "eur cʼhoañv ar Pleg-mor Arab-ha-Pers"
@@ -1019,7 +1024,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "eur cʼhoañv Hawaii hag an Aleouted"
+                "standard": "eur Hawaii"
               }
             },
             "Hawaii_Aleutian": {
@@ -1080,6 +1085,13 @@
                 "daylight": "eur hañv Iran"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "eur Iwerzhon",
+                "standard": "amzer keitat Greenwich (AKG)",
+                "daylight": "eur cʼhoañv Iwerzhon"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "eur Irkutsk",
@@ -1099,6 +1111,13 @@
                 "generic": "eur Japan",
                 "standard": "eur cʼhoañv Japan",
                 "daylight": "eur hañv Japan"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "eur Kamchatka",
+                "standard": "eur cʼhoañv Kamchatka",
+                "daylight": "eur hañv Kamchatka"
               }
             },
             "Kazakhstan": {
@@ -1140,11 +1159,6 @@
                 "standard": "eur Kyrgyzstan"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "eur Sri Lanka"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "eur Line Islands"
@@ -1155,13 +1169,6 @@
                 "generic": "eur Lord Howe",
                 "standard": "eur cʼhoañv Lord Howe",
                 "daylight": "eur hañv Lord Howe"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "eur Macau",
-                "standard": "eur cʼhoañv Macau",
-                "daylight": "eur hañv Macau"
               }
             },
             "Magadan": {
@@ -1279,11 +1286,6 @@
                 "daylight": "eur hañv Fernando de Noronha"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "eur Mariana an Norzh"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "eur Novosibirsk",
@@ -1380,11 +1382,16 @@
                 "daylight": "eur hañv Sakhalin"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "eur Samara",
+                "standard": "eur cʼhoañv Samara",
+                "daylight": "eur hañv Samara"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "eur Samoa Amerikan",
-                "standard": "eur cʼhoañv Samoa Amerikan",
-                "daylight": "eur hañv Samoa Amerikan"
+                "standard": "eur cʼhoañv Samoa Amerikan"
               }
             },
             "Seychelles": {
@@ -1451,6 +1458,13 @@
                 "standard": "eur Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "eur Turkia",
+                "standard": "eur cʼhoañv Turkia",
+                "daylight": "eur hañv Turkia"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "eur Turkmenistan",
@@ -1468,6 +1482,11 @@
                 "generic": "eur Uruguay",
                 "standard": "eur cʼhoañv Uruguay",
                 "daylight": "eur hañv Uruguay"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "eur Ürümqi"
               }
             },
             "Uzbekistan": {

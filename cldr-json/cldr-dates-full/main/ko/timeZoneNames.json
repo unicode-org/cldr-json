@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} 시간",
           "regionFormat-type-daylight": "{0} 하계 표준시",
           "regionFormat-type-standard": "{0} 표준시",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "영국 하계 표준시"
-                },
                 "exemplarCity": "런던"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "아일랜드 표준시"
-                },
                 "exemplarCity": "더블린"
               },
               "Isle_of_Man": {
@@ -1777,13 +1773,6 @@
                 "daylight": "알래스카 하계 표준시"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "알마티 표준 시간",
-                "standard": "알마티 표준 표준시",
-                "daylight": "알마티 하계 표준시"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "아마존 시간",
@@ -1807,7 +1796,7 @@
             },
             "America_Mountain": {
               "long": {
-                "generic": "미 산지 시간",
+                "generic": "미 산악 시간",
                 "standard": "미 산악 표준시",
                 "daylight": "미 산지 하계 표준시"
               }
@@ -1831,20 +1820,6 @@
                 "generic": "아피아 시간",
                 "standard": "아피아 표준시",
                 "daylight": "아피아 하계 표준시"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "악타우 표준 시간",
-                "standard": "악타우 표준 표준시",
-                "daylight": "악타우 하계 표준시"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "악퇴베 표준 시간",
-                "standard": "악퇴베 표준 표준시",
-                "daylight": "악퇴베 하계 표준시"
               }
             },
             "Arabian": {
@@ -1946,6 +1921,13 @@
                 "generic": "브라질리아 시간",
                 "standard": "브라질리아 표준시",
                 "daylight": "브라질리아 하계 표준시"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "영국 시간",
+                "standard": "그리니치 표준시",
+                "daylight": "영국 하계 표준시"
               }
             },
             "Brunei": {
@@ -2126,6 +2108,13 @@
                 "standard": "그리니치 표준시"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "그린란드 시간",
+                "standard": "그린란드 표준시",
+                "daylight": "그린란드 하계 표준시"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "그린란드 동부 시간",
@@ -2152,7 +2141,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "하와이 알류샨 표준시"
+                "standard": "하와이 시간"
               }
             },
             "Hawaii_Aleutian": {
@@ -2213,6 +2202,13 @@
                 "daylight": "이란 하계 표준시"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "아일랜드 시간",
+                "standard": "그리니치 표준시",
+                "daylight": "아일랜드 표준시"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "이르쿠츠크 시간",
@@ -2236,9 +2232,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "페트로파블롭스크-캄차츠키 시간",
-                "standard": "페트로파블롭스크-캄차츠키 표준시",
-                "daylight": "페트로파블롭스크-캄차츠키 하계 표준시"
+                "generic": "캄차카 시간",
+                "standard": "캄차카 표준시",
+                "daylight": "캄차카 하계 표준시"
               }
             },
             "Kazakhstan": {
@@ -2290,13 +2286,6 @@
                 "generic": "로드 하우 시간",
                 "standard": "로드 하우 표준시",
                 "daylight": "로드 하우 하계 표준시"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "마카오 시간",
-                "standard": "마카오 표준 시간",
-                "daylight": "마카오 하계 표준시"
               }
             },
             "Magadan": {
@@ -2493,13 +2482,6 @@
                 "standard": "평양 시간"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "키질로르다 시간",
-                "standard": "키질로르다 표준 시간",
-                "daylight": "키질로르다 하계 표준시"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "레위니옹 시간"
@@ -2526,9 +2508,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "사모아 시간",
-                "standard": "사모아 표준시",
-                "daylight": "사모아 하계 표준시"
+                "standard": "사모아 표준시"
               }
             },
             "Seychelles": {
@@ -2595,6 +2575,13 @@
                 "standard": "추크 시간"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "튀르키예 시간",
+                "standard": "튀르키예 표준시",
+                "daylight": "튀르키예 하계 표준시"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "투르크메니스탄 시간",
@@ -2612,6 +2599,11 @@
                 "generic": "우루과이 시간",
                 "standard": "우루과이 표준시",
                 "daylight": "우루과이 하계 표준시"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "우루무치 시간"
               }
             },
             "Uzbekistan": {

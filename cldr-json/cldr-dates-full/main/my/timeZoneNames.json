@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} အချိန်",
           "regionFormat-type-daylight": "{0} နွေရာသီ စံတော်ချိန်",
           "regionFormat-type-standard": "{0} စံတော်ချိန်",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ဗြိတိန် နွေရာသီ အချိန်"
-                },
                 "exemplarCity": "လန်ဒန်"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "အိုင်းရစ်ရှ် စံတော်ချိန်"
-                },
                 "exemplarCity": "ဒတ်ဘလင်"
               },
               "Isle_of_Man": {
@@ -443,7 +439,7 @@
               },
               "Dhaka": {
                 "_type": "zone",
-                "exemplarCity": "ဒက်ကာ"
+                "exemplarCity": "ဒက္ကား"
               },
               "Bahrain": {
                 "_type": "zone",
@@ -503,7 +499,7 @@
               },
               "Calcutta": {
                 "_type": "zone",
-                "exemplarCity": "ကိုလျကတ်တား"
+                "exemplarCity": "ကိုလ်ကတ္တား"
               },
               "Baghdad": {
                 "_type": "zone",
@@ -531,7 +527,7 @@
               },
               "Pyongyang": {
                 "_type": "zone",
-                "exemplarCity": "ပြုံယန်း"
+                "exemplarCity": "ပြုံယမ်း"
               },
               "Seoul": {
                 "_type": "zone",
@@ -607,7 +603,7 @@
               },
               "Katmandu": {
                 "_type": "zone",
-                "exemplarCity": "ခတ်တမန်ဒူ"
+                "exemplarCity": "ခတ္တမန်ဒူ"
               },
               "Muscat": {
                 "_type": "zone",
@@ -699,7 +695,7 @@
               },
               "Kamchatka": {
                 "_type": "zone",
-                "exemplarCity": "ခမ်ချာ့ခါ"
+                "exemplarCity": "ကမ်ချတ်ကာ"
               },
               "Anadyr": {
                 "_type": "zone",
@@ -1143,7 +1139,7 @@
               },
               "Mexico_City": {
                 "_type": "zone",
-                "exemplarCity": "မက်ကဆီကို စီးတီး"
+                "exemplarCity": "မက္ကဆီကို စီးတီး"
               },
               "Matamoros": {
                 "_type": "zone",
@@ -1203,7 +1199,7 @@
               },
               "Adak": {
                 "_type": "zone",
-                "exemplarCity": "အာဒချ"
+                "exemplarCity": "အာဒတ်"
               },
               "Nome": {
                 "_type": "zone",
@@ -1211,7 +1207,7 @@
               },
               "Anchorage": {
                 "_type": "zone",
-                "exemplarCity": "အန်ကာရေ့ဂျ်"
+                "exemplarCity": "အန်ကာရေ့"
               },
               "Yakutat": {
                 "_type": "zone",
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "ဧကာ အချိန်",
+                "standard": "ဧကာ စံတော်ချိန်",
+                "daylight": "ဧကာ နွေရာသီ စံတော်ချိန်"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "အာဖဂန်နစ္စတန် အချိန်"
@@ -1807,9 +1810,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "အပီယာ အချိန်",
-                "standard": "အပီယာ စံတော်ချိန်",
-                "daylight": "အပီယာ နွေရာသီ အချိန်"
+                "generic": "အနောက် ဆမိုးအား အချိန်",
+                "standard": "အနောက် ဆမိုးအား စံတော်ချိန်",
+                "daylight": "အနောက် ဆမိုးအား နွေရာသီ အချိန်"
               }
             },
             "Arabian": {
@@ -1911,6 +1914,13 @@
                 "generic": "ဘရာဇီး အချိန်",
                 "standard": "ဘရာဇီး စံတော်ချိန်",
                 "daylight": "ဘရာဇီး နွေရာသီ အချိန်"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "ဗြိတိန် အချိန်",
+                "standard": "ဂရင်းနစ် စံတော်ချိန်",
+                "daylight": "ဗြိတိန် နွေရာသီ အချိန်"
               }
             },
             "Brunei": {
@@ -2086,6 +2096,13 @@
                 "standard": "ဂရင်းနစ် စံတော်ချိန်"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "ဂရင်းလန် အချိန်",
+                "standard": "ဂရင်းလန် စံတော်ချိန်",
+                "daylight": "ဂရင်းလန် နွေရာသီ စံတော်ချိန်"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "အရှေ့ဂရင်းလန်း အချိန်",
@@ -2112,7 +2129,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "ဟာဝိုင်ယီ အယ်လူးရှန်း စံတော်ချိန်"
+                "standard": "ဟာဝိုင်ယီ အယ်လူးရှန်း ဒေသစံတော်ချိန်"
               }
             },
             "Hawaii_Aleutian": {
@@ -2173,6 +2190,13 @@
                 "daylight": "အီရန် နွေရာသီ အချိန်"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "အိုင်းရစ်ရှ် အချိန်",
+                "standard": "ဂရင်းနစ် စံတော်ချိန်",
+                "daylight": "အိုင်းရစ်ရှ် စံတော်ချိန်"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "အီရူခူတ် အချိန်",
@@ -2192,6 +2216,13 @@
                 "generic": "ဂျပန် အချိန်",
                 "standard": "ဂျပန် စံတော်ချိန်",
                 "daylight": "ဂျပန် နွေရာသီ အချိန်"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "ကမ်ချတ်ကာ အချိန်",
+                "standard": "ကမ်ချတ်ကာ စံတော်ချိန်",
+                "daylight": "ကမ်ချတ်ကာ နွေရာသီ စံတော်ချိန်"
               }
             },
             "Kazakhstan": {
@@ -2233,11 +2264,6 @@
                 "standard": "ကာဂျစ္စတန် အချိန်"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "သီရိလင်္ကာ အချိန်"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "လိုင်းကျွန်းစု အချိန်"
@@ -2248,13 +2274,6 @@
                 "generic": "လော့ဒ်ဟောင် အချိန်",
                 "standard": "လော့ဒ်ဟောင် စံတော်ချိန်",
                 "daylight": "လော့ဒ်ဟောင် နွေရာသီ အချိန်"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "မကာအို အချိန်",
-                "standard": "မကာအို စံတော်ချိန်",
-                "daylight": "မကာအို နွေရာသီ အချိန်"
               }
             },
             "Magadan": {
@@ -2468,11 +2487,16 @@
                 "daylight": "ဆာခါလင် နွေရာသီ အချိန်"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "ဆမာရ အချိန်",
+                "standard": "ဆမာရ စံတော်ချိန်",
+                "daylight": "စမာရ နွေရာသီ စံတော်ချိန်"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "ဆမိုအာ အချိန်",
-                "standard": "ဆမိုအာ စံတော်ချိန်",
-                "daylight": "ဆမိုးအား နွေရာသီ အချိန်"
+                "standard": "ဆမိုးအား အချိန်"
               }
             },
             "Seychelles": {
@@ -2563,6 +2587,11 @@
                 "generic": "ဥရုဂွေး အချိန်",
                 "standard": "ဥရုဂွေး စံတော်ချိန်",
                 "daylight": "ဥရုဂွေး နွေရာသီ အချိန်"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "အူရုမ်ချီ အချိန်"
               }
             },
             "Uzbekistan": {

@@ -97,6 +97,14 @@
                 }
               }
             },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "one": "{0}st",
+                  "other": "{0}th"
+                }
+              }
+            },
             "days": {
               "format": {
                 "abbreviated": {
@@ -334,6 +342,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1}, {0}",
@@ -354,12 +366,19 @@
                 "Ehms": "E h:mm:ss a",
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
-                "GyM": "M/y G",
-                "GyMd": "M/d/y G",
-                "GyMEd": "E, M/d/y G",
+                "GyM": "G y-MM",
+                "GyMd": "G y-MM-dd",
+                "GyMEd": "G y-MM-dd, E",
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G y MMM d",
+                "GyMMMddd": "G y MMM ddd",
                 "GyMMMEd": "G y MMM d, E",
+                "GyMMMEddd": "G y MMM ddd, E",
+                "GyMMMM": "G y MMMM",
+                "GyMMMMd": "G y MMMM d",
+                "GyMMMMddd": "G y MMMM ddd",
+                "GyMMMMEd": "G y MMMM d, E",
+                "GyMMMMEddd": "G y MMMM ddd, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -377,8 +396,13 @@
                 "MEd": "MM-dd, E",
                 "MMM": "LLL",
                 "MMMd": "MMM d",
+                "MMMddd": "MMM ddd",
                 "MMMEd": "MMM d, E",
+                "MMMEddd": "MMM ddd, E",
                 "MMMMd": "MMMM d",
+                "MMMMddd": "MMMM ddd",
+                "MMMMEd": "MMMM d, E",
+                "MMMMEddd": "MMMM ddd, E",
                 "MMMMW-count-one": "MMMM को W हप्ता",
                 "MMMMW-count-other": "MMMM को W हप्ता",
                 "ms": "mm:ss",
@@ -388,27 +412,38 @@
                 "yMEd": "y-MM-dd, E",
                 "yMMM": "y MMM",
                 "yMMMd": "y MMM d",
+                "yMMMddd": "y MMM ddd",
                 "yMMMEd": "y MMM d, E",
+                "yMMMEddd": "y MMM ddd, E",
                 "yMMMM": "y MMMM",
+                "yMMMMddd": "y MMMM ddd",
+                "yMMMMEddd": "y MMMM ddd, E",
                 "yQQQ": "y QQQ",
                 "yQQQQ": "y QQQQ",
                 "yw-count-one": "Y को w हप्ता",
                 "yw-count-other": "Y को w हप्ता"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{1} {0}",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -427,7 +462,7 @@
                   "y": "y – y G"
                 },
                 "GyM": {
-                  "G": "M/y G – M/y G",
+                  "G": "G y-MM – G y-MM",
                   "M": "G y-MM – y-MM",
                   "y": "G y-MM – y-MM"
                 },
@@ -513,6 +548,10 @@
                 "MMMEd": {
                   "d": "MMM d, E – MMM d, E",
                   "M": "MMM d, E – MMM d, E"
+                },
+                "MMMMd": {
+                  "d": "MMMM d–d",
+                  "M": "MMMM d – MMMM d"
                 },
                 "y": {
                   "y": "y–y"

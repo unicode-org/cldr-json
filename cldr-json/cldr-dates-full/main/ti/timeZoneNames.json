@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "ግዘ {0}",
           "regionFormat-type-daylight": "ናይ {0} መዓልቲ ግዘ",
           "regionFormat-type-standard": "ናይ መደበኛ ጊዜ {0} ግዘ",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ግዜ ክረምቲ ብሪጣንያ"
-                },
                 "exemplarCity": "ሎንደን"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ናይ መደበኛ አይሪሽ ግዘ"
-                },
                 "exemplarCity": "ደብሊን"
               },
               "Isle_of_Man": {
@@ -1920,6 +1916,13 @@
                 "daylight": "ግዜ ክረምቲ ብራዚልያ"
               }
             },
+            "British": {
+              "long": {
+                "generic": "ብግዜ እንግሊዝ",
+                "standard": "GMT",
+                "daylight": "ግዜ ክረምቲ ብሪጣንያ"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "ናይ ብሩኔ ዳሩሳሌም ግዘ"
@@ -2093,6 +2096,13 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "ግሪንላንድ ሰዓት",
+                "standard": "ግሪንላንድ ስታንዳርድ ሰዓት",
+                "daylight": "ግሪንላንድ ናይ ሓጋይ ግዜ"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "ናይ ምብራቓዊ ግዘ ግሪንላንድ",
@@ -2119,7 +2129,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "ናይ መደበኛ ሃዋይ-ኣሌውቲያን ግዘ"
+                "standard": "ናይ ሃዋይ ግዘ"
               }
             },
             "Hawaii_Aleutian": {
@@ -2180,6 +2190,13 @@
                 "daylight": "ናይ መዓልቲ ኢራን ግዘ"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "ናይ ኣየርላንድ ግዜ",
+                "standard": "GMT",
+                "daylight": "ናይ መደበኛ አይሪሽ ግዘ"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ናይ ኢርኩትስክ ግዘ",
@@ -2199,6 +2216,13 @@
                 "generic": "ናይ ጃፓን ግዘ",
                 "standard": "ናይ መደበኛ ጃፓን ግዘ",
                 "daylight": "ናይ መዓልቲ ጃፓን ግዘ"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "ካምቻትካ ግዜ",
+                "standard": "ካምቻትካ ስታንዳርድ ሰዓት",
+                "daylight": "ካምቻትካ ናይ ሓጋይ ግዜ"
               }
             },
             "Kazakhstan": {
@@ -2463,11 +2487,16 @@
                 "daylight": "ናይ ክረምቲ ሳክሃሊን ግዘ"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "ሰዓት ሳምራ",
+                "standard": "ሳማራ ስታንዳርድ ሰዓት",
+                "daylight": "ሳማራ ሓጋይ ሰዓት"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "ናይ ሳሞዋ ግዘ",
-                "standard": "ናይ መደበኛ ሳሞዋ ግዘ",
-                "daylight": "ናይ መዓልቲ ሳሞዋ ግዘ"
+                "standard": "ናይ መደበኛ ሳሞዋ ግዘ"
               }
             },
             "Seychelles": {
@@ -2534,6 +2563,13 @@
                 "standard": "ናይ ቹክ ግዘ"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "ቱርኪየ ሰዓት",
+                "standard": "ቱርኪየ ስታንዳርድ ሰዓት",
+                "daylight": "ቱርኪየ ናይ ሓጋይ ግዜ"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "ናይ ቱርክሜኒስታን ግዘ",
@@ -2551,6 +2587,11 @@
                 "generic": "ግዜ ኡራጓይ",
                 "standard": "ናይ መደበኛ ግዘ ኡራጓይ",
                 "daylight": "ግዜ ክረምቲ ኡራጓይ"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ኡሩምቂ ግዜ"
               }
             },
             "Uzbekistan": {

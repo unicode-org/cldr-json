@@ -98,6 +98,17 @@
                 }
               }
             },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "one": "{0}",
+                  "two": "{0}",
+                  "few": "{0}",
+                  "many": "{0}",
+                  "other": "{0}"
+                }
+              }
+            },
             "days": {
               "format": {
                 "abbreviated": {
@@ -179,10 +190,10 @@
             "quarters": {
               "format": {
                 "abbreviated": {
-                  "1": "ত্রৈমাসিক",
-                  "2": "দ্বিতীয় ত্রৈমাসিক",
-                  "3": "তৃতীয় ত্রৈমাসিক",
-                  "4": "চতুর্থ ত্রৈমাসিক"
+                  "1": "১ম ত্রৈমাসিক",
+                  "2": "২য় ত্রৈমাসিক",
+                  "3": "৩য় ত্রৈমাসিক",
+                  "4": "৪র্থ ত্রৈমাসিক"
                 },
                 "narrow": {
                   "1": "১",
@@ -191,10 +202,10 @@
                   "4": "৪"
                 },
                 "wide": {
-                  "1": "ত্রৈমাসিক",
-                  "2": "দ্বিতীয় ত্রৈমাসিক",
-                  "3": "তৃতীয় ত্রৈমাসিক",
-                  "4": "চতুর্থ ত্রৈমাসিক"
+                  "1": "১ম ত্রৈমাসিক",
+                  "2": "২য় ত্রৈমাসিক",
+                  "3": "৩য় ত্রৈমাসিক",
+                  "4": "৪র্থ ত্রৈমাসিক"
                 }
               },
               "stand-alone": {
@@ -211,10 +222,10 @@
                   "4": "৪"
                 },
                 "wide": {
-                  "1": "ত্রৈমাসিক",
-                  "2": "দ্বিতীয় ত্রৈমাসিক",
-                  "3": "তৃতীয় ত্রৈমাসিক",
-                  "4": "চতুর্থ ত্রৈমাসিক"
+                  "1": "১ম ত্রৈমাসিক",
+                  "2": "২য় ত্রৈমাসিক",
+                  "3": "৩য় ত্রৈমাসিক",
+                  "4": "৪র্থ ত্রৈমাসিক"
                 }
               }
             },
@@ -293,13 +304,13 @@
               },
               "eraAbbr": {
                 "0": "খ্রিঃপূঃ",
-                "0-alt-variant": "\"খ্রিঃপূঃ\"",
+                "0-alt-variant": "খ্রিঃপূঃ",
                 "1": "খ্রিঃ",
                 "1-alt-variant": "খ্রিষ্টাব্দ"
               },
               "eraNarrow": {
                 "0": "খ্রিঃপূঃ",
-                "0-alt-variant": "\"খ্রিঃপূঃ\"",
+                "0-alt-variant": "খ্রিঃপূঃ",
                 "1": "খ্রিঃ",
                 "1-alt-variant": "খ্রিষ্টাব্দ"
               }
@@ -329,6 +340,10 @@
               "short": "ahmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "/",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -351,10 +366,17 @@
                 "Gy": "y G",
                 "GyM": "MM-y G",
                 "GyMd": "dd-MM-y GGGGG",
-                "GyMEd": "E, dd-MM-y G",
+                "GyMEd": "E, d/M/y G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM, y G",
+                "GyMMMddd": "ddd MMM, y G",
                 "GyMMMEd": "E, d MMM, y G",
+                "GyMMMEddd": "E, ddd MMM, y G",
+                "GyMMMM": "MMMM y G",
+                "GyMMMMd": "d MMMM, y G",
+                "GyMMMMddd": "ddd MMMM, y G",
+                "GyMMMMEd": "E, d MMMM, y G",
+                "GyMMMMEddd": "E, ddd MMMM, y G",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -369,13 +391,17 @@
                 "Hv": "HH v",
                 "M": "L",
                 "Md": "d/M",
-                "MEd": "E, d-M",
+                "MEd": "E, d/M",
                 "MMdd": "dd-MM",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
+                "MMMddd": "ddd MMM",
                 "MMMEd": "E d MMM",
+                "MMMEddd": "E, ddd MMM",
                 "MMMMd": "d MMMM",
-                "MMMMEd": "E d MMMM",
+                "MMMMddd": "ddd MMMM",
+                "MMMMEd": "E, d MMMM",
+                "MMMMEddd": "E, ddd MMMM",
                 "MMMMW-count-one": "MMMM এর W নম্বর সপ্তাহ",
                 "MMMMW-count-other": "MMMM এর W নম্বর সপ্তাহ",
                 "ms": "mm:ss",
@@ -386,27 +412,40 @@
                 "yMM": "MM-y",
                 "yMMM": "MMM y",
                 "yMMMd": "d MMM, y",
+                "yMMMddd": "ddd MMM, y",
                 "yMMMEd": "E, d MMM, y",
+                "yMMMEddd": "E, ddd MMM, y",
                 "yMMMM": "MMMM y",
+                "yMMMMd": "d MMMM, y",
+                "yMMMMddd": "ddd MMMM y",
+                "yMMMMEd": "E, d MMMM, y",
+                "yMMMMEddd": "E, ddd MMMM y",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yw-count-one": "Y এর wতম সপ্তাহ",
                 "yw-count-other": "Y এর wতম সপ্তাহ"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1}, {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1}, {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -511,6 +550,10 @@
                 "MMMEd": {
                   "d": "E, d MMM – E, d MMM",
                   "M": "E, d MMM – E, d MMM"
+                },
+                "MMMMd": {
+                  "d": "d–d MMMM",
+                  "M": "d MMMM – d MMMM"
                 },
                 "y": {
                   "y": "y–y"

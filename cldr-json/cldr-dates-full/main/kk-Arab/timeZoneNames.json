@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} ۋاقىتى",
           "regionFormat-type-daylight": "{0} جازعى ۋاقىتى",
           "regionFormat-type-standard": "{0} ستاندارتتى ۋاقىتى",
@@ -23,12 +25,12 @@
                   "standard": "دۇنيەجۇزىلىك ۇيلەستىرىلگەن ۋاقىت"
                 },
                 "short": {
-                  "standard": "UTC"
+                  "standard": "دۇنيەجۇزىلىك ۋاقىت"
                 }
               },
               "Unknown": {
                 "_type": "zone",
-                "exemplarCity": "بەلگىسىز قالا"
+                "exemplarCity": "بەلگىسىز ورىن"
               }
             },
             "Europe": {
@@ -102,9 +104,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ۇلىبريتانيا جازعى ۋاقىتى"
-                },
                 "exemplarCity": "لوندون"
               },
               "Guernsey": {
@@ -129,9 +128,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "يرلانديا ستاندارتتى ۋاقىتى"
-                },
                 "exemplarCity": "دۋبلين"
               },
               "Isle_of_Man": {
@@ -1735,6 +1731,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "اكري ۋاقىتى",
+                "standard": "اكري ستاندارتتى ۋاقىتى",
+                "daylight": "اكري جازعى ۋاقىتى"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "اۋعانستان ۋاقىتى"
@@ -1765,18 +1768,6 @@
                 "generic": "الاسكا ۋاقىتى",
                 "standard": "الاسكا ستاندارتتى ۋاقىتى",
                 "daylight": "الاسكا جازعى ۋاقىتى"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "الماتى ۋاقىتى",
-                "standard": "الماتى ستاندارتتى ۋاقىتى",
-                "daylight": "الماتى جازعى ۋاقىتى"
-              },
-              "short": {
-                "generic": "الماتى",
-                "standard": "الماتى",
-                "daylight": "الماتى قالاسى"
               }
             },
             "Amazon": {
@@ -1816,33 +1807,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "اپيا ۋاقىتى",
-                "standard": "اپيا ستاندارتتى ۋاقىتى",
-                "daylight": "اپيا جازعى ۋاقىتى"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "اقتاۋ ۋاقىتى",
-                "standard": "اقتاۋ ستاندارتتى ۋاقىتى",
-                "daylight": "اقتاۋ جازعى ۋاقىتى"
-              },
-              "short": {
-                "generic": "اقتاۋ",
-                "standard": "اقتاۋ",
-                "daylight": "اقتاۋ قالاسى"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "اقتوبە ۋاقىتى",
-                "standard": "اقتوبە ستاندارتتى ۋاقىتى",
-                "daylight": "اقتوبە جازعى ۋاقىتى"
-              },
-              "short": {
-                "generic": "اقتوبە",
-                "standard": "اقتوبە",
-                "daylight": "اقتوبە قالاسى"
+                "generic": "ساموا ۋاقىتى",
+                "standard": "ساموا ستاندارتتى ۋاقىتى",
+                "daylight": "ساموا جازعى ۋاقىتى"
               }
             },
             "Arabian": {
@@ -1882,7 +1849,7 @@
             },
             "Australia_Central": {
               "long": {
-                "generic": "ورتالىق اۋستراليا ۋاقىتى",
+                "generic": "اۋستراليا ورتالىق ۋاقىتى",
                 "standard": "اۋستراليا ستاندارتتى ورتالىق ۋاقىتى",
                 "daylight": "اۋستراليا جازعى ورتالىق ۋاقىتى"
               }
@@ -1896,14 +1863,14 @@
             },
             "Australia_Eastern": {
               "long": {
-                "generic": "شىعىس اۋستراليا ۋاقىتى",
+                "generic": "اۋستراليا شىعىس ۋاقىتى",
                 "standard": "اۋستراليا ستاندارتتى شىعىس ۋاقىتى",
                 "daylight": "اۋستراليا جازعى شىعىس ۋاقىتى"
               }
             },
             "Australia_Western": {
               "long": {
-                "generic": "باتىس اۋستراليا ۋاقىتى",
+                "generic": "اۋستراليا باتىس ۋاقىتى",
                 "standard": "اۋستراليا ستاندارتتى باتىس ۋاقىتى",
                 "daylight": "اۋستراليا جازعى باتىس ۋاقىتى"
               }
@@ -1946,9 +1913,16 @@
                 "daylight": "برازيليا جازعى ۋاقىتى"
               }
             },
+            "British": {
+              "long": {
+                "generic": "ۇلىبريتانيا ۋاقىتى",
+                "standard": "گرينۆيچ ۋاقىتى",
+                "daylight": "ۇلىبريتانيا جازعى ۋاقىتى"
+              }
+            },
             "Brunei": {
               "long": {
-                "standard": "برۋنەي-دارۋسسالام ۋاقىتى"
+                "standard": "برۋنەي ۋاقىتى"
               }
             },
             "Cape_Verde": {
@@ -2022,12 +1996,12 @@
             },
             "DumontDUrville": {
               "long": {
-                "standard": "ديۋمون-ديۋرۆيل ۋاقىتى"
+                "standard": "ديۋمون ديۋرۆيل ۋاقىتى"
               }
             },
             "East_Timor": {
               "long": {
-                "standard": "شىعىس تيمور ۋاقىتى"
+                "standard": "تيمور-لەستە ۋاقىتى"
               }
             },
             "Easter": {
@@ -2119,6 +2093,13 @@
                 "standard": "گرينۆيچ ۋاقىتى"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "گرەنلانديا ۋاقىتى",
+                "standard": "گرەنلانديا ستاندارتتى ۋاقىتى",
+                "daylight": "گرەنلانديا جازعى ۋاقىتى"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "شىعىس گرەنلانديا ۋاقىتى",
@@ -2145,14 +2126,14 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "گاۆاي جانە الەۋت ارالدارى ستاندارتتى ۋاقىتى"
+                "standard": "حاۋاي ۋاقىتى"
               }
             },
             "Hawaii_Aleutian": {
               "long": {
-                "generic": "گاۆاي جانە الەۋت ارالدارى ۋاقىتى",
-                "standard": "گاۆاي جانە الەۋت ارالدارى ستاندارتتى ۋاقىتى",
-                "daylight": "گاۆاي جانە الەۋت ارالدارى جازعى ۋاقىتى"
+                "generic": "حاۋاي جانە الەۋت ارالدارى ۋاقىتى",
+                "standard": "حاۋاي جانە الەۋت ارالدارى ستاندارتتى ۋاقىتى",
+                "daylight": "حاۋاي جانە الەۋت ارالدارى جازعى ۋاقىتى"
               }
             },
             "Hong_Kong": {
@@ -2206,6 +2187,13 @@
                 "daylight": "يران جازعى ۋاقىتى"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "يرلانديا ۋاقىتى",
+                "standard": "گرينۆيچ ۋاقىتى",
+                "daylight": "يرلانديا ستاندارتتى ۋاقىتى"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "يركۋتسك ۋاقىتى",
@@ -2225,6 +2213,13 @@
                 "generic": "جاپونيا ۋاقىتى",
                 "standard": "جاپونيا ستاندارتتى ۋاقىتى",
                 "daylight": "جاپونيا جازعى ۋاقىتى"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "كامشاتكا ۋاقىتى",
+                "standard": "كامشاتكا ستاندارتتى ۋاقىتى",
+                "daylight": "كامشاتكا جازعى ۋاقىتى"
               }
             },
             "Kazakhstan": {
@@ -2481,19 +2476,7 @@
             },
             "Pyongyang": {
               "long": {
-                "standard": "پحەنيان ۋاقىتى"
-              }
-            },
-            "Qyzylorda": {
-              "long": {
-                "generic": "قىزىلوردا ۋاقىتى",
-                "standard": "قىزىلوردا ستاندارتتى ۋاقىتى",
-                "daylight": "قىزىلوردا جازعى ۋاقىتى"
-              },
-              "short": {
-                "generic": "قىزىلوردا",
-                "standard": "قىزىلوردا",
-                "daylight": "قىزىلوردا قالاسى"
+                "standard": "سولتۇستىك كورەيا ۋاقىتى"
               }
             },
             "Reunion": {
@@ -2513,11 +2496,16 @@
                 "daylight": "ساحالين جازعى ۋاقىتى"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "سامارا ۋاقىتى",
+                "standard": "سامارا ستاندارتتى ۋاقىتى",
+                "daylight": "سامارا جازعى ۋاقىتى"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "ساموا ۋاقىتى",
-                "standard": "ساموا ستاندارتتى ۋاقىتى",
-                "daylight": "ساموا جازعى ۋاقىتى"
+                "standard": "امەريكا ساموا ستاندارتتى ۋاقىتى"
               }
             },
             "Seychelles": {
@@ -2557,9 +2545,9 @@
             },
             "Taipei": {
               "long": {
-                "generic": "تايبەي ۋاقىتى",
-                "standard": "تايبەي ستاندارتتى ۋاقىتى",
-                "daylight": "تايبەي جازعى ۋاقىتى"
+                "generic": "تايۋان ۋاقىتى",
+                "standard": "تايۋان ستاندارتتى ۋاقىتى",
+                "daylight": "تايۋان جازعى ۋاقىتى"
               }
             },
             "Tajikistan": {
@@ -2584,6 +2572,13 @@
                 "standard": "ترۋك ۋاقىتى"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "تۇركيا ۋاقىتى",
+                "standard": "تۇركيا ستاندارتتى ۋاقىتى",
+                "daylight": "تۇركيا جازعى ۋاقىتى"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "تۇرىكمەنستان ۋاقىتى",
@@ -2601,6 +2596,11 @@
                 "generic": "ۋرۋگۆاي ۋاقىتى",
                 "standard": "ۋرۋگۆاي ستاندارتتى ۋاقىتى",
                 "daylight": "ۋرۋگۆاي جازعى ۋاقىتى"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ءۇرىمجى ۋاقىتى"
               }
             },
             "Uzbekistan": {

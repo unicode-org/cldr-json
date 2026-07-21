@@ -18,15 +18,41 @@
         "keys": {
           "calendar": "Tanggalan",
           "cf": "Format Mata Uang",
+          "colAlternate": "Lirwakake Pangurutan Simbol",
+          "colBackwards": "Pangurutan Aksen Walikan",
+          "colCaseFirst": "Urutan Aksara Gedhe/Cilik",
+          "colCaseLevel": "Pangurutan Sensitif Aksara Gedhe/Cilik",
           "collation": "Urutan Pamilahan",
+          "colNormalization": "Pangurutan sing Dinormalisasi",
+          "colNumeric": "Pangurutan Numerik",
+          "colReorder": "Ngurutake Maneh Skrip/Blok",
+          "colStrength": "Kekuwatan Sortiran",
           "currency": "Mata Uang",
+          "d0": "Transformasi Tujuan",
+          "dx": "Pamisahan Jeda Bausastra",
           "em": "Presentasi Emoji",
+          "fw": "Dina pisanan ing minggu",
+          "h0": "Dicampur",
           "hc": "Siklus Jam (12 vs 24)",
+          "i0": "Metode Input",
+          "k0": "Papan Ketik",
+          "kv": "Paling Dhuwur sing Dilirwakake",
           "lb": "Gaya Ganti Baris",
           "lw": "Ganti baris sajrone Tembung",
+          "m0": "Aturan Transformasi",
           "ms": "Sistem Pangukuran",
+          "mu": "Unit Pangukuran",
           "numbers": "Angka",
-          "ss": "Pedhotan ukara sawise singkatan"
+          "rg": "Wilayah kanggo Data Tambahan",
+          "s0": "Transformasi Sumber",
+          "sd": "Subdivisi Wilayah",
+          "ss": "Pedhotan ukara sawise singkatan",
+          "t": "Transformasi",
+          "t0": "Dijarwakake Mesin",
+          "timezone": "Zona Wektu",
+          "va": "Varian Lokal",
+          "x": "Panggunaan Pribadi",
+          "x0": "Transformasi Panggunaan Pribadi"
         },
         "types": {
           "calendar": {
@@ -53,30 +79,52 @@
             "core": "Standar",
             "standard": "Format Mata Uang Standar"
           },
+          "colCaseFirst": {
+            "core": "Aksara Gedhe"
+          },
           "collation": {
+            "core": "Zhuyin",
             "ducet": "Urutan Pamilahan Unicode Default",
-            "core": "Standar",
             "search": "Panlusuran Tujuan Umum",
-            "standard": "Standar Ngurutke Urutan"
+            "standard": "Urutan Ngurutake Standar"
+          },
+          "colReorder": {
+            "core": "Simbol"
+          },
+          "colStrength": {
+            "core": "Dhasar, Aksen, Aksara Kapital, Varian"
+          },
+          "d0": {
+            "fwidth": "Dadi Jembar Kebak",
+            "hwidth": "Dadi Jembar Separo"
           },
           "em": {
             "core": "Teks"
           },
           "hc": {
-            "h11": "Sistem 12 Jam (0–11)",
+            "c12": "Sistem 12 Jam",
             "core": "24 (1–24)",
+            "c24": "Sistem 24 Jam",
+            "h11": "Sistem 12 Jam (0–11)",
             "h12": "Sistem 12 Jam (1–12)",
             "h23": "Sistem 24 Jam (0–23)",
             "h24": "Sistem 24 Jam (1–24)"
+          },
+          "kv": {
+            "core": "Geseran spasi, tandha waca, simbol non-mata uang"
           },
           "lb": {
             "loose": "Gaya Ganti Baris Longgar",
             "core": "Ketat",
             "normal": "Gaya Ganti Baris Normal",
-            "strict": "Gaya Ganti Baris Strik"
+            "strict": "Gaya Ganti Baris Ketat"
           },
           "lw": {
             "core": "Pertahanake frasa"
+          },
+          "m0": {
+            "bgn": "Transliterasi BGN AS",
+            "ungegn": "Transliterasi GEGN AS"
           },
           "ms": {
             "metric": "Sistem Metrik",
@@ -85,36 +133,38 @@
             "ussystem": "Sistem Pangukuran AS"
           },
           "numbers": {
-            "arab": "Digit Hindu-Arab",
-            "arabext": "Digit Hindu-Arab Diambakake",
+            "arab": "Angka Arab-India",
+            "arabext": "Angka Arab-India sing Luwih Dawa",
+            "core": "Angka Tradisional",
             "armn": "Angka Armenia",
             "armnlow": "Angka Huruf Cilik Armenia",
-            "beng": "Digit Bengali",
-            "cakm": "Digit Chakma",
-            "deva": "Digit Devanagari",
+            "beng": "Angka Bengali",
+            "cakm": "Angka Chakma",
+            "deva": "Angka Devanagari",
             "ethi": "Angka Etiopia",
-            "fullwide": "Digit Amba Kebak",
+            "fullwide": "Angka Amba Kebak",
             "geor": "Angka Georgian",
             "grek": "Angka Yunani",
             "greklow": "Angka Huruf Cilik Yunani",
-            "gujr": "Digit Gujarat",
-            "guru": "Digit Gurmukhi",
-            "hanidec": "Angka Desimal Mandarin",
-            "hans": "Angka Mandarin Ringkes",
-            "hansfin": "Angka Finansial Mandarin Ringkes",
-            "hant": "Angka Mandarin Tradisional",
-            "hantfin": "Angka Finansial Mandarin Tradisional",
+            "gujr": "Angka Gujarat",
+            "guru": "Angka Gurmukhi",
+            "hanidec": "Angka Desimal Tyonghwa",
+            "hans": "Angka Tyonghwa Prasaja",
+            "hansfin": "Angka Finansial Tyonghwa Prasaja",
+            "hant": "Angka Tyonghwa Tradhisional",
+            "hantfin": "Angka Finansial Tyonghwa Tradhisional",
             "hebr": "Angka Ibrani",
-            "java": "Digit Jawa",
+            "java": "Angka Jawa",
             "jpan": "Angka Jepang",
             "jpanfin": "Angka Finansial Jepang",
-            "khmr": "Digit Khmer",
-            "knda": "Digit Kannada",
-            "laoo": "Digit Lao",
-            "latn": "Digit Latin",
+            "khmr": "Angka Khmer",
+            "knda": "Angka Kannada",
+            "laoo": "Angka Lao",
+            "latn": "Angka Arab Kulon",
             "mlym": "Digit Malayalam",
             "mtei": "Digit Meetei Mayek",
             "mymr": "Digit Myanmar",
+            "native": "Digit Asli",
             "olck": "Digit Ol Chiki",
             "orya": "Digit Odia",
             "roman": "Angka Romawi",
@@ -128,7 +178,17 @@
           },
           "ss": {
             "core": "Urip"
+          },
+          "t0": {
+            "und": "Jarwan Mesin sing Ora Spesifik"
+          },
+          "va": {
+            "core": "Varian POSIX"
           }
+        },
+        "typeValues": {
+          "no": "Mati",
+          "yes": "Urip"
         },
         "codePatterns": {
           "language": "Basa: {0}",

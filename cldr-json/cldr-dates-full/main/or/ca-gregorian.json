@@ -97,6 +97,17 @@
                 }
               }
             },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "one": "{0}ମ",
+                  "two": "{0}ୟ",
+                  "few": "{0}ତମ",
+                  "many": "{0}ତମ",
+                  "other": "{0}ତମ"
+                }
+              }
+            },
             "days": {
               "format": {
                 "abbreviated": {
@@ -292,6 +303,10 @@
               "short": "ahmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "/",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1}, {0}",
               "long": "{1}, {0}",
               "medium": "{1}, {0}",
@@ -317,7 +332,14 @@
                 "GyMEd": "G dd-MM-y, E",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "MMM d, y G",
+                "GyMMMddd": "G y MMM ddd",
                 "GyMMMEd": "E, MMM d, y G",
+                "GyMMMEddd": "G y MMM ddd, E",
+                "GyMMMM": "G y MMMM",
+                "GyMMMMd": "G y MMMM d",
+                "GyMMMMddd": "G y MMMM ddd",
+                "GyMMMMEd": "G y MMMM d, E",
+                "GyMMMMEddd": "G y MMMM ddd, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -336,8 +358,13 @@
                 "MMdd": "dd-MM",
                 "MMM": "LLL",
                 "MMMd": "MMM d",
+                "MMMddd": "MMM ddd",
                 "MMMEd": "E, MMM d",
+                "MMMEddd": "MMM ddd, E",
                 "MMMMd": "MMMM d",
+                "MMMMddd": "MMMM ddd",
+                "MMMMEd": "MMMM d, E",
+                "MMMMEddd": "MMMM ddd, E",
                 "MMMMW-count-one": "MMMM ର ସପ୍ତାହ W",
                 "MMMMW-count-other": "MMMM ର ସପ୍ତାହ W",
                 "ms": "mm:ss",
@@ -348,27 +375,40 @@
                 "yMM": "MM-y",
                 "yMMM": "MMM y",
                 "yMMMd": "MMM d, y",
+                "yMMMddd": "MMM ddd, y",
                 "yMMMEd": "E, MMM d, y",
+                "yMMMEddd": "d MMM y, E",
                 "yMMMM": "MMMM y",
+                "yMMMMd": "d MMMM y",
+                "yMMMMddd": "d MMMM y",
+                "yMMMMEd": "E, d MMMM y",
+                "yMMMMEddd": "d MMMM y, E",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yw-count-one": "Y ର ସପ୍ତାହ w",
                 "yw-count-other": "Y ର ସପ୍ତାହ w"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
                 "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -473,6 +513,10 @@
                 "MMMEd": {
                   "d": "E, MMM d – E, MMM d",
                   "M": "E, MMM d – E, MMM d"
+                },
+                "MMMMd": {
+                  "d": "MMMM d–d",
+                  "M": "MMMM d – MMMM d"
                 },
                 "y": {
                   "y": "y–y"

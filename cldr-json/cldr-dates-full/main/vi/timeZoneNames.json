@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Giờ {0}",
           "regionFormat-type-daylight": "Giờ mùa hè {0}",
           "regionFormat-type-standard": "Giờ chuẩn {0}",
@@ -19,6 +21,10 @@
               "Honolulu": {
                 "_type": "zone",
                 "exemplarCity": "Honolulu"
+              },
+              "Easter": {
+                "_type": "zone",
+                "exemplarCity": "Đảo Phục Sinh"
               },
               "Galapagos": {
                 "_type": "zone",
@@ -57,7 +63,7 @@
               },
               "Unknown": {
                 "_type": "zone",
-                "exemplarCity": "Thành phố không xác định"
+                "exemplarCity": "Vị trí không xác định"
               }
             },
             "Europe": {
@@ -72,18 +78,6 @@
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Giờ Mùa Hè Anh"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Giờ chuẩn Ai-len"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -407,8 +401,8 @@
             "Acre": {
               "long": {
                 "generic": "Giờ Acre",
-                "standard": "Giờ Chuẩn Acre",
-                "daylight": "Giờ Mùa Hè Acre"
+                "standard": "Giờ chuẩn Acre",
+                "daylight": "Giờ mùa hè Acre"
               }
             },
             "Afghanistan": {
@@ -428,7 +422,7 @@
             },
             "Africa_Southern": {
               "long": {
-                "standard": "Giờ Chuẩn Nam Phi"
+                "standard": "Giờ chuẩn Nam Phi"
               }
             },
             "Africa_Western": {
@@ -439,8 +433,8 @@
             "Alaska": {
               "long": {
                 "generic": "Giờ Alaska",
-                "standard": "Giờ Chuẩn Alaska",
-                "daylight": "Giờ Mùa Hè Alaska"
+                "standard": "Giờ chuẩn Alaska",
+                "daylight": "Giờ mùa hè Alaska"
               },
               "short": {
                 "generic": "AKT",
@@ -448,18 +442,11 @@
                 "daylight": "AKDT"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Giờ Almaty",
-                "standard": "Giờ Chuẩn Almaty",
-                "daylight": "Giờ Mùa Hè Almaty"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Giờ Amazon",
-                "standard": "Giờ Chuẩn Amazon",
-                "daylight": "Giờ Mùa Hè Amazon"
+                "standard": "Giờ chuẩn Amazon",
+                "daylight": "Giờ mùa hè Amazon"
               }
             },
             "America_Central": {
@@ -520,36 +507,22 @@
             "Apia": {
               "long": {
                 "generic": "Giờ Apia",
-                "standard": "Giờ Chuẩn Apia",
-                "daylight": "Giờ Mùa Hè Apia"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Giờ Aqtau",
-                "standard": "Giờ Chuẩn Aqtau",
-                "daylight": "Giờ Mùa Hè Aqtau"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Giờ Aqtobe",
-                "standard": "Giờ Chuẩn Aqtobe",
-                "daylight": "Giờ Mùa Hè Aqtobe"
+                "standard": "Giờ chuẩn Apia",
+                "daylight": "Giờ mùa hè Apia"
               }
             },
             "Arabian": {
               "long": {
                 "generic": "Giờ Ả Rập",
                 "standard": "Giờ chuẩn Ả Rập",
-                "daylight": "Giờ Mùa Hè Ả Rập"
+                "daylight": "Giờ mùa hè Ả Rập"
               }
             },
             "Argentina": {
               "long": {
                 "generic": "Giờ Argentina",
-                "standard": "Giờ Chuẩn Argentina",
-                "daylight": "Giờ Mùa Hè Argentina"
+                "standard": "Giờ chuẩn Argentina",
+                "daylight": "Giờ mùa hè Argentina"
               }
             },
             "Argentina_Western": {
@@ -562,14 +535,14 @@
             "Armenia": {
               "long": {
                 "generic": "Giờ Armenia",
-                "standard": "Giờ Chuẩn Armenia",
-                "daylight": "Giờ Mùa Hè Armenia"
+                "standard": "Giờ chuẩn Armenia",
+                "daylight": "Giờ mùa hè Armenia"
               }
             },
             "Atlantic": {
               "long": {
                 "generic": "Giờ Đại Tây Dương",
-                "standard": "Giờ Chuẩn Đại Tây Dương",
+                "standard": "Giờ chuẩn Đại Tây Dương",
                 "daylight": "Giờ mùa hè Đại Tây Dương"
               },
               "short": {
@@ -581,36 +554,36 @@
             "Australia_Central": {
               "long": {
                 "generic": "Giờ Miền Trung Australia",
-                "standard": "Giờ Chuẩn Miền Trung Australia",
-                "daylight": "Giờ Mùa Hè Miền Trung Australia"
+                "standard": "Giờ chuẩn Miền Trung Australia",
+                "daylight": "Giờ mùa hè Miền Trung Australia"
               }
             },
             "Australia_CentralWestern": {
               "long": {
                 "generic": "Giờ Miền Trung Tây Australia",
-                "standard": "Giờ Chuẩn Miền Trung Tây Australia",
-                "daylight": "Giờ Mùa Hè Miền Trung Tây Australia"
+                "standard": "Giờ chuẩn Miền Trung Tây Australia",
+                "daylight": "Giờ mùa hè Miền Trung Tây Australia"
               }
             },
             "Australia_Eastern": {
               "long": {
                 "generic": "Giờ Miền Đông Australia",
-                "standard": "Giờ Chuẩn Miền Đông Australia",
-                "daylight": "Giờ Mùa Hè Miền Đông Australia"
+                "standard": "Giờ chuẩn Miền Đông Australia",
+                "daylight": "Giờ mùa hè Miền Đông Australia"
               }
             },
             "Australia_Western": {
               "long": {
                 "generic": "Giờ Miền Tây Australia",
-                "standard": "Giờ Chuẩn Miền Tây Australia",
-                "daylight": "Giờ Mùa Hè Miền Tây Australia"
+                "standard": "Giờ chuẩn Miền Tây Australia",
+                "daylight": "Giờ mùa hè Miền Tây Australia"
               }
             },
             "Azerbaijan": {
               "long": {
                 "generic": "Giờ Azerbaijan",
-                "standard": "Giờ Chuẩn Azerbaijan",
-                "daylight": "Giờ Mùa Hè Azerbaijan"
+                "standard": "Giờ chuẩn Azerbaijan",
+                "daylight": "Giờ mùa hè Azerbaijan"
               }
             },
             "Azores": {
@@ -623,8 +596,8 @@
             "Bangladesh": {
               "long": {
                 "generic": "Giờ Bangladesh",
-                "standard": "Giờ Chuẩn Bangladesh",
-                "daylight": "Giờ Mùa Hè Bangladesh"
+                "standard": "Giờ chuẩn Bangladesh",
+                "daylight": "Giờ mùa hè Bangladesh"
               }
             },
             "Bhutan": {
@@ -640,8 +613,15 @@
             "Brasilia": {
               "long": {
                 "generic": "Giờ Brasilia",
-                "standard": "Giờ Chuẩn Brasilia",
-                "daylight": "Giờ Mùa Hè Brasilia"
+                "standard": "Giờ chuẩn Brasilia",
+                "daylight": "Giờ mùa hè Brasilia"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Giờ Vương quốc Anh",
+                "standard": "Giờ Trung bình Greenwich",
+                "daylight": "Giờ mùa hè Vương quốc Anh"
               }
             },
             "Brunei": {
@@ -653,7 +633,7 @@
               "long": {
                 "generic": "Giờ Cape Verde",
                 "standard": "Giờ Chuẩn Cape Verde",
-                "daylight": "Giờ Mùa Hè Cape Verde"
+                "daylight": "Giờ mùa hè Cape Verde"
               }
             },
             "Casey": {
@@ -669,22 +649,22 @@
             "Chatham": {
               "long": {
                 "generic": "Giờ Chatham",
-                "standard": "Giờ Chuẩn Chatham",
-                "daylight": "Giờ Mùa Hè Chatham"
+                "standard": "Giờ chuẩn Chatham",
+                "daylight": "Giờ mùa hè Chatham"
               }
             },
             "Chile": {
               "long": {
                 "generic": "Giờ Chile",
-                "standard": "Giờ Chuẩn Chile",
-                "daylight": "Giờ Mùa Hè Chile"
+                "standard": "Giờ chuẩn Chile",
+                "daylight": "Giờ mùa hè Chile"
               }
             },
             "China": {
               "long": {
                 "generic": "Giờ Trung Quốc",
-                "standard": "Giờ Chuẩn Trung Quốc",
-                "daylight": "Giờ Mùa Hè Trung Quốc"
+                "standard": "Giờ chuẩn Trung Quốc",
+                "daylight": "Giờ mùa hè Trung Quốc"
               }
             },
             "Christmas": {
@@ -700,22 +680,22 @@
             "Colombia": {
               "long": {
                 "generic": "Giờ Colombia",
-                "standard": "Giờ Chuẩn Colombia",
-                "daylight": "Giờ Mùa Hè Colombia"
+                "standard": "Giờ chuẩn Colombia",
+                "daylight": "Giờ mùa hè Colombia"
               }
             },
             "Cook": {
               "long": {
                 "generic": "Giờ Quần Đảo Cook",
-                "standard": "Giờ Chuẩn Quần Đảo Cook",
-                "daylight": "Giờ Nửa Mùa Hè Quần Đảo Cook"
+                "standard": "Giờ chuẩn Quần Đảo Cook",
+                "daylight": "Giờ mùa hè Quần Đảo Cook"
               }
             },
             "Cuba": {
               "long": {
                 "generic": "Giờ Cuba",
-                "standard": "Giờ Chuẩn Cuba",
-                "daylight": "Giờ Mùa Hè Cuba"
+                "standard": "Giờ chuẩn Cuba",
+                "daylight": "Giờ mùa hè Cuba"
               }
             },
             "Davis": {
@@ -736,8 +716,8 @@
             "Easter": {
               "long": {
                 "generic": "Giờ Đảo Phục Sinh",
-                "standard": "Giờ Chuẩn Đảo Phục Sinh",
-                "daylight": "Giờ Mùa Hè Đảo Phục Sinh"
+                "standard": "Giờ chuẩn Đảo Phục Sinh",
+                "daylight": "Giờ mùa hè Đảo Phục Sinh"
               }
             },
             "Ecuador": {
@@ -767,22 +747,22 @@
             "Europe_Western": {
               "long": {
                 "generic": "Giờ Tây Âu",
-                "standard": "Giờ Chuẩn Tây Âu",
+                "standard": "Giờ chuẩn Tây Âu",
                 "daylight": "Giờ mùa hè Tây Âu"
               }
             },
             "Falkland": {
               "long": {
-                "generic": "Giờ Quần Đảo Falkland",
-                "standard": "Giờ Chuẩn Quần Đảo Falkland",
-                "daylight": "Giờ Mùa Hè Quần Đảo Falkland"
+                "generic": "Giờ Quần đảo Falkland",
+                "standard": "Giờ chuẩn Quần đảo Falkland",
+                "daylight": "Giờ mùa hè Quần đảo Falkland"
               }
             },
             "Fiji": {
               "long": {
                 "generic": "Giờ Fiji",
-                "standard": "Giờ Chuẩn Fiji",
-                "daylight": "Giờ Mùa Hè Fiji"
+                "standard": "Giờ chuẩn Fiji",
+                "daylight": "Giờ mùa hè Fiji"
               }
             },
             "French_Guiana": {
@@ -808,8 +788,8 @@
             "Georgia": {
               "long": {
                 "generic": "Giờ Georgia",
-                "standard": "Giờ Chuẩn Georgia",
-                "daylight": "Giờ Mùa Hè Georgia"
+                "standard": "Giờ chuẩn Georgia",
+                "daylight": "Giờ mùa hè Georgia"
               }
             },
             "Gilbert_Islands": {
@@ -822,28 +802,30 @@
                 "standard": "Giờ Trung bình Greenwich"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Giờ Greenland",
+                "standard": "Giờ chuẩn Greenland",
+                "daylight": "Giờ mùa hè Greenland"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
-                "generic": "Giờ Miền Đông Greenland",
-                "standard": "Giờ Chuẩn Miền Đông Greenland",
-                "daylight": "Giờ Mùa Hè Miền Đông Greenland"
+                "generic": "Giờ miền đông Greenland",
+                "standard": "Giờ chuẩn miền đông Greenland",
+                "daylight": "Giờ mùa hè miền đông Greenland"
               }
             },
             "Greenland_Western": {
               "long": {
-                "generic": "Giờ Miền Tây Greenland",
-                "standard": "Giờ Chuẩn Miền Tây Greenland",
-                "daylight": "Giờ Mùa Hè Miền Tây Greenland"
-              }
-            },
-            "Guam": {
-              "long": {
-                "standard": "Giờ Chuẩn Guam"
+                "generic": "Giờ miền tây Greenland",
+                "standard": "Giờ chuẩn miền tây Greenland",
+                "daylight": "Giờ mùa hè miền tây Greenland"
               }
             },
             "Gulf": {
               "long": {
-                "standard": "Giờ Chuẩn Vùng Vịnh"
+                "standard": "Giờ chuẩn Vùng Vịnh"
               }
             },
             "Guyana": {
@@ -853,17 +835,17 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Giờ Chuẩn Hawaii-Aleut"
+                "standard": "Giờ Hawaii"
               },
               "short": {
-                "standard": "HAST"
+                "standard": "HST"
               }
             },
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "Giờ Hawaii-Aleut",
-                "standard": "Giờ Chuẩn Hawaii-Aleut",
-                "daylight": "Giờ Mùa Hè Hawaii-Aleut"
+                "standard": "Giờ chuẩn Hawaii-Aleut",
+                "daylight": "Giờ mùa hè Hawaii-Aleut"
               },
               "short": {
                 "generic": "HAT",
@@ -874,20 +856,20 @@
             "Hong_Kong": {
               "long": {
                 "generic": "Giờ Hồng Kông",
-                "standard": "Giờ Chuẩn Hồng Kông",
-                "daylight": "Giờ Mùa Hè Hồng Kông"
+                "standard": "Giờ chuẩn Hồng Kông",
+                "daylight": "Giờ mùa hè Hồng Kông"
               }
             },
             "Hovd": {
               "long": {
                 "generic": "Giờ Hovd",
-                "standard": "Giờ Chuẩn Hovd",
-                "daylight": "Giờ Mùa Hè Hovd"
+                "standard": "Giờ chuẩn Hovd",
+                "daylight": "Giờ mùa hè Hovd"
               }
             },
             "India": {
               "long": {
-                "standard": "Giờ Chuẩn Ấn Độ"
+                "standard": "Giờ chuẩn Ấn Độ"
               }
             },
             "Indian_Ocean": {
@@ -918,29 +900,36 @@
             "Iran": {
               "long": {
                 "generic": "Giờ Iran",
-                "standard": "Giờ Chuẩn Iran",
-                "daylight": "Giờ Mùa Hè Iran"
+                "standard": "Giờ chuẩn Iran",
+                "daylight": "Giờ mùa hè Iran"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Giờ Ireland",
+                "standard": "Giờ Trung bình Greenwich",
+                "daylight": "Giờ chuẩn Ireland"
               }
             },
             "Irkutsk": {
               "long": {
                 "generic": "Giờ Irkutsk",
-                "standard": "Giờ Chuẩn Irkutsk",
-                "daylight": "Giờ Mùa Hè Irkutsk"
+                "standard": "Giờ chuẩn Irkutsk",
+                "daylight": "Giờ mùa hè Irkutsk"
               }
             },
             "Israel": {
               "long": {
                 "generic": "Giờ Israel",
-                "standard": "Giờ Chuẩn Israel",
-                "daylight": "Giờ Mùa Hè Israel"
+                "standard": "Giờ chuẩn Israel",
+                "daylight": "Giờ mùa hè Israel"
               }
             },
             "Japan": {
               "long": {
                 "generic": "Giờ Nhật Bản",
-                "standard": "Giờ Chuẩn Nhật Bản",
-                "daylight": "Giờ Mùa Hè Nhật Bản"
+                "standard": "Giờ chuẩn Nhật Bản",
+                "daylight": "Giờ mùa hè Nhật Bản"
               }
             },
             "Kamchatka": {
@@ -968,8 +957,8 @@
             "Korea": {
               "long": {
                 "generic": "Giờ Hàn Quốc",
-                "standard": "Giờ Chuẩn Hàn Quốc",
-                "daylight": "Giờ Mùa Hè Hàn Quốc"
+                "standard": "Giờ chuẩn Hàn Quốc",
+                "daylight": "Giờ mùa hè Hàn Quốc"
               }
             },
             "Kosrae": {
@@ -980,18 +969,13 @@
             "Krasnoyarsk": {
               "long": {
                 "generic": "Giờ Krasnoyarsk",
-                "standard": "Giờ Chuẩn Krasnoyarsk",
-                "daylight": "Giờ Mùa Hè Krasnoyarsk"
+                "standard": "Giờ chuẩn Krasnoyarsk",
+                "daylight": "Giờ mùa hè Krasnoyarsk"
               }
             },
             "Kyrgystan": {
               "long": {
                 "standard": "Giờ Kyrgystan"
-              }
-            },
-            "Lanka": {
-              "long": {
-                "standard": "Giờ Lanka"
               }
             },
             "Line_Islands": {
@@ -1002,21 +986,14 @@
             "Lord_Howe": {
               "long": {
                 "generic": "Giờ Lord Howe",
-                "standard": "Giờ Chuẩn Lord Howe",
-                "daylight": "Giờ Mùa Hè Lord Howe"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Giờ Ma Cao",
-                "standard": "Giờ Chuẩn Ma Cao",
-                "daylight": "Giờ Mùa Hè Ma Cao"
+                "standard": "Giờ chuẩn Lord Howe",
+                "daylight": "Giờ mùa hè Lord Howe"
               }
             },
             "Magadan": {
               "long": {
                 "generic": "Giờ Magadan",
-                "standard": "Giờ Chuẩn Magadan",
+                "standard": "Giờ chuẩn Magadan",
                 "daylight": "Giờ mùa hè Magadan"
               }
             },
@@ -1043,8 +1020,8 @@
             "Mauritius": {
               "long": {
                 "generic": "Giờ Mauritius",
-                "standard": "Giờ Chuẩn Mauritius",
-                "daylight": "Giờ Mùa Hè Mauritius"
+                "standard": "Giờ chuẩn Mauritius",
+                "daylight": "Giờ mùa hè Mauritius"
               }
             },
             "Mawson": {
@@ -1055,8 +1032,8 @@
             "Mexico_Pacific": {
               "long": {
                 "generic": "Giờ Thái Bình Dương Mexico",
-                "standard": "Giờ Chuẩn Thái Bình Dương Mexico",
-                "daylight": "Giờ Mùa Hè Thái Bình Dương Mexico"
+                "standard": "Giờ chuẩn Thái Bình Dương Mexico",
+                "daylight": "Giờ mùa hè Thái Bình Dương Mexico"
               }
             },
             "Mongolia": {
@@ -1069,8 +1046,8 @@
             "Moscow": {
               "long": {
                 "generic": "Giờ Matxcơva",
-                "standard": "Giờ Chuẩn Matxcơva",
-                "daylight": "Giờ Mùa Hè Matxcơva"
+                "standard": "Giờ chuẩn Matxcơva",
+                "daylight": "Giờ mùa hè Matxcơva"
               }
             },
             "Myanmar": {
@@ -1091,22 +1068,22 @@
             "New_Caledonia": {
               "long": {
                 "generic": "Giờ New Caledonia",
-                "standard": "Giờ Chuẩn New Caledonia",
-                "daylight": "Giờ Mùa Hè New Caledonia"
+                "standard": "Giờ chuẩn New Caledonia",
+                "daylight": "Giờ mùa hè New Caledonia"
               }
             },
             "New_Zealand": {
               "long": {
                 "generic": "Giờ New Zealand",
-                "standard": "Giờ Chuẩn New Zealand",
-                "daylight": "Giờ Mùa Hè New Zealand"
+                "standard": "Giờ chuẩn New Zealand",
+                "daylight": "Giờ mùa hè New Zealand"
               }
             },
             "Newfoundland": {
               "long": {
                 "generic": "Giờ Newfoundland",
-                "standard": "Giờ Chuẩn Newfoundland",
-                "daylight": "Giờ Mùa Hè Newfoundland"
+                "standard": "Giờ chuẩn Newfoundland",
+                "daylight": "Giờ mùa hè Newfoundland"
               }
             },
             "Niue": {
@@ -1117,20 +1094,15 @@
             "Norfolk": {
               "long": {
                 "generic": "Giờ Đảo Norfolk",
-                "standard": "Giờ Chuẩn Đảo Norfolk",
-                "daylight": "Giờ Mùa Hè Đảo Norfolk"
+                "standard": "Giờ chuẩn Đảo Norfolk",
+                "daylight": "Giờ mùa hè Đảo Norfolk"
               }
             },
             "Noronha": {
               "long": {
                 "generic": "Giờ Fernando de Noronha",
-                "standard": "Giờ Chuẩn Fernando de Noronha",
-                "daylight": "Giờ Mùa Hè Fernando de Noronha"
-              }
-            },
-            "North_Mariana": {
-              "long": {
-                "standard": "Giờ Quần Đảo Bắc Mariana"
+                "standard": "Giờ chuẩn Fernando de Noronha",
+                "daylight": "Giờ mùa hè Fernando de Noronha"
               }
             },
             "Novosibirsk": {
@@ -1150,8 +1122,8 @@
             "Pakistan": {
               "long": {
                 "generic": "Giờ Pakistan",
-                "standard": "Giờ Chuẩn Pakistan",
-                "daylight": "Giờ Mùa Hè Pakistan"
+                "standard": "Giờ chuẩn Pakistan",
+                "daylight": "Giờ mùa hè Pakistan"
               }
             },
             "Palau": {
@@ -1167,22 +1139,22 @@
             "Paraguay": {
               "long": {
                 "generic": "Giờ Paraguay",
-                "standard": "Giờ Chuẩn Paraguay",
-                "daylight": "Giờ Mùa Hè Paraguay"
+                "standard": "Giờ chuẩn Paraguay",
+                "daylight": "Giờ mùa hè Paraguay"
               }
             },
             "Peru": {
               "long": {
                 "generic": "Giờ Peru",
-                "standard": "Giờ Chuẩn Peru",
-                "daylight": "Giờ Mùa Hè Peru"
+                "standard": "Giờ chuẩn Peru",
+                "daylight": "Giờ mùa hè Peru"
               }
             },
             "Philippines": {
               "long": {
                 "generic": "Giờ Philippin",
-                "standard": "Giờ Chuẩn Philippin",
-                "daylight": "Giờ Mùa Hè Philippin"
+                "standard": "Giờ chuẩn Philippin",
+                "daylight": "Giờ mùa hè Philippin"
               }
             },
             "Phoenix_Islands": {
@@ -1193,7 +1165,7 @@
             "Pierre_Miquelon": {
               "long": {
                 "generic": "Giờ St. Pierre và Miquelon",
-                "standard": "Giờ Chuẩn St. Pierre và Miquelon",
+                "standard": "Giờ chuẩn St. Pierre và Miquelon",
                 "daylight": "Giờ Mùa Hè Saint Pierre và Miquelon"
               }
             },
@@ -1212,13 +1184,6 @@
                 "standard": "Giờ Bình Nhưỡng"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Giờ Qyzylorda",
-                "standard": "Giờ Chuẩn Qyzylorda",
-                "daylight": "Giờ Mùa Hè Qyzylorda"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Giờ Reunion"
@@ -1232,22 +1197,20 @@
             "Sakhalin": {
               "long": {
                 "generic": "Giờ Sakhalin",
-                "standard": "Giờ Chuẩn Sakhalin",
+                "standard": "Giờ chuẩn Sakhalin",
                 "daylight": "Giờ mùa hè Sakhalin"
               }
             },
             "Samara": {
               "long": {
                 "generic": "Giờ Samara",
-                "standard": "Giờ Chuẩn Samara",
+                "standard": "Giờ chuẩn Samara",
                 "daylight": "Giờ mùa hè Samara"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "Giờ Samoa",
-                "standard": "Giờ Chuẩn Samoa",
-                "daylight": "Giờ ban ngày Samoa"
+                "standard": "Giờ chuẩn Samoa"
               }
             },
             "Seychelles": {
@@ -1288,8 +1251,8 @@
             "Taipei": {
               "long": {
                 "generic": "Giờ Đài Bắc",
-                "standard": "Giờ Chuẩn Đài Bắc",
-                "daylight": "Giờ Mùa Hè Đài Bắc"
+                "standard": "Giờ chuẩn Đài Bắc",
+                "daylight": "Giờ mùa hè Đài Bắc"
               }
             },
             "Tajikistan": {
@@ -1305,8 +1268,8 @@
             "Tonga": {
               "long": {
                 "generic": "Giờ Tonga",
-                "standard": "Giờ Chuẩn Tonga",
-                "daylight": "Giờ Mùa Hè Tonga"
+                "standard": "Giờ chuẩn Tonga",
+                "daylight": "Giờ mùa hè Tonga"
               }
             },
             "Truk": {
@@ -1317,15 +1280,15 @@
             "Turkey": {
               "long": {
                 "generic": "Giờ Thổ Nhĩ Kỳ",
-                "standard": "Giờ Chuẩn Thổ Nhĩ Kỳ",
-                "daylight": "Giờ Mùa Hè Thổ Nhĩ Kỳ"
+                "standard": "Giờ chuẩn Thổ Nhĩ Kỳ",
+                "daylight": "Giờ mùa hè Thổ Nhĩ Kỳ"
               }
             },
             "Turkmenistan": {
               "long": {
                 "generic": "Giờ Turkmenistan",
-                "standard": "Giờ Chuẩn Turkmenistan",
-                "daylight": "Giờ Mùa Hè Turkmenistan"
+                "standard": "Giờ chuẩn Turkmenistan",
+                "daylight": "Giờ mùa hè Turkmenistan"
               }
             },
             "Tuvalu": {
@@ -1336,22 +1299,27 @@
             "Uruguay": {
               "long": {
                 "generic": "Giờ Uruguay",
-                "standard": "Giờ Chuẩn Uruguay",
-                "daylight": "Giờ Mùa Hè Uruguay"
+                "standard": "Giờ chuẩn Uruguay",
+                "daylight": "Giờ mùa hè Uruguay"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Giờ Urumqi"
               }
             },
             "Uzbekistan": {
               "long": {
                 "generic": "Giờ Uzbekistan",
-                "standard": "Giờ Chuẩn Uzbekistan",
-                "daylight": "Giờ Mùa Hè Uzbekistan"
+                "standard": "Giờ chuẩn Uzbekistan",
+                "daylight": "Giờ mùa hè Uzbekistan"
               }
             },
             "Vanuatu": {
               "long": {
                 "generic": "Giờ Vanuatu",
-                "standard": "Giờ Chuẩn Vanuatu",
-                "daylight": "Giờ Mùa Hè Vanuatu"
+                "standard": "Giờ chuẩn Vanuatu",
+                "daylight": "Giờ mùa hè Vanuatu"
               }
             },
             "Venezuela": {
@@ -1362,15 +1330,15 @@
             "Vladivostok": {
               "long": {
                 "generic": "Giờ Vladivostok",
-                "standard": "Giờ Chuẩn Vladivostok",
+                "standard": "Giờ chuẩn Vladivostok",
                 "daylight": "Giờ mùa hè Vladivostok"
               }
             },
             "Volgograd": {
               "long": {
                 "generic": "Giờ Volgograd",
-                "standard": "Giờ Chuẩn Volgograd",
-                "daylight": "Giờ Mùa Hè Volgograd"
+                "standard": "Giờ chuẩn Volgograd",
+                "daylight": "Giờ mùa hè Volgograd"
               }
             },
             "Vostok": {
@@ -1391,14 +1359,14 @@
             "Yakutsk": {
               "long": {
                 "generic": "Giờ Yakutsk",
-                "standard": "Giờ Chuẩn Yakutsk",
+                "standard": "Giờ chuẩn Yakutsk",
                 "daylight": "Giờ mùa hè Yakutsk"
               }
             },
             "Yekaterinburg": {
               "long": {
                 "generic": "Giờ Yekaterinburg",
-                "standard": "Giờ Chuẩn Yekaterinburg",
+                "standard": "Giờ chuẩn Yekaterinburg",
                 "daylight": "Giờ mùa hè Yekaterinburg"
               }
             },

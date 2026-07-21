@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Вақти {0}",
           "regionFormat-type-daylight": "Вақти рӯзонаи {0}",
           "regionFormat-type-standard": "Вақти стандартии {0}",
@@ -101,9 +103,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Вақти тобистонаи Британия"
-                },
                 "exemplarCity": "Лондон"
               },
               "Guernsey": {
@@ -128,9 +127,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Вақти стандартии Ирландия"
-                },
                 "exemplarCity": "Дублин"
               },
               "Isle_of_Man": {
@@ -1909,6 +1905,13 @@
                 "daylight": "Вақти тобистонаи Бразилия"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Вақти Британия",
+                "standard": "Вақти миёнаи Гринвич",
+                "daylight": "Вақти тобистонаи Британия"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Вақти Бруней Доруссалом"
@@ -2108,7 +2111,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Вақти стандартии Ҳавайӣ-Алеутӣ"
+                "standard": "Вақти Ҳавайӣ"
               }
             },
             "Hawaii_Aleutian": {
@@ -2167,6 +2170,13 @@
                 "generic": "Вақти Эрон",
                 "standard": "Вақти стандартии Эрон",
                 "daylight": "Вақти рӯзонаи Эрон"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Вақти Ирландия",
+                "standard": "Вақти миёнаи Гринвич",
+                "daylight": "Вақти стандартии Ирландия"
               }
             },
             "Irkutsk": {
@@ -2454,9 +2464,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Вақти Самоа",
-                "standard": "Вақти стандартии Самоа",
-                "daylight": "Вақти рӯзонаи Самоа"
+                "standard": "Вақти стандартии Самоа"
               }
             },
             "Seychelles": {

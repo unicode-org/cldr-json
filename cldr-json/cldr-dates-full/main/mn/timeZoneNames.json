@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}-н цаг",
           "regionFormat-type-daylight": "{0}-н зуны цаг",
           "regionFormat-type-standard": "{0}-н стандарт цаг",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Британийн зуны цаг"
-                },
                 "exemplarCity": "Лондон"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ирландын стандарт цаг"
-                },
                 "exemplarCity": "Дублин"
               },
               "Isle_of_Man": {
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Акрийн цаг",
+                "standard": "Акрийн стандарт цаг",
+                "daylight": "Акрийн зуны цаг"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Афганистаны цаг"
@@ -1913,6 +1916,13 @@
                 "daylight": "Бразилийн зуны цаг"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Британийн цаг",
+                "standard": "Гринвичийн цаг",
+                "daylight": "Британийн зуны цаг"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Бруней Даруссаламын цаг"
@@ -2086,6 +2096,13 @@
                 "standard": "Гринвичийн цаг"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Гренландын цаг",
+                "standard": "Гренландын стандарт цаг",
+                "daylight": "Гренландын зуны цаг"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Зүүн Гренландын цаг",
@@ -2112,7 +2129,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Хавай-Алеутын стандарт цаг"
+                "standard": "Хавайн цаг"
               }
             },
             "Hawaii_Aleutian": {
@@ -2173,6 +2190,13 @@
                 "daylight": "Ираны зуны цаг"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Ирландын цаг",
+                "standard": "Гринвичийн цаг",
+                "daylight": "Ирландын стандарт цаг"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Эрхүүгийн цаг",
@@ -2192,6 +2216,13 @@
                 "generic": "Японы цаг",
                 "standard": "Японы стандарт цаг",
                 "daylight": "Японы зуны цаг"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Камчаткын цаг",
+                "standard": "Камчаткын стандарт цаг",
+                "daylight": "Камчаткын зуны цаг"
               }
             },
             "Kazakhstan": {
@@ -2456,11 +2487,16 @@
                 "daylight": "Сахалины зуны цаг"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Самарын цаг",
+                "standard": "Самарын стандарт цаг",
+                "daylight": "Самарын зуны цаг"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Самоагийн цаг",
-                "standard": "Самоагийн стандарт цаг",
-                "daylight": "Самоагийн зуны цаг"
+                "standard": "Самоагийн стандарт цаг"
               }
             },
             "Seychelles": {
@@ -2527,6 +2563,13 @@
                 "standard": "Чүүкийн цаг"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Туркийн цаг",
+                "standard": "Туркийн стандарт цаг",
+                "daylight": "Туркийн зуны цаг"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Туркменистаны цаг",
@@ -2544,6 +2587,11 @@
                 "generic": "Уругвайн цаг",
                 "standard": "Уругвайн стандарт цаг",
                 "daylight": "Уругвайн зуны цаг"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Өрөмчийн цаг"
               }
             },
             "Uzbekistan": {

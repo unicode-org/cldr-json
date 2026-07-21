@@ -25,18 +25,34 @@
           "collation": "lajittelujärjestys",
           "colNormalization": "normalisoitu lajittelu",
           "colNumeric": "numeroiden lajittelu",
+          "colReorder": "skriptin/lohkon uudelleenjärjestys",
           "colStrength": "lajittelun taso",
           "currency": "valuutta",
+          "d0": "muunnoksen kohde",
+          "dx": "kielletyt sanojen katkaisut",
           "em": "emojin esitys",
+          "fw": "viikon ensimmäinen päivä",
+          "h0": "yhdistetty",
           "hc": "tuntijärjestelmä",
+          "i0": "syöttötapa",
+          "k0": "näppäimistö",
+          "kv": "ylin ohitettu",
           "lb": "rivinvaihtotyyli",
           "lw": "rivi vaihtuu sanojen sisällä",
+          "m0": "muunnossäännöt",
           "ms": "mittajärjestelmä",
+          "mu": "mittayksikkö",
           "numbers": "numerot",
+          "rg": "alueen täydentävät tiedot",
+          "s0": "muunnoslähde",
+          "sd": "alueen alaosasto",
           "ss": "lause vaihtuu lyhenteen jälkeen",
+          "t": "muunnos",
+          "t0": "konekäännetty",
           "timezone": "aikavyöhyke",
           "va": "maavalinnan muunnelma",
-          "x": "yksityiskäyttö"
+          "x": "yksityiskäyttö",
+          "x0": "yksityiskäyttöinen muunnos"
         },
         "types": {
           "calendar": {
@@ -75,6 +91,7 @@
           },
           "colCaseFirst": {
             "lower": "pienet kirjaimet edeltävät isoja",
+            "core": "isot kirjaimet",
             "no": "isojen ja pienten kirjainten normaalijärjestys",
             "upper": "isot kirjaimet edeltävät pieniä"
           },
@@ -108,8 +125,12 @@
             "no": "numero-numerolta lajittelu",
             "yes": "numeroden lajittelu lukuina"
           },
+          "colReorder": {
+            "core": "symboli"
+          },
           "colStrength": {
             "identical": "kaikkien merkkien lajittelu",
+            "core": "peruskirjaimet, aksenttimerkit, sija, versiot",
             "primary": "vain peruskirjainten lajittelu",
             "quaternary": "painomerkit ja aakkoslajit tai merkkileveydet ja kana-merkit huomioiva lajittelu",
             "secondary": "painomerkit huomioiva lajittelu",
@@ -124,11 +145,16 @@
             "core": "teksti"
           },
           "hc": {
-            "h11": "12 tunnin järjestelmä (0–11)",
+            "c12": "12 tunnin järjestelmä",
             "core": "24 (1–24)",
+            "c24": "24 tunnin järjestelmä",
+            "h11": "12 tunnin järjestelmä (0–11)",
             "h12": "12 tunnin järjestelmä (1–12)",
             "h23": "24 tunnin järjestelmä (0–23)",
             "h24": "24 tunnin järjestelmä (1–24)"
+          },
+          "kv": {
+            "core": "vaihto: välilyönnit, välimerkit, muut kuin valuuttasymbolit"
           },
           "lb": {
             "loose": "väljä rivinvaihto",
@@ -153,6 +179,7 @@
             "ahom": "ahom-numerot",
             "arab": "arabialaiset numerot",
             "arabext": "laajennetut arabialaiset numerot",
+            "core": "perinteiset numerot",
             "armn": "armenialaiset numerot",
             "armnlow": "armenialaiset piennumerot",
             "bali": "balilaiset numerot",
@@ -238,7 +265,17 @@
           },
           "ss": {
             "core": "päällä"
+          },
+          "t0": {
+            "und": "määrittämätön konekäännös"
+          },
+          "va": {
+            "core": "POSIX-variantti"
           }
+        },
+        "typeValues": {
+          "no": "pois",
+          "yes": "päällä"
         },
         "codePatterns": {
           "language": "kieli: {0}",

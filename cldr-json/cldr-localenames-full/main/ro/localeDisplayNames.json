@@ -25,18 +25,34 @@
           "collation": "ordine de sortare",
           "colNormalization": "sortare normalizată",
           "colNumeric": "sortare numerică",
+          "colReorder": "reordonare scriere/blocuri",
           "colStrength": "puterea sortării",
           "currency": "monedă",
+          "d0": "destinație transformare",
+          "dx": "excluderi întreruperi dicționar",
           "em": "Prezentare emojiuri",
+          "fw": "prima zi a săptămânii",
+          "h0": "amestecate",
           "hc": "ciclu orar (12 sau 24)",
+          "i0": "metodă de introducere",
+          "k0": "tastatură",
+          "kv": "cel mai înalt nivel ignorat",
           "lb": "stil de întrerupere a rândului (chineză, japoneză, coreeană)",
           "lw": "întrerupere a rândului în interiorul cuvântului",
+          "m0": "reguli de transformare",
           "ms": "sistem de unități de măsură",
+          "mu": "unitate de măsură",
           "numbers": "numere",
+          "rg": "regiune pentru date suplimentare",
+          "s0": "sursă transformare",
+          "sd": "subdiviziune regiune",
           "ss": "întrerupere propoziție după abr.",
+          "t": "Transformare",
+          "t0": "traducere automată",
           "timezone": "fus orar",
           "va": "variantă locală",
-          "x": "utilizare privată"
+          "x": "utilizare privată",
+          "x0": "transformare de uz privat"
         },
         "types": {
           "calendar": {
@@ -73,6 +89,7 @@
           },
           "colCaseFirst": {
             "lower": "Ordonați întâi minusculele",
+            "core": "majuscule",
             "no": "Ordonați după dimensiunea normală a literei",
             "upper": "Ordonați mai întâi majusculele"
           },
@@ -106,8 +123,12 @@
             "no": "Ordonați cifrele individual",
             "yes": "Ordonați cifrele în ordine numerică"
           },
+          "colReorder": {
+            "core": "simbol"
+          },
           "colStrength": {
             "identical": "Ordonați-le pe toate",
+            "core": "bază, accente, majuscule/minuscule, variante",
             "primary": "Ordonați numai literele de bază",
             "quaternary": "Ordonați după accente/dimensiunea literei/lățime/kana",
             "secondary": "Ordonați după accent",
@@ -122,11 +143,16 @@
             "core": "text"
           },
           "hc": {
-            "h11": "sistem cu 12 ore (0–11)",
+            "c12": "sistem cu 12 ore",
             "core": "24 (1–24)",
+            "c24": "sistem cu 24 de ore",
+            "h11": "sistem cu 12 ore (0–11)",
             "h12": "sistem cu 12 ore (1–12)",
             "h23": "sistem cu 24 de ore (0–23)",
             "h24": "sistem cu 24 de ore (1–24)"
+          },
+          "kv": {
+            "core": "omite spații, punctuație, simboluri nemonetare"
           },
           "lb": {
             "loose": "stil liber de întrerupere a liniei",
@@ -151,6 +177,7 @@
             "ahom": "cifre ahom",
             "arab": "cifre indo-arabe",
             "arabext": "cifre indo-arabe extinse",
+            "core": "numerale tradiționale",
             "armn": "numerale armenești",
             "armnlow": "numerale armenești cu minuscule",
             "bali": "cifre balineze",
@@ -236,7 +263,17 @@
           },
           "ss": {
             "core": "activată"
+          },
+          "t0": {
+            "und": "traducere automată nespecificată"
+          },
+          "va": {
+            "core": "variantă POSIX"
           }
+        },
+        "typeValues": {
+          "no": "dezactivată",
+          "yes": "activată"
         },
         "codePatterns": {
           "language": "Limbă: {0}",

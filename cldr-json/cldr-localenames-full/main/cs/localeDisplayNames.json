@@ -25,18 +25,34 @@
           "collation": "Řazení",
           "colNormalization": "Normalizované řazení",
           "colNumeric": "Číselné řazení",
+          "colReorder": "Přeuspořádání skriptů/bloků",
           "colStrength": "Míra řazení",
           "currency": "Měna",
+          "d0": "Cílový formát",
+          "dx": "Výjimky slovníkového dělení",
           "em": "Zobrazení emodži",
+          "fw": "První den týdne",
+          "h0": "Smíšené",
           "hc": "Hodinový cyklus (12 vs. 24)",
+          "i0": "Vstupní metoda",
+          "k0": "Klávesnice",
+          "kv": "Ignorování nejvyššího",
           "lb": "Styl zalamování řádků",
           "lw": "Zalamování řádků uprostřed slova",
+          "m0": "Transformační pravidla",
           "ms": "Měrná soustava",
+          "mu": "Měrná jednotka",
           "numbers": "Čísla",
+          "rg": "Oblast pro doplňující data",
+          "s0": "Transformační zdroj",
+          "sd": "Rozdělení oblastí",
           "ss": "Zlom věty za zkratkou",
+          "t": "Transformace",
+          "t0": "Strojový překlad",
           "timezone": "Časové pásmo",
           "va": "Varianta národního prostředí",
-          "x": "Soukromé použití"
+          "x": "Soukromé použití",
+          "x0": "Soukromá transformace"
         },
         "types": {
           "calendar": {
@@ -73,6 +89,7 @@
           },
           "colCaseFirst": {
             "lower": "Nejdříve řadit malá písmena",
+            "core": "Velká písmena",
             "no": "Běžné řazení velkých a malých písmen",
             "upper": "Nejdříve řadit velká písmena"
           },
@@ -105,8 +122,12 @@
             "no": "Řadit číslice jednotlivě",
             "yes": "Řadit číslice numericky"
           },
+          "colReorder": {
+            "core": "Symbol"
+          },
           "colStrength": {
             "identical": "Řadit vše",
+            "core": "Základní písmena, diakritika, velikost písmen, varianty znaků",
             "primary": "Řadit pouze základní písmena",
             "quaternary": "Řadit akcenty/velká a malá písmena/šířku/kana",
             "secondary": "Řadit akcenty",
@@ -121,11 +142,16 @@
             "core": "Text"
           },
           "hc": {
-            "h11": "12hodinový systém (0–11)",
+            "c12": "12hodinový systém",
             "core": "24 (1–24)",
+            "c24": "24hodinový systém",
+            "h11": "12hodinový systém (0–11)",
             "h12": "12hodinový systém (1–12)",
             "h23": "24hodinový systém (0–23)",
             "h24": "24hodinový systém (1–24)"
+          },
+          "kv": {
+            "core": "posunutí mezer, interpunkce, jiných než měnových symbolů"
           },
           "lb": {
             "loose": "Volný styl zalamování řádků",
@@ -149,18 +175,21 @@
           "numbers": {
             "arab": "Arabsko-indické číslice",
             "arabext": "Rozšířené arabsko-indické číslice",
+            "core": "Tradiční číslice",
             "armn": "Arménské číslice",
-            "armnlow": "Malé arménské číslice",
+            "armnlow": "Arménské malé číslice",
             "bali": "Balijské číslice",
             "beng": "Bengálské číslice",
+            "brah": "Bráhmí číslice",
             "cakm": "Čakmské číslice",
-            "deva": "Číslice písma dévanágarí",
+            "cham": "Čamské číslice",
+            "deva": "Dévanágaríjské číslice",
             "ethi": "Etiopské číslice",
             "finance": "Finanční zápis čísel",
             "fullwide": "Číslice – plná šířka",
             "geor": "Gruzínské číslice",
             "grek": "Řecké číslice",
-            "greklow": "Malé řecké číslice",
+            "greklow": "Řecké malé číslice",
             "gujr": "Gudžarátské číslice",
             "guru": "Číslice gurmukhí",
             "hanidec": "Čínské desítkové číslice",
@@ -176,6 +205,7 @@
             "knda": "Kannadské číslice",
             "laoo": "Laoské číslice",
             "latn": "Západní číslice",
+            "mathmono": "Matematické znaky s pevnou šířkou",
             "mlym": "Malajálamské číslice",
             "mong": "Mongolské číslice",
             "mtei": "Manipurské číslice",
@@ -185,7 +215,7 @@
             "orya": "Urijské číslice",
             "osma": "Somálské číslice",
             "roman": "Římské číslice",
-            "romanlow": "Malé římské číslice",
+            "romanlow": "Římské malé číslice",
             "saur": "Saurášterské číslice",
             "sund": "Sundské číslice",
             "taml": "Tamilské tradiční číslice",
@@ -198,7 +228,17 @@
           },
           "ss": {
             "core": "Ano"
+          },
+          "t0": {
+            "und": "Nespecifikovaný strojový překlad"
+          },
+          "va": {
+            "core": "POSIX varianta"
           }
+        },
+        "typeValues": {
+          "no": "Ne",
+          "yes": "Ano"
         },
         "codePatterns": {
           "language": "Jazyk: {0}",

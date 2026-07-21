@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "जि.एम.ति {0}",
-          "gmtZeroFormat": "जि.एम.ति",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} सम",
           "regionFormat-type-daylight": "{0} साननि सोरां सम",
           "regionFormat-type-standard": "{0} थाखोआरि सम",
@@ -176,7 +178,7 @@
                   "standard": "गोरोबहोनाय मुलुगनां सम"
                 },
                 "short": {
-                  "standard": "UTC"
+                  "standard": "इउ टि सि"
                 }
               },
               "Unknown": {
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ब्रीटीश दैज्लां सम"
-                },
                 "exemplarCity": "लन्दन"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "आईरीश थाखोआरि सम"
-                },
                 "exemplarCity": "डाबलिन"
               },
               "Isle_of_Man": {
@@ -1773,13 +1769,6 @@
                 "daylight": "आलास्कानि सानारि सम"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "अलमाटी टाईम",
-                "standard": "अलमाटी स्टैंडर्ड टाईम",
-                "daylight": "अलमाटी समर टाईम"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "आमाजन सम",
@@ -1827,20 +1816,6 @@
                 "generic": "आपिया सम",
                 "standard": "आपिया थाखोआरि सम",
                 "daylight": "आपिया सान सम"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "अक्टाऊ सम",
-                "standard": "अक़्टाऊ स्टैंडर्ड टाईम",
-                "daylight": "अक़्टाऊ समर टाईम"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "आक्त’ब सम",
-                "standard": "अक़्टोबे स्टैंडर्ड टाईम",
-                "daylight": "अक़्टोबे समर टाईम"
               }
             },
             "Arabian": {
@@ -1942,6 +1917,13 @@
                 "generic": "ब्राजीलिया सम",
                 "standard": "ब्राजीलिया थाखोआरि सम",
                 "daylight": "ब्राजीलिया दैज्लां सम"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "ब्रिटिश सम",
+                "standard": "ग्रिनवीच गेजेरारि सम",
+                "daylight": "ब्रीटीश दैज्लां सम"
               }
             },
             "Brunei": {
@@ -2131,11 +2113,6 @@
                 "daylight": "सेनाब ग्रीनलेण्ड दैज्लां सम"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "गुआम स्टैंडर्ड टाईम"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "गाल्फ थाखोआरि सम"
@@ -2148,7 +2125,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "हावाई-एल्युतियान थाखोआरि सम"
+                "standard": "हावाइ एल्युतियान स्टेन्डार्ड सम"
               }
             },
             "Hawaii_Aleutian": {
@@ -2210,6 +2187,13 @@
                 "generic": "इरान सम",
                 "standard": "इरान थाखोआरि सम",
                 "daylight": "इरान सानारि सम"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "आइरिस सम",
+                "standard": "ग्रिनवीच गेजेरारि सम",
+                "daylight": "आईरीश थाखोआरि सम"
               }
             },
             "Irkutsk": {
@@ -2274,11 +2258,6 @@
                 "standard": "कीर्गीस्तान सम"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "लंका स्टैंडर्ड टाईम"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "लाईन द्वीपफोरनि सम"
@@ -2289,13 +2268,6 @@
                 "generic": "लर्ड हावि सम",
                 "standard": "लर्ड हावि थाखोआरि सम",
                 "daylight": "लर्ड हावि सानारि सम"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "माकाऊ सम",
-                "standard": "माकाऊ स्टैंडर्ड टाईम",
-                "daylight": "माकाऊ समर टाईम"
               }
             },
             "Magadan": {
@@ -2413,11 +2385,6 @@
                 "daylight": "फेरनान्द’ दे नर’न्हा दैज्लां सम"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "नॉर्थ मारिआना स्टैंडर्ड टाईम"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "नभ’सिबिर्स्क सम",
@@ -2497,13 +2464,6 @@
                 "standard": "प्यंयां सम"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "क़ीज़ीलोर्डा टाईम",
-                "standard": "क़ीज़ीलोर्डा स्टैंडर्ड टाईम",
-                "daylight": "क़ीज़ीलोर्डा समर टाईम"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "रियूनियन सम"
@@ -2530,9 +2490,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "साम’वा सम",
-                "standard": "साम’वा थाखोआरि सम",
-                "daylight": "साम’वा सानारि सम"
+                "standard": "साम’वा थाखोआरि सम"
               }
             },
             "Seychelles": {

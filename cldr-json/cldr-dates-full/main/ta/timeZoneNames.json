@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} நேரம்",
           "regionFormat-type-daylight": "{0} பகலொளி நேரம்",
           "regionFormat-type-standard": "{0} நிலையான நேரம்",
@@ -58,7 +60,7 @@
               },
               "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "கேன்டன்"
+                "exemplarCity": "கேன்டன் தீவு"
               },
               "Kiritimati": {
                 "_type": "zone",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "பிரிட்டிஷ் கோடை நேரம்"
-                },
                 "exemplarCity": "லண்டன்"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ஐரிஷ் நிலையான நேரம்"
-                },
                 "exemplarCity": "டப்ளின்"
               },
               "Isle_of_Man": {
@@ -459,7 +455,7 @@
               },
               "Urumqi": {
                 "_type": "zone",
-                "exemplarCity": "உரும்கி"
+                "exemplarCity": "உருமுச்சி"
               },
               "Shanghai": {
                 "_type": "zone",
@@ -1171,7 +1167,7 @@
               },
               "Miquelon": {
                 "_type": "zone",
-                "exemplarCity": "மிக்யூலன்"
+                "exemplarCity": "செயின்ட் பியரி"
               },
               "Puerto_Rico": {
                 "_type": "zone",
@@ -1239,7 +1235,7 @@
               },
               "Phoenix": {
                 "_type": "zone",
-                "exemplarCity": "ஃபோனிக்ஸ்"
+                "exemplarCity": "ஃபீனிக்ஸ்"
               },
               "Denver": {
                 "_type": "zone",
@@ -1741,7 +1737,7 @@
             "Acre": {
               "long": {
                 "generic": "அக்ரே நேரம்",
-                "standard": "அக்ரே தர நேரம்",
+                "standard": "அக்ரே நிலையான நேரம்",
                 "daylight": "அக்ரே கோடை நேரம்"
               }
             },
@@ -1775,13 +1771,6 @@
                 "generic": "அலாஸ்கா நேரம்",
                 "standard": "அலாஸ்கா நிலையான நேரம்",
                 "daylight": "அலாஸ்கா பகலொளி நேரம்"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "அல்மாடி நேரம்",
-                "standard": "அல்மாடி தர நேரம்",
-                "daylight": "அல்மாடி கோடை நேரம்"
               }
             },
             "Amazon": {
@@ -1831,20 +1820,6 @@
                 "generic": "ஏபியா நேரம்",
                 "standard": "ஏபியா நிலையான நேரம்",
                 "daylight": "ஏபியா பகலொளி நேரம்"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "அட்டௌ நேரம்",
-                "standard": "அட்டௌ தர நேரம்",
-                "daylight": "அட்டௌ கோடை நேரம்"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "அட்டோபே நேரம்",
-                "standard": "அட்டோபே தர நேரம்",
-                "daylight": "அட்டோபே கோடை நேரம்"
               }
             },
             "Arabian": {
@@ -1946,6 +1921,13 @@
                 "generic": "பிரேசிலியா நேரம்",
                 "standard": "பிரேசிலியா நிலையான நேரம்",
                 "daylight": "பிரேசிலியா கோடை நேரம்"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "பிரிட்டிஷ் நேரம்",
+                "standard": "கிரீன்விச் சராசரி நேரம்",
+                "daylight": "பிரிட்டிஷ் கோடை நேரம்"
               }
             },
             "Brunei": {
@@ -2121,6 +2103,13 @@
                 "standard": "கிரீன்விச் சராசரி நேரம்"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "கிரீன்லாந்து நேரம்",
+                "standard": "கிரீன்லாந்து நிலையான நேரம்",
+                "daylight": "கிரீன்லாந்து கோடைக்கால நேரம்"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "கிழக்கு கிரீன்லாந்து நேரம்",
@@ -2135,11 +2124,6 @@
                 "daylight": "மேற்கு கிரீன்லாந்து கோடை நேரம்"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "கம் தர நேரம்"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "வளைகுடா நிலையான நேரம்"
@@ -2152,7 +2136,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "ஹவாய்-அலேஷியன் நிலையான நேரம்"
+                "standard": "ஹவாய் நேரம்"
               }
             },
             "Hawaii_Aleutian": {
@@ -2216,6 +2200,13 @@
                 "daylight": "ஈரான் பகலொளி நேரம்"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "ஐரிஷ் நேரம்",
+                "standard": "கிரீன்விச் சராசரி நேரம்",
+                "daylight": "ஐரிஷ் நிலையான நேரம்"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "இர்குட்ஸ்க் நேரம்",
@@ -2239,9 +2230,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "பெட்ரோபவ்லோவ்ஸ்க் கம்சட்ஸ்கி நேரம்",
-                "standard": "பெட்ரோபவ்லோவ்ஸ்க் கம்சட்ஸ்கி தர நேரம்",
-                "daylight": "பெட்ரோபவ்லோவ்ஸ்க் கம்சட்ஸ்கி கோடை நேரம்"
+                "generic": "கம்சத்கா நேரம்",
+                "standard": "கம்சத்கா நிலையான நேரம்",
+                "daylight": "கம்சத்கா கோடை நேரம்"
               }
             },
             "Kazakhstan": {
@@ -2283,11 +2274,6 @@
                 "standard": "கிர்கிஸ்தான் நேரம்"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "லங்கா நேரம்"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "லைன் தீவுகள் நேரம்"
@@ -2298,13 +2284,6 @@
                 "generic": "லார்ட் ஹோவ் நேரம்",
                 "standard": "லார்ட் ஹோவ் நிலையான நேரம்",
                 "daylight": "லார்ட் ஹோவ் பகலொளி நேரம்"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "மக்காவ் நேரம்",
-                "standard": "மக்காவ் தர நேரம்",
-                "daylight": "மக்காவ் கோடை நேரம்"
               }
             },
             "Magadan": {
@@ -2422,11 +2401,6 @@
                 "daylight": "பெர்னான்டோ டி நோரோன்ஹா கோடை நேரம்"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "வடக்கு மரினா தீவுகள் நேரம்"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "நோவோசிபிரிஸ்க் நேரம்",
@@ -2506,13 +2480,6 @@
                 "standard": "பியாங்யாங் நேரம்"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "கைஜைலோர்டா நேரம்",
-                "standard": "கைஜைலோர்டா தர நேரம்",
-                "daylight": "கைஜைலோர்டா கோடை நேரம்"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "ரீயூனியன் நேரம்"
@@ -2533,15 +2500,13 @@
             "Samara": {
               "long": {
                 "generic": "சமரா நேரம்",
-                "standard": "சமரா தர நேரம்",
+                "standard": "சமரா நிலையான நேரம்",
                 "daylight": "சமரா கோடை நேரம்"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "சமோவா நேரம்",
-                "standard": "சமோவா நிலையான நேரம்",
-                "daylight": "சமோவா பகலொளி நேரம்"
+                "standard": "சமோவா நிலையான நேரம்"
               }
             },
             "Seychelles": {
@@ -2610,9 +2575,9 @@
             },
             "Turkey": {
               "long": {
-                "generic": "துருக்கி நேரம்",
-                "standard": "துருக்கி தர நேரம்",
-                "daylight": "துருக்கி கோடை நேரம்"
+                "generic": "துருக்கியே நேரம்",
+                "standard": "துருக்கியே நிலையான நேரம்",
+                "daylight": "துருக்கியே கோடை நேரம்"
               }
             },
             "Turkmenistan": {
@@ -2632,6 +2597,11 @@
                 "generic": "உருகுவே நேரம்",
                 "standard": "உருகுவே நிலையான நேரம்",
                 "daylight": "உருகுவே கோடை நேரம்"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "உருமுச்சி நேரம்"
               }
             },
             "Uzbekistan": {

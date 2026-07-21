@@ -19,25 +19,41 @@
         "keys": {
           "calendar": "kalender",
           "cf": "valutaformat",
-          "colAlternate": "Ignorer sortering etter symboler",
-          "colBackwards": "Omvendt sortering etter aksent",
-          "colCaseFirst": "Organisering av store og små bokstaver",
-          "colCaseLevel": "Sortering av store og små bokstaver",
+          "colAlternate": "ignorer sortering etter symboler",
+          "colBackwards": "omvendt sortering etter aksent",
+          "colCaseFirst": "organisering av store og små bokstaver",
+          "colCaseLevel": "sortering av store og små bokstaver",
           "collation": "sorteringsrekkefølge",
-          "colNormalization": "Normalisert sortering",
-          "colNumeric": "Numerisk sortering",
-          "colStrength": "Sorteringsstyrke",
+          "colNormalization": "normalisert sortering",
+          "colNumeric": "numerisk sortering",
+          "colReorder": "omorganisering etter skriftsystem/blokk",
+          "colStrength": "sorteringsstyrke",
           "currency": "valuta",
+          "d0": "transformeringsmål",
+          "dx": "unntak for ordbokbasert tekstbryting",
           "em": "emojivisning",
+          "fw": "første dag i uken",
+          "h0": "blandet inn",
           "hc": "timesyklus (12 eller 24)",
+          "i0": "inndatametode",
+          "k0": "tastatur",
+          "kv": "høyeste ignorerte",
           "lb": "linjeskiftstil",
           "lw": "linjeskift innenfor ord",
+          "m0": "transformasjonsregler",
           "ms": "målesystem",
+          "mu": "måleenhet",
           "numbers": "tall",
-          "ss": "Ny setning etter fork.",
+          "rg": "region for tilleggsdata",
+          "s0": "transformasjonskilde",
+          "sd": "underregion",
+          "ss": "ny setning etter fork.",
+          "t": "transformer",
+          "t0": "maskinoversatt",
           "timezone": "tidssone",
           "va": "språkvariant",
-          "x": "privat bruk"
+          "x": "privat bruk",
+          "x0": "privat transformasjon"
         },
         "types": {
           "calendar": {
@@ -76,6 +92,7 @@
           },
           "colCaseFirst": {
             "lower": "Sortér små bokstaver først",
+            "core": "store bokstaver",
             "no": "Sortér store og små bokstaver i vanlig rekkefølge",
             "upper": "Sortér store bokstaver først"
           },
@@ -109,8 +126,12 @@
             "no": "Sortér sifre individuelt",
             "yes": "Sortér sifre numerisk"
           },
+          "colReorder": {
+            "core": "symbol"
+          },
           "colStrength": {
             "identical": "Sortér alle",
+            "core": "grunnbokstaver, aksenter, kasus, varianter",
             "primary": "Sortér bare basisbokstaver",
             "quaternary": "Sortér aksenttegn / små og store bokstaver / bredde / kana",
             "secondary": "Sortér aksenttegn",
@@ -125,11 +146,16 @@
             "core": "tekst"
           },
           "hc": {
-            "h11": "12-timers system (0–11)",
+            "c12": "12-timers system",
             "core": "24 (1–24)",
+            "c24": "24-timers system",
+            "h11": "12-timers system (0–11)",
             "h12": "12-timers system (1–12)",
             "h23": "24-timers system (0–23)",
             "h24": "24-timers system (1–24)"
+          },
+          "kv": {
+            "core": "forskyv mellomrom, tegnsetting, ikke-valutasymboler"
           },
           "lb": {
             "loose": "løs linjeskiftstil",
@@ -153,6 +179,7 @@
           "numbers": {
             "arab": "arabisk-indiske sifre",
             "arabext": "utvidede arabisk-indiske sifre",
+            "core": "tradisjonelle tall",
             "armn": "armenske tall",
             "armnlow": "små armenske tall",
             "bali": "baliske tall",
@@ -192,7 +219,7 @@
             "mlym": "malayalam-sifre",
             "mong": "mongolske tall",
             "mtei": "meetei mayek-sifre",
-            "mymr": "burmesiske sifre",
+            "mymr": "myanmarske sifre",
             "mymrshan": "myanmar shan-tall",
             "native": "språkspesifikke sifre",
             "nkoo": "n’ko-tall",
@@ -219,7 +246,17 @@
           },
           "ss": {
             "core": "på"
+          },
+          "t0": {
+            "und": "uspesifisert maskinoversettelse"
+          },
+          "va": {
+            "core": "POSIX-variant"
           }
+        },
+        "typeValues": {
+          "no": "av",
+          "yes": "på"
         },
         "codePatterns": {
           "language": "Språk: {0}",

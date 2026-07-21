@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Hora de {0}",
           "regionFormat-type-daylight": "Hora braniega de {0}",
           "regionFormat-type-standard": "Hora estándar de {0}",
@@ -349,9 +351,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Hora braniega británica"
-                },
                 "exemplarCity": "Londres"
               },
               "Gibraltar": {
@@ -364,9 +363,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Hora estándar irlandesa"
-                },
                 "exemplarCity": "Dublín"
               },
               "Isle_of_Man": {
@@ -752,13 +748,6 @@
                 "daylight": "AKDT"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Hora d’Almaty",
-                "standard": "hora estándar d’Almaty",
-                "daylight": "hora braniega d’Almaty"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Hora del Amazonas",
@@ -826,20 +815,6 @@
                 "generic": "Hora d’Apia",
                 "standard": "Hora estándar d’Apia",
                 "daylight": "Hora braniega d’Apia"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Hora d’Aqtau",
-                "standard": "Hora estándar d’Aqtau",
-                "daylight": "Hora braniega d’Aqtau"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Hora d’Aqtobe",
-                "standard": "Hora estándar d’Aqtobe",
-                "daylight": "Hora braniega d’Aqtobe"
               }
             },
             "Arabian": {
@@ -946,6 +921,12 @@
                 "generic": "Hora de Brasilia",
                 "standard": "Hora estándar de Brasilia",
                 "daylight": "Hora braniega de Brasilia"
+              }
+            },
+            "British": {
+              "long": {
+                "standard": "Hora media de Greenwich",
+                "daylight": "Hora braniega británica"
               }
             },
             "Brunei": {
@@ -1143,11 +1124,6 @@
                 "daylight": "Hora braniega de Groenlandia occidental"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Hora estándar de Guam"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Hora estándar del Golfu"
@@ -1226,6 +1202,12 @@
                 "daylight": "Hora braniega d’Irán"
               }
             },
+            "Irish": {
+              "long": {
+                "standard": "Hora media de Greenwich",
+                "daylight": "Hora estándar irlandesa"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Hora d’Irkutsk",
@@ -1288,11 +1270,6 @@
                 "standard": "Hora del Kirguistán"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Hora de Lanka"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Hora de les Islles Line"
@@ -1303,13 +1280,6 @@
                 "generic": "Hora de Lord Howe",
                 "standard": "Hora estándar de Lord Howe",
                 "daylight": "Hora braniega de Lord Howe"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Hora de Macáu",
-                "standard": "Hora estándar de Macáu",
-                "daylight": "Hora braniega de Macáu"
               }
             },
             "Magadan": {
@@ -1427,11 +1397,6 @@
                 "daylight": "Hora braniega de Fernando de Noronha"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Hora de les Islles Marianes del Norte"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Hora de Novosibirsk",
@@ -1511,13 +1476,6 @@
                 "standard": "hora de Pyongyang"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Hora de Qyzylorda",
-                "standard": "Hora estándar de Qyzylorda",
-                "daylight": "Hora braniega de Qyzylorda"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Hora de Reunión"
@@ -1544,9 +1502,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Hora de Samoa",
-                "standard": "Hora estándar de Samoa",
-                "daylight": "Hora braniega de Samoa"
+                "standard": "Hora estándar de Samoa"
               }
             },
             "Seychelles": {

@@ -12,16 +12,16 @@
                 "abbreviated": {
                   "1": "ચૈત્ર",
                   "2": "વૈશાખ",
-                  "3": "જ્યેષ્ઠ",
+                  "3": "જેઠ",
                   "4": "અષાઢ",
                   "5": "શ્રાવણ",
-                  "6": "ભાદો",
-                  "7": "અશ્વિન",
-                  "8": "કાર્તિક",
-                  "9": "અગ્રહાયણ",
+                  "6": "ભાદરવો",
+                  "7": "આસો",
+                  "8": "કારતક",
+                  "9": "માગશર",
                   "10": "પોષ",
                   "11": "મહા",
-                  "12": "ફાલ્ગુન"
+                  "12": "ફાગણ"
                 },
                 "narrow": {
                   "1": "1",
@@ -40,32 +40,32 @@
                 "wide": {
                   "1": "ચૈત્ર",
                   "2": "વૈશાખ",
-                  "3": "જ્યેષ્ઠ",
+                  "3": "જેઠ",
                   "4": "અષાઢ",
                   "5": "શ્રાવણ",
-                  "6": "ભાદો",
-                  "7": "અશ્વિન",
-                  "8": "કાર્તિક",
-                  "9": "અગ્રહાયણ",
+                  "6": "ભાદરવો",
+                  "7": "આસો",
+                  "8": "કારતક",
+                  "9": "માગશર",
                   "10": "પોષ",
                   "11": "મહા",
-                  "12": "ફાલ્ગુન"
+                  "12": "ફાગણ"
                 }
               },
               "stand-alone": {
                 "abbreviated": {
                   "1": "ચૈત્ર",
                   "2": "વૈશાખ",
-                  "3": "જ્યેષ્ઠ",
+                  "3": "જેઠ",
                   "4": "અષાઢ",
                   "5": "શ્રાવણ",
-                  "6": "ભાદો",
-                  "7": "અશ્વિન",
-                  "8": "કાર્તિક",
-                  "9": "અગ્રહાયણ",
+                  "6": "ભાદરવો",
+                  "7": "આસો",
+                  "8": "કારતક",
+                  "9": "માગશર",
                   "10": "પોષ",
                   "11": "મહા",
-                  "12": "ફાલ્ગુન"
+                  "12": "ફાગણ"
                 },
                 "narrow": {
                   "1": "1",
@@ -84,16 +84,27 @@
                 "wide": {
                   "1": "ચૈત્ર",
                   "2": "વૈશાખ",
-                  "3": "જ્યેષ્ઠ",
+                  "3": "જેઠ",
                   "4": "અષાઢ",
                   "5": "શ્રાવણ",
-                  "6": "ભાદો",
-                  "7": "અશ્વિન",
-                  "8": "કાર્તિક",
-                  "9": "અગ્રહાયણ",
+                  "6": "ભાદરવો",
+                  "7": "આસો",
+                  "8": "કારતક",
+                  "9": "માગશર",
                   "10": "પોષ",
                   "11": "મહા",
-                  "12": "ફાલ્ગુન"
+                  "12": "ફાગણ"
+                }
+              }
+            },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "one": "{0}",
+                  "two": "{0}",
+                  "few": "{0}",
+                  "many": "{0}",
+                  "other": "{0}"
                 }
               }
             },
@@ -292,7 +303,7 @@
               "full": "EEEE, d MMMM, G y",
               "long": "d MMMM, G y",
               "medium": "d MMM, G y",
-              "short": "d-MM- GGGGG y"
+              "short": "d-MM GGGGG y"
             },
             "dateSkeletons": {
               "full": "GyMMMMEEEEd",
@@ -313,6 +324,10 @@
               "short": "ahhmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -338,7 +353,9 @@
                 "GyMEd": "G y-MM-dd, E",
                 "GyMMM": "MMM G y",
                 "GyMMMd": "d, MMM G y",
+                "GyMMMddd": "ddd MMM, G y",
                 "GyMMMEd": "E, d MMM, G y",
+                "GyMMMEddd": "E, ddd MMM, G y",
                 "h": "h a",
                 "H": "HH",
                 "hm": "hh:mm a",
@@ -353,36 +370,48 @@
                 "MMdd": "dd-MM",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
+                "MMMddd": "ddd MMM",
                 "MMMEd": "E, d MMM",
+                "MMMEddd": "E, ddd MMM",
                 "MMMMd": "d MMMM",
+                "MMMMddd": "ddd MMMM",
                 "ms": "mm:ss",
                 "y": "G y",
                 "yyyy": "G y",
-                "yyyyM": "M/G y",
-                "yyyyMd": "d/M/G y",
-                "yyyyMEd": "E, d/M/G y",
+                "yyyyM": "M G y",
+                "yyyyMd": "d-MM G y",
+                "yyyyMEd": "E, d-MM G y",
                 "yyyyMM": "MM-y G",
                 "yyyyMMM": "MMM G y",
                 "yyyyMMMd": "d MMM, G y",
+                "yyyyMMMddd": "ddd MMM, G y",
                 "yyyyMMMEd": "E, d MMM, G y",
+                "yyyyMMMEddd": "E, ddd MMM, G y",
                 "yyyyMMMM": "MMMM G y",
                 "yyyyQQQ": "QQQ G y",
                 "yyyyQQQQ": "QQQQ G y"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{1} {0}",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -487,6 +516,10 @@
                 "MMMEd": {
                   "d": "E, d MMM – E, d MMM",
                   "M": "E, d MMM – E, d MMM"
+                },
+                "MMMMd": {
+                  "d": "d – d MMMM",
+                  "M": "d MMMM – d MMMM"
                 },
                 "y": {
                   "y": "G y–y"

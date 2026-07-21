@@ -97,6 +97,14 @@
                 }
               }
             },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "one": "{0}-ին",
+                  "other": "{0}-րդ"
+                }
+              }
+            },
             "days": {
               "format": {
                 "abbreviated": {
@@ -231,9 +239,9 @@
                 },
                 "narrow": {
                   "midnight": "կգ․",
-                  "am": "ա",
+                  "am": "AM",
                   "noon": "կօ․",
-                  "pm": "հ",
+                  "pm": "PM",
                   "morning1": "առվ",
                   "afternoon1": "ցրկ",
                   "evening1": "երկ",
@@ -322,6 +330,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": ".",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1}, {0}",
               "long": "{1}, {0}",
               "medium": "{1}, {0}",
@@ -347,7 +359,9 @@
                 "GyMEd": "G dd.MM.y, E",
                 "GyMMM": "G y թ․ MMM",
                 "GyMMMd": "G y թ․ MMM d",
+                "GyMMMddd": "G y թ․ MMM d",
                 "GyMMMEd": "G y թ․ MMM d, E",
+                "GyMMMEddd": "G y թ․ MMM d, E",
                 "h": "h a",
                 "H": "H",
                 "hm": "h:mm a",
@@ -361,35 +375,47 @@
                 "MEd": "dd.MM, E",
                 "MMM": "LLL",
                 "MMMd": "MMM d",
+                "MMMddd": "MMM d",
                 "MMMEd": "MMM d, E",
+                "MMMEddd": "MMM d, E",
                 "MMMMd": "MMMM d",
+                "MMMMddd": "MMMM d",
                 "ms": "mm:ss",
-                "y": "y, G",
-                "yyyy": "y, G",
-                "yyyyM": "G y թ. MM",
+                "y": "G y թ․",
+                "yyyy": "G y թ․",
+                "yyyyM": "G y թ. M",
                 "yyyyMd": "d.M.y թ., G",
                 "yyyyMEd": "d.MM.y թ., G, E",
                 "yyyyMMM": "G y թ. LLL",
                 "yyyyMMMd": "d MMM, y թ., G",
+                "yyyyMMMddd": "G y թ․ MMM d",
                 "yyyyMMMEd": "d MMM, y թ. G, E",
-                "yyyyMMMM": "G y MMMM",
+                "yyyyMMMEddd": "G y թ․ MMM d, E",
+                "yyyyMMMM": "G y թ․ LLLL",
                 "yyyyQQQ": "G y թ, QQQ",
                 "yyyyQQQQ": "G y թ, QQQQ"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{1}, {0}",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} - {1}",
                 "Bh": {
                   "B": "B h–ից B h-ը",
@@ -494,6 +520,10 @@
                 "MMMEd": {
                   "d": "E, MMM dd – E, MMM dd",
                   "M": "E, MMM dd – E, MMM dd"
+                },
+                "MMMMd": {
+                  "d": "MMMM d–d",
+                  "M": "MMMM d – MMMM d"
                 },
                 "y": {
                   "y": "y–y G"

@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0} (ura ligali)",
           "regionFormat-type-standard": "{0} (ura sulari)",
@@ -155,9 +157,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ura ligali Britànnica"
-                },
                 "exemplarCity": "Lònnira"
               },
               "Gibraltar": {
@@ -174,9 +173,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ura sulari Irlannisi"
-                },
                 "exemplarCity": "Dubblinu"
               },
               "Isle_of_Man": {
@@ -909,6 +905,12 @@
                 "daylight": "Ura ligali di Brasilia"
               }
             },
+            "British": {
+              "long": {
+                "standard": "Ura Minzana di Greenwich",
+                "daylight": "Ura ligali Britànnica"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Ura dû Brunei"
@@ -1187,6 +1189,12 @@
                 "generic": "Ura di l’Iran",
                 "standard": "Ura sulari di l’Iran",
                 "daylight": "Ura ligali di l’Iran"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "Ura Minzana di Greenwich",
+                "daylight": "Ura sulari Irlannisi"
               }
             },
             "Irkutsk": {
@@ -1474,9 +1482,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Ura dî Samoa miricani",
-                "standard": "Ura sulari dî Samoa miricani",
-                "daylight": "Ura ligali dî Samoa miricani"
+                "standard": "Ura sulari dî Samoa miricani"
               }
             },
             "Seychelles": {

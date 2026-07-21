@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Sa’aatii {0}",
           "regionFormat-type-daylight": "Sa’aatii Guyyaa {0}",
           "regionFormat-type-standard": "Sa’aatii Istaandardii {0}",
@@ -34,18 +36,6 @@
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Sa’aatii Bonaa Biritish"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Sa’aatii Istaandaardii Aayiriish"
-                }
               },
               "Chisinau": {
                 "_type": "zone",
@@ -557,6 +547,13 @@
                 "daylight": "Sa’aatii Bonaa Biraaziliyaa"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Sa’aatii Biritish",
+                "standard": "Sa’aatii Giriinwiich Gidduugaleessaa",
+                "daylight": "Sa’aatii Bonaa Biritish"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Sa’aatii Bruunee Darusalaam"
@@ -744,11 +741,6 @@
                 "daylight": "Sa’aatii Bonaa Giriinlaand Dhihaa"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Sa’aatii Istaandaardii Guwaam"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Sa’aatii Istaandaardii Gaalfii"
@@ -761,22 +753,14 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Sa’aatii Istaandaardii Haawayi-Alewutiyan"
-              },
-              "short": {
-                "standard": "HAS"
+                "standard": "Sa’aatii Istaandardii Hawaayi"
               }
             },
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "Sa’aatii Haawayi-Alewutiyan",
-                "standard": "Sa’aatii Istaandaardii Haawayi-Alewutiyan",
+                "standard": "Sa’aatii Istaandardii Hawaayi-Alushiyaa",
                 "daylight": "Sa’aatii Guyyaa Haawayi-Alewutiyan"
-              },
-              "short": {
-                "generic": "HAT",
-                "standard": "HAS",
-                "daylight": "HADT"
               }
             },
             "Hong_Kong": {
@@ -828,6 +812,13 @@
                 "generic": "Sa’aatii Iraan",
                 "standard": "Sa’aatii Istaandaardii Iraan",
                 "daylight": "Sa’aatii Guyyaa Iraan"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Sa’aatii Aayiriish",
+                "standard": "Sa’aatii Giriinwiich Gidduugaleessaa",
+                "daylight": "Sa’aatii Istaandaardii Aayiriish"
               }
             },
             "Irkutsk": {
@@ -888,11 +879,6 @@
             "Kyrgystan": {
               "long": {
                 "standard": "Sa’aatii Kiyirigiyistan"
-              }
-            },
-            "Lanka": {
-              "long": {
-                "standard": "Sa’aatii Laankaa"
               }
             },
             "Line_Islands": {
@@ -1022,11 +1008,6 @@
                 "daylight": "Sa’aatii Bonaa Fernando de Noronha"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Sa’aatii Odoloota Maariyaanaa Kaabaa"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Sa’aatii Novosibirisk",
@@ -1125,9 +1106,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Sa’aatii Saamowaa",
-                "standard": "Sa’aatii Istaandaardii Saamowaa",
-                "daylight": "Sa’aatii Guyyaa Saamowaa"
+                "standard": "Sa’aatii Istaandaardii Saamowaa"
               }
             },
             "Seychelles": {
