@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "MAG{0}",
-          "gmtZeroFormat": "MAG",
+          "gmtFormat-alt-utc": "AUL{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "AUL+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -89,7 +91,7 @@
                   "standard": "Am Uilíoch Lárnach"
                 },
                 "short": {
-                  "standard": "UTC"
+                  "standard": "AUL"
                 }
               },
               "Unknown": {
@@ -164,9 +166,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Am Samhraidh na Breataine"
-                },
                 "short": {
                   "daylight": "ASB"
                 },
@@ -194,9 +193,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Am Caighdéanach na hÉireann"
-                },
                 "short": {
                   "daylight": "ACÉ"
                 },
@@ -922,13 +918,6 @@
                 "daylight": "Am Samhraidh Alasca"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Am Almaty",
-                "standard": "Am Caighdeánach Almaty",
-                "daylight": "Am Samhraidh Almaty"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Am na hAmasóine",
@@ -962,11 +951,6 @@
                 "generic": "Am an Aigéin Chiúin",
                 "standard": "Am Caighdeánach an Aigéin Chiúin",
                 "daylight": "Am Samhraidh an Aigéin Chiúin"
-              },
-              "short": {
-                "generic": "AAC",
-                "standard": "ACAC",
-                "daylight": "ASAC"
               }
             },
             "Anadyr": {
@@ -981,20 +965,6 @@
                 "generic": "Am Shamó",
                 "standard": "Am Caighdeánach Shamó",
                 "daylight": "Am Samhraidh Shamó"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Am Aqtau",
-                "standard": "Am Caighdeánach Aqtau",
-                "daylight": "Am Samhraidh Aqtau"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Am Aqtobe",
-                "standard": "Am Caighdeánach Aqtobe",
-                "daylight": "Am Samhraidh Aqtobe"
               }
             },
             "Arabian": {
@@ -1096,6 +1066,13 @@
                 "generic": "Am Bhrasília",
                 "standard": "Am Caighdeánach Bhrasília",
                 "daylight": "Am Samhraidh Bhrasília"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Am na Breataine",
+                "standard": "Meán-Am Greenwich",
+                "daylight": "Am Samhraidh na Breataine"
               }
             },
             "Brunei": {
@@ -1294,6 +1271,13 @@
                 "standard": "MAG"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Am na Graonlainne",
+                "standard": "Am Caighdeánach na Graonlainne",
+                "daylight": "Am Samhraidh na Graonlainne"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Am Oirthear na Graonlainne",
@@ -1308,11 +1292,6 @@
                 "daylight": "Am Samhraidh Iarthar na Graonlainne"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Am Caighdeánach Ghuam"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Am Caighdeánach na Murascaille"
@@ -1325,7 +1304,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Am Caighdeánach Haváí-Ailiúit"
+                "standard": "Am Caighdeánach Haváí"
               }
             },
             "Hawaii_Aleutian": {
@@ -1386,6 +1365,13 @@
                 "daylight": "Am Samhraidh na hIaráine"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Am na hÉireann",
+                "standard": "Meán-Am Greenwich",
+                "daylight": "Am Caighdéanach na hÉireann"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Am Irkutsk",
@@ -1410,8 +1396,8 @@
             "Kamchatka": {
               "long": {
                 "generic": "Am Phetropavlovsk-Kamchatski",
-                "standard": "Am Caighdeánach Phetropavlovsk-Kamchatski",
-                "daylight": "Am Samhraidh Phetropavlovsk-Kamchatski"
+                "standard": "Am Caighdeánach Kamchatka",
+                "daylight": "Am Samhraidh Kamchatka"
               }
             },
             "Kazakhstan": {
@@ -1453,11 +1439,6 @@
                 "standard": "Am na Cirgeastáine"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Am Shrí Lanca"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Am Oileáin na Líne"
@@ -1468,13 +1449,6 @@
                 "generic": "Am Lord Howe",
                 "standard": "Am Caighdeánach Lord Howe",
                 "daylight": "Am Samhraidh Lord Howe"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Am Mhacao",
-                "standard": "Am Caighdeánach Mhacao",
-                "daylight": "Am Samhraidh Mhacao"
               }
             },
             "Magadan": {
@@ -1592,11 +1566,6 @@
                 "daylight": "Am Samhraidh Fernando de Noronha"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Am na nOileán Máirianach Thuaidh"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Am Novosibirsk",
@@ -1676,13 +1645,6 @@
                 "standard": "Am Pyongyang"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Am Qyzylorda",
-                "standard": "Am Caighdeánach Qyzylorda",
-                "daylight": "Am Samhraidh Qyzylorda"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Am Réunion"
@@ -1709,9 +1671,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Am Shamó Mheiriceá",
-                "standard": "Am Caighdeánach Shamó Mheiriceá",
-                "daylight": "Am Samhraidh Shamó Mheiriceá"
+                "standard": "Am Caighdeánach Shamó Mheiriceá"
               }
             },
             "Seychelles": {
@@ -1778,6 +1738,13 @@
                 "standard": "Am Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Am na Tuirce",
+                "standard": "Am Caighdeánach na Tuirce",
+                "daylight": "Am Samhraidh na Tuirce"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Am na Tuircméanastáine",
@@ -1795,6 +1762,11 @@
                 "generic": "Am Uragua",
                 "standard": "Am Caighdeánach Uragua",
                 "daylight": "Am Samhraidh Uragua"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Am Ürümqi"
               }
             },
             "Uzbekistan": {

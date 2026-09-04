@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}-tyd",
           "regionFormat-type-daylight": "{0}-dagligtyd",
           "regionFormat-type-standard": "{0}-standaardtyd",
@@ -266,9 +268,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Britse somertyd"
-                },
                 "exemplarCity": "Londen"
               },
               "Athens": {
@@ -278,12 +277,6 @@
               "Budapest": {
                 "_type": "zone",
                 "exemplarCity": "Boedapest"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Ierse standaardtyd"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -658,6 +651,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Acre-tyd",
+                "standard": "Acre-standaardtyd",
+                "daylight": "Acre-somertyd"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Afganistan-tyd"
@@ -748,7 +748,7 @@
               "long": {
                 "generic": "Apia-tyd",
                 "standard": "Apia-standaardtyd",
-                "daylight": "Apia-dagligtyd"
+                "daylight": "Apia-somertyd"
               }
             },
             "Arabian": {
@@ -850,6 +850,13 @@
                 "generic": "Brasilia-tyd",
                 "standard": "Brasilia-standaardtyd",
                 "daylight": "Brasilia-somertyd"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Britse tyd",
+                "standard": "Greenwich-tyd",
+                "daylight": "Britse somertyd"
               }
             },
             "Brunei": {
@@ -1025,6 +1032,13 @@
                 "standard": "Greenwich-tyd"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Groenland-tyd",
+                "standard": "Groenland-standaardtyd",
+                "daylight": "Groenland-somertyd"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Oos-Groenland-tyd",
@@ -1051,7 +1065,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaii-Aleoete-standaardtyd"
+                "standard": "Hawaii-standaardtyd"
               }
             },
             "Hawaii_Aleutian": {
@@ -1112,6 +1126,13 @@
                 "daylight": "Iran-dagligtyd"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Ierse tyd",
+                "standard": "Greenwich-tyd",
+                "daylight": "Ierse standaardtyd"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Irkoetsk-tyd",
@@ -1135,9 +1156,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Petropavlovsk-Kamchatski-tyd",
-                "standard": "Petropavlovsk-Kamchatski-standaardtyd",
-                "daylight": "Petropavlovsk-Kamchatski-somertyd"
+                "generic": "Kamchatski-tyd",
+                "standard": "Kamchatski-standaardtyd",
+                "daylight": "Kamchatski-somertyd"
               }
             },
             "Kazakhstan": {
@@ -1406,14 +1427,12 @@
               "long": {
                 "generic": "Samara-tyd",
                 "standard": "Samara-standaardtyd",
-                "daylight": "Samara-dagligtyd"
+                "daylight": "Samara-somertyd"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa-tyd",
-                "standard": "Samoa-standaardtyd",
-                "daylight": "Samoa-dagligtyd"
+                "standard": "Samoa-standaardtyd"
               }
             },
             "Seychelles": {
@@ -1480,6 +1499,13 @@
                 "standard": "Chuuk-tyd"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Türkiye-tyd",
+                "standard": "Türkiye-standaardtyd",
+                "daylight": "Türkiye-somertyd"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Turkmenistan-tyd",
@@ -1497,6 +1523,11 @@
                 "generic": "Uruguay-tyd",
                 "standard": "Uruguay-standaardtyd",
                 "daylight": "Uruguay-somertyd"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ürümqi-tyd"
               }
             },
             "Uzbekistan": {

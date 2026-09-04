@@ -21,23 +21,39 @@
           "cf": "Währungsformat",
           "colAlternate": "Sortierung ohne Symbole",
           "colBackwards": "Umgekehrte Sortierung von Akzenten",
-          "colCaseFirst": "Sortierung nach Groß- bzw. Kleinbuchstaben",
+          "colCaseFirst": "Sortierung nach Groß- oder Kleinschreibung",
           "colCaseLevel": "Sortierung nach Groß- oder Kleinschreibung",
           "collation": "Sortierung",
           "colNormalization": "Normierte Sortierung",
           "colNumeric": "Sortierung nach Zahlen",
+          "colReorder": "Änderung der Reihenfolge nach Schrift/Kästchen",
           "colStrength": "Sortierstärke",
           "currency": "Währung",
+          "d0": "Umwandlungsziel",
+          "dx": "In Wörterbüchern nicht umgebrochen",
           "em": "Emojidarstellung",
+          "fw": "Erster Tag der Woche",
+          "h0": "Eingebunden",
           "hc": "Stundenformat (12h/24h)",
+          "i0": "Eingabemethode",
+          "k0": "Tastatur",
+          "kv": "Größter ignorierter Umfang",
           "lb": "Zeilenumbruchstil",
           "lw": "Zeilenumbruch im Wortinneren",
+          "m0": "Tranformationsregeln",
           "ms": "Maßsystem",
-          "numbers": "Ziffern",
+          "mu": "Maßeinheit",
+          "numbers": "Zahlen",
+          "rg": "Bereich für ergänzende Daten",
+          "s0": "Ausgangsdaten umwandeln",
+          "sd": "Gliederung nach Regionen",
           "ss": "Satzabbruch nach Abk.",
+          "t": "Transformieren",
+          "t0": "Maschinell übersetzt",
           "timezone": "Zeitzone",
           "va": "Lokale Variante",
-          "x": "Privatnutzung"
+          "x": "Privatnutzung",
+          "x0": "Transformation für private Nutzung"
         },
         "types": {
           "calendar": {
@@ -74,6 +90,7 @@
           },
           "colCaseFirst": {
             "lower": "Kleinbuchstaben zuerst aufführen",
+            "core": "Großschreibung",
             "no": "Normal sortieren",
             "upper": "Großbuchstaben zuerst aufführen"
           },
@@ -106,8 +123,12 @@
             "no": "Ziffern einzeln sortieren",
             "yes": "Ziffern numerisch sortieren"
           },
+          "colReorder": {
+            "core": "Sonderzeichen"
+          },
           "colStrength": {
             "identical": "Alle sortieren",
+            "core": "Grundzeichen, Akzente, Fälle, Varianten",
             "primary": "Nur Basisbuchstaben sortieren",
             "quaternary": "Akzente/Fall/Breite/Kana sortieren",
             "secondary": "Akzente sortieren",
@@ -122,11 +143,16 @@
             "core": "Text"
           },
           "hc": {
-            "h11": "12-Stunden-Format (0–11)",
+            "c12": "12-Stunden-Format",
             "core": "24 (1–24)",
+            "c24": "24-Stunden-Format",
+            "h11": "12-Stunden-Format (0–11)",
             "h12": "12-Stunden-Format (1-12)",
             "h23": "24-Stunden-Format (0-23)",
             "h24": "24-Stunden-Format (1-24)"
+          },
+          "kv": {
+            "core": "Speziell: Leerzeichen, Satzzeichen, Nicht-Währungssymbole"
           },
           "lb": {
             "loose": "Lockerer Zeilenumbruch",
@@ -150,8 +176,9 @@
           "numbers": {
             "arab": "Arabisch-indische Ziffern",
             "arabext": "Erweiterte arabisch-indische Ziffern",
+            "core": "Traditionelle Zahlzeichen",
             "armn": "Armenische Ziffern",
-            "armnlow": "Armenische Ziffern in Kleinschrift",
+            "armnlow": "Armenische Ziffern in Kleinschreibung",
             "bali": "Balinesische Ziffern",
             "beng": "Bengalische Ziffern",
             "brah": "Brahmi-Ziffern",
@@ -163,7 +190,7 @@
             "fullwide": "Vollbreite Ziffern",
             "geor": "Georgische Ziffern",
             "grek": "Griechische Ziffern",
-            "greklow": "Griechische Ziffern in Kleinschrift",
+            "greklow": "Griechische Ziffern in Kleinschreibung",
             "gujr": "Gujarati-Ziffern",
             "guru": "Gurmukhi-Ziffern",
             "hanidec": "Chinesische Dezimalzahlen",
@@ -201,7 +228,7 @@
             "sund": "Sundanesische Ziffern",
             "takr": "Takri-Ziffern",
             "talu": "Neue Tai-Lü-Ziffern",
-            "taml": "Tamilische Ziffern",
+            "taml": "Traditionelle tamilische Ziffern",
             "tamldec": "Tamil-Ziffern",
             "telu": "Telugu-Ziffern",
             "thai": "Thai-Ziffern",
@@ -211,7 +238,17 @@
           },
           "ss": {
             "core": "Ein"
+          },
+          "t0": {
+            "und": "Nicht näher bezeichnete maschinelle Übersetzung"
+          },
+          "va": {
+            "core": "POSIX-Variante"
           }
+        },
+        "typeValues": {
+          "no": "Aus",
+          "yes": "Ein"
         },
         "codePatterns": {
           "language": "Sprache: {0}",

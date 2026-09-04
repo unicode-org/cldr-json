@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} ۋاقتى",
           "regionFormat-type-daylight": "{0} يازلىق ۋاقتى",
           "regionFormat-type-standard": "{0} ئۆلچەملىك ۋاقتى",
@@ -35,18 +37,6 @@
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "ئەنگلىيە يازلىق ۋاقتى"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "ئىرېلاند يازلىق ۋاقتى"
-                }
               },
               "Chisinau": {
                 "_type": "zone",
@@ -392,13 +382,6 @@
                 "daylight": "ئالياسكا يازلىق ۋاقتى"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "ئالمۇتا ۋاقتى",
-                "standard": "ئالمۇتا ئۆلچەملىك ۋاقتى",
-                "daylight": "ئالمۇتا يازلىق ۋاقتى"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "ئامازون ۋاقتى",
@@ -439,20 +422,6 @@
                 "generic": "ئانادىر ۋاقتى",
                 "standard": "ئانادىر ئۆلچەملىك ۋاقتى",
                 "daylight": "ئانادىر يازلىق ۋاقتى"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "ئاقتاي ۋاقتى",
-                "standard": "ئاقتاي ئۆلچەملىك ۋاقتى",
-                "daylight": "ئاقتاي يازلىق ۋاقتى"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "ئاقتۆبە ۋاقتى",
-                "standard": "ئاقتۆبە ئۆلچەملىك ۋاقتى",
-                "daylight": "ئاقتۆبە يازلىق ۋاقتى"
               }
             },
             "Arabian": {
@@ -554,6 +523,12 @@
                 "generic": "بىرازىلىيە ۋاقتى",
                 "standard": "بىرازىلىيە ئۆلچەملىك ۋاقتى",
                 "daylight": "بىرازىلىيە يازلىق ۋاقتى"
+              }
+            },
+            "British": {
+              "long": {
+                "standard": "گىرىنۋىچ ۋاقتى",
+                "daylight": "ئەنگلىيە يازلىق ۋاقتى"
               }
             },
             "Brunei": {
@@ -743,11 +718,6 @@
                 "daylight": "غەربىي گىرېنلاند يازلىق ۋاقتى"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "گۇئام ئۆلچەملىك ۋاقتى"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "گۇلف ئۆلچەملىك ۋاقتى"
@@ -821,6 +791,12 @@
                 "daylight": "ئىران يازلىق ۋاقتى"
               }
             },
+            "Irish": {
+              "long": {
+                "standard": "گىرىنۋىچ ۋاقتى",
+                "daylight": "ئىرېلاند يازلىق ۋاقتى"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ئىركۇتسك ۋاقتى",
@@ -883,11 +859,6 @@
                 "standard": "قىرغىزىستان ۋاقتى"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "سىرى لانكا ۋاقتى"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "لاين ئاراللىرى ۋاقتى"
@@ -898,13 +869,6 @@
                 "generic": "لورد-خاي ۋاقتى",
                 "standard": "لورد-خاي ئۆلچەملىك ۋاقتى",
                 "daylight": "لورد-خاي يازلىق ۋاقتى"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "ئاۋمېن ۋاقتى",
-                "standard": "ئاۋمېن ئۆلچەملىك ۋاقتى",
-                "daylight": "ئاۋمېن يازلىق ۋاقتى"
               }
             },
             "Magadan": {
@@ -1022,11 +986,6 @@
                 "daylight": "فېرناندو-نورونخا يازلىق ۋاقتى"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "شىمالىي مارىيانا ئاراللىرى ۋاقتى"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "نوۋوسىبىرسك ۋاقتى",
@@ -1101,13 +1060,6 @@
                 "standard": "پونپېي ۋاقتى"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "قىزىلئوردا ۋاقتى",
-                "standard": "قىزىلئوردا ئۆلچەملىك ۋاقتى",
-                "daylight": "قىزىلئوردا يازلىق ۋاقتى"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "رېئونىيون ۋاقتى"
@@ -1134,9 +1086,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "ساموئا ۋاقتى",
-                "standard": "ساموئا ئۆلچەملىك ۋاقتى",
-                "daylight": "سەمەرقەنت يازلىق ۋاقتى"
+                "standard": "ساموئا ئۆلچەملىك ۋاقتى"
               }
             },
             "Seychelles": {

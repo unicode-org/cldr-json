@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -43,7 +45,7 @@
               },
               "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "Canton"
+                "exemplarCity": "Kanton oroli"
               },
               "Tarawa": {
                 "_type": "zone",
@@ -534,6 +536,10 @@
                 "_type": "zone",
                 "exemplarCity": "Sent-Jons"
               },
+              "Coyhaique": {
+                "_type": "zone",
+                "exemplarCity": "Koyayke"
+              },
               "Punta_Arenas": {
                 "_type": "zone",
                 "exemplarCity": "Punta-Arenas"
@@ -858,12 +864,6 @@
                 "_type": "zone",
                 "exemplarCity": "Parij"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Britaniya yozgi vaqti"
-                }
-              },
               "Guernsey": {
                 "_type": "zone",
                 "exemplarCity": "Gernsi"
@@ -875,12 +875,6 @@
               "Budapest": {
                 "_type": "zone",
                 "exemplarCity": "Budapesht"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Irlandiya yozgi vaqti"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -1257,6 +1251,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Akri vaqti",
+                "standard": "Akri standart vaqti",
+                "daylight": "Akri yozgi vaqti"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Afgʻoniston vaqti"
@@ -1432,6 +1433,13 @@
                 "daylight": "Braziliya yozgi vaqti"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Britaniya vaqti",
+                "standard": "Grinvich o‘rtacha vaqti",
+                "daylight": "Britaniya yozgi vaqti"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Bruney-Dorussalom vaqti"
@@ -1605,6 +1613,13 @@
                 "standard": "Grinvich o‘rtacha vaqti"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grenlandiya vaqti",
+                "standard": "Grenlandiya standart vaqti",
+                "daylight": "Grenlandiya yozgi vaqti"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Sharqiy Grenlandiya vaqti",
@@ -1631,7 +1646,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Gavayi-aleut standart vaqti"
+                "standard": "Gavayi vaqti"
               }
             },
             "Hawaii_Aleutian": {
@@ -1692,6 +1707,13 @@
                 "daylight": "Eron yozgi vaqti"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Irlandiya vaqti",
+                "standard": "Grinvich o‘rtacha vaqti",
+                "daylight": "Irlandiya standart vaqti"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Irkutsk vaqti",
@@ -1711,6 +1733,13 @@
                 "generic": "Yaponiya vaqti",
                 "standard": "Yaponiya standart vaqti",
                 "daylight": "Yaponiya yozgi vaqti"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Kamchatka vaqti",
+                "standard": "Kamchatka standart vaqti",
+                "daylight": "Kamchatka yozgi vaqti"
               }
             },
             "Kazakhstan": {
@@ -1975,11 +2004,16 @@
                 "daylight": "Saxalin yozgi vaqti"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Samara vaqti",
+                "standard": "Samara standart vaqti",
+                "daylight": "Samara yozgi vaqti"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Samoa vaqti",
-                "standard": "Samoa standart vaqti",
-                "daylight": "Samoa yozgi vaqti"
+                "standard": "Samoa standart vaqti"
               }
             },
             "Seychelles": {
@@ -2046,6 +2080,13 @@
                 "standard": "Chuuk vaqti"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Turkiya vaqti",
+                "standard": "Turkiya standart vaqti",
+                "daylight": "Turkiya yozgi vaqti"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Turkmaniston vaqti",
@@ -2063,6 +2104,11 @@
                 "generic": "Urugvay vaqti",
                 "standard": "Urugvay standart vaqti",
                 "daylight": "Urugvay yozgi vaqti"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Urumchi vaqti"
               }
             },
             "Uzbekistan": {

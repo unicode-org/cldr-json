@@ -26,18 +26,34 @@
           "collation": "Sortierung",
           "colNormalization": "Normierte Sortierung",
           "colNumeric": "Sortierung nach Zahlen",
+          "colReorder": "Änderung der Reihenfolge nach Schrift/Kästchen",
           "colStrength": "Sortierstärke",
           "currency": "Währung",
+          "d0": "Transformationsziel",
+          "dx": "Wörterbuchtrennung ausgenommen",
           "em": "Emojidarstellung",
+          "fw": "Erster Tag der Woche",
+          "h0": "Eingebunden",
           "hc": "Stundenformat (12h/24h)",
+          "i0": "Eingabemethode",
+          "k0": "Tastatur",
+          "kv": "Höchste ignorierte",
           "lb": "Zeilenumbruchstil",
           "lw": "Zeilenumbruch im Wortinneren",
+          "m0": "Transformationsregeln",
           "ms": "Mass-System",
-          "numbers": "Ziffern",
+          "mu": "Masseinheit",
+          "numbers": "Zahlen",
+          "rg": "Region für Zusatzdaten",
+          "s0": "Transformationsquelle",
+          "sd": "Regionale Unterteilung",
           "ss": "Satzabbruch nach Abk.",
+          "t": "Transformation",
+          "t0": "Maschinenübersetzung",
           "timezone": "Zeitzone",
           "va": "Lokale Variante",
-          "x": "Privatnutzung"
+          "x": "Privatnutzung",
+          "x0": "Transformation in Private Use"
         },
         "types": {
           "calendar": {
@@ -74,6 +90,7 @@
           },
           "colCaseFirst": {
             "lower": "Kleinbuchstaben zuerst aufführen",
+            "core": "Grossbuchstaben",
             "no": "Normal sortieren",
             "upper": "Grossbuchstaben zuerst aufführen"
           },
@@ -106,8 +123,12 @@
             "no": "Ziffern einzeln sortieren",
             "yes": "Ziffern numerisch sortieren"
           },
+          "colReorder": {
+            "core": "Symbol"
+          },
           "colStrength": {
             "identical": "Alle sortieren",
+            "core": "Grundzeichen, Akzente, Fälle, Varianten",
             "primary": "Nur Basisbuchstaben sortieren",
             "quaternary": "Akzente/Fall/Breite/Kana sortieren",
             "secondary": "Akzente sortieren",
@@ -122,11 +143,16 @@
             "core": "Text"
           },
           "hc": {
-            "h11": "12-Stunden-Format (0–11)",
+            "c12": "12-Stunden-Format",
             "core": "24 (1–24)",
+            "c24": "24-Stunden-Format",
+            "h11": "12-Stunden-Format (0–11)",
             "h12": "12-Stunden-Format (1-12)",
             "h23": "24-Stunden-Format (0-23)",
             "h24": "24-Stunden-Format (1-24)"
+          },
+          "kv": {
+            "core": "Leerzeichen, Interpunktion, Nicht-Währungs-Symbole"
           },
           "lb": {
             "loose": "Lockerer Zeilenumbruch",
@@ -150,8 +176,9 @@
           "numbers": {
             "arab": "Arabisch-indische Ziffern",
             "arabext": "Erweiterte arabisch-indische Ziffern",
+            "core": "Traditionelle Ziffern",
             "armn": "Armenische Ziffern",
-            "armnlow": "Armenische Ziffern in Kleinschrift",
+            "armnlow": "Armenische Ziffern in Kleinschreibung",
             "bali": "Balinesische Ziffern",
             "beng": "Bengalische Ziffern",
             "brah": "Brahmi-Ziffern",
@@ -163,7 +190,7 @@
             "fullwide": "Vollbreite Ziffern",
             "geor": "Georgische Ziffern",
             "grek": "Griechische Ziffern",
-            "greklow": "Griechische Ziffern in Kleinschrift",
+            "greklow": "Griechische Ziffern in Kleinschreibung",
             "gujr": "Gujarati-Ziffern",
             "guru": "Gurmukhi-Ziffern",
             "hanidec": "Chinesische Dezimalzahlen",
@@ -201,7 +228,7 @@
             "sund": "Sundanesische Ziffern",
             "takr": "Takri-Ziffern",
             "talu": "Neue Tai-Lü-Ziffern",
-            "taml": "Tamilische Ziffern",
+            "taml": "Traditionelle tamilische Ziffern",
             "tamldec": "Tamil-Ziffern",
             "telu": "Telugu-Ziffern",
             "thai": "Thai-Ziffern",
@@ -211,7 +238,17 @@
           },
           "ss": {
             "core": "Ein"
+          },
+          "t0": {
+            "und": "Nicht spezifizierte Maschinenübersetzung"
+          },
+          "va": {
+            "core": "POSIX-Variante"
           }
+        },
+        "typeValues": {
+          "no": "Aus",
+          "yes": "Ein"
         },
         "codePatterns": {
           "language": "Sprache: {0}",

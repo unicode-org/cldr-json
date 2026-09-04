@@ -234,9 +234,9 @@
                   "am": "v",
                   "pm": "n",
                   "morning1": "die oggend",
-                  "afternoon1": "in die middag",
-                  "evening1": "in die aand",
-                  "night1": "in die nag"
+                  "afternoon1": "die middag",
+                  "evening1": "die aand",
+                  "night1": "die nag"
                 },
                 "wide": {
                   "midnight": "middernag",
@@ -296,7 +296,7 @@
               "full": "EEEE dd MMMM y G",
               "long": "dd MMMM y G",
               "medium": "dd MMM y G",
-              "short": "y-MM-dd GGGGG"
+              "short": "y-MM-dd G"
             },
             "dateSkeletons": {
               "full": "GyMMMMEEEEdd",
@@ -317,6 +317,10 @@
               "short": "ahmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -338,7 +342,7 @@
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
                 "GyM": "MM-y G",
-                "GyMd": "M/d/y GGGGG",
+                "GyMd": "M-d-y G",
                 "GyMEd": "E, dd-MM-y G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "d MMM y G",
@@ -373,19 +377,26 @@
                 "yyyyQQQQ": "QQQQ y G"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1} {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -491,6 +502,10 @@
                   "d": "E d MMM – E d MMM",
                   "M": "E d MMM – E d MMM"
                 },
+                "MMMMd": {
+                  "d": "d – d MMMM",
+                  "M": "d MMMM – d MMMM"
+                },
                 "y": {
                   "y": "y – y G"
                 },
@@ -505,7 +520,7 @@
                 },
                 "yMEd": {
                   "d": "E d/M/y – E d/M/y GGGGG",
-                  "M": "E d/M/y – E d/M/y GGGGG",
+                  "M": "E d/M/y – E d/M/y G",
                   "y": "E d/M/y – E d/M/y GGGGG"
                 },
                 "yMMM": {
@@ -772,9 +787,9 @@
                   "am": "v",
                   "pm": "n",
                   "morning1": "die oggend",
-                  "afternoon1": "in die middag",
-                  "evening1": "in die aand",
-                  "night1": "in die nag"
+                  "afternoon1": "die middag",
+                  "evening1": "die aand",
+                  "night1": "die nag"
                 },
                 "wide": {
                   "midnight": "middernag",
@@ -861,6 +876,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -915,19 +934,26 @@
                 "yw-count-other": "Y 'week' w"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1} {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",

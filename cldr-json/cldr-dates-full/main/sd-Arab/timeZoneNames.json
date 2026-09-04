@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+؟",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} وقت",
           "regionFormat-type-daylight": "{0} ڏينهن جو وقت",
           "regionFormat-type-standard": "{0} معياري وقت",
@@ -256,9 +258,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "برطانيا جي اونهاري جو وقت"
-                },
                 "exemplarCity": "لنڊن"
               },
               "Guernsey": {
@@ -283,9 +282,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "آئرش جو معياري وقت"
-                },
                 "exemplarCity": "ڊبلن"
               },
               "Isle_of_Man": {
@@ -1396,7 +1392,7 @@
               },
               "Cairo": {
                 "_type": "zone",
-                "exemplarCity": "قائرا"
+                "exemplarCity": "قاھرہ"
               },
               "El_Aaiun": {
                 "_type": "zone",
@@ -1739,6 +1735,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "ايڪر جو وقت",
+                "standard": "ايڪر جو معياري وقت",
+                "daylight": "ايڪر جو اونهاري وارو وقت"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "افغانستان جو وقت"
@@ -1914,6 +1917,13 @@
                 "daylight": "براسيليا جي اونهاري جو وقت"
               }
             },
+            "British": {
+              "long": {
+                "generic": "برطانوي وقت",
+                "standard": "عالمي معياري وقت",
+                "daylight": "اونهاري وارو برطانوي وقت"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "برونائي دارالسلام جو وقت"
@@ -2084,7 +2094,14 @@
             },
             "GMT": {
               "long": {
-                "standard": "گرين وچ مين ٽائيم"
+                "standard": "عالمي معياري وقت"
+              }
+            },
+            "Greenland": {
+              "long": {
+                "generic": "گرين ليند جو وقت",
+                "standard": "گرين ليند جو معياري وقت",
+                "daylight": "گرين ليند جو اونهاري وارو وقت"
               }
             },
             "Greenland_Eastern": {
@@ -2113,7 +2130,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "هوائي اليوٽين جو معياري وقت"
+                "standard": "هوائي جو وقت"
               }
             },
             "Hawaii_Aleutian": {
@@ -2174,6 +2191,13 @@
                 "daylight": "ايران جي ڏينهن جو وقت"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "آئرش وقت",
+                "standard": "عالمي معياري وقت",
+                "daylight": "آئرش معياري وقت"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ارڪتسڪ جو وقت",
@@ -2193,6 +2217,13 @@
                 "generic": "جاپان جو وقت",
                 "standard": "جاپان جو معياري وقت",
                 "daylight": "جاپان جي ڏينهن جو وقت"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "ڪامچاٽڪا جو وقت",
+                "standard": "ڪامچاٽڪا جو معياري وقت",
+                "daylight": "ڪامچاٽڪا جو اونهاري وارو وقت"
               }
             },
             "Kazakhstan": {
@@ -2457,11 +2488,16 @@
                 "daylight": "سخالين جي ڏينهن جو وقت"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "سمارا جو وقت",
+                "standard": "سمارا جو معياري وقت",
+                "daylight": "سمارا جو اونهاري جو وقت"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "ساموا جو وقت",
-                "standard": "ساموا جو معياري وقت",
-                "daylight": "ساموا جي ڏينهن جو وقت"
+                "standard": "ساموا جو معياري وقت"
               }
             },
             "Seychelles": {
@@ -2528,6 +2564,13 @@
                 "standard": "چيوڪ جو وقت"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "ترڪيائي وقت",
+                "standard": "ترڪيائي معياري وقت",
+                "daylight": "ترڪيائي اونهاري وارو وقت"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "ترڪمانستان جو وقت",
@@ -2545,6 +2588,11 @@
                 "generic": "يوروگائي جو وقت",
                 "standard": "يوروگائي جو معياري وقت",
                 "daylight": "يوروگائي جي اونهاري جو وقت"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "اورومچي جو وقت"
               }
             },
             "Uzbekistan": {

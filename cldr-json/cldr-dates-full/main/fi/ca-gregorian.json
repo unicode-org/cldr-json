@@ -316,7 +316,7 @@
               "short": "d.M.y"
             },
             "dateSkeletons": {
-              "full": "yMMMMccccd",
+              "full": "yMMMMEEEEd",
               "long": "yMMMMd",
               "medium": "yMd",
               "short": "yMd"
@@ -334,6 +334,10 @@
               "short": "Hmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": ".",
+                "numericTimeSeparator": "."
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -354,12 +358,13 @@
                 "Ehms": "E h.mm.ss a",
                 "EHms": "E H.mm.ss",
                 "Gy": "y G",
-                "GyM": "M.y G",
-                "GyMd": "M.d.y G",
+                "GyM": "L.y G",
+                "GyMd": "d.M.y G",
                 "GyMEd": "E d.M.y G",
                 "GyMMM": "LLL y G",
                 "GyMMMd": "d.M.y G",
                 "GyMMMEd": "E d.M.y G",
+                "GyMMMM": "LLLL y G",
                 "GyMMMMd": "d. MMMM y G",
                 "GyMMMMEd": "E d. MMMM y G",
                 "h": "h a",
@@ -394,28 +399,35 @@
                 "yMMMd": "d.M.y",
                 "yMMMEd": "E d.M.y",
                 "yMMMM": "LLLL y",
-                "yMMMMccccd": "cccc d. MMMM y",
                 "yMMMMd": "d. MMMM y",
                 "yMMMMEd": "E d. MMMM y",
+                "yMMMMEEEEd": "cccc d. MMMM y",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yw-count-one": "'vuoden' Y 'viikko' w",
                 "yw-count-other": "'vuoden' Y 'viikko' w"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1} {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0}–{1}",
                 "Bh": {
                   "B": "h B – h B",

@@ -25,18 +25,34 @@
           "collation": "Aturan Pengurutan",
           "colNormalization": "Pengurutan Dinormalisasi",
           "colNumeric": "Pengurutan Numerik",
+          "colReorder": "Pengurutan Ulang Aksara/Blok",
           "colStrength": "Kekuatan Pengurutan",
           "currency": "Mata Uang",
+          "d0": "Tujuan Transformasi",
+          "dx": "Pengecualian Pemenggalan Kamus",
           "em": "Tampilan Emoji",
+          "fw": "Hari pertama",
+          "h0": "Campuran",
           "hc": "Siklus Jam (12 vs 24)",
+          "i0": "Metode Input",
+          "k0": "Keyboard",
+          "kv": "Paling Sering Diabaikan",
           "lb": "Gaya Pemisah Baris",
           "lw": "Pemisah Baris di antara Kata",
+          "m0": "Aturan Transformasi",
           "ms": "Sistem Pengukuran",
+          "mu": "Unit Pengukuran",
           "numbers": "Angka",
+          "rg": "Wilayah untuk Data Tambahan",
+          "s0": "Sumber Transformasi",
+          "sd": "Subdivisi Wilayah",
           "ss": "Pemisah Kalimat Setelah Singkatan",
+          "t": "Transformasi",
+          "t0": "Diterjemahkan Mesin",
           "timezone": "Zona Waktu",
           "va": "Varian Lokal",
-          "x": "Penggunaan Pribadi"
+          "x": "Penggunaan Pribadi",
+          "x0": "Transformasi Penggunaan Pribadi"
         },
         "types": {
           "calendar": {
@@ -75,6 +91,7 @@
           },
           "colCaseFirst": {
             "lower": "Sortir Huruf Kecil Dahulu",
+            "core": "Huruf Besar",
             "no": "Sortir Urutan Ukuran Huruf Normal",
             "upper": "Sortir Huruf Besar Dahulu"
           },
@@ -108,8 +125,12 @@
             "no": "Sortir Digit Satu Per Satu",
             "yes": "Sortir Digit Secara Numerik"
           },
+          "colReorder": {
+            "core": "Simbol"
+          },
           "colStrength": {
             "identical": "Sortir Semua",
+            "core": "Karakter Dasar, Diakritik, Varian",
             "primary": "Sortir Huruf Dasar Saja",
             "quaternary": "Sortir Aksen/Ukuran Huruf/Lebar/Kana",
             "secondary": "Sortir Aksen",
@@ -124,11 +145,16 @@
             "core": "Teks"
           },
           "hc": {
-            "h11": "Sistem 12 Jam (0–11)",
+            "c12": "Sistem 12 Jam",
             "core": "24 (1–24)",
+            "c24": "Sistem 24 Jam",
+            "h11": "Sistem 12 Jam (0–11)",
             "h12": "Sistem 12 Jam (1–12)",
             "h23": "Sistem 24 Jam (0–23)",
             "h24": "Sistem 24 Jam (1–24)"
+          },
+          "kv": {
+            "core": "Shift spasi, tanda baca, simbol non-mata uang"
           },
           "lb": {
             "loose": "Gaya Pemisah Baris Renggang",
@@ -153,6 +179,7 @@
             "ahom": "Angka Ahom",
             "arab": "Angka Arab Timur",
             "arabext": "Angka Arab Timur Diperluas",
+            "core": "Angka tradisional",
             "armn": "Angka Armenia",
             "armnlow": "Angka Huruf Kecil Armenia",
             "bali": "Angka Bali",
@@ -235,7 +262,17 @@
           },
           "ss": {
             "core": "Aktif"
+          },
+          "t0": {
+            "und": "Terjemahan Mesin Tidak Spesifik"
+          },
+          "va": {
+            "core": "Varian POSIX"
           }
+        },
+        "typeValues": {
+          "no": "Nonaktif",
+          "yes": "Aktif"
         },
         "codePatterns": {
           "language": "Bahasa: {0}",

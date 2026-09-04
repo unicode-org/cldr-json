@@ -26,18 +26,34 @@
           "collation": "Ordenação",
           "colNormalization": "Ordenação normalizada",
           "colNumeric": "Ordenação numérica",
+          "colReorder": "Reordenação de scripts/blocos",
           "colStrength": "Força da ordenação",
           "currency": "Moeda",
+          "d0": "Alvo da transformação",
+          "dx": "Exclusões de separação de palavras do dicionário",
           "em": "Tipo de emoji",
+          "fw": "Primeiro dia da semana",
+          "h0": "Misturado",
           "hc": "Ciclo horário (12 vs. 24)",
+          "i0": "Método de entrada",
+          "k0": "Teclado",
+          "kv": "Mais altos ignorados",
           "lb": "Estilo de quebra de linha",
           "lw": "Quebras de linha em palavras",
+          "m0": "Regras de transformação",
           "ms": "Sistema de medida",
+          "mu": "Unidade de medida",
           "numbers": "Números",
+          "rg": "Região para dados suplementares",
+          "s0": "Fonte da transformação",
+          "sd": "Subdivisão de região",
           "ss": "Espaço após abreviação",
+          "t": "Regra de transformação",
+          "t0": "Traduzido automaticamente",
           "timezone": "Fuso horário",
           "va": "Variante de região",
-          "x": "Uso privado"
+          "x": "Uso privado",
+          "x0": "Transformação de uso privado"
         },
         "types": {
           "calendar": {
@@ -74,6 +90,7 @@
           },
           "colCaseFirst": {
             "lower": "Ordenar por minúsculas",
+            "core": "Maiúsculas",
             "no": "Ordenar disposição de tipo de letra normal",
             "upper": "Ordenar por maiúsculas"
           },
@@ -106,8 +123,12 @@
             "no": "Ordenar dígitos individualmente",
             "yes": "Ordenar dígitos numericamente"
           },
+          "colReorder": {
+            "core": "Símbolo"
+          },
           "colStrength": {
             "identical": "Ordenar tudo",
+            "core": "Alfabeto básico, acentos, maiúsculas e minúsculas, variantes",
             "primary": "Ordenar apenas letras básicas",
             "quaternary": "Ordenar acentos/tipo de letra/largura/kana",
             "secondary": "Ordenar acentos",
@@ -122,11 +143,16 @@
             "core": "Texto"
           },
           "hc": {
-            "h11": "Sistema de 12 horas (0–11)",
+            "c12": "Sistema de 12 horas",
             "core": "24 (1–24)",
+            "c24": "Sistema de 24 horas",
+            "h11": "Sistema de 12 horas (0–11)",
             "h12": "Sistema de 12 horas (1–12)",
             "h23": "Sistema de 24 horas (0–23)",
             "h24": "Sistema de 24 horas (1–24)"
+          },
+          "kv": {
+            "core": "Espaços shift, pontuação, símbolos não relacionados com moedas"
           },
           "lb": {
             "loose": "Estilo flexível de quebra de linha",
@@ -150,6 +176,7 @@
           "numbers": {
             "arab": "Algarismos indo-arábicos",
             "arabext": "Algarismos indo-arábicos expandidos",
+            "core": "Algarismos tradicionais",
             "armn": "Numeração arménia",
             "armnlow": "Numeração arménia minúscula",
             "beng": "Algarismos bengalis",
@@ -195,7 +222,17 @@
           },
           "ss": {
             "core": "Ativado"
+          },
+          "t0": {
+            "und": "Tradução automática não especificada"
+          },
+          "va": {
+            "core": "Variante POSIX"
           }
+        },
+        "typeValues": {
+          "no": "Desativado",
+          "yes": "Ativado"
         },
         "codePatterns": {
           "language": "Idioma: {0}",

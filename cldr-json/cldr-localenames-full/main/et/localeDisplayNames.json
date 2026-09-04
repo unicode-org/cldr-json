@@ -25,18 +25,34 @@
           "collation": "järjestus",
           "colNormalization": "normaliseeritud järjestus",
           "colNumeric": "numbrite järjestus",
+          "colReorder": "skriptide/plokkide ümberjärjestamine",
           "colStrength": "järjestuskaalud",
           "currency": "vääring",
-          "em": "Emoji esitlus",
+          "d0": "sihtkoha teisendamine",
+          "dx": "sõnastiku katkestuste välistamised",
+          "em": "emodži esitus",
+          "fw": "nädala esimene päev",
+          "h0": "kombineeritud",
           "hc": "12 või 24 tunni süsteem",
+          "i0": "sisestusmeetod",
+          "k0": "klaviatuur",
+          "kv": "kõrgeim ignoreeritav",
           "lb": "reavahetuse laad",
           "lw": "reavahetus sõnade vahel",
+          "m0": "reeglite muundamine",
           "ms": "mõõdustik",
+          "mu": "mõõtühik",
           "numbers": "numbrid",
+          "rg": "lisaandmete piirkond",
+          "s0": "teisenduse allikas",
+          "sd": "piirkonna haldusüksus",
           "ss": "lause poolitamine pärast lühendit",
+          "t": "teisendus",
+          "t0": "masintõlgitud",
           "timezone": "ajavöönd",
           "va": "lokaadi variant",
-          "x": "erakasutus"
+          "x": "erakasutus",
+          "x0": "privaatse kasutuse teisendus"
         },
         "types": {
           "calendar": {
@@ -55,7 +71,7 @@
             "islamic-rgsa": "hidžra kalender (Saudi Araabia, vaatluspõhine)",
             "islamic-tbla": "hidžra kalender (tabelkalender, astronoomiline ajastu)",
             "islamic-umalqura": "hidžra kalender (Umm al-Qurá)",
-            "iso8601": "ISO-8601 kalender",
+            "iso8601": "Gregoriuse kalender (ISO-8601)",
             "japanese": "Jaapani kalender",
             "persian": "Pärsia kalender",
             "roc": "Hiina Vabariigi kalender"
@@ -75,6 +91,7 @@
           },
           "colCaseFirst": {
             "lower": "väiketäht järjestuses eespool",
+            "core": "suurtäht",
             "no": "harilik järjestus",
             "upper": "suurtäht järjestuses eespool"
           },
@@ -84,9 +101,9 @@
           },
           "collation": {
             "compat": "varasem sortimisjärjestus (ühilduvuse jaoks)",
+            "core": "zhuyin",
             "dictionary": "sõnastiku sortimisjärjestus",
             "ducet": "Unicode’i vaikejärjestus",
-            "core": "standardne",
             "emoji": "emoji sortimisjärjestus",
             "eor": "Euroopa järjestusreeglid",
             "phonebook": "telefoniraamatu sortimisjärjestus",
@@ -108,8 +125,12 @@
             "no": "järjesta numbrid eraldi",
             "yes": "järjesta numbrid arvuliselt"
           },
+          "colReorder": {
+            "core": "sümbol"
+          },
           "colStrength": {
             "identical": "järjesta kõik",
+            "core": "põhitähed, diakriitilised, suurtähestus, variandid",
             "primary": "järjesta ainult alustähed",
             "quaternary": "järjesta diakriitikud, algustähed, laius ja kana kiri",
             "secondary": "järjesta diakriitikud",
@@ -124,11 +145,16 @@
             "core": "tekst"
           },
           "hc": {
-            "h11": "12-tunnine süsteem (0–11)",
+            "c12": "12-tunnine süsteem",
             "core": "24 (1–24)",
+            "c24": "24-tunnine süsteem",
+            "h11": "12-tunnine süsteem (0–11)",
             "h12": "12-tunnine süsteem (1–12)",
             "h23": "24-tunnine süsteem (0–23)",
             "h24": "24-tunnine süsteem (1–24)"
+          },
+          "kv": {
+            "core": "tühikute nihutamine, kirjavahemärgid, valuutaga mitteseotud sümbolid"
           },
           "lb": {
             "loose": "paindlik reavahetuse laad",
@@ -153,6 +179,7 @@
             "ahom": "ahomi numbrid",
             "arab": "idaaraabia numbrid",
             "arabext": "laiendatud idaaraabia numbrid",
+            "core": "traditsioonilised numbrid",
             "armn": "armeenia numbrid",
             "armnlow": "väiketähelised armeenia numbrid",
             "bali": "bali numbrid",
@@ -203,7 +230,9 @@
             "mroo": "mruu numbrid",
             "mtei": "meitei numbrid",
             "mymr": "birma numbrid",
-            "mymrshan": "myanmari shan numbrid",
+            "mymrepka": "birma idapvoo numbrid",
+            "mymrpao": "birma paoo numbrid",
+            "mymrshan": "birma šani numbrid",
             "mymrtlng": "myanmari tai laing numbrid",
             "nagm": "Nagi mundari numbrid",
             "native": "kohalikud numbrid",
@@ -239,7 +268,17 @@
           },
           "ss": {
             "core": "sisse lülitatud"
+          },
+          "t0": {
+            "und": "määramatu masintõlgitud"
+          },
+          "va": {
+            "core": "POSIX-i variant"
           }
+        },
+        "typeValues": {
+          "no": "välja lülitatud",
+          "yes": "sisse lülitatud"
         },
         "codePatterns": {
           "language": "Keel: {0}",

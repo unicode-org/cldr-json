@@ -93,6 +93,7 @@
           },
           "colCaseFirst": {
             "lower": "Pahle lowercase walon ko sort karein",
+            "core": "Uppercase",
             "no": "Normal case order mein sort karein",
             "upper": "Pahle uppercase walon ko sort karein"
           },
@@ -128,6 +129,7 @@
           },
           "colReorder": {
             "currency": "Currency",
+            "core": "Symbol",
             "digit": "Digits",
             "punct": "Punctuation",
             "space": "Whitespace",
@@ -135,6 +137,7 @@
           },
           "colStrength": {
             "identical": "Sabhi ko sort karein",
+            "core": "Base, Accents, Case, Variants",
             "primary": "Sirf Base Letters ko sort karein",
             "quaternary": "Accents/Case/Width/Kana ko sort karein",
             "secondary": "Accents ko sort karein",
@@ -169,23 +172,25 @@
             "default": "Emoji Characters ke liye Default Presentation use karein",
             "core": "Text",
             "emoji": "Emoji Characters ke liye Emoji Presentation prefer karein",
-            "text": "Emoji Characters ke liye Text Presentation prefer karein"
+            "text": "Emoji ke liye Text Presentation"
           },
           "fw": {
-            "fri": "Week kaa pahla din Friday",
-            "mon": "Week kaa pahla din Monday",
-            "sat": "Week kaa pahla din Saturday",
-            "sun": "Week kaa pahla din Sunday",
-            "thu": "Week kaa pahla din Thursday",
-            "tue": "Week kaa pahla din Tuesday",
-            "wed": "Week kaa pahla din Wednesday"
+            "fri": "Week kaa pahla din: Friday",
+            "mon": "Week kaa pahla din: Monday",
+            "sat": "Week kaa pahla din: Saturday",
+            "sun": "Week kaa pahla din: Sunday",
+            "thu": "Week kaa pahla din: Thursday",
+            "tue": "Week kaa pahla din: Tuesday",
+            "wed": "Week kaa pahla din: Wednesday"
           },
           "h0": {
             "hybrid": "Hybrid"
           },
           "hc": {
-            "h11": "12 Hour System (0–11)",
+            "c12": "12 Hour System",
             "core": "24 (1–24)",
+            "c24": "24 Hour System",
+            "h11": "12 Hour System (0–11)",
             "h12": "12 Hour System (1–12)",
             "h23": "24 Hour System (0–23)",
             "h24": "24 Hour System (1–24)"
@@ -229,7 +234,7 @@
           },
           "kv": {
             "currency": "Ignore Symbols affects spaces, punctuation, all symbols",
-            "core": "Shift spaces, punctuation, non-currency symbols",
+            "core": "Shift Spaces, Punctuation, Non-currency Symbols",
             "punct": "Ignore Symbols affects spaces and punctuation only",
             "space": "Ignore Symbols affects spaces only",
             "symbol": "Ignore Symbols affects spaces, punctuation, non-currency symbols"
@@ -298,7 +303,7 @@
             "arab": "Arabic-Indic Digits",
             "arabext": "Extended Arabic-Indic Digits",
             "arabext-alt-short": "X Arabic-Indic Digits",
-            "core": "Traditional numerals",
+            "core": "Traditional numbers",
             "armn": "Armenian Numerals",
             "armnlow": "Armenian Lowercase Numerals",
             "bali": "Balinese Digits",
@@ -416,8 +421,12 @@
           },
           "va": {
             "posix": "POSIX Compliant Locale",
-            "core": "POSIX variant"
+            "core": "POSIX Variant"
           }
+        },
+        "typeValues": {
+          "no": "Off",
+          "yes": "On"
         },
         "codePatterns": {
           "language": "Bhasha: {0}",

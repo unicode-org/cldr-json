@@ -1,0 +1,14 @@
+%digits-ordinal-masculine:
+-x: −>>;
+x.x: =#,##,##0.0=;
+0: =#,##,##0=$(ordinal,one{ला}two{रा}few{था}other{वा})$;
+%digits-ordinal-feminine:
+-x: −>>;
+x.x: =#,##,##0.0=;
+0: =#,##,##0=$(ordinal,one{ली}two{री}few{थी}other{वी})$;
+%digits-ordinal-neuter:
+-x: −>>;
+x.x: =#,##,##0.0=;
+0: =#,##,##0=$(ordinal,one{ले}two{रे}few{थे}other{वे})$;
+%digits-ordinal:
+0: =%digits-ordinal-masculine=;

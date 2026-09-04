@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} вакыты",
           "regionFormat-type-daylight": "{0} җәйге вакыты",
           "regionFormat-type-standard": "{0} гадәти вакыты",
@@ -101,9 +103,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Британия җәйге вакыты"
-                },
                 "exemplarCity": "Лондон"
               },
               "Guernsey": {
@@ -128,9 +127,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ирландия стандарт вакыты"
-                },
                 "exemplarCity": "Дублин"
               },
               "Isle_of_Man": {
@@ -1919,6 +1915,13 @@
                 "daylight": "Бразилиа җәйге вакыты"
               }
             },
+            "British": {
+              "long": {
+                "generic": "British Tiempo",
+                "standard": "Гринвич уртача вакыты",
+                "daylight": "Британия җәйге вакыты"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Бруней-Даруссалам вакыты"
@@ -2092,6 +2095,13 @@
                 "standard": "Гринвич уртача вакыты"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Groenlandia pacha",
+                "standard": "Groenlandia Tiempo Estándar",
+                "daylight": "Groenlandia Inti raymi pacha"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Көнчыгыш Гренландия вакыты",
@@ -2118,7 +2128,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Гавай-Алеут стандарт вакыты"
+                "standard": "Гавай вакыты"
               }
             },
             "Hawaii_Aleutian": {
@@ -2177,6 +2187,13 @@
                 "generic": "Иран вакыты",
                 "standard": "Иран стандарт вакыты",
                 "daylight": "Иран җәйге вакыты"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Irlanda pacha",
+                "standard": "Гринвич уртача вакыты",
+                "daylight": "Ирландия стандарт вакыты"
               }
             },
             "Irkutsk": {
@@ -2478,9 +2495,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Самоа вакыты",
-                "standard": "Самоа стандарт вакыты",
-                "daylight": "Самоа җәйге вакыты"
+                "standard": "Самоа стандарт вакыты"
               }
             },
             "Seychelles": {
@@ -2547,6 +2562,13 @@
                 "standard": "Чуук вакыты"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Türkiye Tiempo",
+                "standard": "Türkiye Standard Time",
+                "daylight": "Türkiye Inti raymi pacha"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Төркмәнстан вакыты",
@@ -2564,6 +2586,11 @@
                 "generic": "Уругвай вакыты",
                 "standard": "Уругвай стандарт вакыты",
                 "daylight": "Уругвай җәйге вакыты"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Urumqi Tiempo"
               }
             },
             "Uzbekistan": {

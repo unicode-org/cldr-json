@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -38,18 +40,6 @@
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Waxtu ete bu Grande Bretagne"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "waxtu Irlande"
-                }
               },
               "Chisinau": {
                 "_type": "zone",
@@ -356,6 +346,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Jamonoy Acre",
+                "standard": "Acre waxtu buñ miin",
+                "daylight": "Waxtu ete bu Acre"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "waxtu Afganistan"
@@ -531,6 +528,13 @@
                 "daylight": "Brasilia summer time"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Waxtu Grande Bretagne",
+                "standard": "GMT (waxtu Greenwich)",
+                "daylight": "Waxtu ete bu Grande Bretagne"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Brunei Darussalam"
@@ -704,6 +708,13 @@
                 "standard": "GMT (waxtu Greenwich)"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Àm Ghraonlainn",
+                "standard": "Àm Coitcheann Ghraonlainn",
+                "daylight": "Àm Samhraidh Ghraonlainn"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "waxtu penku Greenland",
@@ -730,7 +741,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Waxtu buñ jagleel Hawaii-Aleutian"
+                "standard": "Waxtu Hawaii"
               }
             },
             "Hawaii_Aleutian": {
@@ -791,6 +802,13 @@
                 "daylight": "Waxtu bëccëg ci Iran"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Waxtu Irlande",
+                "standard": "GMT (waxtu Greenwich)",
+                "daylight": "Waxtu estàndaaru Irlande"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Waxtu rkutsk",
@@ -810,6 +828,13 @@
                 "generic": "Japon",
                 "standard": "Waxtu japon",
                 "daylight": "Japon waxtu bëccëg"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Waxtu Kamchatka",
+                "standard": "Kamchatka waxtu",
+                "daylight": "Jamonoy ete ci Kamchatka"
               }
             },
             "Kazakhstan": {
@@ -1074,11 +1099,16 @@
                 "daylight": "Sakhalin Sakhalin"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Waxtu Samara",
+                "standard": "Samara Waxtu",
+                "daylight": "Waxtu été bu Samara"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "waxtu Samoa",
-                "standard": "Samoa Standard Time",
-                "daylight": "Samoa waxtu bëccëg"
+                "standard": "Samoa Standard Time"
               }
             },
             "Seychelles": {
@@ -1145,6 +1175,13 @@
                 "standard": "Waxtu Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Waxtu Turki",
+                "standard": "Jamonoy Turki",
+                "daylight": "Jamonoy ete ci Turki"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Waxtu Turkmenistan",
@@ -1162,6 +1199,11 @@
                 "generic": "Waxtu Urugway",
                 "standard": "Uruguay waxtu buñ miin",
                 "daylight": "Uruguay waxtu ete"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Waxtu Urumqi"
               }
             },
             "Uzbekistan": {

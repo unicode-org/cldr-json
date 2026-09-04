@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} ସମୟ",
           "regionFormat-type-daylight": "{0} ଦିବାଲୋକ ସମୟ",
           "regionFormat-type-standard": "{0} ମାନାଙ୍କ ସମୟ",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ବ୍ରିଟିଶ୍‌ ଗ୍ରୀଷ୍ମକାଳୀନ ସମୟ"
-                },
                 "exemplarCity": "ଲଣ୍ଡନ୍"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ଆଇରିଶ୍‌ ମାନକ ସମୟ"
-                },
                 "exemplarCity": "ଡବଲିନ୍"
               },
               "Isle_of_Man": {
@@ -1777,13 +1773,6 @@
                 "daylight": "ଆଲାସ୍କା ଦିବାଲୋକ ସମୟ"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "ଅଲମାଟୀ ସମୟ",
-                "standard": "ଅଲମାଟୀ ମାନକ ସମୟ",
-                "daylight": "ଅଲମାଟୀ ଗ୍ରୀଷ୍ମ ସମୟ"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "ଆମାଜନ୍ ସମୟ",
@@ -1833,20 +1822,6 @@
                 "daylight": "ଆପିଆ ଦିବାଲୋକ ସମୟ"
               }
             },
-            "Aqtau": {
-              "long": {
-                "generic": "ଅକତୌ ସମୟ",
-                "standard": "ଅକତୌ ମାନକ ସମୟ",
-                "daylight": "ଅକତୌ ଗ୍ରୀଷ୍ମ ସମୟ"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "ଅକ୍ତୋବ ସମୟ",
-                "standard": "ଅକ୍ତୋବ ମାନକ ସମୟ",
-                "daylight": "ଅକ୍ତୋବ ଗ୍ରୀଷ୍ମ ସମୟ"
-              }
-            },
             "Arabian": {
               "long": {
                 "generic": "ଆରବୀୟ ସମୟ",
@@ -1878,7 +1853,7 @@
             "Atlantic": {
               "long": {
                 "generic": "ଆଟଲାଣ୍ଟିକ୍ ସମୟ",
-                "standard": "ଆଟଲାଣ୍ଟିକ୍ ମାନାଙ୍କ ସମୟ",
+                "standard": "ଆଟଲାଣ୍ଟିକ୍ ମାନକ ସମୟ",
                 "daylight": "ଆଟଲାଣ୍ଟିକ୍ ଦିବାଲୋକ ସମୟ"
               }
             },
@@ -1948,6 +1923,13 @@
                 "daylight": "ବ୍ରାସିଲିଆ ଗ୍ରୀଷ୍ମକାଳ ସମୟ"
               }
             },
+            "British": {
+              "long": {
+                "generic": "ବ୍ରିଟିଶ ସମୟ",
+                "standard": "ଗ୍ରୀନୱିଚ୍ ମିନ୍ ସମୟ",
+                "daylight": "ବ୍ରିଟିଶ୍‌ ଗ୍ରୀଷ୍ମକାଳୀନ ସମୟ"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "ବ୍ରୁନେଇ ଡାରୁସାଲାମ ସମୟ"
@@ -2013,7 +1995,7 @@
             "Cuba": {
               "long": {
                 "generic": "କ୍ୟୁବା ସମୟ",
-                "standard": "କ୍ୟୁବା ମାନାଙ୍କ ସମୟ",
+                "standard": "କ୍ୟୁବା ମାନକ ସମୟ",
                 "daylight": "କ୍ୟୁବା ଦିବାଲୋକ ସମୟ"
               }
             },
@@ -2124,6 +2106,13 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "ଗ୍ରୀନ୍‌ଲ୍ୟାଣ୍ଡ୍ ସମୟ",
+                "standard": "ଗ୍ରୀନ୍‌ଲ୍ୟାଣ୍ଡ୍ ମାନକ ସମୟ",
+                "daylight": "ଗ୍ରୀନ୍‌ଲ୍ୟାଣ୍ଡ୍ ଗ୍ରୀଷ୍ମ ସମୟ"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "ପୂର୍ବ ଗ୍ରୀନଲ୍ୟାଣ୍ଡ୍ ସମୟ",
@@ -2156,7 +2145,7 @@
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "ହୱାଇ-ଆଲେଉଟିୟ ସମୟ",
-                "standard": "ହୱାଇ-ଆଲେଉଟିୟ ମାନାଙ୍କ ସମୟ",
+                "standard": "ହୱାଇ-ଅଲୂଶନ୍ ମାନକ ସମୟ",
                 "daylight": "ହୱାଇ-ଆଲେଉଟିୟ ଦିବାଲୋକ ସମୟ"
               }
             },
@@ -2212,6 +2201,13 @@
                 "generic": "ଇରାନ ସମୟ",
                 "standard": "ଇରାନ ମାନକ ସମୟ",
                 "daylight": "ଇରାନ ଦିବାଲୋକ ସମୟ"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "ଆଇରିସ୍ ସମୟ",
+                "standard": "ଗ୍ରୀନୱିଚ୍ ମିନ୍ ସମୟ",
+                "daylight": "ଆଇରିଶ୍‌ ମାନକ ସମୟ"
               }
             },
             "Irkutsk": {
@@ -2281,11 +2277,6 @@
                 "standard": "କିର୍ଗିସ୍ତାନ ସମୟ"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "ଲଙ୍କା ସମୟ"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "ଲାଇନ୍‌ ଦ୍ୱୀପପୁଞ୍ଜ ସମୟ"
@@ -2296,13 +2287,6 @@
                 "generic": "ଲର୍ଡ ହୋୱେ ସମୟ",
                 "standard": "ଲର୍ଡ ହୋୱେ ମାନାଙ୍କ ସମୟ",
                 "daylight": "ଲର୍ଡ ହୋୱେ ଦିବାଲୋକ ସମୟ"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "ମାକାଓ ସମୟ",
-                "standard": "ମକାଓ ମାନକ ସମୟ",
-                "daylight": "ମକାଓ ଗ୍ରୀଷ୍ମ ସମୟ"
               }
             },
             "Magadan": {
@@ -2420,11 +2404,6 @@
                 "daylight": "ଫର୍ଣ୍ଣାଣ୍ଡୋ ଡି ନୋରୋନ୍ନା ଗ୍ରୀଷ୍ମକାଳ ସମୟ"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "ଉତ୍ତର ମେରିଆନା ଆଇଲ୍ୟାଣ୍ଡ ସମୟ"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "ନୋଭୋସିବିରସ୍କ ସମୟ",
@@ -2504,13 +2483,6 @@
                 "standard": "ପୋୟଙ୍ଗୟାଙ୍ଗ ସମୟ"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "କାଜିଲୋର୍ଡା ସମୟ",
-                "standard": "କାଜିଲୋର୍ଡା ମାନକ ସମୟ",
-                "daylight": "କାଜିଲୋର୍ଡା ଗ୍ରୀଷ୍ମ ସମୟ"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "ରିୟୁନିଅନ୍‌ ସମୟ"
@@ -2537,9 +2509,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "ସାମୋଆ ସମୟ",
-                "standard": "ସାମୋଆ ମାନକ ସମୟ",
-                "daylight": "ସାମୋଆ ଦିବାଲୋକ ସମୟ"
+                "standard": "ସାମୋଆ ମାନକ ସମୟ"
               }
             },
             "Seychelles": {
@@ -2606,6 +2576,13 @@
                 "standard": "ଚୂକ୍‌ ସମୟ"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "ତୁର୍କୀ ସମୟ",
+                "standard": "ତୁର୍କୀ ମାନକ ସମୟ",
+                "daylight": "ତୁର୍କୀ ଗ୍ରୀଷ୍ମ ସମୟ"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "ତୁର୍କମେନିସ୍ତାନ ସମୟ",
@@ -2623,6 +2600,11 @@
                 "generic": "ଉରୁଗୁଏ ସମୟ",
                 "standard": "ଉରୁଗୁଏ ମାନାଙ୍କ ସମୟ",
                 "daylight": "ଉରୁଗୁଏ ଗ୍ରୀଷ୍ମକାଳ ସମୟ"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ଉରୁମ୍‌ଚି ସମୟ"
               }
             },
             "Uzbekistan": {

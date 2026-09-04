@@ -10,8 +10,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Hora de: {0}",
           "regionFormat-type-daylight": "Hora d’estiu, {0}",
           "regionFormat-type-standard": "Hora estàndard, {0}",
@@ -117,9 +119,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Hora d’estiu britànica"
-                },
                 "exemplarCity": "Londres"
               },
               "Athens": {
@@ -128,9 +127,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Hora estàndard d’Irlanda"
-                },
                 "exemplarCity": "Dublín"
               },
               "Isle_of_Man": {
@@ -302,6 +298,10 @@
               "Scoresbysund": {
                 "_type": "zone",
                 "exemplarCity": "Scoresbysund"
+              },
+              "Guadeloupe": {
+                "_type": "zone",
+                "exemplarCity": "Guadalupe"
               },
               "St_Kitts": {
                 "_type": "zone",
@@ -676,6 +676,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Hora d’Acre",
+                "standard": "Hora estàndard d’Acre",
+                "daylight": "Hora d’estiu d’Acre"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Hora de l’Afganistan"
@@ -773,9 +780,9 @@
             },
             "Argentina_Western": {
               "long": {
-                "generic": "Hora de l’oest de l’Argentina",
-                "standard": "Hora estàndard de l’oest de l’Argentina",
-                "daylight": "Hora d’estiu de l’oest de l’Argentina"
+                "generic": "Hora de l’Argentina occidental",
+                "standard": "Hora estàndard de l’Argentina occidental",
+                "daylight": "Hora d’estiu de l’Argentina occidental"
               }
             },
             "Armenia": {
@@ -856,6 +863,13 @@
                 "generic": "Hora de Brasília",
                 "standard": "Hora estàndard de Brasília",
                 "daylight": "Hora d’estiu de Brasília"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Hora del Regne Unit",
+                "standard": "Hora del meridià de Greenwich",
+                "daylight": "Hora d’estiu del Regne Unit"
               }
             },
             "Brunei": {
@@ -939,7 +953,7 @@
             },
             "East_Timor": {
               "long": {
-                "standard": "Hora de Timor Oriental"
+                "standard": "Hora de Timor-Leste"
               }
             },
             "Easter": {
@@ -1049,18 +1063,25 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Hora de Groenlàndia",
+                "standard": "Hora estàndard de Groenlàndia",
+                "daylight": "Hora d’estiu de Groenlàndia"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
-                "generic": "Hora de l’Est de Groenlàndia",
-                "standard": "Hora estàndard de l’Est de Groenlàndia",
-                "daylight": "Hora d’estiu de l’Est de Groenlàndia"
+                "generic": "Hora de Groenlàndia oriental",
+                "standard": "Hora estàndard de Groenlàndia oriental",
+                "daylight": "Hora d’estiu de Groenlàndia oriental"
               }
             },
             "Greenland_Western": {
               "long": {
-                "generic": "Hora de l’Oest de Groenlàndia",
-                "standard": "Hora estàndard de l’Oest de Groenlàndia",
-                "daylight": "Hora d’estiu de l’Oest de Groenlàndia"
+                "generic": "Hora de Groenlàndia occidental",
+                "standard": "Hora estàndard de Groenlàndia occidental",
+                "daylight": "Hora d’estiu de Groenlàndia occidental"
               }
             },
             "Gulf": {
@@ -1075,7 +1096,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hora estàndard de Hawaii-Aleutianes"
+                "standard": "Hora estàndard de Hawaii"
               }
             },
             "Hawaii_Aleutian": {
@@ -1121,12 +1142,12 @@
             },
             "Indonesia_Eastern": {
               "long": {
-                "standard": "Hora de l’est d’Indonèsia"
+                "standard": "Hora d’Indonèsia oriental"
               }
             },
             "Indonesia_Western": {
               "long": {
-                "standard": "Hora de l’oest d’Indonèsia"
+                "standard": "Hora d’Indonèsia occidental"
               }
             },
             "Iran": {
@@ -1134,6 +1155,13 @@
                 "generic": "Hora de l’Iran",
                 "standard": "Hora estàndard de l’Iran",
                 "daylight": "Hora d’estiu de l’Iran"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Hora d’Irlanda",
+                "standard": "Hora del meridià de Greenwich",
+                "daylight": "Hora estàndard d’Irlanda"
               }
             },
             "Irkutsk": {
@@ -1160,8 +1188,8 @@
             "Kamchatka": {
               "long": {
                 "generic": "Hora de Kamtxatka",
-                "standard": "Hora estàndard de Petropavlovsk de Kamtxatka",
-                "daylight": "Horari d’estiu de Petropavlovsk de Kamtxatka"
+                "standard": "Hora estàndard de Kamtxatka",
+                "daylight": "Hora d’estiu de Kamtxatka"
               }
             },
             "Kazakhstan": {
@@ -1171,12 +1199,12 @@
             },
             "Kazakhstan_Eastern": {
               "long": {
-                "standard": "Hora de l’est del Kazakhstan"
+                "standard": "Hora del Kazakhstan oriental"
               }
             },
             "Kazakhstan_Western": {
               "long": {
-                "standard": "Hora de l’oest del Kazakhstan"
+                "standard": "Hora del Kazakhstan occidental"
               }
             },
             "Korea": {
@@ -1213,13 +1241,6 @@
                 "generic": "Hora de Lord Howe",
                 "standard": "Hora estàndard de Lord Howe",
                 "daylight": "Horari d’estiu de Lord Howe"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Hora de Macau",
-                "standard": "Hora estàndard de Macau",
-                "daylight": "Hora d’estiu de Macau"
               }
             },
             "Magadan": {
@@ -1442,9 +1463,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Hora de Samoa",
-                "standard": "Hora estàndard de Samoa",
-                "daylight": "Hora d’estiu de Samoa"
+                "standard": "Hora estàndard de Samoa"
               }
             },
             "Seychelles": {
@@ -1535,6 +1554,11 @@
                 "generic": "Hora de l’Uruguai",
                 "standard": "Hora estàndard de l’Uruguai",
                 "daylight": "Hora d’estiu de l’Uruguai"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Hora d’Ürümchi"
               }
             },
             "Uzbekistan": {

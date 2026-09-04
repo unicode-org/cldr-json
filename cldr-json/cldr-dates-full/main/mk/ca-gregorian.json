@@ -97,6 +97,16 @@
                 }
               }
             },
+            "dayOfMonths": {
+              "format": {
+                "abbreviated": {
+                  "one": "{0}-ви",
+                  "two": "{0}-ри",
+                  "many": "{0}-ми",
+                  "other": "{0}-ти"
+                }
+              }
+            },
             "days": {
               "format": {
                 "abbreviated": {
@@ -334,6 +344,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": ".",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1}, {0}",
               "long": "{1}, {0}",
               "medium": "{1}, {0}",
@@ -359,7 +373,14 @@
                 "GyMEd": "E, d.M.y 'г'. G",
                 "GyMMM": "MMM y 'г'. G",
                 "GyMMMd": "d MMM y 'г'. G",
+                "GyMMMddd": "ddd MMM y 'г'. G",
                 "GyMMMEd": "E, d MMM y 'г'. G",
+                "GyMMMEddd": "E, ddd MMM y 'г'. G",
+                "GyMMMM": "MMMM y 'г'. G",
+                "GyMMMMd": "d MMMM y 'г'. G",
+                "GyMMMMddd": "ddd MMMM y 'г'. G",
+                "GyMMMMEd": "E, d MMMM y 'г'. G",
+                "GyMMMMEddd": "E, ddd MMMM y 'г'. G",
                 "h": "h a",
                 "H": "H",
                 "hm": "h:mm a",
@@ -371,16 +392,20 @@
                 "hmv": "h:mm a v",
                 "Hmv": "HH:mm v",
                 "hv": "h a v",
-                "Hv": "HH v",
+                "Hv": "H 'ч'. v",
                 "M": "L",
                 "Md": "d.M",
                 "Mdd": "d.M",
                 "MEd": "E, d.M",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
+                "MMMddd": "ddd MMM",
                 "MMMEd": "E, d MMM",
+                "MMMEddd": "E, ddd MMM",
                 "MMMMd": "d MMMM",
+                "MMMMddd": "ddd MMMM",
                 "MMMMEd": "E, d MMMM",
+                "MMMMEddd": "E, ddd MMMM",
                 "MMMMW-count-one": "W. 'седмица' 'од' MMMM",
                 "MMMMW-count-other": "W. 'седмица' 'од' MMMM",
                 "ms": "mm:ss",
@@ -390,27 +415,40 @@
                 "yMEd": "E, d.M.y 'г'.",
                 "yMMM": "MMM y 'г'.",
                 "yMMMd": "d MMM y 'г'.",
+                "yMMMddd": "ddd MMM y 'г'.",
                 "yMMMEd": "E, d MMM y 'г'.",
+                "yMMMEddd": "E, ddd MMM y 'г'.",
                 "yMMMM": "MMMM y 'г'.",
+                "yMMMMd": "d MMMM y 'г'",
+                "yMMMMddd": "ddd MMMM y 'г'",
+                "yMMMMEd": "E, d MMMM y 'г'",
+                "yMMMMEddd": "E, ddd MMMM y 'г'",
                 "yQQQ": "QQQ y 'г'.",
                 "yQQQQ": "QQQQ y 'г'.",
                 "yw-count-one": "w. 'седмица' 'од' Y",
                 "yw-count-other": "w. 'седмица' 'од' Y"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1} {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0} – {1}",
+                  "numeric": "{0} – {1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -518,6 +556,10 @@
                 },
                 "MMMM": {
                   "M": "LLLL – LLLL"
+                },
+                "MMMMd": {
+                  "d": "d – d MMMM",
+                  "M": "d MMMM – d MMMM"
                 },
                 "y": {
                   "y": "y 'г'. – y 'г'."

@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "czas: {0}",
           "regionFormat-type-daylight": "{0} (czas letni)",
           "regionFormat-type-standard": "{0} (czas standardowy)",
@@ -139,9 +141,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Brytyjski czas letni"
-                },
                 "exemplarCity": "Londyn"
               },
               "Athens": {
@@ -155,12 +154,6 @@
               "Budapest": {
                 "_type": "zone",
                 "exemplarCity": "Budapeszt"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Irlandia (czas letni)"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -925,6 +918,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "czas Acre",
+                "standard": "Acre (czas standardowy)",
+                "daylight": "Acre (czas letni)"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "czas Afganistan"
@@ -1105,6 +1105,13 @@
                 "generic": "czas Brasília",
                 "standard": "Brasília (czas standardowy)",
                 "daylight": "Brasília (czas letni)"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "czas Wielka Brytania",
+                "standard": "czas uniwersalny",
+                "daylight": "brytyjski czas letni"
               }
             },
             "Brunei": {
@@ -1295,6 +1302,13 @@
                 "standard": "czas uniwersalny"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "czas Grenlandia",
+                "standard": "Grenlandia (czas standardowy)",
+                "daylight": "Grenlandia (czas letni)"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "czas Grenlandia Wschodnia",
@@ -1321,7 +1335,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaje-Aleuty (czas standardowy)"
+                "standard": "Hawaje (czas standardowy)"
               }
             },
             "Hawaii_Aleutian": {
@@ -1382,6 +1396,13 @@
                 "daylight": "Iran (czas letni)"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "czas irlandzki",
+                "standard": "czas uniwersalny",
+                "daylight": "Irlandia (czas letni)"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "czas Irkuck",
@@ -1405,9 +1426,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "czas Pietropawłowsk Kamczacki",
-                "standard": "czas standardowy Pietropawłowsk Kamczacki",
-                "daylight": "czas Pietropawłowsk Kamczacki letni"
+                "generic": "czas Kamczatka",
+                "standard": "Kamczatka (czas standardowy)",
+                "daylight": "Kamczatka (czas letni)"
               }
             },
             "Kazakhstan": {
@@ -1675,15 +1696,13 @@
             "Samara": {
               "long": {
                 "generic": "czas Samara",
-                "standard": "czas standardowy Samara",
-                "daylight": "czas Samara letni"
+                "standard": "Samara (czas standardowy)",
+                "daylight": "Samara (czas letni)"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "czas Samoa",
-                "standard": "Samoa (czas standardowy)",
-                "daylight": "Samoa (czas letni)"
+                "standard": "Samoa (czas standardowy)"
               }
             },
             "Seychelles": {
@@ -1750,6 +1769,13 @@
                 "standard": "czas Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "czas Turcja",
+                "standard": "Turcja (czas standardowy)",
+                "daylight": "Turcja (czas letni)"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "czas Turkmenistan",
@@ -1767,6 +1793,11 @@
                 "generic": "czas Urugwaj",
                 "standard": "Urugwaj (czas standardowy)",
                 "daylight": "Urugwaj (czas letni)"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "czas Urumczi"
               }
             },
             "Uzbekistan": {

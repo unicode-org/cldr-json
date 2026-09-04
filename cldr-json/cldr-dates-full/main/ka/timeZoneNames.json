@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "დრო: {0}",
           "regionFormat-type-daylight": "{0} ზაფხულის დრო",
           "regionFormat-type-standard": "{0} სტანდარტული დრო",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ბრიტანეთის ზაფხულის დრო"
-                },
                 "exemplarCity": "ლონდონი"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ირლანდიის სტანდარტული დრო"
-                },
                 "exemplarCity": "დუბლინი"
               },
               "Isle_of_Man": {
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "აკოს დრო",
+                "standard": "აკოს სტანდარტული დრო",
+                "daylight": "აკოს ზაფხულის დრო"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "ავღანეთის დრო"
@@ -1807,9 +1810,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "აპიას დრო",
-                "standard": "აპიას სტანდარტული დრო",
-                "daylight": "აპიას ზაფხულის დრო"
+                "generic": "დასავლეთ სამოას დრო",
+                "standard": "დასავლეთ სამოას სტანდარტული დრო",
+                "daylight": "დასავლეთ სამოას ზაფხულის დრო"
               }
             },
             "Arabian": {
@@ -1911,6 +1914,13 @@
                 "generic": "ბრაზილიის დრო",
                 "standard": "ბრაზილიის სტანდარტული დრო",
                 "daylight": "ბრაზილიის ზაფხულის დრო"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "ბრიტანეთის დრო",
+                "standard": "გრინვიჩის საშუალო დრო",
+                "daylight": "ბრიტანეთის ზაფხულის დრო"
               }
             },
             "Brunei": {
@@ -2086,6 +2096,13 @@
                 "standard": "გრინვიჩის საშუალო დრო"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "გრენლანდიის დრო",
+                "standard": "გრენლანდიის სტანდარტული დრო",
+                "daylight": "გრენლანდიის ზაფხულის დრო"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "აღმოსავლეთ გრენლანდიის დრო",
@@ -2112,7 +2129,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "ჰავაისა და ალეუტის სტანდარტული დრო"
+                "standard": "ჰავაის დრო"
               }
             },
             "Hawaii_Aleutian": {
@@ -2173,6 +2190,13 @@
                 "daylight": "ირანის დროის სარტყელი"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "ირლანდიის დრო",
+                "standard": "გრინვიჩის საშუალო დრო",
+                "daylight": "ირლანდიის სტანდარტული დრო"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ირკუტსკის დრო",
@@ -2192,6 +2216,13 @@
                 "generic": "იაპონიის დრო",
                 "standard": "იაპონიის სტანდარტული დრო",
                 "daylight": "იაპონიის ზაფხულის დრო"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "კამჩატკის დრო",
+                "standard": "კამჩატკის სტანდარტული დრო",
+                "daylight": "კამჩატკის ზაფხულის დრო"
               }
             },
             "Kazakhstan": {
@@ -2436,7 +2467,7 @@
             },
             "Pyongyang": {
               "long": {
-                "standard": "ფხენიანის დრო"
+                "standard": "ჩრდილოეთ კორეის დრო"
               }
             },
             "Reunion": {
@@ -2456,11 +2487,16 @@
                 "daylight": "სახალინის ზაფხულის დრო"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "სამარას დრო",
+                "standard": "სამარას სტანდარტული დრო",
+                "daylight": "სამარას ზაფხულის დრო"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "სამოას დრო",
-                "standard": "სამოას სტანდარტული დრო",
-                "daylight": "სამოას ზაფხულის დრო"
+                "standard": "სამოას სტანდარტული დრო"
               }
             },
             "Seychelles": {
@@ -2527,6 +2563,13 @@
                 "standard": "ჩუუკის დრო"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "თურქეთის დრო",
+                "standard": "თურქეთის სტანდარტული დრო",
+                "daylight": "თურქეთის ზაფხულის დრო"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "თურქმენეთის დრო",
@@ -2544,6 +2587,11 @@
                 "generic": "ურუგვაის დრო",
                 "standard": "ურუგვაის სტანდარტული დრო",
                 "daylight": "ურუგვაის ზაფხულის დრო"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ურუმჩის დრო"
               }
             },
             "Uzbekistan": {

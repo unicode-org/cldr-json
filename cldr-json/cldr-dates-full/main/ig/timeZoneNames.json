@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Oge {0}",
           "regionFormat-type-daylight": "Oge Ihe {0}",
           "regionFormat-type-standard": "Oge Izugbe {0}",
@@ -27,7 +29,7 @@
               },
               "Unknown": {
                 "_type": "zone",
-                "exemplarCity": "Obodo Amaghị"
+                "exemplarCity": "Ebe Amaghị"
               }
             },
             "Europe": {
@@ -38,18 +40,6 @@
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Oge Okpomọkụ Britain"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Oge Okpomọkụ Ireland"
-                }
               },
               "Chisinau": {
                 "_type": "zone",
@@ -356,6 +346,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Oge Acre",
+                "standard": "Oge Ọkọlọtọ Acre",
+                "daylight": "Oge Okpomọkụ nke Acre"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Oge Afghanistan"
@@ -531,6 +528,13 @@
                 "daylight": "Oge Okpomọkụ Brasilia"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Oge Britain",
+                "standard": "Oge Mpaghara Greenwich Etịtị",
+                "daylight": "Oge Okpomọkụ Britain"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Oge Brunei Darussalam"
@@ -643,7 +647,7 @@
             },
             "Europe_Further_Eastern": {
               "long": {
-                "standard": "Further-eastern European Time"
+                "standard": "Oge Ọwụwa Anyanwụ Europe"
               }
             },
             "Europe_Western": {
@@ -701,7 +705,14 @@
             },
             "GMT": {
               "long": {
-                "standard": "Oge Mpaghara Greemwich Mean"
+                "standard": "Oge Mpaghara Greenwich Etịtị"
+              }
+            },
+            "Greenland": {
+              "long": {
+                "generic": "Oge Greenland",
+                "standard": "Oge Ọkọlọtọ Greenland",
+                "daylight": "Oge Okpomọkụ nke Greenland"
               }
             },
             "Greenland_Eastern": {
@@ -736,7 +747,7 @@
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "Oge Hawaii-Aleutian",
-                "standard": "Oge Izugbe Hawaii-Aleutian",
+                "standard": "Oge Izugbe Hawaii Aleutian",
                 "daylight": "Oge Ihe Hawaii-Aleutian"
               }
             },
@@ -791,6 +802,13 @@
                 "daylight": "Oge Ihe Iran"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Oge Ireland",
+                "standard": "Oge Mpaghara Greenwich Etịtị",
+                "daylight": "Oge Okpomọkụ Ireland"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Oge Irkutsk",
@@ -810,6 +828,13 @@
                 "generic": "Oge Japan",
                 "standard": "Oge Izugbe Japan",
                 "daylight": "Oge Ihe Japan"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Oge Kamchatka",
+                "standard": "Oge Izugbe Kamchatka",
+                "daylight": "Oge Okpomọkụ Kamchatka"
               }
             },
             "Kazakhstan": {
@@ -1074,11 +1099,16 @@
                 "daylight": "Oge Okpomọkụ Sakhalin"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Oge Samara",
+                "standard": "Oge Izugbe Samara",
+                "daylight": "Oge Okpomọkụ nke Samara"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Oge Samoa",
-                "standard": "Oge Izugbe Samoa",
-                "daylight": "Oge Ihe Samoa"
+                "standard": "Oge Izugbe Samoa"
               }
             },
             "Seychelles": {
@@ -1145,6 +1175,13 @@
                 "standard": "Oge Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Oge Türkiye",
+                "standard": "Oge Izugbe Türkiye",
+                "daylight": "Oge Okpomọkụ Türkiye"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Oge Turkmenist",
@@ -1162,6 +1199,11 @@
                 "generic": "Oge Uruguay",
                 "standard": "Oge Izugbe Uruguay",
                 "daylight": "Oge Okpomọkụ Uruguay"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Oge Ürümqi"
               }
             },
             "Uzbekistan": {

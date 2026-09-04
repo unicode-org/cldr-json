@@ -25,18 +25,34 @@
           "collation": "Ordenação",
           "colNormalization": "Classificação normalizada",
           "colNumeric": "Classificação numérica",
+          "colReorder": "Reordenação de scripts/blocos",
           "colStrength": "Prioridade da classificação",
           "currency": "Moeda",
+          "d0": "Alvo da transformação",
+          "dx": "Exclusões de quebra de dicionário",
           "em": "Tipo de emoji",
+          "fw": "Primeiro dia da semana",
+          "h0": "Misturado",
           "hc": "Ciclo de horário (12 vs. 24)",
+          "i0": "Método de entrada",
+          "k0": "Teclado",
+          "kv": "Mais altos ignorados",
           "lb": "Estilo de quebra de linha",
           "lw": "Quebras de linha em palavras",
+          "m0": "Regras de transformação",
           "ms": "Sistema de medição",
+          "mu": "Unidade de medida",
           "numbers": "Números",
+          "rg": "Região para dados complementares",
+          "s0": "Origem da transformação",
+          "sd": "Subdivisão da região",
           "ss": "Espaço após abreviação",
+          "t": "Transformação",
+          "t0": "Tradução automática",
           "timezone": "Fuso horário",
           "va": "Variante de localidade",
-          "x": "Uso privado"
+          "x": "Uso privado",
+          "x0": "Transformação de uso privado"
         },
         "types": {
           "calendar": {
@@ -73,6 +89,7 @@
           },
           "colCaseFirst": {
             "lower": "Classificar por minúsculas",
+            "core": "Maiúsculas",
             "no": "Classificação normal de maiúsculas e minúsculas",
             "upper": "Classificar por maiúsculas"
           },
@@ -105,8 +122,12 @@
             "no": "Classificar dígitos individualmente",
             "yes": "Classificar dígitos numericamente"
           },
+          "colReorder": {
+            "core": "Símbolo"
+          },
           "colStrength": {
             "identical": "Classificar tudo",
+            "core": "Alfabeto básico, acentos, maiúscula e minúscula, variantes",
             "primary": "Classificar somente letras básicas",
             "quaternary": "Classificar acentos/maiúsculas e minúsculas/largura/kana",
             "secondary": "Classificar acentos",
@@ -121,11 +142,16 @@
             "core": "Texto"
           },
           "hc": {
-            "h11": "Sistema de 12 horas (0–11)",
+            "c12": "Sistema de 12 horas",
             "core": "24 (1–24)",
+            "c24": "Sistema de 24 horas",
+            "h11": "Sistema de 12 horas (0–11)",
             "h12": "Sistema de 12 horas (1–12)",
             "h23": "Sistema de 24 horas (0–23)",
             "h24": "Sistema de 24 horas (1–24)"
+          },
+          "kv": {
+            "core": "Deslocar espaços, pontuação, símbolos não monetários"
           },
           "lb": {
             "loose": "Quebra de linha com estilo solto",
@@ -149,8 +175,9 @@
           "numbers": {
             "arab": "Algarismos indo-arábicos",
             "arabext": "Algarismos indo-arábicos estendidos",
+            "core": "Algarismos tradicionais",
             "armn": "Algarismos armênios",
-            "armnlow": "Algarismos armênios minúsculos",
+            "armnlow": "Algarismos armênios em minúsculas",
             "beng": "Algarismos bengali",
             "cakm": "Algarismos chakma",
             "deva": "Algarismos devanágari",
@@ -194,7 +221,17 @@
           },
           "ss": {
             "core": "Ativado"
+          },
+          "t0": {
+            "und": "Tradução automática não especificada"
+          },
+          "va": {
+            "core": "Variante POSIX"
           }
+        },
+        "typeValues": {
+          "no": "Desativado",
+          "yes": "Ativado"
         },
         "codePatterns": {
           "language": "Idioma: {0}",

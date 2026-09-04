@@ -304,21 +304,21 @@
             "eras": {
               "eraNames": {
                 "0": "கிறிஸ்துவுக்கு முன்",
-                "0-alt-variant": "பொ.ச.மு",
+                "0-alt-variant": "பொது யுகத்திற்கு முன்",
                 "1": "அன்னோ டோமினி",
-                "1-alt-variant": "பொ.ச"
+                "1-alt-variant": "பொது யுகம்"
               },
               "eraAbbr": {
                 "0": "கி.மு.",
-                "0-alt-variant": "பொ.ச.மு",
+                "0-alt-variant": "பொ.யு.மு",
                 "1": "கி.பி.",
-                "1-alt-variant": "பொ.ச"
+                "1-alt-variant": "பொ.யு"
               },
               "eraNarrow": {
                 "0": "கி.மு.",
-                "0-alt-variant": "பொ.ச.மு",
+                "0-alt-variant": "பொ.யு.மு",
                 "1": "கி.பி.",
-                "1-alt-variant": "பொ.ச"
+                "1-alt-variant": "பொ.யு"
               }
             },
             "dateFormats": {
@@ -346,6 +346,10 @@
               "short": "ahmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1}, {0}",
               "long": "{1}, {0}",
               "medium": "{1}, {0}",
@@ -372,6 +376,9 @@
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G y MMM d",
                 "GyMMMEd": "G y MMM d, E",
+                "GyMMMM": "G y MMMM",
+                "GyMMMMd": "G y MMMM d",
+                "GyMMMMEd": "G y MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -392,6 +399,7 @@
                 "MMMd": "MMM d",
                 "MMMEd": "MMM d, E",
                 "MMMMd": "d MMMM",
+                "MMMMEd": "MMMM d, E",
                 "MMMMW-count-one": "MMMM W -ஆம் வாரம்",
                 "MMMMW-count-other": "MMMM W -ஆம் வாரம்",
                 "ms": "mm:ss",
@@ -404,26 +412,35 @@
                 "yMMMd": "d MMM, y",
                 "yMMMEd": "E, d MMM, y",
                 "yMMMM": "MMMM y",
+                "yMMMMd": "d MMMM y",
+                "yMMMMEd": "E, d MMMM y",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yw-count-one": "Y ஆம் ஆண்டின் w -ஆம் வாரம்",
                 "yw-count-other": "Y ஆம் ஆண்டின் w -ஆம் வாரம்"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1}, {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1}, {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
-                "intervalFormatFallback": "{0} – {1}",
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0} – {1}",
+                  "numeric": "{0}–{1}"
+                },
+                "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
                   "h": "h–h B"
@@ -528,11 +545,15 @@
                   "d": "E, d MMM – E, d MMM",
                   "M": "E, d MMM – E, d MMM"
                 },
+                "MMMMd": {
+                  "d": "MMMM d – d",
+                  "M": "MMMM d – MMMM d"
+                },
                 "y": {
-                  "y": "y – y"
+                  "y": "y – y"
                 },
                 "yM": {
-                  "M": "M/y – M/y",
+                  "M": "M/y – M/y",
                   "y": "M/y – M/y"
                 },
                 "yMd": {

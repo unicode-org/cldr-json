@@ -325,6 +325,10 @@
               "short": "Hmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "/",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1}، ساعت {0}",
               "long": "{1}، ساعت {0}",
               "medium": "{1}،‏ {0}",
@@ -353,7 +357,7 @@
                 "GyMMMEd": "E d MMM y G",
                 "h": "h a",
                 "H": "H",
-                "HHmmZ": "HH:mm (Z)",
+                "HHmmv": "HH:mm (Z)",
                 "hm": "h:mm a",
                 "Hm": "H:mm",
                 "hms": "h:mm:ss a",
@@ -382,19 +386,26 @@
                 "yyyyQQQQ": "QQQQ y G"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
                 "Day-Of-Week": "{1} {0}",
-                "Era": "{1} {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} ({1})",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} تا {1}",
+                  "non-numeric": "{0} تا {1}",
+                  "numeric": "{0} تا {1}"
+                },
                 "intervalFormatFallback": "{0} تا {1}",
                 "Bh": {
                   "B": "h B تا h B",
@@ -499,6 +510,10 @@
                 "MMMEd": {
                   "d": "E d LLL تا E d LLL",
                   "M": "E d LLL تا E d LLL"
+                },
+                "MMMMd": {
+                  "d": "d تا d MMMM",
+                  "M": "d MMMM تا d MMMM"
                 },
                 "y": {
                   "y": "y تا y G"

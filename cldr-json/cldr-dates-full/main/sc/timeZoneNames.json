@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Ora {0}",
           "regionFormat-type-daylight": "Ora legale: {0}",
           "regionFormat-type-standard": "Ora istandard: {0}",
@@ -65,9 +67,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ora istiale britànnica"
-                },
                 "exemplarCity": "Londra"
               },
               "Gibraltar": {
@@ -88,9 +87,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ora istandard irlandesa"
-                },
                 "exemplarCity": "Dublinu"
               },
               "Isle_of_Man": {
@@ -663,18 +659,6 @@
                 "generic": "Ora de s’Alaska",
                 "standard": "Ora istandard de s’Alaska",
                 "daylight": "Ora legale de s’Alaska"
-              },
-              "short": {
-                "generic": "OAK",
-                "standard": "OIAK",
-                "daylight": "OLAK"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "Ora de Almaty",
-                "standard": "Ora istandard de Almaty",
-                "daylight": "Ora legale de Almaty"
               }
             },
             "Amazon": {
@@ -689,11 +673,6 @@
                 "generic": "Ora tzentrale USA",
                 "standard": "Ora istandard tzentrale USA",
                 "daylight": "Ora legale tzentrale USA"
-              },
-              "short": {
-                "generic": "OT",
-                "standard": "OIT",
-                "daylight": "OLT"
               }
             },
             "America_Eastern": {
@@ -701,11 +680,6 @@
                 "generic": "Ora orientale USA",
                 "standard": "Ora istandard orientale USA",
                 "daylight": "Ora legale orientale USA"
-              },
-              "short": {
-                "generic": "OO",
-                "standard": "OIO",
-                "daylight": "OLO"
               }
             },
             "America_Mountain": {
@@ -713,11 +687,6 @@
                 "generic": "Ora Montes Pedrosos USA",
                 "standard": "Ora istandard Montes Pedrosos USA",
                 "daylight": "Ora legale Montes Pedrosos USA"
-              },
-              "short": {
-                "generic": "OMP",
-                "standard": "OIMP",
-                "daylight": "OLMP"
               }
             },
             "America_Pacific": {
@@ -725,11 +694,6 @@
                 "generic": "Ora de su Patzìficu USA",
                 "standard": "Ora istandard de su Patzìficu USA",
                 "daylight": "Ora legale de su Patzìficu USA"
-              },
-              "short": {
-                "generic": "OP",
-                "standard": "OIP",
-                "daylight": "OLP"
               }
             },
             "Anadyr": {
@@ -744,20 +708,6 @@
                 "generic": "Ora de Apia",
                 "standard": "Ora istandard de Apia",
                 "daylight": "Ora legale de Apia"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Ora de Aktau",
-                "standard": "Ora istandard de Aktau",
-                "daylight": "Ora legale de Aktau"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Ora de Aktobe",
-                "standard": "Ora istandard de Aktobe",
-                "daylight": "Ora legale de Aktobe"
               }
             },
             "Arabian": {
@@ -793,11 +743,6 @@
                 "generic": "Ora de s’Atlànticu",
                 "standard": "Ora istandard de s’Atlànticu",
                 "daylight": "Ora legale de s’Atlànticu"
-              },
-              "short": {
-                "generic": "OA",
-                "standard": "OIA",
-                "daylight": "OLA"
               }
             },
             "Australia_Central": {
@@ -864,6 +809,13 @@
                 "generic": "Ora de Brasìlia",
                 "standard": "Ora istandard de Brasìlia",
                 "daylight": "Ora legale de Brasìlia"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Ora britànnica",
+                "standard": "Ora de su meridianu de Greenwich",
+                "daylight": "Ora istiale britànnica"
               }
             },
             "Brunei": {
@@ -938,11 +890,6 @@
                 "generic": "Ora de Cuba",
                 "standard": "Ora istandard de Cuba",
                 "daylight": "Ora legale de Cuba"
-              },
-              "short": {
-                "generic": "OC",
-                "standard": "OIC",
-                "daylight": "OLC"
               }
             },
             "Davis": {
@@ -1073,11 +1020,6 @@
                 "daylight": "Ora legale de sa Groenlàndia otzidentale"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Ora istandard de Guàm"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Ora istandard de su Gulfu"
@@ -1090,7 +1032,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Ora istandard de sas ìsulas Hawaii-Aleutinas"
+                "standard": "Ora istandard de sas ìsulas Hawaii"
               }
             },
             "Hawaii_Aleutian": {
@@ -1149,6 +1091,13 @@
                 "generic": "Ora de s’Iràn",
                 "standard": "Ora istandard de s’Iràn",
                 "daylight": "Ora legale de s’Iràn"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Ora irlandesa",
+                "standard": "Ora de su meridianu de Greenwich",
+                "daylight": "Ora istandard irlandesa"
               }
             },
             "Irkutsk": {
@@ -1218,11 +1167,6 @@
                 "standard": "Ora de su Kirghìzistan"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Ora de Lanka"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Ora de sas Ìsulas de sa Lìnia"
@@ -1233,13 +1177,6 @@
                 "generic": "Ora de Lord Howe",
                 "standard": "Ora istandard de Lord Howe",
                 "daylight": "Ora legale de Lord Howe"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Ora de Macao",
-                "standard": "Ora istandard de Macao",
-                "daylight": "Ora legale de Macao"
               }
             },
             "Magadan": {
@@ -1357,11 +1294,6 @@
                 "daylight": "Ora legale de su Fernando de Noronha"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Ora de sas Ìsulas Mariannas Setentrionales"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Ora de Novosibirsk",
@@ -1441,13 +1373,6 @@
                 "standard": "Ora de Pyongyang"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Ora de Qyzylorda",
-                "standard": "Ora istandard de Qyzylorda",
-                "daylight": "Ora legale de Qyzylorda"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Ora de sa Reunione"
@@ -1474,9 +1399,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Ora de sas Samoa",
-                "standard": "Ora istandard de sas Samoa",
-                "daylight": "Ora legale de sas Samoa"
+                "standard": "Ora istandard de sas Samoa"
               }
             },
             "Seychelles": {

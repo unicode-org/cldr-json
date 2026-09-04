@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "ܥܕܢܐ ܕ{0}",
           "regionFormat-type-daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕ{0}",
           "regionFormat-type-standard": "ܥܕܢ {0} ܡܫܘܚܬܢܝܬܐ",
@@ -24,10 +26,6 @@
                 "short": {
                   "standard": "UTC"
                 }
-              },
-              "Unknown": {
-                "_type": "zone",
-                "exemplarCity": "ܐܬܪܐ ܠܐ ܝܕܝܥܐ"
               }
             },
             "Europe": {
@@ -101,9 +99,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܒܪܝܛܢܝܐ"
-                },
                 "exemplarCity": "ܠܘܢܕܘܢ"
               },
               "Guernsey": {
@@ -128,9 +123,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܐܝܪܠܢܕ"
-                },
                 "exemplarCity": "ܕܒܠܢ"
               },
               "Isle_of_Man": {
@@ -1773,13 +1765,6 @@
                 "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܐܠܐܣܟܐ"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "ܥܕܢܐ ܕܐܠܡܐܬܝ",
-                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܐܠܡܐܬܝ",
-                "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܐܠܡܐܬܝ"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "ܥܕܢܐ ܕܐܡܙܢ",
@@ -1827,20 +1812,6 @@
                 "generic": "ܥܕܢܐ ܕܐܦܝܐ",
                 "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܐܦܝܐ",
                 "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܐܦܝܐ"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "ܥܕܢܐ ܐܟܬܐܘ",
-                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܐܟܬܐܘ",
-                "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܐܟܬܐܘ"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "ܥܕܢܐ ܕܐܟܬܘܒ",
-                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܐܟܬܘܒ",
-                "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܐܟܬܘܒ"
               }
             },
             "Arabian": {
@@ -1942,6 +1913,12 @@
                 "generic": "ܥܕܢܐ ܕܒܪܐܣܝܠܝܐ",
                 "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܒܪܐܣܝܠܝܐ",
                 "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܒܪܐܣܝܠܝܐ"
+              }
+            },
+            "British": {
+              "long": {
+                "standard": "ܥܕܢܐ ܕܓܪܝܢܟ",
+                "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܒܪܝܛܢܝܐ"
               }
             },
             "Brunei": {
@@ -2136,11 +2113,6 @@
                 "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܓܪܝܢܠܢܕ ܕܡܥܪܒܝܬܐ"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܓܘܐܡ"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܡܥܠܢܐ"
@@ -2214,6 +2186,12 @@
                 "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܐܝܪܐܢ"
               }
             },
+            "Irish": {
+              "long": {
+                "standard": "ܥܕܢܐ ܕܓܪܝܢܟ",
+                "daylight": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܐܝܪܠܢܕ"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ܥܕܢܐ ܕܐܝܪܟܘܬܣܟ",
@@ -2281,11 +2259,6 @@
                 "standard": "ܥܕܢܐ ܕܩܝܪܓܝܙܣܬܐܢ"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "ܥܕܢܐ ܕܠܐܢܟܐ"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "ܥܕܢܐ ܕܓܙܝܪ̈ܐ ܕܠܐܝܢ"
@@ -2296,13 +2269,6 @@
                 "generic": "ܥܕܢܐ ܕܠܘܪܕ ܗܐܘ",
                 "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܠܘܪܕ ܗܐܘ",
                 "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܠܘܪܕ ܗܐܘ"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "ܥܕܢܐ ܕܡܐܟܐܘ",
-                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܡܐܟܐܘ",
-                "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܡܐܟܐܘ"
               }
             },
             "Magadan": {
@@ -2420,11 +2386,6 @@
                 "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܦܪܢܢܕܘ ܕܢܘܪܘܢܗܐ"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "ܥܕܢܐ ܕܓܙܝܖ̈ܐ ܕܡܪܝܐܢܐ ܓܪܒܝܝܬܐ"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "ܥܕܢܐ ܕܢܘܒܘܣܝܒܪܣܟ",
@@ -2504,13 +2465,6 @@
                 "standard": "ܥܕܢܐ ܕܦܝܘܢܓܝܢܓ"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "ܥܕܢܐ ܕܟܝܙܝܠܘܪܕܐ",
-                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܟܝܙܝܠܘܪܕܐ",
-                "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܟܝܙܝܠܘܪܕܐ"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "ܥܕܢܐ ܕܪܝܘܢܝܘܢ"
@@ -2537,9 +2491,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "ܥܕܢܐ ܕܣܡܘܐ",
-                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܣܡܘܐ",
-                "daylight": "ܥܕܢܐ ܕܒܗܪ ܝܘܡܐ ܕܣܡܘܐ"
+                "standard": "ܥܕܢܐ ܡܫܘܚܬܢܝܬܐ ܕܣܡܘܐ"
               }
             },
             "Seychelles": {

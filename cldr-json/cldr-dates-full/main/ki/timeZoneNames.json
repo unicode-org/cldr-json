@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -18,8 +20,11 @@
             "Etc": {
               "UTC": {
                 "_type": "zone",
+                "long": {
+                  "standard": "Mũbango wa Ithaa rĩa Thĩ"
+                },
                 "short": {
-                  "standard": "UTC"
+                  "standard": "MIT"
                 }
               }
             },
@@ -333,6 +338,43 @@
               "Mahe": {
                 "_type": "zone",
                 "exemplarCity": "Mahé"
+              }
+            }
+          },
+          "metazone": {
+            "Africa_Central": {
+              "long": {
+                "standard": "Mathaa ma Abirika ya Gatagatĩ"
+              }
+            },
+            "Africa_Eastern": {
+              "long": {
+                "standard": "Mathaa ma Abirika ya Irathĩro"
+              }
+            },
+            "Africa_Southern": {
+              "long": {
+                "standard": "Mathaa ma Abirika ya Mũhuro"
+              }
+            },
+            "Africa_Western": {
+              "long": {
+                "standard": "Mathaa ma Abirika ya Ithũĩro"
+              }
+            },
+            "British": {
+              "long": {
+                "standard": "GMT"
+              }
+            },
+            "GMT": {
+              "long": {
+                "standard": "GMT"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "GMT"
               }
             }
           }

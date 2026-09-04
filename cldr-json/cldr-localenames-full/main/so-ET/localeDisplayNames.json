@@ -19,15 +19,41 @@
         "keys": {
           "calendar": "Habeentiris",
           "cf": "Habka Lacagta",
+          "colAlternate": "Iska-indhatir Kala Soocidda Calaamaddaha",
+          "colBackwards": "Kala-soocid Leh Lahjado Rogan",
+          "colCaseFirst": "Kala-horeysiinta Xarfaha Waaweyn/Yaryar",
+          "colCaseLevel": "Kala-soocidda Tixgelisa Xarfaha Waaweyn iyo Kuwa Yaryar",
           "collation": "Kala Soocidda Dalabka",
+          "colNormalization": "Kala-soocid Caadiyeeysan",
+          "colNumeric": "Kala-soocid Tirooyin",
+          "colReorder": "Dib-u-habeynta Far-qoraalka/Qaybta",
+          "colStrength": "Xoogga Kala-soocidda",
           "currency": "Lacagta",
+          "d0": "Goobta Wax Loo Beddelaayo",
+          "dx": "Waxyaabaha Laga Reebayo Kala-qeybinta Qaamuuska",
           "em": "Soo bandhiga Imoji",
+          "fw": "Maalinta koowaad ee toddobaadka",
+          "h0": "Lagu-qasay",
           "hc": "Wareegga Saacadda (12 ilaa 24)",
+          "i0": "Habka Gelinta",
+          "k0": "Kiiboodh",
+          "kv": "Inta ugu Sarreysa La Iska Indha-tiray",
           "lb": "Habka Jebinta Xariiqda",
           "lw": "Bar Dhamaadyada Khadadka ee gudaha Erayada",
+          "m0": "Beddel Xeerarka",
           "ms": "Nidaamka Cabbiraadda",
+          "mu": "Unugga Cabbirka",
           "numbers": "Tirooyinka",
-          "ss": "Bar Dhamaadka Jumlada Kadib Xarfo Soo Gaabinta"
+          "rg": "Gobolka Xogta Dheeraadka ah",
+          "s0": "Beddel Isha",
+          "sd": "Qeyb-hoosaadka Gobolka",
+          "ss": "Bar Dhamaadka Jumlada Kadib Xarfo Soo Gaabinta",
+          "t": "Beddel",
+          "t0": "Waxaa Turjumay Mashiin",
+          "timezone": "Wakhtiga Aagga",
+          "va": "Nooca Degaanka",
+          "x": "Isticmaal-Gaar ah",
+          "x0": "Beddelka Isticmaalka-Gaarka ah"
         },
         "types": {
           "calendar": {
@@ -55,11 +81,14 @@
             "core": "Heerka",
             "standard": "Habka Heerka Lacagta"
           },
+          "colCaseFirst": {
+            "core": "Xarfaha Waaweyn"
+          },
           "collation": {
             "compat": "Iswaafajinta Isku hajintii hore",
+            "core": "Zhuyin",
             "dictionary": "Isku hagaajinta Qaamuuska",
             "ducet": "Lambar Sireedka Caalamiga ee Kala Soocidda Dalabka",
-            "core": "Caadiga",
             "emoji": "Isku hagaajinta Emojiga",
             "eor": "Xeerarka Dalabka Yurub",
             "phonebook": "Isku hagaajinta foonbuuga",
@@ -72,15 +101,30 @@
             "unihan": "Isku hagaajinta Farta Radical-Stroke",
             "zhuyin": "Isku hagaajinta Farta Zhuyin"
           },
+          "colReorder": {
+            "core": "Calaamad"
+          },
+          "colStrength": {
+            "core": "Aasaasiga, Lahjadaha, Xarfaha Waaweyn/Yaryar, Noocyada"
+          },
+          "d0": {
+            "fwidth": "Loogu Beddelo Ballac Buuxa",
+            "hwidth": "Loogu Beddelo Ballac Nus ah"
+          },
           "em": {
             "core": "Qoraal"
           },
           "hc": {
-            "h11": "12 Saac ee Nidaamka Saacadda (0–12)",
+            "c12": "12 Saac ee Nidaamka Saacadda",
             "core": "24 (1–24)",
+            "c24": "24 Saac ee Nidaamka Saacadda",
+            "h11": "12 Saac ee Nidaamka Saacadda (0–12)",
             "h12": "12 Saac ee Nidaamka Saacadda (1–12)",
             "h23": "24 Saac ee Nidaamka Saacadda (0–23)",
             "h24": "24 Saac ee Nidaamka Saacadda (1–24)"
+          },
+          "kv": {
+            "core": "Wareejinta boosaska, calaamadaha xarakeynta, astaamaha aan ahayn kuwa lacagta"
           },
           "lb": {
             "loose": "Habka Jabinta Xariiqda Dabacsan",
@@ -90,6 +134,10 @@
           },
           "lw": {
             "core": "Weedho ahaan ku heyso"
+          },
+          "m0": {
+            "bgn": "Qoraal-u-rogidda La Adeegsanayo Xarfaha Luuqad Kale ee US BGN",
+            "ungegn": "Qoraal-u-rogidda La Adeegsanayo Xarfaha Luuqad Kale ee UN GEGN"
           },
           "ms": {
             "metric": "Nidaamka Metric",
@@ -101,6 +149,7 @@
             "ahom": "Godadka Ahom",
             "arab": "Gdadka Carabi-Hindiya",
             "arabext": "Tirooyinka Dheeraadka ah ee Godadka Carabi-Hindiya",
+            "core": "Tirooyinka qadiimeed",
             "armn": "Nidaam Tireedka Armeeniya",
             "armnlow": "Nidaam Tireedka Yaryar ee Armeeniya",
             "bali": "Godadka Balinese",
@@ -128,16 +177,16 @@
             "hebr": "Nidaam Tireedka Cibraanka",
             "hmng": "Nidaam Tireedka Hebrew",
             "hmnp": "Godadka Nyiakeng Puachue Hmong",
-            "java": "Godadka Javanese",
+            "java": "Tirooyinka Javanese",
             "jpan": "Nidaam Tireedka Jabbaanka",
             "jpanfin": "Nidaam Tireedka Dhaqaalaha Jabbaanka",
             "kali": "Godadka Kayah Li",
-            "khmr": "Godadka Khamer",
-            "knda": "Godadka Kanada",
+            "khmr": "Tirooyinka Khmer",
+            "knda": "Tirooyinka Kannada",
             "lana": "Godadka Tai Tham Hora",
             "lanatham": "Godadka Tai Tham",
-            "laoo": "Godadka Laao",
-            "latn": "Godadka Ree Galbeedka",
+            "laoo": "Tirooyinka Lao",
+            "latn": "Tirooyinka Reer Galbeedka",
             "lepc": "Godadka Lepcha",
             "limb": "Godadka Limbu",
             "mathbold": "Godad Xisaabeedka Waaweeyn",
@@ -145,17 +194,18 @@
             "mathmono": "Godad Xisaabeedka Monospace",
             "mathsanb": "Godad xisaabeedka waaweeyn ee Sans-Serif",
             "mathsans": "Godad xisaabeedka Sans-Serif",
-            "mlym": "Godadka Malayalam",
+            "mlym": "Tirooyinka Malayalam",
             "modi": "Godadka Modi",
             "mong": "Godadka Mongooliyaanka",
             "mroo": "Godadka Mro",
-            "mtei": "Godadka Meetei Mayek",
-            "mymr": "Godadka Mayanmaar",
+            "mtei": "Tirooyinka Meetei Mayek",
+            "mymr": "Tirooyinka Myanmar",
             "mymrshan": "Godadka Myanmar Shan",
             "mymrtlng": "Godadka Myanmar Tai Laing",
+            "native": "Tirooyinka Asaliga ah",
             "nkoo": "Godadka N’Ko",
-            "olck": "Godadka Ol Chiki",
-            "orya": "Godadka Oodhiya",
+            "olck": "Tirooyinka Ol Chiki",
+            "orya": "Tirooyinka Odia",
             "osma": "Godadka Osmanya",
             "rohg": "Godadka Hanifi Rohingya",
             "roman": "Nidaam Tireedka Roomaanka",
@@ -169,18 +219,28 @@
             "takr": "Godadka Takri",
             "talu": "Godadka cusub ee Tai Lue",
             "taml": "Nidaam Tireedki Hore ee Taaamiil",
-            "tamldec": "Godka Tirada Taamiil",
-            "telu": "Godka Tirada Telugu",
-            "thai": "Godka Tirada Thai",
-            "tibt": "Godka Tirada Tibetan",
+            "tamldec": "Tirooyinka Tamil",
+            "telu": "Tirooyinka Telugu",
+            "thai": "Tirooyinka Thai",
+            "tibt": "Tirooyinka Tibetan",
             "tirh": "Godadka Tirhuta",
-            "vaii": "Godadka Vai",
+            "vaii": "Tirooyinka Vai",
             "wara": "Godadka Warang Citi",
             "wcho": "Godadka Wancho"
           },
           "ss": {
             "core": "Daar"
+          },
+          "t0": {
+            "und": "Turjumaad Mashiin Oo Aan La Qeexin"
+          },
+          "va": {
+            "core": "Nooca POSIX"
           }
+        },
+        "typeValues": {
+          "no": "Dami",
+          "yes": "Daar"
         },
         "codePatterns": {
           "language": "Luuqad : {0}",

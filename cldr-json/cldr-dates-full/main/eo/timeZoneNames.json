@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "UTC{0}",
-          "gmtZeroFormat": "UTC",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "UTC+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "tempo: {0}",
           "regionFormat-type-daylight": "{0} (somera tempo)",
           "regionFormat-type-standard": "{0} (norma tempo)",
@@ -93,9 +95,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "brita somera tempo"
-                },
                 "exemplarCity": "Londono"
               },
               "Guernsey": {
@@ -120,9 +119,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "irlanda norma tempo"
-                },
                 "exemplarCity": "Dublino"
               },
               "Isle_of_Man": {
@@ -1362,6 +1358,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "tempo: Akro",
+                "standard": "Akro (norma tempo)",
+                "daylight": "Akro (somera tempo)"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "afgana tempo"
@@ -1537,6 +1540,13 @@
                 "daylight": "brazilja somera tempo"
               }
             },
+            "British": {
+              "long": {
+                "generic": "brita tempo",
+                "standard": "grenviĉa meza tempo",
+                "daylight": "brita somera tempo"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "bruneja tempo"
@@ -1707,7 +1717,14 @@
             },
             "GMT": {
               "long": {
-                "standard": "universala tempo kunordigita"
+                "standard": "grenviĉa meza tempo"
+              }
+            },
+            "Greenland": {
+              "long": {
+                "generic": "gronlanda tempo",
+                "standard": "gronlanda norma tempo",
+                "daylight": "gronlanda somera tempo"
               }
             },
             "Greenland_Eastern": {
@@ -1736,7 +1753,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Havajo-Aleutoj (norma tempo)"
+                "standard": "havaja tempo"
               }
             },
             "Hawaii_Aleutian": {
@@ -1797,6 +1814,13 @@
                 "daylight": "irana somera tempo"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "irlanda tempo",
+                "standard": "grenviĉa meza tempo",
+                "daylight": "irlanda norma tempo"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "irkutska tempo",
@@ -1816,6 +1840,13 @@
                 "generic": "japana tempo",
                 "standard": "japana norma tempo",
                 "daylight": "japana somera tempo"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "kamĉatka tempo",
+                "standard": "kamĉatka norma tempo",
+                "daylight": "kamĉatka somera tempo"
               }
             },
             "Kazakhstan": {
@@ -2080,11 +2111,16 @@
                 "daylight": "saĥalena somera tempo"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "tempo: Samara",
+                "standard": "Samara (norma tempo)",
+                "daylight": "Samara (somera tempo)"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "uson-samoa tempo",
-                "standard": "uson-samoa norma tempo",
-                "daylight": "uson-samoa somera tempo"
+                "standard": "uson-samoa norma tempo"
               }
             },
             "Seychelles": {
@@ -2151,6 +2187,13 @@
                 "standard": "tempo: Ĉuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "turka tempo",
+                "standard": "turka norma tempo",
+                "daylight": "turka somera tempo"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "turkmena tempo",
@@ -2168,6 +2211,11 @@
                 "generic": "urugvaja tempo",
                 "standard": "urugvaja norma tempo",
                 "daylight": "urugvaja somera tempo"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "tempo: Urumĉio"
               }
             },
             "Uzbekistan": {

@@ -334,6 +334,10 @@
               "short": "ahmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -349,7 +353,7 @@
                 "EBhms": "(E) B h:mm:ss",
                 "Ed": "d일 (E)",
                 "EEEEd": "d일 EEEE",
-                "Eh": "(E) a h",
+                "Eh": "E a h시",
                 "Ehm": "(E) a h:mm",
                 "EHm": "(E) HH:mm",
                 "Ehms": "(E) a h:mm:ss",
@@ -362,15 +366,18 @@
                 "GyMMMd": "G y년 MMM d일",
                 "GyMMMEd": "G y년 MMM d일 (E)",
                 "GyMMMEEEEd": "G y년 MMM d일 EEEE",
+                "GyMMMM": "G y년 MMMM",
+                "GyMMMMd": "G y년 MMMM d일",
+                "GyMMMMEd": "G y년 MMMM d일 (E)",
                 "h": "a h시",
                 "H": "H시",
                 "HHmmss": "HH:mm:ss",
                 "hm": "a h:mm",
                 "Hm": "HH:mm",
                 "hms": "a h:mm:ss",
-                "Hms": "H시 m분 s초",
+                "Hms": "HH:mm:ss",
                 "hmsv": "a h:mm:ss v",
-                "Hmsv": "H시 m분 s초 v",
+                "Hmsv": "HH:mm:ss v",
                 "hmv": "a h:mm v",
                 "Hmv": "HH:mm v",
                 "hv": "a h시 v",
@@ -384,38 +391,48 @@
                 "MMMEd": "MMM d일 (E)",
                 "MMMEEEEd": "MMM d일 EEEE",
                 "MMMMd": "MMMM d일",
+                "MMMMEd": "MMMM d일 (E)",
                 "MMMMW-count-other": "MMMM W번째 주",
                 "mmss": "mm:ss",
                 "ms": "mm:ss",
                 "y": "y년",
-                "yM": "y. M.",
-                "yMd": "y. M. d.",
-                "yMEd": "y. M. d. (E)",
-                "yMEEEEd": "y. M. d. EEEE",
-                "yMM": "y. M.",
+                "yM": "y/M",
+                "yMd": "y/M/d",
+                "yMEd": "y/M/d E",
+                "yMEEEEd": "y/M/d EEEE",
+                "yMM": "y/M",
                 "yMMM": "y년 MMM",
                 "yMMMd": "y년 MMM d일",
                 "yMMMEd": "y년 MMM d일 (E)",
                 "yMMMEEEEd": "y년 MMM d일 EEEE",
                 "yMMMM": "y년 MMMM",
+                "yMMMMd": "y년 MMMM d일",
+                "yMMMMEd": "y년 MMMM d일 (E)",
                 "yQQQ": "y년 QQQ",
                 "yQQQQ": "y년 QQQQ",
                 "yw-count-other": "Y년 w번째 주"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{0} ({1})",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "({1}) {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0}~{1}",
+                  "non-numeric": "{0}~{1}",
+                  "numeric": "{0}~{1}"
+                },
                 "intervalFormatFallback": "{0} ~ {1}",
                 "Bh": {
                   "B": "B h시 ~ B h시",
@@ -523,6 +540,10 @@
                 },
                 "MMMM": {
                   "M": "LLLL–LLLL"
+                },
+                "MMMMd": {
+                  "d": "MMMM d일 – d일",
+                  "M": "MMMM d일 – MMMM d일"
                 },
                 "y": {
                   "y": "y년 ~ y년"

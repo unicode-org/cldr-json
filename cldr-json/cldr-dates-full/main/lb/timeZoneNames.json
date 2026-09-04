@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} Zäit",
           "regionFormat-type-daylight": "{0} Summerzäit",
           "regionFormat-type-standard": "{0} Normalzäit",
@@ -56,21 +58,9 @@
                 "_type": "zone",
                 "exemplarCity": "Kopenhagen"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Britesch Summerzäit"
-                }
-              },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Athen"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Iresch Summerzäit"
-                }
               },
               "Rome": {
                 "_type": "zone",
@@ -640,13 +630,6 @@
                 "daylight": "Alaska-Summerzäit"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Almaty-Zäit",
-                "standard": "Almaty-Normalzäit",
-                "daylight": "Almaty-Summerzäit"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Amazonas-Zäit",
@@ -788,6 +771,13 @@
                 "generic": "Brasília-Zäit",
                 "standard": "Brasília-Normalzäit",
                 "daylight": "Brasília-Summerzäit"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Britesch-zäit",
+                "standard": "Mëttler Greenwich-Zäit",
+                "daylight": "Britesch Summerzäit"
               }
             },
             "Brunei": {
@@ -972,11 +962,6 @@
                 "daylight": "Westgrönland-Summerzäit"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Guam-Zäit"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Golf-Zäit"
@@ -989,7 +974,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaii-Aleuten-Normalzäit"
+                "standard": "Hawaii-Normalzäit"
               }
             },
             "Hawaii_Aleutian": {
@@ -1048,6 +1033,13 @@
                 "generic": "Iranesch Zäit",
                 "standard": "Iranesch Normalzäit",
                 "daylight": "Iranesch Summerzäit"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Iresch-zäit",
+                "standard": "Mëttler Greenwich-Zäit",
+                "daylight": "Iresch Summerzäit"
               }
             },
             "Irkutsk": {
@@ -1339,9 +1331,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa-Zäit",
-                "standard": "Samoa-Normalzäit",
-                "daylight": "Samoa-Summerzäit"
+                "standard": "Samoa-Normalzäit"
               }
             },
             "Seychelles": {

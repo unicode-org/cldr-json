@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "{0} GMT",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} áigi",
           "regionFormat-type-daylight": "{0} geasseáigi",
           "regionFormat-type-standard": "{0} dálveáigi",
@@ -64,21 +66,9 @@
                 "_type": "zone",
                 "exemplarCity": "Helsset"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Brihtalaš geasseáigi"
-                }
-              },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Athena"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Irlánddalaš dálveáigi"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -676,6 +666,12 @@
                 "daylight": "Brasilia geasseáigi"
               }
             },
+            "British": {
+              "long": {
+                "standard": "Greenwicha áigi",
+                "daylight": "Brihtalaš geasseáigi"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Brunei Darussalama áigi"
@@ -952,6 +948,12 @@
                 "generic": "Irana áigi",
                 "standard": "Irana dálveáigi",
                 "daylight": "Irana geasseáigi"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "Greenwicha áigi",
+                "daylight": "Irlánddalaš dálveáigi"
               }
             },
             "Irkutsk": {
@@ -1232,9 +1234,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa áigi",
-                "standard": "Samoa dálveáigi",
-                "daylight": "Samoa geasseáigi"
+                "standard": "Samoa dálveáigi"
               }
             },
             "Seychelles": {

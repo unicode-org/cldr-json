@@ -42,7 +42,7 @@
                   "2": "Tlhakole",
                   "3": "Mopitlo",
                   "4": "Moranang",
-                  "5": "Motsheganang",
+                  "5": "Motsheganong",
                   "6": "Seetebosigo",
                   "7": "Phukwi",
                   "8": "Phatwe",
@@ -86,7 +86,7 @@
                   "2": "Tlhakole",
                   "3": "Mopitlo",
                   "4": "Moranang",
-                  "5": "Motsheganang",
+                  "5": "Motsheganong",
                   "6": "Seetebosigo",
                   "7": "Phukwi",
                   "8": "Phatwe",
@@ -292,6 +292,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} 'ka' {0}",
               "long": "{1} 'ka' {0}",
               "medium": "{1}, {0}",
@@ -318,6 +322,9 @@
                 "GyMMM": "G y MMM",
                 "GyMMMd": "G y MMM d",
                 "GyMMMEd": "G y MMM d, E",
+                "GyMMMM": "G y MMMM",
+                "GyMMMMd": "G y MMMM d",
+                "GyMMMMEd": "G y MMMM d, E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -337,6 +344,7 @@
                 "MMMd": "MMM d",
                 "MMMEd": "MMM d, E",
                 "MMMMd": "MMMM d",
+                "MMMMEd": "MMMM d, E",
                 "MMMMW-count-one": "'beke' 'ya' W 'ya' MMM",
                 "MMMMW-count-other": "'beke' 'ya' W 'ya' MMM",
                 "ms": "mm:ss",
@@ -348,25 +356,34 @@
                 "yMMMd": "y MMM d",
                 "yMMMEd": "y MMM d, E",
                 "yMMMM": "y MMMM",
+                "yMMMMd": "y MMMM d",
+                "yMMMMEd": "y MMMM d, EEE",
                 "yQQQ": "y QQQ",
                 "yQQQQ": "y QQQQ",
                 "yw-count-one": "'beke' w 'ya' Y",
                 "yw-count-other": "'beke' w 'ya' Y"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{1} {0}",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -471,6 +488,10 @@
                 "MMMEd": {
                   "d": "MMM d, E – MMM d, E",
                   "M": "MMM d, E – MMM d, E"
+                },
+                "MMMMd": {
+                  "d": "MMMM d–d",
+                  "M": "MMMM d – MMMM d"
                 },
                 "y": {
                   "y": "y–y"

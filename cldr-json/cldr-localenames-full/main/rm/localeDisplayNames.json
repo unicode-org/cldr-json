@@ -13,15 +13,41 @@
         "keys": {
           "calendar": "chalender",
           "cf": "format da valuta",
+          "colAlternate": "zavrar cun ignorar ils simbols",
+          "colBackwards": "zavrar cun invertir l’urden dals accents",
+          "colCaseFirst": "zavrar tenor maiusclas / minusclas",
+          "colCaseLevel": "zavrar cun resguardar maiusclas / minusclas",
           "collation": "zavrada",
+          "colNormalization": "zavrada normalisada",
+          "colNumeric": "zavrada tenor cifras",
+          "colReorder": "rearranschar scrittiras / blocs",
+          "colStrength": "intensitad da zavrada",
           "currency": "valuta",
+          "d0": "destinaziun transfurmaziun",
+          "dx": "exclusiuns da separaziuns tenor il dicziunari",
           "em": "visualisaziun dals emojis",
+          "fw": "emprim di da l’emna",
+          "h0": "entretschà",
           "hc": "ciclus da las uras (12 u 24h)",
+          "i0": "metoda d’endataziun",
+          "k0": "tastatura",
+          "kv": "maximal ignorà",
           "lb": "stil da sigl da lingia",
           "lw": "sigls da lingia entaifer pleds",
+          "m0": "reglas da transfurmaziun",
           "ms": "sistem da mesira",
+          "mu": "unitad da mesira",
           "numbers": "dumbers",
-          "ss": "Interrupziun da la frasa suenter ina abreviaziun"
+          "rg": "regiun per datas supplementaras",
+          "s0": "partenza transfurmaziun",
+          "sd": "subdivisiun da la regiun",
+          "ss": "Interrupziun da la frasa suenter ina abreviaziun",
+          "t": "transfurmaziun",
+          "t0": "translatà automaticamain",
+          "timezone": "zona d’urari",
+          "va": "varianta locala",
+          "x": "diever privat",
+          "x0": "transfurmaziun utilisaziun privata"
         },
         "types": {
           "calendar": {
@@ -48,9 +74,12 @@
             "core": "standard",
             "standard": "format da valuta da standard"
           },
+          "colCaseFirst": {
+            "core": "maiusclas"
+          },
           "collation": {
+            "core": "zhuyin",
             "ducet": "zavrada unicode standard",
-            "core": "standard",
             "phonebook": "cudesch da telefon",
             "pinyin": "Pinyin",
             "search": "tschertga generala",
@@ -58,15 +87,30 @@
             "stroke": "urden dals stritgs",
             "traditional": "reglas tradiziunalas"
           },
+          "colReorder": {
+            "core": "simbol"
+          },
+          "colStrength": {
+            "core": "basa, accents, grond / pitschen, variantas"
+          },
+          "d0": {
+            "fwidth": "a l’entira largezza",
+            "hwidth": "a mesa largezza"
+          },
           "em": {
             "core": "text"
           },
           "hc": {
-            "h11": "sistem da 12 uras (0–11)",
+            "c12": "sistem da 12 uras",
             "core": "24 (1–24)",
+            "c24": "sistem da 24 uras",
+            "h11": "sistem da 12 uras (0–11)",
             "h12": "sistem da 12 uras (1–12)",
             "h23": "sistem da 24 uras (0–23)",
             "h24": "sistem da 24 uras (1–24)"
+          },
+          "kv": {
+            "core": "spustar spazis, interpuncziun, simbols (exclus valutas)"
           },
           "lb": {
             "loose": "stil da sigl da lingia liber",
@@ -77,6 +121,10 @@
           "lw": {
             "core": "preservar en frasas"
           },
+          "m0": {
+            "bgn": "translitteraziun US BGN",
+            "ungegn": "translitteraziun UN GEGN"
+          },
           "ms": {
             "metric": "sistem metric",
             "core": "USA",
@@ -86,6 +134,7 @@
           "numbers": {
             "arab": "cifras indic-arabas",
             "arabext": "cifras indic-arabas extendidas",
+            "core": "numerals tradiziunals",
             "armn": "dumbers armens",
             "armnlow": "dumbers armens en minusclas",
             "beng": "cifras bengalas",
@@ -114,6 +163,7 @@
             "mlym": "cifras malayalam",
             "mtei": "cifras meetei mayek",
             "mymr": "cifras dal Myanmar",
+            "native": "cifras nativas",
             "olck": "cifras ol chiki",
             "orya": "cifras oriya",
             "roman": "dumbers romans",
@@ -127,7 +177,17 @@
           },
           "ss": {
             "core": "Activà"
+          },
+          "t0": {
+            "und": "translaziun automatica betg specifitgada"
+          },
+          "va": {
+            "core": "varianta POSIX"
           }
+        },
+        "typeValues": {
+          "no": "Deactivà",
+          "yes": "Activà"
         },
         "codePatterns": {
           "language": "Lingua: {0}",
