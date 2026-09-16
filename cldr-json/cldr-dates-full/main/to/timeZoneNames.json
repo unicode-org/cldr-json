@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Taimi {0}",
           "regionFormat-type-daylight": "{0} Taimi liliu",
           "regionFormat-type-standard": "{0} Taimi totonu",
@@ -148,7 +150,7 @@
                   "standard": "taimi fakaemāmani"
                 },
                 "short": {
-                  "standard": "UTC"
+                  "standard": "TFM"
                 }
               },
               "Unknown": {
@@ -156,68 +158,15 @@
                 "exemplarCity": "Feituʻu taʻeʻiloa"
               }
             },
-            "Europe": {
-              "Tirane": {
-                "_type": "zone",
-                "exemplarCity": "Tirana"
-              },
-              "Busingen": {
-                "_type": "zone",
-                "exemplarCity": "Büsingen"
-              },
-              "Paris": {
-                "_type": "zone",
-                "exemplarCity": "Palesi"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "houa fakapilitānia taimi liliu"
-                },
-                "exemplarCity": "Lonitoni"
-              },
-              "Athens": {
-                "_type": "zone",
-                "exemplarCity": "ʻAtenisi"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "houa fakaʻaealani taimi totonu"
-                }
-              },
-              "Rome": {
-                "_type": "zone",
-                "exemplarCity": "Loma"
-              },
-              "Chisinau": {
-                "_type": "zone",
-                "exemplarCity": "Chișinău"
-              },
-              "Moscow": {
-                "_type": "zone",
-                "exemplarCity": "Mosikou"
-              },
-              "Kiev": {
-                "_type": "zone",
-                "exemplarCity": "Kiev"
-              },
-              "Vatican": {
-                "_type": "zone",
-                "exemplarCity": "Vatikani"
-              }
-            },
-            "Antarctica": {
-              "Syowa": {
-                "_type": "zone",
-                "exemplarCity": "Showa"
-              },
-              "DumontDUrville": {
-                "_type": "zone",
-                "exemplarCity": "Dumont-d’Urville"
-              }
-            },
             "America": {
+              "Antigua": {
+                "_type": "zone",
+                "exemplarCity": "Anitikua"
+              },
+              "Anguilla": {
+                "_type": "zone",
+                "exemplarCity": "Anikuila"
+              },
               "Argentina": {
                 "Rio_Gallegos": {
                   "_type": "zone",
@@ -231,6 +180,14 @@
               "Cordoba": {
                 "_type": "zone",
                 "exemplarCity": "Córdoba"
+              },
+              "Aruba": {
+                "_type": "zone",
+                "exemplarCity": "ʻAlupa"
+              },
+              "Barbados": {
+                "_type": "zone",
+                "exemplarCity": "Pāpeitosi"
               },
               "St_Barthelemy": {
                 "_type": "zone",
@@ -268,6 +225,10 @@
                 "_type": "zone",
                 "exemplarCity": "Fernando de Noronha"
               },
+              "Belize": {
+                "_type": "zone",
+                "exemplarCity": "Pelise"
+              },
               "Coral_Harbour": {
                 "_type": "zone",
                 "exemplarCity": "Atikokan"
@@ -292,6 +253,14 @@
                 "_type": "zone",
                 "exemplarCity": "Ittoqqortoormiit"
               },
+              "Guyana": {
+                "_type": "zone",
+                "exemplarCity": "Kuiana"
+              },
+              "Jamaica": {
+                "_type": "zone",
+                "exemplarCity": "Samaika"
+              },
               "St_Kitts": {
                 "_type": "zone",
                 "exemplarCity": "St. Kitts"
@@ -299,6 +268,14 @@
               "St_Lucia": {
                 "_type": "zone",
                 "exemplarCity": "St. Lucia"
+              },
+              "Martinique": {
+                "_type": "zone",
+                "exemplarCity": "Mātiniki"
+              },
+              "Montserrat": {
+                "_type": "zone",
+                "exemplarCity": "Moʻungaselati"
               },
               "Ciudad_Juarez": {
                 "_type": "zone",
@@ -326,7 +303,11 @@
               },
               "Miquelon": {
                 "_type": "zone",
-                "exemplarCity": "Saint-Pierre"
+                "exemplarCity": "Sā-piea"
+              },
+              "Puerto_Rico": {
+                "_type": "zone",
+                "exemplarCity": "Puēto Liko"
               },
               "Asuncion": {
                 "_type": "zone",
@@ -392,14 +373,98 @@
               },
               "St_Vincent": {
                 "_type": "zone",
-                "exemplarCity": "St. Vincent"
+                "exemplarCity": "Sā Viniseni"
               },
               "St_Thomas": {
                 "_type": "zone",
                 "exemplarCity": "St. Thomas"
               }
             },
+            "Europe": {
+              "Tirane": {
+                "_type": "zone",
+                "exemplarCity": "Tirana"
+              },
+              "Busingen": {
+                "_type": "zone",
+                "exemplarCity": "Büsingen"
+              },
+              "Paris": {
+                "_type": "zone",
+                "exemplarCity": "Palesi"
+              },
+              "London": {
+                "_type": "zone",
+                "exemplarCity": "Lonitoni"
+              },
+              "Athens": {
+                "_type": "zone",
+                "exemplarCity": "ʻAtenisi"
+              },
+              "Rome": {
+                "_type": "zone",
+                "exemplarCity": "Loma"
+              },
+              "Chisinau": {
+                "_type": "zone",
+                "exemplarCity": "Chișinău"
+              },
+              "Kaliningrad": {
+                "_type": "zone",
+                "exemplarCity": "Kalininikalati"
+              },
+              "Moscow": {
+                "_type": "zone",
+                "exemplarCity": "Mosikou"
+              },
+              "Volgograd": {
+                "_type": "zone",
+                "exemplarCity": "Volikokalati"
+              },
+              "Saratov": {
+                "_type": "zone",
+                "exemplarCity": "Salatovi"
+              },
+              "Astrakhan": {
+                "_type": "zone",
+                "exemplarCity": "ʻAsitalakani"
+              },
+              "Ulyanovsk": {
+                "_type": "zone",
+                "exemplarCity": "ʻUlaianovisiki"
+              },
+              "Kirov": {
+                "_type": "zone",
+                "exemplarCity": "Kilovi"
+              },
+              "Samara": {
+                "_type": "zone",
+                "exemplarCity": "Samala"
+              },
+              "Kiev": {
+                "_type": "zone",
+                "exemplarCity": "Kiev"
+              },
+              "Vatican": {
+                "_type": "zone",
+                "exemplarCity": "Vatikani"
+              }
+            },
+            "Antarctica": {
+              "Syowa": {
+                "_type": "zone",
+                "exemplarCity": "Showa"
+              },
+              "DumontDUrville": {
+                "_type": "zone",
+                "exemplarCity": "Dumont-d’Urville"
+              }
+            },
             "Australia": {
+              "Perth": {
+                "_type": "zone",
+                "exemplarCity": "Peefi"
+              },
               "Adelaide": {
                 "_type": "zone",
                 "exemplarCity": "Atelaite"
@@ -422,6 +487,10 @@
                 "_type": "zone",
                 "exemplarCity": "Ürümqi"
               },
+              "Hong_Kong": {
+                "_type": "zone",
+                "exemplarCity": "Hongi-kongi"
+              },
               "Jerusalem": {
                 "_type": "zone",
                 "exemplarCity": "Selūsalema"
@@ -429,6 +498,10 @@
               "Calcutta": {
                 "_type": "zone",
                 "exemplarCity": "Kolkata"
+              },
+              "Tokyo": {
+                "_type": "zone",
+                "exemplarCity": "Tokiō"
               },
               "Rangoon": {
                 "_type": "zone",
@@ -450,6 +523,82 @@
                 "_type": "zone",
                 "exemplarCity": "Hepeloni"
               },
+              "Yekaterinburg": {
+                "_type": "zone",
+                "exemplarCity": "ʻIekatelinepūki"
+              },
+              "Omsk": {
+                "_type": "zone",
+                "exemplarCity": "ʻOmisiki"
+              },
+              "Novosibirsk": {
+                "_type": "zone",
+                "exemplarCity": "Novosipīsiki"
+              },
+              "Barnaul": {
+                "_type": "zone",
+                "exemplarCity": "Palanauli"
+              },
+              "Tomsk": {
+                "_type": "zone",
+                "exemplarCity": "Tomisiki"
+              },
+              "Novokuznetsk": {
+                "_type": "zone",
+                "exemplarCity": "Novokusinetisiki"
+              },
+              "Krasnoyarsk": {
+                "_type": "zone",
+                "exemplarCity": "Kalasinoiāsiki"
+              },
+              "Irkutsk": {
+                "_type": "zone",
+                "exemplarCity": "ʻĪkutisiki"
+              },
+              "Chita": {
+                "_type": "zone",
+                "exemplarCity": "Tisita"
+              },
+              "Yakutsk": {
+                "_type": "zone",
+                "exemplarCity": "ʻIākutisiki"
+              },
+              "Vladivostok": {
+                "_type": "zone",
+                "exemplarCity": "Valativositoki"
+              },
+              "Khandyga": {
+                "_type": "zone",
+                "exemplarCity": "Kanitika"
+              },
+              "Sakhalin": {
+                "_type": "zone",
+                "exemplarCity": "Sakāline"
+              },
+              "Ust-Nera": {
+                "_type": "zone",
+                "exemplarCity": "ʻUsiti-nela"
+              },
+              "Magadan": {
+                "_type": "zone",
+                "exemplarCity": "Makatani"
+              },
+              "Srednekolymsk": {
+                "_type": "zone",
+                "exemplarCity": "Siletinekolimisiki"
+              },
+              "Kamchatka": {
+                "_type": "zone",
+                "exemplarCity": "Kamisātika"
+              },
+              "Anadyr": {
+                "_type": "zone",
+                "exemplarCity": "ʻAnatili"
+              },
+              "Singapore": {
+                "_type": "zone",
+                "exemplarCity": "Singapula"
+              },
               "Saigon": {
                 "_type": "zone",
                 "exemplarCity": "Ho Chi Minh"
@@ -466,7 +615,7 @@
               },
               "Sao_Tome": {
                 "_type": "zone",
-                "exemplarCity": "Sao Tomé"
+                "exemplarCity": "Sā Tomē"
               },
               "Ndjamena": {
                 "_type": "zone",
@@ -492,17 +641,29 @@
               }
             },
             "Indian": {
+              "Chagos": {
+                "_type": "zone",
+                "exemplarCity": "ʻOtu motu Sakōsi"
+              },
               "Comoro": {
                 "_type": "zone",
-                "exemplarCity": "Comores"
+                "exemplarCity": "Komolosi"
+              },
+              "Mauritius": {
+                "_type": "zone",
+                "exemplarCity": "Maulitiusi"
               },
               "Reunion": {
                 "_type": "zone",
-                "exemplarCity": "Réunion"
+                "exemplarCity": "Lēunioni"
               },
               "Mahe": {
                 "_type": "zone",
                 "exemplarCity": "Mahé"
+              },
+              "Kerguelen": {
+                "_type": "zone",
+                "exemplarCity": "ʻOtu motu Kelikueleni"
               }
             }
           },
@@ -544,13 +705,6 @@
                 "generic": "houa fakaʻalasika",
                 "standard": "houa fakaʻalasika taimi totonu",
                 "daylight": "houa fakaʻalasika taimi liliu"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "houa fakaʻalamati",
-                "standard": "houa fakaʻalamati taimi totonu",
-                "daylight": "houa fakaʻalamati taimi liliu"
               }
             },
             "Amazon": {
@@ -600,20 +754,6 @@
                 "generic": "houa fakaapia",
                 "standard": "houa fakaapia taimi totonu",
                 "daylight": "houa fakaapia taimi liliu"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "houa fakaʻakitau",
-                "standard": "houa fakaʻakitau taimi totonu",
-                "daylight": "houa fakaʻakitau taimi liliu"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "houa fakaʻakitōpe",
-                "standard": "houa fakaʻakitōpe taimi totonu",
-                "daylight": "houa fakaʻakitōpe taimi liliu"
               }
             },
             "Arabian": {
@@ -715,6 +855,13 @@
                 "generic": "houa fakapalāsila",
                 "standard": "houa fakapalāsila taimi totonu",
                 "daylight": "houa fakapalāsila taimi liliu"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "houa fakapilitānia",
+                "standard": "houa fakakiliniuisi mālie",
+                "daylight": "houa fakapilitānia taimi liliu"
               }
             },
             "Brunei": {
@@ -895,6 +1042,13 @@
                 "standard": "houa fakakiliniuisi mālie"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "houa fakafonuamata",
+                "standard": "houa fakafonuamata taimi totonu",
+                "daylight": "houa fakafonuamata taimi liliu"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "houa fakafonuamata-hahake",
@@ -909,11 +1063,6 @@
                 "daylight": "houa fakafonuamata-hihifo taimi liliu"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "houa fakakuami"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "houa fakakūlifi"
@@ -926,7 +1075,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "houa fakahauaiʻi-aleuti taimi totonu"
+                "standard": "houa fakahauaiʻi taimi totonu"
               }
             },
             "Hawaii_Aleutian": {
@@ -987,6 +1136,13 @@
                 "daylight": "houa fakaʻilaani taimi liliu"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "houa fakaʻaealani",
+                "standard": "houa fakakiliniuisi mālie",
+                "daylight": "houa fakaʻaealani taimi totonu"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "houa fakalūsia-ʻīkutisiki",
@@ -1010,9 +1166,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "houa fakalūsia-petelopavilovisiki",
-                "standard": "houa fakalūsia-petelopavilovisiki taimi totonu",
-                "daylight": "houa fakalūsia-petelopavilovisiki taimi liliu"
+                "generic": "houa fakalūsia-kamisātika",
+                "standard": "houa fakalūsia-kamisātika taimi totonu",
+                "daylight": "houa fakalūsia-kamisātika taimi liliu"
               }
             },
             "Kazakhstan": {
@@ -1054,11 +1210,6 @@
                 "standard": "houa fakakīkisitani"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "houa fakalangikā"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "houa fakaʻotumotulaine"
@@ -1069,13 +1220,6 @@
                 "generic": "houa fakamotuʻeikihoue",
                 "standard": "houa fakamotuʻeikihoue taimi totonu",
                 "daylight": "houa fakamotuʻeikihoue taimi liliu"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "houa fakamakau",
-                "standard": "houa fakamakau taimi totonu",
-                "daylight": "houa fakamakau taimi liliu"
               }
             },
             "Magadan": {
@@ -1193,11 +1337,6 @@
                 "daylight": "houa fakafēnanito-te-nolōnia taimi liliu"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "houa fakamalianatokelau"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "houa fakalūsia-novosipīsiki",
@@ -1277,13 +1416,6 @@
                 "standard": "houa fakapiongiangi"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "houa fakakisilōta",
-                "standard": "houa fakakisilōta taimi totonu",
-                "daylight": "houa fakakisilōta taimi liliu"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "houa fakalēunioni"
@@ -1310,9 +1442,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "houa fakahaʻamoa",
-                "standard": "houa fakahaʻamoa taimi totonu",
-                "daylight": "houa fakahaʻamoa taimi liliu"
+                "standard": "houa fakahaʻamoa taimi totonu"
               }
             },
             "Seychelles": {

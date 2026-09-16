@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Casowe pasmo {0}",
           "regionFormat-type-daylight": "{0} lěśojski cas",
           "regionFormat-type-standard": "{0} zymski cas",
@@ -59,21 +61,9 @@
                 "_type": "zone",
                 "exemplarCity": "Kopenhagen"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Britiski lěśojski cas"
-                }
-              },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Athen"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Iriski lěśojski cas"
-                }
               },
               "Rome": {
                 "_type": "zone",
@@ -628,6 +618,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Acre-cas",
+                "standard": "Acre-standardny cas",
+                "daylight": "Acre-lěśojski cas"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Afghaniski cas"
@@ -801,6 +798,12 @@
                 "generic": "Brasília cas",
                 "standard": "Brasília standardny cas",
                 "daylight": "Brasília lěśojski cas"
+              }
+            },
+            "British": {
+              "long": {
+                "standard": "Greenwichski cas",
+                "daylight": "Britiski lěśojski cas"
               }
             },
             "Brunei": {
@@ -991,6 +994,13 @@
                 "standard": "Greenwichski cas"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grönlandski cas",
+                "standard": "Grönlandski standardny cas",
+                "daylight": "Grönlandski lěśojski cas"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Pódzajtšnogrönlandski cas",
@@ -1017,7 +1027,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaiisko-aleutski standardny cas"
+                "standard": "Hawaiiski standardny cas"
               }
             },
             "Hawaii_Aleutian": {
@@ -1078,6 +1088,12 @@
                 "daylight": "Irański lěśojski cas"
               }
             },
+            "Irish": {
+              "long": {
+                "standard": "Greenwichski cas",
+                "daylight": "Iriski lěśojski cas"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Irkutski cas",
@@ -1097,6 +1113,13 @@
                 "generic": "Japański cas",
                 "standard": "Japański standardny cas",
                 "daylight": "Japański lěśojski cas"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Kamčatkaski cas",
+                "standard": "Kamčatkaski standardny cas",
+                "daylight": "Kamčatkaski lěśojski cas"
               }
             },
             "Kazakhstan": {
@@ -1361,11 +1384,16 @@
                 "daylight": "Sachalinski lěśojski cas"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Samaraski cas",
+                "standard": "Samaraski standardny cas",
+                "daylight": "Samaraski lěśojski cas"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Samoaski cas",
-                "standard": "Samoaski standardny cas",
-                "daylight": "Samoaski lěśojski cas"
+                "standard": "Samoaski standardny cas"
               }
             },
             "Seychelles": {
@@ -1432,6 +1460,13 @@
                 "standard": "Chuukski cas"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Turkojski cas",
+                "standard": "Turkojski standardny cas",
+                "daylight": "Turkojski lěśojski cas"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Turkmeniski cas",
@@ -1449,6 +1484,11 @@
                 "generic": "Uruguayski cas",
                 "standard": "Uruguayski standardny cas",
                 "daylight": "Uruguayski lěśojski cas"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ürumqi cas"
               }
             },
             "Uzbekistan": {

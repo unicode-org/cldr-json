@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} સમય",
           "regionFormat-type-daylight": "{0} દિવસ સમય",
           "regionFormat-type-standard": "{0} માનક સમય",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "બ્રિટિશ ગ્રીષ્મ સમય"
-                },
                 "exemplarCity": "લંડન"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "આઈરિશ માનક સમય"
-                },
                 "exemplarCity": "ડબલિન"
               },
               "Isle_of_Man": {
@@ -1777,13 +1773,6 @@
                 "daylight": "અલાસ્કા દિવસ સમય"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "અલ્માટી સમય",
-                "standard": "અલ્માટી પ્રમાણભૂત સમય",
-                "daylight": "અલ્માટી ગ્રીષ્મ સમય"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "એમેઝોન સમય",
@@ -1831,20 +1820,6 @@
                 "generic": "એપિયા સમય",
                 "standard": "એપિયા માનક સમય",
                 "daylight": "એપિયા દિવસ સમય"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "અક્તાઉ સમય",
-                "standard": "અક્તાઉ પ્રમાણભૂત સમય",
-                "daylight": "અક્તાઉ ગ્રીષ્મ સમય"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "ઍક્ટોબ સમય",
-                "standard": "ઍક્ટોબ પ્રમાણભૂત સમય",
-                "daylight": "ઍક્ટોબ ગ્રીષ્મ સમય"
               }
             },
             "Arabian": {
@@ -1946,6 +1921,13 @@
                 "generic": "બ્રાઝિલિયા સમય",
                 "standard": "બ્રાઝિલિયા માનક સમય",
                 "daylight": "બ્રાઝિલિયા ગ્રીષ્મ સમય"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "બ્રિટિશ સમય",
+                "standard": "ગ્રીનવિચ મધ્યમ સમય",
+                "daylight": "બ્રિટિશ ગ્રીષ્મ સમય"
               }
             },
             "Brunei": {
@@ -2121,6 +2103,13 @@
                 "standard": "ગ્રીનવિચ મધ્યમ સમય"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "ગ્રીનલૅન્ડ સમય",
+                "standard": "ગ્રીનલૅન્ડ માનક સમય",
+                "daylight": "ગ્રીનલૅન્ડ ગ્રીષ્મ સમય"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "પૂર્વ ગ્રીનલેન્ડ સમય",
@@ -2135,11 +2124,6 @@
                 "daylight": "પશ્ચિમ ગ્રીનલેન્ડ ગ્રીષ્મ સમય"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "ગ્વામ પ્રમાણભૂત સમય"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "ગલ્ફ માનક સમય"
@@ -2152,7 +2136,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "હવાઇ-એલ્યુશિઅન માનક સમય"
+                "standard": "હવાઇ સમય"
               }
             },
             "Hawaii_Aleutian": {
@@ -2214,6 +2198,13 @@
                 "generic": "ઈરાન સમય",
                 "standard": "ઈરાન માનક સમય",
                 "daylight": "ઈરાન દિવસ સમય"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "આઈરિશ સમય",
+                "standard": "ગ્રીનવિચ મધ્યમ સમય",
+                "daylight": "આઈરિશ માનક સમય"
               }
             },
             "Irkutsk": {
@@ -2283,11 +2274,6 @@
                 "standard": "કિર્ગિઝ્સ્તાન સમય"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "લંકા સમય"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "લાઇન આઇલેન્ડ્સ સમય"
@@ -2298,13 +2284,6 @@
                 "generic": "લોર્ડ હોવ સમય",
                 "standard": "લોર્ડ હોવ માનક સમય",
                 "daylight": "લોર્ડ હોવ દિવસ સમય"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "મકાઉ સમય",
-                "standard": "મકાઉ પ્રમાણભૂત સમય",
-                "daylight": "મકાઉ ગ્રીષ્મ સમય"
               }
             },
             "Magadan": {
@@ -2422,11 +2401,6 @@
                 "daylight": "ફર્નાન્ડો દે નોરોહા ગ્રીષ્મ સમય"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "ઉત્તર મારિયાના આઇલેન્ડ્સ"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "નોવસિબિર્સ્ક સમય",
@@ -2506,13 +2480,6 @@
                 "standard": "પ્યોંગયાંગ સમય"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "કિઝિલોર્ડા સમય",
-                "standard": "કિઝિલોર્ડા પ્રમાણભૂત સમય",
-                "daylight": "કિઝિલોર્ડા ગ્રીષ્મ સમય"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "રીયુનિયન સમય"
@@ -2539,9 +2506,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "સમોઆ સમય",
-                "standard": "સમોઆ માનક સમય",
-                "daylight": "સમોઆ ગ્રીષ્મ સમય"
+                "standard": "સમોઆ માનક સમય"
               }
             },
             "Seychelles": {
@@ -2608,6 +2573,13 @@
                 "standard": "ચુઉક સમય"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "તુર્કિયે સમય",
+                "standard": "તુર્કિયે માનક સમય",
+                "daylight": "તુર્કિયે ગ્રીષ્મ સમય"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "તુર્કમેનિસ્તાન સમય",
@@ -2625,6 +2597,11 @@
                 "generic": "ઉરુગ્વે સમય",
                 "standard": "ઉરુગ્વે માનક સમય",
                 "daylight": "ઉરુગ્વે ગ્રીષ્મ સમય"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ઉરુમ્કી સમય"
               }
             },
             "Uzbekistan": {

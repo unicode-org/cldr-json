@@ -38,18 +38,18 @@
                   "12": "12"
                 },
                 "wide": {
-                  "1": "Muharram",
-                  "2": "Safar",
-                  "3": "Rabiʻ I",
-                  "4": "Rabiʻ II",
-                  "5": "Jumada I",
-                  "6": "Jumada II",
-                  "7": "Rajab",
-                  "8": "Shaʻban",
-                  "9": "Ramadan",
-                  "10": "Shawwal",
-                  "11": "Dhuʻl-Qiʻdah",
-                  "12": "Dhuʻl-Hijjah"
+                  "1": "موحەرەم",
+                  "2": "سەفەر",
+                  "3": "رەبیعی یەکەم",
+                  "4": "ڕەبیعی دووەم",
+                  "5": "جەمادی یەکەم",
+                  "6": "جەمادی دووەم",
+                  "7": "ڕەجەب",
+                  "8": "شەعبان",
+                  "9": "ڕەمەزان",
+                  "10": "شەوال",
+                  "11": "زولقەعدە",
+                  "12": "زولحجە"
                 }
               },
               "stand-alone": {
@@ -82,18 +82,18 @@
                   "12": "12"
                 },
                 "wide": {
-                  "1": "Muharram",
-                  "2": "Safar",
-                  "3": "Rabiʻ I",
-                  "4": "Rabiʻ II",
-                  "5": "Jumada I",
-                  "6": "Jumada II",
-                  "7": "Rajab",
-                  "8": "Shaʻban",
-                  "9": "Ramadan",
-                  "10": "Shawwal",
-                  "11": "Dhuʻl-Qiʻdah",
-                  "12": "Dhuʻl-Hijjah"
+                  "1": "موحەرەم",
+                  "2": "سەفەر",
+                  "3": "رەبیعی یەکەم",
+                  "4": "ڕەبیعی دووەم",
+                  "5": "جەمادی یەکەم",
+                  "6": "جەمادی دووەم",
+                  "7": "ڕەجەب",
+                  "8": "شەعبان",
+                  "9": "ڕەمەزان",
+                  "10": "شەوال",
+                  "11": "زولقەعدە",
+                  "12": "زولحجە"
                 }
               }
             },
@@ -286,6 +286,10 @@
               "short": "ahmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -347,19 +351,26 @@
                 "yyyyQQQQ": "G y QQQQ"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{1} {0}",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -464,6 +475,10 @@
                 "MMMEd": {
                   "d": "E، dی MMM – E، dی MMM",
                   "M": "MMM d, E – MMM d, E"
+                },
+                "MMMMd": {
+                  "d": "MMMM d–d",
+                  "M": "MMMM d – MMMM d"
                 },
                 "y": {
                   "y": "G y–y"

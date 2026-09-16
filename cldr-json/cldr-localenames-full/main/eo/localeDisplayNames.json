@@ -13,15 +13,40 @@
         "keys": {
           "calendar": "kalendaro",
           "cf": "formo de valuto",
+          "colAlternate": "ordigo ignoranta simbolojn",
+          "colBackwards": "inversa ordigo kun kromsignoj",
+          "colCaseFirst": "ordigo majuskloj/minuskloj",
+          "colCaseLevel": "ordigo distinganta litergrandon",
           "collation": "ordigo",
+          "colNormalization": "normigita ordigo",
+          "colNumeric": "ordigi kiel numeroj",
+          "colReorder": "ordigo de grupoj/skribsistemoj",
+          "colStrength": "forto de ordigo",
           "currency": "valuto",
+          "d0": "celo de transformo",
+          "dx": "eksigi de vortar-bazita linisalto",
           "em": "vidigo de miensimboloj",
+          "fw": "unua tago de semajno",
+          "h0": "miksitaj",
           "hc": "horloĝa sistemo (12- aŭ 24-hora)",
+          "i0": "metodo de enigo",
+          "k0": "klavaro",
           "lb": "stilo de linisalto",
           "lw": "linisalto ene vortoj",
+          "m0": "reguloj de transformo",
           "ms": "mezur-sistemo",
+          "mu": "mezur-unuo",
           "numbers": "ciferoj",
-          "ss": "frazfino post mallongigo"
+          "rg": "regiono por suplementaj datumoj",
+          "s0": "fonto de transformo",
+          "sd": "subregiono",
+          "ss": "frazfino post mallongigo",
+          "t": "transformo",
+          "t0": "maŝine tradukita",
+          "timezone": "horzono",
+          "va": "variaĵo de lokaĵaro",
+          "x": "por privata uzo",
+          "x0": "private uzata transformo"
         },
         "types": {
           "calendar": {
@@ -35,9 +60,9 @@
             "gregorian": "gregoria kalendaro",
             "hebrew": "juda kalendaro",
             "islamic": "islama kalendaro",
-            "islamic-civil": "tabela islama kalendaro",
+            "islamic-civil": "islama kalendaro (tabela, civila epoko)",
             "islamic-umalqura": "islama kalendaro (Umm al-Qura)",
-            "iso8601": "gregoria kalendaro (jaro unue)",
+            "iso8601": "gregoria kalendaro ISO 8601",
             "japanese": "japana kalendaro",
             "persian": "persa kalendaro",
             "roc": "kalendaro de Respubliko Ĉinujo"
@@ -47,18 +72,33 @@
             "core": "norma",
             "standard": "norma formo de valuto"
           },
+          "colCaseFirst": {
+            "core": "majuskloj unue"
+          },
           "collation": {
+            "core": "bopomofo",
             "ducet": "norma ordigo laŭ Unikodo",
-            "core": "norma",
             "search": "ĝeneral-uza serĉo",
             "standard": "norma ordigo"
+          },
+          "colReorder": {
+            "core": "aliaj simboloj"
+          },
+          "colStrength": {
+            "core": "literoj kun kromsignoj, litergrando, variaĵo"
+          },
+          "d0": {
+            "fwidth": "al plenlarĝa",
+            "hwidth": "al duonlarĝa"
           },
           "em": {
             "core": "teksto"
           },
           "hc": {
-            "h11": "12-hora sistemo (0–11)",
+            "c12": "12-hora sistemo",
             "core": "24 (1–24)",
+            "c24": "24-hora sistemo",
+            "h11": "12-hora sistemo (0–11)",
             "h12": "12-hora sistemo (1–12)",
             "h23": "24-hora sistemo (0–23)",
             "h24": "24-hora sistemo (1–24)"
@@ -72,6 +112,10 @@
           "lw": {
             "core": "konservi en frazoj"
           },
+          "m0": {
+            "bgn": "transliterumo laŭ BGN",
+            "ungegn": "transliterumo laŭ UNGEGN"
+          },
           "ms": {
             "metric": "metra sistemo",
             "core": "usona",
@@ -81,6 +125,7 @@
           "numbers": {
             "arab": "hind-arabaj ciferoj",
             "arabext": "hind-arabaj ciferoj etenditaj",
+            "core": "tradiciaj ciferoj",
             "armn": "armenaj ciferoj",
             "armnlow": "armenaj ciferoj minusklaj",
             "beng": "bengalaj ciferoj",
@@ -97,7 +142,7 @@
             "hans": "simpligit-ĉinaj ciferoj",
             "hansfin": "simpligit-ĉinaj financaj ciferoj",
             "hant": "tradici-ĉinaj ciferoj",
-            "hantfin": "tradic-ĉinaj financaj ciferoj",
+            "hantfin": "tradici-ĉinaj financaj ciferoj",
             "hebr": "hebreaj ciferoj",
             "java": "javaj ciferoj",
             "jpan": "japanaj ciferoj",
@@ -109,6 +154,7 @@
             "mlym": "malajalamaj ciferoj",
             "mtei": "manipuraj ciferoj",
             "mymr": "birmaj ciferoj",
+            "native": "indiĝenaj ciferoj",
             "orya": "orijaj ciferoj",
             "roman": "romaj ciferoj",
             "romanlow": "romaj ciferoj minusklaj",
@@ -121,7 +167,17 @@
           },
           "ss": {
             "core": "jes"
+          },
+          "t0": {
+            "und": "nedifinita maŝina traduko"
+          },
+          "va": {
+            "core": "variaĵo POSIX"
           }
+        },
+        "typeValues": {
+          "no": "ne",
+          "yes": "jes"
         },
         "codePatterns": {
           "language": "Lingvo: {0}",

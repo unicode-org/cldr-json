@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} Taim",
           "regionFormat-type-daylight": "{0} Délaít Taim",
           "regionFormat-type-standard": "{0} Fíksd Taim",
@@ -93,9 +95,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Brítísh Họ́t Sízin Taim"
-                },
                 "exemplarCity": "Lọ́ndọn"
               },
               "Guernsey": {
@@ -120,9 +119,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Aírísh Fíksd Taim"
-                },
                 "exemplarCity": "Dọ́blin"
               },
               "Isle_of_Man": {
@@ -1045,6 +1041,10 @@
                 "_type": "zone",
                 "exemplarCity": "Bárnául"
               },
+              "Tomsk": {
+                "_type": "zone",
+                "exemplarCity": "Tọmsk"
+              },
               "Novokuznetsk": {
                 "_type": "zone",
                 "exemplarCity": "Novokuznẹ́sk"
@@ -1682,6 +1682,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Ẹ́ka",
+                "standard": "Ẹ́ka Fíksd Taim",
+                "daylight": "Ẹ́ka Họ́t Sízin Taim"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Afgánístan Taim"
@@ -1751,9 +1758,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "Ápia Taim",
-                "standard": "Ápia Fíksd Taim",
-                "daylight": "Ápia Délaít Taim"
+                "generic": "Wést Samọa Taim",
+                "standard": "Wést Samọa Fíksd Taim",
+                "daylight": "Wést Samọa Délaít Taim"
               }
             },
             "Arabian": {
@@ -1855,6 +1862,13 @@
                 "generic": "Brasília Taim",
                 "standard": "Brasília Fíksd Taim",
                 "daylight": "Brasília Họ́t Sízín Taim"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Brítísh Taim",
+                "standard": "Grínwích Mín Taim",
+                "daylight": "Brítísh Họ́t Sízin Taim"
               }
             },
             "Brunei": {
@@ -2030,6 +2044,13 @@
                 "standard": "Grínwích Mín Taim"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grínlánd Taim",
+                "standard": "Grínlánd Fíksd Taim",
+                "daylight": "Grínlánd Họ́t Sízin Taim"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Íist Grínlánd Taim",
@@ -2056,7 +2077,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaií-Elúshián Fíksd Taim"
+                "standard": "Hawaií Taim"
               }
             },
             "Hawaii_Aleutian": {
@@ -2117,6 +2138,13 @@
                 "daylight": "Iran Délaít Taim"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Aírísh Taim",
+                "standard": "Grínwích Mín Taim",
+                "daylight": "Aírísh Fíksd Taim"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Irkútsk Taim",
@@ -2136,6 +2164,13 @@
                 "generic": "Japan Taim",
                 "standard": "Japan Fíksd Taim",
                 "daylight": "Japan Délaít Taim"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Kamchátka Taim",
+                "standard": "Kamchátka Fíksd Taim",
+                "daylight": "Kamchátka Họ́t Sízin Taim"
               }
             },
             "Kazakhstan": {
@@ -2400,11 +2435,16 @@
                 "daylight": "Sákhalin Họ́t Sízin Taim"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Samára Taim",
+                "standard": "Samára Fíksd Taim",
+                "daylight": "Samára Họ́t Sízin Taim"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Sámoá Taim",
-                "standard": "Sámoá Fíksd Taim",
-                "daylight": "Sámoá Délaít Taim"
+                "standard": "Sámoá Fíksd Taim"
               }
             },
             "Seychelles": {
@@ -2471,6 +2511,13 @@
                 "standard": "Chuk Taim"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Türkiye Taim",
+                "standard": "Türkiye Fíksd Taim",
+                "daylight": "Türkiye Họ́t Sízin Taim"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Tọkmẹnistan Taim",
@@ -2488,6 +2535,11 @@
                 "generic": "Yúrugwue Taim",
                 "standard": "Yúrugwue Fíksd Taim",
                 "daylight": "Yúrugwue Họ́t Sízín Taim"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ürümqi Taim"
               }
             },
             "Uzbekistan": {

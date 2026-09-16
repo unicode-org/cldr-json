@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Բրիտանական ամառային ժամանակ"
-                },
                 "exemplarCity": "Լոնդոն"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Իռլանդական ստանդարտ ժամանակ"
-                },
                 "exemplarCity": "Դուբլին"
               },
               "Isle_of_Man": {
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Ակրիի ժամանակ",
+                "standard": "Ակրիի ստանդարտ ժամանակ",
+                "daylight": "Ակրիի ամառային ժամանակ"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Աֆղանստանի ժամանակ"
@@ -1913,6 +1916,13 @@
                 "daylight": "Բրազիլիայի ամառային ժամանակ"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Բրիտանական ժամանակ",
+                "standard": "Գրինվիչի ժամանակ",
+                "daylight": "Բրիտանական ամառային ժամանակ"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Բրունեյի ժամանակ"
@@ -2086,6 +2096,13 @@
                 "standard": "Գրինվիչի ժամանակ"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Գրենլանդիայի ժամանակ",
+                "standard": "Գրենլանդիայի ստանդարտ ժամանակ",
+                "daylight": "Գրենլանդիայի ամառային ժամանակ"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Արևելյան Գրենլանդիայի ժամանակ",
@@ -2112,7 +2129,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Հավայան-ալեության ստանդարտ ժամանակ"
+                "standard": "Հավայան ժամանակ"
               }
             },
             "Hawaii_Aleutian": {
@@ -2173,6 +2190,13 @@
                 "daylight": "Իրանի ամառային ժամանակ"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Իռլանդական ժամանակ",
+                "standard": "Գրինվիչի ժամանակ",
+                "daylight": "Իռլանդական ստանդարտ ժամանակ"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Իրկուտսկի ժամանակ",
@@ -2192,6 +2216,13 @@
                 "generic": "Ճապոնիայի ժամանակ",
                 "standard": "Ճապոնիայի ստանդարտ ժամանակ",
                 "daylight": "Ճապոնիայի ամառային ժամանակ"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Կամչատկայի ժամանակ",
+                "standard": "Կամչատկայի ստանդարտ ժամանակ",
+                "daylight": "Կամչատկայի ամառային ժամանակ"
               }
             },
             "Kazakhstan": {
@@ -2456,11 +2487,16 @@
                 "daylight": "Սախալինի ամառային ժամանակ"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Սամարայի ժամանակ",
+                "standard": "Սամարայի ստանդարտ ժամանակ",
+                "daylight": "Սամարայի ամառային ժամանակ"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Սամոայի ժամանակ",
-                "standard": "Սամոայի ստանդարտ ժամանակ",
-                "daylight": "Սամոայի ամառային ժամանակ"
+                "standard": "Սամոայի ստանդարտ ժամանակ"
               }
             },
             "Seychelles": {
@@ -2527,6 +2563,13 @@
                 "standard": "Տրուկի ժամանակ"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Թուրքիայի ժամանակ",
+                "standard": "Թուրքիայի ստանդարտ ժամանակ",
+                "daylight": "Թուրքիայի ամառային ժամանակ"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Թուրքմենստանի ժամանակ",
@@ -2544,6 +2587,11 @@
                 "generic": "Ուրուգվայի ժամանակ",
                 "standard": "Ուրուգվայի ստանդարտ ժամանակ",
                 "daylight": "Ուրուգվայի ամառային ժամանակ"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ուրումչիի ժամանակ"
               }
             },
             "Uzbekistan": {

@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Ora {0}",
           "regionFormat-type-daylight": "Ora legale: {0}",
           "regionFormat-type-standard": "Ora standard: {0}",
@@ -108,9 +110,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ora legale del Regno Unito"
-                },
                 "exemplarCity": "Londra"
               },
               "Gibraltar": {
@@ -127,9 +126,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ora legale dell’Irlanda"
-                },
                 "exemplarCity": "Dublino"
               },
               "Isle_of_Man": {
@@ -623,6 +619,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Ora dell’Acre",
+                "standard": "Ora standard dell’Acre",
+                "daylight": "Ora legale dell’Acre"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Ora dell’Afghanistan"
@@ -699,9 +702,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "Ora di Apia",
-                "standard": "Ora standard di Apia",
-                "daylight": "Ora legale di Apia"
+                "generic": "Ora delle Samoa occidentali",
+                "standard": "Ora standard delle Samoa occidentali",
+                "daylight": "Ora legale delle Samoa occidentali"
               }
             },
             "Arabian": {
@@ -803,6 +806,13 @@
                 "generic": "Ora di Brasilia",
                 "standard": "Ora standard di Brasilia",
                 "daylight": "Ora legale di Brasilia"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Ora del Regno Unito",
+                "standard": "Ora del meridiano di Greenwich",
+                "daylight": "Ora legale del Regno Unito"
               }
             },
             "Brunei": {
@@ -993,6 +1003,13 @@
                 "standard": "Ora del meridiano di Greenwich"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Ora della Groenlandia",
+                "standard": "Ora standard della Groenlandia",
+                "daylight": "Ora legale della Groenlandia"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Ora della Groenlandia orientale",
@@ -1019,7 +1036,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Ora standard delle Isole Hawaii-Aleutine"
+                "standard": "Ora standard delle Hawaii"
               }
             },
             "Hawaii_Aleutian": {
@@ -1080,6 +1097,13 @@
                 "daylight": "Ora legale dell’Iran"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Ora dell’Irlanda",
+                "standard": "Ora del meridiano di Greenwich",
+                "daylight": "Ora legale dell’Irlanda"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Ora di Irkutsk",
@@ -1103,9 +1127,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Ora di Petropavlovsk-Kamchatski",
-                "standard": "Ora standard di Petropavlovsk-Kamchatski",
-                "daylight": "Ora legale di Petropavlovsk-Kamchatski"
+                "generic": "Ora della Kamchatka",
+                "standard": "Ora standard della Kamchatka",
+                "daylight": "Ora legale della Kamchatka"
               }
             },
             "Kazakhstan": {
@@ -1157,13 +1181,6 @@
                 "generic": "Ora di Lord Howe",
                 "standard": "Ora standard di Lord Howe",
                 "daylight": "Ora legale di Lord Howe"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Ora di Macao",
-                "standard": "Ora standard di Macao",
-                "daylight": "Ora legale di Macao"
               }
             },
             "Magadan": {
@@ -1386,9 +1403,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Ora di Samoa",
-                "standard": "Ora standard di Samoa",
-                "daylight": "Ora legale di Samoa"
+                "standard": "Ora standard di Samoa"
               }
             },
             "Seychelles": {
@@ -1455,6 +1470,13 @@
                 "standard": "Ora del Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Ora della Turchia",
+                "standard": "Ora standard della Turchia",
+                "daylight": "Ora legale della Turchia"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Ora del Turkmenistan",
@@ -1472,6 +1494,11 @@
                 "generic": "Ora dell’Uruguay",
                 "standard": "Ora standard dell’Uruguay",
                 "daylight": "Ora legale dell’Uruguay"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ora di Ürümqi"
               }
             },
             "Uzbekistan": {

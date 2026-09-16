@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "‎+HH:mm;‎−HH:mm",
           "gmtFormat": "{0} گرینویچ",
-          "gmtZeroFormat": "گرینویچ",
-          "gmtUnknownFormat": "گرینویچ+؟",
+          "gmtFormat-alt-utc": "UTC{0}",
+          "gmtUnknownFormat": "GMT+؟",
+          "gmtUnknownFormat-alt-utc": "UTC+؟",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "وقت {0}",
           "regionFormat-type-daylight": "وقت تابستانی {0}",
           "regionFormat-type-standard": "وقت عادی {0}",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "وقت تابستانی بریتانیا"
-                },
                 "exemplarCity": "لندن"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "وقت عادی ایرلند"
-                },
                 "exemplarCity": "دوبلین"
               },
               "Isle_of_Man": {
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "وقت آکری",
+                "standard": "وقت عادی آکری",
+                "daylight": "وقت تابستانی آکری"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "وقت افغانستان"
@@ -1768,13 +1771,6 @@
                 "generic": "وقت آلاسکا",
                 "standard": "وقت عادی آلاسکا",
                 "daylight": "وقت تابستانی آلاسکا"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "وقت آلماآتا",
-                "standard": "وقت عادی آلماآتا",
-                "daylight": "وقت تابستانی آلماآتا"
               }
             },
             "Amazon": {
@@ -1925,6 +1921,13 @@
                 "generic": "وقت برازیلیا",
                 "standard": "وقت عادی برازیلیا",
                 "daylight": "وقت تابستانی برازیلیا"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "وقت بریتانیا",
+                "standard": "وقت گرینویچ",
+                "daylight": "وقت تابستانی بریتانیا"
               }
             },
             "Brunei": {
@@ -2100,6 +2103,13 @@
                 "standard": "وقت گرینویچ"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "وقت گرینلند",
+                "standard": "وقت عادی گرینلند",
+                "daylight": "وقت تابستانی گرینلند"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "وقت شرق گرینلند",
@@ -2114,11 +2124,6 @@
                 "daylight": "وقت تابستانی غرب گرینلند"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "وقت عادی گوام"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "وقت عادی خلیج فارس"
@@ -2131,7 +2136,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "وقت عادی هاوایی‐الوشن"
+                "standard": "وقت عادی هاوایی"
               }
             },
             "Hawaii_Aleutian": {
@@ -2192,6 +2197,13 @@
                 "daylight": "وقت تابستانی ایران"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "وقت ایرلند",
+                "standard": "وقت گرینویچ",
+                "daylight": "وقت عادی ایرلند"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "وقت ایرکوتسک",
@@ -2215,9 +2227,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "وقت پتروپاولوسک‐کامچاتسکی",
-                "standard": "وقت عادی پتروپاولوسک‐کامچاتسکی",
-                "daylight": "وقت تابستانی پتروپاولوسک‐کامچاتسکی"
+                "generic": "وقت کامچاتسکی",
+                "standard": "وقت عادی کامچاتسکی",
+                "daylight": "وقت تابستانی کامچاتسکی"
               }
             },
             "Kazakhstan": {
@@ -2259,11 +2271,6 @@
                 "standard": "وقت قرقیزستان"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "وقت لانکا"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "وقت جزایر لاین"
@@ -2274,13 +2281,6 @@
                 "generic": "وقت لردهو",
                 "standard": "وقت عادی لردهو",
                 "daylight": "وقت تابستانی لردهو"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "وقت ماکائو",
-                "standard": "وقت عادی ماکائو",
-                "daylight": "وقت تابستانی ماکائو"
               }
             },
             "Magadan": {
@@ -2398,11 +2398,6 @@
                 "daylight": "وقت تابستانی فرناندو دی نورونیا"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "وقت جزایر ماریانای شمالی"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "وقت نووسیبیرسک",
@@ -2482,13 +2477,6 @@
                 "standard": "وقت پیونگ‌یانگ"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "وقت قیزیل‌اوردا",
-                "standard": "وقت عادی قیزیل‌اوردا",
-                "daylight": "وقت تابستانی قیزیل‌اوردا"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "وقت رئونیون"
@@ -2515,9 +2503,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "وقت ساموا",
-                "standard": "وقت عادی ساموا",
-                "daylight": "وقت تابستانی ساموا"
+                "standard": "وقت عادی ساموا"
               }
             },
             "Seychelles": {
@@ -2608,6 +2594,11 @@
                 "generic": "وقت اروگوئه",
                 "standard": "وقت عادی اروگوئه",
                 "daylight": "وقت تابستانی اروگوئه"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "وقت اورومچی"
               }
             },
             "Uzbekistan": {

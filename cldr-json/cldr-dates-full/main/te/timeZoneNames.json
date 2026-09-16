@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} సమయం",
           "regionFormat-type-daylight": "{0} పగటి కాంతి సమయం",
           "regionFormat-type-standard": "{0} ప్రామాణిక సమయం",
@@ -110,7 +112,7 @@
               },
               "Marquesas": {
                 "_type": "zone",
-                "exemplarCity": "మార్క్వేసాస్"
+                "exemplarCity": "మార్క్వేసాస్ దీవులు"
               },
               "Gambier": {
                 "_type": "zone",
@@ -126,7 +128,7 @@
               },
               "Pitcairn": {
                 "_type": "zone",
-                "exemplarCity": "పిట్‌కైర్న్"
+                "exemplarCity": "పిట్‌కైర్న్ దీవులు"
               },
               "Palau": {
                 "_type": "zone",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "బ్రిటీష్ వేసవి సమయం"
-                },
                 "exemplarCity": "లండన్"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ఐరిష్ ప్రామాణిక సమయం"
-                },
                 "exemplarCity": "డబ్లిన్"
               },
               "Isle_of_Man": {
@@ -1777,13 +1773,6 @@
                 "daylight": "అలాస్కా పగటి వెలుతురు సమయం"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "అల్మాటి సమయం",
-                "standard": "అల్మాటి ప్రామాణిక సమయం",
-                "daylight": "అల్మాటి వేసవి సమయం"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "అమెజాన్ సమయం",
@@ -1828,23 +1817,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "సమోవా సమయం",
-                "standard": "సమోవా ప్రామాణిక సమయం",
-                "daylight": "సమోవా పగటి వెలుతురు సమయం"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "అక్వాటు సమయం",
-                "standard": "అక్వాటు ప్రామాణిక సమయం",
-                "daylight": "అక్వాటు వేసవి సమయం"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "అక్టోబె సమయం",
-                "standard": "అక్టోబె ప్రామాణిక సమయం",
-                "daylight": "అక్టోబె వేసవి సమయం"
+                "generic": "పశ్చిమ సమోవా సమయం",
+                "standard": "పశ్చిమ సమోవా ప్రామాణిక సమయం",
+                "daylight": "పశ్చిమ సమోవా పగటి వెలుతురు సమయం"
               }
             },
             "Arabian": {
@@ -1948,6 +1923,13 @@
                 "daylight": "బ్రెజిలియా వేసవి సమయం"
               }
             },
+            "British": {
+              "long": {
+                "generic": "బ్రిటిష్ సమయం",
+                "standard": "గ్రీన్‌విచ్ సగటు సమయం",
+                "daylight": "బ్రిటీష్ వేసవి సమయం"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "బ్రూనై దారుసలామ్ సమయం"
@@ -2007,7 +1989,7 @@
               "long": {
                 "generic": "కుక్ దీవుల సమయం",
                 "standard": "కుక్ దీవుల ప్రామాణిక సమయం",
-                "daylight": "కుక్ దీవుల అర్ధ వేసవి సమయం"
+                "daylight": "కుక్ దీవుల వేసవి సమయం"
               }
             },
             "Cuba": {
@@ -2121,6 +2103,13 @@
                 "standard": "గ్రీన్‌విచ్ సగటు సమయం"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "గ్రీన్‌ల్యాండ్ సమయం",
+                "standard": "గ్రీన్‌ల్యాండ్ ప్రామాణిక సమయం",
+                "daylight": "గ్రీన్‌ల్యాండ్ వేసవి సమయం"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "తూర్పు గ్రీన్‌ల్యాండ్ సమయం",
@@ -2135,11 +2124,6 @@
                 "daylight": "పశ్చిమ గ్రీన్‌ల్యాండ్ వేసవి సమయం"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "గ్వామ్ ప్రామాణిక సమయం"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "గల్ఫ్ ప్రామాణిక సమయం"
@@ -2152,7 +2136,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "హవాయ్-అల్యూషియన్ ప్రామాణిక సమయం"
+                "standard": "హవాయి సమయం"
               }
             },
             "Hawaii_Aleutian": {
@@ -2216,6 +2200,13 @@
                 "daylight": "ఇరాన్ పగటి వెలుతురు సమయం"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "ఐరిష్ సమయం",
+                "standard": "గ్రీన్‌విచ్ సగటు సమయం",
+                "daylight": "ఐరిష్ ప్రామాణిక సమయం"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ఇర్కుట్స్క్ సమయం",
@@ -2239,9 +2230,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "పెట్రోపావ్లోవ్స్క్-కామ్ఛాట్స్కి సమయం",
-                "standard": "పెట్రోపావ్లోవ్స్క్-కామ్ఛాట్స్కి ప్రామాణిక సమయం",
-                "daylight": "పెట్రోపావ్లోవ్స్క్-కామ్ఛాట్స్కి వేసవి సమయం"
+                "generic": "క్యామ్‌చ్యట్కా సమయం",
+                "standard": "క్యామ్‌చ్యట్కా ప్రామాణిక సమయం",
+                "daylight": "క్యామ్‌చ్యట్కా వేసవి సమయం"
               }
             },
             "Kazakhstan": {
@@ -2283,11 +2274,6 @@
                 "standard": "కిర్గిస్తాన్ సమయం"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "లంకా సమయం"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "లైన్ దీవుల సమయం"
@@ -2298,13 +2284,6 @@
                 "generic": "లార్డ్ హోవ్ సమయం",
                 "standard": "లార్డ్ హోవ్ ప్రామాణిక సమయం",
                 "daylight": "లార్డ్ హోవ్ పగటి వెలుతురు సమయం"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "మకావ్ సమయం",
-                "standard": "మకావ్ ప్రామాణిక సమయం",
-                "daylight": "మకావ్ వేసవి సమయం"
               }
             },
             "Magadan": {
@@ -2422,11 +2401,6 @@
                 "daylight": "ఫెర్నాండో డి నొరోన్హా వేసవి సమయం"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "ఉత్తర మారియానా దీవుల సమయం"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "నోవోసిబిర్స్క్ సమయం",
@@ -2506,13 +2480,6 @@
                 "standard": "ఉత్తర కొరియా సమయం"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "కిజిలోర్డా సమయం",
-                "standard": "కిజిలోర్డా ప్రామాణిక సమయం",
-                "daylight": "కిజిలోర్డా వేసవి సమయం"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "రీయూనియన్ సమయం"
@@ -2539,9 +2506,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "సమోవా సమయం",
-                "standard": "సమోవా ప్రామాణిక సమయం",
-                "daylight": "సమోవా పగటి వెలుతురు సమయం"
+                "standard": "అమెరికన్ సమోవా సమయం"
               }
             },
             "Seychelles": {
@@ -2610,9 +2575,9 @@
             },
             "Turkey": {
               "long": {
-                "generic": "టర్కీ సమయం",
-                "standard": "టర్కీ ప్రామాణిక సమయం",
-                "daylight": "టర్కీ వేసవి సమయం"
+                "generic": "తుర్కియే సమయం",
+                "standard": "తుర్కియే ప్రామాణిక సమయం",
+                "daylight": "తుర్కియే వేసవి సమయం"
               }
             },
             "Turkmenistan": {
@@ -2632,6 +2597,11 @@
                 "generic": "ఉరుగ్వే సమయం",
                 "standard": "ఉరుగ్వే ప్రామాణిక సమయం",
                 "daylight": "ఉరుగ్వే వేసవి సమయం"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ఊరూమ్‌చీ సమయం"
               }
             },
             "Uzbekistan": {
@@ -2679,7 +2649,7 @@
             },
             "Wallis": {
               "long": {
-                "standard": "వాలీస్ మరియు ఫుటునా సమయం"
+                "standard": "వాలీస్ & ఫుటునా సమయం"
               }
             },
             "Yakutsk": {

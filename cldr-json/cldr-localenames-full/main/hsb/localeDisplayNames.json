@@ -13,15 +13,41 @@
         "keys": {
           "calendar": "protyka",
           "cf": "format měny",
+          "colAlternate": "rjadowanje bjez symbolow",
+          "colBackwards": "nawopačne rjadowanje akcentow",
+          "colCaseFirst": "rjadowanje po wulkich a małych pismikach",
+          "colCaseLevel": "rjadowanje po wulkopisanju a małopisanju",
           "collation": "rjadowanski slěd",
+          "colNormalization": "norměrowane rjadowanje",
+          "colNumeric": "numeriske rjadowanje",
+          "colReorder": "noworjadowanje pismikow abo blokow",
+          "colStrength": "intensiwnosć sortěrowanja",
           "currency": "měna",
+          "d0": "cil transformacije",
+          "dx": "słownikarske wuwzaća w dźělenju",
           "em": "předstajenje emojija",
+          "fw": "prěni dźeń tydźenja",
+          "h0": "měšana forma",
           "hc": "hodźinowy cyklus (12 vs 24)",
+          "i0": "metoda zapodawanja",
+          "k0": "tastatura",
+          "kv": "najwyši stopjeń ignorowanja",
           "lb": "system łamanja linkow",
           "lw": "łamanje linki w słowje",
+          "m0": "prawidła transformacije",
           "ms": "system měrow",
+          "mu": "měritkowa jednotka",
           "numbers": "ličby",
-          "ss": "přetorhnjenje sady po skrótšence"
+          "rg": "městno za wudospołnjace daty",
+          "s0": "žórło transformować",
+          "sd": "rozrjadowanje na regiony",
+          "ss": "přetorhnjenje sady po skrótšence",
+          "t": "transformować",
+          "t0": "z mašinu přełožene",
+          "timezone": "časowe pasmo",
+          "va": "lokalna warianta",
+          "x": "za priwatne wužiwanje",
+          "x0": "za priwatne wužiwanje transformować"
         },
         "types": {
           "calendar": {
@@ -47,21 +73,39 @@
             "core": "standard",
             "standard": "standardny format měny"
           },
+          "colCaseFirst": {
+            "core": "wulke pismiki"
+          },
           "collation": {
+            "core": "zhuyin",
             "ducet": "rjadowanski slěd po Unicode",
-            "core": "standardne",
             "search": "powšitkowne pytanje",
             "standard": "standardowy rjadowanski slěd"
+          },
+          "colReorder": {
+            "core": "symbol"
+          },
+          "colStrength": {
+            "core": "zakładne pismiki, akcenty, wulkopisanje a małopisanje, warianty"
+          },
+          "d0": {
+            "fwidth": "w połnej šěrokosći",
+            "hwidth": "napoł šěroke"
           },
           "em": {
             "core": "tekst"
           },
           "hc": {
-            "h11": "12-hodźinowy cyklus (0-11)",
+            "c12": "12-hodźinowy cyklus",
             "core": "24 (1–24)",
+            "c24": "24-hodźinowy cyklus",
+            "h11": "12-hodźinowy cyklus (0-11)",
             "h12": "12-hodźinowy cyklus (1-12)",
             "h23": "24-hodźinowy cyklus (0-23)",
             "h24": "24-hodźinowy cyklus (1-24)"
+          },
+          "kv": {
+            "core": "shift prózdnota, interpunkcija, symbole bjez woznama měnow"
           },
           "lb": {
             "loose": "swobodny stil łamanja linkow",
@@ -72,6 +116,10 @@
           "lw": {
             "core": "w sadach"
           },
+          "m0": {
+            "bgn": "US-BGN-transliteracija",
+            "ungegn": "UN-GEGN-transliteracija"
+          },
           "ms": {
             "metric": "metriski system",
             "core": "ameriski",
@@ -81,6 +129,7 @@
           "numbers": {
             "arab": "arabsko-indiske cyfry",
             "arabext": "rozšěrjene arabsko-indiske cyfry",
+            "core": "tradicionelne ličby",
             "armn": "armenske cyfry",
             "armnlow": "armenske cyfry, małe pisane",
             "beng": "bengalske cyfry",
@@ -109,6 +158,7 @@
             "mlym": "malayalamske cyfry",
             "mtei": "meetei-mayekske cyfry",
             "mymr": "burmaske cyfry",
+            "native": "za kraj charakteristiske ličby",
             "olck": "ol-chikiske cyfry",
             "orya": "oriya-cyfry",
             "roman": "romske cyfry",
@@ -122,7 +172,17 @@
           },
           "ss": {
             "core": "haj"
+          },
+          "t0": {
+            "und": "njespecifiski přełožk z mašinu"
+          },
+          "va": {
+            "core": "POSIX-warianta"
           }
+        },
+        "typeValues": {
+          "no": "ně",
+          "yes": "haj"
         },
         "codePatterns": {
           "language": "rěč: {0}",

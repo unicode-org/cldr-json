@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "‎+HH:mm;-HH:mm‎",
           "gmtFormat": "GMT{0}‎",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "שעון {0}",
           "regionFormat-type-daylight": "שעון {0} (קיץ)",
           "regionFormat-type-standard": "שעון {0} (חורף)",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "שעון קיץ בריטניה"
-                },
                 "exemplarCity": "לונדון"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "שעון קיץ אירלנד"
-                },
                 "exemplarCity": "דבלין"
               },
               "Isle_of_Man": {
@@ -1131,7 +1127,7 @@
               },
               "Bahia_Banderas": {
                 "_type": "zone",
-                "exemplarCity": "באהיה בנדרס"
+                "exemplarCity": "באהיה דה בנדרס"
               },
               "Ojinaga": {
                 "_type": "zone",
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "שעון אקרי",
+                "standard": "שעון אקרי (חורף)",
+                "daylight": "שעון אקרי (קיץ)"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "שעון אפגניסטן"
@@ -1768,13 +1771,6 @@
                 "generic": "שעון אלסקה",
                 "standard": "שעון אלסקה (חורף)",
                 "daylight": "שעון אלסקה (קיץ)"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "שעון אלמטי",
-                "standard": "שעון אלמטי (חורף)",
-                "daylight": "שעון אלמטי (קיץ)"
               }
             },
             "Amazon": {
@@ -1824,20 +1820,6 @@
                 "generic": "שעון אפיה",
                 "standard": "שעון אפיה (חורף)",
                 "daylight": "שעון אפיה (קיץ)"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "שעון אקטאו",
-                "standard": "שעון אקטאו (חורף)",
-                "daylight": "שעון אקטאו (קיץ)"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "שעון אקטובה",
-                "standard": "שעון אוקטובה (חורף)",
-                "daylight": "שעון אוקטובה (קיץ)"
               }
             },
             "Arabian": {
@@ -1939,6 +1921,13 @@
                 "generic": "שעון ברזיליה",
                 "standard": "שעון ברזיליה (חורף)",
                 "daylight": "שעון ברזיליה (קיץ)"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "שעון בריטניה (חורף)",
+                "standard": "שעון גריניץ׳‏",
+                "daylight": "שעון בריטניה (קיץ)"
               }
             },
             "Brunei": {
@@ -2114,6 +2103,13 @@
                 "standard": "שעון גריניץ׳‏"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "שעון גרינלנד",
+                "standard": "שעון גרינלנד (חורף)",
+                "daylight": "שעון גרינלנד (קיץ)"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "שעון מזרח גרינלנד",
@@ -2128,11 +2124,6 @@
                 "daylight": "שעון מערב גרינלנד (קיץ)"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "שעון גואם"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "שעון מדינות המפרץ"
@@ -2145,7 +2136,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "שעון האיים האלאוטיים הוואי (חורף)"
+                "standard": "שעון הוואי (חורף)"
               }
             },
             "Hawaii_Aleutian": {
@@ -2204,6 +2195,13 @@
                 "generic": "שעון איראן",
                 "standard": "שעון איראן (חורף)",
                 "daylight": "שעון איראן (קיץ)"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "שעון אירלנד (חורף)",
+                "standard": "שעון גריניץ׳‏",
+                "daylight": "שעון אירלנד (קיץ)"
               }
             },
             "Irkutsk": {
@@ -2283,13 +2281,6 @@
                 "generic": "שעון אי הלורד האו",
                 "standard": "שעון אי הלורד האו (חורף)",
                 "daylight": "שעון אי הלורד האו (קיץ)"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "שעון מקאו",
-                "standard": "שעון חורף מקאו",
-                "daylight": "שעון קיץ מקאו"
               }
             },
             "Magadan": {
@@ -2407,11 +2398,6 @@
                 "daylight": "שעון פרננדו די נורוניה (קיץ)"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "שעון איי מריאנה הצפוניים"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "שעון נובוסיבירסק",
@@ -2491,13 +2477,6 @@
                 "standard": "שעון פיונגיאנג"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "שעון קיזילורדה",
-                "standard": "שעון קיזילורדה (חורף)",
-                "daylight": "שעון קיזילורדה (קיץ)"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "שעון ראוניון"
@@ -2524,9 +2503,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "שעון סמואה",
-                "standard": "שעון סמואה (חורף)",
-                "daylight": "שעון סמואה (קיץ)"
+                "standard": "שעון סמואה (חורף)"
               }
             },
             "Seychelles": {
@@ -2593,6 +2570,13 @@
                 "standard": "שעון צ׳וק"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "שעון טורקיה",
+                "standard": "שעון טורקיה (חורף)",
+                "daylight": "שעון טורקיה (קיץ)"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "שעון טורקמניסטן",
@@ -2610,6 +2594,11 @@
                 "generic": "שעון אורוגוואי",
                 "standard": "שעון אורוגוואי (חורף)",
                 "daylight": "שעון אורוגוואי (קיץ)"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "שעון אורומצ׳י"
               }
             },
             "Uzbekistan": {

@@ -25,18 +25,34 @@
           "collation": "kolejność sortowania",
           "colNormalization": "sortowanie znormalizowane",
           "colNumeric": "sortowanie numeryczne",
+          "colReorder": "zmiana kolejności skryptów/bloków",
           "colStrength": "siła sortowania",
           "currency": "waluta",
+          "d0": "cel transformacji",
+          "dx": "wyłączenia podziału słownikowego",
           "em": "prezentacja emoji",
+          "fw": "pierwszy dzień tygodnia",
+          "h0": "zmieszane",
           "hc": "cykl (12- lub 24-godzinny)",
+          "i0": "metoda wprowadzania",
+          "k0": "klawiatura",
+          "kv": "najwyższy ignorowany",
           "lb": "styl podziału wiersza",
           "lw": "podział wierszy wewnątrz wyrazów",
+          "m0": "reguły transformacji",
           "ms": "system miar",
+          "mu": "jednostka miary",
           "numbers": "cyfry",
+          "rg": "region dla danych uzupełniających",
+          "s0": "źródło transformacji",
+          "sd": "podział regionalny",
           "ss": "koniec zdania po skrócie",
+          "t": "transformacja",
+          "t0": "tłumaczenie maszynowe",
           "timezone": "strefa czasowa",
           "va": "wariant regionalny",
-          "x": "do użytku prywatnego"
+          "x": "do użytku prywatnego",
+          "x0": "transformacja niestandardowa"
         },
         "types": {
           "calendar": {
@@ -75,6 +91,7 @@
           },
           "colCaseFirst": {
             "lower": "Sortowanie od małych liter",
+            "core": "wielkie litery",
             "no": "Sortowanie z zachowaniem zwykłej kolejności wielkości liter",
             "upper": "Sortowanie od wielkich liter"
           },
@@ -107,8 +124,12 @@
             "no": "Oddzielne sortowanie cyfr",
             "yes": "Numeryczne sortowanie cyfr"
           },
+          "colReorder": {
+            "core": "symbol"
+          },
           "colStrength": {
             "identical": "Sortuj wszystko",
+            "core": "podstawa, akcenty, wielkość liter, warianty",
             "primary": "Sortowanie tylko liter podstawowych",
             "quaternary": "Sortowanie znaków akcentowanych/wielkości liter/szerokości/kana",
             "secondary": "Sortowanie znaków akcentowanych",
@@ -123,11 +144,16 @@
             "core": "tekst"
           },
           "hc": {
-            "h11": "system 12-godzinny (0–11)",
+            "c12": "system 12-godzinny",
             "core": "24 (1–24)",
+            "c24": "system 24-godzinny",
+            "h11": "system 12-godzinny (0–11)",
             "h12": "system 12-godzinny (1–12)",
             "h23": "system 24-godzinny (0–23)",
             "h24": "system 24-godzinny (1–24)"
+          },
+          "kv": {
+            "core": "przesunięcie: spacje, interpunkcja, symbole inne niż waluty"
           },
           "lb": {
             "loose": "luźny styl podziału wiersza",
@@ -151,6 +177,7 @@
           "numbers": {
             "arab": "cyfry arabsko-indyjskie",
             "arabext": "rozszerzone cyfry arabsko-indyjskie",
+            "core": "cyfry tradycyjne",
             "armn": "cyfry ormiańskie",
             "armnlow": "cyfry ormiańskie (małe litery)",
             "beng": "cyfry bengalskie",
@@ -196,7 +223,17 @@
           },
           "ss": {
             "core": "wł."
+          },
+          "t0": {
+            "und": "nieokreślone tłumaczenie maszynowe"
+          },
+          "va": {
+            "core": "wariant POSIX"
           }
+        },
+        "typeValues": {
+          "no": "wył.",
+          "yes": "wł."
         },
         "codePatterns": {
           "language": "Język: {0}",

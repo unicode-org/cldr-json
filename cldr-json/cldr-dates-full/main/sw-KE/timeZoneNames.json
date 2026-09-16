@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT {0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Saa za {0}",
           "regionFormat-type-daylight": "Saa za Mchana za {0}",
           "regionFormat-type-standard": "Saa za wastani za {0}",
@@ -69,18 +71,6 @@
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Saa za Majira ya Joto za Uingereza"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Saa za Majira ya Joto za Ayalandi"
-                }
               },
               "Chisinau": {
                 "_type": "zone",
@@ -417,6 +407,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Saa za Acre",
+                "standard": "Saa Wastani za Acre",
+                "daylight": "Saa za Acre Majira ya Joto"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Saa za Afghanistani"
@@ -493,7 +490,7 @@
             },
             "Apia": {
               "long": {
-                "generic": "Saa za Apia",
+                "generic": "Saa za Samoa Magharibi",
                 "standard": "Saa za Wastani za Apia",
                 "daylight": "Saa za Mchana za Apia"
               }
@@ -597,6 +594,13 @@
                 "generic": "Saa za Brazili",
                 "standard": "Saa za Wastani za Brazili",
                 "daylight": "Saa za Majira ya Joto za Brazili"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Saa za Uingereza",
+                "standard": "Saa za Greenwich",
+                "daylight": "Saa za Majira ya Joto za Uingereza"
               }
             },
             "Brunei": {
@@ -772,6 +776,13 @@
                 "standard": "Saa za Greenwich"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Saa za Greenland",
+                "standard": "Saa Wastani za Greenland",
+                "daylight": "Saa Wastani za Greenland Majira ya Joto"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Saa za Greenland Mashariki",
@@ -798,13 +809,13 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Saa za Wastani za Hawaii-Aleutian"
+                "standard": "Saa za Hawaii"
               }
             },
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "Saa za Hawaii-Aleutian",
-                "standard": "Saa za Wastani za Hawaii-Aleutian",
+                "standard": "Saa Wastani za Hawaii-Aleutian",
                 "daylight": "Saa za Mchana za Hawaii-Aleutian"
               }
             },
@@ -857,6 +868,13 @@
                 "generic": "Saa za Irani",
                 "standard": "Saa za Wastani za Irani",
                 "daylight": "Saa za Mchana za Irani"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Saa za Ayalandi",
+                "standard": "Saa za Greenwich",
+                "daylight": "Saa za Majira ya Joto za Ayalandi"
               }
             },
             "Irkutsk": {
@@ -1158,9 +1176,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Saa za Samoa",
-                "standard": "Saa za Wastani za Samoa",
-                "daylight": "Saa za Mchana za Samoa"
+                "standard": "Saa za Wastani za Samoa"
               }
             },
             "Seychelles": {
@@ -1227,6 +1243,13 @@
                 "standard": "Saa za Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Saa za Uturuki",
+                "standard": "Saa Wastani za Uturuki",
+                "daylight": "Saa za Uturuki Majira ya Joto"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Saa za Turkmenistani",
@@ -1244,6 +1267,11 @@
                 "generic": "Saa za Urugwai",
                 "standard": "Saa za Wastani za Urugwai",
                 "daylight": "Saa za Majira ya Joto za Urugwai"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Saa za Urumqi"
               }
             },
             "Uzbekistan": {

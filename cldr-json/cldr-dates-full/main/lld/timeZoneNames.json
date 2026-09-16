@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Ora: {0}",
           "regionFormat-type-daylight": "Ora da d’isté: {0}",
           "regionFormat-type-standard": "Ora standard: {0}",
@@ -27,7 +29,7 @@
               },
               "Unknown": {
                 "_type": "zone",
-                "exemplarCity": "Cité nia conesciüda"
+                "exemplarCity": "Posiziun nia reconesciüda"
               }
             },
             "Europe": {
@@ -57,20 +59,11 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ora da d’isté britanica"
-                },
                 "exemplarCity": "Londra"
               },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Atene"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Ora da d’isté dl’Irlanda"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -513,6 +506,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Ora de Acre",
+                "standard": "Ora standard de Acre",
+                "daylight": "Ora da d’isté de Acre"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Ora dl Afghanistan"
@@ -582,9 +582,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "Ora de Apia",
-                "standard": "Ora standard de Apia",
-                "daylight": "Ora da d’isté de Apia"
+                "generic": "Ora dles Somoa ozidentales",
+                "standard": "Ora standard dles Somoa ozidentales",
+                "daylight": "Ora da d’isté dles Somoa ozidentales"
               }
             },
             "Arabian": {
@@ -688,9 +688,15 @@
                 "daylight": "Ora da d’isté de Brasilia"
               }
             },
+            "British": {
+              "long": {
+                "standard": "Ora mesana de Greenwich",
+                "daylight": "Ora da d’isté britanica"
+              }
+            },
             "Brunei": {
               "long": {
-                "standard": "Ora dl Brunei Darussalam"
+                "standard": "Ora dl Brunei"
               }
             },
             "Cape_Verde": {
@@ -747,7 +753,7 @@
               "long": {
                 "generic": "Ora dles Isoles Cook",
                 "standard": "Ora standard dles Isoles Cook",
-                "daylight": "Ora da d’isté mesana dles Isoles Cook"
+                "daylight": "Ora da d’isté dles Isoles Cook"
               }
             },
             "Cuba": {
@@ -764,12 +770,12 @@
             },
             "DumontDUrville": {
               "long": {
-                "standard": "Ora de Dumont-d’Urville"
+                "standard": "Ora de Dumont d’Urville"
               }
             },
             "East_Timor": {
               "long": {
-                "standard": "Ora de Timor Ost"
+                "standard": "Ora de Timor-Leste"
               }
             },
             "Easter": {
@@ -831,7 +837,7 @@
             },
             "French_Southern": {
               "long": {
-                "standard": "Ora di Teritori franzesc dl Süd y dl’Antartica"
+                "standard": "Ora di Teritori franzesc dl Süd"
               }
             },
             "Galapagos": {
@@ -859,6 +865,13 @@
             "GMT": {
               "long": {
                 "standard": "Ora mesana de Greenwich"
+              }
+            },
+            "Greenland": {
+              "long": {
+                "generic": "Ora dla Groenlandia",
+                "standard": "Ora standard dla Groenlandia",
+                "daylight": "Ora da d’isté dla Groenlandia"
               }
             },
             "Greenland_Eastern": {
@@ -906,9 +919,9 @@
             },
             "Hovd": {
               "long": {
-                "generic": "Ora de Hovd",
-                "standard": "Ora standard de Hovd",
-                "daylight": "Ora da d’isté de Hovd"
+                "generic": "Ora de Khovd",
+                "standard": "Ora standard de Khovd",
+                "daylight": "Ora da d’isté de Khovd"
               }
             },
             "India": {
@@ -948,6 +961,12 @@
                 "daylight": "Ora da d’isté dl Iran"
               }
             },
+            "Irish": {
+              "long": {
+                "standard": "Ora mesana de Greenwich",
+                "daylight": "Ora da d’isté dl’Irlanda"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Ora de Irkutsk",
@@ -967,6 +986,13 @@
                 "generic": "Ora dl Iapan",
                 "standard": "Ora standard dl Iapan",
                 "daylight": "Ora da d’isté dl Iapan"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Ora de Kamchatka",
+                "standard": "Ora standard de Kamchatka",
+                "daylight": "Ora da d’isté de Kamchatka"
               }
             },
             "Kazakhstan": {
@@ -1206,12 +1232,12 @@
             },
             "Ponape": {
               "long": {
-                "standard": "Ora de Ponape"
+                "standard": "Ora de Pohnpei"
               }
             },
             "Pyongyang": {
               "long": {
-                "standard": "Ora de Pjöngjang"
+                "standard": "Ora dla Corea dl Nord"
               }
             },
             "Reunion": {
@@ -1231,11 +1257,16 @@
                 "daylight": "Ora da d’isté de Sachalin"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Ora de Samara",
+                "standard": "Ora standard de Samara",
+                "daylight": "Ora da d’isté de Samara"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Ora de Samoa",
-                "standard": "Ora standard de Samoa",
-                "daylight": "Ora da d’isté de Samoa"
+                "standard": "Ora standard dles Samoa americanes"
               }
             },
             "Seychelles": {
@@ -1275,9 +1306,9 @@
             },
             "Taipei": {
               "long": {
-                "generic": "Ora de Taipei",
-                "standard": "Ora standard de Taipei",
-                "daylight": "Ora da d’isté de Taipei"
+                "generic": "Ora dl Taiwan",
+                "standard": "Ora standard dl Taiwan",
+                "daylight": "Ora da d’isté dl Taiwan"
               }
             },
             "Tajikistan": {
@@ -1302,6 +1333,13 @@
                 "standard": "Ora dl Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Ora dla Turchia",
+                "standard": "Ora standard dla Turchia",
+                "daylight": "Ora da d’isté dla Turchia"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Ora dl Turkmenistan",
@@ -1319,6 +1357,11 @@
                 "generic": "Ora dl Uruguay",
                 "standard": "Ora standard dl Uruguay",
                 "daylight": "Ora da d’isté dl Uruguay"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ora de Ürümqi"
               }
             },
             "Uzbekistan": {

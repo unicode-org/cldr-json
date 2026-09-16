@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Amser {0}",
           "regionFormat-type-daylight": "Amser Haf {0}",
           "regionFormat-type-standard": "Amser Safonol {0}",
@@ -87,20 +89,14 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Amser Haf Prydain"
-                },
                 "exemplarCity": "Llundain"
               },
-              "Guernsey": {
+              "Athens": {
                 "_type": "zone",
-                "exemplarCity": "Ynys y Garn"
+                "exemplarCity": "Athen"
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Amser Safonol Iwerddon"
-                },
                 "exemplarCity": "Dulyn"
               },
               "Isle_of_Man": {
@@ -125,7 +121,7 @@
               },
               "Istanbul": {
                 "_type": "zone",
-                "exemplarCity": "Caergystennin"
+                "exemplarCity": "Istanbwl"
               },
               "Kiev": {
                 "_type": "zone",
@@ -373,10 +369,6 @@
                 "_type": "zone",
                 "exemplarCity": "Kathmandu"
               },
-              "Gaza": {
-                "_type": "zone",
-                "exemplarCity": "Gasa"
-              },
               "Saigon": {
                 "_type": "zone",
                 "exemplarCity": "Dinas Hô Chi Minh"
@@ -450,6 +442,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Amser Acrys",
+                "standard": "Amser Safonol Acrys",
+                "daylight": "Amser Haf Acrys"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Amser Afghanistan"
@@ -623,6 +622,13 @@
                 "generic": "Amser Brasília",
                 "standard": "Amser Safonol Brasília",
                 "daylight": "Amser Haf Brasília"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Amser Prydain",
+                "standard": "Amser Safonol Greenwich",
+                "daylight": "Amser Haf Prydain"
               }
             },
             "Brunei": {
@@ -816,6 +822,13 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Amser yr Ynys Las",
+                "standard": "Amser Safonol yr Ynys Las",
+                "daylight": "Amser Haf yr Ynys Las"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Amser Dwyrain yr Ynys Las",
@@ -842,7 +855,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Amser Safonol Hawaii-Aleutian"
+                "standard": "Amser Hawaii"
               }
             },
             "Hawaii_Aleutian": {
@@ -903,6 +916,13 @@
                 "daylight": "Amser Haf Iran"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Amser Iwerddon",
+                "standard": "Amser Safonol Greenwich",
+                "daylight": "Amser Safonol Iwerddon"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Amser Irkutsk",
@@ -922,6 +942,13 @@
                 "generic": "Amser Japan",
                 "standard": "Amser Safonol Japan",
                 "daylight": "Amser Haf Japan"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Amser Kamchatka",
+                "standard": "Amser Safonol Kamchatka",
+                "daylight": "Amser Haf Kamchatka"
               }
             },
             "Kazakhstan": {
@@ -1166,7 +1193,7 @@
             },
             "Pyongyang": {
               "long": {
-                "standard": "Amser Pyongyang"
+                "standard": "Amser Gogledd Korea"
               }
             },
             "Reunion": {
@@ -1195,9 +1222,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Amser Samoa",
-                "standard": "Amser Safonol Samoa",
-                "daylight": "Amser Haf Samoa"
+                "standard": "Amser Safonol Samoa"
               }
             },
             "Seychelles": {
@@ -1237,9 +1262,9 @@
             },
             "Taipei": {
               "long": {
-                "generic": "Amser Taipei",
-                "standard": "Amser Safonol Taipei",
-                "daylight": "Amser Haf Taipei"
+                "generic": "Amser Taiwan",
+                "standard": "Amser Safonol Taiwan",
+                "daylight": "Amser Haf Taiwan"
               }
             },
             "Tajikistan": {
@@ -1264,6 +1289,13 @@
                 "standard": "Amser Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Amser Türkiye",
+                "standard": "Amser Safonol Türkiye",
+                "daylight": "Amser Haf Türkiye"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Amser Tyrcmenistan",
@@ -1281,6 +1313,11 @@
                 "generic": "Amser Uruguay",
                 "standard": "Amser Safonol Uruguay",
                 "daylight": "Amser Haf Uruguay"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Amser Ürümqi"
               }
             },
             "Uzbekistan": {

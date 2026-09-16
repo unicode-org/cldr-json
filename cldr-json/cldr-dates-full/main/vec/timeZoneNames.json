@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "UTC{0}",
-          "gmtZeroFormat": "UTC",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "UTC+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Ora {0}",
           "regionFormat-type-daylight": "Ora d’istà {0}",
           "regionFormat-type-standard": "Ora normale {0}",
@@ -73,9 +75,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ora d’istà britànega"
-                },
                 "exemplarCity": "Londra"
               },
               "Gibraltar": {
@@ -85,12 +84,6 @@
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Atene"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Ora d’istà irlandeze"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -1198,6 +1191,12 @@
                 "daylight": "Ora d’istà de Brazilia"
               }
             },
+            "British": {
+              "long": {
+                "standard": "Ora de’l meridian de Greenwich",
+                "daylight": "Ora d’istà britànega"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Ora de’l Brunéi"
@@ -1456,6 +1455,12 @@
                 "generic": "Ora de l’Iran",
                 "standard": "Ora normale de l’Iran",
                 "daylight": "Ora d’istà de l’Iran"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "Ora de’l meridian de Greenwich",
+                "daylight": "Ora d’istà irlandeze"
               }
             },
             "Irkutsk": {
@@ -1743,9 +1748,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Ora de le Ìzole Samòa",
-                "standard": "Ora normale de le Ìzole Samòa",
-                "daylight": "Ora d’istà de le Ìzole Samòa"
+                "standard": "Ora normale de le Ìzole Samòa"
               }
             },
             "Seychelles": {

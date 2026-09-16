@@ -316,6 +316,10 @@
               "short": "ahmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "/",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1}, {0}",
               "long": "{1}, {0}",
               "medium": "{1}, {0}",
@@ -373,19 +377,26 @@
                 "yyyyQQQQ": "QQQQ G y"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1}, {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1}, {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "B h – B h",
@@ -491,6 +502,10 @@
                   "d": "E, d MMM – E, d MMM",
                   "M": "E, d MMM – E, d MMM"
                 },
+                "MMMMd": {
+                  "d": "d – d MMMM",
+                  "M": "d MMMM – d MMMM"
+                },
                 "y": {
                   "y": "y–y G"
                 },
@@ -538,8 +553,8 @@
             },
             "dateTimeFormats-relative": {
               "standard": {
-                "full": "{1}, {0}",
-                "long": "{1}, {0}",
+                "full": "{1} {0} बजे",
+                "long": "{1} {0} बजे",
                 "medium": "{1}, {0}",
                 "short": "{1}, {0}"
               }
@@ -559,6 +574,7 @@
                   "8": "अग॰",
                   "9": "सित॰",
                   "10": "अक्टू॰",
+                  "10-alt-variant": "अक्तू॰",
                   "11": "नव॰",
                   "12": "दिस॰"
                 },
@@ -587,6 +603,7 @@
                   "8": "अगस्त",
                   "9": "सितंबर",
                   "10": "अक्टूबर",
+                  "10-alt-variant": "अक्तूबर",
                   "11": "नवंबर",
                   "12": "दिसंबर"
                 }
@@ -603,6 +620,7 @@
                   "8": "अग॰",
                   "9": "सित॰",
                   "10": "अक्टू॰",
+                  "10-alt-variant": "अक्तू॰",
                   "11": "नव॰",
                   "12": "दिस॰"
                 },
@@ -631,6 +649,7 @@
                   "8": "अगस्त",
                   "9": "सितंबर",
                   "10": "अक्टूबर",
+                  "10-alt-variant": "अक्तूबर",
                   "11": "नवंबर",
                   "12": "दिसंबर"
                 }
@@ -861,6 +880,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "-",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -915,19 +938,26 @@
                 "yw-count-other": "Y 'week' w"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1}, {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1}, {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",

@@ -26,18 +26,34 @@
           "collation": "sorteringsordning",
           "colNormalization": "Normaliserad sortering",
           "colNumeric": "Numerisk sortering",
+          "colReorder": "ändrad ordning för skript/block",
           "colStrength": "Sorteringsstyrka",
           "currency": "valuta",
+          "d0": "omvandla mål",
+          "dx": "undantag för brytning enligt ordlista",
           "em": "emojipresentation",
+          "fw": "första veckodag",
+          "h0": "inblandat",
           "hc": "12- eller 24-timmarsklocka",
+          "i0": "inmatningsmetod",
+          "k0": "tangentbord",
+          "kv": "högsta ignorerade",
           "lb": "radbrytningstyp",
           "lw": "radbrytningar inom ord",
+          "m0": "omvandlingsregler",
           "ms": "enhetssystem",
+          "mu": "måttenhet",
           "numbers": "siffror",
+          "rg": "region för tilläggsdata",
+          "s0": "omvandla källan",
+          "sd": "region och underdivision",
           "ss": "meningsgräns efter förkortn.",
+          "t": "omvandla",
+          "t0": "maskinöversatt",
           "timezone": "Tidszon",
           "va": "Språkvariant",
-          "x": "privat"
+          "x": "privat",
+          "x0": "privat omvandla"
         },
         "types": {
           "calendar": {
@@ -76,6 +92,7 @@
           },
           "colCaseFirst": {
             "lower": "Sortera gemener först",
+            "core": "versaler",
             "no": "Ordna normalt efter skiftläge",
             "upper": "Sortera versaler först"
           },
@@ -109,8 +126,12 @@
             "no": "Sortera siffror för sig",
             "yes": "Sortera siffror numeriskt"
           },
+          "colReorder": {
+            "core": "symbol"
+          },
           "colStrength": {
             "identical": "Sortera alla",
+            "core": "grundbokstäver, accenter, skiftläge, varianter",
             "primary": "Sortera endast efter grundbokstäver",
             "quaternary": "Sortera efter accent/skiftläge/bredd/kana",
             "secondary": "Sortera accenter",
@@ -125,11 +146,16 @@
             "core": "text"
           },
           "hc": {
-            "h11": "12-timmarsklocka (0–11)",
+            "c12": "12-timmarsklocka",
             "core": "24 (1–24)",
+            "c24": "24-timmarsklocka",
+            "h11": "12-timmarsklocka (0–11)",
             "h12": "12-timmarsklocka (1–12)",
             "h23": "24-timmarsklocka (0–23)",
             "h24": "24-timmarsklocka (1–24)"
+          },
+          "kv": {
+            "core": "flytta blanksteg, skiljetecken, symboler utom valutatecken"
           },
           "lb": {
             "loose": "fri radbrytning",
@@ -154,6 +180,7 @@
             "ahom": "ahom-siffror",
             "arab": "indo-arabiska siffror",
             "arabext": "utökade indo-arabiska siffror",
+            "core": "traditionella taltecken",
             "armn": "armeniska taltecken",
             "armnlow": "gemena armeniska taltecken",
             "bali": "balinesiska siffror",
@@ -171,7 +198,7 @@
             "gong": "gunjalagondiska siffror",
             "gonm": "masaramgondiska siffror",
             "grek": "grekiska taltecken",
-            "greklow": "små grekiska taltecken",
+            "greklow": "grekiska gemena taltecken",
             "gujr": "gujaratiska siffror",
             "guru": "gurmukhiska siffror",
             "hanidec": "kinesiska decimaltal",
@@ -204,7 +231,7 @@
             "mong": "mongoliska siffror",
             "mroo": "mro-siffror",
             "mtei": "meetei mayek-siffror",
-            "mymr": "burmesiska siffror",
+            "mymr": "myanmariska siffror",
             "mymrshan": "burmesiska shan-siffror",
             "mymrtlng": "burmesiska tai laing-siffror",
             "native": "språkspecifika siffror",
@@ -214,7 +241,7 @@
             "osma": "osmanya-siffror",
             "rohg": "hanifisiffror",
             "roman": "romerska taltecken",
-            "romanlow": "små romerska taltecken",
+            "romanlow": "romerska gemena taltecken",
             "saur": "saurashtra-siffror",
             "shrd": "sharada-siffror",
             "sind": "khudawidiska siffror",
@@ -236,7 +263,17 @@
           },
           "ss": {
             "core": "på"
+          },
+          "t0": {
+            "und": "ospecificerad maskinöversättning"
+          },
+          "va": {
+            "core": "POSIX-variant"
           }
+        },
+        "typeValues": {
+          "no": "av",
+          "yes": "på"
         },
         "codePatterns": {
           "language": "språk: {0}",

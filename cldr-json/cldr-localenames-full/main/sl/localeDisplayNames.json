@@ -16,27 +16,43 @@
           "gbwls": "Wales"
         },
         "keys": {
-          "calendar": "koledar",
-          "cf": "oblika zapisa valute",
+          "calendar": "Koledar",
+          "cf": "Oblika zapisa valute",
           "colAlternate": "Razvrščanje s prezrtimi znaki",
           "colBackwards": "Razvrščanje z obratnimi naglasi",
           "colCaseFirst": "Razvrščanje velike črke/male črke",
           "colCaseLevel": "Razvrščanje, občutljivo na velike/male črke",
-          "collation": "razvrščanje",
+          "collation": "Razvrščanje",
           "colNormalization": "Normalizirano razvrščanje",
           "colNumeric": "Številsko razvrščanje",
+          "colReorder": "Preurejanje skript/blokov",
           "colStrength": "Moč razvrščanja",
-          "currency": "valuta",
+          "currency": "Valuta",
+          "d0": "Ciljna oblika",
+          "dx": "Izjeme pri deljenju besed",
           "em": "Prikaz emodžija",
-          "hc": "urni prikaz (12 ali 24)",
+          "fw": "Prvi dan v tednu",
+          "h0": "Vmešano",
+          "hc": "Urni prikaz (12 ali 24)",
+          "i0": "Način vosa",
+          "k0": "Tipkovnica",
+          "kv": "Najvišja prezrta vrednost",
           "lb": "Slog preloma vrstic",
           "lw": "Prelomi vrstic znotraj besed",
-          "ms": "merski sistem",
-          "numbers": "številke",
+          "m0": "Pravila pretvorbe",
+          "ms": "Merski sistem",
+          "mu": "Merska enota",
+          "numbers": "Številke",
+          "rg": "Regija za dodatne podatke",
+          "s0": "Izvorna oblika",
+          "sd": "Podenota regije",
           "ss": "Konec stavka po okrajšavi",
+          "t": "Pretvorba",
+          "t0": "Strojno prevedeno",
           "timezone": "Časovni pas",
           "va": "Različica območnih nastavitev",
-          "x": "Zasebna-uporaba"
+          "x": "Zasebna uporaba",
+          "x0": "Pretvorba za zasebno uporabo"
         },
         "types": {
           "calendar": {
@@ -75,6 +91,7 @@
           },
           "colCaseFirst": {
             "lower": "Razvrščanje malih črk najprej",
+            "core": "velike črke",
             "no": "Razvrščanje v običajnem zaporedju velikih/malih črk",
             "upper": "Razvrščanje velikih črk najprej"
           },
@@ -92,7 +109,7 @@
             "phonebook": "razvrščanje po sistemu telefonskega imenika",
             "phonetic": "fonetično razvrščanje",
             "pinyin": "razvrščanje po sistemu pinjin",
-            "search": "Splošno iskanje",
+            "search": "splošno iskanje",
             "searchjl": "Iskanje po začetnem soglasniku hangul",
             "standard": "standardno razvrščanje",
             "stroke": "razvrščanje po zaporedju pisanja pismenk",
@@ -106,35 +123,44 @@
           },
           "colNumeric": {
             "no": "Ločeno razvrščanje številk",
-            "yes": "Številsko razvrščanje števk"
+            "yes": "številsko razvrščanje števk"
+          },
+          "colReorder": {
+            "core": "simbol"
           },
           "colStrength": {
             "identical": "Razvrščanje vsega",
+            "core": "osnovne črke, naglasi, velikost črk, različice",
             "primary": "Razvrščanje samo osnovnih črk",
             "quaternary": "Razvrščanje po naglasih/velikih črkah/malih črkah/širini/kana",
             "secondary": "Razvrščanje naglasov",
             "tertiary": "Razvrščanje po naglasih/velikih črkah/malih črkah/širini"
           },
           "d0": {
-            "fwidth": "Polna širina",
-            "hwidth": "Polovična širina",
+            "fwidth": "polna širina",
+            "hwidth": "polovična širina",
             "npinyin": "Številsko"
           },
           "em": {
             "core": "besedilo"
           },
           "hc": {
-            "h11": "12-urni sistem (0–11)",
+            "c12": "12-urni sistem",
             "core": "24 (1–24)",
+            "c24": "24-urni sistem",
+            "h11": "12-urni sistem (0–11)",
             "h12": "12-urni sistem (1–12)",
             "h23": "24-urni sistem (0–23)",
             "h24": "24-urni sistem (1–24)"
           },
+          "kv": {
+            "core": "premaknjeni presledki, ločila in nedenarni simboli"
+          },
           "lb": {
-            "loose": "Prosti slog preloma vrstic",
-            "core": "Strogi slog",
-            "normal": "Običajni slog preloma vrstic",
-            "strict": "Strogi slog preloma vrstic"
+            "loose": "prosti slog preloma vrstic",
+            "core": "strogi slog",
+            "normal": "običajni slog preloma vrstic",
+            "strict": "strogi slog preloma vrstic"
           },
           "lw": {
             "core": "obdrži v frazah"
@@ -153,6 +179,7 @@
             "ahom": "števke ahom",
             "arab": "arabskoindijske števke",
             "arabext": "razširjene arabskoindijske števke",
+            "core": "tradicionalne številke",
             "armn": "armenske številke",
             "armnlow": "armenske majhne številke",
             "bali": "balinezijske števke",
@@ -230,7 +257,17 @@
           },
           "ss": {
             "core": "Vklopljeno"
+          },
+          "t0": {
+            "und": "neopredeljen strojni prevod"
+          },
+          "va": {
+            "core": "različica POSIX"
           }
+        },
+        "typeValues": {
+          "no": "izklopljeno",
+          "yes": "vklopljeno"
         },
         "codePatterns": {
           "language": "Jezik: {0}",

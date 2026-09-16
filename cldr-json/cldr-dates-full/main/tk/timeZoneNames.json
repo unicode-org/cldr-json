@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} wagty",
           "regionFormat-type-daylight": "{0} tomusky wagty",
           "regionFormat-type-standard": "{0} standart wagty",
@@ -179,7 +181,7 @@
               },
               "Calcutta": {
                 "_type": "zone",
-                "exemplarCity": "Kalkutta"
+                "exemplarCity": "Kolkata"
               },
               "Baghdad": {
                 "_type": "zone",
@@ -747,7 +749,7 @@
               },
               "Anchorage": {
                 "_type": "zone",
-                "exemplarCity": "Ankoridž"
+                "exemplarCity": "Ankorij"
               },
               "Yakutat": {
                 "_type": "zone",
@@ -755,7 +757,7 @@
               },
               "Juneau": {
                 "_type": "zone",
-                "exemplarCity": "Džuno"
+                "exemplarCity": "Juno"
               },
               "Los_Angeles": {
                 "_type": "zone",
@@ -909,12 +911,6 @@
                 "_type": "zone",
                 "exemplarCity": "Pariž"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Beýik Britaniýa tomusky wagty"
-                }
-              },
               "Guernsey": {
                 "_type": "zone",
                 "exemplarCity": "Gernsi"
@@ -926,12 +922,6 @@
               "Budapest": {
                 "_type": "zone",
                 "exemplarCity": "Budapeşt"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Irlandiýa standart wagty"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -1241,7 +1231,7 @@
               },
               "Ndjamena": {
                 "_type": "zone",
-                "exemplarCity": "Jamena"
+                "exemplarCity": "Njamena"
               },
               "Lome": {
                 "_type": "zone",
@@ -1425,6 +1415,7 @@
             "Anadyr": {
               "long": {
                 "generic": "Anadyr wagty",
+                "standard": "Anadyr standart wagty",
                 "daylight": "Anadyr tomusky wagty"
               }
             },
@@ -1534,6 +1525,13 @@
                 "generic": "Braziliýa wagty",
                 "standard": "Braziliýa standart wagty",
                 "daylight": "Braziliýa tomusky wagty"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Beýik Britaniýa wagty",
+                "standard": "Grinwiç ortaça wagty",
+                "daylight": "Beýik Britaniýa tomusky wagty"
               }
             },
             "Brunei": {
@@ -1709,6 +1707,13 @@
                 "standard": "Grinwiç ortaça wagty"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grenlandiýa wagty",
+                "standard": "Grenlandiýa standart wagty",
+                "daylight": "Grenlandiýa tomusky wagty"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Gündogar Grenlandiýa wagty",
@@ -1735,7 +1740,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Gawaý-Aleut standart wagty"
+                "standard": "Gawaý standart wagty"
               }
             },
             "Hawaii_Aleutian": {
@@ -1796,6 +1801,13 @@
                 "daylight": "Eýran tomusky wagty"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Irlandiýa wagty",
+                "standard": "Grinwiç ortaça wagty",
+                "daylight": "Irlandiýa standart wagty"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Irkutsk wagty",
@@ -1819,8 +1831,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Petropavlowsk-Kamçatskiý wagty",
-                "daylight": "Kamçatka tomusky wagty"
+                "generic": "Petropawlowsk-Kamçatskiý wagty",
+                "standard": "Petropawlowsk-Kamçatskiý standart wagty",
+                "daylight": "Petropawlowsk-Kamçatskiý tomusky wagty"
               }
             },
             "Kazakhstan": {
@@ -2088,14 +2101,13 @@
             "Samara": {
               "long": {
                 "generic": "Samara wagty",
+                "standard": "Samara standart wagty",
                 "daylight": "Samara tomusky wagty"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa wagty",
-                "standard": "Samoa standart wagty",
-                "daylight": "Samoa tomusky wagty"
+                "standard": "Samoa standart wagty"
               }
             },
             "Seychelles": {
@@ -2162,6 +2174,13 @@
                 "standard": "Çuuk wagty"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Türkiýe wagty",
+                "standard": "Türkiýe standart wagty",
+                "daylight": "Türkiýe tomusky wagty"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Türkmenistan wagty",
@@ -2179,6 +2198,11 @@
                 "generic": "Urugwaý wagty",
                 "standard": "Urugwaý standart wagty",
                 "daylight": "Urugwaý tomusky wagty"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Urumçi wagty"
               }
             },
             "Uzbekistan": {

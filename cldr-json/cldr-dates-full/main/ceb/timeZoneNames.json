@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT {0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Oras sa {0}",
           "regionFormat-type-daylight": "Daylight nga Oras sa {0}",
           "regionFormat-type-standard": "Standard nga Oras sa {0}",
@@ -38,18 +40,6 @@
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "British Summer Time"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Irish Standard Time"
-                }
               },
               "Chisinau": {
                 "_type": "zone",
@@ -356,6 +346,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Acre Time",
+                "standard": "Acre Standard Time",
+                "daylight": "Acre Summer Time"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Oras sa Afghanistan"
@@ -373,7 +370,7 @@
             },
             "Africa_Southern": {
               "long": {
-                "standard": "South Africa Standard Time"
+                "standard": "Standard nga Oras sa South Africa"
               }
             },
             "Africa_Western": {
@@ -503,8 +500,8 @@
             "Azores": {
               "long": {
                 "generic": "Oras sa Azores",
-                "standard": "Azores Standard Time",
-                "daylight": "Azores Summer Time"
+                "standard": "Standard nga Oras sa Azores",
+                "daylight": "Oras sa Ting-init sa Azores"
               }
             },
             "Bangladesh": {
@@ -529,6 +526,13 @@
                 "generic": "Oras sa Brasilia",
                 "standard": "Brasilia Standard Time",
                 "daylight": "Brasilia Summer Time"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Oras sa Britanya",
+                "standard": "Oras sa Greenwich Mean",
+                "daylight": "Oras sa Ting-init sa Britanya"
               }
             },
             "Brunei": {
@@ -565,8 +569,8 @@
             "China": {
               "long": {
                 "generic": "Oras sa China",
-                "standard": "China Standard Time",
-                "daylight": "China Daylight Time"
+                "standard": "Standard nga Oras sa China",
+                "daylight": "Daylight Time sa China"
               }
             },
             "Christmas": {
@@ -630,15 +634,15 @@
             "Europe_Central": {
               "long": {
                 "generic": "Oras sa Central Europe",
-                "standard": "Central European Standard Time",
-                "daylight": "Central European Summer Time"
+                "standard": "Standard nga Oras sa Central Europe",
+                "daylight": "Oras sa Ting-init sa Central Europe"
               }
             },
             "Europe_Eastern": {
               "long": {
                 "generic": "Oras sa Eastern Europe",
-                "standard": "Eastern European Standard Time",
-                "daylight": "Eastern European Summer Time"
+                "standard": "Standard nga Oras sa Eastern Europe",
+                "daylight": "Oras sa Ting-init sa Eastern Europe"
               }
             },
             "Europe_Further_Eastern": {
@@ -649,8 +653,8 @@
             "Europe_Western": {
               "long": {
                 "generic": "Oras sa Western Europe",
-                "standard": "Western European Standard Time",
-                "daylight": "Western European Summer Time"
+                "standard": "Standard nga Oras sa Western Europe",
+                "daylight": "Oras sa Ting-init sa Western Europe"
               }
             },
             "Falkland": {
@@ -704,6 +708,13 @@
                 "standard": "Oras sa Greenwich Mean"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Greenland Time",
+                "standard": "Greenland Standard Time",
+                "daylight": "Greenland Summer Time"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Oras sa East Greenland",
@@ -730,28 +741,28 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaii-Aleutian Standard Time"
+                "standard": "Oras sa Hawaii"
               }
             },
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "Oras sa Hawaii-Aleutian",
-                "standard": "Hawaii-Aleutian Standard Time",
+                "standard": "Standard nga Oras saHawaii-Aleutian",
                 "daylight": "Hawaii-Aleutian Daylight Time"
               }
             },
             "Hong_Kong": {
               "long": {
                 "generic": "Oras sa Hong Kong",
-                "standard": "Hong Kong Standard Time",
-                "daylight": "Hong Kong Summer Time"
+                "standard": "Standard nga Oras sa Hong Kong",
+                "daylight": "Oras sa Ting-init sa Hong Kong"
               }
             },
             "Hovd": {
               "long": {
                 "generic": "Oras sa Hovd",
-                "standard": "Khovd Standard Time",
-                "daylight": "Khovd Summer Time"
+                "standard": "Standard nga Oras sa Khovd",
+                "daylight": "Oras sa Ting-init sa Khovd"
               }
             },
             "India": {
@@ -791,6 +802,13 @@
                 "daylight": "Iran Daylight Time"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Oras sa Ireland",
+                "standard": "Oras sa Greenwich Mean",
+                "daylight": "Standard nga Oras sa Ireland"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Oras sa Irkutsk",
@@ -808,8 +826,15 @@
             "Japan": {
               "long": {
                 "generic": "Oras sa Japan",
-                "standard": "Japan Standard Time",
-                "daylight": "Japan Daylight Time"
+                "standard": "Standard nga Oras sa Japan",
+                "daylight": "Daylight Time sa Japan"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Kamchatka Time",
+                "standard": "Kamchatka Standard Time",
+                "daylight": "Kamchatka Summer Time"
               }
             },
             "Kazakhstan": {
@@ -830,8 +855,8 @@
             "Korea": {
               "long": {
                 "generic": "Oras sa Korea",
-                "standard": "Korean Standard Time",
-                "daylight": "Korean Daylight Time"
+                "standard": "Standard nga Oras sa Korea",
+                "daylight": "Daylight Time sa Korea"
               }
             },
             "Kosrae": {
@@ -912,8 +937,8 @@
             "Mongolia": {
               "long": {
                 "generic": "Oras sa Ulaanbaatar",
-                "standard": "Ulaanbaatar Standard Time",
-                "daylight": "Ulaanbaatar Summer Time"
+                "standard": "Standard nga Oras sa Ulaanbaatar",
+                "daylight": "Oras sa Ting-init sa Ulaanbaatar"
               }
             },
             "Moscow": {
@@ -1074,11 +1099,16 @@
                 "daylight": "Sakhalin Summer Time"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Samara Time",
+                "standard": "Samara Standard Time",
+                "daylight": "Samara Summer Time"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Oras sa Samoa",
-                "standard": "American Samoa Standard Time",
-                "daylight": "American Samoa Daylight Time"
+                "standard": "American Samoa Standard Time"
               }
             },
             "Seychelles": {
@@ -1119,8 +1149,8 @@
             "Taipei": {
               "long": {
                 "generic": "Oras sa Taiwan",
-                "standard": "Taiwan Standard Time",
-                "daylight": "Taiwan Daylight Time"
+                "standard": "Standard nga Oras sa Taiwan",
+                "daylight": "Daylight Time sa Taiwan"
               }
             },
             "Tajikistan": {
@@ -1145,6 +1175,13 @@
                 "standard": "Oras sa Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Oras sa Türkiye",
+                "standard": "Standard nga Oras sa Türkiye",
+                "daylight": "Oras sa Ting-init sa Türkiye"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Oras sa Turkmenistan",
@@ -1162,6 +1199,11 @@
                 "generic": "Oras sa Uruguay",
                 "standard": "Uruguay Standard Time",
                 "daylight": "Uruguay Summer Time"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Oras sa Ürümqi"
               }
             },
             "Uzbekistan": {

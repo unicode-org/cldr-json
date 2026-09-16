@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Ora di {0}",
           "regionFormat-type-daylight": "Ora di Veron di {0}",
           "regionFormat-type-standard": "Ora Padron di {0}",
@@ -333,18 +335,6 @@
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Ora di Veron Britániku"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Ora Padron di Irlanda"
-                }
-              },
               "Chisinau": {
                 "_type": "zone",
                 "exemplarCity": "Chișinău"
@@ -562,6 +552,12 @@
                 "daylight": "Ora di Veron di Austrália Osidental"
               }
             },
+            "British": {
+              "long": {
+                "standard": "Ora Médiu di Greenwich",
+                "daylight": "Ora di Veron Britániku"
+              }
+            },
             "Cape_Verde": {
               "long": {
                 "generic": "Ora di Kabu Verdi",
@@ -626,6 +622,12 @@
                 "generic": "Ora di Avaí i Aleutas",
                 "standard": "Ora Padron di Avaí i Aleutas",
                 "daylight": "Ora di Veron di Avaí i Aleutas"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "Ora Médiu di Greenwich",
+                "daylight": "Ora Padron di Irlanda"
               }
             },
             "Mexico_Pacific": {

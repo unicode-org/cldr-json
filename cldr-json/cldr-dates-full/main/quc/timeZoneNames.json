@@ -8,16 +8,21 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
-          "regionFormat": "{0}",
-          "regionFormat-type-daylight": "{0} (+1)",
-          "regionFormat-type-standard": "{0} (+0)",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
+          "regionFormat": "Uqʼijil {0}",
+          "regionFormat-type-daylight": "Upauqʼijil {0}",
+          "regionFormat-type-standard": "Junuwach uqʼijil {0}",
           "fallbackFormat": "{1} ({0})",
           "zone": {
             "Etc": {
               "UTC": {
                 "_type": "zone",
+                "long": {
+                  "standard": "tiempo universal coordinado"
+                },
                 "short": {
                   "standard": "UTC"
                 }
@@ -333,6 +338,23 @@
               "Mahe": {
                 "_type": "zone",
                 "exemplarCity": "Mahé"
+              }
+            }
+          },
+          "metazone": {
+            "British": {
+              "long": {
+                "standard": "Greenwich Unikʼijal Uqʼijil"
+              }
+            },
+            "GMT": {
+              "long": {
+                "standard": "Greenwich Unikʼijal Uqʼijil"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "Greenwich Unikʼijal Uqʼijil"
               }
             }
           }

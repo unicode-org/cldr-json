@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Ora {0}",
           "regionFormat-type-daylight": "Ora legal: {0}",
           "regionFormat-type-standard": "Ora stàndar: {0}",
@@ -18,6 +20,9 @@
             "Etc": {
               "UTC": {
                 "_type": "zone",
+                "long": {
+                  "standard": "Temp Universal Coordinà"
+                },
                 "short": {
                   "standard": "UTC"
                 }
@@ -337,7 +342,17 @@
             }
           },
           "metazone": {
+            "British": {
+              "long": {
+                "standard": "Ora dë Greenwich"
+              }
+            },
             "GMT": {
+              "long": {
+                "standard": "Ora dë Greenwich"
+              }
+            },
+            "Irish": {
               "long": {
                 "standard": "Ora dë Greenwich"
               }

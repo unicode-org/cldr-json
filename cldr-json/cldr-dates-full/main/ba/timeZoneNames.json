@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} ваҡыты",
           "regionFormat-type-daylight": "{0} йәйге ваҡыты",
           "regionFormat-type-standard": "{0} стандарт ваҡыты",
@@ -101,9 +103,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Бөйөк Британия йәйге ваҡыты"
-                },
                 "exemplarCity": "Лондон"
               },
               "Guernsey": {
@@ -128,9 +127,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ирландия стандарт ваҡыты"
-                },
                 "exemplarCity": "Дублин"
               },
               "Isle_of_Man": {
@@ -1771,18 +1767,6 @@
                 "generic": "Аляска ваҡыты",
                 "standard": "Аляска стандарт ваҡыты",
                 "daylight": "Аляска йәйге ваҡыты"
-              },
-              "short": {
-                "generic": "AKT",
-                "standard": "AKST",
-                "daylight": "AKST"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "Алматы ваҡыты",
-                "standard": "Алматы стандарт ваҡыты",
-                "daylight": "Алматы йәйге ваҡыты"
               }
             },
             "Amazon": {
@@ -1797,11 +1781,6 @@
                 "generic": "Үҙәк Америка ваҡыты",
                 "standard": "Үҙәк Америка стандарт ваҡыты",
                 "daylight": "Үҙәк Америка йәйге ваҡыты"
-              },
-              "short": {
-                "generic": "CT",
-                "standard": "CST",
-                "daylight": "CDT"
               }
             },
             "America_Eastern": {
@@ -1809,11 +1788,6 @@
                 "generic": "Көнсығыш Америка ваҡыты",
                 "standard": "Көнсығыш Америка стандарт ваҡыты",
                 "daylight": "Көнсығыш Америка йәйге ваҡыты"
-              },
-              "short": {
-                "generic": "ET",
-                "standard": "EST",
-                "daylight": "EDT"
               }
             },
             "America_Mountain": {
@@ -1821,11 +1795,6 @@
                 "generic": "Төньяҡ Америка Тау ваҡыты",
                 "standard": "Төньяҡ Америка Тау стандарт ваҡыты",
                 "daylight": "Төньяҡ Америка Тау йәйге ваҡыты"
-              },
-              "short": {
-                "generic": "MT",
-                "standard": "MST",
-                "daylight": "MDT"
               }
             },
             "America_Pacific": {
@@ -1833,11 +1802,6 @@
                 "generic": "Тымыҡ океан ваҡыты",
                 "standard": "Тымыҡ океан стандарт ваҡыты",
                 "daylight": "Тымыҡ океан йәйге ваҡыты"
-              },
-              "short": {
-                "generic": "PT",
-                "standard": "PST",
-                "daylight": "PDT"
               }
             },
             "Anadyr": {
@@ -1852,20 +1816,6 @@
                 "generic": "Самоа ваҡыты",
                 "standard": "Самоа стандарт ваҡыты",
                 "daylight": "Самоа йәйге ваҡыты"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Аҡтау ваҡыты",
-                "standard": "Аҡтау стандарт ваҡыты",
-                "daylight": "Аҡтау йәйге ваҡыты"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Аҡтүбә ваҡыты",
-                "standard": "Аҡтүбә стандарт ваҡыты",
-                "daylight": "Аҡтүбә йәйге ваҡыты"
               }
             },
             "Arabian": {
@@ -1967,6 +1917,13 @@
                 "generic": "Бразилия ваҡыты",
                 "standard": "Бразилия стандарт ваҡыты",
                 "daylight": "Бразилия йәйге ваҡыты"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Бөйөк Британия ваҡыты",
+                "standard": "Гринвич буйынса уртаса ваҡыт",
+                "daylight": "Бөйөк Британия йәйге ваҡыты"
               }
             },
             "Brunei": {
@@ -2086,7 +2043,7 @@
             },
             "Europe_Further_Eastern": {
               "long": {
-                "standard": "Мәскәү ваҡыты"
+                "standard": "Йыраҡ Көнсығыш Европа ваҡыты"
               }
             },
             "Europe_Western": {
@@ -2168,11 +2125,6 @@
                 "daylight": "Көнбайыш Гренландия йәйге ваҡыты"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Гуам стандарт ваҡыты"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Фарсы ҡултығы стандарт ваҡыты"
@@ -2185,7 +2137,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Гавай-Алеут стандарт ваҡыты"
+                "standard": "Гавай ваҡыты"
               }
             },
             "Hawaii_Aleutian": {
@@ -2244,6 +2196,13 @@
                 "generic": "Иран ваҡыты",
                 "standard": "Иран стандарт ваҡыты",
                 "daylight": "Иран йәйге ваҡыты"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Ирландия ваҡыты",
+                "standard": "Гринвич буйынса уртаса ваҡыт",
+                "daylight": "Ирландия стандарт ваҡыты"
               }
             },
             "Irkutsk": {
@@ -2313,11 +2272,6 @@
                 "standard": "Ҡырғыҙстан ваҡыты"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Ланка ваҡыты"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Лайн утрауҙары ваҡыты"
@@ -2328,13 +2282,6 @@
                 "generic": "Лорд-Хау ваҡыты",
                 "standard": "Лорд-Хау стандарт ваҡыты",
                 "daylight": "Лорд-Хау йәйге ваҡыты"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Макао ваҡыты",
-                "standard": "Макао стандарт ваҡыты",
-                "daylight": "Макао йәйге ваҡыты"
               }
             },
             "Magadan": {
@@ -2531,13 +2478,6 @@
                 "standard": "Төньяҡ Корея ваҡыты"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Ҡыҙылурҙа ваҡыты",
-                "standard": "Ҡыҙылурҙа стандарт ваҡыты",
-                "daylight": "Ҡыҙылурҙа йәйге ваҡыты"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Реюньон ваҡыты"
@@ -2564,9 +2504,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Америка Самоаһы ваҡыты",
-                "standard": "Америка Самоаһы стандарт ваҡыты",
-                "daylight": "Америка Самоаһы йәйге ваҡыты"
+                "standard": "Америка Самоаһы стандарт ваҡыты"
               }
             },
             "Seychelles": {
@@ -2631,6 +2569,13 @@
             "Truk": {
               "long": {
                 "standard": "Чуук ваҡыты"
+              }
+            },
+            "Turkey": {
+              "long": {
+                "generic": "Төркиә ваҡыты",
+                "standard": "Төркиә стандарт ваҡыты",
+                "daylight": "Төркиә йәйге ваҡыты"
               }
             },
             "Turkmenistan": {

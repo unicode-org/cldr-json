@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} убактысы",
           "regionFormat-type-daylight": "{0} Күндүзгү убакыт",
           "regionFormat-type-standard": "{0} Стандарттык убакыт",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Британия жайкы убактысы"
-                },
                 "exemplarCity": "Лондон"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ирландия кышкы убакыты"
-                },
                 "exemplarCity": "Дублин"
               },
               "Isle_of_Man": {
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Акри убактысы",
+                "standard": "Акри кышкы убактысы",
+                "daylight": "Акри жайкы убактысы"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Афганистан убактысы"
@@ -1913,6 +1916,13 @@
                 "daylight": "Бразилия жайкы убактысы"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Британия убактысы",
+                "standard": "Гринвич боюнча орточо убакыт",
+                "daylight": "Британия жайкы убактысы"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Бруней Даруссалам убактысы"
@@ -2086,6 +2096,13 @@
                 "standard": "Гринвич боюнча орточо убакыт"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Гренландия убактысы",
+                "standard": "Гренландия кышкы убактысы",
+                "daylight": "Гренландия жайкы убактысы"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Чыгыш Гренландия убактысы",
@@ -2112,7 +2129,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Гавайи-Алеут кышкы убактысы"
+                "standard": "Гавайи кышкы убактысы"
               }
             },
             "Hawaii_Aleutian": {
@@ -2173,6 +2190,13 @@
                 "daylight": "Иран күндүзгү убактысы"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Ирландия жайкы убакыты",
+                "standard": "Гринвич боюнча орточо убакыт",
+                "daylight": "Ирландия кышкы убакыты"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Иркутск убактысы",
@@ -2192,6 +2216,13 @@
                 "generic": "Жапон убактысы",
                 "standard": "Жапон кышкы убакыты",
                 "daylight": "Жапон жайкы убактысы"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Камчатка убактысы",
+                "standard": "Камчатка кышкы убактысы",
+                "daylight": "Камчатка жайкы убактысы"
               }
             },
             "Kazakhstan": {
@@ -2456,11 +2487,16 @@
                 "daylight": "Сахалин жайкы убактысы"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Самара убактысы",
+                "standard": "Самара кышкы убактысы",
+                "daylight": "Самара жайкы убактысы"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Самоа убактысы",
-                "standard": "Самоа кышкы убактысы",
-                "daylight": "Самоа жайкы убактысы"
+                "standard": "Самоа кышкы убактысы"
               }
             },
             "Seychelles": {
@@ -2527,6 +2563,13 @@
                 "standard": "Чуук убактысы"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Түркия убактысы",
+                "standard": "Түркия кышкы убактысы",
+                "daylight": "Түркия жайкы убактысы"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Түркмөнстан убактысы",
@@ -2544,6 +2587,11 @@
                 "generic": "Уругвай убактысы",
                 "standard": "Уругвай кышкы убактысы",
                 "daylight": "Уругвай жайкы убактысы"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Үрүмчү убактысы"
               }
             },
             "Uzbekistan": {

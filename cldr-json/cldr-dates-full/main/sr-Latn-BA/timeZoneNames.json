@@ -10,8 +10,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0}, ljetnje vrijeme",
           "regionFormat-type-standard": "{0}, standardno vrijeme",
@@ -257,9 +259,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Britanija, ljetnje vrijeme"
-                },
                 "exemplarCity": "London"
               },
               "Guernsey": {
@@ -284,9 +283,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Irska, standardno vrijeme"
-                },
                 "exemplarCity": "Dablin"
               },
               "Isle_of_Man": {
@@ -1779,13 +1775,6 @@
                 "daylight": "Aljaska, ljetnje vrijeme"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Almati vreme",
-                "standard": "Almati standardno vreme",
-                "daylight": "Almati letnje računanje vremena"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Amazon vrijeme",
@@ -1833,20 +1822,6 @@
                 "generic": "Apija vrijeme",
                 "standard": "Apija, standardno vrijeme",
                 "daylight": "Apija, ljetnje vrijeme"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Akvatau vreme",
-                "standard": "Akvatau standardno vreme",
-                "daylight": "Akvatau letnje računanje vremena"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Akutobe vreme",
-                "standard": "Akutobe standardno vreme",
-                "daylight": "Akutobe letnje računanje vremena"
               }
             },
             "Arabian": {
@@ -1948,6 +1923,13 @@
                 "generic": "Brazilija vrijeme",
                 "standard": "Brazilija, standardno vrijeme",
                 "daylight": "Brazilija, ljetnje vrijeme"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Britanija vreme",
+                "standard": "Srednje vrijeme po Griniču",
+                "daylight": "Britanija, ljetnje vrijeme"
               }
             },
             "Brunei": {
@@ -2141,6 +2123,13 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grenland",
+                "standard": "Grenland, standardno vreme",
+                "daylight": "Grenland, letnje vreme"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Istočni Grenland",
@@ -2153,11 +2142,6 @@
                 "generic": "Zapadni Grenland",
                 "standard": "Zapadni Grenland, standardno vrijeme",
                 "daylight": "Zapadni Grenland, ljetnje vrijeme"
-              }
-            },
-            "Guam": {
-              "long": {
-                "standard": "Guam standardno vreme"
               }
             },
             "Gulf": {
@@ -2233,6 +2217,13 @@
                 "daylight": "Iran, ljetnje vrijeme"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Irska vreme",
+                "standard": "Srednje vrijeme po Griniču",
+                "daylight": "Irska, standardno vrijeme"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Irkuck vrijeme",
@@ -2256,9 +2247,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Petropavlovsko-kamčatsko vreme",
-                "standard": "Petropavlovsko-kamčatsko standardno vreme",
-                "daylight": "Petropavlovsko-kamčatsko letnje računanje vremena"
+                "generic": "Kamčatka, vreme",
+                "standard": "Kamčatka, standardno vreme",
+                "daylight": "Kamčatka, letnje vreme"
               }
             },
             "Kazakhstan": {
@@ -2300,11 +2291,6 @@
                 "standard": "Kirgistan vrijeme"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Šri Lanka vreme"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Linijska ostrva vrijeme"
@@ -2315,13 +2301,6 @@
                 "generic": "Lord Hov vrijeme",
                 "standard": "Lord Hov, standardno vrijeme",
                 "daylight": "Lord Hov, ljetnje vrijeme"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Makao vreme",
-                "standard": "Makao standardno vreme",
-                "daylight": "Makao letnje računanje vremena"
               }
             },
             "Magadan": {
@@ -2439,11 +2418,6 @@
                 "daylight": "Fernando de Noronja, ljetnje vrijeme"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Severna Marijanska Ostrva vreme"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Novosibirsk vrijeme",
@@ -2523,13 +2497,6 @@
                 "standard": "Pjongjanško vrijeme"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Kizilorda vreme",
-                "standard": "Kizilorda standardno vreme",
-                "daylight": "Kizilorda letnje računanje vremena"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Reunion vrijeme"
@@ -2556,9 +2523,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa vrijeme",
-                "standard": "Samoa, standardno vrijeme",
-                "daylight": "Samoa, ljetnje vrijeme"
+                "standard": "Samoa, standardno vrijeme"
               }
             },
             "Seychelles": {
@@ -2649,6 +2614,11 @@
                 "generic": "Urugvaj vrijeme",
                 "standard": "Urugvaj, standardno vrijeme",
                 "daylight": "Urugvaj, ljetnje vrijeme"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Urumči vreme"
               }
             },
             "Uzbekistan": {

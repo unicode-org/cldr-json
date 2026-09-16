@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "+UTC؟",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} وخت",
           "regionFormat-type-daylight": "{0} رڼا ورځ وخت",
           "regionFormat-type-standard": "{0} معیاری وخت",
@@ -181,7 +183,7 @@
               },
               "Unknown": {
                 "_type": "zone",
-                "exemplarCity": "نامعلوم ښار"
+                "exemplarCity": "نامعلوم موقعیت"
               }
             },
             "Europe": {
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "بريتانوي د اوړي وخت"
-                },
                 "exemplarCity": "لندن"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "آيرش معياري وخت"
-                },
                 "exemplarCity": "ډبلن"
               },
               "Isle_of_Man": {
@@ -1171,7 +1167,7 @@
               },
               "Miquelon": {
                 "_type": "zone",
-                "exemplarCity": "ميکويلان"
+                "exemplarCity": "Saint-Pierre"
               },
               "Puerto_Rico": {
                 "_type": "zone",
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "د اکر وخت",
+                "standard": "د اکر معیاري وخت",
+                "daylight": "د اکر د اوړي وخت"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "افغانستان وخت"
@@ -1807,9 +1810,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "اپیا وخت",
-                "standard": "اپیا معياري وخت",
-                "daylight": "اپيا د ورځې روښانه وخت"
+                "generic": "د لوېدیځ ساموا وخت",
+                "standard": "د لوېدیځ ساموا معیاري وخت",
+                "daylight": "د لوېدیځ ساموا د ورځې رڼا وخت"
               }
             },
             "Arabian": {
@@ -1849,7 +1852,7 @@
             },
             "Australia_Central": {
               "long": {
-                "generic": "مرکزي آستراليا وخت",
+                "generic": "مرکزي استرالیايي وخت",
                 "standard": "آسترالوي مرکزي معياري وخت",
                 "daylight": "آسترالوي مرکزي د ورځې روښانه وخت"
               }
@@ -1863,15 +1866,15 @@
             },
             "Australia_Eastern": {
               "long": {
-                "generic": "ختيځ آستراليا وخت",
+                "generic": "ختیځ استرالیايي وخت",
                 "standard": "آسترالوي ختيځ معياري وخت",
                 "daylight": "آسترالوي ختيځ د ورځې روښانه وخت"
               }
             },
             "Australia_Western": {
               "long": {
-                "generic": "لوېديځ آستراليا وخت",
-                "standard": "آسترالوي لوېديځ معياري وخت",
+                "generic": "لویدیځ استرالیايي وخت",
+                "standard": "آسترالیايي لوېديځ معياري وخت",
                 "daylight": "آسترالوي لوېديځ د ورځې روښانه وخت"
               }
             },
@@ -1911,6 +1914,13 @@
                 "generic": "برسلیا وخت",
                 "standard": "برسلیا معیاری وخت",
                 "daylight": "برسلیا اوړي وخت"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "د بریتانیا وخت",
+                "standard": "ګرينويچ معياري وخت",
+                "daylight": "بريتانوي د اوړي وخت"
               }
             },
             "Brunei": {
@@ -1972,7 +1982,7 @@
               "long": {
                 "generic": "کوک ټاپوګانو وخت",
                 "standard": "کوک ټاپوګانو معياري وخت",
-                "daylight": "کوک ټاپوګانو نيم اوړي وخت"
+                "daylight": "کوک ټاپوګانو د اوړي وخت"
               }
             },
             "Cuba": {
@@ -1989,12 +1999,12 @@
             },
             "DumontDUrville": {
               "long": {
-                "standard": "ډومونټ ډي ارول"
+                "standard": "ډومونټ ډي ارول وخت"
               }
             },
             "East_Timor": {
               "long": {
-                "standard": "ختيځ تيمور وخت"
+                "standard": "د تیمور-لېسته وخت"
               }
             },
             "Easter": {
@@ -2056,7 +2066,7 @@
             },
             "French_Southern": {
               "long": {
-                "standard": "د فرانسې سویل او انټارټيک وخت"
+                "standard": "د فرانسوي جنوبي سیمو وخت"
               }
             },
             "Galapagos": {
@@ -2086,6 +2096,13 @@
                 "standard": "ګرينويچ معياري وخت"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "د ګرین لینډ وخت",
+                "standard": "د ګرین لینډ معیاري وخت",
+                "daylight": "د ګرین لینډ د اوړي وخت"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "د ختیځ ګرینلینډ وخت",
@@ -2112,13 +2129,13 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "هوایی الیوتین معیاری وخت"
+                "standard": "هوایی وخت"
               }
             },
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "هوایی الیوتین وخت",
-                "standard": "هوایی الیوتین معیاری وخت",
+                "standard": "هوایی الیوتین-معیاری وخت",
                 "daylight": "هوایی الیوتین رڼا ورځې وخت"
               }
             },
@@ -2173,6 +2190,13 @@
                 "daylight": "ايران د ورځې روښانه وخت"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "د ایرلیڼد وخت",
+                "standard": "ګرينويچ معياري وخت",
+                "daylight": "د ایرلیڼد معیار وخت"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ارکوټسک وخت",
@@ -2192,6 +2216,13 @@
                 "generic": "جاپان وخت",
                 "standard": "جاپان معياري وخت",
                 "daylight": "جاپان د ورځې روښانه وخت"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "کمچټکا وخت",
+                "standard": "د کمچټکا معیاري وخت",
+                "daylight": "د کمچټکا د اوړي وخت"
               }
             },
             "Kazakhstan": {
@@ -2355,9 +2386,9 @@
             },
             "Noronha": {
               "long": {
-                "generic": "فرنانڈو دي نورونها وخت",
-                "standard": "فرنانڈو دي نورونها معیاری وخت",
-                "daylight": "فرنانڈو دي نورونھا اوړي وخت"
+                "generic": "فرنانډو دي نورونها وخت",
+                "standard": "فرنانډو دي نورونها معیاری وخت",
+                "daylight": "فرنانډو دي نورونھا اوړي وخت"
               }
             },
             "Novosibirsk": {
@@ -2431,7 +2462,7 @@
             },
             "Ponape": {
               "long": {
-                "standard": "پونيپ وخت"
+                "standard": "پونپي وخت"
               }
             },
             "Pyongyang": {
@@ -2456,11 +2487,16 @@
                 "daylight": "سخلين اوړي وخت"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "د سمارا وخت",
+                "standard": "د سمارا معیاري وخت",
+                "daylight": "د سمارا د اوړي وخت"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "سموا وخت",
-                "standard": "سموا معياري وخت",
-                "daylight": "سموا د ورځې روښانه وخت"
+                "standard": "امریکايي سموا وخت"
               }
             },
             "Seychelles": {
@@ -2527,6 +2563,13 @@
                 "standard": "چوک وخت"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "د ترکیې وخت",
+                "standard": "د ترکیې معیاري وخت",
+                "daylight": "د ترکیې د اوړي وخت"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "ترکمانستان وخت",
@@ -2544,6 +2587,11 @@
                 "generic": "یوروګوای وخت",
                 "standard": "یوروګوای معياري وخت",
                 "daylight": "یوروګوای اوړي وخت"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "د اورمچي وخت"
               }
             },
             "Uzbekistan": {

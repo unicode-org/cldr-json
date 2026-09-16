@@ -19,24 +19,40 @@
           "calendar": "kalender",
           "cf": "valutaformat",
           "colAlternate": "ignorer sortering etter symbol",
-          "colBackwards": "Omvendt sortering etter aksent",
+          "colBackwards": "omvendt sortering etter aksent",
           "colCaseFirst": "organisering av store og små bokstavar",
           "colCaseLevel": "sortering av store og små bokstavar",
           "collation": "sorteringsrekkjefølgje",
           "colNormalization": "normalisert sortering",
           "colNumeric": "numerisk sortering",
+          "colReorder": "omorganisering etter skriftsystem/blokk",
           "colStrength": "sorteringsstyrke",
           "currency": "valuta",
+          "d0": "transformeringsmål",
+          "dx": "unntak for ordbokbasert tekstbryting",
           "em": "emojivising",
+          "fw": "første vekedag",
+          "h0": "blanda inn",
           "hc": "timesyklus (12 eller 24)",
+          "i0": "inndatametode",
+          "k0": "tastatur",
+          "kv": "høgste ignorerte",
           "lb": "lineskiftstil",
           "lw": "lineskift innanfor ord",
+          "m0": "transformasjonsreglar",
           "ms": "målesystem",
+          "mu": "måleining",
           "numbers": "tal",
-          "ss": "Ny setning etter fork.",
+          "rg": "region for tilleggsdata",
+          "s0": "transformasjonskjelde",
+          "sd": "underregion",
+          "ss": "ny setning etter fork.",
+          "t": "transformer",
+          "t0": "maskinomsett",
           "timezone": "tidssone",
           "va": "språkvariant",
-          "x": "privat bruk"
+          "x": "privat bruk",
+          "x0": "privat transformasjon"
         },
         "types": {
           "calendar": {
@@ -75,6 +91,7 @@
           },
           "colCaseFirst": {
             "lower": "Sortér små bokstaver først",
+            "core": "store bokstavar",
             "no": "Sortér store og små bokstaver i vanlig rekkefølge",
             "upper": "Sortér store bokstaver først"
           },
@@ -94,7 +111,7 @@
             "pinyin": "pinyin-sortering",
             "search": "generelt søk",
             "searchjl": "Søk etter første konsonant i hangul",
-            "standard": "standard sorteringsrekkjefølgje",
+            "standard": "standard sorteringsrekkefølge",
             "stroke": "streksortering",
             "traditional": "tradisjonell sortering",
             "unihan": "radikal-strek-sortering",
@@ -108,8 +125,12 @@
             "no": "Sortér sifre individuelt",
             "yes": "Sortér sifre numerisk"
           },
+          "colReorder": {
+            "core": "symbol"
+          },
           "colStrength": {
             "identical": "Sortér alle",
+            "core": "grunnbokstavar, aksentar, kasus, variantar",
             "primary": "Sortér bare basisbokstaver",
             "quaternary": "Sortér aksenttegn / små og store bokstaver / bredde / kana",
             "secondary": "Sortér aksenttegn",
@@ -124,11 +145,16 @@
             "core": "tekst"
           },
           "hc": {
-            "h11": "12-timarssystem (0–11)",
+            "c12": "12-timarssystem",
             "core": "24 (1–24)",
+            "c24": "24-timarssystem",
+            "h11": "12-timarssystem (0–11)",
             "h12": "12-timarssystem (1–12)",
             "h23": "24-timarssystem (0–23)",
             "h24": "24-timarssystem (1–24)"
+          },
+          "kv": {
+            "core": "forskyv mellomrom, teiknsetjing, ikkje-valutasymbol"
           },
           "lb": {
             "loose": "laus lineskiftstil",
@@ -152,6 +178,7 @@
           "numbers": {
             "arab": "arabisk-indiske siffer",
             "arabext": "utvida arabisk-indiske siffer",
+            "core": "tradisjonelle tal",
             "armn": "armenske tal",
             "armnlow": "små armenske tal",
             "bali": "baliske tall",
@@ -218,7 +245,17 @@
           },
           "ss": {
             "core": "på"
+          },
+          "t0": {
+            "und": "uspesifisert maskinomsetting"
+          },
+          "va": {
+            "core": "POSIX-variant"
           }
+        },
+        "typeValues": {
+          "no": "av",
+          "yes": "på"
         },
         "codePatterns": {
           "language": "Språk: {0}",

@@ -7,9 +7,11 @@
       "dates": {
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
-          "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat": "{0} GMT",
+          "gmtFormat-alt-utc": "{0} UTC",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Horário {0}",
           "regionFormat-type-daylight": "Horário de Verão: {0}",
           "regionFormat-type-standard": "Horário Padrão: {0}",
@@ -62,7 +64,7 @@
               },
               "Wallis": {
                 "_type": "zone",
-                "exemplarCity": "Wallis & Futuna"
+                "exemplarCity": "Wallis e Futuna"
               }
             },
             "Etc": {
@@ -396,7 +398,7 @@
                 },
                 "New_Salem": {
                   "_type": "zone",
-                  "exemplarCity": "New Salen, Dakota do Norte"
+                  "exemplarCity": "New Salem, Dakota do Norte"
                 },
                 "Center": {
                   "_type": "zone",
@@ -507,9 +509,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Horário de Verão Britânico"
-                },
                 "exemplarCity": "Londres"
               },
               "Athens": {
@@ -519,12 +518,6 @@
               "Budapest": {
                 "_type": "zone",
                 "exemplarCity": "Budapeste"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Horário Padrão Irlandês"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -778,7 +771,7 @@
             },
             "Africa_Southern": {
               "long": {
-                "standard": "Horário da África do Sul"
+                "standard": "Horário Padrão da África do Sul"
               }
             },
             "Africa_Western": {
@@ -791,13 +784,6 @@
                 "generic": "Horário do Alasca",
                 "standard": "Horário Padrão do Alasca",
                 "daylight": "Horário de Verão do Alasca"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "Horário do Almaty",
-                "standard": "Horário Padrão do Almaty",
-                "daylight": "Horário de Verão do Almaty"
               }
             },
             "Amazon": {
@@ -852,20 +838,6 @@
                 "generic": "Horário de Apia",
                 "standard": "Horário Padrão de Apia",
                 "daylight": "Horário de Verão de Apia"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Horário do Aqtau",
-                "standard": "Horário Padrão do Aqtau",
-                "daylight": "Horário de Verão do Aqtau"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Horário do Aqtobe",
-                "standard": "Horário Padrão do Aqtobe",
-                "daylight": "Horário de Verão do Aqtobe"
               }
             },
             "Arabian": {
@@ -933,9 +905,9 @@
             },
             "Azerbaijan": {
               "long": {
-                "generic": "Horário do Arzeibaijão",
-                "standard": "Horário Padrão do Arzeibaijão",
-                "daylight": "Horário de Verão do Arzeibaijão"
+                "generic": "Horário do Azerbaijão",
+                "standard": "Horário Padrão do Azerbaijão",
+                "daylight": "Horário de Verão do Azerbaijão"
               }
             },
             "Azores": {
@@ -972,6 +944,13 @@
                 "generic": "BRT",
                 "standard": "BRT",
                 "daylight": "BRST"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Horário Britânico",
+                "standard": "Horário do Meridiano de Greenwich",
+                "daylight": "Horário de Verão Britânico"
               }
             },
             "Brunei": {
@@ -1033,7 +1012,7 @@
               "long": {
                 "generic": "Horário das Ilhas Cook",
                 "standard": "Horário Padrão das Ilhas Cook",
-                "daylight": "Meio Horário de Verão das Ilhas Cook"
+                "daylight": "Horário de Verão das Ilhas Cook"
               }
             },
             "Cuba": {
@@ -1147,11 +1126,18 @@
                 "standard": "Horário do Meridiano de Greenwich"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Horário da Groenlândia",
+                "standard": "Horário Padrão da Groenlândia",
+                "daylight": "Horário de Verão da Groenlândia"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
-                "generic": "Horário da Groelândia Oriental",
-                "standard": "Horário Padrão da Groelândia Oriental",
-                "daylight": "Horário de Verão da Groelândia Oriental"
+                "generic": "Horário da Groenlândia Oriental",
+                "standard": "Horário Padrão da Groenlândia Oriental",
+                "daylight": "Horário de Verão da Groenlândia Oriental"
               }
             },
             "Greenland_Western": {
@@ -1159,11 +1145,6 @@
                 "generic": "Horário da Groenlândia Ocidental",
                 "standard": "Horário Padrão da Groenlândia Ocidental",
                 "daylight": "Horário de Verão da Groenlândia Ocidental"
-              }
-            },
-            "Guam": {
-              "long": {
-                "standard": "Horário Padrão de Guam"
               }
             },
             "Gulf": {
@@ -1178,7 +1159,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Horário Padrão do Havaí e Ilhas Aleutas"
+                "standard": "Horário do Havaí"
               }
             },
             "Hawaii_Aleutian": {
@@ -1239,6 +1220,13 @@
                 "daylight": "Horário de Verão do Irã"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Horário Irlandês",
+                "standard": "Horário do Meridiano de Greenwich",
+                "daylight": "Horário Padrão Irlandês"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Horário de Irkutsk",
@@ -1262,9 +1250,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Horário de Petropavlovsk-Kamchatski",
-                "standard": "Horário Padrão de Petropavlovsk-Kamchatski",
-                "daylight": "Horário de Verão de Petropavlovsk-Kamchatski"
+                "generic": "Horário de Kamchatka",
+                "standard": "Horário Padrão de Kamchatka",
+                "daylight": "Horário de Verão de Kamchatka"
               }
             },
             "Kazakhstan": {
@@ -1306,11 +1294,6 @@
                 "standard": "Horário do Quirguistão"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Horário de Lanka"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Horário das Ilhas da Linha"
@@ -1321,13 +1304,6 @@
                 "generic": "Horário de Lord Howe",
                 "standard": "Horário Padrão de Lord Howe",
                 "daylight": "Horário de Verão de Lord Howe"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Horário de Macau",
-                "standard": "Horário Padrão de Macau",
-                "daylight": "Horário de Verão de Macau"
               }
             },
             "Magadan": {
@@ -1445,11 +1421,6 @@
                 "daylight": "Horário de Verão de Fernando de Noronha"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Horário das Ilhas Mariana do Norte"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Horário de Novosibirsk",
@@ -1529,13 +1500,6 @@
                 "standard": "Horário de Pyongyang"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Horário de Qyzylorda",
-                "standard": "Horário Padrão de Qyzylorda",
-                "daylight": "Horário de Verão de Qyzylorda"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Horário de Reunião"
@@ -1562,9 +1526,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Horário de Samoa",
-                "standard": "Horário Padrão de Samoa",
-                "daylight": "Horário de Verão de Samoa"
+                "standard": "Horário Padrão de Samoa"
               }
             },
             "Seychelles": {
@@ -1655,6 +1617,11 @@
                 "generic": "Horário do Uruguai",
                 "standard": "Horário Padrão do Uruguai",
                 "daylight": "Horário de Verão do Uruguai"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Horário de Ürümqi"
               }
             },
             "Uzbekistan": {

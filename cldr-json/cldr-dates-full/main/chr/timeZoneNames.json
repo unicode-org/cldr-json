@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} ᎠᏟᎢᎵᏒ",
           "regionFormat-type-daylight": "{0} ᎪᎯ ᎢᎦ ᎠᏟᎢᎵᏒ",
           "regionFormat-type-standard": "{0} ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ᏈᏗᏏ ᎪᎩ ᎠᏟᎢᎵᏒ"
-                },
                 "exemplarCity": "ᎸᏂᏓᏂ"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ᎨᎵᎩ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ"
-                },
                 "exemplarCity": "ᏛᎵᏂ"
               },
               "Isle_of_Man": {
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "ᎢᏳᏟᎶᏓ ᎠᏟᎢᎵᏒ",
+                "standard": "ᎢᏳᏟᎶᏓ ᏄᎶᏒᏔᏅ ᎠᏟᎢᎵᏒ",
+                "daylight": "ᎢᏳᏟᎶᏓ ᎪᎩ ᎠᏟᎢᎵᏒ"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "ᎠᏫᎨᏂᏍᏖᏂ ᎠᏟᎢᎵᏒ"
@@ -1943,6 +1946,13 @@
                 "daylight": "ᏆᏏᎵᏯ ᎪᎩ ᎠᏟᎢᎵᏒ"
               }
             },
+            "British": {
+              "long": {
+                "generic": "ᏈᏗᏏ ᎠᏟᎢᎵᏒ",
+                "standard": "ᎢᏤ ᎢᏳᏍᏗ ᎠᏟᎢᎵᏒ",
+                "daylight": "ᏈᏗᏏ ᎪᎩ ᎠᏟᎢᎵᏒ"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "ᏊᎾᎢ ᏓᎷᏌᎳᎻ ᎠᏟᎢᎵᏒ"
@@ -2116,6 +2126,13 @@
                 "standard": "ᎢᏤ ᎢᏳᏍᏗ ᎠᏟᎢᎵᏒ"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "ᎢᏤᏍᏛᏱ ᎠᏟᎢᎵᏒ",
+                "standard": "ᎢᏤᏍᏛᏱ ᏄᎶᏒᏍᏔᏅ ᎠᏟᎢᎵᏒ",
+                "daylight": "ᎢᏤᏍᏛᏱ ᎪᎩ ᎠᏟᎢᎵᏒ"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "ᏗᎧᎸᎬ ᎢᏤᏍᏛᏱ ᎠᎵᎢᎵᏒ",
@@ -2142,7 +2159,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "ᎭᏩᏱ-ᎠᎵᏳᏏᎠᏂ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ"
+                "standard": "ᎭᏩᏱ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ"
               },
               "short": {
                 "standard": "HAST"
@@ -2211,6 +2228,13 @@
                 "daylight": "ᎢᎳᏂ ᎪᎯ ᎢᎦ ᎠᏟᎢᎵᏒ"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "ᎨᎵᎩ ᎠᏟᎢᎵᏒ",
+                "standard": "ᎢᏤ ᎢᏳᏍᏗ ᎠᏟᎢᎵᏒ",
+                "daylight": "ᎨᎵᎩ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ᎢᎫᏥᎧ ᎠᏟᎢᎵᏒ",
@@ -2230,6 +2254,13 @@
                 "generic": "ᏣᏩᏂᏏ ᎠᏟᎢᎵᏒ",
                 "standard": "ᏣᏩᏂᏏ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ",
                 "daylight": "ᏣᏩᏂᏏ ᎪᎯ ᎢᎦ ᎠᏟᎢᎵᏒ"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "ᎧᎻᏣᎦ ᎠᏟᎢᎵᏒ",
+                "standard": "ᎧᎻᏣᎦ ᏄᎶᏒᏔᏅ ᎠᏟᎢᎵᏒ",
+                "daylight": "ᎧᎻᏣᎦ ᎪᎩ ᎠᏟᎢᎵᏒ"
               }
             },
             "Kazakhstan": {
@@ -2494,11 +2525,16 @@
                 "daylight": "ᏌᎧᎵᏂ ᎪᎩ ᎠᏟᎢᎵᏒ"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "ᏌᎹᎳ ᎠᏟᎢᎵᏒ",
+                "standard": "ᏌᎹᎳ ᏄᎶᏒᏔᏅ ᎠᏟᎢᎵᏒ",
+                "daylight": "ᏌᎹᎳ ᎪᎩ ᎠᏟᎢᎵᏒ"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "ᏌᎼᎠ ᎠᏟᎢᎵᏒ",
-                "standard": "ᏌᎼᎠ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ",
-                "daylight": "ᏌᎼᎠ ᎪᎯ ᎢᎦ ᎠᏟᎢᎵᏒ"
+                "standard": "ᏌᎼᎠ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ"
               }
             },
             "Seychelles": {
@@ -2565,6 +2601,13 @@
                 "standard": "ᏧᎩ ᎠᏟᎢᎵᏒ"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "ᎬᎾ ᎠᏟᎢᎵᏒ",
+                "standard": "ᎬᎾ ᏄᎶᏒᏔᏅ ᎠᏟᎢᎵᏒ",
+                "daylight": "ᎬᎾ ᎪᎩ ᎠᏟᎢᎵᏒ"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "ᏛᎵᎩᎺᏂᏍᏔᏂ ᎠᏟᎢᎵᏒ",
@@ -2582,6 +2625,11 @@
                 "generic": "ᏳᎷᏇ ᎠᏟᎢᎵᏒ",
                 "standard": "ᏳᎷᏇ ᎠᏟᎶᏍᏗ ᎠᏟᎢᎵᏒ",
                 "daylight": "ᏳᎷᏇ ᎪᎩ ᎠᏟᎢᎵᏒ"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ᎤᏉᏈ ᎠᏟᎢᎵᏒ"
               }
             },
             "Uzbekistan": {

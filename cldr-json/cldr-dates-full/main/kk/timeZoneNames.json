@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} уақыты",
           "regionFormat-type-daylight": "{0} жазғы уақыты",
           "regionFormat-type-standard": "{0} стандартты уақыты",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ұлыбритания жазғы уақыты"
-                },
                 "exemplarCity": "Лондон"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ирландия стандартты уақыты"
-                },
                 "exemplarCity": "Дублин"
               },
               "Isle_of_Man": {
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Акри уақыты",
+                "standard": "Акри стандартты уақыты",
+                "daylight": "Акри жазғы уақыты"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Ауғанстан уақыты"
@@ -1911,6 +1914,13 @@
                 "generic": "Бразилия уақыты",
                 "standard": "Бразилия стандартты уақыты",
                 "daylight": "Бразилия жазғы уақыты"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Ұлыбритания уақыты",
+                "standard": "Гринвич уақыты",
+                "daylight": "Ұлыбритания жазғы уақыты"
               }
             },
             "Brunei": {
@@ -2091,6 +2101,13 @@
                 "standard": "Гринвич уақыты"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Гренландия уақыты",
+                "standard": "Гренландия стандартты уақыты",
+                "daylight": "Гренландия жазғы уақыты"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Шығыс Гренландия уақыты",
@@ -2117,7 +2134,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Гавай және Алеут аралдары стандартты уақыты"
+                "standard": "Гавай уақыты"
               }
             },
             "Hawaii_Aleutian": {
@@ -2178,6 +2195,13 @@
                 "daylight": "Иран жазғы уақыты"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Ирландия уақыты",
+                "standard": "Гринвич уақыты",
+                "daylight": "Ирландия стандартты уақыты"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Иркутск уақыты",
@@ -2197,6 +2221,13 @@
                 "generic": "Жапония уақыты",
                 "standard": "Жапония стандартты уақыты",
                 "daylight": "Жапония жазғы уақыты"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Камчатка уақыты",
+                "standard": "Камчатка стандартты уақыты",
+                "daylight": "Камчатка жазғы уақыты"
               }
             },
             "Kazakhstan": {
@@ -2461,11 +2492,16 @@
                 "daylight": "Сахалин жазғы уақыты"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Самара уақыты",
+                "standard": "Самара стандартты уақыты",
+                "daylight": "Самара жазғы уақыты"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Самоа уақыты",
-                "standard": "Самоа стандартты уақыты",
-                "daylight": "Самоа жазғы уақыты"
+                "standard": "Самоа стандартты уақыты"
               }
             },
             "Seychelles": {
@@ -2532,6 +2568,13 @@
                 "standard": "Трук уақыты"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Түркия уақыты",
+                "standard": "Түркия стандартты уақыты",
+                "daylight": "Түркия жазғы уақыты"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Түрікменстан уақыты",
@@ -2549,6 +2592,11 @@
                 "generic": "Уругвай уақыты",
                 "standard": "Уругвай стандартты уақыты",
                 "daylight": "Уругвай жазғы уақыты"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Үрімжі уақыты"
               }
             },
             "Uzbekistan": {

@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} вақти",
           "regionFormat-type-daylight": "{0} кундузги вақти",
           "regionFormat-type-standard": "{0} стандарт вақти",
@@ -36,18 +38,6 @@
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Британия ёзги вақти"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Ирландия ёзги вақти"
-                }
               },
               "Chisinau": {
                 "_type": "zone",
@@ -522,6 +512,12 @@
                 "daylight": "Бразилия ёзги вақти"
               }
             },
+            "British": {
+              "long": {
+                "standard": "Гринвич вақти",
+                "daylight": "Британия ёзги вақти"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Бруней Даруссалом вақти"
@@ -775,6 +771,12 @@
                 "generic": "Эрон вақти",
                 "standard": "Эрон стандарт вақти",
                 "daylight": "Эрон кундузги вақти"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "Гринвич вақти",
+                "daylight": "Ирландия ёзги вақти"
               }
             },
             "Irkutsk": {
@@ -1045,9 +1047,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Самоа вақти",
-                "standard": "Самоа стандарт вақти",
-                "daylight": "Самоа кундузги вақти"
+                "standard": "Самоа стандарт вақти"
               }
             },
             "Seychelles": {

@@ -93,6 +93,7 @@
           },
           "colCaseFirst": {
             "lower": "Sort Lowercase First",
+            "core": "Uppercase",
             "no": "Sort Normal Case Order",
             "upper": "Sort Uppercase First"
           },
@@ -128,6 +129,7 @@
           },
           "colReorder": {
             "currency": "Currency",
+            "core": "Symbol",
             "digit": "Digits",
             "punct": "Punctuation",
             "space": "Whitespace",
@@ -135,6 +137,7 @@
           },
           "colStrength": {
             "identical": "Sort All",
+            "core": "Base, Accents, Case, Variants",
             "primary": "Sort Base Letters Only",
             "quaternary": "Sort Accents/Case/Width/Kana",
             "secondary": "Sort Accents",
@@ -184,8 +187,10 @@
             "hybrid": "Hybrid"
           },
           "hc": {
-            "h11": "12-Hour System (0–11)",
+            "c12": "12-Hour System",
             "core": "24 (1–24)",
+            "c24": "24-Hour System",
+            "h11": "12-Hour System (0–11)",
             "h12": "12-Hour System (1–12)",
             "h23": "24-Hour System (0–23)",
             "h24": "24-Hour System (1–24)"
@@ -229,7 +234,7 @@
           },
           "kv": {
             "currency": "Ignore Symbols affects spaces, punctuation, all symbols",
-            "core": "Shift spaces, punctuation, non-currency symbols",
+            "core": "Shift Spaces, Punctuation, Non-currency Symbols",
             "punct": "Ignore Symbols affects spaces and punctuation only",
             "space": "Ignore Symbols affects spaces only",
             "symbol": "Ignore Symbols affects spaces, punctuation, non-currency symbols"
@@ -298,7 +303,7 @@
             "arab": "Arabic-Indic Digits",
             "arabext": "Extended Arabic-Indic Digits",
             "arabext-alt-short": "X Arabic-Indic Digits",
-            "core": "Traditional numerals",
+            "core": "Traditional Numerals",
             "armn": "Armenian Numerals",
             "armnlow": "Armenian Lowercase Numerals",
             "bali": "Balinese Digits",
@@ -416,8 +421,12 @@
           },
           "va": {
             "posix": "POSIX Compliant Locale",
-            "core": "POSIX variant"
+            "core": "POSIX Variant"
           }
+        },
+        "typeValues": {
+          "no": "Off",
+          "yes": "On"
         },
         "codePatterns": {
           "language": "Language: {0}",

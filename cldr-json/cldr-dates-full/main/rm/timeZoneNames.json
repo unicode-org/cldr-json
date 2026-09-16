@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} (temp local)",
           "regionFormat-type-daylight": "{0} (temp da stad)",
           "regionFormat-type-standard": "{0} (temp normal)",
@@ -53,20 +55,11 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "temp da stad da la Gronda Britannia"
-                },
                 "exemplarCity": "Londra"
               },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Athen"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "temp da stad da l’Irlanda"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -605,6 +598,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "temp dad Acre",
+                "standard": "temp normal dad Acre",
+                "daylight": "temp da stad dad Acre"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "temp da l’Afganistan"
@@ -780,6 +780,13 @@
                 "daylight": "temp da stad da la Brasilia"
               }
             },
+            "British": {
+              "long": {
+                "generic": "temp da la Gronda Britannia",
+                "standard": "temp dal meridian da Greenwich",
+                "daylight": "temp da stad da la Gronda Britannia"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "temp dal Brunei"
@@ -953,6 +960,13 @@
                 "standard": "temp dal meridian da Greenwich"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "temp da la Grönlanda",
+                "standard": "temp normal da la Grönlanda",
+                "daylight": "temp da stad da la Grönlanda"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "temp da la Grönlanda orientala",
@@ -979,7 +993,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "temp normal dal Hawai e las Aleutinas"
+                "standard": "temp normal da Hawai-Aleutinas"
               }
             },
             "Hawaii_Aleutian": {
@@ -1040,6 +1054,13 @@
                 "daylight": "temp da stad da l’Iran"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "temp da l’Irlanda",
+                "standard": "temp dal meridian da Greenwich",
+                "daylight": "temp normal da l’Irlanda"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "temp dad Irkutsk",
@@ -1059,6 +1080,13 @@
                 "generic": "temp dal Giapun",
                 "standard": "temp normal dal Giapun",
                 "daylight": "temp da stad dal Giapun"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "temp da Kamtschatka",
+                "standard": "temp normal da Kamtschatka",
+                "daylight": "temp da stad da Kamtschatka"
               }
             },
             "Kazakhstan": {
@@ -1323,11 +1351,16 @@
                 "daylight": "temp da stad da Sachalin"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "temp da Samara",
+                "standard": "temp normal da Samara",
+                "daylight": "temp da stad da Samara"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "temp da la Samoa Americana",
-                "standard": "temp normal da la Samoa Americana",
-                "daylight": "temp da stad da la Samoa Americana"
+                "standard": "temp normal da la Samoa Americana"
               }
             },
             "Seychelles": {
@@ -1394,6 +1427,13 @@
                 "standard": "temp da Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "temp da la Tirchia",
+                "standard": "temp normal da la Tirchia",
+                "daylight": "temp da stad da la Tirchia"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "temp dal Turkmenistan",
@@ -1411,6 +1451,11 @@
                 "generic": "temp da l’Uruguai",
                 "standard": "temp normal da l’Uruguai",
                 "daylight": "temp da stad da l’Uruguai"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "temp dad Ürümqi"
               }
             },
             "Uzbekistan": {

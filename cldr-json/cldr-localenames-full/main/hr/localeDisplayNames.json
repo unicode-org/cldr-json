@@ -25,18 +25,34 @@
           "collation": "redoslijed razvrstavanja",
           "colNormalization": "normalno razvrstavanje",
           "colNumeric": "brojčano ravrstavanje",
+          "colReorder": "promjena redoslijeda pisma/bloka",
           "colStrength": "jačina razvrstavanja",
           "currency": "valuta",
+          "d0": "transformacija odredišta",
+          "dx": "iznimke od pretraživanja rječnika",
           "em": "Prezentacija emojija",
+          "fw": "prvi dan u tjednu",
+          "h0": "mješovito",
           "hc": "format vremena (12 ili 24)",
+          "i0": "način unosa",
+          "k0": "tipkovnica",
+          "kv": "najviše ignorirano",
           "lb": "stil prijeloma retka",
           "lw": "Prijelomi redaka unutar riječi",
+          "m0": "transformacija pravila",
           "ms": "sustav mjernih jedinica",
+          "mu": "mjerna jedinica",
           "numbers": "brojevi",
+          "rg": "Područje za dodatne podatke",
+          "s0": "Transformacija izvora",
+          "sd": "Pododjeljak područja",
           "ss": "Prijelom rečenice nakon kratice",
+          "t": "Transformacija",
+          "t0": "Strojno prevedeno",
           "timezone": "Vremenska zona",
           "va": "Varijanta zemlje/jezika",
-          "x": "Privatna upotreba"
+          "x": "Privatna upotreba",
+          "x0": "Transformacija za privatnu uporabu"
         },
         "types": {
           "calendar": {
@@ -50,9 +66,9 @@
             "gregorian": "gregorijanski kalendar",
             "hebrew": "hebrejski kalendar",
             "indian": "indijski nacionalni kalendar",
-            "islamic": "hijri kalendar",
-            "islamic-civil": "hijri kalendar (tabularni, civilna epoha)",
-            "islamic-umalqura": "hijri kalendar (Umm al-Qura)",
+            "islamic": "hidžretski kalendar",
+            "islamic-civil": "hidžretski kalendar (tabularni, civilna epoha)",
+            "islamic-umalqura": "hidžretski kalendar (Umm al-Qura)",
             "iso8601": "ISO-8601 kalendar",
             "japanese": "japanski kalendar",
             "persian": "perzijski kalendar",
@@ -73,6 +89,7 @@
           },
           "colCaseFirst": {
             "lower": "Prvo poredaj mala slova",
+            "core": "velika slova",
             "no": "Poredaj po normalnom poretku veličine slova",
             "upper": "Poredaj prvo velika slova"
           },
@@ -105,8 +122,12 @@
             "no": "Poredaj znamenke pojedinačno",
             "yes": "Poredaj znamenke numerički"
           },
+          "colReorder": {
+            "core": "simbol"
+          },
           "colStrength": {
             "identical": "Poredaj sve",
+            "core": "osnova, naglasci, veličina, varijante",
             "primary": "Poredaj samo po osnovnim slovima",
             "quaternary": "Poredaj po naglascima/veličini/širini/pismu kana",
             "secondary": "Poredaj po naglasku",
@@ -121,11 +142,16 @@
             "core": "tekst"
           },
           "hc": {
-            "h11": "12-satni format (0 – 11)",
+            "c12": "12-satni format",
             "core": "24 (0 – 24)",
+            "c24": "24-satni format",
+            "h11": "12-satni format (0 – 11)",
             "h12": "12-satni format (0 – 12)",
             "h23": "24-satni format (0 – 23)",
             "h24": "24-satni format (1 – 24)"
+          },
+          "kv": {
+            "core": "prebacivanje praznina, interpunkcija, simboli koji ne predstavljaju valute"
           },
           "lb": {
             "loose": "slobodni stil prijeloma retka",
@@ -149,6 +175,7 @@
           "numbers": {
             "arab": "arapsko-indijske znamenke",
             "arabext": "proširene arapsko-indijske znamenke",
+            "core": "tradicionalni brojevi",
             "armn": "armenski brojevi",
             "armnlow": "mali armenski brojevi",
             "beng": "znamenke bengalskog pisma",
@@ -194,7 +221,17 @@
           },
           "ss": {
             "core": "uključeno"
+          },
+          "t0": {
+            "und": "Neodređeni strojni prijevod"
+          },
+          "va": {
+            "core": "Varijanta POSIX-a"
           }
+        },
+        "typeValues": {
+          "no": "isključeno",
+          "yes": "uključeno"
         },
         "codePatterns": {
           "language": "Jezik: {0}",

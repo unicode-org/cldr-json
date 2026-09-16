@@ -25,18 +25,34 @@
           "collation": "criterio de ordenación",
           "colNormalization": "ordenación normalizada",
           "colNumeric": "ordenación numérica",
+          "colReorder": "reordenación de alfabetos/bloques",
           "colStrength": "forza de ordenación",
           "currency": "moeda",
+          "d0": "destino da transformación",
+          "dx": "exclusións de quebra por dicionario",
           "em": "representación como emoji",
+          "fw": "primeiro día da semana",
+          "h0": "mixto",
           "hc": "ciclo horario (12 ou 24)",
+          "i0": "método de introdución de texto",
+          "k0": "teclado",
+          "kv": "límite máximo ignorado",
           "lb": "estilo de quebra de liña",
           "lw": "quebra de liña dentro das palabras",
+          "m0": "regras de transformación",
           "ms": "sistema internacional de unidades",
+          "mu": "unidade de medida",
           "numbers": "números",
+          "rg": "rexión para datos complementarios",
+          "s0": "orixe da transformación",
+          "sd": "subdivisión territorial",
           "ss": "quebra de liña tras as abreviaturas",
+          "t": "transformación",
+          "t0": "tradución automática",
           "timezone": "fuso horario",
           "va": "variante rexional",
-          "x": "uso privado"
+          "x": "uso privado",
+          "x0": "transformación de uso privado"
         },
         "types": {
           "calendar": {
@@ -73,6 +89,7 @@
           },
           "colCaseFirst": {
             "lower": "Clasificar primeiro as minúsculas",
+            "core": "maiúsculas",
             "no": "Clasificar orde de maiúsculas e minúsculas normal",
             "upper": "Clasificar primeiro as maiúsculas"
           },
@@ -81,9 +98,9 @@
             "yes": "Clasificar distinguindo entre maiúsculas e minúsculas"
           },
           "collation": {
+            "core": "zhuyin",
             "dictionary": "Criterio de ordenación do dicionario",
             "ducet": "criterio de ordenación Unicode predeterminado",
-            "core": "estándar",
             "phonebook": "orde de clasificación da guía telefónica",
             "phonetic": "Orde de clasificación fonética",
             "pinyin": "Orde de clasificación pinyin",
@@ -102,8 +119,12 @@
             "no": "Clasificar díxitos individualmente",
             "yes": "Clasificar díxitos numericamente"
           },
+          "colReorder": {
+            "core": "símbolo"
+          },
           "colStrength": {
             "identical": "Clasificar todo",
+            "core": "letras base, acentos, maiúsculas/minúsculas, variantes",
             "primary": "Clasificar só letras de base",
             "quaternary": "Clasificar acentos/maiúsculas e minúsculas/ancho/kana",
             "secondary": "Clasificar acentos",
@@ -118,11 +139,16 @@
             "core": "texto"
           },
           "hc": {
-            "h11": "sistema de 12 horas (0–11)",
+            "c12": "sistema de 12 horas",
             "core": "24 (1–24)",
+            "c24": "sistema de 24 horas",
+            "h11": "sistema de 12 horas (0–11)",
             "h12": "sistema de 12 horas (1–12)",
             "h23": "sistema de 24 horas (0–23)",
             "h24": "sistema de 24 horas (1–24)"
+          },
+          "kv": {
+            "core": "espazos, puntuación, símbolos (agás as moedas)"
           },
           "lb": {
             "loose": "estilo de quebra de liña flexible",
@@ -146,6 +172,7 @@
           "numbers": {
             "arab": "díxitos indoarábigos",
             "arabext": "díxitos indoarábigos ampliados",
+            "core": "numeración tradicional",
             "armn": "numeración armenia",
             "armnlow": "numeración armenia en minúscula",
             "beng": "díxitos bengalís",
@@ -181,7 +208,7 @@
             "orya": "díxitos odiá",
             "roman": "numeración romana",
             "romanlow": "numeración romana en minúsculas",
-            "taml": "numeración támil tradicional",
+            "taml": "numeración támil (sistema tradicional)",
             "tamldec": "díxitos támiles",
             "telu": "díxitos telugus",
             "thai": "díxitos tailandeses",
@@ -191,7 +218,17 @@
           },
           "ss": {
             "core": "desactivado"
+          },
+          "t0": {
+            "und": "tradución automática sen especificar"
+          },
+          "va": {
+            "core": "variante POSIX"
           }
+        },
+        "typeValues": {
+          "no": "desactivado",
+          "yes": "activado"
         },
         "codePatterns": {
           "language": "Idioma: {0}",

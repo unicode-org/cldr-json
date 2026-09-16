@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Ώρα ({0})",
           "regionFormat-type-daylight": "Θερινή ώρα ({0})",
           "regionFormat-type-standard": "Χειμερινή ώρα ({0})",
@@ -181,7 +183,7 @@
               },
               "Unknown": {
                 "_type": "zone",
-                "exemplarCity": "Άγνωστη πόλη"
+                "exemplarCity": "Άγνωστη τοποθεσία"
               }
             },
             "Europe": {
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Θερινή ώρα Βρετανίας"
-                },
                 "exemplarCity": "Λονδίνο"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Χειμερινή ώρα Ιρλανδίας"
-                },
                 "exemplarCity": "Δουβλίνο"
               },
               "Isle_of_Man": {
@@ -1927,6 +1923,13 @@
                 "daylight": "Θερινή ώρα Μπραζίλιας"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Ώρα Βρετανίας",
+                "standard": "Μέση ώρα Γκρίνουιτς",
+                "daylight": "Θερινή ώρα Βρετανίας"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Ώρα Μπρουνέι Νταρουσαλάμ"
@@ -2115,6 +2118,13 @@
                 "standard": "Μέση ώρα Γκρίνουιτς"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Ώρα Γροιλανδίας",
+                "standard": "Χειμερινή ώρα Γροιλανδίας",
+                "daylight": "Θερινή ώρα Γροιλανδίας"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Ώρα Ανατολικής Γροιλανδίας",
@@ -2129,11 +2139,6 @@
                 "daylight": "Θερινή ώρα Δυτικής Γροιλανδίας"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Ώρα Γκουάμ"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Ώρα Κόλπου"
@@ -2146,7 +2151,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Χειμερινή ώρα Χαβάης-Αλεούτιων Νήσων"
+                "standard": "Χειμερινή ώρα Χαβάης"
               }
             },
             "Hawaii_Aleutian": {
@@ -2207,6 +2212,13 @@
                 "daylight": "Θερινή ώρα Ιράν"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Ώρα Ιρλανδίας",
+                "standard": "Μέση ώρα Γκρίνουιτς",
+                "daylight": "Χειμερινή ώρα Ιρλανδίας"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Ώρα Ιρκούτσκ",
@@ -2231,8 +2243,8 @@
             "Kamchatka": {
               "long": {
                 "generic": "Ώρα Καμτσάτκα",
-                "standard": "Χειμερινή ώρα Πετροπαβλόβσκ-Καμτσάτσκι",
-                "daylight": "Θερινή ώρα Πετροπαβλόβσκ-Καμτσάτσκι"
+                "standard": "Χειμερινή ώρα Πετροπαβλόβσκ-Καμτσάτκα",
+                "daylight": "Θερινή ώρα Πετροπαβλόβσκ-Καμτσάτκα"
               }
             },
             "Kazakhstan": {
@@ -2284,13 +2296,6 @@
                 "generic": "Ώρα Λορντ Χάου",
                 "standard": "Χειμερινή ώρα Λορντ Χάου",
                 "daylight": "Θερινή ώρα Λορντ Χάου"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Ώρα Μακάο",
-                "standard": "Χειμερινή ώρα Μακάο",
-                "daylight": "Θερινή ώρα Μακάο"
               }
             },
             "Magadan": {
@@ -2408,11 +2413,6 @@
                 "daylight": "Θερινή ώρα Φερνάρντο ντε Νορόνια"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Ώρα Νησιών Βόρειες Μαριάνες"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Ώρα Νοβοσιμπίρσκ",
@@ -2511,16 +2511,14 @@
             },
             "Samara": {
               "long": {
-                "generic": "Ώρα Σάμαρας",
-                "standard": "Χειμερινή ώρα Σάμαρας",
+                "generic": "Ώρα Σαμάρας",
+                "standard": "Χειμερινή ώρα Σαμάρας",
                 "daylight": "Θερινή ώρα Σαμάρας"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "Ώρα Σαμόα",
-                "standard": "Χειμερινή ώρα Σαμόα",
-                "daylight": "Θερινή ώρα Σαμόα"
+                "standard": "Χειμερινή ώρα Σαμόα"
               }
             },
             "Seychelles": {
@@ -2611,6 +2609,11 @@
                 "generic": "Ώρα Ουρουγουάης",
                 "standard": "Χειμερινή ώρα Ουρουγουάης",
                 "daylight": "Θερινή ώρα Ουρουγουάης"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ώρα Ουρουμτσί"
               }
             },
             "Uzbekistan": {

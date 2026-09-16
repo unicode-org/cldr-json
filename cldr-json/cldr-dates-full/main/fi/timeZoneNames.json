@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+H.mm;-H.mm",
           "gmtFormat": "UTC{0}",
-          "gmtZeroFormat": "UTC",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "aikavyöhyke: {0}",
           "regionFormat-type-daylight": "{0} (kesäaika)",
           "regionFormat-type-standard": "{0} (normaaliaika)",
@@ -132,20 +134,11 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Britannian kesäaika"
-                },
                 "exemplarCity": "Lontoo"
               },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Ateena"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Irlannin kesäaika"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -707,13 +700,6 @@
                 "daylight": "Alaskan kesäaika"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Almatyn aika",
-                "standard": "Almatyn normaaliaika",
-                "daylight": "Almatyn kesäaika"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Amazonin aika",
@@ -761,20 +747,6 @@
                 "generic": "Apian aika",
                 "standard": "Apian normaaliaika",
                 "daylight": "Apian kesäaika"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Aqtaw’n aika",
-                "standard": "Aqtaw’n normaaliaika",
-                "daylight": "Aqtaw’n kesäaika"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Aqtöben aika",
-                "standard": "Aqtöben normaaliaika",
-                "daylight": "Aqtöben kesäaika"
               }
             },
             "Arabian": {
@@ -876,6 +848,13 @@
                 "generic": "Brasilian aika",
                 "standard": "Brasilian normaaliaika",
                 "daylight": "Brasilian kesäaika"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Ison-Britannian aika",
+                "standard": "Greenwichin normaaliaika",
+                "daylight": "Ison-Britannian kesäaika"
               }
             },
             "Brunei": {
@@ -1056,6 +1035,13 @@
                 "standard": "Greenwichin normaaliaika"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grönlannin aika",
+                "standard": "Grönlannin normaaliaika",
+                "daylight": "Grönlannin kesäaika"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Itä-Grönlannin aika",
@@ -1070,11 +1056,6 @@
                 "daylight": "Länsi-Grönlannin kesäaika"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Guamin aika"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Arabiemiirikuntien normaaliaika"
@@ -1087,7 +1068,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Havaijin-Aleuttien normaaliaika"
+                "standard": "Havaijin normaaliaika"
               }
             },
             "Hawaii_Aleutian": {
@@ -1146,6 +1127,13 @@
                 "generic": "Iranin aika",
                 "standard": "Iranin normaaliaika",
                 "daylight": "Iranin kesäaika"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Irlannin aika",
+                "standard": "Greenwichin normaaliaika",
+                "daylight": "Irlannin kesäaika"
               }
             },
             "Irkutsk": {
@@ -1215,11 +1203,6 @@
                 "standard": "Kirgisian aika"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Sri Lankan aika"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Linesaarten aika"
@@ -1230,13 +1213,6 @@
                 "generic": "Lord Howen aika",
                 "standard": "Lord Howen normaaliaika",
                 "daylight": "Lord Howen kesäaika"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Macaon aika",
-                "standard": "Macaon normaaliaika",
-                "daylight": "Macaon kesäaika"
               }
             },
             "Magadan": {
@@ -1354,11 +1330,6 @@
                 "daylight": "Fernando de Noronhan kesäaika"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Pohjois-Mariaanien aika"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Novosibirskin aika",
@@ -1438,13 +1409,6 @@
                 "standard": "Pjongjangin aika"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Qızılordan aika",
-                "standard": "Qızılordan normaaliaika",
-                "daylight": "Qızılordan kesäaika"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Réunionin aika"
@@ -1471,9 +1435,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoan aika",
-                "standard": "Samoan normaaliaika",
-                "daylight": "Samoan kesäaika"
+                "standard": "Samoan normaaliaika"
               }
             },
             "Seychelles": {
@@ -1564,6 +1526,11 @@
                 "generic": "Uruguayn aika",
                 "standard": "Uruguayn normaaliaika",
                 "daylight": "Uruguayn kesäaika"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ürümqin aika"
               }
             },
             "Uzbekistan": {

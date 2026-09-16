@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} belā",
           "regionFormat-type-daylight": "{0} ḍayliṭ belā",
           "regionFormat-type-standard": "{0} mānānka belā",
@@ -102,9 +104,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "briṭis karã masa belā"
-                },
                 "exemplarCity": "lnḍn"
               },
               "Guernsey": {
@@ -129,9 +128,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "aairis manaka belā"
-                },
                 "exemplarCity": "ḍblin"
               },
               "Isle_of_Man": {
@@ -1906,6 +1902,12 @@
                 "daylight": "brājiliā kār~ā belā"
               }
             },
+            "British": {
+              "long": {
+                "standard": "grinwic mīn belā",
+                "daylight": "briṭis karã masa belā"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "bruneti dārusālām belā"
@@ -2164,6 +2166,12 @@
                 "generic": "irān belā",
                 "standard": "irān mānānka belā",
                 "daylight": "irān ḍelāiṭ belā"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "grinwic mīn belā",
+                "daylight": "aairis manaka belā"
               }
             },
             "Irkutsk": {
@@ -2451,9 +2459,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "saāmoa belā",
-                "standard": "saāmoa mānānka belā",
-                "daylight": "saāmoa ḍelāiṭ"
+                "standard": "saāmoa mānānka belā"
               }
             },
             "Seychelles": {

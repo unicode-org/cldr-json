@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -252,9 +254,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Британин, аьхкенан хан"
-                },
                 "exemplarCity": "Лондон"
               },
               "Guernsey": {
@@ -279,9 +278,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ирланди, аьхкенан хан"
-                },
                 "exemplarCity": "Дублин"
               },
               "Isle_of_Man": {
@@ -1902,6 +1898,12 @@
                 "daylight": "Бразили, аьхкенан хан"
               }
             },
+            "British": {
+              "long": {
+                "standard": "Гринвичица юкъара хан",
+                "daylight": "Британин, аьхкенан хан"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Бруней-Даруссалам"
@@ -2160,6 +2162,12 @@
                 "generic": "ГӀажарийчоь",
                 "standard": "ГӀажарийчоь, стандартан хан",
                 "daylight": "ГӀажарийчоь, аьхкенан хан"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "Гринвичица юкъара хан",
+                "daylight": "Ирланди, аьхкенан хан"
               }
             },
             "Irkutsk": {
@@ -2442,9 +2450,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Самоа",
-                "standard": "Самоа, стандартан хан",
-                "daylight": "Самоа, аьхкенан хан"
+                "standard": "Самоа, стандартан хан"
               }
             },
             "Seychelles": {

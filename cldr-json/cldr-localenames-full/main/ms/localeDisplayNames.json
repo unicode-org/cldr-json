@@ -25,18 +25,34 @@
           "collation": "Tertib Isihan",
           "colNormalization": "Pengisihan Ternormal",
           "colNumeric": "Pengisihan Berangka",
+          "colReorder": "Atur Skrip/Blok Semula",
           "colStrength": "Kekuatan Pengisihan",
           "currency": "Mata wang",
+          "d0": "Sasaran Transformasi",
+          "dx": "Pengecualian Pemisahan Kamus",
           "em": "Paparan Emoji",
+          "fw": "Hari pertama dalam minggu",
+          "h0": "Campuran",
           "hc": "Kitaran Jam (12 berbanding 24)",
+          "i0": "Kaedah Input",
+          "k0": "Papan Kekunci",
+          "kv": "Tahap Abaian Tertinggi",
           "lb": "Gaya Pemisah Baris",
           "lw": "Penggalan Baris dalam Perkataan",
+          "m0": "Peraturan Transformasi",
           "ms": "Sistem Ukuran",
+          "mu": "Unit Ukuran",
           "numbers": "Nombor",
+          "rg": "Rantau Untuk Data Tambahan",
+          "s0": "Sumber Transformasi",
+          "sd": "Subbahagian Rantau",
           "ss": "Penggalan Ayat Selepas Singkatan",
+          "t": "Transformasi",
+          "t0": "Terjemahan Mesin",
           "timezone": "Zon Waktu",
           "va": "Varian Tempat",
-          "x": "Penggunaan Peribadi"
+          "x": "Penggunaan Peribadi",
+          "x0": "Transformasi Penggunaan Peribadi"
         },
         "types": {
           "calendar": {
@@ -55,7 +71,7 @@
             "islamic-rgsa": "Kalendar Islam (Arab Saudi, cerapan)",
             "islamic-tbla": "Kalendar Hijrah (jadual, zaman astronomi)",
             "islamic-umalqura": "Kalendar Islam (Umm Al-Quran)",
-            "iso8601": "Kalendar Gregorian (Tahun Pertama)",
+            "iso8601": "Kalendar Gregorian (Minggu ISO 8601)",
             "japanese": "Kalendar Jepun",
             "persian": "Kalendar Parsi",
             "roc": "Kalendar Minguo"
@@ -75,6 +91,7 @@
           },
           "colCaseFirst": {
             "lower": "Isih Huruf Kecil Dahulu",
+            "core": "Huruf besar",
             "no": "Isih Urutan Atur Biasa",
             "upper": "Isih Huruf Besar Dahulu"
           },
@@ -108,8 +125,12 @@
             "no": "Isih Digit Secara Berasingan",
             "yes": "Isih Digit Mengikut Nombor"
           },
+          "colReorder": {
+            "core": "Simbol"
+          },
           "colStrength": {
             "identical": "Isih Semua",
+            "core": "Huruf Asas, Aksen, Huruf Besar/Kecil, Varian",
             "primary": "Isih Huruf Asas Sahaja",
             "quaternary": "Isih Aksen/Atur/Lebar/Kana",
             "secondary": "Isih Aksen",
@@ -124,11 +145,16 @@
             "core": "Teks"
           },
           "hc": {
-            "h11": "Sistem 12 Jam (0–11)",
+            "c12": "Sistem 12 Jam",
             "core": "24 (1–24)",
+            "c24": "Sistem 24 Jam",
+            "h11": "Sistem 12 Jam (0–11)",
             "h12": "Sistem 12 Jam (1–12)",
             "h23": "Sistem 24 Jam (0–23)",
             "h24": "Sistem 24 Jam (1–24)"
+          },
+          "kv": {
+            "core": "Ruang anjak, tanda baca, simbol bukan mata wang"
           },
           "lb": {
             "loose": "Gaya Pemisah Baris Bebas",
@@ -151,8 +177,9 @@
           },
           "numbers": {
             "ahom": "Digit Ahom",
-            "arab": "Digit Indi-Arab",
-            "arabext": "Digit Indi Arab Lanjutan",
+            "arab": "Digit Arab-India",
+            "arabext": "Digit Arab-India Lanjutan",
+            "core": "Angka tradisional",
             "armn": "Angka Armenia",
             "armnlow": "Angka Kecil Armenia",
             "bali": "Digit Bali",
@@ -210,6 +237,7 @@
             "olck": "Digit Ol Chiki",
             "orya": "Digit Oriya",
             "osma": "Digit Osmanya",
+            "outlined": "Digit Rongga",
             "rohg": "Digit Hanifi Rohingya",
             "roman": "Angka Roman",
             "romanlow": "Angka Huruf Kecil Roman",
@@ -234,7 +262,17 @@
           },
           "ss": {
             "core": "Hidupkan"
+          },
+          "t0": {
+            "und": "Terjemahan Mesin Tidak Tentu"
+          },
+          "va": {
+            "core": "Varian POSIX"
           }
+        },
+        "typeValues": {
+          "no": "Matikan",
+          "yes": "Hidupkan"
         },
         "codePatterns": {
           "language": "Bahasa: {0}",

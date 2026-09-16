@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} ਵੇਲਾ",
           "regionFormat-type-daylight": "{0} ਪ੍ਰਕਾਸ਼ ਵੇਲਾ",
           "regionFormat-type-standard": "{0} ਮਿਆਰੀ ਵੇਲਾ",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ਬ੍ਰਿਟਿਸ਼ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
-                },
                 "exemplarCity": "ਲੰਡਨ"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ਆਇਰਿਸ਼ ਮਿਆਰੀ ਵੇਲਾ"
-                },
                 "exemplarCity": "ਡਬਲਿਨ"
               },
               "Isle_of_Man": {
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "ਏਕਰ ਵੇਲਾ",
+                "standard": "ਏਕਰ ਮਿਆਰੀ ਵੇਲਾ",
+                "daylight": "ਏਕਰ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "ਅਫ਼ਗਾਨਿਸਤਾਨ ਵੇਲਾ"
@@ -1768,13 +1771,6 @@
                 "generic": "ਅਲਾਸਕਾ ਵੇਲਾ",
                 "standard": "ਅਲਾਸਕਾ ਮਿਆਰੀ ਵੇਲਾ",
                 "daylight": "ਅਲਾਸਕਾ ਪ੍ਰਕਾਸ਼ ਵੇਲਾ"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "ਅਲਮਾਟੀ ਸਮਾਂ",
-                "standard": "ਅਲਮਾਟੀ ਮਿਆਰੀ ਸਮਾਂ",
-                "daylight": "ਅਲਮਾਟੀ ਗਰਮੀ-ਰੁੱਤ ਸਮਾਂ"
               }
             },
             "Amazon": {
@@ -1817,20 +1813,6 @@
                 "generic": "ਐਪੀਆ ਵੇਲਾ",
                 "standard": "ਐਪੀਆ ਮਿਆਰੀ ਵੇਲਾ",
                 "daylight": "ਐਪੀਆ ਪ੍ਰਕਾਸ਼ ਵੇਲਾ"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "ਅਕਤਾਉ ਸਮਾਂ",
-                "standard": "ਅਕਤਾਉ ਮਿਆਰੀ ਸਮਾਂ",
-                "daylight": "ਅਕਤਾਉ ਗਰਮੀ-ਰੁੱਤ ਸਮਾਂ"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "ਅਕਤੋਬ ਸਮਾਂ",
-                "standard": "ਅਕਤੋਬ ਮਿਆਰੀ ਸਮਾਂ",
-                "daylight": "ਅਕਤੋਬ ਗਰਮੀ-ਰੁੱਤ ਸਮਾਂ"
               }
             },
             "Arabian": {
@@ -1932,6 +1914,13 @@
                 "generic": "ਬ੍ਰਾਜ਼ੀਲੀਆ ਵੇਲਾ",
                 "standard": "ਬ੍ਰਾਜ਼ੀਲੀਆ ਮਿਆਰੀ ਵੇਲਾ",
                 "daylight": "ਬ੍ਰਾਜ਼ੀਲੀਆ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "ਬ੍ਰਿਟਿਸ਼ ਵੇਲਾ",
+                "standard": "ਗ੍ਰੀਨਵਿਚ ਮੀਨ ਵੇਲਾ",
+                "daylight": "ਬ੍ਰਿਟਿਸ਼ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
               }
             },
             "Brunei": {
@@ -2112,6 +2101,13 @@
                 "standard": "ਗ੍ਰੀਨਵਿਚ ਮੀਨ ਵੇਲਾ"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "ਗ੍ਰੀਨਲੈਂਡ ਵੇਲਾ",
+                "standard": "ਗ੍ਰੀਨਲੈਂਡ ਮਿਆਰੀ ਵੇਲਾ",
+                "daylight": "ਗ੍ਰੀਨਲੈਂਡ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "ਪੂਰਬੀ ਗ੍ਰੀਨਲੈਂਡ ਵੇਲਾ",
@@ -2126,11 +2122,6 @@
                 "daylight": "ਪੱਛਮੀ ਗ੍ਰੀਨਲੈਂਡ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "ਗੁਆਮ ਸਮਾਂ"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "ਖਾੜੀ ਮਿਆਰੀ ਵੇਲਾ"
@@ -2143,7 +2134,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "ਹਵਾਈ-ਅਲੇਯੂਸ਼ਿਅਨ ਮਿਆਰੀ ਵੇਲਾ"
+                "standard": "ਹਵਾਈ ਵੇਲਾ"
               }
             },
             "Hawaii_Aleutian": {
@@ -2207,6 +2198,13 @@
                 "daylight": "ਈਰਾਨ ਪ੍ਰਕਾਸ਼ ਵੇਲਾ"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "ਆਇਰਿਸ਼ ਵੇਲਾ",
+                "standard": "ਗ੍ਰੀਨਵਿਚ ਮੀਨ ਵੇਲਾ",
+                "daylight": "ਆਇਰਿਸ਼ ਮਿਆਰੀ ਵੇਲਾ"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ਇਰਕੁਤਸਕ ਵੇਲਾ",
@@ -2226,6 +2224,13 @@
                 "generic": "ਜਪਾਨ ਵੇਲਾ",
                 "standard": "ਜਪਾਨ ਮਿਆਰੀ ਵੇਲਾ",
                 "daylight": "ਜਪਾਨ ਪ੍ਰਕਾਸ਼ ਵੇਲਾ"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "ਕਮਚਟਕਾ ਵੇਲਾ",
+                "standard": "ਕਮਚਟਕਾ ਮਿਆਰੀ ਵੇਲਾ",
+                "daylight": "ਕਮਚਟਕਾ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
               }
             },
             "Kazakhstan": {
@@ -2267,11 +2272,6 @@
                 "standard": "ਕਿਰਗਿਸਤਾਨ ਵੇਲਾ"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "ਲੰਕਾ ਸਮਾਂ"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "ਲਾਈਨ ਆਈਲੈਂਡ ਵੇਲਾ"
@@ -2282,13 +2282,6 @@
                 "generic": "ਲੌਰਡ ਹੋਵੇ ਵੇਲਾ",
                 "standard": "ਲੌਰਡ ਹੋਵੇ ਮਿਆਰੀ ਵੇਲਾ",
                 "daylight": "ਲੌਰਡ ਹੋਵੇ ਪ੍ਰਕਾਸ਼ ਵੇਲਾ"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "ਮਕਾਉ ਸਮਾਂ",
-                "standard": "ਮਕਾਉ ਮਿਆਰੀ ਸਮਾਂ",
-                "daylight": "ਮਕਾਉ ਗਰਮੀ-ਰੁੱਤ ਸਮਾਂ"
               }
             },
             "Magadan": {
@@ -2406,11 +2399,6 @@
                 "daylight": "ਫਰਨਾਂਡੋ ਡੇ ਨੋਰੋਨਹਾ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "ਉੱਤਰੀ ਮਰਿਆਨਾ ਆਈਲੈਂਡ ਸਮਾਂ"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "ਨੌਵੋਸਿਬੀਰਸਕ ਵੇਲਾ",
@@ -2490,13 +2478,6 @@
                 "standard": "ਪਯੋਂਗਯਾਂਗ ਵੇਲਾ"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "ਕਿਜ਼ਲੋਰਡਾ ਸਮਾਂ",
-                "standard": "ਕਿਜ਼ਲੋਰਡਾ ਮਿਆਰੀ ਸਮਾਂ",
-                "daylight": "ਕਿਜ਼ਲੋਰਡਾ ਗਰਮੀ-ਰੁੱਤ ਸਮਾਂ"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "ਰਿਯੂਨੀਅਨ ਵੇਲਾ"
@@ -2514,11 +2495,16 @@
                 "daylight": "ਸਖਲੀਨ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "ਸਮਾਰਾ ਵੇਲਾ",
+                "standard": "ਸਮਾਰਾ ਮਿਆਰੀ ਵੇਲਾ",
+                "daylight": "ਸਮਾਰਾ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "ਸਾਮੋਆ ਵੇਲਾ",
-                "standard": "ਸਾਮੋਆ ਮਿਆਰੀ ਵੇਲਾ",
-                "daylight": "ਸਾਮੋਆ ਪ੍ਰਕਾਸ਼ ਵੇਲਾ"
+                "standard": "ਸਾਮੋਆ ਮਿਆਰੀ ਵੇਲਾ"
               }
             },
             "Seychelles": {
@@ -2585,6 +2571,13 @@
                 "standard": "ਚੂਕ ਵੇਲਾ"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "ਤੁਰਕੀ ਵੇਲਾ",
+                "standard": "ਤੁਰਕੀ ਮਿਆਰੀ ਵੇਲਾ",
+                "daylight": "ਤੁਰਕੀ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "ਤੁਰਕਮੇਨਿਸਤਾਨ ਵੇਲਾ",
@@ -2602,6 +2595,11 @@
                 "generic": "ਉਰੂਗਵੇ ਵੇਲਾ",
                 "standard": "ਉਰੂਗਵੇ ਮਿਆਰੀ ਵੇਲਾ",
                 "daylight": "ਉਰੂਗਵੇ ਗਰਮੀਆਂ ਦਾ ਵੇਲਾ"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ਉਰੂਮਕੀ ਵੇਲਾ"
               }
             },
             "Uzbekistan": {

@@ -25,18 +25,34 @@
           "collation": "zoradenie",
           "colNormalization": "normálne radenie",
           "colNumeric": "číselné radenie",
+          "colReorder": "skriptová/bloková zmena poradia",
           "colStrength": "sila radenia",
           "currency": "mena",
+          "d0": "transformačný cieľ",
+          "dx": "slovník výnimiek pri delení slov",
           "em": "prezentácia emodži",
+          "fw": "prvý deň v týždni",
+          "h0": "zmiešané",
           "hc": "hodinový cyklus (12 vs 24)",
+          "i0": "metóda vstupu",
+          "k0": "klávesnica",
+          "kv": "ignorovanie najvyššieho",
           "lb": "štýl koncov riadka",
           "lw": "zlom riadka v slovách",
+          "m0": "transformačné pravidlá",
           "ms": "merná sústava",
+          "mu": "merná jednotka",
           "numbers": "čísla",
+          "rg": "pole na doplňujúce údaje",
+          "s0": "transformačný zdroj",
+          "sd": "rozdelenie oblasti",
           "ss": "veta po skrat.",
+          "t": "transformácia",
+          "t0": "strojovo preložené",
           "timezone": "časové pásmo",
           "va": "variant miestneho nastavenia",
-          "x": "súkromné použitie"
+          "x": "súkromné použitie",
+          "x0": "súkromná transformácia"
         },
         "types": {
           "calendar": {
@@ -73,6 +89,7 @@
           },
           "colCaseFirst": {
             "lower": "Najprv radiť malé písmená",
+            "core": "veľké písmená",
             "no": "Normálne radenie veľkých a malých písmen",
             "upper": "Najprv radiť veľké písmená"
           },
@@ -105,8 +122,12 @@
             "no": "Radiť číslice jednotlivo",
             "yes": "Numerické radenie číslic"
           },
+          "colReorder": {
+            "core": "symbol"
+          },
           "colStrength": {
             "identical": "Radiť všetko",
+            "core": "základné, s prízvukmi, veľkosti, varianty",
             "primary": "Radiť iba základné písmená",
             "quaternary": "Radiť akcenty/veľké a malé písmená/šírku/kana",
             "secondary": "Radiť akcenty",
@@ -121,11 +142,16 @@
             "core": "text"
           },
           "hc": {
-            "h11": "12-hodinový cyklus (0 – 11)",
+            "c12": "12-hodinový cyklus",
             "core": "24 (1 – 24)",
+            "c24": "24-hodinový cyklus",
+            "h11": "12-hodinový cyklus (0 – 11)",
             "h12": "12-hodinový cyklus (1 – 12)",
             "h23": "24-hodinový cyklus (0 – 23)",
             "h24": "24-hodinový cyklus (1 – 24)"
+          },
+          "kv": {
+            "core": "posuny, interpunkcia, iné symboly než meny"
           },
           "lb": {
             "loose": "voľný štýl koncov riadka",
@@ -149,6 +175,7 @@
           "numbers": {
             "arab": "arabsko-indické číslice",
             "arabext": "rozšírené arabsko-indické číslice",
+            "core": "tradičné číslice",
             "armn": "arménske číslice",
             "armnlow": "malé arménske číslice",
             "beng": "bengálske číslice",
@@ -194,7 +221,17 @@
           },
           "ss": {
             "core": "zapnuté"
+          },
+          "t0": {
+            "und": "nešpecifikovaný strojový preklad"
+          },
+          "va": {
+            "core": "variant POSIX"
           }
+        },
+        "typeValues": {
+          "no": "vypnuté",
+          "yes": "zapnuté"
         },
         "codePatterns": {
           "language": "Jazyk: {0}",

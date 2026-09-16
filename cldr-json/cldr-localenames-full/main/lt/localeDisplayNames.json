@@ -25,18 +25,34 @@
           "collation": "rikiavimas",
           "colNormalization": "Normalizuotas rikiavimas",
           "colNumeric": "Skaitinis rikiavimas",
+          "colReorder": "Scenarijaus / bloko pertvarkymas",
           "colStrength": "Rikiavimo intensyvumas",
           "currency": "valiuta",
+          "d0": "keisti paskirties vietą",
+          "dx": "žodyno skilimo išimtys",
           "em": "Jaustukų pateiktis",
+          "fw": "Pirma savaitės diena",
+          "h0": "sumaišytas",
           "hc": "valandų ciklas (12 ir 24)",
+          "i0": "įvesties metodas",
+          "k0": "klaviatūra",
+          "kv": "labiausiai ignoruojami",
           "lb": "teksto laužymo stilius",
           "lw": "Eilučių laužymas",
+          "m0": "Transformacijos taisyklės",
           "ms": "matų sistema",
+          "mu": "Matavimo vienetas",
           "numbers": "skaičiai",
+          "rg": "papildomų duomenų regionas",
+          "s0": "transformacijos šaltinis",
+          "sd": "regiono padalinys",
           "ss": "tarpas po trumpinio",
+          "t": "transformuoti",
+          "t0": "mašininio vertimo",
           "timezone": "Laiko juosta",
           "va": "Lokalės variantas",
-          "x": "Naudoti privačiai"
+          "x": "Naudoti privačiai",
+          "x0": "Privataus naudojimo transformacija"
         },
         "types": {
           "calendar": {
@@ -75,6 +91,7 @@
           },
           "colCaseFirst": {
             "lower": "Rikiuoti suteikiant pirmumą mažosioms raidėms",
+            "core": "Didžiosios raidės",
             "no": "Rikiuoti įprasta didžiųjų ir mažųjų raidžių tvarka",
             "upper": "Rikiuoti suteikiant pirmumą didžiosioms raidėms"
           },
@@ -84,9 +101,9 @@
           },
           "collation": {
             "compat": "ankstesnė rūšiavimo tvarka, skirta suderinamumui",
+            "core": "džujinas",
             "dictionary": "žodyno rūšiavimo tvarka",
             "ducet": "numatytasis unikodo rikiavimas",
-            "core": "standartinis",
             "eor": "rūšiavimo tvarka daugiakalbės Europos dokumentų",
             "phonebook": "telefonų knygos rūšiavimo tvarka",
             "phonetic": "Fonetinė rikiavimo tvarka",
@@ -106,8 +123,12 @@
             "no": "Rikiuoti skaitmenis atskirai",
             "yes": "Rikiuoti skaitmenis pagal skaičius"
           },
+          "colReorder": {
+            "core": "Simboliai"
+          },
           "colStrength": {
             "identical": "Rikiuoti viską",
+            "core": "Bazė, akcentai, atvejis, variantai",
             "primary": "Rikiuoti tik pagal pamatines raides",
             "quaternary": "Rikiuoti pagal didžiąsias ir mažąsias raides / plotį / diakritinius / kanos ženklus",
             "secondary": "Rikiuoti diakritinius ženklus",
@@ -122,11 +143,16 @@
             "core": "tekstas"
           },
           "hc": {
-            "h11": "12 valandų sistema (0–11)",
+            "c12": "12 valandų sistema",
             "core": "24 (1–24)",
+            "c24": "24 valandų sistema",
+            "h11": "12 valandų sistema (0–11)",
             "h12": "12 valandų sistema (1–12)",
             "h23": "24 valandų sistema (0–23)",
             "h24": "24 valandų sistema (1–24)"
+          },
+          "kv": {
+            "core": "SHIFT tarpai, skyryba, ne valiutos simboliai"
           },
           "lb": {
             "loose": "laisvas teksto laužymo stilius",
@@ -150,6 +176,7 @@
           "numbers": {
             "arab": "arabų-indų skaitmenys",
             "arabext": "išplėstiniai arabų-indų skaitmenys",
+            "core": "tradiciniai skaitmenys",
             "armn": "armėnų skaitmenys",
             "armnlow": "armėnų skaitmenys mažosiomis raidėmis",
             "bali": "bali skaitmenys",
@@ -212,7 +239,17 @@
           },
           "ss": {
             "core": "įjungta"
+          },
+          "t0": {
+            "und": "nenurodytas mašininis vertimas"
+          },
+          "va": {
+            "core": "POSIX variantas"
           }
+        },
+        "typeValues": {
+          "no": "išjungta",
+          "yes": "įjungta"
         },
         "codePatterns": {
           "language": "Kalba: {0}",

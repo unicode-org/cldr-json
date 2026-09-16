@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0} (ura ligali)",
           "regionFormat-type-standard": "{0} (ura sulari)",
@@ -155,9 +157,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ura ligali Britànnica"
-                },
                 "exemplarCity": "Lònnira"
               },
               "Gibraltar": {
@@ -174,9 +173,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ura sulari Irlannisi"
-                },
                 "exemplarCity": "Dubblinu"
               },
               "Isle_of_Man": {
@@ -734,11 +730,6 @@
                 "generic": "Ura di l’Alaska",
                 "standard": "Ura sulari di l’Alaska",
                 "daylight": "Ura ligali di l’Alaska"
-              },
-              "short": {
-                "generic": "AKT",
-                "standard": "AKST",
-                "daylight": "AKDT"
               }
             },
             "Amazon": {
@@ -753,11 +744,6 @@
                 "generic": "Ura cintrali",
                 "standard": "Ura sulari cintrali",
                 "daylight": "Ura ligali cintrali"
-              },
-              "short": {
-                "generic": "CT",
-                "standard": "CST",
-                "daylight": "CDT"
               }
             },
             "America_Eastern": {
@@ -765,11 +751,6 @@
                 "generic": "Ura livantina",
                 "standard": "Ura sulari livantina",
                 "daylight": "Ura ligali livantina"
-              },
-              "short": {
-                "generic": "ET",
-                "standard": "EST",
-                "daylight": "EDT"
               }
             },
             "America_Mountain": {
@@ -777,11 +758,6 @@
                 "generic": "Ura dî muntagni",
                 "standard": "Ura sulari dî muntagni",
                 "daylight": "Ura ligali dî muntagni"
-              },
-              "short": {
-                "generic": "MT",
-                "standard": "MST",
-                "daylight": "MDT"
               }
             },
             "America_Pacific": {
@@ -789,11 +765,6 @@
                 "generic": "Ura dû Pacìficu",
                 "standard": "Ura sulari dû Pacìficu",
                 "daylight": "Ura ligali dû Pacìficu"
-              },
-              "short": {
-                "generic": "PT",
-                "standard": "PST",
-                "daylight": "PDT"
               }
             },
             "Apia": {
@@ -836,11 +807,6 @@
                 "generic": "Ura di l’Atlànticu",
                 "standard": "Ura sulari di l’Atlànticu",
                 "daylight": "Ura ligali di l’Atlànticu"
-              },
-              "short": {
-                "generic": "AT",
-                "standard": "AST",
-                "daylight": "ADT"
               }
             },
             "Australia_Central": {
@@ -907,6 +873,12 @@
                 "generic": "Ura di Brasilia",
                 "standard": "Ura sulari di Brasilia",
                 "daylight": "Ura ligali di Brasilia"
+              }
+            },
+            "British": {
+              "long": {
+                "standard": "Ura Minzana di Greenwich",
+                "daylight": "Ura ligali Britànnica"
               }
             },
             "Brunei": {
@@ -976,11 +948,6 @@
                 "generic": "Ura di Cubba",
                 "standard": "Ura sulari di Cubba",
                 "daylight": "Ura ligali di Cubba"
-              },
-              "short": {
-                "generic": "CuT",
-                "standard": "CuST",
-                "daylight": "CuDT"
               }
             },
             "Davis": {
@@ -1121,9 +1088,6 @@
             "Hawaii": {
               "long": {
                 "standard": "Ura sulari di l’Hawaai"
-              },
-              "short": {
-                "standard": "HAST"
               }
             },
             "Hawaii_Aleutian": {
@@ -1131,11 +1095,6 @@
                 "generic": "Ura di l’Hawaai",
                 "standard": "Ura sulari di l’Hawaai",
                 "daylight": "Ura ligali di l’Hawaai"
-              },
-              "short": {
-                "generic": "HAT",
-                "standard": "HAST",
-                "daylight": "HADT"
               }
             },
             "Hong_Kong": {
@@ -1187,6 +1146,12 @@
                 "generic": "Ura di l’Iran",
                 "standard": "Ura sulari di l’Iran",
                 "daylight": "Ura ligali di l’Iran"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "Ura Minzana di Greenwich",
+                "daylight": "Ura sulari Irlannisi"
               }
             },
             "Irkutsk": {
@@ -1474,9 +1439,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Ura dî Samoa miricani",
-                "standard": "Ura sulari dî Samoa miricani",
-                "daylight": "Ura ligali dî Samoa miricani"
+                "standard": "Ura sulari dî Samoa miricani"
               }
             },
             "Seychelles": {

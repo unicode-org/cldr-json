@@ -10,8 +10,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Saeta {0}(y)ê",
           "regionFormat-type-daylight": "Saeta Havînê ya {0}(y)ê",
           "regionFormat-type-standard": "Saeta {0}(y)ê ya Standard",
@@ -99,9 +101,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Saeta Havînê ya Brîtanyayê"
-                },
                 "exemplarCity": "Londra"
               },
               "Gibraltar": {
@@ -118,9 +117,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Saeta Îrlandayê ya Standard"
-                },
                 "exemplarCity": "Dûblîn"
               },
               "Isle_of_Man": {
@@ -865,13 +861,6 @@
                 "daylight": "Saeta Havînê ya Alaskayê"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Saeta Almatîyê",
-                "standard": "Saeta Almatîyê ya Standard",
-                "daylight": "Saeta Havînê ya Almatîyê"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Saeta Amazonê",
@@ -919,20 +908,6 @@
                 "generic": "Saeta Apiayê",
                 "standard": "Saeta Apiayê ya Standard",
                 "daylight": "Saeta Havînê ya Apiayê"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Saeta Aqtauyê",
-                "standard": "Saeta Aqtauyê ya Standard",
-                "daylight": "Saeta Havînê ya Aqtauyê"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Saeta Aqtobeyê",
-                "standard": "Saeta Aqtobeyê ya Standard",
-                "daylight": "Saeta Havînê ya Aqtobeyê"
               }
             },
             "Arabian": {
@@ -1034,6 +1009,12 @@
                 "generic": "Saeta Brasîlyayê",
                 "standard": "Saeta Brasîlyayê ya Standard",
                 "daylight": "Saeta Havînê ya Brasîlyayê"
+              }
+            },
+            "British": {
+              "long": {
+                "standard": "Saeta Navînî ya Greenwichê",
+                "daylight": "Saeta Havînê ya Brîtanyayê"
               }
             },
             "Brunei": {
@@ -1235,11 +1216,6 @@
                 "daylight": "Saeta Havînê ya Grînlanda Rojava"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Saeta Guamê ya Standard"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Saeta Kendavê ya Standard"
@@ -1313,6 +1289,12 @@
                 "daylight": "Saeta Havînê ya Îranê"
               }
             },
+            "Irish": {
+              "long": {
+                "standard": "Saeta Navînî ya Greenwichê",
+                "daylight": "Saeta Îrlandayê ya Standard"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Saeta Irkutskê",
@@ -1380,11 +1362,6 @@
                 "standard": "Saeta Qirxizistanê"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Saeta Lankayê"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Saeta Giravên Lîneyê"
@@ -1395,13 +1372,6 @@
                 "generic": "Saeta Lord Howeyê",
                 "standard": "Saeta Standard a Lord Howeyê",
                 "daylight": "Saeta Havînê ya Lord Howeyê"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Saeta Macaoyê",
-                "standard": "Saeta Macaoyê ya Standard",
-                "daylight": "Saeta Havînê ya Macaoyê"
               }
             },
             "Magadan": {
@@ -1519,11 +1489,6 @@
                 "daylight": "Saeta Havînê ya Fernando de Noronhayê"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Saeta Giravên Marianaya Bakur"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Saeta Novosibirskê",
@@ -1603,13 +1568,6 @@
                 "standard": "Saeta Pyongyangê"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Saeta Qizilordayê",
-                "standard": "Saeta Qizilordayê ya Standard",
-                "daylight": "Saeta Havînê ya Qizilordayê"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Saeta Réunionê"
@@ -1636,9 +1594,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Saeta Samoayê",
-                "standard": "Saeta Samoayê ya Standard",
-                "daylight": "Saeta Havînê ya Samoayê"
+                "standard": "Saeta Samoayê ya Standard"
               }
             },
             "Seychelles": {

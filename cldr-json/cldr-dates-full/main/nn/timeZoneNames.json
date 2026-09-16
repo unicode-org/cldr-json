@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "tidssone for {0}",
           "regionFormat-type-daylight": "sommartid – {0}",
           "regionFormat-type-standard": "normaltid – {0}",
@@ -101,21 +103,9 @@
                 "_type": "zone",
                 "exemplarCity": "Helsingfors"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "britisk sommartid"
-                }
-              },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Athen"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "irsk sommartid"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -578,19 +568,19 @@
           "metazone": {
             "Acre": {
               "long": {
-                "generic": "Acre-tid",
-                "standard": "Acre normaltid",
-                "daylight": "Acre sommertid"
+                "generic": "tidssone for Acre",
+                "standard": "normaltid for Acre",
+                "daylight": "sommartid for Acre"
               }
             },
             "Afghanistan": {
               "long": {
-                "standard": "afghansk tid"
+                "standard": "tidssone for Afghanistan"
               }
             },
             "Africa_Central": {
               "long": {
-                "standard": "sentralafrikansk tid"
+                "standard": "tidssone for Sentral-Afrika"
               }
             },
             "Africa_Eastern": {
@@ -600,31 +590,19 @@
             },
             "Africa_Southern": {
               "long": {
-                "standard": "sørafrikansk tid"
+                "standard": "tidssone for Sør-Afrika"
               }
             },
             "Africa_Western": {
               "long": {
-                "standard": "vestafrikansk tid"
+                "standard": "tidssone for Vest-Afrika"
               }
             },
             "Alaska": {
               "long": {
-                "generic": "alaskisk tid",
-                "standard": "alaskisk normaltid",
+                "generic": "tidssone for Alaska",
+                "standard": "normaltid for Alaska",
                 "daylight": "alaskisk sommartid"
-              },
-              "short": {
-                "generic": "AKT",
-                "standard": "AKST",
-                "daylight": "AKDT"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "Almaty-tid",
-                "standard": "Almaty, standardtid",
-                "daylight": "Almaty, sommertid"
               }
             },
             "Amazon": {
@@ -639,11 +617,6 @@
                 "generic": "tidssone for sentrale Nord-Amerika",
                 "standard": "normaltid for sentrale Nord-Amerika",
                 "daylight": "sommartid for sentrale Nord-Amerika"
-              },
-              "short": {
-                "generic": "CT",
-                "standard": "CST",
-                "daylight": "CDT"
               }
             },
             "America_Eastern": {
@@ -651,11 +624,6 @@
                 "generic": "tidssone for den nordamerikanske austkysten",
                 "standard": "normaltid for den nordamerikanske austkysten",
                 "daylight": "sommartid for den nordamerikanske austkysten"
-              },
-              "short": {
-                "generic": "ET",
-                "standard": "EST",
-                "daylight": "EDT"
               }
             },
             "America_Mountain": {
@@ -663,11 +631,6 @@
                 "generic": "tidssone for Rocky Mountains (USA)",
                 "standard": "normaltid for Rocky Mountains (USA)",
                 "daylight": "sommartid for Rocky Mountains (USA)"
-              },
-              "short": {
-                "generic": "MT",
-                "standard": "MST",
-                "daylight": "MDT"
               }
             },
             "America_Pacific": {
@@ -675,11 +638,6 @@
                 "generic": "tidssone for den nordamerikanske stillehavskysten",
                 "standard": "normaltid for den nordamerikanske stillehavskysten",
                 "daylight": "sommartid for den nordamerikanske stillehavskysten"
-              },
-              "short": {
-                "generic": "PT",
-                "standard": "PST",
-                "daylight": "PDT"
               }
             },
             "Anadyr": {
@@ -691,28 +649,14 @@
             },
             "Apia": {
               "long": {
-                "generic": "tidssone for Apia",
-                "standard": "normaltid for Apia",
+                "generic": "tidssone for Samoa",
+                "standard": "normaltid for Samoa",
                 "daylight": "sommartid for Apia"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Aqtau-tid",
-                "standard": "Aqtau, standardtid",
-                "daylight": "Aqtau, sommertid"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Aqtobe-tid",
-                "standard": "Aqtobe, standardtid",
-                "daylight": "Aqtobe, sommertid"
               }
             },
             "Arabian": {
               "long": {
-                "generic": "arabisk tid",
+                "generic": "tidssone for Saudi-Arabia",
                 "standard": "arabisk normaltid",
                 "daylight": "arabisk sommartid"
               }
@@ -733,8 +677,8 @@
             },
             "Armenia": {
               "long": {
-                "generic": "armensk tid",
-                "standard": "armensk normaltid",
+                "generic": "tidssone for Armenia",
+                "standard": "normaltid for Armenia",
                 "daylight": "armensk sommartid"
               }
             },
@@ -743,23 +687,18 @@
                 "generic": "tidssone for den nordamerikanske atlanterhavskysten",
                 "standard": "normaltid for den nordamerikanske atlanterhavskysten",
                 "daylight": "sommartid for den nordamerikanske atlanterhavskysten"
-              },
-              "short": {
-                "generic": "AT",
-                "standard": "AST",
-                "daylight": "ADT"
               }
             },
             "Australia_Central": {
               "long": {
-                "generic": "sentralaustralsk tid",
+                "generic": "tidssone for Sentral-Australia",
                 "standard": "sentralaustralsk standardtid",
                 "daylight": "sentralaustralsk sommartid"
               }
             },
             "Australia_CentralWestern": {
               "long": {
-                "generic": "vest-sentralaustralsk tid",
+                "generic": "tidssone for Sentralvest-Australia",
                 "standard": "vest-sentralaustralsk standardtid",
                 "daylight": "vest-sentralaustralsk sommartid"
               }
@@ -773,35 +712,35 @@
             },
             "Australia_Western": {
               "long": {
-                "generic": "vestaustralsk tid",
+                "generic": "tidssone for Vest-Australia",
                 "standard": "vestaustralsk standardtid",
                 "daylight": "vestaustralsk sommartid"
               }
             },
             "Azerbaijan": {
               "long": {
-                "generic": "aserbajdsjansk tid",
-                "standard": "aserbajdsjansk normaltid",
+                "generic": "tidssone for Aserbajdsjan",
+                "standard": "normaltid for Aserbajdsjan",
                 "daylight": "aserbajdsjansk sommartid"
               }
             },
             "Azores": {
               "long": {
-                "generic": "asorisk tid",
-                "standard": "asorisk normaltid",
+                "generic": "tidssone for Asorene",
+                "standard": "normaltid for Asorene",
                 "daylight": "asorisk sommartid"
               }
             },
             "Bangladesh": {
               "long": {
-                "generic": "bangladeshisk tid",
-                "standard": "bangladeshisk normaltid",
+                "generic": "tidssone for Bangladesh",
+                "standard": "normaltid for Bangladesh",
                 "daylight": "bangladeshisk sommartid"
               }
             },
             "Bhutan": {
               "long": {
-                "standard": "bhutansk tid"
+                "standard": "tidssone for Bhutan"
               }
             },
             "Bolivia": {
@@ -816,15 +755,22 @@
                 "daylight": "sommartid for Brasilia"
               }
             },
+            "British": {
+              "long": {
+                "generic": "tidssone for Storbritannia",
+                "standard": "Greenwich middeltid",
+                "daylight": "britisk sommartid"
+              }
+            },
             "Brunei": {
               "long": {
-                "standard": "tidssone for Brunei Darussalam"
+                "standard": "tidssone for Brunei"
               }
             },
             "Cape_Verde": {
               "long": {
-                "generic": "kappverdisk tid",
-                "standard": "kappverdisk normaltid",
+                "generic": "tidssone for Kapp Verde",
+                "standard": "normaltid for Kapp Verde",
                 "daylight": "kappverdisk sommartid"
               }
             },
@@ -854,8 +800,8 @@
             },
             "China": {
               "long": {
-                "generic": "kinesisk tid",
-                "standard": "kinesisk normaltid",
+                "generic": "tidssone for Kina",
+                "standard": "normaltid for Kina",
                 "daylight": "kinesisk sommartid"
               }
             },
@@ -885,9 +831,9 @@
             },
             "Cuba": {
               "long": {
-                "generic": "kubansk tid",
-                "standard": "kubansk normaltid",
-                "daylight": "kubansk sommartid"
+                "generic": "tidssone for Cuba",
+                "standard": "normaltid for Cuba",
+                "daylight": "sommartid for Cuba"
               }
             },
             "Davis": {
@@ -919,7 +865,7 @@
             },
             "Europe_Central": {
               "long": {
-                "generic": "sentraleuropeisk tid",
+                "generic": "tidssone for Sentral-Europa",
                 "standard": "sentraleuropeisk standardtid",
                 "daylight": "sentraleuropeisk sommartid"
               },
@@ -948,7 +894,7 @@
             },
             "Europe_Western": {
               "long": {
-                "generic": "vesteuropeisk tid",
+                "generic": "tidssone for Vest-Europa",
                 "standard": "vesteuropeisk standardtid",
                 "daylight": "vesteuropeisk sommartid"
               },
@@ -967,9 +913,9 @@
             },
             "Fiji": {
               "long": {
-                "generic": "fijiansk tid",
-                "standard": "fijiansk normaltid",
-                "daylight": "fijiansk sommartid"
+                "generic": "tidssone for Fiji",
+                "standard": "normaltid for Fiji",
+                "daylight": "sommartid for Fiji"
               }
             },
             "French_Guiana": {
@@ -994,8 +940,8 @@
             },
             "Georgia": {
               "long": {
-                "generic": "georgisk tid",
-                "standard": "georgisk normaltid",
+                "generic": "tidssone for Georgia",
+                "standard": "normaltid for Georgia",
                 "daylight": "georgisk sommartid"
               }
             },
@@ -1012,23 +958,25 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "tidssone for Grønland",
+                "standard": "normaltid for Grønland",
+                "daylight": "sommartid for Grønland"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
-                "generic": "austgrønlandsk tid",
-                "standard": "austgrønlandsk normaltid",
-                "daylight": "austgrønlandsk sommartid"
+                "generic": "tidssone for Austgrønland",
+                "standard": "normaltid for Austgrønland",
+                "daylight": "sommartid for Austgrønland"
               }
             },
             "Greenland_Western": {
               "long": {
-                "generic": "vestgrønlandsk tid",
-                "standard": "vestgrønlandsk normaltid",
-                "daylight": "vestgrønlandsk sommartid"
-              }
-            },
-            "Guam": {
-              "long": {
-                "standard": "Guam-tid"
+                "generic": "tidssone for Vestgrønland",
+                "standard": "normaltid for Vestgrønland",
+                "daylight": "sommartid for Vestgrønland"
               }
             },
             "Gulf": {
@@ -1043,22 +991,14 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "normaltid for Hawaii og Aleutene"
-              },
-              "short": {
-                "standard": "HAST"
+                "standard": "normaltid for Hawaii/Aleutane"
               }
             },
             "Hawaii_Aleutian": {
               "long": {
-                "generic": "tidssone for Hawaii og Aleutene",
-                "standard": "normaltid for Hawaii og Aleutene",
-                "daylight": "sommartid for Hawaii og Aleutene"
-              },
-              "short": {
-                "generic": "HAT",
-                "standard": "HAST",
-                "daylight": "HADT"
+                "generic": "tidssone for Hawaii og Aleutane",
+                "standard": "normaltid for Hawaii og Aleutane",
+                "daylight": "sommartid for Hawaii og Aleutane"
               }
             },
             "Hong_Kong": {
@@ -1077,7 +1017,7 @@
             },
             "India": {
               "long": {
-                "standard": "indisk tid"
+                "standard": "normaltid for India"
               }
             },
             "Indian_Ocean": {
@@ -1087,12 +1027,12 @@
             },
             "Indochina": {
               "long": {
-                "standard": "indokinesisk tid"
+                "standard": "tidssone for Indokina"
               }
             },
             "Indonesia_Central": {
               "long": {
-                "standard": "sentralindonesisk tid"
+                "standard": "tidssone for Sentral-Indonesia"
               }
             },
             "Indonesia_Eastern": {
@@ -1102,14 +1042,21 @@
             },
             "Indonesia_Western": {
               "long": {
-                "standard": "vestindonesisk tid"
+                "standard": "tidssone for Vest-Indonesia"
               }
             },
             "Iran": {
               "long": {
-                "generic": "iransk tid",
-                "standard": "iransk normaltid",
+                "generic": "tidssone for Iran",
+                "standard": "normaltid for Iran",
                 "daylight": "iransk sommartid"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "tidssone for Irland",
+                "standard": "Greenwich middeltid",
+                "daylight": "normaltid for Irland"
               }
             },
             "Irkutsk": {
@@ -1121,28 +1068,28 @@
             },
             "Israel": {
               "long": {
-                "generic": "israelsk tid",
-                "standard": "israelsk normaltid",
+                "generic": "tidssone for Israel",
+                "standard": "normaltid for Israel",
                 "daylight": "israelsk sommartid"
               }
             },
             "Japan": {
               "long": {
-                "generic": "japansk tid",
-                "standard": "japansk normaltid",
+                "generic": "tidssone for Japan",
+                "standard": "normaltid for Japan",
                 "daylight": "japansk sommartid"
               }
             },
             "Kamchatka": {
               "long": {
-                "generic": "Russisk (Petropavlovsk-Kamtsjatskij) tid",
-                "standard": "Russisk (Petropavlovsk-Kamtsjatskij) normaltid",
-                "daylight": "Russisk (Petropavlovsk-Kamtsjatskij) sommertid"
+                "generic": "tidssone for Kamsjatka",
+                "standard": "normaltid for Kamsjatka",
+                "daylight": "sommartid for Kamsjatka"
               }
             },
             "Kazakhstan": {
               "long": {
-                "standard": "kasakhstansk tid"
+                "standard": "tidssone for Kasakhstan"
               }
             },
             "Kazakhstan_Eastern": {
@@ -1152,13 +1099,13 @@
             },
             "Kazakhstan_Western": {
               "long": {
-                "standard": "vestkasakhstansk tid"
+                "standard": "tidssone for Vest-Kasakhstan"
               }
             },
             "Korea": {
               "long": {
-                "generic": "koreansk tid",
-                "standard": "koreansk normaltid",
+                "generic": "tidssone for Korea",
+                "standard": "normaltid for Korea",
                 "daylight": "koreansk sommartid"
               }
             },
@@ -1176,12 +1123,7 @@
             },
             "Kyrgystan": {
               "long": {
-                "standard": "kirgisisk tid"
-              }
-            },
-            "Lanka": {
-              "long": {
-                "standard": "Lanka-tid"
+                "standard": "tidssone for Kirgisistan"
               }
             },
             "Line_Islands": {
@@ -1196,13 +1138,6 @@
                 "daylight": "sommartid for Lord Howe-øya"
               }
             },
-            "Macau": {
-              "long": {
-                "generic": "Macau-tid",
-                "standard": "Macau, standardtid",
-                "daylight": "Macau, sommertid"
-              }
-            },
             "Magadan": {
               "long": {
                 "generic": "tidssone for Magadan",
@@ -1212,12 +1147,12 @@
             },
             "Malaysia": {
               "long": {
-                "standard": "malaysisk tid"
+                "standard": "tidssone for Malaysia"
               }
             },
             "Maldives": {
               "long": {
-                "standard": "maldivisk tid"
+                "standard": "tidssone for Maldivene"
               }
             },
             "Marquesas": {
@@ -1227,13 +1162,13 @@
             },
             "Marshall_Islands": {
               "long": {
-                "standard": "marshallesisk tid"
+                "standard": "tidssone for Marshalløyene"
               }
             },
             "Mauritius": {
               "long": {
-                "generic": "mauritisk tid",
-                "standard": "mauritisk normaltid",
+                "generic": "tidssone for Mauritius",
+                "standard": "normaltid for Mauritius",
                 "daylight": "mauritisk sommartid"
               }
             },
@@ -1265,23 +1200,23 @@
             },
             "Myanmar": {
               "long": {
-                "standard": "myanmarsk tid"
+                "standard": "tidssone for Myanmar"
               }
             },
             "Nauru": {
               "long": {
-                "standard": "naurisk tid"
+                "standard": "tidssone for Nauru"
               }
             },
             "Nepal": {
               "long": {
-                "standard": "nepalsk tid"
+                "standard": "tidssone for Nepal"
               }
             },
             "New_Caledonia": {
               "long": {
-                "generic": "kaledonsk tid",
-                "standard": "kaledonsk normaltid",
+                "generic": "tidssone for Ny-Caledonia",
+                "standard": "normaltid for Ny-Caledonia",
                 "daylight": "kaledonsk sommartid"
               }
             },
@@ -1318,11 +1253,6 @@
                 "daylight": "sommartid for Fernando de Noronha"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Nord-Marianene-tid"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "tidssone for Novosibirsk",
@@ -1339,19 +1269,19 @@
             },
             "Pakistan": {
               "long": {
-                "generic": "pakistansk tid",
-                "standard": "pakistansk normaltid",
+                "generic": "tidssone for Pakistan",
+                "standard": "normaltid for Pakistan",
                 "daylight": "pakistansk sommartid"
               }
             },
             "Palau": {
               "long": {
-                "standard": "palauisk tid"
+                "standard": "tidssone for Palau"
               }
             },
             "Papua_New_Guinea": {
               "long": {
-                "standard": "papuansk tid"
+                "standard": "tidssone for Papua Ny-Guinea"
               }
             },
             "Paraguay": {
@@ -1370,8 +1300,8 @@
             },
             "Philippines": {
               "long": {
-                "generic": "filippinsk tid",
-                "standard": "filippinsk normaltid",
+                "generic": "tidssone for Filippinene",
+                "standard": "normaltid for Filippinene",
                 "daylight": "filippinsk sommartid"
               }
             },
@@ -1402,13 +1332,6 @@
                 "standard": "tidssone for Pyongyang"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Qyzylorda-tid",
-                "standard": "Qyzylorda, standardtid",
-                "daylight": "Qyzylorda, sommertid"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "tidssone for Réunion"
@@ -1428,31 +1351,29 @@
             },
             "Samara": {
               "long": {
-                "generic": "Russisk (Samara) tid",
-                "standard": "Russisk (Samara) normaltid",
-                "daylight": "Russisk (Samara) sommertid"
+                "generic": "tidssone for Samara",
+                "standard": "normaltid for Samara",
+                "daylight": "sommartid for Samara"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "samoansk tid",
-                "standard": "samoansk normaltid",
-                "daylight": "samoansk sommartid"
+                "standard": "tidssone for Amerikansk Samoa"
               }
             },
             "Seychelles": {
               "long": {
-                "standard": "seychellisk tid"
+                "standard": "tidssone for Seychellene"
               }
             },
             "Singapore": {
               "long": {
-                "standard": "singaporsk tid"
+                "standard": "tidssone for Singapore"
               }
             },
             "Solomon": {
               "long": {
-                "standard": "salomonsk tid"
+                "standard": "tidssone for Salomonøyene"
               }
             },
             "South_Georgia": {
@@ -1472,7 +1393,7 @@
             },
             "Tahiti": {
               "long": {
-                "standard": "tahitisk tid"
+                "standard": "tidssone for Tahiti"
               }
             },
             "Taipei": {
@@ -1484,7 +1405,7 @@
             },
             "Tajikistan": {
               "long": {
-                "standard": "tadsjikisk tid"
+                "standard": "tidssone for Tadsjikistan"
               }
             },
             "Tokelau": {
@@ -1494,8 +1415,8 @@
             },
             "Tonga": {
               "long": {
-                "generic": "tongansk tid",
-                "standard": "tongansk normaltid",
+                "generic": "tidssone for Tonga",
+                "standard": "normaltid for Tonga",
                 "daylight": "tongansk sommartid"
               }
             },
@@ -1504,16 +1425,23 @@
                 "standard": "tidssone for Chuukøyane"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "tidssone for Tyrkia",
+                "standard": "normaltid for Tyrkia",
+                "daylight": "tyrkisk sommartid"
+              }
+            },
             "Turkmenistan": {
               "long": {
-                "generic": "turkmensk tid",
-                "standard": "turkmensk normaltid",
+                "generic": "tidssone for Turkmenistan",
+                "standard": "normaltid for Turkmenistan",
                 "daylight": "turkmensk sommartid"
               }
             },
             "Tuvalu": {
               "long": {
-                "standard": "tuvalsk tid"
+                "standard": "tidssone for Tuvalu"
               }
             },
             "Uruguay": {
@@ -1523,17 +1451,22 @@
                 "daylight": "uruguayansk sommartid"
               }
             },
+            "Urumqi": {
+              "long": {
+                "standard": "tidssone for Ürümqi"
+              }
+            },
             "Uzbekistan": {
               "long": {
-                "generic": "usbekisk tid",
-                "standard": "usbekisk normaltid",
+                "generic": "tidssone for Usbekistan",
+                "standard": "normaltid for Usbekistan",
                 "daylight": "usbekisk sommartid"
               }
             },
             "Vanuatu": {
               "long": {
-                "generic": "vanuatisk tid",
-                "standard": "vanuatisk normaltid",
+                "generic": "tidssone for Vanuatu",
+                "standard": "normaltid for Vanuatu",
                 "daylight": "vanuatisk sommartid"
               }
             },

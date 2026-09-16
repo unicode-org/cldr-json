@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "hora de {0}",
           "regionFormat-type-daylight": "hora de verano de {0}",
           "regionFormat-type-standard": "hora estándar de {0}",
@@ -67,7 +69,7 @@
               },
               "Wallis": {
                 "_type": "zone",
-                "exemplarCity": "Wallis & Futuna"
+                "exemplarCity": "Wallis y Futuna"
               }
             },
             "Etc": {
@@ -158,6 +160,10 @@
                 "_type": "zone",
                 "exemplarCity": "Tokio"
               },
+              "Bishkek": {
+                "_type": "zone",
+                "exemplarCity": "Biskek"
+              },
               "Pyongyang": {
                 "_type": "zone",
                 "exemplarCity": "Pionyang"
@@ -188,7 +194,7 @@
               },
               "Rangoon": {
                 "_type": "zone",
-                "exemplarCity": "Yangón (Rangún)"
+                "exemplarCity": "Rangún"
               },
               "Hovd": {
                 "_type": "zone",
@@ -604,9 +610,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "hora de verano británica"
-                },
                 "exemplarCity": "Londres"
               },
               "Guernsey": {
@@ -619,9 +622,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "hora estándar de Irlanda"
-                },
                 "exemplarCity": "Dublín"
               },
               "Isle_of_Man": {
@@ -752,7 +752,11 @@
               },
               "Porto-Novo": {
                 "_type": "zone",
-                "exemplarCity": "Portonovo"
+                "exemplarCity": "Porto Novo"
+              },
+              "Kinshasa": {
+                "_type": "zone",
+                "exemplarCity": "Kinsasa"
               },
               "Abidjan": {
                 "_type": "zone",
@@ -792,7 +796,7 @@
               },
               "Conakry": {
                 "_type": "zone",
-                "exemplarCity": "Conakry"
+                "exemplarCity": "Conakri"
               },
               "Bissau": {
                 "_type": "zone",
@@ -817,6 +821,10 @@
               "Sao_Tome": {
                 "_type": "zone",
                 "exemplarCity": "Santo Tomé"
+              },
+              "Mbabane": {
+                "_type": "zone",
+                "exemplarCity": "Babane"
               },
               "Ndjamena": {
                 "_type": "zone",
@@ -899,9 +907,9 @@
           "metazone": {
             "Acre": {
               "long": {
-                "generic": "Hora de Acre",
-                "standard": "Hora estándar de Acre",
-                "daylight": "Hora de verano de Acre"
+                "generic": "hora de Acre",
+                "standard": "hora estándar de Acre",
+                "daylight": "hora de verano de Acre"
               }
             },
             "Afghanistan": {
@@ -921,7 +929,7 @@
             },
             "Africa_Southern": {
               "long": {
-                "standard": "hora de Sudáfrica"
+                "standard": "hora estándar de Sudáfrica"
               }
             },
             "Africa_Western": {
@@ -1008,20 +1016,6 @@
                 "generic": "hora de Apia",
                 "standard": "hora estándar de Apia",
                 "daylight": "hora de verano de Apia"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Hora de Aktau",
-                "standard": "Hora estándar de Aktau",
-                "daylight": "Hora de verano de Aktau"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Hora de Aktobe",
-                "standard": "Hora estándar de Aktobe",
-                "daylight": "Hora de verano de Aktobe"
               }
             },
             "Arabian": {
@@ -1128,6 +1122,13 @@
                 "generic": "hora de Brasilia",
                 "standard": "hora estándar de Brasilia",
                 "daylight": "hora de verano de Brasilia"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "hora británica",
+                "standard": "hora del meridiano de Greenwich",
+                "daylight": "hora de verano británica"
               }
             },
             "Brunei": {
@@ -1303,6 +1304,13 @@
                 "standard": "hora del meridiano de Greenwich"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "hora de Groenlandia",
+                "standard": "hora estándar de Groenlandia",
+                "daylight": "hora de verano de Groenlandia"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "hora de Groenlandia oriental",
@@ -1317,11 +1325,6 @@
                 "daylight": "hora de verano de Groenlandia occidental"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Hora estándar de Guam"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "hora estándar del Golfo"
@@ -1334,7 +1337,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "hora estándar de Hawái-Aleutianas"
+                "standard": "hora de Hawái"
               },
               "short": {
                 "standard": "HST"
@@ -1368,7 +1371,7 @@
             },
             "India": {
               "long": {
-                "standard": "hora de India"
+                "standard": "hora estándar de la India"
               }
             },
             "Indian_Ocean": {
@@ -1401,6 +1404,13 @@
                 "generic": "hora de Irán",
                 "standard": "hora estándar de Irán",
                 "daylight": "hora de verano de Irán"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "hora de Irlanda",
+                "standard": "hora del meridiano de Greenwich",
+                "daylight": "hora estándar de Irlanda"
               }
             },
             "Irkutsk": {
@@ -1470,11 +1480,6 @@
                 "standard": "hora de Kirguistán"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Hora de Sri Lanka"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "hora de las Espóradas Ecuatoriales"
@@ -1485,13 +1490,6 @@
                 "generic": "hora de Lord Howe",
                 "standard": "hora estándar de Lord Howe",
                 "daylight": "hora de verano de Lord Howe"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Hora de Macao",
-                "standard": "Hora estándar de Macao",
-                "daylight": "Hora de verano de Macao"
               }
             },
             "Magadan": {
@@ -1609,11 +1607,6 @@
                 "daylight": "hora de verano de Fernando de Noronha"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Hora de las Islas Marianas del Norte"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "hora de Novosibirsk",
@@ -1693,13 +1686,6 @@
                 "standard": "hora de Pyongyang"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Hora de Qyzylorda",
-                "standard": "Hora estándar de Qyzylorda",
-                "daylight": "Hora de verano de Qyzylorda"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "hora de Reunión"
@@ -1726,9 +1712,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "hora de Samoa",
-                "standard": "hora estándar de Samoa",
-                "daylight": "hora de verano de Samoa"
+                "standard": "hora de Samoa Americana"
               }
             },
             "Seychelles": {
@@ -1738,7 +1722,7 @@
             },
             "Singapore": {
               "long": {
-                "standard": "hora de Singapur"
+                "standard": "hora estándar de Singapur"
               }
             },
             "Solomon": {
@@ -1797,9 +1781,9 @@
             },
             "Turkey": {
               "long": {
-                "generic": "Hora de Turquía",
-                "standard": "Hora estándar de Turquía",
-                "daylight": "Hora de verano de Turquía"
+                "generic": "hora de Turquía",
+                "standard": "hora estándar de Turquía",
+                "daylight": "hora de verano de Turquía"
               }
             },
             "Turkmenistan": {
@@ -1819,6 +1803,11 @@
                 "generic": "hora de Uruguay",
                 "standard": "hora estándar de Uruguay",
                 "daylight": "hora de verano de Uruguay"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "hora de Urumqi"
               }
             },
             "Uzbekistan": {

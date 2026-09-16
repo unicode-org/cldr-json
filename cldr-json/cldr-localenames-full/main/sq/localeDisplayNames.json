@@ -18,15 +18,41 @@
         "keys": {
           "calendar": "Kalendari",
           "cf": "Formati valutor",
-          "collation": "Radhitja",
+          "colAlternate": "Renditje me shpërfillje të simboleve",
+          "colBackwards": "Renditje me anasjellë të theksit",
+          "colCaseFirst": "Renditja sipas shkronjave të mëdha/të vogla",
+          "colCaseLevel": "Renditje sipas ndjeshmërisë ndaj shkronjave të mëdha/të vogla",
+          "collation": "Mënyra e renditjes",
+          "colNormalization": "Renditje me normalizim",
+          "colNumeric": "Renditje numerike",
+          "colReorder": "Rirenditja e skripteve/blloqeve",
+          "colStrength": "Shkalla e renditjes",
           "currency": "Valuta",
+          "d0": "Destinacioni i transformimit",
+          "dx": "Përjashtime nga ndarja sipas fjalorit",
           "em": "Prezantimi i emoji-ve",
+          "fw": "Dita e parë e javës",
+          "h0": "E përzier",
           "hc": "Cikli orar (12 - 24)",
+          "i0": "Metoda e hyrjes",
+          "k0": "Tastiera",
+          "kv": "më e larta e shpërfillur",
           "lb": "Stili i gjerësisë së rreshtave",
           "lw": "Ndarja e rreshtit brenda fjalëve",
+          "m0": "Rregullat e transformimit",
           "ms": "Sistemi i njësive matëse",
+          "mu": "Njësia e matjes",
           "numbers": "Numrat/shifrat",
-          "ss": "Ndërprerja e fjalisë pas shkurtimit"
+          "rg": "Rajoni për të dhëna suplementare",
+          "s0": "Burimi i transformimit",
+          "sd": "Nënndarja e rajonit",
+          "ss": "Ndërprerja e fjalisë pas shkurtimit",
+          "t": "Transformimi",
+          "t0": "përkthyer mekanikisht",
+          "timezone": "Brezi orar",
+          "va": "varianti lokal",
+          "x": "për përdorim privat",
+          "x0": "transformim për përdorim privat"
         },
         "types": {
           "calendar": {
@@ -55,11 +81,14 @@
             "core": "standard",
             "standard": "format valutor standard"
           },
+          "colCaseFirst": {
+            "core": "të mëdha"
+          },
           "collation": {
             "compat": "Radhitja e mëparshme, për pajtueshmëri",
+            "core": "sistemi Zhuyin",
             "dictionary": "Radhitje fjalori",
             "ducet": "radhitje unikode e parazgjedhur",
-            "core": "standarde",
             "emoji": "Radhitje Emoji",
             "eor": "Rregulla evropiane radhitjeje",
             "phonebook": "Radhitje libri telefonik",
@@ -72,15 +101,30 @@
             "unihan": "radhitje me vijëzim radikal",
             "zhuyin": "radhitje zhujin"
           },
+          "colReorder": {
+            "core": "simboli"
+          },
+          "colStrength": {
+            "core": "bazë, thekset, shkronjat e mëdha/të vogla, variantet"
+          },
+          "d0": {
+            "fwidth": "në gjerësi të plotë",
+            "hwidth": "në gjysmëgjerësi"
+          },
           "em": {
             "core": "mesazh me tekst"
           },
           "hc": {
-            "h11": "sistem 12-orësh (0 - 11)",
+            "c12": "sistem 12-orësh",
             "core": "24-orësh (0 - 24)",
+            "c24": "sistem 24-orësh",
+            "h11": "sistem 12-orësh (0 - 11)",
             "h12": "sistem 12-orësh (1 - 12)",
             "h23": "sistem 24-orësh (0 - 23)",
             "h24": "sistem 24-orësh (1 - 24)"
+          },
+          "kv": {
+            "core": "zhvendosje e hapësirave, shenjave të pikësimit dhe simboleve jo të monedhave"
           },
           "lb": {
             "loose": "stil i gjerësisë së rreshtave - i larguar",
@@ -91,6 +135,10 @@
           "lw": {
             "core": "jo ndarje e frazave"
           },
+          "m0": {
+            "bgn": "transliterimi BGN i SHBA-së",
+            "ungegn": "transliterimi UNGEGN i OKB-së"
+          },
           "ms": {
             "metric": "sistem metrik",
             "core": "amerikan",
@@ -100,9 +148,10 @@
           "numbers": {
             "ahom": "shifra ahom",
             "arab": "shifra indo-arabe",
-            "arabext": "shifra indo-arabe të zgjatura",
+            "arabext": "shifra indo-arabe të zgjeruara",
+            "core": "numra tradicionalë",
             "armn": "numra armenë",
-            "armnlow": "numra armenë të vegjël",
+            "armnlow": "numra armenë me shkronja të vogla",
             "bali": "shifra bali",
             "beng": "shifra bengali",
             "brah": "shifra brahmi",
@@ -112,12 +161,12 @@
             "deva": "shifra devanagari",
             "diak": "shifra dives akuru",
             "ethi": "numra etiopianë",
-            "fullwide": "shifra me largësi të brendshme",
+            "fullwide": "shifra me gjerësi të plotë",
             "geor": "numra gjeorgjianë",
             "gong": "shifra gunxhala gondi",
             "gonm": "shifra masaram gondi",
             "grek": "numra grekë",
-            "greklow": "numra grekë të vegjël",
+            "greklow": "numra grekë me shkronja të vogla",
             "gujr": "shifra guxharati",
             "guru": "shifra gurmuki",
             "hanidec": "numra dhjetorë kinezë",
@@ -138,7 +187,7 @@
             "lana": "shifra tai tam hora",
             "lanatham": "shifra tai tam tam",
             "laoo": "shifra lao",
-            "latn": "shifra latino-perëndimore",
+            "latn": "shifra perëndimore",
             "lepc": "shifra lepça",
             "limb": "shifra limbu",
             "mathbold": "shifra të trasha matematike",
@@ -155,13 +204,14 @@
             "mymrshan": "shifra mianmar-shan",
             "mymrtlng": "shifra mianmar tai lang",
             "nagm": "shifra nag mundan",
+            "native": "shifra vendase",
             "nkoo": "shifra nko",
             "olck": "shifra ol-çikike",
             "orya": "shifra orije",
             "osma": "shifra osmania",
             "rohg": "shifra hanifi rohingia",
             "roman": "numra romakë",
-            "romanlow": "numra romakë të vegjël",
+            "romanlow": "numra romakë me shkronja të vogla",
             "saur": "shifra saurashtra",
             "shrd": "shifra sharada",
             "sind": "shifra kudavadi",
@@ -183,7 +233,17 @@
           },
           "ss": {
             "core": "aktive"
+          },
+          "t0": {
+            "und": "përkthim mekanik i paspecifikuar"
+          },
+          "va": {
+            "core": "varianti i POSIX"
           }
+        },
+        "typeValues": {
+          "no": "çaktivizuar",
+          "yes": "aktivizuar"
         },
         "codePatterns": {
           "language": "Gjuha: {0}",

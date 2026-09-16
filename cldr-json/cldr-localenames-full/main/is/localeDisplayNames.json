@@ -25,18 +25,34 @@
           "collation": "Röðun",
           "colNormalization": "Stöðluð röðun",
           "colNumeric": "Talnaröðun",
+          "colReorder": "Endurröðun skrifleturs/sérstafahópa",
           "colStrength": "Röðunarstyrkur",
           "currency": "Gjaldmiðill",
+          "d0": "Markmið umbreytingar",
+          "dx": "Undanþágur frá línuskiptingu úr orðabók",
           "em": "Framsetning emoji",
+          "fw": "Fyrsti dagur viku",
+          "h0": "Blandað",
           "hc": "Tímakerfi (12 eða 24)",
+          "i0": "Innsláttaraðferð",
+          "k0": "Lyklaborð",
+          "kv": "Efri mörk fyrir undanskilið",
           "lb": "Línuskipting",
           "lw": "Línuskil innan orða",
+          "m0": "Umbreytingarreglur",
           "ms": "Mælingakerfi",
+          "mu": "Mælieining",
           "numbers": "Tölur",
+          "rg": "Svæði fyrir viðbótargögn",
+          "s0": "Uppruni umbreytingar",
+          "sd": "Undirsvæði",
           "ss": "Hindranir á línuskiptingu",
+          "t": "Umbreyting",
+          "t0": "Vélþýtt",
           "timezone": "Tímabelti",
           "va": "Landsstaðalsafbrigði",
-          "x": "Einkanotkun"
+          "x": "Einkanotkun",
+          "x0": "Umbreyting til einkanota"
         },
         "types": {
           "calendar": {
@@ -73,6 +89,7 @@
           },
           "colCaseFirst": {
             "lower": "Raða lágstöfum fyrst",
+            "core": "Hástafir",
             "no": "Raða eðlilega eftir hástöfum og lágstöfum",
             "upper": "Raða hástöfum fyrst"
           },
@@ -82,9 +99,9 @@
           },
           "collation": {
             "compat": "Fyrri röðun, til samræmis",
+            "core": "Zhuyin",
             "dictionary": "Orðabókarröð",
             "ducet": "Sjálfgefin Unicode-röðun",
-            "core": "Stöðluð",
             "eor": "Evrópskar reglur um röðun",
             "phonebook": "Símaskráarröðun",
             "phonetic": "Hljóðfræðileg röð",
@@ -104,8 +121,12 @@
             "no": "Raða tölustöfum sér",
             "yes": "Raða tölustöfum tölulega"
           },
+          "colReorder": {
+            "core": "Tákn"
+          },
           "colStrength": {
             "identical": "Raða öllu",
+            "core": "Grunnstafir, áherslutákn, há- og lágstafir, afbrigði",
             "primary": "Raða aðeins grunnstöfum",
             "quaternary": "Raða áherslum/hástaf eða lágstaf/breidd/Kana",
             "secondary": "Raða áherslum",
@@ -120,11 +141,16 @@
             "core": "Texti"
           },
           "hc": {
-            "h11": "12 tíma kerfi (0–11)",
+            "c12": "12 tíma kerfi",
             "core": "24 (1–24)",
+            "c24": "24 tíma kerfi",
+            "h11": "12 tíma kerfi (0–11)",
             "h12": "12 tíma kerfi (1–12)",
             "h23": "24 tíma kerfi (0–23)",
             "h24": "24 tíma kerfi (1–24)"
+          },
+          "kv": {
+            "core": "Sleppa eyðum, greinarmerkjum, öllum táknum nema gjaldmiðilstáknum"
           },
           "lb": {
             "loose": "Laus línuskipting",
@@ -149,6 +175,7 @@
             "ahom": "ahom-tölur",
             "arab": "Arabískar-indverskar tölur",
             "arabext": "Auknar arabískar-indverskar tölur",
+            "core": "Hefðbundnir tölustafir",
             "armn": "Armenskir tölustafir",
             "armnlow": "Armenskar lágstafatölur",
             "beng": "Bengalskar tölur",
@@ -194,7 +221,17 @@
           },
           "ss": {
             "core": "Kveikt"
+          },
+          "t0": {
+            "und": "Ótilgreind vélþýðing"
+          },
+          "va": {
+            "core": "POSIX-afbrigði"
           }
+        },
+        "typeValues": {
+          "no": "Slökkt",
+          "yes": "Kveikt"
         },
         "codePatterns": {
           "language": "tungumál: {0}",

@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;−HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Laikas: {0}",
           "regionFormat-type-daylight": "Vasaros laikas: {0}",
           "regionFormat-type-standard": "Žiemos laikas: {0}",
@@ -239,9 +241,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Britanijos vasaros laikas"
-                },
                 "exemplarCity": "Londonas"
               },
               "Guernsey": {
@@ -266,9 +265,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Airijos vasaros laikas"
-                },
                 "exemplarCity": "Dublinas"
               },
               "Isle_of_Man": {
@@ -1624,9 +1620,9 @@
           "metazone": {
             "Acre": {
               "long": {
-                "generic": "Ako laikas",
-                "standard": "Ako standartinis laikas",
-                "daylight": "Ako vasaros laikas"
+                "generic": "Akrės laikas",
+                "standard": "Akrės žiemos laikas",
+                "daylight": "Akrės vasaros laikas"
               }
             },
             "Afghanistan": {
@@ -1659,13 +1655,6 @@
                 "generic": "Aliaskos laikas",
                 "standard": "Aliaskos žiemos laikas",
                 "daylight": "Aliaskos vasaros laikas"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "Almatos laikas",
-                "standard": "Almatos žiemos laikas",
-                "daylight": "Almatos vasaros laikas"
               }
             },
             "Amazon": {
@@ -1715,20 +1704,6 @@
                 "generic": "Apijos laikas",
                 "standard": "Apijos žiemos laikas",
                 "daylight": "Apijos vasaros laikas"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Aktau laikas",
-                "standard": "Aktau žiemos laikas",
-                "daylight": "Aktau vasaros laikas"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Aktobės laikas",
-                "standard": "Aktobės žiemos laikas",
-                "daylight": "Aktobės vasaros laikas"
               }
             },
             "Arabian": {
@@ -1830,6 +1805,13 @@
                 "generic": "Brazilijos laikas",
                 "standard": "Brazilijos žiemos laikas",
                 "daylight": "Brazilijos vasaros laikas"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Britų laikas",
+                "standard": "Grinvičo laikas",
+                "daylight": "Britanijos vasaros laikas"
               }
             },
             "Brunei": {
@@ -2010,6 +1992,13 @@
                 "standard": "Grinvičo laikas"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grenlandijos laikas",
+                "standard": "Grenlandijos žiemos laikas",
+                "daylight": "Grenlandijos vasaros laikas"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Grenlandijos rytų laikas",
@@ -2024,11 +2013,6 @@
                 "daylight": "Grenlandijos vakarų vasaros laikas"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Guamo laikas"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Persijos įlankos laikas"
@@ -2041,7 +2025,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Havajų–Aleutų žiemos laikas"
+                "standard": "Havajų ir Aleutų žiemos laikas"
               }
             },
             "Hawaii_Aleutian": {
@@ -2100,6 +2084,13 @@
                 "generic": "Irano laikas",
                 "standard": "Irano žiemos laikas",
                 "daylight": "Irano vasaros laikas"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Airijos laikas",
+                "standard": "Grinvičo laikas",
+                "daylight": "Airijos vasaros laikas"
               }
             },
             "Irkutsk": {
@@ -2169,11 +2160,6 @@
                 "standard": "Kirgistano laikas"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Lankos laikas"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Laino Salų laikas"
@@ -2184,13 +2170,6 @@
                 "generic": "Lordo Hau laikas",
                 "standard": "Lordo Hau žiemos laikas",
                 "daylight": "Lordo Hau vasaros laikas"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Makau laikas",
-                "standard": "Makau žiemos laikas",
-                "daylight": "Makau vasaros laikas"
               }
             },
             "Magadan": {
@@ -2308,11 +2287,6 @@
                 "daylight": "Fernando de Noronjos vasaros laikas"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Šiaurės Marianos Salų laikas"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Novosibirsko laikas",
@@ -2392,13 +2366,6 @@
                 "standard": "Pchenjano laikas"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Kyzylordos laikas",
-                "standard": "Kyzylordos žiemos laikas",
-                "daylight": "Kyzylordos vasaros laikas"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Reunjono laikas"
@@ -2425,9 +2392,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa laikas",
-                "standard": "Samoa žiemos laikas",
-                "daylight": "Samoa vasaros laikas"
+                "standard": "Samoa žiemos laikas"
               }
             },
             "Seychelles": {
@@ -2518,6 +2483,11 @@
                 "generic": "Urugvajaus laikas",
                 "standard": "Urugvajaus žiemos laikas",
                 "daylight": "Urugvajaus vasaros laikas"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Urumčio laikas"
               }
             },
             "Uzbekistan": {

@@ -26,18 +26,34 @@
           "collation": "Rangskikvolgorde",
           "colNormalization": "Genormaliseerde rangskikking",
           "colNumeric": "Numeriese rangskikking",
+          "colReorder": "Skrip-/blokherrangskikking",
           "colStrength": "Rangskiksterkte",
           "currency": "Geldeenheid",
+          "d0": "Transformasiebestemming",
+          "dx": "Woordeboekwoordbreukuitsonderings",
           "em": "Emoji-voorstelling",
+          "fw": "Eerste dag van die week",
+          "h0": "Ingemeng",
           "hc": "Uursiklus (12 vs. 24)",
+          "i0": "Invoermetode",
+          "k0": "Sleutelbord",
+          "kv": "Meeste geïgnoreer",
           "lb": "Reëlafbreek-styl",
           "lw": "Lynafbrekingsteken in woorde",
+          "m0": "Transformasiereëls",
           "ms": "Maatstelsel",
+          "mu": "Maateenheid",
           "numbers": "Syfers",
+          "rg": "Streek vir aanvullende data",
+          "s0": "Transformasiebron",
+          "sd": "Streeksonderverdeling",
           "ss": "Afbrekingsteken ná afkorting",
+          "t": "Transformasie",
+          "t0": "Masjienvertaling",
           "timezone": "Tydsone",
           "va": "Lokaalvariant",
-          "x": "Privaat gebruik"
+          "x": "Privaat gebruik",
+          "x0": "Privaatgebruiktransformasie"
         },
         "types": {
           "calendar": {
@@ -74,6 +90,7 @@
           },
           "colCaseFirst": {
             "lower": "Sorteer kleinletters veerste",
+            "core": "Hoofletters",
             "no": "Sorteer gewone letterorde",
             "upper": "Sorteer hoofletters eerste"
           },
@@ -82,9 +99,9 @@
             "yes": "Sorteer kassensitief"
           },
           "collation": {
+            "core": "Zhujin",
             "dictionary": "Woordeboek-sorteervolgorde",
             "ducet": "Verstek Unicode-rangskikvolgorde",
-            "core": "Standaard",
             "phonebook": "Foonboek-sorteervolgorde",
             "phonetic": "Fonetiese sorteerorde",
             "pinyin": "Pinyin-sorteervolgorde",
@@ -103,8 +120,12 @@
             "no": "Sorteer syfers individueel",
             "yes": "Sorteer syfers numeries"
           },
+          "colReorder": {
+            "core": "Simbool"
+          },
           "colStrength": {
             "identical": "Sorteer almal",
+            "core": "Basis, assente, kas, variante",
             "primary": "Sorteer slegs basisletters",
             "quaternary": "Sorteer aksente/kas/breedte/Kana",
             "secondary": "Sorteer aksente",
@@ -119,11 +140,16 @@
             "core": "Teks"
           },
           "hc": {
-            "h11": "12-uur-stelsel (0-11)",
+            "c12": "12-uur-stelsel",
             "core": "24 (1–24)",
+            "c24": "24-uur-stelsel",
+            "h11": "12-uur-stelsel (0-11)",
             "h12": "12-uur-stelsel (1-12)",
             "h23": "24-uur-stelsel (0-23)",
             "h24": "24-uur-stelsel (1-24)"
+          },
+          "kv": {
+            "core": "Shift-spasies, leestekens, niegeldeenheidsimbole"
           },
           "lb": {
             "loose": "Losse reëlafbreek-styl",
@@ -147,6 +173,7 @@
           "numbers": {
             "arab": "Arabies-Indiese syfers",
             "arabext": "Uitgebreide Arabies-Indiese syfers",
+            "core": "Tradisionele syfers",
             "armn": "Armeense syfers",
             "armnlow": "Armeense kleinletter-syfers",
             "beng": "Bengaalse syfers",
@@ -192,7 +219,17 @@
           },
           "ss": {
             "core": "Aan"
+          },
+          "t0": {
+            "und": "Ongespesifiseerde masjienvertaling"
+          },
+          "va": {
+            "core": "POSIX-variant"
           }
+        },
+        "typeValues": {
+          "no": "Af",
+          "yes": "Aan"
         },
         "codePatterns": {
           "language": "Taal: {0}",

@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0}, чайгы үе",
           "regionFormat-type-standard": "{0}, стандарт үе",
@@ -18,27 +20,114 @@
             "Etc": {
               "UTC": {
                 "_type": "zone",
+                "long": {
+                  "standard": "Бүгү-делегейниң дугурушкан үези"
+                },
                 "short": {
                   "standard": "UTC"
                 }
               }
             },
             "Europe": {
+              "Andorra": {
+                "_type": "zone",
+                "exemplarCity": "Андорра"
+              },
               "Tirane": {
                 "_type": "zone",
                 "exemplarCity": "Tirana"
+              },
+              "Vienna": {
+                "_type": "zone",
+                "exemplarCity": "Вена"
+              },
+              "Sarajevo": {
+                "_type": "zone",
+                "exemplarCity": "Сараево"
+              },
+              "Minsk": {
+                "_type": "zone",
+                "exemplarCity": "Минск"
               },
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
               },
+              "Berlin": {
+                "_type": "zone",
+                "exemplarCity": "Берлин"
+              },
+              "Copenhagen": {
+                "_type": "zone",
+                "exemplarCity": "Копенгаген"
+              },
+              "Madrid": {
+                "_type": "zone",
+                "exemplarCity": "Мадрид"
+              },
+              "Paris": {
+                "_type": "zone",
+                "exemplarCity": "Париж"
+              },
+              "London": {
+                "_type": "zone",
+                "exemplarCity": "Лондон"
+              },
+              "Dublin": {
+                "_type": "zone",
+                "exemplarCity": "Дублин"
+              },
+              "Rome": {
+                "_type": "zone",
+                "exemplarCity": "Рим"
+              },
+              "Luxembourg": {
+                "_type": "zone",
+                "exemplarCity": "Люксенбург"
+              },
+              "Riga": {
+                "_type": "zone",
+                "exemplarCity": "Рига"
+              },
               "Chisinau": {
                 "_type": "zone",
                 "exemplarCity": "Chișinău"
               },
+              "Malta": {
+                "_type": "zone",
+                "exemplarCity": "Мальта"
+              },
+              "Amsterdam": {
+                "_type": "zone",
+                "exemplarCity": "Амстердам"
+              },
+              "Oslo": {
+                "_type": "zone",
+                "exemplarCity": "Осло"
+              },
+              "Belgrade": {
+                "_type": "zone",
+                "exemplarCity": "Белград"
+              },
+              "Ljubljana": {
+                "_type": "zone",
+                "exemplarCity": "Любляна"
+              },
+              "Bratislava": {
+                "_type": "zone",
+                "exemplarCity": "Братислава"
+              },
               "Kiev": {
                 "_type": "zone",
                 "exemplarCity": "Kyiv"
+              },
+              "Simferopol": {
+                "_type": "zone",
+                "exemplarCity": "Симферополь"
+              },
+              "Vatican": {
+                "_type": "zone",
+                "exemplarCity": "Ватикан"
               }
             },
             "Antarctica": {
@@ -337,9 +426,37 @@
             }
           },
           "metazone": {
+            "British": {
+              "long": {
+                "generic": "Британ үе",
+                "standard": "Гринвичтиң ортаа үези",
+                "daylight": "Великобритания, чайгы үе"
+              }
+            },
+            "Europe_Central": {
+              "long": {
+                "generic": "Төп Европа үези",
+                "standard": "Төп Европаның стандарт үези",
+                "daylight": "Төп Европаның чайгы үези"
+              }
+            },
+            "Europe_Eastern": {
+              "long": {
+                "generic": "Чөөн Европа үези",
+                "standard": "Чөөн Европаның стандарт үези",
+                "daylight": "Чөөн Европаның чайгы үези"
+              }
+            },
             "GMT": {
               "long": {
                 "standard": "Гринвичтиң ортаа үези"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Ирланд үе",
+                "standard": "Гринвичтиң ортаа үези",
+                "daylight": "Ирландия, стандарт үе"
               }
             }
           }

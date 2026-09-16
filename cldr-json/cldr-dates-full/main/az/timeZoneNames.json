@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} Vaxtı",
           "regionFormat-type-daylight": "{0} Yay Vaxtı",
           "regionFormat-type-standard": "{0} Standart Vaxtı",
@@ -409,6 +411,10 @@
                   "exemplarCity": "Tukuman"
                 }
               },
+              "Mendoza": {
+                "_type": "zone",
+                "exemplarCity": "Mendosa"
+              },
               "Catamarca": {
                 "_type": "zone",
                 "exemplarCity": "Katamarka"
@@ -451,7 +457,7 @@
               },
               "Santarem": {
                 "_type": "zone",
-                "exemplarCity": "Santarém"
+                "exemplarCity": "Santarem"
               },
               "Campo_Grande": {
                 "_type": "zone",
@@ -459,7 +465,7 @@
               },
               "Belem": {
                 "_type": "zone",
-                "exemplarCity": "Belém"
+                "exemplarCity": "Belem"
               },
               "Araguaina": {
                 "_type": "zone",
@@ -687,7 +693,7 @@
               },
               "Ciudad_Juarez": {
                 "_type": "zone",
-                "exemplarCity": "Ciudad Juárez"
+                "exemplarCity": "Siudad Xuares"
               },
               "Mazatlan": {
                 "_type": "zone",
@@ -909,12 +915,6 @@
                 "_type": "zone",
                 "exemplarCity": "Tallin"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Britaniya Yay Vaxtı"
-                }
-              },
               "Guernsey": {
                 "_type": "zone",
                 "exemplarCity": "Gernzey"
@@ -934,12 +934,6 @@
               "Budapest": {
                 "_type": "zone",
                 "exemplarCity": "Budapeşt"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "İrlandiya Yay Vaxtı"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -1039,9 +1033,21 @@
               }
             },
             "Antarctica": {
+              "Rothera": {
+                "_type": "zone",
+                "exemplarCity": "Rotera stansiyası"
+              },
+              "Palmer": {
+                "_type": "zone",
+                "exemplarCity": "Palmer torpağı"
+              },
+              "Troll": {
+                "_type": "zone",
+                "exemplarCity": "Troll stansiyası"
+              },
               "Syowa": {
                 "_type": "zone",
-                "exemplarCity": "Syova"
+                "exemplarCity": "Syova stansiyası"
               },
               "Mawson": {
                 "_type": "zone",
@@ -1050,6 +1056,10 @@
               "Davis": {
                 "_type": "zone",
                 "exemplarCity": "Deyvis"
+              },
+              "Vostok": {
+                "_type": "zone",
+                "exemplarCity": "Vostok stansiyası"
               },
               "Casey": {
                 "_type": "zone",
@@ -1225,7 +1235,7 @@
               },
               "Lome": {
                 "_type": "zone",
-                "exemplarCity": "Lomé"
+                "exemplarCity": "Lome"
               },
               "Dar_es_Salaam": {
                 "_type": "zone",
@@ -1305,11 +1315,11 @@
               },
               "Reunion": {
                 "_type": "zone",
-                "exemplarCity": "Réunion"
+                "exemplarCity": "Reunion"
               },
               "Mahe": {
                 "_type": "zone",
-                "exemplarCity": "Mahé"
+                "exemplarCity": "Mahe"
               },
               "Kerguelen": {
                 "_type": "zone",
@@ -1328,6 +1338,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Əkka",
+                "standard": "Əkka standart vaxtı",
+                "daylight": "Əkka yay vaxtı"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Əfqanıstan Vaxtı"
@@ -1503,6 +1520,13 @@
                 "daylight": "Braziliya Yay Vaxtı"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Britaniya vaxtı",
+                "standard": "Qrinviç Orta Vaxtı",
+                "daylight": "Britaniya Yay Vaxtı"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Brunei Darussalam vaxtı"
@@ -1579,7 +1603,7 @@
             },
             "DumontDUrville": {
               "long": {
-                "standard": "Dümon-d’Ürvil Vaxtı"
+                "standard": "Dümon-d’Urvil Vaxtı"
               }
             },
             "East_Timor": {
@@ -1676,6 +1700,13 @@
                 "standard": "Qrinviç Orta Vaxtı"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Qrenlandiya vaxtı",
+                "standard": "Qrenlandiya standart vaxtı",
+                "daylight": "Qrenlandiya yay vaxtı"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Şərqi Qrenlandiya Vaxtı",
@@ -1702,7 +1733,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Havay-Aleut Standart Vaxtı"
+                "standard": "Havay vaxtı"
               }
             },
             "Hawaii_Aleutian": {
@@ -1763,6 +1794,13 @@
                 "daylight": "İran Yay Vaxtı"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "İrlandiya vaxtı",
+                "standard": "Qrinviç Orta Vaxtı",
+                "daylight": "İrlandiya Yay Vaxtı"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "İrkutsk Vaxtı",
@@ -1782,6 +1820,13 @@
                 "generic": "Yaponiya Vaxtı",
                 "standard": "Yaponiya Standart Vaxtı",
                 "daylight": "Yaponiya Yay Vaxtı"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Kamçatka vaxtı",
+                "standard": "Kamçatka standart vaxtı",
+                "daylight": "Kamçatka yay vaxtı"
               }
             },
             "Kazakhstan": {
@@ -2055,9 +2100,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa Vaxtı",
-                "standard": "Samoa Standart Vaxtı",
-                "daylight": "Samoa Yay Vaxtı"
+                "standard": "Samoa Standart Vaxtı"
               }
             },
             "Seychelles": {
@@ -2148,6 +2191,11 @@
                 "generic": "Uruqvay Vaxtı",
                 "standard": "Uruqvay Standart Vaxtı",
                 "daylight": "Uruqvay Yay Vaxtı"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Urumçi vaxtı"
               }
             },
             "Uzbekistan": {

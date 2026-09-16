@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "جی ایم ٹی",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} وَکھ",
           "regionFormat-type-daylight": "{0} ڈے لائٹ وَکھ",
           "regionFormat-type-standard": "{0} معیٲری وَکھ",
@@ -172,7 +174,7 @@
                   "standard": "کوآرڈنیٹڈ یونیورسل وَکھ"
                 },
                 "short": {
-                  "standard": "UTC"
+                  "standard": "-"
                 }
               },
               "Unknown": {
@@ -251,9 +253,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "برطٲنوی سَمَر ٹایِم"
-                },
                 "exemplarCity": "لَندَن"
               },
               "Guernsey": {
@@ -278,9 +277,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "اَیرِش سَمَر ٹایِم"
-                },
                 "exemplarCity": "ڈَبلِن"
               },
               "Isle_of_Man": {
@@ -1761,13 +1757,6 @@
                 "daylight": "اؠلاسکا ڈےلایِٔٹ ٹایِم"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "اؠلمؠٹی ٹایِم",
-                "standard": "اؠلمؠٹی سٹینڑاڑ ٹایِم",
-                "daylight": "اؠلمؠٹی سَمَر ٹایِم"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "اؠمَزَن ٹایِم",
@@ -1808,20 +1797,6 @@
                 "generic": "اؠنَڑیٖر ٹایِم",
                 "standard": "اؠنَڑیٖر سٹینڑاڑ ٹایِم",
                 "daylight": "اؠنڑیٖر سَمَر ٹایِم"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "اؠکٹاؤ ٹایِم",
-                "standard": "اؠکٹاؤ سٹینڑاڑ ٹایِم",
-                "daylight": "اؠکٹاؤ سَمَر ٹایِم"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "اؠکٹوب ٹایِم",
-                "standard": "اؠکٹوب سٹینڑاڑ ٹایِم",
-                "daylight": "اؠکٹوب سَمَر ٹایِم"
               }
             },
             "Arabian": {
@@ -1925,6 +1900,13 @@
                 "daylight": "برؠسِلِیا سَمَر ٹایِم"
               }
             },
+            "British": {
+              "long": {
+                "generic": "برٹِش ٹایم",
+                "standard": "گریٖن وِچ میٖن ٹایِم",
+                "daylight": "برطٲنوی سَمَر ٹایِم"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "بروٗنَے دَروٗسَلَم ٹایِم"
@@ -1932,7 +1914,7 @@
             },
             "Cape_Verde": {
               "long": {
-                "generic": "کیپ ؤرڑو ٹایِم",
+                "generic": "کیپ ؤرڑ ٹایِم",
                 "standard": "کیپ ؤرڑو سٹینڈرڈ ٹایِم",
                 "daylight": "کیپ سَمَر ٹایِم"
               }
@@ -2112,11 +2094,6 @@
                 "daylight": "مغرِبی گریٖن لینڈُک سَمَر ٹایِم"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "گُوؠم ٹایِم"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "گَلف سٹینڈرڈ ٹایِم"
@@ -2135,7 +2112,7 @@
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "حَواے اؠلیوٗٹِیَن ٹایِم",
-                "standard": "حَواے اؠلیوٗٹِیَن سٹینڑاڑ ٹایِم",
+                "standard": "ہوائی ایلیوشن سٹینڈرڈ ٹایم",
                 "daylight": "حَواے اؠلیوٗٹِیَن سَمَر ٹایِم"
               }
             },
@@ -2188,6 +2165,13 @@
                 "generic": "اِیٖرٲنؠ ٹایِم",
                 "standard": "اِیٖرٲنؠ سٹینڑاڑ ٹایِم",
                 "daylight": "اِیٖرٲنی سَمَر ٹایِم"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "آیرِش ٹایِم",
+                "standard": "گریٖن وِچ میٖن ٹایِم",
+                "daylight": "اَیرِش سَمَر ٹایِم"
               }
             },
             "Irkutsk": {
@@ -2252,11 +2236,6 @@
                 "standard": "کرغزستان ٹائم"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "لَنکا ٹایِم"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "لایِٔن ججیٖرُک ٹایِم"
@@ -2267,13 +2246,6 @@
                 "generic": "لعاڑ حووے ٹایِم",
                 "standard": "لعاڑ حووے سٹینڑاڑ ٹایِم",
                 "daylight": "لعاڑ ڑےلایٔٹ ٹایِم"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "مَکَعوٗ ٹایِم",
-                "standard": "مَکَعوٗ سٹینڑاڑ ٹایِم",
-                "daylight": "مَکَعوٗ سَمَر ٹایِم"
               }
             },
             "Magadan": {
@@ -2391,11 +2363,6 @@
                 "daylight": "فرنینڈو ڈی نورونہا سَمَر ٹائم"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "شُمٲلی مَرِیانا ٹایِم"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "نۄوۄسِبٔرسک ٹایِم",
@@ -2475,13 +2442,6 @@
                 "standard": "یونگ یانگ ٹائم"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "قِزلوڑا ٹایِم",
-                "standard": "قِزلوڑا سٹینڑاڑ ٹایِم",
-                "daylight": "قِزلوڑا سَمَر ٹایِم"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "رِیوٗنِیَن ٹایِم"
@@ -2508,9 +2468,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "سؠموآ ٹایِم",
-                "standard": "سؠموآ سٹینڑاڑ ٹایِم",
-                "daylight": "سؠموآ سَمَر ٹایِم"
+                "standard": "سؠموآ سٹینڑاڑ ٹایِم"
               }
             },
             "Seychelles": {

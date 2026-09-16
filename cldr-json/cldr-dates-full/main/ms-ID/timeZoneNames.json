@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH.mm;-HH.mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Waktu {0}",
           "regionFormat-type-daylight": "Waktu Siang {0}",
           "regionFormat-type-standard": "Waktu Piawai {0}",
@@ -69,18 +71,6 @@
               "Busingen": {
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
-              },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Waktu Musim Panas British"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Waktu Piawai Ireland"
-                }
               },
               "Chisinau": {
                 "_type": "zone",
@@ -432,13 +422,6 @@
                 "daylight": "Waktu Siang Alaska"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Waktu Almaty",
-                "standard": "Waktu Piawai Almaty",
-                "daylight": "Waktu Musim Panas Almaty"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Waktu Amazon",
@@ -483,23 +466,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "Waktu Apia",
-                "standard": "Waktu Piawai Apia",
-                "daylight": "Waktu Siang Apia"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Waktu Aqtau",
-                "standard": "Waktu Standard Aqtau",
-                "daylight": "Waktu Musim Panas Aqtau"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Waktu Aqtobe",
-                "standard": "Waktu Piawai Aqtobe",
-                "daylight": "Waktu Musim Panas Aqtobe"
+                "generic": "Waktu Samoa",
+                "standard": "Waktu Piawai Samoa",
+                "daylight": "Waktu Siang Samoa"
               }
             },
             "Arabian": {
@@ -601,6 +570,13 @@
                 "generic": "Waktu Brasilia",
                 "standard": "Waktu Piawai Brasilia",
                 "daylight": "Waktu Musim Panas Brasilia"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Waktu British",
+                "standard": "Waktu Min Greenwich",
+                "daylight": "Waktu Musim Panas British"
               }
             },
             "Brunei": {
@@ -779,6 +755,13 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Waktu Greenland",
+                "standard": "Waktu Piawai Greenland",
+                "daylight": "Waktu Musim Panas Greenland"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Waktu Greenland Timur",
@@ -805,7 +788,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Waktu Piawai Hawaii-Aleutian"
+                "standard": "Waktu Hawaii"
               }
             },
             "Hawaii_Aleutian": {
@@ -866,6 +849,13 @@
                 "daylight": "Waktu Siang Iran"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Waktu Ireland",
+                "standard": "Waktu Min Greenwich",
+                "daylight": "Waktu Piawai Ireland"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Waktu Irkutsk",
@@ -889,9 +879,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Waktu Petropavlovsk-Kamchatski",
-                "standard": "Waktu Piawai Petropavlovsk-Kamchatski",
-                "daylight": "Waktu Musim Panas Petropavlovsk-Kamchatski"
+                "generic": "Waktu Kamchatka",
+                "standard": "Waktu Piawai Kamchatka",
+                "daylight": "Waktu Musim Panas Kamchatka"
               }
             },
             "Kazakhstan": {
@@ -943,13 +933,6 @@
                 "generic": "Waktu Lord Howe",
                 "standard": "Waktu Piawai Lord Howe",
                 "daylight": "Waktu Siang Lord Howe"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Waktu Macao",
-                "standard": "Waktu Piawai Macao",
-                "daylight": "Waktu Musim Panas Macao"
               }
             },
             "Magadan": {
@@ -1070,11 +1053,6 @@
                 "daylight": "Waktu Musim Panas Fernando de Noronha"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Waktu Kepulauan Mariana Utara"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Waktu Novosibirsk",
@@ -1154,13 +1132,6 @@
                 "standard": "Waktu Pyongyang"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Waktu Qyzylorda",
-                "standard": "Waktu Piawai Qyzylorda",
-                "daylight": "Waktu Musim Panas Qyzylorda"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Waktu Reunion"
@@ -1187,9 +1158,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Waktu Samoa",
-                "standard": "Waktu Piawai Samoa",
-                "daylight": "Waktu Musim Panas Samoa"
+                "standard": "Waktu Samoa Amerika"
               }
             },
             "Seychelles": {
@@ -1259,6 +1228,13 @@
                 "standard": "Waktu Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Waktu Turkiye",
+                "standard": "Waktu Piawai Turkiye",
+                "daylight": "Waktu Musim Panas Turkiye"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Waktu Turkmenistan",
@@ -1276,6 +1252,11 @@
                 "generic": "Waktu Uruguay",
                 "standard": "Waktu Piawai Uruguay",
                 "daylight": "Waktu Musim Panas Uruguay"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Waktu Urumqi"
               }
             },
             "Uzbekistan": {

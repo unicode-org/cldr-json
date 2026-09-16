@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "hora de {0}",
           "regionFormat-type-daylight": "hora estive de {0}",
           "regionFormat-type-standard": "hora normal de {0}",
@@ -47,21 +49,9 @@
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Hora estive britannic"
-                }
-              },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Athenas"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Hora estive irlandese"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -658,6 +648,13 @@
                 "daylight": "hora estive de Brasilia"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Hora britannic",
+                "standard": "hora medie de Greenwich",
+                "daylight": "Hora estive britannic"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "hora de Brunei"
@@ -852,11 +849,6 @@
                 "daylight": "hora estive de Groenlandia occidental"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "hora normal de Guam"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "hora normal del Golfo"
@@ -869,7 +861,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "hora normal de Hawaii-Aleutianas"
+                "standard": "hora normal de Hawaii"
               }
             },
             "Hawaii_Aleutian": {
@@ -928,6 +920,13 @@
                 "generic": "hora de Iran",
                 "standard": "hora normal de Iran",
                 "daylight": "hora estive de Iran"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Hora irlandese",
+                "standard": "hora medie de Greenwich",
+                "daylight": "Hora estive irlandese"
               }
             },
             "Irkutsk": {
@@ -1215,9 +1214,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "hora de Samoa american",
-                "standard": "hora normal de Samoa american",
-                "daylight": "hora estive de Samoa american"
+                "standard": "hora normal de Samoa american"
               }
             },
             "Seychelles": {
