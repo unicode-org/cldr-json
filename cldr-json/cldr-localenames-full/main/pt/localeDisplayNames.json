@@ -57,7 +57,26 @@
         "types": {
           "calendar": {
             "buddhist": "Calendário Budista",
-            "core": "Minguo",
+            "_core": {
+              "buddhist": "Budista",
+              "chinese": "Chinês",
+              "coptic": "Copta",
+              "dangi": "Dangi",
+              "ethiopic": "Etíope",
+              "ethiopic-amete-alem": "Amete Alem Etíope",
+              "gregorian": "Gregoriano",
+              "hebrew": "Hebraico",
+              "indian": "Nacional Indiano",
+              "islamic": "Hegírico",
+              "islamic-civil": "Hegírico (tabular, época civil)",
+              "islamic-rgsa": "Hegírico, avistamento na Arábia Saudita",
+              "islamic-tbla": "Hegírico (tabular, época astronômica)",
+              "islamic-umalqura": "Hegírico (Umm al‑Qura)",
+              "iso8601": "Gregoriano",
+              "japanese": "Japonês",
+              "persian": "Persa",
+              "roc": "Minguo"
+            },
             "chinese": "Calendário Chinês",
             "coptic": "Calendário Copta",
             "dangi": "Calendário Dangi",
@@ -76,7 +95,10 @@
           },
           "cf": {
             "account": "Formato de moeda para contabilidade",
-            "core": "Padrão",
+            "_core": {
+              "account": "Contabilidade",
+              "standard": "Padrão"
+            },
             "standard": "Formato de moeda padrão"
           },
           "colAlternate": {
@@ -89,7 +111,11 @@
           },
           "colCaseFirst": {
             "lower": "Classificar por minúsculas",
-            "core": "Maiúsculas",
+            "_core": {
+              "lower": "Minúsculas",
+              "no": "Minúsculas",
+              "upper": "Maiúsculas"
+            },
             "no": "Classificação normal de maiúsculas e minúsculas",
             "upper": "Classificar por maiúsculas"
           },
@@ -99,7 +125,23 @@
           },
           "collation": {
             "compat": "Ordem anterior, para compatibilidade",
-            "core": "Zhuyin",
+            "_core": {
+              "compat": "Compatibilidade",
+              "dictionary": "Dicionário",
+              "ducet": "Padrão do Unicode",
+              "emoji": "Emoji",
+              "eor": "Regras europeias",
+              "phonebook": "Lista telefônica",
+              "phonetic": "Fonética",
+              "pinyin": "Pinyin",
+              "search": "Pesquisa",
+              "searchjl": "Consoante inicial coreana",
+              "standard": "Padrão",
+              "stroke": "Traços",
+              "traditional": "Tradicional",
+              "unihan": "Radical-Traços",
+              "zhuyin": "Zhuyin"
+            },
             "dictionary": "Ordem do dicionário",
             "ducet": "Ordem padrão do Unicode",
             "eor": "Regras europeias de ordenação",
@@ -123,11 +165,23 @@
             "yes": "Classificar dígitos numericamente"
           },
           "colReorder": {
-            "core": "Símbolo"
+            "_core": {
+              "currency": "Moeda",
+              "digit": "Dígitos",
+              "punct": "Pontuação",
+              "space": "Espaço em branco",
+              "symbol": "Símbolo"
+            }
           },
           "colStrength": {
             "identical": "Classificar tudo",
-            "core": "Alfabeto básico, acentos, maiúscula e minúscula, variantes",
+            "_core": {
+              "identical": "Tudo",
+              "primary": "Apenas alfabeto básico",
+              "quaternary": "Alfabeto básico, acentos, maiúscula e minúscula, variantes, kana",
+              "secondary": "Alfabeto básico, acentos",
+              "tertiary": "Alfabeto básico, acentos, maiúscula e minúscula, variantes"
+            },
             "primary": "Classificar somente letras básicas",
             "quaternary": "Classificar acentos/maiúsculas e minúsculas/largura/kana",
             "secondary": "Classificar acentos",
@@ -139,11 +193,22 @@
             "npinyin": "Numérico"
           },
           "em": {
-            "core": "Texto"
+            "_core": {
+              "default": "Padrão",
+              "emoji": "Emoji",
+              "text": "Texto"
+            }
           },
           "hc": {
             "c12": "Sistema de 12 horas",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "Sistema de 24 horas",
             "h11": "Sistema de 12 horas (0–11)",
             "h12": "Sistema de 12 horas (1–12)",
@@ -151,16 +216,30 @@
             "h24": "Sistema de 24 horas (1–24)"
           },
           "kv": {
-            "core": "Deslocar espaços, pontuação, símbolos não monetários"
+            "_core": {
+              "currency": "Deslocar espaços, pontuação, todos os símbolos",
+              "punct": "Deslocar espaços, pontuação",
+              "space": "Deslocar espaços, pontuação",
+              "symbol": "Deslocar espaços, pontuação, símbolos não monetários"
+            }
           },
           "lb": {
             "loose": "Quebra de linha com estilo solto",
-            "core": "Estrito",
+            "_core": {
+              "loose": "Solto",
+              "normal": "Normal",
+              "strict": "Estrito"
+            },
             "normal": "Quebra de linha com estilo normal",
             "strict": "Quebra de linha com estilo estrito"
           },
           "lw": {
-            "core": "Manter em frases"
+            "_core": {
+              "breakall": "Quebrar tudo",
+              "keepall": "Manter tudo",
+              "normal": "Normal",
+              "phrase": "Manter em frases"
+            }
           },
           "m0": {
             "bgn": "Transliteração BGN EUA",
@@ -168,14 +247,47 @@
           },
           "ms": {
             "metric": "Sistema métrico",
-            "core": "EUA",
+            "_core": {
+              "metric": "Métrico",
+              "uksystem": "Reino Unido",
+              "ussystem": "EUA"
+            },
             "uksystem": "Sistema de medição imperial",
             "ussystem": "Sistema de medição americano"
           },
           "numbers": {
             "arab": "Algarismos indo-arábicos",
             "arabext": "Algarismos indo-arábicos estendidos",
-            "core": "Algarismos tradicionais",
+            "_core": {
+              "arabext": "Indo-arábicos estendidos",
+              "armnlow": "Armênios em minúsculas",
+              "finance": "Financeiros",
+              "fullwide": "Extensão total",
+              "greklow": "Gregos em minúsculas",
+              "hanidays": "Numeração de dias do mês em caracteres Han para calendários tradicionais",
+              "hanidec": "Sistema decimal posicional que usa ideogramas numéricos chineses como dígitos",
+              "hansfin": "Chinês simplificado financeiro",
+              "hantfin": "Chinês tradicional financeiro",
+              "jpanfin": "Japonês financeiro",
+              "jpanyear": "Numeração japonesa com Gannen para o primeiro ano",
+              "lanatham": "Tai Tham Tham (eclesiástico)",
+              "mathbold": "Matemático em negrito",
+              "mathdbl": "Matemático contornado",
+              "mathmono": "Matemático monoespaçado",
+              "mathsanb": "Matemático sem serifa em negrito",
+              "mathsans": "Matemático sem serifa",
+              "mymrepka": "Mianmarense karen pwo oriental",
+              "mymrpao": "Mianmarense pao",
+              "mymrshan": "Mianmarense shan",
+              "mymrtlng": "Mianmarense tai laing",
+              "native": "Algarismos nativos",
+              "outlined": "Contornado",
+              "roman": "Romanos em maiúsculas",
+              "romanlow": "Romanos em minúsculas",
+              "segment": "Segmentados",
+              "tamldec": "Tâmil moderno",
+              "traditional": "Algarismos tradicionais"
+            },
             "armn": "Algarismos armênios",
             "armnlow": "Algarismos armênios em minúsculas",
             "beng": "Algarismos bengali",
@@ -220,18 +332,19 @@
             "vaii": "Algarismos vai"
           },
           "ss": {
-            "core": "Ativado"
+            "_core": {
+              "none": "Desativado",
+              "standard": "Ativado"
+            }
           },
           "t0": {
             "und": "Tradução automática não especificada"
           },
           "va": {
-            "core": "Variante POSIX"
+            "_core": {
+              "posix": "Variante POSIX"
+            }
           }
-        },
-        "typeValues": {
-          "no": "Desativado",
-          "yes": "Ativado"
         },
         "codePatterns": {
           "language": "Idioma: {0}",

@@ -58,7 +58,26 @@
         "types": {
           "calendar": {
             "buddhist": "佛历",
-            "core": "民国纪年",
+            "_core": {
+              "buddhist": "佛历",
+              "chinese": "农历",
+              "coptic": "科普特历",
+              "dangi": "檀纪历",
+              "ethiopic": "埃塞俄比亚历",
+              "ethiopic-amete-alem": "埃塞俄比亚阿米特阿莱姆日历",
+              "gregorian": "公历",
+              "hebrew": "希伯来历",
+              "indian": "印度国定历",
+              "islamic": "伊斯兰历",
+              "islamic-civil": "表格式伊斯兰历（民用纪元）",
+              "islamic-rgsa": "伊斯兰历（沙特阿拉伯观月）",
+              "islamic-tbla": "表格式伊斯兰历（天文纪元）",
+              "islamic-umalqura": "伊斯兰历（乌姆库拉）",
+              "iso8601": "阳历",
+              "japanese": "和历",
+              "persian": "波斯历",
+              "roc": "民国纪年"
+            },
             "chinese": "农历",
             "coptic": "科普特历",
             "dangi": "檀纪历",
@@ -78,7 +97,10 @@
           },
           "cf": {
             "account": "会计货币格式",
-            "core": "标准",
+            "_core": {
+              "account": "会计",
+              "standard": "标准"
+            },
             "standard": "标准货币格式"
           },
           "colAlternate": {
@@ -91,7 +113,11 @@
           },
           "colCaseFirst": {
             "lower": "先对小写字母进行排序",
-            "core": "大写字母",
+            "_core": {
+              "lower": "小写字母",
+              "no": "小写字母",
+              "upper": "大写字母"
+            },
             "no": "对正常大小写顺序进行排序",
             "upper": "先对大写字母进行排序"
           },
@@ -101,7 +127,23 @@
           },
           "collation": {
             "compat": "基于兼容性沿用既往排序",
-            "core": "注音",
+            "_core": {
+              "compat": "兼容性",
+              "dictionary": "字典",
+              "ducet": "默认Unicode",
+              "emoji": "表情符号",
+              "eor": "欧洲规则",
+              "phonebook": "电话簿",
+              "phonetic": "语音",
+              "pinyin": "拼音",
+              "search": "搜索",
+              "searchjl": "韩语初声",
+              "standard": "标准",
+              "stroke": "笔画",
+              "traditional": "传统",
+              "unihan": "部首笔画",
+              "zhuyin": "注音"
+            },
             "dictionary": "字典排序",
             "ducet": "默认Unicode排序",
             "emoji": "表情符号排序",
@@ -126,11 +168,23 @@
             "yes": "按数字顺序对数字进行排序"
           },
           "colReorder": {
-            "core": "符号"
+            "_core": {
+              "currency": "货币",
+              "digit": "数字",
+              "punct": "标点符号",
+              "space": "空白字符",
+              "symbol": "符号"
+            }
           },
           "colStrength": {
             "identical": "对所有内容进行排序",
-            "core": "基础字符、重音、大小写、变体",
+            "_core": {
+              "identical": "全部",
+              "primary": "仅限基础字母",
+              "quaternary": "基础字符、重音、大小写、变体、假名",
+              "secondary": "基础字符、重音",
+              "tertiary": "基础字符、重音、大小写、变体"
+            },
             "primary": "只对基本字母进行排序",
             "quaternary": "对重音/大小写/长度/假名进行排序",
             "secondary": "对重音进行排序",
@@ -142,11 +196,22 @@
             "npinyin": "数字"
           },
           "em": {
-            "core": "文字"
+            "_core": {
+              "default": "默认",
+              "emoji": "表情符号",
+              "text": "文字"
+            }
           },
           "hc": {
             "c12": "12小时制",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "24小时制",
             "h11": "12小时制（0–11）",
             "h12": "12小时制（1–12）",
@@ -154,16 +219,30 @@
             "h24": "24小时制（1–24）"
           },
           "kv": {
-            "core": "Shift+Space、标点符号、非货币符号"
+            "_core": {
+              "currency": "Shift+Space、标点符号、所有符号",
+              "punct": "Shift+Space、标点符号",
+              "space": "Shift+Space、标点符号",
+              "symbol": "Shift+Space、标点符号、非货币符号"
+            }
           },
           "lb": {
             "loose": "宽松换行样式",
-            "core": "严格",
+            "_core": {
+              "loose": "宽松",
+              "normal": "正常",
+              "strict": "严格"
+            },
             "normal": "正常换行样式",
             "strict": "严格换行样式"
           },
           "lw": {
-            "core": "保留短语"
+            "_core": {
+              "breakall": "允许断词换行",
+              "keepall": "不允许断词换行",
+              "normal": "正常",
+              "phrase": "保留短语"
+            }
           },
           "m0": {
             "bgn": "美国地名委员会 (BGN)",
@@ -171,7 +250,11 @@
           },
           "ms": {
             "metric": "公制",
-            "core": "美制",
+            "_core": {
+              "metric": "公制",
+              "uksystem": "英制",
+              "ussystem": "美制"
+            },
             "uksystem": "英制",
             "ussystem": "美制"
           },
@@ -179,7 +262,36 @@
             "ahom": "阿霍姆数字",
             "arab": "阿拉伯-印度数字",
             "arabext": "扩展阿拉伯-印度数字",
-            "core": "传统数字",
+            "_core": {
+              "arabext": "扩展阿拉伯-印度数字",
+              "armnlow": "亚美尼亚小写体",
+              "finance": "财务",
+              "fullwide": "全角",
+              "greklow": "希腊小写体",
+              "hanidays": "传统历法的汉字日期编号",
+              "hanidec": "中文数字十进制记数法",
+              "hansfin": "简体中文财务",
+              "hantfin": "繁体中文财务",
+              "jpanfin": "日文财务",
+              "jpanyear": "日本元年纪年法",
+              "lanatham": "傣昙文（宗教用）",
+              "mathbold": "数学粗体",
+              "mathdbl": "数学双线体",
+              "mathmono": "数学等宽体",
+              "mathsanb": "数学无衬线粗体",
+              "mathsans": "数学无衬线体",
+              "mymrepka": "缅甸东波克伦文",
+              "mymrpao": "缅甸勃欧文",
+              "mymrshan": "缅甸掸文",
+              "mymrtlng": "缅甸傣亮文",
+              "native": "当地数字",
+              "outlined": "轮廓体",
+              "roman": "罗马大写体",
+              "romanlow": "罗马小写体",
+              "segment": "数码管",
+              "tamldec": "现代泰米尔文",
+              "traditional": "传统数字"
+            },
             "armn": "亚美尼亚数字",
             "armnlow": "亚美尼亚小写数字",
             "bali": "巴厘文数字",
@@ -263,18 +375,19 @@
             "wcho": "万秋数字"
           },
           "ss": {
-            "core": "开启"
+            "_core": {
+              "none": "关闭",
+              "standard": "开启"
+            }
           },
           "t0": {
             "und": "未特别指明的机器翻译"
           },
           "va": {
-            "core": "POSIX 变体"
+            "_core": {
+              "posix": "POSIX 变体"
+            }
           }
-        },
-        "typeValues": {
-          "no": "关闭",
-          "yes": "开启"
         },
         "codePatterns": {
           "language": "语言：{0}",

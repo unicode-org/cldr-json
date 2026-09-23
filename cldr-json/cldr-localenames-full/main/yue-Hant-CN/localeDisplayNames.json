@@ -59,7 +59,26 @@
         "types": {
           "calendar": {
             "buddhist": "佛曆",
-            "core": "民國曆",
+            "_core": {
+              "buddhist": "佛曆",
+              "chinese": "農曆",
+              "coptic": "科普特曆",
+              "dangi": "檀紀曆",
+              "ethiopic": "埃塞俄比亞曆",
+              "ethiopic-amete-alem": "埃塞俄比亞阿美德阿萊姆",
+              "gregorian": "公曆",
+              "hebrew": "希伯來曆",
+              "indian": "印度國定曆",
+              "islamic": "伊斯蘭曆",
+              "islamic-civil": "伊斯蘭民用曆 (表格式)",
+              "islamic-rgsa": "伊斯蘭新月曆",
+              "islamic-tbla": "伊斯蘭天文曆",
+              "islamic-umalqura": "伊斯蘭曆 (烏姆庫拉)",
+              "iso8601": "公曆",
+              "japanese": "日本曆",
+              "persian": "波斯曆",
+              "roc": "民國曆"
+            },
             "chinese": "農曆",
             "coptic": "科普特曆",
             "dangi": "檀紀曆",
@@ -78,7 +97,10 @@
           },
           "cf": {
             "account": "會計貨幣格式",
-            "core": "標準",
+            "_core": {
+              "account": "會計",
+              "standard": "標準"
+            },
             "standard": "標準貨幣格式"
           },
           "colAlternate": {
@@ -91,7 +113,11 @@
           },
           "colCaseFirst": {
             "lower": "優先排序小寫",
-            "core": "大楷",
+            "_core": {
+              "lower": "細楷",
+              "no": "細楷",
+              "upper": "大楷"
+            },
             "no": "正常大小寫順序排序",
             "upper": "優先排序大寫"
           },
@@ -100,7 +126,23 @@
             "yes": "依大小寫排序"
           },
           "collation": {
-            "core": "注音",
+            "_core": {
+              "compat": "相容性",
+              "dictionary": "字典",
+              "ducet": "預設 Unicode",
+              "emoji": "Emoji",
+              "eor": "歐洲規則",
+              "phonebook": "電話簿",
+              "phonetic": "發音",
+              "pinyin": "拼音",
+              "search": "搜尋",
+              "searchjl": "韓文初聲子音",
+              "standard": "標準",
+              "stroke": "筆畫",
+              "traditional": "傳統",
+              "unihan": "部首筆畫",
+              "zhuyin": "注音"
+            },
             "dictionary": "字典排序",
             "ducet": "預設 Unicode 排序",
             "eor": "歐洲排序規則",
@@ -124,11 +166,23 @@
             "yes": "依數字順序排序數字"
           },
           "colReorder": {
-            "core": "符號"
+            "_core": {
+              "currency": "貨幣",
+              "digit": "數字",
+              "punct": "標點符號",
+              "space": "空白字元",
+              "symbol": "符號"
+            }
           },
           "colStrength": {
             "identical": "全部排序",
-            "core": "基礎、重音、大細寫、變體",
+            "_core": {
+              "identical": "全部",
+              "primary": "只限基礎字母",
+              "quaternary": "基礎、重音、大細楷、變體、假名",
+              "secondary": "基礎、重音",
+              "tertiary": "基礎、重音、大細寫、變體"
+            },
             "primary": "僅排序基礎字母",
             "quaternary": "排序重音/大小寫/全半形/假名",
             "secondary": "排序重音",
@@ -140,11 +194,22 @@
             "npinyin": "數值"
           },
           "em": {
-            "core": "文字"
+            "_core": {
+              "default": "預設",
+              "emoji": "Emoji",
+              "text": "文字"
+            }
           },
           "hc": {
             "c12": "12 小時制",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "24 小時制",
             "h11": "12 小時制 (0–11)",
             "h12": "12 小時制 (1–12)",
@@ -152,16 +217,30 @@
             "h24": "24 小時制 (1–24)"
           },
           "kv": {
-            "core": "Shift、空格、標點符號、非貨幣符號"
+            "_core": {
+              "currency": "Shift、空格、標點符號、所有符號",
+              "punct": "Shift、空格、標點符號",
+              "space": "Shift、空格、標點符號",
+              "symbol": "Shift、空格、標點符號、非貨幣符號"
+            }
           },
           "lb": {
             "loose": "寬鬆換行樣式",
-            "core": "強制",
+            "_core": {
+              "loose": "寬鬆",
+              "normal": "一般",
+              "strict": "強制"
+            },
             "normal": "一般換行樣式",
             "strict": "強制換行樣式"
           },
           "lw": {
-            "core": "唔拆開詞組"
+            "_core": {
+              "breakall": "任意換行",
+              "keepall": "全部保留",
+              "normal": "一般",
+              "phrase": "唔拆開詞組"
+            }
           },
           "m0": {
             "bgn": "美國地名委員會",
@@ -169,14 +248,47 @@
           },
           "ms": {
             "metric": "公制",
-            "core": "美制",
+            "_core": {
+              "metric": "公制",
+              "uksystem": "英制",
+              "ussystem": "美制"
+            },
             "uksystem": "英制度量單位系統",
             "ussystem": "美制度量單位系統"
           },
           "numbers": {
             "arab": "阿拉伯-印度數字",
             "arabext": "阿拉伯-印度擴充數字",
-            "core": "傳統數字",
+            "_core": {
+              "arabext": "阿拉伯-印度擴充",
+              "armnlow": "小寫亞美尼亞",
+              "finance": "財務",
+              "fullwide": "全形",
+              "greklow": "小寫希臘",
+              "hanidays": "傳統曆法漢字月日寫法",
+              "hanidec": "使用漢字數字計數的位置十進制",
+              "hansfin": "大寫簡體中文",
+              "hantfin": "大寫繁體中文",
+              "jpanfin": "大寫日文",
+              "jpanyear": "日本元年紀年法",
+              "lanatham": "蘭納文 (教會用語)",
+              "mathbold": "數學粗體",
+              "mathdbl": "數學雙線體",
+              "mathmono": "數學等寬字體",
+              "mathsanb": "數學無襯線粗體",
+              "mathsans": "數學無襯線字體",
+              "mymrepka": "緬甸東部波克倫族",
+              "mymrpao": "緬甸巴歐族",
+              "mymrshan": "緬甸撣族",
+              "mymrtlng": "緬甸紅傣族",
+              "native": "原始數字",
+              "outlined": "大綱",
+              "roman": "大寫羅馬數字",
+              "romanlow": "小寫羅馬數字",
+              "segment": "分段",
+              "tamldec": "現代泰米爾",
+              "traditional": "傳統數字"
+            },
             "armn": "亞美尼亞數字",
             "armnlow": "小寫亞美尼亞數字",
             "bali": "峇里文數字",
@@ -238,18 +350,19 @@
             "vaii": "瓦伊文數字"
           },
           "ss": {
-            "core": "開"
+            "_core": {
+              "none": "閂",
+              "standard": "開"
+            }
           },
           "t0": {
             "und": "未指定嘅機器翻譯"
           },
           "va": {
-            "core": "POSIX 變體"
+            "_core": {
+              "posix": "POSIX 變體"
+            }
           }
-        },
-        "typeValues": {
-          "no": "閂",
-          "yes": "開"
         },
         "codePatterns": {
           "language": "語言：{0}",

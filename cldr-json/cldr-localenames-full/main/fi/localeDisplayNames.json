@@ -57,7 +57,26 @@
         "types": {
           "calendar": {
             "buddhist": "buddhalainen kalenteri",
-            "core": "Minguo-kalenteri",
+            "_core": {
+              "buddhist": "buddhalainen",
+              "chinese": "kiinalainen",
+              "coptic": "koptilainen",
+              "dangi": "dangilainen",
+              "ethiopic": "etiopialainen",
+              "ethiopic-amete-alem": "etiopialainen amete alem",
+              "gregorian": "gregoriaaninen",
+              "hebrew": "juutalainen",
+              "indian": "saka samvat -kalenteri",
+              "islamic": "hidžra-kalenteri",
+              "islamic-civil": "hidžra-kalenteri (taulukkomuoto, perjantaiepookki)",
+              "islamic-rgsa": "hidžra-kalenteri, Saudi-Arabia, kuun havainnointi",
+              "islamic-tbla": "hidžra-kalenteri (taulukkomuoto, astronominen epookki)",
+              "islamic-umalqura": "Umm al Qura -kalenteri",
+              "iso8601": "gregoriaaninen kalenteri",
+              "japanese": "japanilainen",
+              "persian": "persialainen",
+              "roc": "Minguo-kalenteri"
+            },
             "chinese": "kiinalainen kalenteri",
             "coptic": "koptilainen kalenteri",
             "dangi": "dangilainen kalenteri",
@@ -78,7 +97,10 @@
           },
           "cf": {
             "account": "valuuttojen laskentatoimen esitysmuoto",
-            "core": "vakio",
+            "_core": {
+              "account": "laskentatoimi",
+              "standard": "vakio"
+            },
             "standard": "valuuttojen vakioesitysmuoto"
           },
           "colAlternate": {
@@ -91,7 +113,11 @@
           },
           "colCaseFirst": {
             "lower": "pienet kirjaimet edeltävät isoja",
-            "core": "isot kirjaimet",
+            "_core": {
+              "lower": "pienet kirjaimet",
+              "no": "pienet kirjaimet",
+              "upper": "isot kirjaimet"
+            },
             "no": "isojen ja pienten kirjainten normaalijärjestys",
             "upper": "isot kirjaimet edeltävät pieniä"
           },
@@ -101,7 +127,23 @@
           },
           "collation": {
             "compat": "aiempi lajittelujärjestys yhteensopivuutta varten",
-            "core": "zhuyin-järjestelmä",
+            "_core": {
+              "compat": "yhteensopivuus",
+              "dictionary": "sanakirja",
+              "ducet": "oletusarvoinen unicode",
+              "emoji": "emoji",
+              "eor": "eurooppalaiset säännöt",
+              "phonebook": "puhelinluettelo",
+              "phonetic": "äänteellinen",
+              "pinyin": "pinyin-järjestelmä",
+              "search": "haku",
+              "searchjl": "korean alkukonsonantit",
+              "standard": "normaali",
+              "stroke": "piirto",
+              "traditional": "perinteinen",
+              "unihan": "radikaali piirto",
+              "zhuyin": "zhuyin-järjestelmä"
+            },
             "dictionary": "sanakirjajärjestys",
             "ducet": "Unicoden oletusjärjestys",
             "emoji": "emojien lajittelujärjestys",
@@ -126,11 +168,23 @@
             "yes": "numeroden lajittelu lukuina"
           },
           "colReorder": {
-            "core": "symboli"
+            "_core": {
+              "currency": "valuutta",
+              "digit": "numerot",
+              "punct": "välimerkit",
+              "space": "tyhjämerkki",
+              "symbol": "symboli"
+            }
           },
           "colStrength": {
             "identical": "kaikkien merkkien lajittelu",
-            "core": "peruskirjaimet, aksenttimerkit, sija, versiot",
+            "_core": {
+              "identical": "kaikki",
+              "primary": "vain peruskirjaimet",
+              "quaternary": "peruskirjaimet, aksenttimerkit, sija, versiot, kana",
+              "secondary": "peruskirjaimet, aksenttimerkit",
+              "tertiary": "peruskirjaimet, aksenttimerkit, sija, versiot"
+            },
             "primary": "vain peruskirjainten lajittelu",
             "quaternary": "painomerkit ja aakkoslajit tai merkkileveydet ja kana-merkit huomioiva lajittelu",
             "secondary": "painomerkit huomioiva lajittelu",
@@ -142,11 +196,22 @@
             "npinyin": "numeerinen muunnos"
           },
           "em": {
-            "core": "teksti"
+            "_core": {
+              "default": "oletusarvoinen",
+              "emoji": "emoji",
+              "text": "teksti"
+            }
           },
           "hc": {
             "c12": "12 tunnin järjestelmä",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "24 tunnin järjestelmä",
             "h11": "12 tunnin järjestelmä (0–11)",
             "h12": "12 tunnin järjestelmä (1–12)",
@@ -154,16 +219,30 @@
             "h24": "24 tunnin järjestelmä (1–24)"
           },
           "kv": {
-            "core": "vaihto: välilyönnit, välimerkit, muut kuin valuuttasymbolit"
+            "_core": {
+              "currency": "vaihto: välilyönnit, välimerkit, kaikki symbolit",
+              "punct": "vaihto: välilyönnit, välimerkit",
+              "space": "vaihto: välilyönnit, välimerkit",
+              "symbol": "vaihto: välilyönnit, välimerkit, muut kuin valuuttasymbolit"
+            }
           },
           "lb": {
             "loose": "väljä rivinvaihto",
-            "core": "tarkka",
+            "_core": {
+              "loose": "väljä",
+              "normal": "normaali",
+              "strict": "tarkka"
+            },
             "normal": "normaali rivinvaihto",
             "strict": "tarkka rivinvaihto"
           },
           "lw": {
-            "core": "säilytä lauseet"
+            "_core": {
+              "breakall": "erota kaikki",
+              "keepall": "säilytä kaikki",
+              "normal": "normaali",
+              "phrase": "säilytä lauseet"
+            }
           },
           "m0": {
             "bgn": "BGN-latinaistus",
@@ -171,7 +250,11 @@
           },
           "ms": {
             "metric": "metrijärjestelmä",
-            "core": "yhdysvaltalainen",
+            "_core": {
+              "metric": "metrinen",
+              "uksystem": "brittiläinen",
+              "ussystem": "yhdysvaltalainen"
+            },
             "uksystem": "brittiläinen mittajärjestelmä",
             "ussystem": "yhdysvaltalainen mittajärjestelmä"
           },
@@ -179,7 +262,36 @@
             "ahom": "ahom-numerot",
             "arab": "arabialaiset numerot",
             "arabext": "laajennetut arabialaiset numerot",
-            "core": "perinteiset numerot",
+            "_core": {
+              "arabext": "laajennettu arabi-intialainen",
+              "armnlow": "armenialaiset pienet",
+              "finance": "talousnumerot",
+              "fullwide": "täysleveät",
+              "greklow": "kreikkalaiset pienet",
+              "hanidays": "han-symbolien kuukauden päivänumerot perinteisille kalentereille",
+              "hanidec": "paikkasidonnainen desimaalijärjestelmä, joka käyttää numeroiden kiinalaisia ideografeja",
+              "hansfin": "yksinkertaistetut kiinalaiset taloudelliset",
+              "hantfin": "perinteiset kiinalaiset taloudelliset",
+              "jpanfin": "japanilaiset taloudelliset",
+              "jpanyear": "japanilainen keisarin aikakauden ensimmäinen vuosi, Gannen-numerointi",
+              "lanatham": "tai tham tham (kirkollinen)",
+              "mathbold": "matemaattinen (lihavoitu)",
+              "mathdbl": "matemaattinen (kaksoisviivallinen)",
+              "mathmono": "matemaattinen (kiinteävälinen)",
+              "mathsanb": "matemaattinen (lihavoitu, pääteviivaton)",
+              "mathsans": "matemaattinen (pääteviivaton)",
+              "mymrepka": "myanmarilaiset itäiset pwo karen -numerot",
+              "mymrpao": "myanmarilaiset pao-numerot",
+              "mymrshan": "myanmarilaiset shan-numerot",
+              "mymrtlng": "myanmarilaiset tai laing -numerot",
+              "native": "kielen omat",
+              "outlined": "rajatut",
+              "roman": "roomalaiset isot numerot",
+              "romanlow": "roomalaiset pienet",
+              "segment": "segmentoidut",
+              "tamldec": "modernit tamilinumerot",
+              "traditional": "perinteiset numerot"
+            },
             "armn": "armenialaiset numerot",
             "armnlow": "armenialaiset piennumerot",
             "bali": "balilaiset numerot",
@@ -264,18 +376,19 @@
             "wcho": "wancholaiset numerot"
           },
           "ss": {
-            "core": "päällä"
+            "_core": {
+              "none": "pois",
+              "standard": "päällä"
+            }
           },
           "t0": {
             "und": "määrittämätön konekäännös"
           },
           "va": {
-            "core": "POSIX-variantti"
+            "_core": {
+              "posix": "POSIX-variantti"
+            }
           }
-        },
-        "typeValues": {
-          "no": "pois",
-          "yes": "päällä"
         },
         "codePatterns": {
           "language": "kieli: {0}",
