@@ -57,7 +57,26 @@
         "types": {
           "calendar": {
             "buddhist": "Lịch Phật Giáo",
-            "core": "Trung Hoa Dân Quốc",
+            "_core": {
+              "buddhist": "Phật giáo",
+              "chinese": "Trung Quốc",
+              "coptic": "Copts",
+              "dangi": "Dangi",
+              "ethiopic": "Ethiopic",
+              "ethiopic-amete-alem": "Ethiopic Amete Alem",
+              "gregorian": "Gregory",
+              "hebrew": "Do Thái",
+              "indian": "Lịch quốc gia Ấn Độ",
+              "islamic": "Hồi giáo",
+              "islamic-civil": "Hồi giáo (dạng bảng, kỷ nguyên dân sự)",
+              "islamic-rgsa": "Lịch Hồi giáo, Ả Rập Xê Út quan sát trăng non",
+              "islamic-tbla": "Lịch Hồi giáo (theo bảng, kỷ nguyên thiên văn)",
+              "islamic-umalqura": "Hồi giáo (Umm al-Qura)",
+              "iso8601": "Dương lịch",
+              "japanese": "Nhật Bản",
+              "persian": "Ba Tư",
+              "roc": "Trung Hoa Dân Quốc"
+            },
             "chinese": "Lịch Trung Quốc",
             "coptic": "Lịch Copts",
             "dangi": "Lịch Dangi",
@@ -76,7 +95,10 @@
           },
           "cf": {
             "account": "Định dạng tiền tệ kế toán",
-            "core": "Chuẩn",
+            "_core": {
+              "account": "Kế toán",
+              "standard": "Chuẩn"
+            },
             "standard": "Định dạng tiền tệ chuẩn"
           },
           "colAlternate": {
@@ -89,7 +111,11 @@
           },
           "colCaseFirst": {
             "lower": "Sắp xếp chữ thường đầu tiên",
-            "core": "Chữ hoa",
+            "_core": {
+              "lower": "Chữ thường",
+              "no": "Chữ thường",
+              "upper": "Chữ hoa"
+            },
             "no": "Sắp xếp thứ tự chữ cái bình thường",
             "upper": "Sắp xếp chữ hoa đầu tiên"
           },
@@ -99,7 +125,23 @@
           },
           "collation": {
             "compat": "Thứ tự sắp xếp trước đây, để tương thích",
-            "core": "Chú âm phù hiệu",
+            "_core": {
+              "compat": "Khả năng tương thích",
+              "dictionary": "Từ điển",
+              "ducet": "Unicode mặc định",
+              "emoji": "Biểu tượng cảm xúc",
+              "eor": "quy tắc châu Âu",
+              "phonebook": "Danh bạ điện thoại",
+              "phonetic": "Ngữ âm",
+              "pinyin": "Bính âm",
+              "search": "Tìm kiếm",
+              "searchjl": "phụ âm đầu trong tiếng Hàn",
+              "standard": "Chuẩn",
+              "stroke": "Nét chữ",
+              "traditional": "Truyền thống",
+              "unihan": "Bộ-nét",
+              "zhuyin": "Chú âm phù hiệu"
+            },
             "dictionary": "Thứ tự sắp xếp theo từ điển",
             "ducet": "Thứ tự sắp xếp unicode mặc định",
             "emoji": "Thứ tự sắp xếp biểu tượng",
@@ -124,11 +166,23 @@
             "yes": "Sắp xếp chữ số theo số"
           },
           "colReorder": {
-            "core": "Ký hiệu"
+            "_core": {
+              "currency": "Đơn vị tiền tệ",
+              "digit": "Chữ số",
+              "punct": "Dấu câu",
+              "space": "Khoảng trắng",
+              "symbol": "Ký hiệu"
+            }
           },
           "colStrength": {
             "identical": "Sắp xếp tất cả",
-            "core": "Chữ cơ bản, dấu thanh, chữ hoa chữ thường, biến thể",
+            "_core": {
+              "identical": "Tất cả",
+              "primary": "Chỉ các chữ cái cơ sở",
+              "quaternary": "Chữ cơ bản, dấu thanh, chữ hoa chữ thường, biến thể, chữ Kana",
+              "secondary": "Chữ cơ bản, dấu thanh",
+              "tertiary": "Chữ cơ bản, dấu thanh, chữ hoa chữ thường, biến thể"
+            },
             "primary": "Chỉ sắp xếp chữ cái cơ sở",
             "quaternary": "Sắp xếp dấu trọng âm/chữ cái/độ rộng/chữ Kana",
             "secondary": "Sắp xếp dấu trọng âm",
@@ -140,11 +194,22 @@
             "npinyin": "Số"
           },
           "em": {
-            "core": "Văn bản"
+            "_core": {
+              "default": "Mặc định",
+              "emoji": "Emoji",
+              "text": "Văn bản"
+            }
           },
           "hc": {
             "c12": "Hệ thống 12 giờ",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "Hệ thống 24 giờ",
             "h11": "Hệ thống 12 giờ (0–11)",
             "h12": "Hệ thống 12 giờ (1–12)",
@@ -152,16 +217,30 @@
             "h24": "Hệ thống 24 giờ (1–24)"
           },
           "kv": {
-            "core": "Bỏ qua khoảng trắng, dấu câu, ký hiệu không phải tiền tệ"
+            "_core": {
+              "currency": "Bỏ qua khoảng trắng, dấu câu, tất cả ký hiệu",
+              "punct": "Bỏ qua khoảng trắng, dấu câu",
+              "space": "Bỏ qua khoảng trắng, dấu câu",
+              "symbol": "Bỏ qua khoảng trắng, dấu câu, ký hiệu không phải tiền tệ"
+            }
           },
           "lb": {
             "loose": "Kiểu xuống dòng thoáng",
-            "core": "Hẹp",
+            "_core": {
+              "loose": "Thoáng",
+              "normal": "Bình thường",
+              "strict": "Hẹp"
+            },
             "normal": "Kiểu xuống dòng thường",
             "strict": "Kiểu xuống dòng hẹp"
           },
           "lw": {
-            "core": "Giữ trong cụm từ"
+            "_core": {
+              "breakall": "Ngắt tất cả",
+              "keepall": "Giữ tất cả",
+              "normal": "Bình thường",
+              "phrase": "Giữ trong cụm từ"
+            }
           },
           "m0": {
             "bgn": "Chuyển tự US BGN",
@@ -169,7 +248,11 @@
           },
           "ms": {
             "metric": "Hệ mét",
-            "core": "Mỹ",
+            "_core": {
+              "metric": "Mét",
+              "uksystem": "Anh",
+              "ussystem": "Mỹ"
+            },
             "uksystem": "Hệ đo lường Anh",
             "ussystem": "Hệ đo lường Mỹ"
           },
@@ -177,7 +260,36 @@
             "ahom": "Chữ số Ahom",
             "arab": "Chữ số Ả Rập - Ấn Độ",
             "arabext": "Chữ số Ả Rập - Ấn Độ mở rộng",
-            "core": "Chữ số truyền thống",
+            "_core": {
+              "arabext": "Ả Rập-Ấn Độ mở rộng",
+              "armnlow": "Armenia viết thường",
+              "finance": "Tài chính",
+              "fullwide": "Độ rộng đầy đủ",
+              "greklow": "Hy Lạp viết thường",
+              "hanidays": "Cách đánh số ngày bằng Hán tự cho lịch truyền thống",
+              "hanidec": "Hệ thập phân vị trị sử dụng chữ số Trung Quốc làm chữ số",
+              "hansfin": "Tài chính tiếng Trung giản thể",
+              "hantfin": "Tài chính tiếng Trung phồn thể",
+              "jpanfin": "Tài chính tiếng Nhật",
+              "jpanyear": "Cách đánh số năm đầu trong tiếng Nhật",
+              "lanatham": "Chữ Tai Tham (giáo hội)",
+              "mathbold": "Chữ số toán học in đậm",
+              "mathdbl": "Chữ số toán học nét đôi",
+              "mathmono": "Chữ số toán học đơn cách",
+              "mathsanb": "Chữ số toán học sans-serif đậm",
+              "mathsans": "Chữ số toán học sans-serif",
+              "mymrepka": "Chữ số Pwo Karen Đông Myanmar",
+              "mymrpao": "Chữ số Pao Myanmar",
+              "mymrshan": "Chữ số Shan Myanmar",
+              "mymrtlng": "Chữ số Tai Laing Myanmar",
+              "native": "Chữ số tự nhiên",
+              "outlined": "Nét viền",
+              "roman": "La Mã viết hoa",
+              "romanlow": "La Mã viết thường",
+              "segment": "Dạng đoạn",
+              "tamldec": "Tamil hiện đại",
+              "traditional": "Chữ số truyền thống"
+            },
             "armn": "Chữ số Armenia",
             "armnlow": "Chữ số Armenia viết thường",
             "bali": "Chữ số Bali",
@@ -258,18 +370,19 @@
             "wcho": "Chữ số Wancho"
           },
           "ss": {
-            "core": "Bật"
+            "_core": {
+              "none": "Tắt",
+              "standard": "Bật"
+            }
           },
           "t0": {
             "und": "Bản dịch máy không xác định"
           },
           "va": {
-            "core": "biến thể POSIX"
+            "_core": {
+              "posix": "biến thể POSIX"
+            }
           }
-        },
-        "typeValues": {
-          "no": "Tắt",
-          "yes": "Bật"
         },
         "codePatterns": {
           "language": "Ngôn ngữ: {0}",

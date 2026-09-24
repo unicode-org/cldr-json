@@ -57,7 +57,26 @@
         "types": {
           "calendar": {
             "buddhist": "calendar budist",
-            "core": "al Republicii Chineze",
+            "_core": {
+              "buddhist": "budist",
+              "chinese": "chinezesc",
+              "coptic": "copt",
+              "dangi": "dangi",
+              "ethiopic": "etiopian",
+              "ethiopic-amete-alem": "etiopian amete alem",
+              "gregorian": "gregorian",
+              "hebrew": "ebraic",
+              "indian": "național indian",
+              "islamic": "al hegirei",
+              "islamic-civil": "al hegirei (tabular, civil)",
+              "islamic-rgsa": "al hegirei, observare Arabia Saudită",
+              "islamic-tbla": "al hegirei (tabular, astronomic)",
+              "islamic-umalqura": "al hegirei (Umm al-Qura)",
+              "iso8601": "gregorian",
+              "japanese": "japonez",
+              "persian": "persan",
+              "roc": "al Republicii Chineze"
+            },
             "chinese": "calendar chinezesc",
             "coptic": "calendar copt",
             "dangi": "calendar dangi",
@@ -76,7 +95,10 @@
           },
           "cf": {
             "account": "Format monedă contabilitate",
-            "core": "standard",
+            "_core": {
+              "account": "contabilitate",
+              "standard": "standard"
+            },
             "standard": "Format monedă standard"
           },
           "colAlternate": {
@@ -89,7 +111,11 @@
           },
           "colCaseFirst": {
             "lower": "Ordonați întâi minusculele",
-            "core": "majuscule",
+            "_core": {
+              "lower": "minuscule",
+              "no": "minuscule",
+              "upper": "majuscule"
+            },
             "no": "Ordonați după dimensiunea normală a literei",
             "upper": "Ordonați mai întâi majusculele"
           },
@@ -99,7 +125,23 @@
           },
           "collation": {
             "compat": "ordine de sortare anterioară, pentru compatibilitate",
-            "core": "zhuyin",
+            "_core": {
+              "compat": "compatibilitate",
+              "dictionary": "dicționar",
+              "ducet": "Unicode implicită",
+              "emoji": "emoji",
+              "eor": "reguli europene",
+              "phonebook": "carte de telefon",
+              "phonetic": "fonetică",
+              "pinyin": "pinyin",
+              "search": "căutare",
+              "searchjl": "consoană inițială coreeană",
+              "standard": "standard",
+              "stroke": "trasare",
+              "traditional": "tradițională",
+              "unihan": "radical și trasare",
+              "zhuyin": "zhuyin"
+            },
             "dictionary": "ordine de sortare a dicționarului",
             "ducet": "ordine de sortare Unicode implicită",
             "emoji": "ordine de sortare a emojiurilor",
@@ -124,11 +166,23 @@
             "yes": "Ordonați cifrele în ordine numerică"
           },
           "colReorder": {
-            "core": "simbol"
+            "_core": {
+              "currency": "monedă",
+              "digit": "cifre",
+              "punct": "punctuație",
+              "space": "spațiu",
+              "symbol": "simbol"
+            }
           },
           "colStrength": {
             "identical": "Ordonați-le pe toate",
-            "core": "bază, accente, majuscule/minuscule, variante",
+            "_core": {
+              "identical": "toate",
+              "primary": "doar literele de bază",
+              "quaternary": "bază, accente, majuscule/minuscule, variante, kana",
+              "secondary": "bază, accente",
+              "tertiary": "bază, accente, majuscule/minuscule, variante"
+            },
             "primary": "Ordonați numai literele de bază",
             "quaternary": "Ordonați după accente/dimensiunea literei/lățime/kana",
             "secondary": "Ordonați după accent",
@@ -140,11 +194,22 @@
             "npinyin": "Numeric"
           },
           "em": {
-            "core": "text"
+            "_core": {
+              "default": "implicită",
+              "emoji": "emojiuri",
+              "text": "text"
+            }
           },
           "hc": {
             "c12": "sistem cu 12 ore",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "sistem cu 24 de ore",
             "h11": "sistem cu 12 ore (0–11)",
             "h12": "sistem cu 12 ore (1–12)",
@@ -152,16 +217,30 @@
             "h24": "sistem cu 24 de ore (1–24)"
           },
           "kv": {
-            "core": "omite spații, punctuație, simboluri nemonetare"
+            "_core": {
+              "currency": "omite spații, punctuație, toate simbolurile",
+              "punct": "omite spații, punctuație",
+              "space": "omite spații, punctuație",
+              "symbol": "omite spații, punctuație, simboluri nemonetare"
+            }
           },
           "lb": {
             "loose": "stil liber de întrerupere a liniei",
-            "core": "strict",
+            "_core": {
+              "loose": "liber",
+              "normal": "normal",
+              "strict": "strict"
+            },
             "normal": "stil de normal întrerupere a rândului",
             "strict": "stil strict de întrerupere a rândului"
           },
           "lw": {
-            "core": "fără întrerupere în expresii"
+            "_core": {
+              "breakall": "întrerupere oriunde",
+              "keepall": "fără întrerupere",
+              "normal": "normal",
+              "phrase": "fără întrerupere în expresii"
+            }
           },
           "m0": {
             "bgn": "transliterare BGN SUA",
@@ -169,7 +248,11 @@
           },
           "ms": {
             "metric": "sistemul metric",
-            "core": "american",
+            "_core": {
+              "metric": "metric",
+              "uksystem": "britanic",
+              "ussystem": "american"
+            },
             "uksystem": "sistemul imperial de unități de măsură",
             "ussystem": "sistemul american de unități de măsură"
           },
@@ -177,7 +260,36 @@
             "ahom": "cifre ahom",
             "arab": "cifre indo-arabe",
             "arabext": "cifre indo-arabe extinse",
-            "core": "numerale tradiționale",
+            "_core": {
+              "arabext": "indo-arabe extinse",
+              "armnlow": "armenești cu minuscule",
+              "finance": "financiare",
+              "fullwide": "lățime întreagă",
+              "greklow": "grecești cu minuscule",
+              "hanidays": "numerotare a zilelor lunii cu caractere han pentru calendarele tradiționale",
+              "hanidec": "sistem zecimal pozițional utilizând ideograme numerice chinezești drept cifre",
+              "hansfin": "financiare chinezești simplificate",
+              "hantfin": "financiare chinezești tradiționale",
+              "jpanfin": "financiare japoneze",
+              "jpanyear": "numerotare japoneză gannen după primul an",
+              "lanatham": "tai tham tham (ecleziastică)",
+              "mathbold": "matematice aldine",
+              "mathdbl": "matematice cu linii duble",
+              "mathmono": "matematice monospațiate",
+              "mathsanb": "matematice fără serife aldine",
+              "mathsans": "matematice fără serife",
+              "mymrepka": "karen pwo de Est birmaneze",
+              "mymrpao": "pao birmaneze",
+              "mymrshan": "shan birmaneze",
+              "mymrtlng": "tai laing birmaneze",
+              "native": "cifre native",
+              "outlined": "conturate",
+              "roman": "romane cu majuscule",
+              "romanlow": "romane cu minuscule",
+              "segment": "segmentate",
+              "tamldec": "tamile moderne",
+              "traditional": "numerale tradiționale"
+            },
             "armn": "numerale armenești",
             "armnlow": "numerale armenești cu minuscule",
             "bali": "cifre balineze",
@@ -262,18 +374,19 @@
             "wcho": "cifre wancho"
           },
           "ss": {
-            "core": "activată"
+            "_core": {
+              "none": "dezactivată",
+              "standard": "activată"
+            }
           },
           "t0": {
             "und": "traducere automată nespecificată"
           },
           "va": {
-            "core": "variantă POSIX"
+            "_core": {
+              "posix": "variantă POSIX"
+            }
           }
-        },
-        "typeValues": {
-          "no": "dezactivată",
-          "yes": "activată"
         },
         "codePatterns": {
           "language": "Limbă: {0}",

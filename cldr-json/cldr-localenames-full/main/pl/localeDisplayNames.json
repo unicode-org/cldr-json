@@ -57,7 +57,26 @@
         "types": {
           "calendar": {
             "buddhist": "kalendarz buddyjski",
-            "core": "Republiki Chińskiej",
+            "_core": {
+              "buddhist": "buddyjski",
+              "chinese": "chiński",
+              "coptic": "koptyjski",
+              "dangi": "koreański",
+              "ethiopic": "etiopski",
+              "ethiopic-amete-alem": "etiopski Amete Alem",
+              "gregorian": "gregoriański",
+              "hebrew": "hebrajski",
+              "indian": "indyjski narodowy",
+              "islamic": "muzułmański",
+              "islamic-civil": "muzułmański (metoda obliczeniowa)",
+              "islamic-rgsa": "muzułmański (oparty na lokalnej obserwacji)",
+              "islamic-tbla": "muzułmański (tabelaryczny, epoka astronomiczna)",
+              "islamic-umalqura": "muzułmański (Umm al-Kura)",
+              "iso8601": "gregoriański",
+              "japanese": "japoński",
+              "persian": "perski",
+              "roc": "Republiki Chińskiej"
+            },
             "chinese": "kalendarz chiński",
             "coptic": "kalendarz koptyjski",
             "dangi": "kalendarz koreański",
@@ -78,7 +97,10 @@
           },
           "cf": {
             "account": "księgowy format waluty",
-            "core": "standardowy",
+            "_core": {
+              "account": "księgowy",
+              "standard": "standardowy"
+            },
             "standard": "standardowy format waluty"
           },
           "colAlternate": {
@@ -91,7 +113,11 @@
           },
           "colCaseFirst": {
             "lower": "Sortowanie od małych liter",
-            "core": "wielkie litery",
+            "_core": {
+              "lower": "małe litery",
+              "no": "małe litery",
+              "upper": "wielkie litery"
+            },
             "no": "Sortowanie z zachowaniem zwykłej kolejności wielkości liter",
             "upper": "Sortowanie od wielkich liter"
           },
@@ -101,7 +127,23 @@
           },
           "collation": {
             "compat": "poprzedni porządek sortowania, dla zgodności",
-            "core": "bopomofo",
+            "_core": {
+              "compat": "zgodność",
+              "dictionary": "słownikowe",
+              "ducet": "domyślne Unicode",
+              "emoji": "emotikon",
+              "eor": "reguły europejskie",
+              "phonebook": "książka telefoniczna",
+              "phonetic": "fonetyczne",
+              "pinyin": "pinyin",
+              "search": "wyszukiwanie",
+              "searchjl": "koreańskie spółgłoski początkowe",
+              "standard": "standardowe",
+              "stroke": "liczba kresek",
+              "traditional": "tradycyjne",
+              "unihan": "klucze i liczba kresek",
+              "zhuyin": "bopomofo"
+            },
             "dictionary": "sortowanie słownikowe",
             "ducet": "domyślna kolejność sortowania Unicode",
             "eor": "europejskie reguły określania kolejności",
@@ -125,11 +167,23 @@
             "yes": "Numeryczne sortowanie cyfr"
           },
           "colReorder": {
-            "core": "symbol"
+            "_core": {
+              "currency": "waluta",
+              "digit": "cyfry",
+              "punct": "interpunkcja",
+              "space": "biały znak",
+              "symbol": "symbol"
+            }
           },
           "colStrength": {
             "identical": "Sortuj wszystko",
-            "core": "podstawa, akcenty, wielkość liter, warianty",
+            "_core": {
+              "identical": "wszystko",
+              "primary": "sortowanie tylko liter podstawowych",
+              "quaternary": "podstawa, akcenty, wielkość liter, warianty, kana",
+              "secondary": "podstawa, akcenty",
+              "tertiary": "podstawa, akcenty, wielkość liter, warianty"
+            },
             "primary": "Sortowanie tylko liter podstawowych",
             "quaternary": "Sortowanie znaków akcentowanych/wielkości liter/szerokości/kana",
             "secondary": "Sortowanie znaków akcentowanych",
@@ -141,11 +195,22 @@
             "npinyin": "Liczbowe"
           },
           "em": {
-            "core": "tekst"
+            "_core": {
+              "default": "domyślna",
+              "emoji": "emoji",
+              "text": "tekst"
+            }
           },
           "hc": {
             "c12": "system 12-godzinny",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "system 24-godzinny",
             "h11": "system 12-godzinny (0–11)",
             "h12": "system 12-godzinny (1–12)",
@@ -153,16 +218,30 @@
             "h24": "system 24-godzinny (1–24)"
           },
           "kv": {
-            "core": "przesunięcie: spacje, interpunkcja, symbole inne niż waluty"
+            "_core": {
+              "currency": "przesunięcie: spacje, interpunkcja, wszystkie symbole",
+              "punct": "przesunięcie: spacje, interpunkcja",
+              "space": "przesunięcie: spacje, interpunkcja",
+              "symbol": "przesunięcie: spacje, interpunkcja, symbole inne niż waluty"
+            }
           },
           "lb": {
             "loose": "luźny styl podziału wiersza",
-            "core": "ścisły",
+            "_core": {
+              "loose": "luźny",
+              "normal": "normalny",
+              "strict": "ścisły"
+            },
             "normal": "normalny styl podziału wiersza",
             "strict": "ścisły styl podziału wiersza"
           },
           "lw": {
-            "core": "bez podziału w wyrażeniach"
+            "_core": {
+              "breakall": "dowolny podział",
+              "keepall": "bez podziału",
+              "normal": "normalny",
+              "phrase": "bez podziału w wyrażeniach"
+            }
           },
           "m0": {
             "bgn": "transliteracja BGN",
@@ -170,14 +249,47 @@
           },
           "ms": {
             "metric": "system metryczny",
-            "core": "amerykański",
+            "_core": {
+              "metric": "metryczny",
+              "uksystem": "imperialny",
+              "ussystem": "amerykański"
+            },
             "uksystem": "imperialny system miar",
             "ussystem": "amerykański system miar"
           },
           "numbers": {
             "arab": "cyfry arabsko-indyjskie",
             "arabext": "rozszerzone cyfry arabsko-indyjskie",
-            "core": "cyfry tradycyjne",
+            "_core": {
+              "arabext": "rozszerzone arabsko-indyjskie",
+              "armnlow": "ormiańskie (małe litery)",
+              "finance": "księgowy",
+              "fullwide": "pełna szerokość",
+              "greklow": "greckie (małe litery)",
+              "hanidays": "numeracja dni miesiąca znakami Han do kalendarzy tradycyjnych",
+              "hanidec": "pozycyjny system dziesiętny wykorzystujący ideogramy chińskie jako cyfry",
+              "hansfin": "uproszczone chińskie księgowe",
+              "hantfin": "tradycyjne chińskie księgowe",
+              "jpanfin": "japońskie księgowe",
+              "jpanyear": "numeracja pierwszego roku ery jako Gannen",
+              "lanatham": "system liczbowy Tai Tham Tham (religijny)",
+              "mathbold": "matematyczne pogrubione",
+              "mathdbl": "matematyczne z podwójną kreską",
+              "mathmono": "matematyczne o stałej szerokości",
+              "mathsanb": "matematyczne bezszeryfowe pogrubione",
+              "mathsans": "matematyczne bezszeryfowe",
+              "mymrepka": "cyfry pwo wschodnie (Mjanma)",
+              "mymrpao": "cyfry pao (Mjanma)",
+              "mymrshan": "cyfry szan (Mjanma)",
+              "mymrtlng": "cyfry tai laing (Mjanma)",
+              "native": "cyfry macierzyste",
+              "outlined": "konturowe",
+              "roman": "rzymskie (wielkie litery)",
+              "romanlow": "rzymskie (małe litery)",
+              "segment": "segmentowe",
+              "tamldec": "współczesne tamilskie",
+              "traditional": "cyfry tradycyjne"
+            },
             "armn": "cyfry ormiańskie",
             "armnlow": "cyfry ormiańskie (małe litery)",
             "beng": "cyfry bengalskie",
@@ -222,18 +334,19 @@
             "vaii": "cyfry vai"
           },
           "ss": {
-            "core": "wł."
+            "_core": {
+              "none": "wył.",
+              "standard": "wł."
+            }
           },
           "t0": {
             "und": "nieokreślone tłumaczenie maszynowe"
           },
           "va": {
-            "core": "wariant POSIX"
+            "_core": {
+              "posix": "wariant POSIX"
+            }
           }
-        },
-        "typeValues": {
-          "no": "wył.",
-          "yes": "wł."
         },
         "codePatterns": {
           "language": "Język: {0}",

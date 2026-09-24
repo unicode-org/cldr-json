@@ -58,7 +58,26 @@
         "types": {
           "calendar": {
             "buddhist": "Calendario buddista",
-            "core": "Minguo",
+            "_core": {
+              "buddhist": "Buddista",
+              "chinese": "Cinese",
+              "coptic": "Copto",
+              "dangi": "Dangi",
+              "ethiopic": "Etiope",
+              "ethiopic-amete-alem": "Etiope Amete Alem",
+              "gregorian": "Gregoriano",
+              "hebrew": "Ebraico",
+              "indian": "Nazionale indiano",
+              "islamic": "Hijri",
+              "islamic-civil": "Hijri (tabulare, epoca civile)",
+              "islamic-rgsa": "Hijri, avvistamento in Arabia Saudita",
+              "islamic-tbla": "Hijri (tabulare, epoca astronomica)",
+              "islamic-umalqura": "Hijri (Umm al-Qura)",
+              "iso8601": "Gregoriano",
+              "japanese": "Giapponese",
+              "persian": "Persiano",
+              "roc": "Minguo"
+            },
             "chinese": "Calendario cinese",
             "coptic": "Calendario copto",
             "dangi": "Calendario dangi",
@@ -77,7 +96,10 @@
           },
           "cf": {
             "account": "Formato valuta contabile",
-            "core": "Standard",
+            "_core": {
+              "account": "Contabile",
+              "standard": "Standard"
+            },
             "standard": "Formato valuta standard"
           },
           "colAlternate": {
@@ -90,7 +112,11 @@
           },
           "colCaseFirst": {
             "lower": "Ordina prima lettere minuscole",
-            "core": "Maiuscolo",
+            "_core": {
+              "lower": "Minuscolo",
+              "no": "Minuscolo",
+              "upper": "Maiuscolo"
+            },
             "no": "Ordina lettere maiuscole/minuscole normalmente",
             "upper": "Ordina prima lettere minuscole"
           },
@@ -100,7 +126,23 @@
           },
           "collation": {
             "compat": "Ordinamento precedente, per compatibilità",
-            "core": "Zhuyin",
+            "_core": {
+              "compat": "Compatibilità",
+              "dictionary": "Dizionario",
+              "ducet": "Unicode predefinito",
+              "emoji": "Emoji",
+              "eor": "Regole europee",
+              "phonebook": "Elenco telefonico",
+              "phonetic": "Fonetico",
+              "pinyin": "Pinyin",
+              "search": "Ricerca",
+              "searchjl": "Consonante iniziale coreana",
+              "standard": "Standard",
+              "stroke": "Tratti",
+              "traditional": "Tradizionale",
+              "unihan": "Tratti radicali",
+              "zhuyin": "Zhuyin"
+            },
             "dictionary": "Ordinamento dizionario",
             "ducet": "Ordinamento Unicode predefinito",
             "phonebook": "Ordinamento Elenco telefonico",
@@ -123,11 +165,23 @@
             "yes": "Ordina cifre numericamente"
           },
           "colReorder": {
-            "core": "Simbolo"
+            "_core": {
+              "currency": "Valuta",
+              "digit": "Cifre",
+              "punct": "Punteggiatura",
+              "space": "Spazio",
+              "symbol": "Simbolo"
+            }
           },
           "colStrength": {
             "identical": "Ordina tutto",
-            "core": "Base, accenti, maiuscole/minuscole, varianti",
+            "_core": {
+              "identical": "Tutti",
+              "primary": "Solo lettere base",
+              "quaternary": "Base, accenti, maiuscole/minuscole, varianti, kana",
+              "secondary": "Base, accenti",
+              "tertiary": "Base, accenti, maiuscole/minuscole, varianti"
+            },
             "primary": "Ordina solo lettere di base",
             "quaternary": "Ordina accenti/lettere/larghezza/Kana",
             "secondary": "Ordina accenti",
@@ -139,11 +193,22 @@
             "npinyin": "Numerica"
           },
           "em": {
-            "core": "Testo"
+            "_core": {
+              "default": "Default",
+              "emoji": "Emoji",
+              "text": "Testo"
+            }
           },
           "hc": {
             "c12": "Sistema orario a 12 ore",
-            "core": "24 ore (1–24)",
+            "_core": {
+              "c12": "12 ore",
+              "c24": "24 ore",
+              "h11": "12 ore (0–11)",
+              "h12": "12 ore (1–12)",
+              "h23": "24 ore (0–23)",
+              "h24": "24 ore (1–24)"
+            },
             "c24": "Sistema orario a 24 ore",
             "h11": "Sistema orario a 12 ore (0–11)",
             "h12": "Sistema orario a 12 ore (1–12)",
@@ -151,16 +216,30 @@
             "h24": "Sistema orario a 24 ore (1–24)"
           },
           "kv": {
-            "core": "Spazi, punteggiatura, simboli diversi dalle valute"
+            "_core": {
+              "currency": "Spazi, punteggiatura, tutti i simboli",
+              "punct": "Spazi, punteggiatura",
+              "space": "Spazi, punteggiatura",
+              "symbol": "Spazi, punteggiatura, simboli diversi dalle valute"
+            }
           },
           "lb": {
             "loose": "Interruzione di riga facoltativa",
-            "core": "Forzata",
+            "_core": {
+              "loose": "Facoltativa",
+              "normal": "Normale",
+              "strict": "Forzata"
+            },
             "normal": "Interruzione di riga normale",
             "strict": "Interruzione di riga forzata"
           },
           "lw": {
-            "core": "Conserva in sintagmi"
+            "_core": {
+              "breakall": "Dividi tutte",
+              "keepall": "Conserva tutte",
+              "normal": "Normale",
+              "phrase": "Conserva in sintagmi"
+            }
           },
           "m0": {
             "bgn": "BGN",
@@ -168,14 +247,47 @@
           },
           "ms": {
             "metric": "Sistema metrico",
-            "core": "Consuetudinario statunitense",
+            "_core": {
+              "metric": "Metrico",
+              "uksystem": "Imperiale britannico",
+              "ussystem": "Consuetudinario statunitense"
+            },
             "uksystem": "Sistema imperiale britannico",
             "ussystem": "Sistema consuetudinario statunitense"
           },
           "numbers": {
             "arab": "Cifre indo-arabe",
             "arabext": "Cifre indo-arabe estese",
-            "core": "Numeri tradizionali",
+            "_core": {
+              "arabext": "Indo-arabi estesi",
+              "armnlow": "Armeni minuscoli",
+              "finance": "Finanziari",
+              "fullwide": "Larghezza intera",
+              "greklow": "Greci minuscoli",
+              "hanidays": "Numerazione dei giorni del mese in caratteri Han per i calendari tradizionali",
+              "hanidec": "Sistema decimale posizionale che utilizza gli ideogrammi numerici cinesi come cifre",
+              "hansfin": "Finanziari in cinese semplificato",
+              "hantfin": "Finanziari in cinese tradizionale",
+              "jpanfin": "Finanziari giapponesi",
+              "jpanyear": "Numerazione Gannen per il primo anno giapponese",
+              "lanatham": "Tai Tham Tham (ecclesiastici)",
+              "mathbold": "Grassetto (matematica)",
+              "mathdbl": "Grassetto da lavagna (matematica)",
+              "mathmono": "Monospazio (matematica)",
+              "mathsanb": "Grassetto senza grazie (matematica)",
+              "mathsans": "Senza grazie (matematica)",
+              "mymrepka": "Karen Pwo orientale, Myanmar",
+              "mymrpao": "Pa’o, Myanmar",
+              "mymrshan": "Shan, Myanmar",
+              "mymrtlng": "Tai Laing, Myanmar",
+              "native": "Cifre native",
+              "outlined": "Contornati",
+              "roman": "Romani maiuscoli",
+              "romanlow": "Romani minuscoli",
+              "segment": "Segmentati",
+              "tamldec": "Tamil moderni",
+              "traditional": "Numeri tradizionali"
+            },
             "armn": "Numeri armeni",
             "armnlow": "Numeri armeni minuscoli",
             "bali": "Cifre balinesi",
@@ -237,18 +349,19 @@
             "vaii": "Cifre Vai"
           },
           "ss": {
-            "core": "On"
+            "_core": {
+              "none": "Off",
+              "standard": "On"
+            }
           },
           "t0": {
             "und": "Traduzione automatica non specificata"
           },
           "va": {
-            "core": "Variante POSIX"
+            "_core": {
+              "posix": "Variante POSIX"
+            }
           }
-        },
-        "typeValues": {
-          "no": "Off",
-          "yes": "On"
         },
         "codePatterns": {
           "language": "Lingua: {0}",

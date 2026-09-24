@@ -58,7 +58,26 @@
         "types": {
           "calendar": {
             "buddhist": "Buddist təqvimi",
-            "core": "Minquo",
+            "_core": {
+              "buddhist": "Buddist",
+              "chinese": "Çin",
+              "coptic": "Qibti",
+              "dangi": "Dangi",
+              "ethiopic": "Efiop",
+              "ethiopic-amete-alem": "Efiop Amete Alem",
+              "gregorian": "Qriqori",
+              "hebrew": "Yəhudi",
+              "indian": "Hind milli",
+              "islamic": "Hicri",
+              "islamic-civil": "Hicri (cədvəl, mülki dövr)",
+              "islamic-rgsa": "Hicri, Səudiyyə Ərəbistanının müşahidəsi",
+              "islamic-tbla": "Hicri (cədvəl, astronomik dövr)",
+              "islamic-umalqura": "Hicri (Umm əl-Qura)",
+              "iso8601": "Qreqorian",
+              "japanese": "Yapon",
+              "persian": "İran",
+              "roc": "Minquo"
+            },
             "chinese": "Çin təqvimi",
             "coptic": "Kopt təqvimi",
             "dangi": "Dangi təqvimi",
@@ -78,35 +97,81 @@
           },
           "cf": {
             "account": "Uçot Valyuta Formatı",
-            "core": "Valyuta formatı: Standart",
+            "_core": {
+              "account": "Valyuta formatı: Uçot",
+              "standard": "Valyuta formatı: Standart"
+            },
             "standard": "Standart Valyuta Formatı"
           },
           "colCaseFirst": {
-            "core": "Böyük hərflər"
+            "_core": {
+              "lower": "Kiçik hərflər",
+              "no": "Kiçik hərflər",
+              "upper": "Böyük hərflər"
+            }
           },
           "collation": {
-            "core": "Cuyin",
+            "_core": {
+              "compat": "Uyğunluq",
+              "dictionary": "Sözlük",
+              "ducet": "Defolt unikod",
+              "emoji": "Emoji",
+              "eor": "Avropa qaydaları",
+              "phonebook": "Telefon bloknotu",
+              "phonetic": "Fonetik",
+              "pinyin": "Pinyin",
+              "search": "Axtarış",
+              "searchjl": "Koreya başlanğıc samiti",
+              "standard": "Standart",
+              "stroke": "Ştrix",
+              "traditional": "Ənənəvi",
+              "unihan": "Radikal ştrix",
+              "zhuyin": "Cuyin"
+            },
             "ducet": "Standart Unicode Sıralama",
             "pinyin": "Pinyin təqvimi",
             "search": "Ümumi Məqsədli Axtarış",
             "standard": "Standart Sıralama"
           },
           "colReorder": {
-            "core": "İşarə"
+            "_core": {
+              "currency": "Valyuta",
+              "digit": "Rəqəmlər",
+              "punct": "Punktuasiya",
+              "space": "Boşluq",
+              "symbol": "İşarə"
+            }
           },
           "colStrength": {
-            "core": "Təməl, vurğular, korpus, variantlar"
+            "_core": {
+              "identical": "Hamısı",
+              "primary": "Yalnız təməl hərflər",
+              "quaternary": "Təməl, vurğular, korpus, variantlar, kana",
+              "secondary": "Təməl, vurğular",
+              "tertiary": "Təməl, vurğular, korpus, variantlar"
+            }
           },
           "d0": {
             "fwidth": "Tam eninə",
             "hwidth": "Yarım eninə"
           },
           "em": {
-            "core": "Mətn"
+            "_core": {
+              "default": "Emojilərin təqdim edilməsi: Standart",
+              "emoji": "Emoji",
+              "text": "Mətn"
+            }
           },
           "hc": {
             "c12": "12 Saatlıq Sistem",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "24 Saatlıq Sistem",
             "h11": "12 Saatlıq Sistem (0–11)",
             "h12": "12 Saatlıq Sistem (0–12)",
@@ -114,16 +179,30 @@
             "h24": "24 Saatlıq Sistem (0–23)"
           },
           "kv": {
-            "core": "Boşluqları, punktuasiyanı, valyuta olmayan işarələri dəyişin"
+            "_core": {
+              "currency": "Boşluqları, punktuasiyanı, bütün işarələri dəyişin",
+              "punct": "Boşluqları, punktuasiyanı dəyişin",
+              "space": "Boşluqları, punktuasiyanı dəyişin",
+              "symbol": "Boşluqları, punktuasiyanı, valyuta olmayan işarələri dəyişin"
+            }
           },
           "lb": {
             "loose": "Sərbəst sətirdən sətrə keçirmə üslubu",
-            "core": "Ciddi",
+            "_core": {
+              "loose": "Sərbəst",
+              "normal": "Normal",
+              "strict": "Ciddi"
+            },
             "normal": "Normal sətirdən sətrə keçirmə üslubu",
             "strict": "Sərt sətirdən sətrə keçirmə üslubu"
           },
           "lw": {
-            "core": "İfadələrdə saxla"
+            "_core": {
+              "breakall": "Hamısını böl",
+              "keepall": "Hamısını saxla",
+              "normal": "Normal",
+              "phrase": "İfadələrdə saxla"
+            }
           },
           "m0": {
             "bgn": "US BGN transliterasiyası",
@@ -131,14 +210,47 @@
           },
           "ms": {
             "metric": "Metrik Sistem",
-            "core": "Birləşmiş Ştatlar",
+            "_core": {
+              "metric": "Metrik",
+              "uksystem": "Birləşmiş Krallıq",
+              "ussystem": "Birləşmiş Ştatlar"
+            },
             "uksystem": "İmperial Ölçü Sistemi",
             "ussystem": "ABŞ Ölçü Sistemi"
           },
           "numbers": {
             "arab": "Ərəb-Hind Rəqəmləri",
             "arabext": "Genişlənmiş Ərəb-Hind Rəqəmləri",
-            "core": "Ənənəvi rəqəmlər",
+            "_core": {
+              "arabext": "Genişləndirilmiş ərəb-hind",
+              "armnlow": "Erməni kiçik hərfləri",
+              "finance": "Maliyyə",
+              "fullwide": "Tam geniş",
+              "greklow": "Yunan kiçik hərfləri",
+              "hanidays": "Ənənəvi təqvimlər üçün ay günlərinin han hərfləri ilə nömrələnməsi",
+              "hanidec": "Çin rəqəm ideoqraflarından rəqəm kimi istifadə edən mövqeli onluq sistem",
+              "hansfin": "Sadələşdirilmiş Çin maliyyə",
+              "hantfin": "Ənənəvi Çin maliyyə",
+              "jpanfin": "Yapon maliyyə",
+              "jpanyear": "Yapon birinci il Gannen nömrələməsi",
+              "lanatham": "Tai Tham Tham (ekkleziastik)",
+              "mathbold": "Riyazi qalınlıq",
+              "mathdbl": "Riyazi ikiqat zərbə",
+              "mathmono": "Riyazi monoboşluq",
+              "mathsanb": "Riyazi sans-serif qalın",
+              "mathsans": "Riyazi sans-serif",
+              "mymrepka": "Myanma Şərqi Puo Karen",
+              "mymrpao": "Myanma Pao",
+              "mymrshan": "Myanma Şan",
+              "mymrtlng": "Myanma Tay Lainq",
+              "native": "Yerli rəqəmlər",
+              "outlined": "Konturlanmış",
+              "roman": "Roma böyük hərfləri",
+              "romanlow": "Roma kiçik hərfləri",
+              "segment": "Seqmentli",
+              "tamldec": "Modern tamil",
+              "traditional": "Ənənəvi rəqəmlər"
+            },
             "armn": "Erməni Rəqəmləri",
             "armnlow": "Kiçik Erməni Rəqəmləri",
             "beng": "Benqal Rəqəmləri",
@@ -180,18 +292,19 @@
             "vaii": "Vai rəqəmləri"
           },
           "ss": {
-            "core": "Aktiv"
+            "_core": {
+              "none": "Deaktiv",
+              "standard": "Aktiv"
+            }
           },
           "t0": {
             "und": "Qeyri-müəyyən maşın tərcüməsi"
           },
           "va": {
-            "core": "POSIX variantı"
+            "_core": {
+              "posix": "POSIX variantı"
+            }
           }
-        },
-        "typeValues": {
-          "no": "Deaktiv",
-          "yes": "Aktiv"
         },
         "codePatterns": {
           "language": "Dil: {0}",

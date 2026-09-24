@@ -57,7 +57,26 @@
         "types": {
           "calendar": {
             "buddhist": "budistični koledar",
-            "core": "Minguo",
+            "_core": {
+              "buddhist": "budistični",
+              "chinese": "kitajski",
+              "coptic": "koptski",
+              "dangi": "stari korejski",
+              "ethiopic": "etiopski",
+              "ethiopic-amete-alem": "etiopsko ametsko alemski",
+              "gregorian": "gregorijanski",
+              "hebrew": "hebrejski",
+              "indian": "indijski državni",
+              "islamic": "islamski",
+              "islamic-civil": "islamski civilni",
+              "islamic-rgsa": "islamski (glede na opazovanje v Savdski Arabiji)",
+              "islamic-tbla": "islamski (tabelski, astronomsko začetno obdobje)",
+              "islamic-umalqura": "islamski (Umm al-Qura)",
+              "iso8601": "gregorijanski",
+              "japanese": "japonski",
+              "persian": "perzijski",
+              "roc": "Minguo"
+            },
             "chinese": "kitajski koledar",
             "coptic": "koptski koledar",
             "dangi": "stari korejski koledar",
@@ -78,7 +97,10 @@
           },
           "cf": {
             "account": "oblika zapisa valute v računovodstvu",
-            "core": "standardna",
+            "_core": {
+              "account": "računovodska",
+              "standard": "standardna"
+            },
             "standard": "standardna oblika zapisa valute"
           },
           "colAlternate": {
@@ -91,7 +113,11 @@
           },
           "colCaseFirst": {
             "lower": "Razvrščanje malih črk najprej",
-            "core": "velike črke",
+            "_core": {
+              "lower": "male črke",
+              "no": "male črke",
+              "upper": "velike črke"
+            },
             "no": "Razvrščanje v običajnem zaporedju velikih/malih črk",
             "upper": "Razvrščanje velikih črk najprej"
           },
@@ -101,7 +127,23 @@
           },
           "collation": {
             "compat": "prej uporabljeno razvrščanje za združljivost",
-            "core": "po pismenkah zhuyin",
+            "_core": {
+              "compat": "združljivostno",
+              "dictionary": "slovarsko",
+              "ducet": "privzeto Unicode",
+              "emoji": "emodži",
+              "eor": "evropska pravila",
+              "phonebook": "po sistemu telefonskega imenika",
+              "phonetic": "fonetično",
+              "pinyin": "po sistemu pinjin",
+              "search": "splošno",
+              "searchjl": "korejski začetni soglasnik",
+              "standard": "standardno",
+              "stroke": "po zaporedju pisanja pismenk",
+              "traditional": "po tradicionalnem sistemu",
+              "unihan": "po radikalih in potezah",
+              "zhuyin": "po pismenkah zhuyin"
+            },
             "dictionary": "slovarsko razvrščanje",
             "ducet": "privzeto razvrščanje Unicode",
             "emoji": "razvrščanje čustvenčkov",
@@ -126,11 +168,23 @@
             "yes": "številsko razvrščanje števk"
           },
           "colReorder": {
-            "core": "simbol"
+            "_core": {
+              "currency": "valuta",
+              "digit": "števke",
+              "punct": "ločila",
+              "space": "presledek",
+              "symbol": "simbol"
+            }
           },
           "colStrength": {
             "identical": "Razvrščanje vsega",
-            "core": "osnovne črke, naglasi, velikost črk, različice",
+            "_core": {
+              "identical": "vse",
+              "primary": "samo osnovne črke",
+              "quaternary": "osnovne črke, naglasi, velikost črk, različice, kana",
+              "secondary": "osnovne črke, naglasi",
+              "tertiary": "osnovne črke, naglasi, velikost črk, različice"
+            },
             "primary": "Razvrščanje samo osnovnih črk",
             "quaternary": "Razvrščanje po naglasih/velikih črkah/malih črkah/širini/kana",
             "secondary": "Razvrščanje naglasov",
@@ -142,11 +196,22 @@
             "npinyin": "Številsko"
           },
           "em": {
-            "core": "besedilo"
+            "_core": {
+              "default": "privzeto",
+              "emoji": "emodži",
+              "text": "besedilo"
+            }
           },
           "hc": {
             "c12": "12-urni sistem",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "24-urni sistem",
             "h11": "12-urni sistem (0–11)",
             "h12": "12-urni sistem (1–12)",
@@ -154,16 +219,30 @@
             "h24": "24-urni sistem (1–24)"
           },
           "kv": {
-            "core": "premaknjeni presledki, ločila in nedenarni simboli"
+            "_core": {
+              "currency": "premaknjeni presledki, ločila, vsi simboli",
+              "punct": "premaknjeni presledki, ločila",
+              "space": "premaknjeni presledki, ločila",
+              "symbol": "premaknjeni presledki, ločila in nedenarni simboli"
+            }
           },
           "lb": {
             "loose": "prosti slog preloma vrstic",
-            "core": "strogi slog",
+            "_core": {
+              "loose": "prosti slog",
+              "normal": "običajni slog",
+              "strict": "strogi slog"
+            },
             "normal": "običajni slog preloma vrstic",
             "strict": "strogi slog preloma vrstic"
           },
           "lw": {
-            "core": "obdrži v frazah"
+            "_core": {
+              "breakall": "prelomi vse",
+              "keepall": "obdrži vse",
+              "normal": "običajno",
+              "phrase": "obdrži v frazah"
+            }
           },
           "m0": {
             "bgn": "BGN",
@@ -171,7 +250,11 @@
           },
           "ms": {
             "metric": "metrični sistem",
-            "core": "ZDA",
+            "_core": {
+              "metric": "metrični",
+              "uksystem": "ZK",
+              "ussystem": "ZDA"
+            },
             "uksystem": "imperialni merski sistem",
             "ussystem": "merski sistem Združenih držav"
           },
@@ -179,7 +262,36 @@
             "ahom": "števke ahom",
             "arab": "arabskoindijske števke",
             "arabext": "razširjene arabskoindijske števke",
-            "core": "tradicionalne številke",
+            "_core": {
+              "arabext": "razširjene arabskoindijske",
+              "armnlow": "armenske majhne",
+              "finance": "finančne",
+              "fullwide": "polne širine",
+              "greklow": "grške male",
+              "hanidays": "številčenje dni v mesecu s pismenkami Han za tradicionalne koledarje",
+              "hanidec": "pozicijski desetiški sistem s kitajskimi pismenkami kot števkami",
+              "hansfin": "poenostavljene kitajske finančne",
+              "hantfin": "tradicionalne kitajske finančne",
+              "jpanfin": "japonske finančne",
+              "jpanyear": "številčenje prvega leta (Gannen) v japonskem koledarju",
+              "lanatham": "Tai Tham Tham (cerkveno)",
+              "mathbold": "matematične krepke",
+              "mathdbl": "matematične dvojne črte",
+              "mathmono": "matematične monospace",
+              "mathsanb": "matematične sans-serif bold",
+              "mathsans": "matematične sans-serif",
+              "mymrepka": "mjanmarska vzhodna pvo kurenščina",
+              "mymrpao": "mjanmarska paoščina",
+              "mymrshan": "mjanmarska šanščina",
+              "mymrtlng": "mjanmarska tai-laingščina",
+              "native": "izvorne števke",
+              "outlined": "obrobljene",
+              "roman": "rimske velike",
+              "romanlow": "rimske male",
+              "segment": "razdeljene",
+              "tamldec": "sodobne tamilske",
+              "traditional": "tradicionalne številke"
+            },
             "armn": "armenske številke",
             "armnlow": "armenske majhne številke",
             "bali": "balinezijske števke",
@@ -256,18 +368,19 @@
             "wara": "Warang Citi števke"
           },
           "ss": {
-            "core": "Vklopljeno"
+            "_core": {
+              "none": "Izklopljeno",
+              "standard": "Vklopljeno"
+            }
           },
           "t0": {
             "und": "neopredeljen strojni prevod"
           },
           "va": {
-            "core": "različica POSIX"
+            "_core": {
+              "posix": "različica POSIX"
+            }
           }
-        },
-        "typeValues": {
-          "no": "izklopljeno",
-          "yes": "vklopljeno"
         },
         "codePatterns": {
           "language": "Jezik: {0}",

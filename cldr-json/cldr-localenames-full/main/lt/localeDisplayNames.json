@@ -57,7 +57,26 @@
         "types": {
           "calendar": {
             "buddhist": "budistų kalendorius",
-            "core": "Kinijos Respublikos",
+            "_core": {
+              "buddhist": "budistų",
+              "chinese": "kinų",
+              "coptic": "koptų",
+              "dangi": "dangi",
+              "ethiopic": "Etiopijos",
+              "ethiopic-amete-alem": "Etiopijos „Amete Alem“",
+              "gregorian": "Grigaliaus",
+              "hebrew": "hebrajų",
+              "indian": "indų (nacionalinis)",
+              "islamic": "Islamo",
+              "islamic-civil": "musulmonų (lentelinis, pilietinė era)",
+              "islamic-rgsa": "musulmonų (Saudo Arabijos)",
+              "islamic-tbla": "musulmonų (lentelinis, astronominė era)",
+              "islamic-umalqura": "musulmonų (Umm al-Qura)",
+              "iso8601": "Grigaliaus",
+              "japanese": "japonų",
+              "persian": "persų",
+              "roc": "Kinijos Respublikos"
+            },
             "chinese": "kinų kalendorius",
             "coptic": "koptų kalendorius",
             "dangi": "dangi kalendorius",
@@ -78,7 +97,10 @@
           },
           "cf": {
             "account": "apskaitos valiutos formatas",
-            "core": "standartinis",
+            "_core": {
+              "account": "apskaita",
+              "standard": "standartinis"
+            },
             "standard": "standartinis valiutos formatas"
           },
           "colAlternate": {
@@ -91,7 +113,11 @@
           },
           "colCaseFirst": {
             "lower": "Rikiuoti suteikiant pirmumą mažosioms raidėms",
-            "core": "Didžiosios raidės",
+            "_core": {
+              "lower": "Mažosios raidės",
+              "no": "Mažosios raidės",
+              "upper": "Didžiosios raidės"
+            },
             "no": "Rikiuoti įprasta didžiųjų ir mažųjų raidžių tvarka",
             "upper": "Rikiuoti suteikiant pirmumą didžiosioms raidėms"
           },
@@ -101,7 +127,23 @@
           },
           "collation": {
             "compat": "ankstesnė rūšiavimo tvarka, skirta suderinamumui",
-            "core": "džujinas",
+            "_core": {
+              "compat": "suderinamumas",
+              "dictionary": "žodynas",
+              "ducet": "numatytasis unikodo",
+              "emoji": "jausmaženklis",
+              "eor": "europietiškos taisyklės",
+              "phonebook": "telefono knyga",
+              "phonetic": "fonetinis",
+              "pinyin": "pinjinas",
+              "search": "paieška",
+              "searchjl": "korėjiečių pradinis priebalsis",
+              "standard": "standartinis",
+              "stroke": "rikiavimas pagal brūkšnius",
+              "traditional": "tradicinis",
+              "unihan": "raktai ir brūkšniai",
+              "zhuyin": "džujinas"
+            },
             "dictionary": "žodyno rūšiavimo tvarka",
             "ducet": "numatytasis unikodo rikiavimas",
             "eor": "rūšiavimo tvarka daugiakalbės Europos dokumentų",
@@ -124,11 +166,23 @@
             "yes": "Rikiuoti skaitmenis pagal skaičius"
           },
           "colReorder": {
-            "core": "Simboliai"
+            "_core": {
+              "currency": "Valiuta",
+              "digit": "Skaitmenys",
+              "punct": "Skyryba",
+              "space": "Tarpai",
+              "symbol": "Simboliai"
+            }
           },
           "colStrength": {
             "identical": "Rikiuoti viską",
-            "core": "Bazė, akcentai, atvejis, variantai",
+            "_core": {
+              "identical": "Viskas",
+              "primary": "Tik pagrindinės raidės",
+              "quaternary": "Bazė, akcentai, atvejis, variantai, Kana",
+              "secondary": "Bazė, akcentai",
+              "tertiary": "Bazė, akcentai, atvejis, variantai"
+            },
             "primary": "Rikiuoti tik pagal pamatines raides",
             "quaternary": "Rikiuoti pagal didžiąsias ir mažąsias raides / plotį / diakritinius / kanos ženklus",
             "secondary": "Rikiuoti diakritinius ženklus",
@@ -140,11 +194,22 @@
             "npinyin": "Skaitinis"
           },
           "em": {
-            "core": "tekstas"
+            "_core": {
+              "default": "numatytasis",
+              "emoji": "jausmaženklis",
+              "text": "tekstas"
+            }
           },
           "hc": {
             "c12": "12 valandų sistema",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "24 valandų sistema",
             "h11": "12 valandų sistema (0–11)",
             "h12": "12 valandų sistema (1–12)",
@@ -152,16 +217,30 @@
             "h24": "24 valandų sistema (1–24)"
           },
           "kv": {
-            "core": "SHIFT tarpai, skyryba, ne valiutos simboliai"
+            "_core": {
+              "currency": "SHIFT tarpai, skyryba, visi simboliai",
+              "punct": "SHIFT tarpai, skyryba",
+              "space": "SHIFT tarpai, skyryba",
+              "symbol": "SHIFT tarpai, skyryba, ne valiutos simboliai"
+            }
           },
           "lb": {
             "loose": "laisvas teksto laužymo stilius",
-            "core": "griežtas",
+            "_core": {
+              "loose": "laisvas",
+              "normal": "įprastas",
+              "strict": "griežtas"
+            },
             "normal": "įprastas teksto laužymo stilius",
             "strict": "griežtas teksto laužymo stilius"
           },
           "lw": {
-            "core": "Išlaikyti frazėse"
+            "_core": {
+              "breakall": "Laužti viską",
+              "keepall": "Išlaikyti viską",
+              "normal": "Įprastinis",
+              "phrase": "Išlaikyti frazėse"
+            }
           },
           "m0": {
             "bgn": "BGN simboliai",
@@ -169,14 +248,47 @@
           },
           "ms": {
             "metric": "metrinė sistema",
-            "core": "JAV",
+            "_core": {
+              "metric": "metrinė",
+              "uksystem": "JK",
+              "ussystem": "JAV"
+            },
             "uksystem": "angliška matų sistema",
             "ussystem": "amerikietiška matų sistema"
           },
           "numbers": {
             "arab": "arabų-indų skaitmenys",
             "arabext": "išplėstiniai arabų-indų skaitmenys",
-            "core": "tradiciniai skaitmenys",
+            "_core": {
+              "arabext": "išplėstiniai arabų-indų",
+              "armnlow": "armėnų mažosiomis raidėmis",
+              "finance": "finansiniai",
+              "fullwide": "viso pločio",
+              "greklow": "graikų mažosiomis raidėmis",
+              "hanidays": "Han simbolių mėnesio dienų numeracija tradiciniuose kalendoriuose",
+              "hanidec": "Pozicinė dešimtainė sistema, naudojanti kinų skaičių ideografus kaip skaitmenis",
+              "hansfin": "supaprastintos kinų k. finansiniai",
+              "hantfin": "tradicinės kinų k. finansiniai",
+              "jpanfin": "japonų finansiniai",
+              "jpanyear": "japonų pirmųjų eros metų numeracija",
+              "lanatham": "Tai Tham Tham (bažnytinis)",
+              "mathbold": "matematiniai pajuodinti",
+              "mathdbl": "matematiniai su dvigubu brūkšniu",
+              "mathmono": "matematiniai vienodo pločio",
+              "mathsanb": "matematiniai pajuodinti be užraitų",
+              "mathsans": "matematiniai be užraitų",
+              "mymrepka": "mianmariečių rytų Pwo Karen",
+              "mymrpao": "mianmariečių Pao",
+              "mymrshan": "mianmariečių Shan",
+              "mymrtlng": "mianmariečių Tai Laing",
+              "native": "vietiniai skaitmenys",
+              "outlined": "už kontūro",
+              "roman": "romėniški didžiosiomis raidėmis",
+              "romanlow": "romėniški mažosiomis raidėmis",
+              "segment": "segmentuoti",
+              "tamldec": "šiuolaikinės tamilų",
+              "traditional": "tradiciniai skaitmenys"
+            },
             "armn": "armėnų skaitmenys",
             "armnlow": "armėnų skaitmenys mažosiomis raidėmis",
             "bali": "bali skaitmenys",
@@ -238,18 +350,19 @@
             "vaii": "vai skaitmenys"
           },
           "ss": {
-            "core": "įjungta"
+            "_core": {
+              "none": "išjungta",
+              "standard": "įjungta"
+            }
           },
           "t0": {
             "und": "nenurodytas mašininis vertimas"
           },
           "va": {
-            "core": "POSIX variantas"
+            "_core": {
+              "posix": "POSIX variantas"
+            }
           }
-        },
-        "typeValues": {
-          "no": "išjungta",
-          "yes": "įjungta"
         },
         "codePatterns": {
           "language": "Kalba: {0}",

@@ -58,7 +58,26 @@
         "types": {
           "calendar": {
             "buddhist": "불교력",
-            "core": "대만",
+            "_core": {
+              "buddhist": "불교",
+              "chinese": "음력",
+              "coptic": "콥트",
+              "dangi": "단기",
+              "ethiopic": "에티오피아",
+              "ethiopic-amete-alem": "에티오피아 아메테 알렘",
+              "gregorian": "양력",
+              "hebrew": "히브리",
+              "indian": "인도 국정력",
+              "islamic": "히즈라",
+              "islamic-civil": "히즈라 상용",
+              "islamic-rgsa": "히즈라력(사우디아라비아 초승달 관측)",
+              "islamic-tbla": "히즈라력(표 계산 방식, 천문학적 기준)",
+              "islamic-umalqura": "히즈라(움 알 쿠라)",
+              "iso8601": "양력",
+              "japanese": "일본",
+              "persian": "페르시안",
+              "roc": "대만"
+            },
             "chinese": "음력",
             "coptic": "콥트력",
             "dangi": "단기력",
@@ -77,7 +96,10 @@
           },
           "cf": {
             "account": "회계 통화 형식",
-            "core": "표준",
+            "_core": {
+              "account": "회계",
+              "standard": "표준"
+            },
             "standard": "표준 통화 형식"
           },
           "colAlternate": {
@@ -90,7 +112,11 @@
           },
           "colCaseFirst": {
             "lower": "첫 소문자 정렬",
-            "core": "대문자",
+            "_core": {
+              "lower": "소문자",
+              "no": "소문자",
+              "upper": "대문자"
+            },
             "no": "일반 대/소문자 정렬 순서",
             "upper": "대문자 우선 정렬"
           },
@@ -100,7 +126,23 @@
           },
           "collation": {
             "compat": "호환성을 위해 이전 정렬 순서",
-            "core": "주음",
+            "_core": {
+              "compat": "호환성",
+              "dictionary": "사전",
+              "ducet": "기본 유니코드",
+              "emoji": "이모티콘",
+              "eor": "유럽 규칙",
+              "phonebook": "전화번호부",
+              "phonetic": "발음",
+              "pinyin": "병음",
+              "search": "검색",
+              "searchjl": "한글 초성",
+              "standard": "표준",
+              "stroke": "자획",
+              "traditional": "전통",
+              "unihan": "부수",
+              "zhuyin": "주음"
+            },
             "dictionary": "사전 정렬 순서",
             "ducet": "기본 유니코드 정렬 순서",
             "eor": "유럽 정렬 규칙",
@@ -124,11 +166,23 @@
             "yes": "숫자 정렬"
           },
           "colReorder": {
-            "core": "기호"
+            "_core": {
+              "currency": "통화",
+              "digit": "숫자",
+              "punct": "구두점",
+              "space": "공백",
+              "symbol": "기호"
+            }
           },
           "colStrength": {
             "identical": "모두 정렬",
-            "core": "기본, 악센트, 대소문자, 변형",
+            "_core": {
+              "identical": "모두",
+              "primary": "기본 문자만",
+              "quaternary": "기본, 악센트, 대소문자, 변형, 가나",
+              "secondary": "기본, 악센트",
+              "tertiary": "기본, 악센트, 대소문자, 변형"
+            },
             "primary": "기본 문자만 정렬",
             "quaternary": "악센트/대소문자/전반각/가나 정렬",
             "secondary": "악센트 정렬",
@@ -140,11 +194,22 @@
             "npinyin": "숫자"
           },
           "em": {
-            "core": "텍스트"
+            "_core": {
+              "default": "기본",
+              "emoji": "이모티콘",
+              "text": "텍스트"
+            }
           },
           "hc": {
             "c12": "12시간제",
-            "core": "24(1~24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12(0~11)",
+              "h12": "12(1~12)",
+              "h23": "24(0~23)",
+              "h24": "24(1~24)"
+            },
             "c24": "24시간제",
             "h11": "12시간제(0~11)",
             "h12": "12시간제(1~12)",
@@ -152,16 +217,30 @@
             "h24": "24시간제(1~24)"
           },
           "kv": {
-            "core": "공백, 구두점, 통화 이외의 기호"
+            "_core": {
+              "currency": "공백, 구두점, 모든 기호",
+              "punct": "공백, 구두점",
+              "space": "공백, 구두점",
+              "symbol": "공백, 구두점, 통화 이외의 기호"
+            }
           },
           "lb": {
             "loose": "줄바꿈 - 넓게",
-            "core": "좁게",
+            "_core": {
+              "loose": "넓게",
+              "normal": "보통",
+              "strict": "좁게"
+            },
             "normal": "줄바꿈 - 보통",
             "strict": "줄바꿈 - 좁게"
           },
           "lw": {
-            "core": "구 단위 유지"
+            "_core": {
+              "breakall": "모두 분리",
+              "keepall": "모두 유지",
+              "normal": "일반",
+              "phrase": "구 단위 유지"
+            }
           },
           "m0": {
             "bgn": "미국 지명위원회(BGN)",
@@ -169,14 +248,47 @@
           },
           "ms": {
             "metric": "미터법",
-            "core": "미국식",
+            "_core": {
+              "metric": "미터법",
+              "uksystem": "영국식",
+              "ussystem": "미국식"
+            },
             "uksystem": "야드파운드법",
             "ussystem": "미국 계량법"
           },
           "numbers": {
             "arab": "아라비아-인도식 숫자",
             "arabext": "확장형 아라비아-인도식 숫자",
-            "core": "전통 숫자",
+            "_core": {
+              "arabext": "확장형 아라비아-인도식",
+              "armnlow": "아르메니아 소문자",
+              "finance": "재무",
+              "fullwide": "전자",
+              "greklow": "그리스어 소문자",
+              "hanidays": "전통 달력용 한자 날짜 표기",
+              "hanidec": "중국 숫자 한자 기반 십진법 표기 체계",
+              "hansfin": "중국어 간체 금융 회계용",
+              "hantfin": "중국어 번체 금융 회계용",
+              "jpanfin": "일본어 금융 회계용",
+              "jpanyear": "일본 연호 원년 표기",
+              "lanatham": "타이탐 문자(종교용)",
+              "mathbold": "수학용 굵은체",
+              "mathdbl": "수학용 이중 획",
+              "mathmono": "수학용 고정폭",
+              "mathsanb": "수학용 산세리프 굵은체",
+              "mathsans": "수학용 산세리프",
+              "mymrepka": "미얀마 동부 포 카렌어",
+              "mymrpao": "미얀마 파오어",
+              "mymrshan": "미얀마 샨어",
+              "mymrtlng": "미얀마 타이 라잉어",
+              "native": "고유 숫자",
+              "outlined": "윤곽선",
+              "roman": "로마 대문자",
+              "romanlow": "로마 소문자",
+              "segment": "구획형",
+              "tamldec": "현대 타밀어",
+              "traditional": "전통 숫자"
+            },
             "armn": "아르메니아 숫자",
             "armnlow": "아르메니아 소문자 숫자",
             "bali": "발리 숫자",
@@ -234,18 +346,19 @@
             "vaii": "바이 숫자"
           },
           "ss": {
-            "core": "켬"
+            "_core": {
+              "none": "끔",
+              "standard": "켬"
+            }
           },
           "t0": {
             "und": "지정되지 않은 기계 번역"
           },
           "va": {
-            "core": "POSIX 변형"
+            "_core": {
+              "posix": "POSIX 변형"
+            }
           }
-        },
-        "typeValues": {
-          "no": "끔",
-          "yes": "켬"
         },
         "codePatterns": {
           "language": "언어: {0}",
