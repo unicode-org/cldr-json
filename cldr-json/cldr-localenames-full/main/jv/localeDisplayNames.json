@@ -57,7 +57,26 @@
         "types": {
           "calendar": {
             "buddhist": "Tanggalan Buddha",
-            "core": "Minguo",
+            "_core": {
+              "buddhist": "Buddha",
+              "chinese": "Cina",
+              "coptic": "Koptik",
+              "dangi": "Dangi",
+              "ethiopic": "Etiopia",
+              "ethiopic-amete-alem": "Etiopia Amete Alem",
+              "gregorian": "Gregorian",
+              "hebrew": "Ibrani",
+              "indian": "Nasional India",
+              "islamic": "Hijriah",
+              "islamic-civil": "Hijriah (tabel, jaman sipil)",
+              "islamic-rgsa": "Hijriah, rukyat Arab Saudi",
+              "islamic-tbla": "Hijriah (tabel, jaman astronomis)",
+              "islamic-umalqura": "Hijriah (Ummul Qura)",
+              "iso8601": "Masehi",
+              "japanese": "Jepang",
+              "persian": "Persia",
+              "roc": "Minguo"
+            },
             "chinese": "Tanggalan Cina",
             "coptic": "Tanggalan Koptik",
             "dangi": "Tanggalan Dangi",
@@ -76,34 +95,80 @@
           },
           "cf": {
             "account": "Format Mata Uang Akuntansi",
-            "core": "Standar",
+            "_core": {
+              "account": "Akuntansi",
+              "standard": "Standar"
+            },
             "standard": "Format Mata Uang Standar"
           },
           "colCaseFirst": {
-            "core": "Aksara Gedhe"
+            "_core": {
+              "lower": "Aksara Cilik",
+              "no": "Aksara Cilik",
+              "upper": "Aksara Gedhe"
+            }
           },
           "collation": {
-            "core": "Zhuyin",
+            "_core": {
+              "compat": "Kompatibilitas",
+              "dictionary": "Bausastra",
+              "ducet": "Unicode Default",
+              "emoji": "Emoji",
+              "eor": "Aturan Eropa",
+              "phonebook": "Buku tilpun",
+              "phonetic": "Fonetik",
+              "pinyin": "Pinyin",
+              "search": "Panlusuran",
+              "searchjl": "Konsonan wiwitan Korea",
+              "standard": "Standar",
+              "stroke": "Corekan",
+              "traditional": "Tradisional",
+              "unihan": "Corekan-Radikal",
+              "zhuyin": "Zhuyin"
+            },
             "ducet": "Urutan Pamilahan Unicode Default",
             "search": "Panlusuran Tujuan Umum",
             "standard": "Urutan Ngurutake Standar"
           },
           "colReorder": {
-            "core": "Simbol"
+            "_core": {
+              "currency": "Mata Uang",
+              "digit": "Digit",
+              "punct": "Tandha Wacan",
+              "space": "Spasi Kosong",
+              "symbol": "Simbol"
+            }
           },
           "colStrength": {
-            "core": "Dhasar, Aksen, Aksara Kapital, Varian"
+            "_core": {
+              "identical": "Kabeh",
+              "primary": "Mung Aksara Dhasar",
+              "quaternary": "Dhasar, Aksen, Aksara Kapital, Varian, Kana",
+              "secondary": "Dhasar, Aksen",
+              "tertiary": "Dhasar, Aksen, Aksara Kapital, Varian"
+            }
           },
           "d0": {
             "fwidth": "Dadi Jembar Kebak",
             "hwidth": "Dadi Jembar Separo"
           },
           "em": {
-            "core": "Teks"
+            "_core": {
+              "default": "Gawan",
+              "emoji": "Emoji",
+              "text": "Teks"
+            }
           },
           "hc": {
             "c12": "Sistem 12 Jam",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "Sistem 24 Jam",
             "h11": "Sistem 12 Jam (0–11)",
             "h12": "Sistem 12 Jam (1–12)",
@@ -111,16 +176,30 @@
             "h24": "Sistem 24 Jam (1–24)"
           },
           "kv": {
-            "core": "Geseran spasi, tandha waca, simbol non-mata uang"
+            "_core": {
+              "currency": "Geseran spasi, tandha waca, kabeh simbol",
+              "punct": "Geseran spasi, tandha waca",
+              "space": "Geseran spasi, tandha waca",
+              "symbol": "Geseran spasi, tandha waca, simbol non-mata uang"
+            }
           },
           "lb": {
             "loose": "Gaya Ganti Baris Longgar",
-            "core": "Ketat",
+            "_core": {
+              "loose": "Longgar",
+              "normal": "Normal",
+              "strict": "Ketat"
+            },
             "normal": "Gaya Ganti Baris Normal",
             "strict": "Gaya Ganti Baris Ketat"
           },
           "lw": {
-            "core": "Pertahanake frasa"
+            "_core": {
+              "breakall": "Ganti baris kabeh",
+              "keepall": "Tetep kabeh",
+              "normal": "Normal",
+              "phrase": "Pertahanake frasa"
+            }
           },
           "m0": {
             "bgn": "Transliterasi BGN AS",
@@ -128,14 +207,47 @@
           },
           "ms": {
             "metric": "Sistem Metrik",
-            "core": "AS",
+            "_core": {
+              "metric": "Metrik",
+              "uksystem": "Inggris",
+              "ussystem": "AS"
+            },
             "uksystem": "Sistem Pangukuran Imperial",
             "ussystem": "Sistem Pangukuran AS"
           },
           "numbers": {
             "arab": "Angka Arab-India",
             "arabext": "Angka Arab-India sing Luwih Dawa",
-            "core": "Angka Tradisional",
+            "_core": {
+              "arabext": "Basa Arab-India sing Dijembarake",
+              "armnlow": "Aksara cilik Armenia",
+              "finance": "Finansial",
+              "fullwide": "Amba kebak",
+              "greklow": "Aksara cilik Yunani",
+              "hanidays": "Penomeran dina-ing-sasi karakter Han kanggo tanggalan tradisional",
+              "hanidec": "Sistem desimal posisional sing nggunakake ideograf angka Tyonghwa minangka digit",
+              "hansfin": "Finansial Tyonghwa Prasaja",
+              "hantfin": "Finansial Tyonghwa Prasaja",
+              "jpanfin": "Finansial Jepang",
+              "jpanyear": "Penomeran Gannen taun pisanan Jepang",
+              "lanatham": "Tai Tham Tham (gerejawi)",
+              "mathbold": "Kandel matematika",
+              "mathdbl": "Matematika papan tulis kandel",
+              "mathmono": "Matematika monospace",
+              "mathsanb": "Matematika sans-serif kandel",
+              "mathsans": "Matematika sans-serif",
+              "mymrepka": "Pwo Karen Timur Myanmar",
+              "mymrpao": "Pao Myanmar",
+              "mymrshan": "Shan Myanmar",
+              "mymrtlng": "Tai Laing Myanmar",
+              "native": "Digit asli",
+              "outlined": "Digaris pinggir",
+              "roman": "Romawi huruf gedhe",
+              "romanlow": "Romawi huruf cilik",
+              "segment": "Disegmentasi",
+              "tamldec": "Tamil Modern",
+              "traditional": "Angka Tradisional"
+            },
             "armn": "Angka Armenia",
             "armnlow": "Angka Huruf Cilik Armenia",
             "beng": "Angka Bengali",
@@ -177,18 +289,19 @@
             "vaii": "Digit Vai"
           },
           "ss": {
-            "core": "Urip"
+            "_core": {
+              "none": "Mati",
+              "standard": "Urip"
+            }
           },
           "t0": {
             "und": "Jarwan Mesin sing Ora Spesifik"
           },
           "va": {
-            "core": "Varian POSIX"
+            "_core": {
+              "posix": "Varian POSIX"
+            }
           }
-        },
-        "typeValues": {
-          "no": "Mati",
-          "yes": "Urip"
         },
         "codePatterns": {
           "language": "Basa: {0}",

@@ -52,7 +52,26 @@
         "types": {
           "calendar": {
             "buddhist": "buddhistiska protyka",
-            "core": "minguo",
+            "_core": {
+              "buddhist": "buddhistiska",
+              "chinese": "chinska",
+              "coptic": "koptiska",
+              "dangi": "dangiska",
+              "ethiopic": "etiopiska",
+              "ethiopic-amete-alem": "etiopiska Amete-Alem",
+              "gregorian": "gregorianiska",
+              "hebrew": "hebrejska",
+              "indian": "indiska protyka",
+              "islamic": "hijri",
+              "islamic-civil": "islamska ciwilna",
+              "islamic-rgsa": "islamska protyka hijri",
+              "islamic-tbla": "tabelariska islamska protyka hijri z astronomiskimi dobami",
+              "islamic-umalqura": "islamska Umm al-Qura",
+              "iso8601": "gregorianska protyka",
+              "japanese": "japanska",
+              "persian": "persiska",
+              "roc": "minguo"
+            },
             "chinese": "chinska protyka",
             "coptic": "koptiska protyka",
             "dangi": "dangi-protyka",
@@ -70,34 +89,80 @@
           },
           "cf": {
             "account": "knihiwjedniski format měny",
-            "core": "standard",
+            "_core": {
+              "account": "knihiwjednistwo",
+              "standard": "standard"
+            },
             "standard": "standardny format měny"
           },
           "colCaseFirst": {
-            "core": "wulke pismiki"
+            "_core": {
+              "lower": "małe pismiki",
+              "no": "małe pismiki",
+              "upper": "wulke pismiki"
+            }
           },
           "collation": {
-            "core": "zhuyin",
+            "_core": {
+              "compat": "kompatibilnosć",
+              "dictionary": "słownik",
+              "ducet": "standardne unicode-rjadowanje",
+              "emoji": "emoji",
+              "eor": "europske prawidła",
+              "phonebook": "telefonska kniha",
+              "phonetic": "fonetisce",
+              "pinyin": "pinyin",
+              "search": "pytaj",
+              "searchjl": "koreanski spočatny konsonant",
+              "standard": "standardne",
+              "stroke": "smužka",
+              "traditional": "trandicionelny",
+              "unihan": "po radikalach a smužkach",
+              "zhuyin": "zhuyin"
+            },
             "ducet": "rjadowanski slěd po Unicode",
             "search": "powšitkowne pytanje",
             "standard": "standardowy rjadowanski slěd"
           },
           "colReorder": {
-            "core": "symbol"
+            "_core": {
+              "currency": "měna",
+              "digit": "ličby",
+              "punct": "interpunkcija",
+              "space": "prózdnota",
+              "symbol": "symbol"
+            }
           },
           "colStrength": {
-            "core": "zakładne pismiki, akcenty, wulkopisanje a małopisanje, warianty"
+            "_core": {
+              "identical": "wšitke",
+              "primary": "jenož zakładne pismiki",
+              "quaternary": "zakładne pismiki, akcenty, wulkopisanje a małopisanje, warianty, kana",
+              "secondary": "zakładne pismiki, akcenty",
+              "tertiary": "zakładne pismiki, akcenty, wulkopisanje a małopisanje, warianty"
+            }
           },
           "d0": {
             "fwidth": "w połnej šěrokosći",
             "hwidth": "napoł šěroke"
           },
           "em": {
-            "core": "tekst"
+            "_core": {
+              "default": "default",
+              "emoji": "emoji",
+              "text": "tekst"
+            }
           },
           "hc": {
             "c12": "12-hodźinowy cyklus",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "24-hodźinowy cyklus",
             "h11": "12-hodźinowy cyklus (0-11)",
             "h12": "12-hodźinowy cyklus (1-12)",
@@ -105,16 +170,30 @@
             "h24": "24-hodźinowy cyklus (1-24)"
           },
           "kv": {
-            "core": "shift prózdnota, interpunkcija, symbole bjez woznama měnow"
+            "_core": {
+              "currency": "shift prózdnota, interpunkcija, wšitke symbole",
+              "punct": "shift prózdnota, interpunkcija",
+              "space": "shift prózdnota, interpunkcija",
+              "symbol": "shift prózdnota, interpunkcija, symbole bjez woznama měnow"
+            }
           },
           "lb": {
             "loose": "swobodny stil łamanja linkow",
-            "core": "kruty",
+            "_core": {
+              "loose": "wólny",
+              "normal": "běžny",
+              "strict": "kruty"
+            },
             "normal": "běžny stil łamanja linkow",
             "strict": "kruty stil łamanja linkow"
           },
           "lw": {
-            "core": "w sadach"
+            "_core": {
+              "breakall": "łamaj wšitko",
+              "keepall": "zdźerž wšitko",
+              "normal": "normalne",
+              "phrase": "w sadach"
+            }
           },
           "m0": {
             "bgn": "US-BGN-transliteracija",
@@ -122,14 +201,47 @@
           },
           "ms": {
             "metric": "metriski system",
-            "core": "ameriski",
+            "_core": {
+              "metric": "metriski",
+              "uksystem": "britiski",
+              "ussystem": "ameriski"
+            },
             "uksystem": "britiski system měrow",
             "ussystem": "ameriski system měrow"
           },
           "numbers": {
             "arab": "arabsko-indiske cyfry",
             "arabext": "rozšěrjene arabsko-indiske cyfry",
-            "core": "tradicionelne ličby",
+            "_core": {
+              "arabext": "rozšěrjena arabsko-indišćina",
+              "armnlow": "armeniske małe pismiki",
+              "finance": "financny",
+              "fullwide": "połna šěrokosć",
+              "greklow": "grjekske małe pismiki",
+              "hanidays": "han-numerowanje dnja měsaca za tradicionelne protyki",
+              "hanidec": "decimalny system na zakładźe pozicije wužiwajo chinske ideografy jako cyfry",
+              "hansfin": "zjednorjena chinšćina financnistwa",
+              "hantfin": "tradicionelna chinšćina financnistwa",
+              "jpanfin": "japanšćina financnistwa",
+              "jpanyear": "japanske ličenje gannen wot prěnjeho lěta",
+              "lanatham": "tai tham tham (cyrkwinske)",
+              "mathbold": "matematisce tołste",
+              "mathdbl": "matematisce dwójce podšmórnjene",
+              "mathmono": "matematisce monospace",
+              "mathsanb": "matematisce bjez serifow tołste",
+              "mathsans": "matematisce bjez serifow",
+              "mymrepka": "Myanmarska wuchodna pwo-karenšćina",
+              "mymrpao": "Myanmarska paošćina",
+              "mymrshan": "Myanmarska shanšćina",
+              "mymrtlng": "Myanmarska tai-laingšćina",
+              "native": "za kraj charakteristiske ličby",
+              "outlined": "zaramikowane",
+              "roman": "romske wulke pismiki",
+              "romanlow": "romske małe pismiki",
+              "segment": "segmentěrowane",
+              "tamldec": "moderna tamilšćina",
+              "traditional": "tradicionelne ličby"
+            },
             "armn": "armenske cyfry",
             "armnlow": "armenske cyfry, małe pisane",
             "beng": "bengalske cyfry",
@@ -171,18 +283,19 @@
             "vaii": "vaiske cyfry"
           },
           "ss": {
-            "core": "haj"
+            "_core": {
+              "none": "ně",
+              "standard": "haj"
+            }
           },
           "t0": {
             "und": "njespecifiski přełožk z mašinu"
           },
           "va": {
-            "core": "POSIX-warianta"
+            "_core": {
+              "posix": "POSIX-warianta"
+            }
           }
-        },
-        "typeValues": {
-          "no": "ně",
-          "yes": "haj"
         },
         "codePatterns": {
           "language": "rěč: {0}",

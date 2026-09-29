@@ -51,7 +51,26 @@
         "types": {
           "calendar": {
             "buddhist": "budaisma kalendaro",
-            "core": "respublik-ĉina",
+            "_core": {
+              "buddhist": "budaisma",
+              "chinese": "ĉina",
+              "coptic": "kopta",
+              "dangi": "korea",
+              "ethiopic": "etiopa",
+              "ethiopic-amete-alem": "etiopa Amete Alem",
+              "gregorian": "gregoria",
+              "hebrew": "juda",
+              "indian": "hinda nacia",
+              "islamic": "islama",
+              "islamic-civil": "islama (tabela, civila epoko)",
+              "islamic-rgsa": "islama (observ-bazita, Sauda Arabujo)",
+              "islamic-tbla": "islama (tabela, astronomia epoko)",
+              "islamic-umalqura": "islama (Umm al-Qura)",
+              "iso8601": "gregoria",
+              "japanese": "japana",
+              "persian": "persa",
+              "roc": "respublik-ĉina"
+            },
             "chinese": "ĉina kalendaro",
             "coptic": "kopta kalendaro",
             "dangi": "korea kalendaro",
@@ -69,34 +88,80 @@
           },
           "cf": {
             "account": "kontista formo de valuto",
-            "core": "norma",
+            "_core": {
+              "account": "kontista",
+              "standard": "norma"
+            },
             "standard": "norma formo de valuto"
           },
           "colCaseFirst": {
-            "core": "majuskloj unue"
+            "_core": {
+              "lower": "minuskloj unue",
+              "no": "minuskloj unue",
+              "upper": "majuskloj unue"
+            }
           },
           "collation": {
-            "core": "bopomofo",
+            "_core": {
+              "compat": "malnova maniero",
+              "dictionary": "vortara",
+              "ducet": "norma laŭ Unikodo",
+              "emoji": "por miensimboloj",
+              "eor": "eŭropaj reguloj (EOR)",
+              "phonebook": "adresara",
+              "phonetic": "fonetika",
+              "pinyin": "pinjina",
+              "search": "serĉa",
+              "searchjl": "koreaj unuaj konsonantoj",
+              "standard": "norma",
+              "stroke": "laŭ strek-nombro",
+              "traditional": "tradicia",
+              "unihan": "laŭ radikaloj kaj strek-nombro",
+              "zhuyin": "bopomofo"
+            },
             "ducet": "norma ordigo laŭ Unikodo",
             "search": "ĝeneral-uza serĉo",
             "standard": "norma ordigo"
           },
           "colReorder": {
-            "core": "aliaj simboloj"
+            "_core": {
+              "currency": "valutoj",
+              "digit": "ciferoj",
+              "punct": "helpsignoj",
+              "space": "blankspacoj",
+              "symbol": "aliaj simboloj"
+            }
           },
           "colStrength": {
-            "core": "literoj kun kromsignoj, litergrando, variaĵo"
+            "_core": {
+              "identical": "ĉio",
+              "primary": "nur literoj ignorante kromsignojn",
+              "quaternary": "literoj kun kromsignoj, litergrando, variaĵo, kanaoj",
+              "secondary": "literoj kun kromsignoj",
+              "tertiary": "literoj kun kromsignoj, litergrando, variaĵo"
+            }
           },
           "d0": {
             "fwidth": "al plenlarĝa",
             "hwidth": "al duonlarĝa"
           },
           "em": {
-            "core": "teksto"
+            "_core": {
+              "default": "norma",
+              "emoji": "miensimboloj",
+              "text": "teksto"
+            }
           },
           "hc": {
             "c12": "12-hora sistemo",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "24-hora sistemo",
             "h11": "12-hora sistemo (0–11)",
             "h12": "12-hora sistemo (1–12)",
@@ -105,12 +170,21 @@
           },
           "lb": {
             "loose": "milda stilo de linisalto",
-            "core": "malmilda",
+            "_core": {
+              "loose": "milda",
+              "normal": "norma",
+              "strict": "malmilda"
+            },
             "normal": "norma stilo de linisalto",
             "strict": "malmilda stilo de linisalto"
           },
           "lw": {
-            "core": "konservi en frazoj"
+            "_core": {
+              "breakall": "rompi ĉiujn",
+              "keepall": "konservi ĉiujn",
+              "normal": "norma",
+              "phrase": "konservi en frazoj"
+            }
           },
           "m0": {
             "bgn": "transliterumo laŭ BGN",
@@ -118,14 +192,41 @@
           },
           "ms": {
             "metric": "metra sistemo",
-            "core": "usona",
+            "_core": {
+              "metric": "metra",
+              "uksystem": "brita",
+              "ussystem": "usona"
+            },
             "uksystem": "brita mezur-sistemo",
             "ussystem": "usona mezur-sistemo"
           },
           "numbers": {
             "arab": "hind-arabaj ciferoj",
             "arabext": "hind-arabaj ciferoj etenditaj",
-            "core": "tradiciaj ciferoj",
+            "_core": {
+              "arabext": "hind-arabaj etenditaj",
+              "armnlow": "armenaj minusklaj",
+              "finance": "financaj",
+              "fullwide": "plenlarĝaj",
+              "greklow": "grekaj minusklaj",
+              "hanidays": "numeri monattagojn per ĉinaj signoj por tradiciaj kalendaroj",
+              "hanidec": "pozicia dekuma sistemo uzanta ĉinajn ideografiaĵojn kiel ciferojn",
+              "hansfin": "simpligit-ĉinaj financaj",
+              "hantfin": "tradici-ĉinaj financaj",
+              "jpanfin": "japanaj financaj",
+              "mathbold": "matematikaj grasaj",
+              "mathdbl": "matematikaj kretograsaj",
+              "mathmono": "matematikaj egallarĝaj",
+              "mathsanb": "matematikaj senserifaj grasaj",
+              "mathsans": "matematikaj senserifaj",
+              "native": "indiĝenaj ciferoj",
+              "outlined": "konturaj ciferoj",
+              "roman": "romaj majusklaj",
+              "romanlow": "romaj minusklaj",
+              "segment": "segmentaj",
+              "tamldec": "tamilaj modernaj",
+              "traditional": "tradiciaj ciferoj"
+            },
             "armn": "armenaj ciferoj",
             "armnlow": "armenaj ciferoj minusklaj",
             "beng": "bengalaj ciferoj",
@@ -166,18 +267,19 @@
             "vaii": "vajaj ciferoj"
           },
           "ss": {
-            "core": "jes"
+            "_core": {
+              "none": "ne",
+              "standard": "jes"
+            }
           },
           "t0": {
             "und": "nedifinita maŝina traduko"
           },
           "va": {
-            "core": "variaĵo POSIX"
+            "_core": {
+              "posix": "variaĵo POSIX"
+            }
           }
-        },
-        "typeValues": {
-          "no": "ne",
-          "yes": "jes"
         },
         "codePatterns": {
           "language": "Lingvo: {0}",

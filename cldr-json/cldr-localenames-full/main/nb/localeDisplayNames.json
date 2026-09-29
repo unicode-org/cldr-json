@@ -57,7 +57,26 @@
         "types": {
           "calendar": {
             "buddhist": "buddhistisk kalender",
-            "core": "minguo",
+            "_core": {
+              "buddhist": "buddhistisk",
+              "chinese": "kinesisk",
+              "coptic": "koptisk",
+              "dangi": "dangisk",
+              "ethiopic": "etiopisk",
+              "ethiopic-amete-alem": "etiopisk amete-alem",
+              "gregorian": "gregoriansk",
+              "hebrew": "hebraisk",
+              "indian": "indisk nasjonalkalender",
+              "islamic": "hijri",
+              "islamic-civil": "hijri (tabell, sivil)",
+              "islamic-rgsa": "hijri, saudiarabisk observasjon",
+              "islamic-tbla": "hijri (tabulær, astronomisk epoke)",
+              "islamic-umalqura": "hijri (Umm al-Qura)",
+              "iso8601": "gregoriansk",
+              "japanese": "japansk",
+              "persian": "persisk",
+              "roc": "minguo"
+            },
             "chinese": "kinesisk kalender",
             "coptic": "koptisk kalender",
             "dangi": "dangisk kalender",
@@ -78,7 +97,10 @@
           },
           "cf": {
             "account": "valutaformat for regnskapsføring",
-            "core": "standard",
+            "_core": {
+              "account": "regnskapsføring",
+              "standard": "standard"
+            },
             "standard": "standard valutaformat"
           },
           "colAlternate": {
@@ -91,7 +113,11 @@
           },
           "colCaseFirst": {
             "lower": "Sortér små bokstaver først",
-            "core": "store bokstaver",
+            "_core": {
+              "lower": "små bokstaver",
+              "no": "små bokstaver",
+              "upper": "store bokstaver"
+            },
             "no": "Sortér store og små bokstaver i vanlig rekkefølge",
             "upper": "Sortér store bokstaver først"
           },
@@ -101,7 +127,23 @@
           },
           "collation": {
             "compat": "forrige sorteringsrekkefølge (for kompatibilitet)",
-            "core": "zhuyin",
+            "_core": {
+              "compat": "kompatibilitet",
+              "dictionary": "ordliste",
+              "ducet": "standard Unicode",
+              "emoji": "emoji",
+              "eor": "europeiske regler",
+              "phonebook": "telefonkatalog",
+              "phonetic": "fonetisk",
+              "pinyin": "pinyin",
+              "search": "søk",
+              "searchjl": "koreansk første konsonant",
+              "standard": "standard",
+              "stroke": "strek",
+              "traditional": "tradisjonell",
+              "unihan": "radikal-strek",
+              "zhuyin": "zhuyin"
+            },
             "dictionary": "ordlistesortering",
             "ducet": "standard Unicode-sorteringsrekkefølge",
             "emoji": "emoji-sorteringsrekkefølge",
@@ -126,11 +168,23 @@
             "yes": "Sortér sifre numerisk"
           },
           "colReorder": {
-            "core": "symbol"
+            "_core": {
+              "currency": "valuta",
+              "digit": "sifre",
+              "punct": "tegnsetting",
+              "space": "mellomrom",
+              "symbol": "symbol"
+            }
           },
           "colStrength": {
             "identical": "Sortér alle",
-            "core": "grunnbokstaver, aksenter, kasus, varianter",
+            "_core": {
+              "identical": "alle",
+              "primary": "kun grunnbokstaver",
+              "quaternary": "grunnbokstaver, aksenter, kasus, varianter, kana",
+              "secondary": "grunnbokstaver, aksenter",
+              "tertiary": "grunnbokstaver, aksenter, kasus, varianter"
+            },
             "primary": "Sortér bare basisbokstaver",
             "quaternary": "Sortér aksenttegn / små og store bokstaver / bredde / kana",
             "secondary": "Sortér aksenttegn",
@@ -142,11 +196,22 @@
             "npinyin": "Numerisk"
           },
           "em": {
-            "core": "tekst"
+            "_core": {
+              "default": "standard",
+              "emoji": "emoji",
+              "text": "tekst"
+            }
           },
           "hc": {
             "c12": "12-timers system",
-            "core": "24 (1–24)",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
             "c24": "24-timers system",
             "h11": "12-timers system (0–11)",
             "h12": "12-timers system (1–12)",
@@ -154,16 +219,30 @@
             "h24": "24-timers system (1–24)"
           },
           "kv": {
-            "core": "forskyv mellomrom, tegnsetting, ikke-valutasymboler"
+            "_core": {
+              "currency": "forskyv mellomrom, tegnsetting, alle symboler",
+              "punct": "forskyv mellomrom, tegnsetting",
+              "space": "forskyv mellomrom, tegnsetting",
+              "symbol": "forskyv mellomrom, tegnsetting, ikke-valutasymboler"
+            }
           },
           "lb": {
             "loose": "løs linjeskiftstil",
-            "core": "streng",
+            "_core": {
+              "loose": "løs",
+              "normal": "normal",
+              "strict": "streng"
+            },
             "normal": "normal linjeskiftstil",
             "strict": "streng linjeskiftstil"
           },
           "lw": {
-            "core": "behold i fraser"
+            "_core": {
+              "breakall": "bryt alle",
+              "keepall": "behold alle",
+              "normal": "normal",
+              "phrase": "behold i fraser"
+            }
           },
           "m0": {
             "bgn": "USBGN-translitterasjon",
@@ -171,14 +250,47 @@
           },
           "ms": {
             "metric": "metrisk system",
-            "core": "amerikansk",
+            "_core": {
+              "metric": "metrisk",
+              "uksystem": "britisk",
+              "ussystem": "amerikansk"
+            },
             "uksystem": "britisk målesystem",
             "ussystem": "amerikansk målesystem"
           },
           "numbers": {
             "arab": "arabisk-indiske sifre",
             "arabext": "utvidede arabisk-indiske sifre",
-            "core": "tradisjonelle tall",
+            "_core": {
+              "arabext": "utvidet arabisk-indisk",
+              "armnlow": "små armenske",
+              "finance": "finansielle",
+              "fullwide": "full bredde",
+              "greklow": "små greske",
+              "hanidays": "han-tegn for nummerering av dager i måneden i tradisjonelle kalendere",
+              "hanidec": "posisjonsbasert desimalsystem som bruker kinesiske tallideogrammer som siffer",
+              "hansfin": "forenklet kinesisk finansielle",
+              "hantfin": "tradisjonell kinesisk finansielle",
+              "jpanfin": "japanske finansielle",
+              "jpanyear": "japansk gannen-nummerering for det første året",
+              "lanatham": "tai tham (kirkelig)",
+              "mathbold": "matematisk halvfet",
+              "mathdbl": "matematisk dobbeltstreket",
+              "mathmono": "matematisk fastbreddeskrift",
+              "mathsanb": "matematisk sans-serif halvfet",
+              "mathsans": "matematisk sans-serif",
+              "mymrepka": "myanmarsk østlig pwo-karen",
+              "mymrpao": "myanmarsk pao",
+              "mymrshan": "myanmarsk shan",
+              "mymrtlng": "myanmarsk tai-laing",
+              "native": "språkspesifikke sifre",
+              "outlined": "omriss",
+              "roman": "romertall",
+              "romanlow": "små romertall",
+              "segment": "segmentert",
+              "tamldec": "moderne tamil",
+              "traditional": "tradisjonelle tall"
+            },
             "armn": "armenske tall",
             "armnlow": "små armenske tall",
             "bali": "baliske tall",
@@ -244,18 +356,19 @@
             "vaii": "vai-sifre"
           },
           "ss": {
-            "core": "på"
+            "_core": {
+              "none": "av",
+              "standard": "på"
+            }
           },
           "t0": {
             "und": "uspesifisert maskinoversettelse"
           },
           "va": {
-            "core": "POSIX-variant"
+            "_core": {
+              "posix": "POSIX-variant"
+            }
           }
-        },
-        "typeValues": {
-          "no": "av",
-          "yes": "på"
         },
         "codePatterns": {
           "language": "Språk: {0}",
