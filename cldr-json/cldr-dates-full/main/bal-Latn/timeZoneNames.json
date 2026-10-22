@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -762,9 +764,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Bartániái garmági wahd"
-                },
                 "exemplarCity": "Landan"
               },
               "Guernsey": {
@@ -778,12 +777,6 @@
               "Budapest": {
                 "_type": "zone",
                 "exemplarCity": "Budápest"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Áeri anjári wahd"
-                }
               },
               "Rome": {
                 "_type": "zone",
@@ -1447,6 +1440,12 @@
                 "daylight": "Brázilay garmági wahd"
               }
             },
+            "British": {
+              "long": {
+                "standard": "Grinwech Min Wahd",
+                "daylight": "Bartániái garmági wahd"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Brunáiay wahd"
@@ -1705,6 +1704,12 @@
                 "generic": "Éránay wahd",
                 "standard": "Éránay anjári wahd",
                 "daylight": "Éránay róchi wahd"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "Grinwech Min Wahd",
+                "daylight": "Áeri anjári wahd"
               }
             },
             "Irkutsk": {
@@ -1992,9 +1997,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samóáway wahd",
-                "standard": "Samóáway anjári wahd",
-                "daylight": "Samóáway róchi wahd"
+                "standard": "Samóáway anjári wahd"
               }
             },
             "Seychelles": {

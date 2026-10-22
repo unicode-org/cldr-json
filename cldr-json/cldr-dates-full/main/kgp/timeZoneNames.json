@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Óra kar {0}",
           "regionFormat-type-daylight": "Prỹg kã óra kar {0}",
           "regionFormat-type-standard": "Óra pẽ {0}",
@@ -247,9 +249,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Óra Mritỹnĩku Rỹ Kã"
-                },
                 "exemplarCity": "Rãnere"
               },
               "Guernsey": {
@@ -274,9 +273,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Óra Pã Irỹna"
-                },
                 "exemplarCity": "Numrin"
               },
               "Isle_of_Man": {
@@ -1754,13 +1750,6 @@
                 "daylight": "Rỹ Kã óra Aranhka tá"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Armaty tá óra",
-                "standard": "Óra Pã Armaty tá",
-                "daylight": "Rỹ Kã óra Armaty tá"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Amỹjonỹ tá óra",
@@ -1813,20 +1802,6 @@
                 "generic": "Óra Apija tá",
                 "standard": "Óra Pã Apija tá",
                 "daylight": "Rỹ Kã óra Apija tá"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Óra Agtav tá",
-                "standard": "Óra Pã Agtav tá",
-                "daylight": "Rỹ Kã óra Agtav tá"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Óra Agtóme tá",
-                "standard": "Óra Pã Agtóme tá",
-                "daylight": "Rỹ Kã óra Agtóme tá"
               }
             },
             "Arabian": {
@@ -1933,6 +1908,12 @@
                 "generic": "BRT",
                 "standard": "BRT",
                 "daylight": "BRST"
+              }
+            },
+            "British": {
+              "long": {
+                "standard": "Óra Mirinjỹnũ Grinũvisi tá",
+                "daylight": "Óra Mritỹnĩku Rỹ Kã"
               }
             },
             "Brunei": {
@@ -2122,11 +2103,6 @@
                 "daylight": "Rỹ Kã óra Groẽrỹnija Rãpur tá"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Óra Pã Guvỹm tá"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Óra Gorfu tá"
@@ -2200,6 +2176,12 @@
                 "daylight": "Rỹ Kã óra Irỹ tá"
               }
             },
+            "Irish": {
+              "long": {
+                "standard": "Óra Mirinjỹnũ Grinũvisi tá",
+                "daylight": "Óra Pã Irỹna"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Óra Irkutinhki tá",
@@ -2262,11 +2244,6 @@
                 "standard": "Óra Kirginhtỹv tá"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Óra Rỹnka tá"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Óra Vãfe Goj-vẽso tỹ tá"
@@ -2277,13 +2254,6 @@
                 "generic": "Óra Rórni Hove tá",
                 "standard": "Óra Pã Rórni Hove tá",
                 "daylight": "Rỹ Kã óra Rórni Hove tá"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Óra Mỹkav tá",
-                "standard": "Óra Pã Mỹkav tá",
-                "daylight": "Rỹ kã óra Mỹkav tá"
               }
             },
             "Magadan": {
@@ -2401,11 +2371,6 @@
                 "daylight": "Rỹ Kã óra Fernỹnu Nãrãja-tá tá"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Óra Nãrti-Mỹrijỹnỹ Goj-vẽso tá"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Óra Simirsiki Tãg tá",
@@ -2485,13 +2450,6 @@
                 "standard": "Óra Piãgiỹng tá"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Óra Kysyrorna tá",
-                "standard": "Óra Pã Kysyrorna tá",
-                "daylight": "Rỹ Kã óra Kysyrorna tá"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Óra Hujáv tá"
@@ -2518,9 +2476,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Óra Samãva tá",
-                "standard": "Óra Pã Samãva tá",
-                "daylight": "Rỹ Kã óra Samãva tá"
+                "standard": "Óra Pã Samãva tá"
               }
             },
             "Seychelles": {

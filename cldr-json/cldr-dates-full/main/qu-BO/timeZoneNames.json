@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -298,16 +300,7 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Hora de Verano Británico"
-                },
                 "exemplarCity": "Londres"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Hora Estandar de Irlanda"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -636,6 +629,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Acre Tiempo",
+                "standard": "Acre Tiempo Estándar nisqa",
+                "daylight": "Acre Inti raymi pacha"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Hora de Afganistán"
@@ -814,6 +814,13 @@
                 "daylight": "Hora de Verano de Brasilia"
               }
             },
+            "British": {
+              "long": {
+                "generic": "British Tiempo",
+                "standard": "Hora del Meridiano de Greenwich",
+                "daylight": "Hora de Verano Británico"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Hora de Brunei Darussalam"
@@ -987,6 +994,13 @@
                 "standard": "Hora del Meridiano de Greenwich"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Groenlandia pacha",
+                "standard": "Groenlandia Tiempo Estándar",
+                "daylight": "Groenlandia Inti raymi pacha"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Hora de Groenlandia",
@@ -1013,7 +1027,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hora Estandar de Hawai-Aleutiano"
+                "standard": "Hora de Hawai"
               }
             },
             "Hawaii_Aleutian": {
@@ -1074,6 +1088,13 @@
                 "daylight": "Hora de Verano de Irán"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Hora Irlanda",
+                "standard": "Hora del Meridiano de Greenwich",
+                "daylight": "Hora Estandar de Irlanda"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Hora de Irkutsk",
@@ -1093,6 +1114,13 @@
                 "generic": "Hora de Japón",
                 "standard": "Hora Estandar de Japón",
                 "daylight": "Hora de Verano de Japón"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Kamchatka Tiempo",
+                "standard": "Kamchatka Hora Estándar",
+                "daylight": "Kamchatka Verano Tiempo"
               }
             },
             "Kazakhstan": {
@@ -1357,11 +1385,16 @@
                 "daylight": "Hora de Verano de Sakhalin"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Samara Tiempo",
+                "standard": "Samara Standard Time",
+                "daylight": "Samara Summer Time"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Hora de Samoa",
-                "standard": "Hora Estandar de Samoa",
-                "daylight": "Hora de Verano de Samoa"
+                "standard": "Hora Estandar de Samoa"
               }
             },
             "Seychelles": {
@@ -1428,6 +1461,13 @@
                 "standard": "Hora de Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Türkiye Tiempo",
+                "standard": "Türkiye Hora Estándar",
+                "daylight": "Türkiye Inti raymi pacha"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Hora de Turkmenistán",
@@ -1445,6 +1485,11 @@
                 "generic": "Hora de Uruguay",
                 "standard": "Hora Estandar de Uruguay",
                 "daylight": "Hora de Verano de Uruguay"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Urumqi Tiempo"
               }
             },
             "Uzbekistan": {

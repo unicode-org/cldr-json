@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} Saati",
           "regionFormat-type-daylight": "{0} Yaz Saati",
           "regionFormat-type-standard": "{0} Standart Saati",
@@ -264,7 +266,7 @@
               },
               "Samarkand": {
                 "_type": "zone",
-                "exemplarCity": "Semerkand"
+                "exemplarCity": "Semerkant"
               },
               "Tashkent": {
                 "_type": "zone",
@@ -314,9 +316,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "İngiltere Yaz Saati"
-                },
                 "exemplarCity": "Londra"
               },
               "Gibraltar": {
@@ -330,12 +329,6 @@
               "Budapest": {
                 "_type": "zone",
                 "exemplarCity": "Budapeşte"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "İrlanda Standart Saati"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -783,13 +776,6 @@
                 "daylight": "Alaska Yaz Saati"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Almatı Saati",
-                "standard": "Almatı Standart Saati",
-                "daylight": "Almatı Yaz Saati"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Amazon Saati",
@@ -837,20 +823,6 @@
                 "generic": "Apia Saati",
                 "standard": "Apia Standart Saati",
                 "daylight": "Apia Yaz Saati"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Aktav Saati",
-                "standard": "Aktav Standart Saati",
-                "daylight": "Aktav Yaz Saati"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Aktöbe Saati",
-                "standard": "Aktöbe Standart Saati",
-                "daylight": "Aktöbe Yaz Saati"
               }
             },
             "Arabian": {
@@ -952,6 +924,13 @@
                 "generic": "Brasilia Saati",
                 "standard": "Brasilia Standart Saati",
                 "daylight": "Brasilia Yaz Saati"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "İngiltere Saati",
+                "standard": "Greenwich Ortalama Saati",
+                "daylight": "İngiltere Yaz Saati"
               }
             },
             "Brunei": {
@@ -1132,6 +1111,13 @@
                 "standard": "Greenwich Ortalama Saati"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grönland Saati",
+                "standard": "Grönland Standart Saati",
+                "daylight": "Grönland Yaz Saati"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Doğu Grönland Saati",
@@ -1146,11 +1132,6 @@
                 "daylight": "Batı Grönland Yaz Saati"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Guam Standart Saati"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Körfez Saati"
@@ -1163,7 +1144,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaii-Aleut Standart Saati"
+                "standard": "Hawaii Standart Saati"
               }
             },
             "Hawaii_Aleutian": {
@@ -1222,6 +1203,13 @@
                 "generic": "İran Saati",
                 "standard": "İran Standart Saati",
                 "daylight": "İran Yaz Saati"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "İrlanda Saati",
+                "standard": "Greenwich Ortalama Saati",
+                "daylight": "İrlanda Standart Saati"
               }
             },
             "Irkutsk": {
@@ -1291,11 +1279,6 @@
                 "standard": "Kırgızistan Saati"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Lanka Saati"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Line Adaları Saati"
@@ -1306,13 +1289,6 @@
                 "generic": "Lord Howe Saati",
                 "standard": "Lord Howe Standart Saati",
                 "daylight": "Lord Howe Yaz Saati"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Makao Saati",
-                "standard": "Makao Standart Saati",
-                "daylight": "Makao Yaz Saati"
               }
             },
             "Magadan": {
@@ -1430,11 +1406,6 @@
                 "daylight": "Fernando de Noronha Yaz Saati"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Kuzey Mariana Adaları Saati"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Novosibirsk Saati",
@@ -1514,13 +1485,6 @@
                 "standard": "Pyongyang Saati"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Kızılorda Saati",
-                "standard": "Kızılorda Standart Saati",
-                "daylight": "Kızılorda Yaz Saati"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Reunion Saati"
@@ -1547,9 +1511,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa Saati",
-                "standard": "Samoa Standart Saati",
-                "daylight": "Samoa Yaz Saati"
+                "standard": "Samoa Standart Saati"
               }
             },
             "Seychelles": {
@@ -1623,7 +1585,9 @@
                 "daylight": "Türkiye Yaz Saati"
               },
               "short": {
-                "generic": "TSİ"
+                "generic": "TSİ",
+                "standard": "TSİ",
+                "daylight": "TSİ Yaz"
               }
             },
             "Turkmenistan": {
@@ -1643,6 +1607,11 @@
                 "generic": "Uruguay Saati",
                 "standard": "Uruguay Standart Saati",
                 "daylight": "Uruguay Yaz Saati"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Urumçi Saati"
               }
             },
             "Uzbekistan": {

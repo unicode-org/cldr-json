@@ -25,23 +25,58 @@
           "collation": "zoradenie",
           "colNormalization": "normálne radenie",
           "colNumeric": "číselné radenie",
+          "colReorder": "skriptová/bloková zmena poradia",
           "colStrength": "sila radenia",
           "currency": "mena",
+          "d0": "transformačný cieľ",
+          "dx": "slovník výnimiek pri delení slov",
           "em": "prezentácia emodži",
+          "fw": "prvý deň v týždni",
+          "h0": "zmiešané",
           "hc": "hodinový cyklus (12 vs 24)",
+          "i0": "metóda vstupu",
+          "k0": "klávesnica",
+          "kv": "ignorovanie najvyššieho",
           "lb": "štýl koncov riadka",
           "lw": "zlom riadka v slovách",
+          "m0": "transformačné pravidlá",
           "ms": "merná sústava",
+          "mu": "merná jednotka",
           "numbers": "čísla",
+          "rg": "pole na doplňujúce údaje",
+          "s0": "transformačný zdroj",
+          "sd": "rozdelenie oblasti",
           "ss": "veta po skrat.",
+          "t": "transformácia",
+          "t0": "strojovo preložené",
           "timezone": "časové pásmo",
           "va": "variant miestneho nastavenia",
-          "x": "súkromné použitie"
+          "x": "súkromné použitie",
+          "x0": "súkromná transformácia"
         },
         "types": {
           "calendar": {
             "buddhist": "budhistický kalendár",
-            "core": "čínsky republikánsky",
+            "_core": {
+              "buddhist": "budhistický",
+              "chinese": "čínsky",
+              "coptic": "koptský",
+              "dangi": "kórejský",
+              "ethiopic": "etiópsky",
+              "ethiopic-amete-alem": "etiópsky Amete Alem",
+              "gregorian": "gregoriánsky",
+              "hebrew": "židovský",
+              "indian": "indický národný",
+              "islamic": "podľa hidžry",
+              "islamic-civil": "podľa hidžry (občiansky)",
+              "islamic-rgsa": "podľa hidžry, Saudská Arábia",
+              "islamic-tbla": "podľa hidžry (tabuľkový, astronomická epocha)",
+              "islamic-umalqura": "podľa hidžry (Umm al-Qura)",
+              "iso8601": "gregoriánsky",
+              "japanese": "japonský",
+              "persian": "perzský",
+              "roc": "čínsky republikánsky"
+            },
             "chinese": "čínsky kalendár",
             "coptic": "koptský kalendár",
             "dangi": "kórejský kalendár",
@@ -60,7 +95,10 @@
           },
           "cf": {
             "account": "účtovný formát meny",
-            "core": "štandardný",
+            "_core": {
+              "account": "účtovný",
+              "standard": "štandardný"
+            },
             "standard": "štandardný formát meny"
           },
           "colAlternate": {
@@ -73,6 +111,11 @@
           },
           "colCaseFirst": {
             "lower": "Najprv radiť malé písmená",
+            "_core": {
+              "lower": "malé písmená",
+              "no": "malé písmená",
+              "upper": "veľké písmená"
+            },
             "no": "Normálne radenie veľkých a malých písmen",
             "upper": "Najprv radiť veľké písmená"
           },
@@ -82,7 +125,23 @@
           },
           "collation": {
             "compat": "predchádzajúce zoradenie, kompatibilita",
-            "core": "zhuyin",
+            "_core": {
+              "compat": "kompatibilita",
+              "dictionary": "slovníkové",
+              "ducet": "predvolené, unicode",
+              "emoji": "emodži",
+              "eor": "európske pravidlá",
+              "phonebook": "lexikografické",
+              "phonetic": "fonetické",
+              "pinyin": "pchin-jin",
+              "search": "vyhľadávanie",
+              "searchjl": "kórejská úvodná spoluhláska",
+              "standard": "štandardné",
+              "stroke": "podľa ťahov",
+              "traditional": "tradičné",
+              "unihan": "podľa znakov radikál",
+              "zhuyin": "zhuyin"
+            },
             "dictionary": "slovníkové zoradenie",
             "ducet": "predvolené zoradenie unicode",
             "eor": "európske zoradenie",
@@ -105,8 +164,24 @@
             "no": "Radiť číslice jednotlivo",
             "yes": "Numerické radenie číslic"
           },
+          "colReorder": {
+            "_core": {
+              "currency": "mena",
+              "digit": "čísla",
+              "punct": "interpunkcia",
+              "space": "medzera",
+              "symbol": "symbol"
+            }
+          },
           "colStrength": {
             "identical": "Radiť všetko",
+            "_core": {
+              "identical": "všetky",
+              "primary": "iba základné písmená",
+              "quaternary": "základné, s prízvukmi, veľkosti, varianty, kana",
+              "secondary": "základné, s prízvukmi",
+              "tertiary": "základné, s prízvukmi, veľkosti, varianty"
+            },
             "primary": "Radiť iba základné písmená",
             "quaternary": "Radiť akcenty/veľké a malé písmená/šírku/kana",
             "secondary": "Radiť akcenty",
@@ -118,23 +193,53 @@
             "npinyin": "Číslice"
           },
           "em": {
-            "core": "text"
+            "_core": {
+              "default": "predvolené",
+              "emoji": "emodži",
+              "text": "text"
+            }
           },
           "hc": {
+            "c12": "12-hodinový cyklus",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0 – 11)",
+              "h12": "12 (1 – 12)",
+              "h23": "24 (0 – 23)",
+              "h24": "24 (1 – 24)"
+            },
+            "c24": "24-hodinový cyklus",
             "h11": "12-hodinový cyklus (0 – 11)",
-            "core": "24 (1 – 24)",
             "h12": "12-hodinový cyklus (1 – 12)",
             "h23": "24-hodinový cyklus (0 – 23)",
             "h24": "24-hodinový cyklus (1 – 24)"
           },
+          "kv": {
+            "_core": {
+              "currency": "posuny, interpunkcia, všetky symboly",
+              "punct": "posuny, interpunkcia",
+              "space": "posuny, interpunkcia",
+              "symbol": "posuny, interpunkcia, iné symboly než meny"
+            }
+          },
           "lb": {
             "loose": "voľný štýl koncov riadka",
-            "core": "presný",
+            "_core": {
+              "loose": "voľný",
+              "normal": "bežný",
+              "strict": "presný"
+            },
             "normal": "bežný štýl koncov riadka",
             "strict": "presný štýl koncov riadka"
           },
           "lw": {
-            "core": "ponechať vo frázach"
+            "_core": {
+              "breakall": "zalomiť všetko",
+              "keepall": "ponechať všetko",
+              "normal": "bežné",
+              "phrase": "ponechať vo frázach"
+            }
           },
           "m0": {
             "bgn": "americká transliterácia BGN",
@@ -142,13 +247,47 @@
           },
           "ms": {
             "metric": "metrická sústava",
-            "core": "americká",
+            "_core": {
+              "metric": "metrická",
+              "uksystem": "britská",
+              "ussystem": "americká"
+            },
             "uksystem": "britská merná sústava",
             "ussystem": "americká merná sústava"
           },
           "numbers": {
             "arab": "arabsko-indické číslice",
             "arabext": "rozšírené arabsko-indické číslice",
+            "_core": {
+              "arabext": "rozšírené arabsko-indické",
+              "armnlow": "malé arménske",
+              "finance": "finančné znaky",
+              "fullwide": "celá šírka",
+              "greklow": "malé grécke",
+              "hanidays": "číslovanie dňa v mesiaci znakom han v tradičnom kalendári",
+              "hanidec": "pozičný desiatkový systém používajúci čínske číselné ideogramy ako číslice",
+              "hansfin": "finančné znaky zjednodušenej čínštiny",
+              "hantfin": "finančné znaky tradičnej čínštiny",
+              "jpanfin": "japonské finančné znaky",
+              "jpanyear": "japonské číslovanie Gannen (najprv rok)",
+              "lanatham": "cirkevné tai tham tham",
+              "mathbold": "matematické znaky tučné",
+              "mathdbl": "matematické znaky dvojité",
+              "mathmono": "matematické znaky jednomiestne",
+              "mathsanb": "matematické znaky bezpätkové, tučné",
+              "mathsans": "matematické znaky bezpätkové",
+              "mymrepka": "mjanmarské východné pwo karen",
+              "mymrpao": "mjanmarské pao",
+              "mymrshan": "mjanmarské shan",
+              "mymrtlng": "mjanmarské tai laing",
+              "native": "natívne číslice",
+              "outlined": "obrysové",
+              "roman": "rímske veľké",
+              "romanlow": "rímske malé",
+              "segment": "segmentované",
+              "tamldec": "moderné tamilské",
+              "traditional": "tradičné číslice"
+            },
             "armn": "arménske číslice",
             "armnlow": "malé arménske číslice",
             "beng": "bengálske číslice",
@@ -193,7 +332,18 @@
             "vaii": "vaiské číslice"
           },
           "ss": {
-            "core": "zapnuté"
+            "_core": {
+              "none": "vypnuté",
+              "standard": "zapnuté"
+            }
+          },
+          "t0": {
+            "und": "nešpecifikovaný strojový preklad"
+          },
+          "va": {
+            "_core": {
+              "posix": "variant POSIX"
+            }
           }
         },
         "codePatterns": {

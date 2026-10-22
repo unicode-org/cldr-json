@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Време во {0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Британско летно време"
-                },
                 "exemplarCity": "Лондон"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ирско стандардно време"
-                },
                 "exemplarCity": "Даблин"
               },
               "Isle_of_Man": {
@@ -1740,9 +1736,9 @@
           "metazone": {
             "Acre": {
               "long": {
-                "generic": "Акре време",
-                "standard": "Акре стандардно време",
-                "daylight": "Акре летно сметање на времето"
+                "generic": "Време во Акре",
+                "standard": "Стандардно време во Акре",
+                "daylight": "Летно сметање на времето во Акре"
               }
             },
             "Afghanistan": {
@@ -1925,6 +1921,13 @@
                 "generic": "Време во Бразилија",
                 "standard": "Стандардно време во Бразилија",
                 "daylight": "Летно сметање на времето во Бразилија"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Британско време",
+                "standard": "Средно време по Гринич",
+                "daylight": "Британско летно време"
               }
             },
             "Brunei": {
@@ -2115,6 +2118,13 @@
                 "standard": "Средно време по Гринич"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Време во Гренланд",
+                "standard": "Стандардно време во Гренланд",
+                "daylight": "Летно сметање на времето во Гренланд"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Време во Источен Гренланд",
@@ -2141,7 +2151,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Стандардно време во Хаваи - Алеутски острови"
+                "standard": "Стандардно време во Хаваи"
               }
             },
             "Hawaii_Aleutian": {
@@ -2202,6 +2212,13 @@
                 "daylight": "Летно сметање на времето во Иран"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Ирско време",
+                "standard": "Средно време по Гринич",
+                "daylight": "Ирско стандардно време"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Време во Иркутск",
@@ -2221,6 +2238,13 @@
                 "generic": "Време во Јапонија",
                 "standard": "Стандардно време во Јапонија",
                 "daylight": "Летно сметање на времето во Јапонија"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Време во Камчатка",
+                "standard": "Стандардно време во Камчатка",
+                "daylight": "Летно време во Камчатка"
               }
             },
             "Kazakhstan": {
@@ -2487,16 +2511,14 @@
             },
             "Samara": {
               "long": {
-                "generic": "Самара време",
-                "standard": "Самара стандардно време",
-                "daylight": "Самара летно сметање на времето"
+                "generic": "Време во Самара",
+                "standard": "Стандардно време во Самара",
+                "daylight": "Летно сметање на времето во Самара"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "Време во Самоа",
-                "standard": "Стандардно време во Самоа",
-                "daylight": "Летно време во Самоа"
+                "standard": "Стандардно време во Самоа"
               }
             },
             "Seychelles": {
@@ -2565,9 +2587,9 @@
             },
             "Turkey": {
               "long": {
-                "generic": "Турција време",
-                "standard": "Турција стандардно време",
-                "daylight": "Турција летно сметање на времето"
+                "generic": "Време во Турција",
+                "standard": "Стандардно време во Турција",
+                "daylight": "Летно сметање на времето во Турција"
               }
             },
             "Turkmenistan": {
@@ -2587,6 +2609,11 @@
                 "generic": "Време во Уругвај",
                 "standard": "Стандардно време во Уругвај",
                 "daylight": "Летно сметање на времето во Уругвај"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Време во Урумчи"
               }
             },
             "Uzbekistan": {

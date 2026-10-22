@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} Nako",
           "regionFormat-type-daylight": "{0} Nako ya Motshehare",
           "regionFormat-type-standard": "{0} Nako ya Tlwaelo",
@@ -19,6 +21,9 @@
             "Etc": {
               "UTC": {
                 "_type": "zone",
+                "long": {
+                  "standard": "Coordinated Universal Time"
+                },
                 "short": {
                   "standard": "UTC"
                 }
@@ -338,7 +343,17 @@
             }
           },
           "metazone": {
+            "British": {
+              "long": {
+                "standard": "Greenwich Mean Time"
+              }
+            },
             "GMT": {
+              "long": {
+                "standard": "Greenwich Mean Time"
+              }
+            },
+            "Irish": {
               "long": {
                 "standard": "Greenwich Mean Time"
               }

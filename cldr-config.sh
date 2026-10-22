@@ -26,6 +26,6 @@ MATCH='.*'
 DRAFTSTATUS="contributed"
 
 # override the version number of CLDR
-VERSION="48.2.3"
+#VERSION="<set override version here>"
 
 EXTRA_JSON_OPTS=""

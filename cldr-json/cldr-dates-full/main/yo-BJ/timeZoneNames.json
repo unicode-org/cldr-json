@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "WAT{0}",
-          "gmtZeroFormat": "WAT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Ìgbà {0}",
           "regionFormat-type-daylight": "{0} Àkókò ojúmɔmɔ",
           "regionFormat-type-standard": "{0} Ìlànà Àkókò",
@@ -514,18 +516,6 @@
                 "_type": "zone",
                 "exemplarCity": "Büsingen"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Àkókò Sɔmà Gɛɛsi"
-                }
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Àkókò Àfɛnukò Airiisi"
-                }
-              },
               "Chisinau": {
                 "_type": "zone",
                 "exemplarCity": "Chișinău"
@@ -657,6 +647,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Àkókò Ékà",
+                "standard": "Àkókò Ékà Àfɛnukò",
+                "daylight": "Àkókò Ékà Ìgbà ɛ̀rùn"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Àkókò Afghanistan"
@@ -832,6 +829,13 @@
                 "daylight": "Aago Soma Brasilia"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Àkɔ́kɔ̀ ilɛ̀ Gɛ̀ɛ́sì",
+                "standard": "Àkókò Greenwich",
+                "daylight": "Àkókò Ɛ̀rùn ilɛ̀ Gɛɛsi"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Brunei Darussalam Time"
@@ -1002,7 +1006,14 @@
             },
             "GMT": {
               "long": {
-                "standard": "Greenwich Mean Time"
+                "standard": "Àkókò Greenwich"
+              }
+            },
+            "Greenland": {
+              "long": {
+                "generic": "Àkókò Greenland",
+                "standard": "Àkókò Àfenukò Greenland",
+                "daylight": "Ìgbà Ɛ̀rùn Greenland"
               }
             },
             "Greenland_Eastern": {
@@ -1037,7 +1048,7 @@
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "Àkókò Hawaii-Aleutian",
-                "standard": "Àkókò Àfɛnukò Hawaii-Aleutian",
+                "standard": "Àkókò Àfɛnukò ti Hawaii-Aleutian",
                 "daylight": "Àkókò Ojúmɔmɔ Hawaii-Aleutian"
               }
             },
@@ -1051,8 +1062,8 @@
             "Hovd": {
               "long": {
                 "generic": "Àkókò Hofidi",
-                "standard": "Àkókò Ìfɛnukòsí Hofidi",
-                "daylight": "Àkókò Sɔmà Hofidi"
+                "standard": "Àkókò Ìfɛnukò Hofidi",
+                "daylight": "Àkókò Ìgbà Ɛ̀rùn Hofidi"
               }
             },
             "India": {
@@ -1092,6 +1103,13 @@
                 "daylight": "Àkókò Ojúmɔmɔ Irani"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Àkókò orílɛ́-èdè Ireland",
+                "standard": "Àkókò Greenwich",
+                "daylight": "Àkókò Àfɛnukò orílɛ́-èdè Ireland"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Àkókò Íkósíkì",
@@ -1111,6 +1129,13 @@
                 "generic": "Àkókò Japan",
                 "standard": "Àkókò Ìfɛnukòsí Japan",
                 "daylight": "Àkókò Sɔmà Japan"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Àkókò Kamchatka",
+                "standard": "Àkókò Kamchatka Àfɛnukò",
+                "daylight": "Àkókò Kamchatka Ìgbà Ɛrùn"
               }
             },
             "Kazakhstan": {
@@ -1375,11 +1400,16 @@
                 "daylight": "Àkókò Sɔmà Sakhalin"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Àkókò Sàmárà",
+                "standard": "Àkókò Sàmárà Àfɛnukò",
+                "daylight": "Àkókò Ìgbà ɛ̀rùn Sàmárà"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Àkókò Samoa",
-                "standard": "Àkókò Àfɛnukò Samoa",
-                "daylight": "Àkókò Ojúmɔmɔ Samoa"
+                "standard": "Àkókò Àfɛnukò Samoa"
               }
             },
             "Seychelles": {
@@ -1446,6 +1476,13 @@
                 "standard": "Àkókò Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Àkókò Tɔ́kì",
+                "standard": "Àkókò Tɔ́kì Àfɛnukò",
+                "daylight": "Àkókò Ìgbàɛ̀rùn Tɔ́kì"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Àkókò Turkimenistani",
@@ -1463,6 +1500,11 @@
                 "generic": "Aago Uruguay",
                 "standard": "Àkókò Àfɛnukò Úrúgúwè",
                 "daylight": "Aago Soma Uruguay"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Àkókò Ürümqi"
               }
             },
             "Uzbekistan": {

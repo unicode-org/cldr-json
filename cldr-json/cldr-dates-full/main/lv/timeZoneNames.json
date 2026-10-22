@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Laika josla: {0}",
           "regionFormat-type-daylight": "{0}: vasaras laiks",
           "regionFormat-type-standard": "{0}: standarta laiks",
@@ -219,9 +221,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Lielbritānijas vasaras laiks"
-                },
                 "exemplarCity": "Londona"
               },
               "Guernsey": {
@@ -246,9 +245,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Īrijas ziemas laiks"
-                },
                 "exemplarCity": "Dublina"
               },
               "Isle_of_Man": {
@@ -1550,6 +1546,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Akres laiks",
+                "standard": "Akres ziemas laiks",
+                "daylight": "Akres vasaras laiks"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Afganistānas laiks"
@@ -1730,6 +1733,13 @@
                 "generic": "Brazīlijas laiks",
                 "standard": "Brazīlijas ziemas laiks",
                 "daylight": "Brazīlijas vasaras laiks"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Lielbritānijas laiks",
+                "standard": "Griničas laiks",
+                "daylight": "Lielbritānijas vasaras laiks"
               }
             },
             "Brunei": {
@@ -1920,6 +1930,13 @@
                 "standard": "Griničas laiks"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grenlandes laiks",
+                "standard": "Grenlandes ziemas laiks",
+                "daylight": "Grenlandes vasaras laiks"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Austrumgrenlandes laiks",
@@ -1946,7 +1963,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Havaju–Aleutu ziemas laiks"
+                "standard": "Havaju laiks"
               }
             },
             "Hawaii_Aleutian": {
@@ -2007,6 +2024,13 @@
                 "daylight": "Irānas vasaras laiks"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Īrijas laiks",
+                "standard": "Griničas laiks",
+                "daylight": "Īrijas ziemas laiks"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Irkutskas laiks",
@@ -2030,9 +2054,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Petropavlovskas-Kamčatskas laiks",
-                "standard": "Petropavlovskas-Kamčatskas ziemas laiks",
-                "daylight": "Petropavlovskas-Kamčatskas vasaras laiks"
+                "generic": "Kamčatkas laiks",
+                "standard": "Kamčatkas ziemas laiks",
+                "daylight": "Kamčatkas vasaras laiks"
               }
             },
             "Kazakhstan": {
@@ -2306,9 +2330,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa laiks",
-                "standard": "Samoa ziemas laiks",
-                "daylight": "Samoa vasaras laiks"
+                "standard": "Samoa ziemas laiks"
               }
             },
             "Seychelles": {
@@ -2399,6 +2421,11 @@
                 "generic": "Urugvajas laiks",
                 "standard": "Urugvajas ziemas laiks",
                 "daylight": "Urugvajas vasaras laiks"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Urumči laiks"
               }
             },
             "Uzbekistan": {

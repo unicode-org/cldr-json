@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH.mm;-HH.mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}-tid",
           "regionFormat-type-daylight": "{0}-sommertid",
           "regionFormat-type-standard": "{0}-normaltid",
@@ -93,21 +95,9 @@
                 "_type": "zone",
                 "exemplarCity": "København"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Britisk sommertid"
-                }
-              },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Athen"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Irsk normaltid"
-                }
               },
               "Rome": {
                 "_type": "zone",
@@ -259,7 +249,7 @@
             "Antarctica": {
               "Syowa": {
                 "_type": "zone",
-                "exemplarCity": "Showa"
+                "exemplarCity": "Syowa"
               },
               "DumontDUrville": {
                 "_type": "zone",
@@ -563,13 +553,6 @@
                 "daylight": "Alaska-sommertid"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Almaty-tid",
-                "standard": "Almaty-normaltid",
-                "daylight": "Almaty-sommertid"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Amazonas-tid",
@@ -614,23 +597,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "Apia-tid",
-                "standard": "Apia-normaltid",
-                "daylight": "Apia-sommertid"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Aqtau-tid",
-                "standard": "Aqtau-normaltid",
-                "daylight": "Aqtau-sommertid"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Aqtobe-tid",
-                "standard": "Aqtobe-normaltid",
-                "daylight": "Aqtobe-sommertid"
+                "generic": "Vest-Samoa-tid",
+                "standard": "Vest-Samoa-normaltid",
+                "daylight": "Vest-Samoa-sommertid"
               }
             },
             "Arabian": {
@@ -732,6 +701,13 @@
                 "generic": "Brasiliansk tid",
                 "standard": "Brasiliansk normaltid",
                 "daylight": "Brasiliansk sommertid"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Britisk tid",
+                "standard": "GMT",
+                "daylight": "Britisk sommertid"
               }
             },
             "Brunei": {
@@ -922,6 +898,13 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grønlandsk tid",
+                "standard": "Grønlandsk normaltid",
+                "daylight": "Grønlandsk sommertid"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Østgrønlandsk tid",
@@ -936,11 +919,6 @@
                 "daylight": "Vestgrønlandsk sommertid"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Guam-normaltid"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Golflandene-normaltid"
@@ -953,7 +931,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaii-Aleutian-normaltid"
+                "standard": "Hawaii-tid"
               }
             },
             "Hawaii_Aleutian": {
@@ -1014,6 +992,13 @@
                 "daylight": "Iransk sommertid"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Irsk tid",
+                "standard": "GMT",
+                "daylight": "Irsk normaltid"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Irkutsk-tid",
@@ -1037,9 +1022,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Petropavlovsk-Kamchatski tid",
-                "standard": "Petropavlovsk-Kamchatski normaltid",
-                "daylight": "Petropavlovsk-Kamchatski sommertid"
+                "generic": "Kamchatski-tid",
+                "standard": "Kamchatski-normaltid",
+                "daylight": "Kamchatski-sommertid"
               }
             },
             "Kazakhstan": {
@@ -1081,11 +1066,6 @@
                 "standard": "Kirgisisk tid"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Langa tid"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Linjeøerne-tid"
@@ -1096,13 +1076,6 @@
                 "generic": "Lord Howe-tid",
                 "standard": "Lord Howe-normaltid",
                 "daylight": "Lord Howe-sommertid"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Macao-tid",
-                "standard": "Macao-normaltid",
-                "daylight": "Macao-sommertid"
               }
             },
             "Magadan": {
@@ -1220,11 +1193,6 @@
                 "daylight": "Fernando de Noronha-sommertid"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Nordmarianerne-tid"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Novosibirsk-tid",
@@ -1304,13 +1272,6 @@
                 "standard": "Pyongyang-tid"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Qyzylorda-tid",
-                "standard": "Qyzylorda-normaltid",
-                "daylight": "Qyzylorda-sommertid"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Reunion-tid"
@@ -1337,9 +1298,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoansk tid",
-                "standard": "Samoansk normaltid",
-                "daylight": "Samoansk sommertid"
+                "standard": "Samoansk normaltid"
               }
             },
             "Seychelles": {
@@ -1430,6 +1389,11 @@
                 "generic": "Uruguayansk tid",
                 "standard": "Uruguayansk normaltid",
                 "daylight": "Uruguayansk sommertid"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ürümqi-tid"
               }
             },
             "Uzbekistan": {

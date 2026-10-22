@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} Wā",
           "regionFormat-type-daylight": "{0} Wā Awatea",
           "regionFormat-type-standard": "{0} Wā Arowhānui",
@@ -81,9 +83,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Wā Piritana Raumati"
-                },
                 "exemplarCity": "Rānana"
               },
               "Athens": {
@@ -96,9 +95,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Wā Airihi Arowhānui"
-                },
                 "exemplarCity": "Tapurini"
               },
               "Isle_of_Man": {
@@ -740,6 +736,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Wā Acre",
+                "standard": "Wā Arowhānui Acre",
+                "daylight": "Wā Raumati Acre"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Wā Awhekenetāna"
@@ -762,7 +765,7 @@
             },
             "Africa_Western": {
               "long": {
-                "standard": "Wā o Āwherika ki te uru"
+                "standard": "Wā Āwherika ki te Uru"
               }
             },
             "Alaska": {
@@ -915,6 +918,13 @@
                 "daylight": "Wā Parīhia Raumati"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Wā Piritana",
+                "standard": "Wā Toharite Kiriwīti",
+                "daylight": "Wā Raumati Piritana"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Wā Poronai Darussalam"
@@ -1013,28 +1023,28 @@
             },
             "Europe_Central": {
               "long": {
-                "generic": "Wā Uropi Waenga",
-                "standard": "Wā Arowhānui Uropi Waenga",
-                "daylight": "Wā Raumati Uropi Waenga"
+                "generic": "Wā Ūropi Waenga",
+                "standard": "Wā Arowhānui Ūropi Waenga",
+                "daylight": "Wā Raumati Ūropi Waenga"
               }
             },
             "Europe_Eastern": {
               "long": {
-                "generic": "Wā Uropi Rāwhiti",
-                "standard": "Wā Arowhānui Uropi Rāwhiti",
-                "daylight": "Wā Raumati Uropi Rāwhiti"
+                "generic": "Wā Ūropi ki te Rāwhiti",
+                "standard": "Wā Arowhānui Ūropi ki te Rāwhiti",
+                "daylight": "Wā Raumati Ūropi ki te Rāwhiti"
               }
             },
             "Europe_Further_Eastern": {
               "long": {
-                "standard": "Wā Ūropi ki te rāwhiti rawa"
+                "standard": "Wā Ūropi ki te Rāwhiti-atu"
               }
             },
             "Europe_Western": {
               "long": {
-                "generic": "Wā Uropi Uru",
-                "standard": "Wā Arowhānui Uropi Uru",
-                "daylight": "Wā Raumati Uropi Uru"
+                "generic": "Wā Ūropi ki te Uru",
+                "standard": "Wā Arowhānui Ūropi ki te Uru",
+                "daylight": "Wā Raumati Ūropi ki te Uru"
               }
             },
             "Falkland": {
@@ -1088,6 +1098,13 @@
                 "standard": "Wā Toharite Kiriwīti"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Wā Kārikirana",
+                "standard": "Wā Arowhānui Kārikirana",
+                "daylight": "Wā Rāumati Kārikirana"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Wā Whenuakāriki ki te rāwhiti",
@@ -1114,7 +1131,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Wā Arowhānui Hawaii-Aleutian"
+                "standard": "Wā Hawaii"
               }
             },
             "Hawaii_Aleutian": {
@@ -1175,6 +1192,13 @@
                 "daylight": "Wā Irāna Awatea"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Wā Airana",
+                "standard": "Wā Toharite Kiriwīti",
+                "daylight": "Wā Arowhānui Airana"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Wā Irkutsk",
@@ -1194,6 +1218,13 @@
                 "generic": "Wā Hapani",
                 "standard": "Wā Hapani Arowhānui",
                 "daylight": "Wā Hapani Awatea"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Wā Kamchatka",
+                "standard": "Wā Kamchatka Arowhānui",
+                "daylight": "Wā Kamchatka Raumati"
               }
             },
             "Kazakhstan": {
@@ -1458,11 +1489,16 @@
                 "daylight": "Wā Sakhalin Raumati"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Wā Samara",
+                "standard": "Wā Samara Arowhānui",
+                "daylight": "Wā Samara Raumati"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Wā Hāmoa",
-                "standard": "Wā Hāmoa Arowhānui",
-                "daylight": "Wā Hāmoa Awatea"
+                "standard": "Wā Hāmoa Arowhānui"
               }
             },
             "Seychelles": {
@@ -1529,6 +1565,13 @@
                 "standard": "Wā Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Wā Tākei",
+                "standard": "Wā Arowhānui Tākei",
+                "daylight": "Wā Raumati Tākei"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Wā Tukumanatānga",
@@ -1546,6 +1589,11 @@
                 "generic": "Wā Urukoi",
                 "standard": "Wā Urukoi Arowhānui",
                 "daylight": "Wā Urukoi Raumati"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Wā Ürümqi"
               }
             },
             "Uzbekistan": {

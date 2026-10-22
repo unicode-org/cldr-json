@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} Be",
           "regionFormat-type-daylight": "{0} Be Yɛ Latsa Beiaŋ",
           "regionFormat-type-standard": "{0} Be Yɛ Fɛi Beiaŋ",
@@ -18,6 +20,9 @@
             "Etc": {
               "UTC": {
                 "_type": "zone",
+                "long": {
+                  "standard": "Be Ni Maji Ni Yɔɔ Jeŋ Fɛɛ Kɛtsuɔ Nii"
+                },
                 "short": {
                   "standard": "UTC"
                 }
@@ -337,9 +342,35 @@
             }
           },
           "metazone": {
+            "British": {
+              "long": {
+                "generic": "Britin Be tsɔɔmɔ",
+                "standard": "Greenwich Be Tsɔɔmɔ",
+                "daylight": "Be Ni Britainbii Kɛtsuɔ Nii Yɛ Latsa Beiaŋ"
+              }
+            },
             "GMT": {
               "long": {
-                "standard": "Betsɔɔmɔ ni ka ŋɛlɛ kome nɔ"
+                "standard": "Greenwich Be Tsɔɔmɔ"
+              }
+            },
+            "Hawaii": {
+              "long": {
+                "standard": "Hawaii Be Yɛ Fɛi Beiaŋ"
+              }
+            },
+            "Hawaii_Aleutian": {
+              "long": {
+                "generic": "Hawaii-Aleutia Be",
+                "standard": "Hawaii-Aleutia Be Yɛ Fɛi Beiaŋ",
+                "daylight": "Hawaii-Aleutia Be Yɛ Latsa Beiaŋ"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Ireland Be tsɔɔmɔ",
+                "standard": "Greenwich Be Tsɔɔmɔ",
+                "daylight": "Be Ni Irelandbii Kɛtsuɔ Nii"
               }
             }
           }

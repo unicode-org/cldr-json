@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+H:mm;-H:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "okathi wa {0}",
           "regionFormat-type-daylight": "okathi wa othana wa {0}",
           "regionFormat-type-standard": "okathi oolikana wa {0}",
@@ -337,7 +339,17 @@
             }
           },
           "metazone": {
+            "British": {
+              "long": {
+                "standard": "okathi oolikana wa Greenwich"
+              }
+            },
             "GMT": {
+              "long": {
+                "standard": "okathi oolikana wa Greenwich"
+              }
+            },
+            "Irish": {
               "long": {
                 "standard": "okathi oolikana wa Greenwich"
               }

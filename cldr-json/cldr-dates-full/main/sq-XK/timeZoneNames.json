@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Ora: {0}",
           "regionFormat-type-daylight": "Ora verore: {0}",
           "regionFormat-type-standard": "Ora standarde: {0}",
@@ -180,9 +182,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ora verore britanike"
-                },
                 "exemplarCity": "Londër"
               },
               "Guernsey": {
@@ -196,12 +195,6 @@
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Athinë"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Ora strandarde e Irlandës"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -793,7 +786,7 @@
               },
               "Urumqi": {
                 "_type": "zone",
-                "exemplarCity": "Ürümqi"
+                "exemplarCity": "Urumqi"
               },
               "Shanghai": {
                 "_type": "zone",
@@ -905,7 +898,7 @@
               },
               "Hovd": {
                 "_type": "zone",
-                "exemplarCity": "Khovd"
+                "exemplarCity": "Kovd"
               },
               "Ulaanbaatar": {
                 "_type": "zone",
@@ -1317,13 +1310,6 @@
                 "daylight": "Ora verore e Alaskës"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Ora e Almatit",
-                "standard": "Ora standarde e Almatit",
-                "daylight": "Ora verore e Almatit"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Ora e Amazonës",
@@ -1368,23 +1354,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "Ora e Apias",
-                "standard": "Ora standarde e Apias",
-                "daylight": "Ora verore e Apias"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Ora e Aktaut",
-                "standard": "Ora standarde e Aktaut",
-                "daylight": "Ora verore e Aktaut"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Ora e Aktobit",
-                "standard": "Ora standarde e Aktobit",
-                "daylight": "Ora verore e Aktobit"
+                "generic": "Ora e Samoas Perëndimore",
+                "standard": "Ora standarde e Samoas Perëndimore",
+                "daylight": "Ora verore e Samoas Perëndimore"
               }
             },
             "Arabian": {
@@ -1486,6 +1458,13 @@
                 "generic": "Ora e Brazilisë",
                 "standard": "Ora standarde e Brazilisë",
                 "daylight": "Ora verore e Brazilisë"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Ora e Britanisë",
+                "standard": "Ora e Grinuiçit",
+                "daylight": "Ora verore e Britanisë"
               }
             },
             "Brunei": {
@@ -1666,23 +1645,25 @@
                 "standard": "Ora e Grinuiçit"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Ora e Groenlandës",
+                "standard": "Ora standarde e Groenlandës",
+                "daylight": "Ora verore e Groenlandës"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
-                "generic": "Ora e Grenlandës Lindore",
-                "standard": "Ora standarde e Grenlandës Lindore",
-                "daylight": "Ora verore e Grenlandës Lindore"
+                "generic": "Ora e Groenlandës Lindore",
+                "standard": "Ora standarde e Groenlandës Lindore",
+                "daylight": "Ora verore e Groenlandës Lindore"
               }
             },
             "Greenland_Western": {
               "long": {
-                "generic": "Ora e Grënlandës Perëndimore",
-                "standard": "Ora standarde e Grënlandës Perëndimore",
-                "daylight": "Ora verore e Grënlandës Perëndimore"
-              }
-            },
-            "Guam": {
-              "long": {
-                "standard": "Ora e Guamit"
+                "generic": "Ora e Groenlandës Perëndimore",
+                "standard": "Ora standarde e Groenlandës Perëndimore",
+                "daylight": "Ora verore e Groenlandës Perëndimore"
               }
             },
             "Gulf": {
@@ -1703,7 +1684,7 @@
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "Ora e Ishujve Hauai-Aleutian",
-                "standard": "Ora standarde e Ishujve Hauai-Aleutian",
+                "standard": "Ora standarde e Hauai-Aleutian",
                 "daylight": "Ora verore e Ishujve Hauai-Aleutian"
               }
             },
@@ -1756,6 +1737,13 @@
                 "generic": "Ora e Iranit",
                 "standard": "Ora standarde e Iranit",
                 "daylight": "Ora verore e Iranit"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Ora e Irlandës",
+                "standard": "Ora e Grinuiçit",
+                "daylight": "Ora strandarde e Irlandës"
               }
             },
             "Irkutsk": {
@@ -1825,11 +1813,6 @@
                 "standard": "Ora e Kirgizisë"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Ora e Lankasë"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Ora e Ishujve Sporadikë Ekuatorialë"
@@ -1840,13 +1823,6 @@
                 "generic": "Ora e Lord-Houit",
                 "standard": "Ora standarde e Lord-Houit",
                 "daylight": "Ora verore e Lord-Houit"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Ora e Makaos",
-                "standard": "Ora standarde e Makaos",
-                "daylight": "Ora verore e Makaos"
               }
             },
             "Magadan": {
@@ -1964,11 +1940,6 @@
                 "daylight": "Ora verore e Fernando-de-Noronjës"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Ora e Ishujve të Marianës së Veriut"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Ora e Novosibirskut",
@@ -2048,13 +2019,6 @@
                 "standard": "Ora e Penianit"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Ora e Kizilordit",
-                "standard": "Ora standarde e Kizilordit",
-                "daylight": "Ora verore e Kizilordit"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Ora e Reunionit"
@@ -2081,9 +2045,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Ora e Samoas",
-                "standard": "Ora standarde e Samoas",
-                "daylight": "Ora verore e Samoas"
+                "standard": "Ora standarde e Samoas"
               }
             },
             "Seychelles": {
@@ -2150,6 +2112,13 @@
                 "standard": "Ora e Çukut"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Ora e Turqisë",
+                "standard": "Ora standarde e Turqisë",
+                "daylight": "Ora verore e Turqisë"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Ora e Turkmenistanit",
@@ -2167,6 +2136,11 @@
                 "generic": "Ora e Uruguait",
                 "standard": "Ora standarde e Uruguait",
                 "daylight": "Ora verore e Uruguait"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ora e Urumqisë"
               }
             },
             "Uzbekistan": {

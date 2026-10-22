@@ -25,23 +25,58 @@
           "collation": "järjestus",
           "colNormalization": "normaliseeritud järjestus",
           "colNumeric": "numbrite järjestus",
+          "colReorder": "skriptide/plokkide ümberjärjestamine",
           "colStrength": "järjestuskaalud",
           "currency": "vääring",
-          "em": "Emoji esitlus",
+          "d0": "sihtkoha teisendamine",
+          "dx": "sõnastiku katkestuste välistamised",
+          "em": "emodži esitus",
+          "fw": "nädala esimene päev",
+          "h0": "kombineeritud",
           "hc": "12 või 24 tunni süsteem",
+          "i0": "sisestusmeetod",
+          "k0": "klaviatuur",
+          "kv": "kõrgeim ignoreeritav",
           "lb": "reavahetuse laad",
           "lw": "reavahetus sõnade vahel",
+          "m0": "reeglite muundamine",
           "ms": "mõõdustik",
+          "mu": "mõõtühik",
           "numbers": "numbrid",
+          "rg": "lisaandmete piirkond",
+          "s0": "teisenduse allikas",
+          "sd": "piirkonna haldusüksus",
           "ss": "lause poolitamine pärast lühendit",
+          "t": "teisendus",
+          "t0": "masintõlgitud",
           "timezone": "ajavöönd",
           "va": "lokaadi variant",
-          "x": "erakasutus"
+          "x": "erakasutus",
+          "x0": "privaatse kasutuse teisendus"
         },
         "types": {
           "calendar": {
             "buddhist": "budistlik kalender",
-            "core": "Hiina Vabariigi",
+            "_core": {
+              "buddhist": "budistlik",
+              "chinese": "Hiina",
+              "coptic": "kopti",
+              "dangi": "dangi",
+              "ethiopic": "Etioopia",
+              "ethiopic-amete-alem": "Etioopia amete alemi",
+              "gregorian": "Gregoriuse",
+              "hebrew": "juudi",
+              "indian": "india rahvuslik",
+              "islamic": "hidžra",
+              "islamic-civil": "hidžra (tabelkalender, ilmalik)",
+              "islamic-rgsa": "hidžra, Saudi Araabia vaatlus",
+              "islamic-tbla": "hidžra (tabulaarne, astronoomiline ajajärk)",
+              "islamic-umalqura": "hidžra (Umm al-Qurá)",
+              "iso8601": "Gregoriuse",
+              "japanese": "Jaapani",
+              "persian": "Pärsia",
+              "roc": "Hiina Vabariigi"
+            },
             "chinese": "Hiina kalender",
             "coptic": "kopti kalender",
             "dangi": "dangi kalender",
@@ -55,14 +90,17 @@
             "islamic-rgsa": "hidžra kalender (Saudi Araabia, vaatluspõhine)",
             "islamic-tbla": "hidžra kalender (tabelkalender, astronoomiline ajastu)",
             "islamic-umalqura": "hidžra kalender (Umm al-Qurá)",
-            "iso8601": "ISO-8601 kalender",
+            "iso8601": "Gregoriuse kalender (ISO-8601)",
             "japanese": "Jaapani kalender",
             "persian": "Pärsia kalender",
             "roc": "Hiina Vabariigi kalender"
           },
           "cf": {
             "account": "arvelduse rahavorming",
-            "core": "standardne",
+            "_core": {
+              "account": "arveldus",
+              "standard": "standardne"
+            },
             "standard": "standardne rahavorming"
           },
           "colAlternate": {
@@ -75,6 +113,11 @@
           },
           "colCaseFirst": {
             "lower": "väiketäht järjestuses eespool",
+            "_core": {
+              "lower": "väiketäht",
+              "no": "väiketäht",
+              "upper": "suurtäht"
+            },
             "no": "harilik järjestus",
             "upper": "suurtäht järjestuses eespool"
           },
@@ -84,9 +127,25 @@
           },
           "collation": {
             "compat": "varasem sortimisjärjestus (ühilduvuse jaoks)",
+            "_core": {
+              "compat": "ühilduvus",
+              "dictionary": "sõnastik",
+              "ducet": "vaike-Unicode",
+              "emoji": "emotikon",
+              "eor": "Euroopa reeglid",
+              "phonebook": "telefoniraamat",
+              "phonetic": "foneetiline",
+              "pinyin": "pinyin",
+              "search": "otsing",
+              "searchjl": "Korea esikonsonant",
+              "standard": "standardne",
+              "stroke": "joonetõmme",
+              "traditional": "traditsiooniline",
+              "unihan": "radikaalne joonetõmme",
+              "zhuyin": "zhuyin"
+            },
             "dictionary": "sõnastiku sortimisjärjestus",
             "ducet": "Unicode’i vaikejärjestus",
-            "core": "standardne",
             "emoji": "emoji sortimisjärjestus",
             "eor": "Euroopa järjestusreeglid",
             "phonebook": "telefoniraamatu sortimisjärjestus",
@@ -108,8 +167,24 @@
             "no": "järjesta numbrid eraldi",
             "yes": "järjesta numbrid arvuliselt"
           },
+          "colReorder": {
+            "_core": {
+              "currency": "valuuta",
+              "digit": "numbrid",
+              "punct": "kirjavahemärgid",
+              "space": "tühimärgid",
+              "symbol": "sümbol"
+            }
+          },
           "colStrength": {
             "identical": "järjesta kõik",
+            "_core": {
+              "identical": "kõik",
+              "primary": "ainult põhitähed",
+              "quaternary": "põhitähed, diakriitilised, suurtähestus, variandid, kana",
+              "secondary": "põhitähed, diakriitilised",
+              "tertiary": "põhitähed, diakriitilised, suurtähestus, variandid"
+            },
             "primary": "järjesta ainult alustähed",
             "quaternary": "järjesta diakriitikud, algustähed, laius ja kana kiri",
             "secondary": "järjesta diakriitikud",
@@ -121,23 +196,53 @@
             "npinyin": "Numbriline"
           },
           "em": {
-            "core": "tekst"
+            "_core": {
+              "default": "vaikeväärtus",
+              "emoji": "emodži",
+              "text": "tekst"
+            }
           },
           "hc": {
+            "c12": "12-tunnine süsteem",
+            "_core": {
+              "c12": "12",
+              "c24": "24",
+              "h11": "12 (0–11)",
+              "h12": "12 (1–12)",
+              "h23": "24 (0–23)",
+              "h24": "24 (1–24)"
+            },
+            "c24": "24-tunnine süsteem",
             "h11": "12-tunnine süsteem (0–11)",
-            "core": "24 (1–24)",
             "h12": "12-tunnine süsteem (1–12)",
             "h23": "24-tunnine süsteem (0–23)",
             "h24": "24-tunnine süsteem (1–24)"
           },
+          "kv": {
+            "_core": {
+              "currency": "tühikute nihutamine, kirjavahemärgid, kõik sümbolid",
+              "punct": "tühikute nihutamine, kirjavahemärgid",
+              "space": "tühikute nihutamine, kirjavahemärgid",
+              "symbol": "tühikute nihutamine, kirjavahemärgid, valuutaga mitteseotud sümbolid"
+            }
+          },
           "lb": {
             "loose": "paindlik reavahetuse laad",
-            "core": "jäik",
+            "_core": {
+              "loose": "paindlik",
+              "normal": "harilik",
+              "strict": "jäik"
+            },
             "normal": "harilik reavahetuse laad",
             "strict": "jäik reavahetuse laad"
           },
           "lw": {
-            "core": "jäta fraasid"
+            "_core": {
+              "breakall": "vaheta kõik",
+              "keepall": "jäta kõik",
+              "normal": "harilik",
+              "phrase": "jäta fraasid"
+            }
           },
           "m0": {
             "bgn": "transkriptsioon (BGN)",
@@ -145,7 +250,11 @@
           },
           "ms": {
             "metric": "meetermõõdustik",
-            "core": "USA",
+            "_core": {
+              "metric": "meetriline",
+              "uksystem": "ÜK",
+              "ussystem": "USA"
+            },
             "uksystem": "inglise mõõdustik",
             "ussystem": "USA mõõdustik"
           },
@@ -153,6 +262,36 @@
             "ahom": "ahomi numbrid",
             "arab": "idaaraabia numbrid",
             "arabext": "laiendatud idaaraabia numbrid",
+            "_core": {
+              "arabext": "laiendatud idaaraabia",
+              "armnlow": "armeenia väiketähelised",
+              "finance": "finantsidega seotud",
+              "fullwide": "täislaiuses",
+              "greklow": "kreeka väiketähelised",
+              "hanidays": "traditsiooniliste kalendrite han-märkidega kuupäevasüsteem",
+              "hanidec": "hiina arvumärkidega positsiooniline kümnendsüsteem",
+              "hansfin": "lihtsustatud hiina keele finantsidega seotud",
+              "hantfin": "traditsioonilise hiina keele finantsidega seotud",
+              "jpanfin": "jaapani finants",
+              "jpanyear": "jaapani ajastute algusaasta numbrisüsteem",
+              "lanatham": "tai-thami thami (sakraalkiri)",
+              "mathbold": "matemaatiline paks kiri",
+              "mathdbl": "matemaatiline topeltkiri",
+              "mathmono": "matemaatiline monospace",
+              "mathsanb": "matemaatiline paks sans-serif",
+              "mathsans": "matemaatiline sans-serif",
+              "mymrepka": "birma idapvoo",
+              "mymrpao": "birma paoo",
+              "mymrshan": "birma šani",
+              "mymrtlng": "birma tailaing",
+              "native": "kohalikud numbrid",
+              "outlined": "kontuuriga",
+              "roman": "Rooma suurtähed",
+              "romanlow": "Rooma väiketähed",
+              "segment": "segmenditud",
+              "tamldec": "moodne tamili",
+              "traditional": "traditsioonilised numbrid"
+            },
             "armn": "armeenia numbrid",
             "armnlow": "väiketähelised armeenia numbrid",
             "bali": "bali numbrid",
@@ -203,7 +342,9 @@
             "mroo": "mruu numbrid",
             "mtei": "meitei numbrid",
             "mymr": "birma numbrid",
-            "mymrshan": "myanmari shan numbrid",
+            "mymrepka": "birma idapvoo numbrid",
+            "mymrpao": "birma paoo numbrid",
+            "mymrshan": "birma šani numbrid",
             "mymrtlng": "myanmari tai laing numbrid",
             "nagm": "Nagi mundari numbrid",
             "native": "kohalikud numbrid",
@@ -238,7 +379,18 @@
             "wcho": "vantšo numbrid"
           },
           "ss": {
-            "core": "sisse lülitatud"
+            "_core": {
+              "none": "välja lülitatud",
+              "standard": "sisse lülitatud"
+            }
+          },
+          "t0": {
+            "und": "määramatu masintõlgitud"
+          },
+          "va": {
+            "_core": {
+              "posix": "POSIX-i variant"
+            }
           }
         },
         "codePatterns": {

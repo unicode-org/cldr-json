@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}時間",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -256,9 +258,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "英國夏令時間"
-                },
                 "exemplarCity": "倫敦"
               },
               "Guernsey": {
@@ -283,9 +282,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "愛爾蘭標準時間"
-                },
                 "exemplarCity": "都柏林"
               },
               "Isle_of_Man": {
@@ -1776,18 +1772,6 @@
                 "generic": "阿拉斯加時間",
                 "standard": "阿拉斯加標準時間",
                 "daylight": "阿拉斯加夏令時間"
-              },
-              "short": {
-                "generic": "AKT",
-                "standard": "AKST",
-                "daylight": "AKDT"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "阿拉木圖時間",
-                "standard": "阿拉木圖標準時間",
-                "daylight": "阿拉木圖夏令時間"
               }
             },
             "Amazon": {
@@ -1802,11 +1786,6 @@
                 "generic": "中部時間",
                 "standard": "中部標準時間",
                 "daylight": "中部夏令時間"
-              },
-              "short": {
-                "generic": "CT",
-                "standard": "CST",
-                "daylight": "CDT"
               }
             },
             "America_Eastern": {
@@ -1814,11 +1793,6 @@
                 "generic": "東部時間",
                 "standard": "東部標準時間",
                 "daylight": "東部夏令時間"
-              },
-              "short": {
-                "generic": "ET",
-                "standard": "EST",
-                "daylight": "EDT"
               }
             },
             "America_Mountain": {
@@ -1826,11 +1800,6 @@
                 "generic": "山區時間",
                 "standard": "山區標準時間",
                 "daylight": "山區夏令時間"
-              },
-              "short": {
-                "generic": "MT",
-                "standard": "MST",
-                "daylight": "MDT"
               }
             },
             "America_Pacific": {
@@ -1838,11 +1807,6 @@
                 "generic": "太平洋時間",
                 "standard": "太平洋標準時間",
                 "daylight": "太平洋夏令時間"
-              },
-              "short": {
-                "generic": "PT",
-                "standard": "PST",
-                "daylight": "PDT"
               }
             },
             "Anadyr": {
@@ -1857,20 +1821,6 @@
                 "generic": "阿皮亞時間",
                 "standard": "阿皮亞標準時間",
                 "daylight": "阿皮亞夏令時間"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "阿克陶時間",
-                "standard": "阿克陶標準時間",
-                "daylight": "阿克陶夏令時間"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "阿克托比時間",
-                "standard": "阿克托比標準時間",
-                "daylight": "阿克托比夏令時間"
               }
             },
             "Arabian": {
@@ -1906,11 +1856,6 @@
                 "generic": "大西洋時間",
                 "standard": "大西洋標準時間",
                 "daylight": "大西洋夏令時間"
-              },
-              "short": {
-                "generic": "AT",
-                "standard": "AST",
-                "daylight": "ADT"
               }
             },
             "Australia_Central": {
@@ -1977,6 +1922,13 @@
                 "generic": "巴西利亞時間",
                 "standard": "巴西利亞標準時間",
                 "daylight": "巴西利亞夏令時間"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "英國時間",
+                "standard": "格林威治標準時間",
+                "daylight": "英國夏令時間"
               }
             },
             "Brunei": {
@@ -2160,6 +2112,13 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "格陵蘭時間",
+                "standard": "格陵蘭標準時間",
+                "daylight": "格陵蘭夏令時間"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "格陵蘭東部時間",
@@ -2174,11 +2133,6 @@
                 "daylight": "格陵蘭西部夏令時間"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "關島標準時間"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "波斯灣海域標準時間"
@@ -2191,10 +2145,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "夏威夷-阿留申標準時間"
-              },
-              "short": {
-                "standard": "HAST"
+                "standard": "夏威夷時間"
               }
             },
             "Hawaii_Aleutian": {
@@ -2202,11 +2153,6 @@
                 "generic": "夏威夷-阿留申時間",
                 "standard": "夏威夷-阿留申標準時間",
                 "daylight": "夏威夷-阿留申夏令時間"
-              },
-              "short": {
-                "generic": "HAT",
-                "standard": "HAST",
-                "daylight": "HADT"
               }
             },
             "Hong_Kong": {
@@ -2258,6 +2204,13 @@
                 "generic": "伊朗時間",
                 "standard": "伊朗標準時間",
                 "daylight": "伊朗夏令時間"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "愛爾蘭時間",
+                "standard": "格林威治標準時間",
+                "daylight": "愛爾蘭標準時間"
               }
             },
             "Irkutsk": {
@@ -2327,11 +2280,6 @@
                 "standard": "吉爾吉斯時間"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "蘭卡時間"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "萊恩群島時間"
@@ -2342,13 +2290,6 @@
                 "generic": "豪勳爵島時間",
                 "standard": "豪勳爵島標準時間",
                 "daylight": "豪勳爵島夏令時間"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "澳門時間",
-                "standard": "澳門標準時間",
-                "daylight": "澳門夏令時間"
               }
             },
             "Magadan": {
@@ -2466,11 +2407,6 @@
                 "daylight": "費爾南多 - 迪諾羅尼亞夏令時間"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "北馬里亞納群島時間"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "新西伯利亞時間",
@@ -2550,13 +2486,6 @@
                 "standard": "平壤時間"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "克孜勒奧爾達時間",
-                "standard": "克孜勒奧爾達標準時間",
-                "daylight": "克孜勒奧爾達夏令時間"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "留尼旺時間"
@@ -2583,9 +2512,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "薩摩亞時間",
-                "standard": "薩摩亞標準時間",
-                "daylight": "薩摩亞夏令時間"
+                "standard": "薩摩亞標準時間"
               }
             },
             "Seychelles": {
@@ -2676,6 +2603,11 @@
                 "generic": "烏拉圭時間",
                 "standard": "烏拉圭標準時間",
                 "daylight": "烏拉圭夏令時間"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "烏魯木齊時間"
               }
             },
             "Uzbekistan": {

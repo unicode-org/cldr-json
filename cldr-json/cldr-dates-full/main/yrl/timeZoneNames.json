@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Hurariyu {0}",
           "regionFormat-type-daylight": "Kurasí Ara Hurariyu: {0}",
           "regionFormat-type-standard": "Hurariyu Retewa: {0}",
@@ -227,9 +229,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Hurariyu Kurasí Ara Biritãniku"
-                },
                 "exemplarCity": "Londres"
               },
               "Guernsey": {
@@ -254,9 +253,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Hurariyu Retewa Irãdei"
-                },
                 "exemplarCity": "Dubirĩ"
               },
               "Isle_of_Man": {
@@ -1682,13 +1678,6 @@
                 "daylight": "Alasika Kurasí Ara Hurariyu"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Aumati Hurariyu",
-                "standard": "Aumati Hurariyu Eté",
-                "daylight": "Aumati Kurasí Ara Hurariyu"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "Amasuna Hurariyu",
@@ -1741,20 +1730,6 @@
                 "generic": "Apiya Hurariyu",
                 "standard": "Apiya Uraruiyu Retewa",
                 "daylight": "Apiya Kurasí Ara Hurariyu"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Akitau Hurariyu",
-                "standard": "Akitau Hurariyu Retewa",
-                "daylight": "Akitau Kurasí Ara Hurariyu"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Akitubi Hurariyu",
-                "standard": "Akitubi Hurariyu Retewa",
-                "daylight": "Akitubi Kurasí Ara Hurariyu"
               }
             },
             "Arabian": {
@@ -1861,6 +1836,12 @@
                 "generic": "BRT",
                 "standard": "BRT",
                 "daylight": "BRST"
+              }
+            },
+            "British": {
+              "long": {
+                "standard": "Greenwich Miridiyanu yara Hurariyu",
+                "daylight": "Hurariyu Kurasí Ara Biritãniku"
               }
             },
             "Brunei": {
@@ -2050,11 +2031,6 @@
                 "daylight": "Guruẽrãdiya Usidẽtawara Kurasí Ara Hurariyu"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Guwã Hurariyu Retewa"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Golfo Hurariyu"
@@ -2128,6 +2104,12 @@
                 "daylight": "Irã Kurasí Ara Hurariyu"
               }
             },
+            "Irish": {
+              "long": {
+                "standard": "Greenwich Miridiyanu yara Hurariyu",
+                "daylight": "Hurariyu Retewa Irãdei"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Irkutisiki Hurariyu",
@@ -2190,11 +2172,6 @@
                 "standard": "Kirigiretãma Hurariyu"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Rãka Hurariyu"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Kapuã-ita Inĩbu Hurariyu"
@@ -2205,13 +2182,6 @@
                 "generic": "Lurudi Howe Hurariyu",
                 "standard": "Lurudi Howe Hurariyu Retewa",
                 "daylight": "Lurudi Howe Kurasí Ara Hurariyu"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Makau Hurariyu",
-                "standard": "Makau Hurariyu Retewa",
-                "daylight": "Makau Kurasí Ara Hurariyu"
               }
             },
             "Magadan": {
@@ -2329,11 +2299,6 @@
                 "daylight": "Fenãdu Nuruyã Kurasí Ara Hurariyu"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Kapuã-ita Mariyãna Nuti suí Hurariyu"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Sibirisiki Pisasú Hurariyu",
@@ -2413,13 +2378,6 @@
                 "standard": "Piúgiãgi Hurariyu"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Kisiroda Hurariyu",
-                "standard": "Kisiroda Hurariyu Retewa",
-                "daylight": "Kisiroda Kurasí Ara Hurariyu"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Yumuatirisawa Hurariyu"
@@ -2446,9 +2404,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samowa Hurariyu",
-                "standard": "Samowa Hurariyu Retewa",
-                "daylight": "Samowa Kurasí Ara Hurariyu"
+                "standard": "Samowa Hurariyu Retewa"
               }
             },
             "Seychelles": {

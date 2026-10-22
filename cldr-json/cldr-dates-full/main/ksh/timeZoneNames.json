@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Zick vun {0}",
           "regionFormat-type-daylight": "Summerzick vun {0}",
           "regionFormat-type-standard": "Schtandattzick vun {0}",
@@ -94,12 +96,6 @@
                 "_type": "zone",
                 "exemplarCity": "Kopenharen"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Jrußbretannije sing Summerzick"
-                }
-              },
               "Guernsey": {
                 "_type": "zone",
                 "exemplarCity": "Jöönsei"
@@ -115,12 +111,6 @@
               "Zagreb": {
                 "_type": "zone",
                 "exemplarCity": "Sagreb"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Irland sing Summerzick"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -616,6 +606,13 @@
                 "daylight": "de Azore ier Summerzick"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Jrußbretannije sing Zick",
+                "standard": "Greenwich sing Standat-Zick",
+                "daylight": "Jrußbretannije sing Summerzick"
+              }
+            },
             "Cape_Verde": {
               "long": {
                 "generic": "Kapvärdejaansche Zigg",
@@ -667,6 +664,13 @@
             "Indian_Ocean": {
               "long": {
                 "standard": "dem Indische Ozejan sing Zick"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Irland sing Zick",
+                "standard": "Greenwich sing Standat-Zick",
+                "daylight": "Irland sing Summerzick"
               }
             },
             "Mauritius": {
