@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Isikhathi sase-{0}",
           "regionFormat-type-daylight": "{0} Isikhathi sasemini",
           "regionFormat-type-standard": "{0} isikhathi esivamile",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "isikhathi sase-British sasehlobo"
-                },
                 "exemplarCity": "i-London"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "isikhathi sase-Irish esivamile"
-                },
                 "exemplarCity": "i-Dublin"
               },
               "Isle_of_Man": {
@@ -1083,7 +1079,7 @@
               },
               "St_Lucia": {
                 "_type": "zone",
-                "exemplarCity": "I-St. Lucia"
+                "exemplarCity": "St. Lucia"
               },
               "Marigot": {
                 "_type": "zone",
@@ -1726,6 +1722,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Acre Time",
+                "standard": "Acre Standard Time",
+                "daylight": "Acre Summer Time"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Isikhathi sase-Afghanistan"
@@ -1908,6 +1911,13 @@
                 "daylight": "Isikhathi sase-Brasilia sasehlobo"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Isikhathi sase-British",
+                "standard": "Isikhathi sase-Greenwich Mean",
+                "daylight": "Isikhathi sase-British sasehlobo"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Isikhathi sase-Brunei Darussalam"
@@ -2081,6 +2091,13 @@
                 "standard": "Isikhathi sase-Greenwich Mean"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Isikhathi saseGreenland",
+                "standard": "Greenland Standard Time",
+                "daylight": "Greenland Summer Time"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Isikhathi sase-East Greenland",
@@ -2107,13 +2124,13 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Isikhathi sase-Hawaii-Aleutia esijwayelekile"
+                "standard": "Isikhathi saseHawaii"
               }
             },
             "Hawaii_Aleutian": {
               "long": {
                 "generic": "Isikhathi sase-Hawaii-Aleutia",
-                "standard": "Isikhathi sase-Hawaii-Aleutia esijwayelekile",
+                "standard": "Isikhathi saseHawaii-Aleutia Esijwayelekile",
                 "daylight": "Isikhathi sase-Hawaii-Aleutia sasemini"
               }
             },
@@ -2168,6 +2185,13 @@
                 "daylight": "Isikhathi sase-Iran sasemini"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Isikhathi sase-Irish",
+                "standard": "Isikhathi sase-Greenwich Mean",
+                "daylight": "Isikhathi sase-Irish esivamile"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Isikhathi sase-Irkutsk",
@@ -2191,9 +2215,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "esase-Petropavlovsk-Kamchatski Time",
-                "standard": "esase-Petropavlovsk-Kamchatski Standard Time",
-                "daylight": "esase-Petropavlovsk-Kamchatski Summer Time"
+                "generic": "Esase-Petropavlovsk-Kamchatski Time",
+                "standard": "Esase-Petropavlovsk-Kamchatski Standard Time",
+                "daylight": "Esase-Petropavlovsk-Kamchatski Summer Time"
               }
             },
             "Kazakhstan": {
@@ -2462,14 +2486,12 @@
               "long": {
                 "generic": "esase-Samara Time",
                 "standard": "esase-Samara Standard Time",
-                "daylight": "esase-Samara Summer Time"
+                "daylight": "Isikhathi Sasehlobo eSamara"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "Isikhathi sase-Samoa",
-                "standard": "Isikhathi sase-Samoa esivamile",
-                "daylight": "Isikhathi sase-Samoa sasemini"
+                "standard": "Isikhathi sase-Samoa esivamile"
               }
             },
             "Seychelles": {
@@ -2536,6 +2558,13 @@
                 "standard": "Isikhathi sase-Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Türkiye Time",
+                "standard": "Türkiye Standard Time",
+                "daylight": "Türkiye Summer Time"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Isikhathi sase-Turkmenistan",
@@ -2553,6 +2582,11 @@
                 "generic": "Isikhathi sase-Uruguay",
                 "standard": "Isikhathi sase-Uruguay esijwayelekile",
                 "daylight": "Isikhathi sase-Uruguay sasehlobo"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ürümqi Time"
               }
             },
             "Uzbekistan": {

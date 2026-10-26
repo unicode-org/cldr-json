@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "ग्री॰ मै॰ टै॰{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} टैम",
           "regionFormat-type-daylight": "{0} ध्याड़े दे उजाले दा टैम",
           "regionFormat-type-standard": "{0} मानक टैम",
@@ -101,9 +103,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ब्रिटिश दी तोंदिया दा टैम"
-                },
                 "exemplarCity": "लंदन"
               },
               "Guernsey": {
@@ -128,9 +127,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "आइरिश दा मानक टैम"
-                },
                 "exemplarCity": "डबलिन"
               },
               "Isle_of_Man": {
@@ -1905,6 +1901,12 @@
                 "daylight": "ब्राज़ीलिया दी तोंदिया दा टैम"
               }
             },
+            "British": {
+              "long": {
+                "standard": "ग्रीनविच मीन टैम",
+                "daylight": "ब्रिटिश दी तोंदिया दा टैम"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "ब्रूनेई दारूस्सलम दा टैम"
@@ -2163,6 +2165,12 @@
                 "generic": "ईरान दा टैम",
                 "standard": "ईरान दा मानक टैम",
                 "daylight": "ईरान दे ध्याड़े दे उजाले दा टैम"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "ग्रीनविच मीन टैम",
+                "daylight": "आइरिश दा मानक टैम"
               }
             },
             "Irkutsk": {
@@ -2445,9 +2453,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "समोआ दा टैम",
-                "standard": "समोआ दा मानक टैम",
-                "daylight": "समोआ दे ध्याड़े दे उजाले दा टैम"
+                "standard": "समोआ दा मानक टैम"
               }
             },
             "Seychelles": {

@@ -335,6 +335,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "/",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -361,6 +365,9 @@
                 "GyMMM": "Gy年M月",
                 "GyMMMd": "Gy年M月d日",
                 "GyMMMEd": "Gy年M月d日 E",
+                "GyMMMM": "Gy年M月",
+                "GyMMMMd": "Gy年M月d日",
+                "GyMMMMEd": "Gy年M月d日 (E)",
                 "h": "ah时",
                 "H": "H点",
                 "hm": "ah:mm",
@@ -381,6 +388,7 @@
                 "MMMd": "M月d日",
                 "MMMEd": "M月d日 E",
                 "MMMMd": "M月d日",
+                "MMMMEd": "MMMMd (E)",
                 "MMMMW-count-other": "M月第W个星期",
                 "ms": "mm:ss",
                 "y": "y年",
@@ -392,24 +400,33 @@
                 "yMMMd": "y年M月d日",
                 "yMMMEd": "y年M月d日 E",
                 "yMMMM": "y年M月",
+                "yMMMMd": "y年M月d日",
+                "yMMMMEd": "y年M月d日 (E)",
                 "yQQQ": "y年QQQ",
                 "yQQQQ": "y年QQQQ",
                 "yw-count-other": "Y年第w个星期"
               },
               "appendItems": {
+                "Date-Timezone": "{0} ({1})",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{0} ({1})",
+                "Era": "{1}{0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1}{0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0}至{1}",
                 "Bh": {
                   "B": "Bh时至Bh时",
@@ -517,6 +534,10 @@
                 },
                 "MMMM": {
                   "M": "LLLL至LLLL"
+                },
+                "MMMMd": {
+                  "d": "MMMMd–d日",
+                  "M": "M月d日至M月d日"
                 },
                 "y": {
                   "y": "y至y"

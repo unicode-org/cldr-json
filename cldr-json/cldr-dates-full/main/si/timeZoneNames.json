@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH.mm;-HH.mm",
           "gmtFormat": "ග්‍රිමවේ{0}",
-          "gmtZeroFormat": "ග්‍රිමවේ",
+          "gmtFormat-alt-utc": "සවිවේ{0}",
           "gmtUnknownFormat": "ග්‍රිමවේ+?",
+          "gmtUnknownFormat-alt-utc": "සවිවේ+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} වේලාව",
           "regionFormat-type-daylight": "{0} දිවාආලෝක වේලාව",
           "regionFormat-type-standard": "{0} සම්මත වේලාව",
@@ -176,7 +178,7 @@
                   "standard": "සමකක්ෂ සාර්ව වේලාව"
                 },
                 "short": {
-                  "standard": "UTC"
+                  "standard": "සවිවේ"
                 }
               },
               "Unknown": {
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "බ්‍රිතාන්‍ය ගිම්හාන වේලාව"
-                },
                 "exemplarCity": "ලන්ඩන්"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "අයර්ලන්ත සම්මත වේලාව"
-                },
                 "exemplarCity": "ඩබ්ලින්"
               },
               "Isle_of_Man": {
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "ඒකර් වේලාව",
+                "standard": "ඒකර් සම්මත වේලාව",
+                "daylight": "ඒකර් ගිම්හාන වේලාව"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "ඇෆ්ගනිස්ථාන වේලාව"
@@ -1913,6 +1916,13 @@
                 "daylight": "බ්‍රසීල ග්‍රීෂ්ම කාලය"
               }
             },
+            "British": {
+              "long": {
+                "generic": "බ්‍රිතාන්‍ය වේලාව",
+                "standard": "ග්‍රිනිච් මධ්‍යම වේලාව",
+                "daylight": "බ්‍රිතාන්‍ය ගිම්හාන වේලාව"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "බෘනායි දරුස්සලාම් වේලාව"
@@ -2086,6 +2096,13 @@
                 "standard": "ග්‍රිනිච් මධ්‍යම වේලාව"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "ග්‍රීන්ලන්ත වේලාව",
+                "standard": "ග්‍රීන්ලන්ත සම්මත වේලාව",
+                "daylight": "ග්‍රීන්ලන්ත ගිම්හාන වේලාව"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "නැගෙනහිර ග්‍රීන්ලන්ත වේලාව",
@@ -2112,7 +2129,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "හවායි-අලෙයුතියාන් සම්මත වේලාව"
+                "standard": "හවායි වේලාව"
               }
             },
             "Hawaii_Aleutian": {
@@ -2173,6 +2190,13 @@
                 "daylight": "ඉරාන දිවා කාලය"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "අයර්ලන්ත වේලාව",
+                "standard": "ග්‍රිනිච් මධ්‍යම වේලාව",
+                "daylight": "අයර්ලන්ත සම්මත වේලාව"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ඉර්කුට්ස්ක් වේලාව",
@@ -2192,6 +2216,13 @@
                 "generic": "ජපාන වේලාව",
                 "standard": "ජපාන සම්මත වේලාව",
                 "daylight": "ජපාන දහවල් වේලාව"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "කම්චැට්කා වේලාව",
+                "standard": "කම්චැට්කා සම්මත වේලාව",
+                "daylight": "කම්චැට්කා ගිම්හාන වේලාව"
               }
             },
             "Kazakhstan": {
@@ -2231,11 +2262,6 @@
             "Kyrgystan": {
               "long": {
                 "standard": "කිර්ගිස්තාන වේලාව"
-              }
-            },
-            "Lanka": {
-              "long": {
-                "standard": "ශ්‍රී ලංකා වේලාව"
               }
             },
             "Line_Islands": {
@@ -2461,11 +2487,16 @@
                 "daylight": "සඛලින් ග්‍රීෂ්ම වේලාව"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "සමාරා වේලාව",
+                "standard": "සමාරා සම්මත වේලාව",
+                "daylight": "සමාරා ගිම්හාන වේලාව"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "සැමෝවා වේලාව",
-                "standard": "සැමෝවා සම්මත වේලාව",
-                "daylight": "සැමෝවා ග්‍රීෂ්ම වේලාව"
+                "standard": "සැමෝවා සම්මත වේලාව"
               }
             },
             "Seychelles": {
@@ -2532,6 +2563,13 @@
                 "standard": "චුක් වේලාව"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "තුර්කියේ වේලාව",
+                "standard": "තුර්කියේ සම්මත වේලාව",
+                "daylight": "තුර්කියේ ගිම්හාන වේලාව"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "ටර්ක්මෙනිස්තාන වේලාව",
@@ -2549,6 +2587,11 @@
                 "generic": "උරුගුවේ වේලාව",
                 "standard": "උරුගුවේ සම්මත වේලාව",
                 "daylight": "උරුගුවේ ග්‍රීෂ්ම කාලය"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "උරුම්කි වේලාව"
               }
             },
             "Uzbekistan": {

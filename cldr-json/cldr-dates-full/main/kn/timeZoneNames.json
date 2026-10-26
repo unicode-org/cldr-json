@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} ಸಮಯ",
           "regionFormat-type-daylight": "{0} ದಿನದ ಸಮಯ",
           "regionFormat-type-standard": "{0} ಪ್ರಮಾಣಿತ ಸಮಯ",
@@ -223,7 +225,7 @@
               },
               "Prague": {
                 "_type": "zone",
-                "exemplarCity": "ಪ್ರಾಗ್ವೆ"
+                "exemplarCity": "ಪ್ರಾಗ್"
               },
               "Busingen": {
                 "_type": "zone",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ಬ್ರಿಟಿಷ್ ಬೇಸಿಗೆ ಸಮಯ"
-                },
                 "exemplarCity": "ಲಂಡನ್"
               },
               "Guernsey": {
@@ -282,10 +281,7 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ಐರಿಷ್ ಪ್ರಮಾಣಿತ ಸಮಯ"
-                },
-                "exemplarCity": "ಡುಬ್ಲಿನ್"
+                "exemplarCity": "ಡಬ್ಲಿನ್"
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -1777,13 +1773,6 @@
                 "daylight": "‌ಅಲಾಸ್ಕಾ ಹಗಲು ಸಮಯ"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "ಆಲ್ಮೇಟಿ ಸಮಯ",
-                "standard": "ಆಲ್ಮೇಟಿ ಪ್ರಮಾಣಿತ ಸಮಯ",
-                "daylight": "ಆಲ್ಮೇಟಿ ಬೇಸಿಗೆ ಸಮಯ"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "ಅಮೆಜಾನ್ ಸಮಯ",
@@ -1831,20 +1820,6 @@
                 "generic": "ಅಪಿಯಾ ಸಮಯ",
                 "standard": "ಅಪಿಯಾ ಪ್ರಮಾಣಿತ ಸಮಯ",
                 "daylight": "ಅಪಿಯಾ ಹಗಲು ಸಮಯ"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "ಅಕ್ಟೌ ಸಮಯ",
-                "standard": "ಅಕ್ಟೌ ಪ್ರಮಾಣಿತ ಸಮಯ",
-                "daylight": "ಅಕ್ಟೌ ಬೇಸಿಗೆ ಸಮಯ"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "ಅಕ್ಟೋಬೆ ಸಮಯ",
-                "standard": "ಅಕ್ಟೋಬೆ ಪ್ರಮಾಣಿತ ಸಮಯ",
-                "daylight": "ಅಕ್ಟೋಬೆ ಬೇಸಿಗೆ ಸಮಯ"
               }
             },
             "Arabian": {
@@ -1946,6 +1921,13 @@
                 "generic": "ಬ್ರೆಸಿಲಿಯಾದ ಸಮಯ",
                 "standard": "ಬ್ರೆಸಿಲಿಯಾ ಪ್ರಮಾಣಿತ ಸಮಯ",
                 "daylight": "ಬ್ರೆಸಿಲಿಯಾ ಬೇಸಿಗೆ ಸಮಯ"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "ಬ್ರಿಟಿಷ್ ಸಮಯ",
+                "standard": "ಗ್ರೀನ್‌ವಿಚ್ ಸರಾಸರಿ ಕಾಲಮಾನ",
+                "daylight": "ಬ್ರಿಟಿಷ್ ಬೇಸಿಗೆ ಸಮಯ"
               }
             },
             "Brunei": {
@@ -2121,6 +2103,13 @@
                 "standard": "ಗ್ರೀನ್‌ವಿಚ್ ಸರಾಸರಿ ಕಾಲಮಾನ"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "ಗ್ರೀನ್‌ಲ್ಯಾಂಡ್ ಸಮಯ",
+                "standard": "ಗ್ರೀನ್‌ಲ್ಯಾಂಡ್ ಪ್ರಮಾಣಿತ ಸಮಯ",
+                "daylight": "ಗ್ರೀನ್‌ಲ್ಯಾಂಡ್ ಬೇಸಿಗೆ ಸಮಯ"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "ಪೂರ್ವ ಗ್ರೀನ್‌ಲ್ಯಾಂಡ್ ಸಮಯ",
@@ -2135,11 +2124,6 @@
                 "daylight": "ಪಶ್ಚಿಮ ಗ್ರೀನ್‌ಲ್ಯಾಂಡ್ ಬೇಸಿಗೆ ಸಮಯ"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "ಗುವಾಮ್ ಪ್ರಮಾಣಿತ ಸಮಯ"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "ಗಲ್ಫ್ ಪ್ರಮಾಣಿತ ಸಮಯ"
@@ -2152,7 +2136,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "ಹವಾಯಿ-ಅಲ್ಯುಟಿಯನ್ ಪ್ರಮಾಣಿತ ಸಮಯ"
+                "standard": "ಹವಾಯಿ ಸಮಯ"
               }
             },
             "Hawaii_Aleutian": {
@@ -2216,6 +2200,13 @@
                 "daylight": "ಇರಾನ್ ಹಗಲು ಸಮಯ"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "ಐರಿಷ್ ಸಮಯ",
+                "standard": "ಗ್ರೀನ್‌ವಿಚ್ ಸರಾಸರಿ ಕಾಲಮಾನ",
+                "daylight": "ಐರಿಷ್ ಪ್ರಮಾಣಿತ ಸಮಯ"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ಇರ್‌ಕುಟಸ್ಕ್ ಸಮಯ",
@@ -2239,9 +2230,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "ಪೆತ್ರೋಪಾವ್ಲೋಸ್ಕ್‌‌-ಕಮ್ಚತ್ಸ್‌ಕೀ ಸಮಯ",
-                "standard": "ಪೆತ್ರೋಪಾವ್ಲೋಸ್ಕ್‌‌-ಕಮ್ಚತ್ಸ್‌ಕೀ ಪ್ರಮಾಣಿತ ಸಮಯ",
-                "daylight": "ಪೆತ್ರೋಪಾವ್ಲೋಸ್ಕ್‌‌-ಕಮ್ಚತ್ಸ್‌ಕೀ ಬೇಸಿಗೆ ಸಮಯ"
+                "generic": "ಕಾಮ್‌ಚಾಟ್ಕಾ ಸಮಯ",
+                "standard": "ಕಾಮ್‌ಚಾಟ್ಕಾ ಪ್ರಮಾಣಿತ ಸಮಯ",
+                "daylight": "ಕಾಮ್‌ಚಾಟ್ಕಾ ಬೇಸಿಗೆ ಸಮಯ"
               }
             },
             "Kazakhstan": {
@@ -2283,11 +2274,6 @@
                 "standard": "ಕಿರ್ಗಿಸ್ತಾನ್ ಸಮಯ"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "ಲಂಕಾ ಸಮಯ"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "ಲೈನ್ ದ್ವೀಪಗಳ ಸಮಯ"
@@ -2298,13 +2284,6 @@
                 "generic": "ಲಾರ್ಡ್ ಹೋವ್ ಸಮಯ",
                 "standard": "ಲಾರ್ಡ್ ಹೋವ್ ಪ್ರಮಾಣಿತ ಸಮಯ",
                 "daylight": "ಲಾರ್ಡ್ ಹೋವ್ ಬೆಳಗಿನ ಸಮಯ"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "ಮಕಾವ್ ಸಮಯ",
-                "standard": "ಮಕಾವ್ ಪ್ರಮಾಣಿತ ಸಮಯ",
-                "daylight": "ಮಕಾವ್ ಬೇಸಿಗೆ ಸಮಯ"
               }
             },
             "Magadan": {
@@ -2422,11 +2401,6 @@
                 "daylight": "ಫರ್ನಾಂಡೋ ದೆ ನೊರೊನ್ಹಾ ಬೇಸಿಗೆ ಸಮಯ"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "ಉತ್ತರ ಮರಿಯಾನಾ ದ್ವೀಪಗಳ ಸಮಯ"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "ನೊವೊಸಿಬಿರ್‌ಸ್ಕ್ ಸಮಯ",
@@ -2506,13 +2480,6 @@
                 "standard": "ಪ್ಯೊಂಗ್ಯಾಂಗ್ ಸಮಯ"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "ಕೋಜಿಲೋರ್ಡಾ ಸಮಯ",
-                "standard": "ಕೋಜಿಲೋರ್ಡಾ ಪ್ರಮಾಣಿತ ಸಮಯ",
-                "daylight": "ಕೋಜಿಲೋರ್ಡಾ ಬೇಸಿಗೆ ಸಮಯ"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "ರಿಯೂನಿಯನ್ ಸಮಯ"
@@ -2532,16 +2499,14 @@
             },
             "Samara": {
               "long": {
-                "generic": "ಸಮರ ಸಮಯ",
-                "standard": "ಸಮರ ಪ್ರಮಾಣಿತ ಸಮಯ",
-                "daylight": "ಸಮರ ಬೇಸಿಗೆ ಸಮಯ"
+                "generic": "ಸಮಾರ ಸಮಯ",
+                "standard": "ಸಮಾರ ಪ್ರಮಾಣಿತ ಸಮಯ",
+                "daylight": "ಸಮಾರ ಬೇಸಿಗೆ ಸಮಯ"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "ಸಮೋವಾ ಸಮಯ",
-                "standard": "ಸಮೋವಾ ಪ್ರಮಾಣಿತ ಸಮಯ",
-                "daylight": "ಸಮೋವಾ ಬೇಸಿಗೆ ಸಮಯ"
+                "standard": "ಸಮೋವಾ ಪ್ರಮಾಣಿತ ಸಮಯ"
               }
             },
             "Seychelles": {
@@ -2608,6 +2573,13 @@
                 "standard": "ಚುಕ್ ಸಮಯ"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "ತುರ್ಕಿಯೇ ಸಮಯ",
+                "standard": "ತುರ್ಕಿಯೇ ಪ್ರಮಾಣಿತ ಸಮಯ",
+                "daylight": "ತುರ್ಕಿಯೇ ಬೇಸಿಗೆ ಸಮಯ"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "ತುರ್ಕ್‌ಮೇನಿಸ್ತಾನ್ ಸಮಯ",
@@ -2625,6 +2597,11 @@
                 "generic": "ಉರುಗ್ವೇ ಸಮಯ",
                 "standard": "ಉರುಗ್ವೇ ಪ್ರಮಾಣಿತ ಸಮಯ",
                 "daylight": "ಉರುಗ್ವೇ ಬೇಸಿಗೆ ಸಮಯ"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ಉರುಮ್‌ಕಿ ಸಮಯ"
               }
             },
             "Uzbekistan": {

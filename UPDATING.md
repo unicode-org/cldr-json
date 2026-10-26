@@ -34,6 +34,16 @@ Make sure your `cldr-json` directory is otherwise clean (`git status`)
 - If a `cldr-json/supplemental` or `cldr-json/other` or other such subdirectory shows up not prefixed with `cldr-`, there's probably something wrong with the `cldr-json` mapping.
   - Sadly, there is no documentation about how to update the tooling. TODO: [CLDR-16445](https://unicode-org.atlassian.net/browse/CLDR-16445)
 
+### Validating
+
+- As of CLDR-13978, you can run from the CLDR_DIR:
+
+     org.unicode.cldr.json.VerifyJson -d ../cldr-json  -m fr
+
+This (with a restriction, only the locale `fr`) will generate reports in ../cldr-json/missing/ of any values which are in the XML but aren't copied over to JSON.
+
+This is a new process. There will be some false positives.
+
 ### Updating the Repository
 
 1. Run `git checkout -b ...` to create a new branch.  Typical practice is to create a new branch for a major version, such as `v44`, and only merge it back to `main` upon release.
@@ -79,16 +89,3 @@ CLDR_DIR=../cldr-maint-43
 # INDATA defaults to ../cldr-staging/production
 INDATA=../cldr-staging-other/production
 ```
-
-## License & Copyright
-
-- Usage of CLDR data and software is governed by the [Unicode Terms of Use](http://www.unicode.org/copyright.html)
-a copy of which is included as [unicode-license.txt](./unicode-license.txt).
-
-SPDX-License-Identifier: Unicode-DFS-2016
-
-## Copyright
-
-Copyright &copy; 1991-2025 Unicode, Inc.
-All rights reserved.
-[Terms of use](http://www.unicode.org/copyright.html)

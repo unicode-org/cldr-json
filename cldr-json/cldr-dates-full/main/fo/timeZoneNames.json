@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} tíð",
           "regionFormat-type-daylight": "{0} summartíð",
           "regionFormat-type-standard": "{0} vanlig tíð",
@@ -57,7 +59,7 @@
               },
               "Unknown": {
                 "_type": "zone",
-                "exemplarCity": "Ókendur býur"
+                "exemplarCity": "Ókent stað"
               }
             },
             "Europe": {
@@ -89,21 +91,9 @@
                 "_type": "zone",
                 "exemplarCity": "Keypmannahavn"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Bretsk summartíð"
-                }
-              },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Aten"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Írsk vanlig tíð"
-                }
               },
               "Rome": {
                 "_type": "zone",
@@ -561,9 +551,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "Apia tíð",
-                "standard": "Apia vanlig tíð",
-                "daylight": "Apia summartíð"
+                "generic": "Sámoa tíð",
+                "standard": "Sámoa vanlig tíð",
+                "daylight": "Sámoa summartíð"
               }
             },
             "Arabian": {
@@ -667,9 +657,16 @@
                 "daylight": "Brasilia summartíð"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Bretsk tíð",
+                "standard": "Greenwich Mean tíð",
+                "daylight": "Bretsk summartíð"
+              }
+            },
             "Brunei": {
               "long": {
-                "standard": "Brunei Darussalam tíð"
+                "standard": "Brunei tíð"
               }
             },
             "Cape_Verde": {
@@ -743,7 +740,7 @@
             },
             "DumontDUrville": {
               "long": {
-                "standard": "Dumont-d’Urville tíð"
+                "standard": "Dumont d’Urville tíð"
               }
             },
             "East_Timor": {
@@ -866,7 +863,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaii-Aleutian vanlig tíð"
+                "standard": "Hawaii tíð"
               }
             },
             "Hawaii_Aleutian": {
@@ -885,9 +882,9 @@
             },
             "Hovd": {
               "long": {
-                "generic": "Hovd tíð",
-                "standard": "Hovd vanlig tíð",
-                "daylight": "Hovd summartíð"
+                "generic": "Khovd tíð",
+                "standard": "Khovd vanlig tíð",
+                "daylight": "Khovd summartíð"
               }
             },
             "India": {
@@ -925,6 +922,13 @@
                 "generic": "Iran tíð",
                 "standard": "Iran vanlig tíð",
                 "daylight": "Iran summartíð"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Írsk tíð",
+                "standard": "Greenwich Mean tíð",
+                "daylight": "Írsk vanlig tíð"
               }
             },
             "Irkutsk": {
@@ -1185,12 +1189,12 @@
             },
             "Ponape": {
               "long": {
-                "standard": "Ponape tíð"
+                "standard": "Pohnpei tíð"
               }
             },
             "Pyongyang": {
               "long": {
-                "standard": "Pyongyang tíð"
+                "standard": "Norðurkorea tíð"
               }
             },
             "Reunion": {
@@ -1212,9 +1216,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoa tíð",
-                "standard": "Samoa vanlig tíð",
-                "daylight": "Samoa summartíð"
+                "standard": "Amerikonsk Sámoa vanlig tíð"
               }
             },
             "Seychelles": {
@@ -1254,9 +1256,9 @@
             },
             "Taipei": {
               "long": {
-                "generic": "Taipei tíð",
-                "standard": "Taipei vanlig tíð",
-                "daylight": "Taipei summartíð"
+                "generic": "Taivan tíð",
+                "standard": "Taivan vanlig tíð",
+                "daylight": "Taivan summartíð"
               }
             },
             "Tajikistan": {

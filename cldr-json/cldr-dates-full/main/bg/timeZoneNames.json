@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "Гринуич{0}",
-          "gmtZeroFormat": "Гринуич",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "Гринуич+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "{0} – лятно часово време",
           "regionFormat-type-standard": "{0} – стандартно време",
@@ -255,9 +257,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Британско лятно часово време"
-                },
                 "exemplarCity": "Лондон"
               },
               "Guernsey": {
@@ -282,9 +281,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ирландско стандартно време"
-                },
                 "exemplarCity": "Дъблин"
               },
               "Isle_of_Man": {
@@ -1738,6 +1734,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Акра",
+                "standard": "Акра – стандартно време",
+                "daylight": "Акра – лятно часово време"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Афганистанско време"
@@ -1920,6 +1923,13 @@
                 "daylight": "Бразилско лятно часово време"
               }
             },
+            "British": {
+              "long": {
+                "generic": "Британско време",
+                "standard": "Средно гринуичко време",
+                "daylight": "Британско лятно часово време"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "Бруней Даруссалам"
@@ -2093,6 +2103,13 @@
                 "standard": "Средно гринуичко време"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Гренландско време",
+                "standard": "Гренландско стандартно време",
+                "daylight": "Гренландско лятно време"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Източногренландско време",
@@ -2119,7 +2136,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Хавайско-алеутско стандартно време"
+                "standard": "Хавайско стандартно време"
               }
             },
             "Hawaii_Aleutian": {
@@ -2180,6 +2197,13 @@
                 "daylight": "Иранско лятно часово време"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Ирландско време",
+                "standard": "Средно гринуичко време",
+                "daylight": "Ирландско стандартно време"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Иркутско време",
@@ -2203,9 +2227,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Петропавловск-Камчатски време",
-                "standard": "Петропавловск-Камчатски стандартно време",
-                "daylight": "Петропавловск-Камчатски – лятно часово време"
+                "generic": "Камчатско време",
+                "standard": "Камчатско стандартно време",
+                "daylight": "Камчатско лятно време"
               }
             },
             "Kazakhstan": {
@@ -2472,16 +2496,14 @@
             },
             "Samara": {
               "long": {
-                "generic": "Самара време",
+                "generic": "Самарско време",
                 "standard": "Самара – стандартно време",
                 "daylight": "Самара – лятно часово време"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "Самоанско време",
-                "standard": "Самоанско стандартно време",
-                "daylight": "Самоанско лятно часово време"
+                "standard": "Самоанско стандартно време"
               }
             },
             "Seychelles": {
@@ -2548,6 +2570,13 @@
                 "standard": "Чуюк"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Турско време",
+                "standard": "Турско стандартно време",
+                "daylight": "Турско лятно време"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Туркменистанско време",
@@ -2565,6 +2594,11 @@
                 "generic": "Уругвайско време",
                 "standard": "Уругвайско стандартно време",
                 "daylight": "Уругвайско лятно часово време"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Урумчи"
               }
             },
             "Uzbekistan": {

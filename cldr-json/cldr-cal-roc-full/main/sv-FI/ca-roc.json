@@ -222,8 +222,8 @@
               "format": {
                 "abbreviated": {
                   "midnight": "midnatt",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "på morg.",
                   "morning2": "på förm.",
                   "afternoon1": "på efterm.",
@@ -232,8 +232,8 @@
                 },
                 "narrow": {
                   "midnight": "midn.",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "på morg.",
                   "morning2": "på förm.",
                   "afternoon1": "på efterm.",
@@ -242,8 +242,8 @@
                 },
                 "wide": {
                   "midnight": "midnatt",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "på morgonen",
                   "morning2": "på förmiddagen",
                   "afternoon1": "på eftermiddagen",
@@ -254,8 +254,8 @@
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "midnatt",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "morgon",
                   "morning2": "förm.",
                   "afternoon1": "efterm.",
@@ -264,8 +264,8 @@
                 },
                 "narrow": {
                   "midnight": "midn.",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "morg.",
                   "morning2": "förm.",
                   "afternoon1": "efterm.",
@@ -274,8 +274,8 @@
                 },
                 "wide": {
                   "midnight": "midnatt",
-                  "am": "fm",
-                  "pm": "em",
+                  "am": "fm.",
+                  "pm": "em.",
                   "morning1": "morgon",
                   "morning2": "förmiddag",
                   "afternoon1": "eftermiddag",
@@ -327,6 +327,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": ".",
+                "numericTimeSeparator": "."
+              },
               "full": "{1} {0}",
               "long": "{1} {0}",
               "medium": "{1} {0}",
@@ -386,19 +390,26 @@
                 "yyyyQQQQ": "QQQQ y G"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1} {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1} {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0}–{1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -504,6 +515,10 @@
                   "d": "E d – E d MMM",
                   "M": "E d MMM – E d MMM"
                 },
+                "MMMMd": {
+                  "d": "d–d MMMM",
+                  "M": "d MMMM–d MMMM"
+                },
                 "y": {
                   "y": "y–y G"
                 },
@@ -537,7 +552,7 @@
                 },
                 "yMMMM": {
                   "M": "MMMM–MMMM y G",
-                  "y": "MMMM y – MMMM y G"
+                  "y": "MMMM y–MMMM y G"
                 }
               }
             },

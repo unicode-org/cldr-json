@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} সময়",
           "regionFormat-type-daylight": "{0} (+1) ডেলাইট সময়",
           "regionFormat-type-standard": "{0} (+0) মান সময়",
@@ -101,9 +103,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ব্ৰিটিছ গ্ৰীষ্মকালীন সময়"
-                },
                 "exemplarCity": "লণ্ডন"
               },
               "Guernsey": {
@@ -128,9 +127,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "আইৰিচ মান সময়"
-                },
                 "exemplarCity": "ডাবলিন"
               },
               "Isle_of_Man": {
@@ -1734,6 +1730,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "এক্ৰেৰ সময়",
+                "standard": "এক্ৰেৰ মানক সময়",
+                "daylight": "এক্ৰেৰ গ্ৰীষ্মকালীন সময়"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "আফগানিস্তানৰ সময়"
@@ -1803,9 +1806,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "আপিয়াৰ সময়",
+                "generic": "পশ্চিম চামোয়াৰ সময়",
                 "standard": "আপিয়াৰ মান সময়",
-                "daylight": "আপিয়াৰ ডেলাইট সময়"
+                "daylight": "পশ্চিম চামোয়াৰ ডেলাইট সময়"
               }
             },
             "Arabian": {
@@ -1907,6 +1910,13 @@
                 "generic": "ব্ৰাজিলিয়াৰ সময়",
                 "standard": "ব্ৰাজিলিয়াৰ মান সময়",
                 "daylight": "ব্ৰাজিলিয়াৰ গ্ৰীষ্মকালীন সময়"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "ব্ৰিটিছ সময়",
+                "standard": "গ্ৰীণউইচ মান সময়",
+                "daylight": "ব্ৰিটিছ গ্ৰীষ্মকালীন সময়"
               }
             },
             "Brunei": {
@@ -2082,6 +2092,13 @@
                 "standard": "গ্ৰীণউইচ মান সময়"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "গ্ৰীণলেণ্ডৰ সময়",
+                "standard": "গ্ৰীণলেণ্ডৰ মানক সময়",
+                "daylight": "গ্ৰীণলেণ্ডৰ গ্ৰীষ্মকালীন সময়"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "পূব গ্ৰীণলেণ্ডৰ সময়",
@@ -2108,7 +2125,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "হাৱাই-এলিউশ্বনৰ মান সময়"
+                "standard": "হাৱাই-এলিউশ্বনৰ মানক সময়"
               }
             },
             "Hawaii_Aleutian": {
@@ -2172,6 +2189,13 @@
                 "daylight": "ইৰানৰ ডেলাইট সময়"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "আইৰিচ সময়",
+                "standard": "গ্ৰীণউইচ মান সময়",
+                "daylight": "আইৰিচ মান সময়"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ইৰ্কুটস্কৰ সময়",
@@ -2191,6 +2215,13 @@
                 "generic": "জাপানৰ সময়",
                 "standard": "জাপানৰ মান সময়",
                 "daylight": "জাপানৰ ডেলাইট সময়"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "কামচাটকাৰ সময়",
+                "standard": "কামচাটকাৰ মানক সময়",
+                "daylight": "কামচাটকাৰ গ্ৰীষ্মকালীন সময়"
               }
             },
             "Kazakhstan": {
@@ -2455,11 +2486,16 @@
                 "daylight": "ছাখালিনৰ গ্ৰীষ্মকালীন সময়"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "ছামাৰাৰ সময়",
+                "standard": "ছামাৰাৰ মানক সময়",
+                "daylight": "ছামাৰাৰ গ্ৰীষ্মকালীন সময়"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "ছামোৱাৰ সময়",
-                "standard": "ছামোৱাৰ মান সময়",
-                "daylight": "ছামোৱাৰ ডেলাইট সময়"
+                "standard": "ছামোৱাৰ মান সময়"
               }
             },
             "Seychelles": {
@@ -2526,6 +2562,13 @@
                 "standard": "চ্চুকৰ সময়"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "তুৰ্কীয়েৰ সময়",
+                "standard": "তুৰ্কীয়েৰ মানক সময়",
+                "daylight": "তুৰ্কীয়েৰ গ্ৰীষ্মকালীন সময়"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "তুৰ্কমেনিস্তানৰ সময়",
@@ -2543,6 +2586,11 @@
                 "generic": "উৰুগুৱেৰ সময়",
                 "standard": "উৰুগুৱেৰ মান সময়",
                 "daylight": "উৰুগুৱেৰ গ্ৰীষ্মকালীন সময়"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "উৰুমচিৰ সময়"
               }
             },
             "Uzbekistan": {

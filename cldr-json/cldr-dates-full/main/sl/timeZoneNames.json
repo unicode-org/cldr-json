@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH.mm;-HH.mm",
           "gmtFormat": "GMT {0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC {0}",
           "gmtUnknownFormat": "GMT +?",
+          "gmtUnknownFormat-alt-utc": "UTC +?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} (lokalni čas)",
           "regionFormat-type-daylight": "{0} (poletni čas)",
           "regionFormat-type-standard": "{0} (standardni čas)",
@@ -113,12 +115,6 @@
                 "_type": "zone",
                 "exemplarCity": "Pariz"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Britanski poletni čas"
-                }
-              },
               "Athens": {
                 "_type": "zone",
                 "exemplarCity": "Atene"
@@ -126,12 +122,6 @@
               "Budapest": {
                 "_type": "zone",
                 "exemplarCity": "Budimpešta"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Irski standardni čas"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -764,6 +754,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Acrejski čas",
+                "standard": "Acrejski standardni čas",
+                "daylight": "Acrejski poletni čas"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Afganistanski čas"
@@ -840,9 +837,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "Čas: Apia",
-                "standard": "Standardni čas: Apia",
-                "daylight": "Poletni čas: Apia"
+                "generic": "Zahodnosamojski čas",
+                "standard": "Zahodnosamojski standardni čas",
+                "daylight": "Zahodnosamojski poletni čas"
               }
             },
             "Arabian": {
@@ -944,6 +941,13 @@
                 "generic": "Brasilski čas",
                 "standard": "Brasilski standardni čas",
                 "daylight": "Brasilski poletni čas"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Britanski čas",
+                "standard": "Greenwiški srednji čas",
+                "daylight": "Britanski poletni čas"
               }
             },
             "Brunei": {
@@ -1119,6 +1123,13 @@
                 "standard": "Greenwiški srednji čas"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grenlandski čas",
+                "standard": "Grenlandski standardni čas",
+                "daylight": "Grenlandski poletni čas"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Vzhodnogrenlandski čas",
@@ -1145,7 +1156,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Havajski aleutski standardni čas"
+                "standard": "Havajski standardni čas"
               }
             },
             "Hawaii_Aleutian": {
@@ -1206,6 +1217,13 @@
                 "daylight": "Iranski poletni čas"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Irski čas",
+                "standard": "Greenwiški srednji čas",
+                "daylight": "Irski standardni čas"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Irkutski čas",
@@ -1229,9 +1247,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Petropavlovsk-Kamčatski čas",
-                "standard": "Petropavlovsk-Kamčatski standardni čas",
-                "daylight": "Petropavlovsk-Kamčatski poletni čas"
+                "generic": "Kamčatski čas",
+                "standard": "Kamčatski standardni čas",
+                "daylight": "Kamčatski poletni čas"
               }
             },
             "Kazakhstan": {
@@ -1314,9 +1332,9 @@
             },
             "Mauritius": {
               "long": {
-                "generic": "Mauricijski čas",
-                "standard": "Mauricijski standardni čas",
-                "daylight": "Mauricijski poletni čas"
+                "generic": "Mavricijski čas",
+                "standard": "Mavricijski standardni čas",
+                "daylight": "Mavricijski poletni čas"
               }
             },
             "Mawson": {
@@ -1505,9 +1523,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Samoanski čas",
-                "standard": "Samoanski standardni čas",
-                "daylight": "Samoanski poletni čas"
+                "standard": "Samoanski standardni čas"
               }
             },
             "Seychelles": {
@@ -1598,6 +1614,11 @@
                 "generic": "Urugvajski čas",
                 "standard": "Urugvajski standardni čas",
                 "daylight": "Urugvajski poletni čas"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Urumški čas"
               }
             },
             "Uzbekistan": {

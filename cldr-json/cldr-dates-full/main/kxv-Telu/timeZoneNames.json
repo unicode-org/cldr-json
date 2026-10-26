@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} సమయం",
           "regionFormat-type-daylight": "{0} పగటి వెలుతురు సమయం",
           "regionFormat-type-standard": "{0} ప్రామాణిక సమయం",
@@ -102,9 +104,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "బ్రిటీష్ వేసవి సమయం"
-                },
                 "exemplarCity": "లండన్"
               },
               "Guernsey": {
@@ -129,9 +128,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "ఐరిష్ ప్రామాణిక సమయం"
-                },
                 "exemplarCity": "డబ్లిన్"
               },
               "Isle_of_Man": {
@@ -1906,6 +1902,12 @@
                 "daylight": "బ్రెజిలియా వేసవి సమయం"
               }
             },
+            "British": {
+              "long": {
+                "standard": "గ్రీన్‌విచ్ సగటు సమయం",
+                "daylight": "బ్రిటీష్ వేసవి సమయం"
+              }
+            },
             "Brunei": {
               "long": {
                 "standard": "బ్రూనే దరుసలామ్ సమయం"
@@ -2164,6 +2166,12 @@
                 "generic": "ఇరాన్ సమయం",
                 "standard": "ఇరాన్ ప్రామాణిక సమయం",
                 "daylight": "ఇరాన్ పగటి వెలుతురు సమయం"
+              }
+            },
+            "Irish": {
+              "long": {
+                "standard": "గ్రీన్‌విచ్ సగటు సమయం",
+                "daylight": "ఐరిష్ ప్రామాణిక సమయం"
               }
             },
             "Irkutsk": {
@@ -2451,9 +2459,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "సమోవా సమయం",
-                "standard": "సమోవా ప్రామాణిక సమయం",
-                "daylight": "సమోవా పగటి వెలుతురు సమయం"
+                "standard": "సమోవా ప్రామాణిక సమయం"
               }
             },
             "Seychelles": {

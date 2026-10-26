@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Ora din {0}",
           "regionFormat-type-daylight": "Ora de vară din {0}",
           "regionFormat-type-standard": "Ora standard din {0}",
@@ -107,9 +109,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Ora de vară britanică"
-                },
                 "exemplarCity": "Londra"
               },
               "Athens": {
@@ -119,12 +118,6 @@
               "Budapest": {
                 "_type": "zone",
                 "exemplarCity": "Budapesta"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "Ora de vară a Irlandei"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -619,9 +612,9 @@
           "metazone": {
             "Acre": {
               "long": {
-                "generic": "Ora Acre",
-                "standard": "Ora standard Acre",
-                "daylight": "Ora de vară Acre"
+                "generic": "Ora din Acre",
+                "standard": "Ora standard din Acre",
+                "daylight": "Ora de vară din Acre"
               }
             },
             "Afghanistan": {
@@ -654,13 +647,6 @@
                 "generic": "Ora din Alaska",
                 "standard": "Ora standard din Alaska",
                 "daylight": "Ora de vară din Alaska"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "Ora Almaty",
-                "standard": "Ora standard Almaty",
-                "daylight": "Ora de vară Almaty"
               }
             },
             "Amazon": {
@@ -707,23 +693,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "Ora din Samoa",
-                "standard": "Ora standard din Samoa",
-                "daylight": "Ora de vară din Samoa"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Ora Aqtau",
-                "standard": "Ora standard Aqtau",
-                "daylight": "Ora de vară a zonei Aqtau"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Ora Aqtobe",
-                "standard": "Ora standard Aqtobe",
-                "daylight": "Ora de vară a zonei Aqtobe"
+                "generic": "Ora din Samoa de Vest",
+                "standard": "Ora standard din Samoa de Vest",
+                "daylight": "Ora de vară din Samoa de Vest"
               }
             },
             "Arabian": {
@@ -825,6 +797,13 @@
                 "generic": "Ora Brasiliei",
                 "standard": "Ora standard a Brasiliei",
                 "daylight": "Ora de vară a Brasiliei"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Ora Marii Britanii",
+                "standard": "Ora de Greenwich",
+                "daylight": "Ora de vară a Marii Britanii"
               }
             },
             "Brunei": {
@@ -1018,6 +997,13 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Ora Groenlandei",
+                "standard": "Ora standard a Groenlandei",
+                "daylight": "Ora de vară a Groenlandei"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Ora Groenlandei orientale",
@@ -1044,7 +1030,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Ora standard din Hawaii-Aleutine"
+                "standard": "Ora din Hawaii"
               }
             },
             "Hawaii_Aleutian": {
@@ -1105,6 +1091,13 @@
                 "daylight": "Ora de vară a Iranului"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Ora Irlandei",
+                "standard": "Ora de Greenwich",
+                "daylight": "Ora de vară a Irlandei"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Ora din Irkuțk",
@@ -1128,9 +1121,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Ora din Petropavlovsk-Kamciațki",
-                "standard": "Ora standard din Petropavlovsk-Kamciațki",
-                "daylight": "Ora de vară din Petropavlovsk-Kamciațki"
+                "generic": "Ora din Kamceatka",
+                "standard": "Ora standard din Kamceatka",
+                "daylight": "Ora de vară din Kamceatka"
               }
             },
             "Kazakhstan": {
@@ -1404,9 +1397,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Ora din Samoa",
-                "standard": "Ora standard din Samoa",
-                "daylight": "Ora de vară din Samoa"
+                "standard": "Ora din Samoa Americană"
               }
             },
             "Seychelles": {
@@ -1473,6 +1464,13 @@
                 "standard": "Ora din Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Ora Turciei",
+                "standard": "Ora standard a Turciei",
+                "daylight": "Ora de vară a Turciei"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Ora din Turkmenistan",
@@ -1490,6 +1488,11 @@
                 "generic": "Ora Uruguayului",
                 "standard": "Ora standard a Uruguayului",
                 "daylight": "Ora de vară a Uruguayului"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ora din Ürümqi"
               }
             },
             "Uzbekistan": {

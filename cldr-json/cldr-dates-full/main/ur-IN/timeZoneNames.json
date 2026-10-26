@@ -9,8 +9,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} وقت",
           "regionFormat-type-daylight": "{0} دن کا وقت",
           "regionFormat-type-standard": "{0} معیاری وقت",
@@ -256,9 +258,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "برٹش سمر ٹائم"
-                },
                 "exemplarCity": "لندن"
               },
               "Guernsey": {
@@ -283,9 +282,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "آئرش اسٹینڈرڈ ٹائم"
-                },
                 "exemplarCity": "ڈبلن"
               },
               "Isle_of_Man": {
@@ -1739,6 +1735,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "ایکر ٹائم",
+                "standard": "ایکر اسٹینڈرڈ ٹائم",
+                "daylight": "ایکر سمر ٹائم"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "افغانستان ٹائم"
@@ -1761,7 +1764,7 @@
             },
             "Africa_Western": {
               "long": {
-                "standard": "مغربی افریقہ ٹائم"
+                "standard": "مغربی افریقہ کا وقت"
               }
             },
             "Alaska": {
@@ -1919,6 +1922,13 @@
                 "generic": "برازیلیا ٹائم",
                 "standard": "برازیلیا سٹینڈرڈ ٹائم",
                 "daylight": "برازیلیا سمر ٹائم"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "برطانوی وقت",
+                "standard": "گرین وچ مین ٹائم",
+                "daylight": "برٹش سمر ٹائم"
               }
             },
             "Brunei": {
@@ -2094,6 +2104,13 @@
                 "standard": "گرین وچ مین ٹائم"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "گرین لینڈ ٹائم",
+                "standard": "گرین لینڈ اسٹینڈرڈ ٹائم",
+                "daylight": "گرین لینڈ سمر ٹائم"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "مشرقی گرین لینڈ ٹائم",
@@ -2120,7 +2137,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "ہوائی الیوٹیئن اسٹینڈرڈ ٹائم"
+                "standard": "ہوائی کا وقت"
               }
             },
             "Hawaii_Aleutian": {
@@ -2181,6 +2198,13 @@
                 "daylight": "ایران ڈے لائٹ ٹائم"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "آئرش ٹائم",
+                "standard": "گرین وچ مین ٹائم",
+                "daylight": "آئرش اسٹینڈرڈ ٹائم"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "ارکتسک ٹائم",
@@ -2204,9 +2228,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "پیٹروپاؤلووسک-کیمچسکی ٹائم",
-                "standard": "پیٹروپاؤلووسک-کیمچسکی اسٹینڈرڈ ٹائم",
-                "daylight": "پیٹروپاؤلووسک-کیمچسکی سمر ٹائم"
+                "generic": "کمچٹکا کا وقت",
+                "standard": "کمچٹکا کا معیاری وقت",
+                "daylight": "کمچٹکا کا موسم گرما کا وقت"
               }
             },
             "Kazakhstan": {
@@ -2473,16 +2497,14 @@
             },
             "Samara": {
               "long": {
-                "generic": "سمارا ٹائم",
-                "standard": "سمارا اسٹینڈرڈ ٹائم",
-                "daylight": "سمارا سمر ٹائم"
+                "generic": "سمارا کا وقت",
+                "standard": "سمارا کا معیاری وقت",
+                "daylight": "سمارا کا موسم گرما کا وقت"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "ساموآ ٹائم",
-                "standard": "ساموآ سٹینڈرڈ ٹائم",
-                "daylight": "ساموآ ڈے لائٹ ٹائم"
+                "standard": "ساموآ سٹینڈرڈ ٹائم"
               }
             },
             "Seychelles": {
@@ -2549,6 +2571,13 @@
                 "standard": "چوک ٹائم"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "ترکیہ ٹائم",
+                "standard": "ترکیہ اسٹینڈرڈ ٹائم",
+                "daylight": "ترکیہ سمر ٹائم"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "ترکمانستان ٹائم",
@@ -2566,6 +2595,11 @@
                 "generic": "یوروگوئے ٹائم",
                 "standard": "یوروگوئے سٹینڈرڈ ٹائم",
                 "daylight": "یوروگوئے سمر ٹائم"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "اورومکی کا وقت"
               }
             },
             "Uzbekistan": {

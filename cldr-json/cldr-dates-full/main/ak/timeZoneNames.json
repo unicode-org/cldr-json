@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "Berɛ {0}",
           "regionFormat-type-daylight": "Awia ber {0}",
           "regionFormat-type-standard": "Berɛ susudua {0}",
@@ -77,9 +79,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Engresi Awia Berɛ"
-                },
                 "exemplarCity": "Lɔndɔn"
               },
               "Gibraltar": {
@@ -96,9 +95,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Irelandfoɔ Susudua Berɛ"
-                },
                 "exemplarCity": "Dɔblin"
               },
               "Jersey": {
@@ -1044,6 +1040,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Acre Berε",
+                "standard": "Acre Susudua Berε",
+                "daylight": "Acre Ahuhuro Berε"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Afganistan Berɛ"
@@ -1113,9 +1116,9 @@
             },
             "Apia": {
               "long": {
-                "generic": "Apia Berɛ",
-                "standard": "Apia Susudua Berɛ",
-                "daylight": "Apia Awia Berɛ"
+                "generic": "Samoa Atᴐeε Berε",
+                "standard": "Samoa Atᴐeε Susudua Berε",
+                "daylight": "Samoa Atᴐeε Awiaberε"
               }
             },
             "Arabian": {
@@ -1217,6 +1220,13 @@
                 "generic": "Brasilia Berɛ",
                 "standard": "Brasilia Susudua Berɛ",
                 "daylight": "Brasilia Awia Berɛ"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Engresi Berɛ",
+                "standard": "Greenwich Mean Berɛ",
+                "daylight": "Engresi Awia Berɛ"
               }
             },
             "Brunei": {
@@ -1392,6 +1402,13 @@
                 "standard": "Greenwich Mean Berɛ"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Greenland Berε",
+                "standard": "Greenland Susudua Berε",
+                "daylight": "Greenland Ahuhoro Berε"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Greenland Apueeɛ Berɛ",
@@ -1418,7 +1435,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Hawaii-Aleutian Susudua Berɛ"
+                "standard": "Hawaii Susudua Berɛ"
               }
             },
             "Hawaii_Aleutian": {
@@ -1479,6 +1496,13 @@
                 "daylight": "Iran Awia Berɛ"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Irelandfoɔ Berɛ",
+                "standard": "Greenwich Mean Berɛ",
+                "daylight": "Irelandfoɔ Susudua Berɛ"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Yiikusk Berɛ",
@@ -1498,6 +1522,13 @@
                 "generic": "Gyapan Berɛ",
                 "standard": "Gyapan Susudua Berɛ",
                 "daylight": "Gyapan Awia Berɛ"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Kamchaka Berε",
+                "standard": "Kamchatka Susudua Berε",
+                "daylight": "Kamchatka Ahuhuro Berε"
               }
             },
             "Kazakhstan": {
@@ -1762,11 +1793,16 @@
                 "daylight": "Sakhalin Awia Berɛ"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Samara Berε",
+                "standard": "Samara Susudua Berε",
+                "daylight": "Samara Ahuhuro Berε"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Samoa Berɛ",
-                "standard": "Samoa Susudua Berɛ",
-                "daylight": "Samoa Awia Berɛ"
+                "standard": "Samoa Susudua Berɛ"
               }
             },
             "Seychelles": {
@@ -1833,6 +1869,13 @@
                 "standard": "Kyuuk Berɛ"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Turkiye Berε",
+                "standard": "Turkiye Susudua Berε",
+                "daylight": "Turkiye Ahuhuro Berε"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Tɛkmɛnistan Berɛ",
@@ -1850,6 +1893,11 @@
                 "generic": "Yurugwae Berɛ",
                 "standard": "Yurugwae Susudua Berɛ",
                 "daylight": "Yurugwae Awia Berɛ"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ürümqi Bere"
               }
             },
             "Uzbekistan": {

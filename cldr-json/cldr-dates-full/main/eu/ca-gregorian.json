@@ -334,6 +334,10 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
+              "numericSeparators": {
+                "numericDateSeparator": "/",
+                "numericTimeSeparator": ":"
+              },
               "full": "{1} ({0})",
               "long": "{1} ({0})",
               "medium": "{1} ({0})",
@@ -355,11 +359,14 @@
                 "EHms": "E HH:mm:ss",
                 "Gy": "G y",
                 "GyM": "G y/M",
-                "GyMd": "G y-MM-dd",
+                "GyMd": "G y/MM/dd",
                 "GyMEd": "G y/M/d, E",
                 "GyMMM": "G y. 'urteko' MMM",
                 "GyMMMd": "G y. 'urteko' MMM d('a')",
                 "GyMMMEd": "G y. 'urteko' MMM d('a'), E",
+                "GyMMMM": "G y('e')'ko' MMMM",
+                "GyMMMMd": "G y('e')'ko' MMMM'ren' d('a')",
+                "GyMMMMEd": "G y('e')'ko' MMMM'ren' d('a'), E",
                 "h": "h a",
                 "H": "HH",
                 "hm": "h:mm a",
@@ -379,6 +386,7 @@
                 "MMMd": "MMM d('a')",
                 "MMMEd": "MMM d('a'), E",
                 "MMMMd": "MMMM'ren' d('a')",
+                "MMMMEd": "MMMM'ren' d('a'), E",
                 "MMMMW-count-one": "MMMM'ren' W. 'astea'",
                 "MMMMW-count-other": "MMMM'ren' W. 'astea'",
                 "ms": "mm:ss",
@@ -398,19 +406,26 @@
                 "yw-count-other": "Y. 'urteko' w. 'astea'"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
-                "Era": "{1} {0}",
+                "Day-Of-Week": "{1}, {0}",
+                "Era": "{0} {1}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1}, {0}",
                 "Timezone": "{0} ({1})",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "B h – B h",
@@ -429,21 +444,21 @@
                   "y": "G y–y"
                 },
                 "GyM": {
-                  "G": "G y-MM – G y-MM",
-                  "M": "G y-MM – y-MM",
-                  "y": "G y-MM – y-MM"
+                  "G": "G y/MM – G y/MM",
+                  "M": "G y/MM – y/MM",
+                  "y": "G y/MM – y/MM"
                 },
                 "GyMd": {
-                  "d": "G y-MM-dd – y-MM-dd",
-                  "G": "G y-MM-dd – G y-MM-dd",
-                  "M": "G y-MM-dd – y-MM-dd",
-                  "y": "G y-MM-dd – y-MM-dd"
+                  "d": "G y/MM/dd – y/MM/dd",
+                  "G": "G y/MM/dd – G y/MM/dd",
+                  "M": "G y/MM/dd – y/MM/dd",
+                  "y": "G y/MM/dd – y/MM/dd"
                 },
                 "GyMEd": {
-                  "d": "G y-MM-dd, E – y-MM-dd, E",
-                  "G": "G y-MM-dd, E – G y-MM-dd, E",
-                  "M": "G y-MM-dd, E – y-MM-dd, E",
-                  "y": "G y-MM-dd, E – y-MM-dd, E"
+                  "d": "G y/MM/dd, E – y/MM/dd, E",
+                  "G": "G y/MM/dd, E – G y/MM/dd, E",
+                  "M": "G y/MM/dd, E – y/MM/dd, E",
+                  "y": "G y/MM/dd, E – y/MM/dd, E"
                 },
                 "GyMMM": {
                   "G": "G y, MMM – G y, MMM",
@@ -515,6 +530,10 @@
                 "MMMEd": {
                   "d": "MMM d('a'), E – MMM d('a'), E",
                   "M": "MMM d('a'), E – MMM d('a'), E"
+                },
+                "MMMMd": {
+                  "d": "MMMM'ren' d–d('a')",
+                  "M": "MMMM'ren' d('a') – MMMM'ren' d('a')"
                 },
                 "y": {
                   "y": "y–y"

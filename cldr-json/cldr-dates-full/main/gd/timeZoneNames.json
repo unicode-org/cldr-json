@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0}",
           "regionFormat-type-daylight": "Tìde samhraidh: {0}",
           "regionFormat-type-standard": "Bun-àm: {0}",
@@ -397,9 +399,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Tìde samhraidh Bhreatainn"
-                },
                 "short": {
                   "daylight": "TSB"
                 },
@@ -419,9 +418,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Bun-àm na h-Èireann"
-                },
                 "short": {
                   "daylight": "TSÈ (Èirinn)"
                 },
@@ -743,18 +739,6 @@
                 "generic": "Àm Alaska",
                 "standard": "Bun-àm Alaska",
                 "daylight": "Tìde samhraidh Alaska"
-              },
-              "short": {
-                "generic": "AKT",
-                "standard": "AKST",
-                "daylight": "AKDT"
-              }
-            },
-            "Almaty": {
-              "long": {
-                "generic": "Àm Almaty",
-                "standard": "Bun-àm Almaty",
-                "daylight": "Tìde samhraidh Almaty"
               }
             },
             "Amazon": {
@@ -769,11 +753,6 @@
                 "generic": "Àm Meadhan Aimeireaga",
                 "standard": "Bun-àm Meadhan Aimeireaga",
                 "daylight": "Tìde samhraidh Meadhan Aimeireaga"
-              },
-              "short": {
-                "generic": "CT",
-                "standard": "CST",
-                "daylight": "CDT"
               }
             },
             "America_Eastern": {
@@ -781,11 +760,6 @@
                 "generic": "Àm Aimeireaga an Ear",
                 "standard": "Bun-àm Aimeireaga an Ear",
                 "daylight": "Tìde samhraidh Aimeireaga an Ear"
-              },
-              "short": {
-                "generic": "ET",
-                "standard": "EST",
-                "daylight": "EDT"
               }
             },
             "America_Mountain": {
@@ -793,11 +767,6 @@
                 "generic": "Àm Monadh Aimeireaga",
                 "standard": "Bun-àm Monadh Aimeireaga",
                 "daylight": "Tìde samhraidh Monadh Aimeireaga"
-              },
-              "short": {
-                "generic": "MT",
-                "standard": "MST",
-                "daylight": "MDT"
               }
             },
             "America_Pacific": {
@@ -805,11 +774,6 @@
                 "generic": "Àm a’ Chuain Shèimh",
                 "standard": "Bun-àm a’ Chuain Shèimh",
                 "daylight": "Tìde samhraidh a’ Chuain Shèimh"
-              },
-              "short": {
-                "generic": "PT",
-                "standard": "PST",
-                "daylight": "PDT"
               }
             },
             "Anadyr": {
@@ -824,20 +788,6 @@
                 "generic": "Àm Apia",
                 "standard": "Bun-àm Apia",
                 "daylight": "Tìde samhraidh Apia"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Àm Aqtau",
-                "standard": "Bun-àm Aqtau",
-                "daylight": "Tìde samhraidh Aqtau"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Àm Aqtobe",
-                "standard": "Bun-àm Aqtobe",
-                "daylight": "Tìde samhraidh Aqtobe"
               }
             },
             "Arabian": {
@@ -873,11 +823,6 @@
                 "generic": "Àm a’ Chuain Shiar",
                 "standard": "Bun-àm a’ Chuain Shiar",
                 "daylight": "Tìde samhraidh a’ Chuain Shiar"
-              },
-              "short": {
-                "generic": "AT",
-                "standard": "AST",
-                "daylight": "ADT"
               }
             },
             "Australia_Central": {
@@ -944,6 +889,13 @@
                 "generic": "Àm Bhrasília",
                 "standard": "Bun-àm Bhrasília",
                 "daylight": "Tìde samhraidh Bhrasília"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Ùine Bhreatainn",
+                "standard": "Greenwich Mean Time",
+                "daylight": "Tìde samhraidh Bhreatainn"
               }
             },
             "Brunei": {
@@ -1163,11 +1115,6 @@
                 "daylight": "Tìde samhraidh na Graonlainn an Iar"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Àm Guam"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Àm a’ Chamais"
@@ -1180,10 +1127,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Bun-àm nan Eileanan Hawai’i ’s Aleutach"
-              },
-              "short": {
-                "standard": "HAST"
+                "standard": "Àm nan Eileanan Hawai’i"
               }
             },
             "Hawaii_Aleutian": {
@@ -1191,11 +1135,6 @@
                 "generic": "Àm nan Eileanan Hawai’i ’s Aleutach",
                 "standard": "Bun-àm nan Eileanan Hawai’i ’s Aleutach",
                 "daylight": "Tìde Samhraidh nan Eileanan Hawai’i ’s Aleutach"
-              },
-              "short": {
-                "generic": "HAT",
-                "standard": "HAST",
-                "daylight": "HADT"
               }
             },
             "Hong_Kong": {
@@ -1247,6 +1186,13 @@
                 "generic": "Àm Ioràin",
                 "standard": "Bun-àm Ioràin",
                 "daylight": "Tìde samhraidh Ioràin"
+              }
+            },
+            "Irish": {
+              "long": {
+                "generic": "Àm na h-Èireann",
+                "standard": "Greenwich Mean Time",
+                "daylight": "Bun-àm na h-Èireann"
               }
             },
             "Irkutsk": {
@@ -1316,11 +1262,6 @@
                 "standard": "Àm Cìorgastain"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Àm Lanca"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Àm Eileanan Teraina"
@@ -1331,13 +1272,6 @@
                 "generic": "Àm Lord Howe",
                 "standard": "Bun-àm Lord Howe",
                 "daylight": "Tìde samhraidh Lord Howe"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Àm Macàthu",
-                "standard": "Bun-àm Macàthu",
-                "daylight": "Tìde samhraidh Macàthu"
               }
             },
             "Magadan": {
@@ -1455,11 +1389,6 @@
                 "daylight": "Tìde Samhraidh Fernando de Noronha"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Àm nan Eileanan Mairianach a Tuath"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Àm Novosibirsk",
@@ -1539,13 +1468,6 @@
                 "standard": "Àm Pyeongyang"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Àm Qızılorda",
-                "standard": "Bun-àm Qızılorda",
-                "daylight": "Tìde samhraidh Qızılorda"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "Àm Reunion"
@@ -1572,9 +1494,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "Àm Samotha",
-                "standard": "Bun-àm Samotha",
-                "daylight": "Tìde samhraidh Samotha"
+                "standard": "Bun-àm Samotha"
               }
             },
             "Seychelles": {
@@ -1641,6 +1561,13 @@
                 "standard": "Àm Chuuk"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Ùine na Tuirc",
+                "standard": "Àm Coitcheann na Tuirc",
+                "daylight": "Àm Samhraidh na Tuirc"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Àm Turcmanastàin",
@@ -1658,6 +1585,11 @@
                 "generic": "Àm Uruguaidh",
                 "standard": "Bun-àm Uruguaidh",
                 "daylight": "Tìde samhraidh Uruguaidh"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Ùine Urumqi"
               }
             },
             "Uzbekistan": {

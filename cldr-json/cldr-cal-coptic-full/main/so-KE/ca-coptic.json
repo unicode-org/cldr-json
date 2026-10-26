@@ -290,9 +290,13 @@
               "short": "HHmm"
             },
             "dateTimeFormats": {
-              "full": "{1} {0}",
-              "long": "{1} {0}",
-              "medium": "{1} {0}",
+              "numericSeparators": {
+                "numericDateSeparator": "/",
+                "numericTimeSeparator": ":"
+              },
+              "full": "{1}, {0}",
+              "long": "{1}, {0}",
+              "medium": "{1}, {0}",
               "short": "{1} {0}",
               "availableFormats": {
                 "Bh": "h B",
@@ -303,7 +307,7 @@
                 "EBh": "E h B",
                 "EBhm": "E h:mm B",
                 "EBhms": "E h:mm:ss B",
-                "Ed": "d, E",
+                "Ed": "d E",
                 "Eh": "E h a",
                 "Ehm": "E h:mm a",
                 "EHm": "E HH:mm",
@@ -311,7 +315,7 @@
                 "EHms": "E HH:mm:ss",
                 "Gy": "y G",
                 "GyM": "M/y G",
-                "GyMd": "M/d/y GGGGG",
+                "GyMd": "M/d/y G",
                 "GyMEd": "E, M/d/y G",
                 "GyMMM": "MMM y G",
                 "GyMMMd": "MMM d, y G",
@@ -333,7 +337,7 @@
                 "MMMMd": "MMMM d",
                 "MMMMEd": "E, MMMM d",
                 "ms": "mm:ss",
-                "y": "y",
+                "y": "y G",
                 "yM": "M/y",
                 "yMEd": "E, M/d/y",
                 "yMMM": "MMM y",
@@ -342,9 +346,9 @@
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y",
                 "yyyy": "y G",
-                "yyyyM": "M/y GGGGG",
-                "yyyyMd": "M/d/y GGGGG",
-                "yyyyMEd": "E, M/d/y GGGGG",
+                "yyyyM": "M/y G",
+                "yyyyMd": "M/d/y G",
+                "yyyyMEd": "E, M/d/y G",
                 "yyyyMMM": "MMM y G",
                 "yyyyMMMd": "MMM d, y G",
                 "yyyyMMMEd": "E, MMM d, y G",
@@ -353,19 +357,26 @@
                 "yyyyQQQQ": "QQQQ y G"
               },
               "appendItems": {
+                "Date-Timezone": "{0} {1}",
                 "Day": "{0} ({2}: {1})",
-                "Day-Of-Week": "{0} {1}",
+                "Day-Of-Week": "{1}, {0}",
                 "Era": "{1} {0}",
                 "Hour": "{0} ({2}: {1})",
                 "Minute": "{0} ({2}: {1})",
                 "Month": "{0} ({2}: {1})",
                 "Quarter": "{0} ({2}: {1})",
                 "Second": "{0} ({2}: {1})",
+                "Time-Day-Of-Week": "{1}, {0}",
                 "Timezone": "{0} {1}",
                 "Week": "{0} ({2}: {1})",
                 "Year": "{1} {0}"
               },
               "intervalFormats": {
+                "intervalFormatRanges": {
+                  "mixed": "{0} – {1}",
+                  "non-numeric": "{0}–{1}",
+                  "numeric": "{0}–{1}"
+                },
                 "intervalFormatFallback": "{0} – {1}",
                 "Bh": {
                   "B": "h B – h B",
@@ -384,21 +395,21 @@
                   "y": "y – y G"
                 },
                 "GyM": {
-                  "G": "M/y GGGGG – M/y GGGGG",
+                  "G": "M/y G – M/y G",
                   "M": "M/y – M/y GGGGG",
-                  "y": "M/y – M/y GGGGG"
+                  "y": "M/y – M/y G"
                 },
                 "GyMd": {
-                  "d": "M/d/y – M/d/y GGGGG",
-                  "G": "M/d/y GGGGG – M/d/y GGGGG",
-                  "M": "M/d/y – M/d/y GGGGG",
-                  "y": "M/d/y – M/d/y GGGGG"
+                  "d": "M/d/y – M/d/y G",
+                  "G": "M/d/y G – M/d/y G",
+                  "M": "M/d/y – M/d/y G",
+                  "y": "M/d/y – M/d/y G"
                 },
                 "GyMEd": {
-                  "d": "E, M/d/y – E, M/d/y GGGGG",
-                  "G": "E, M/d/y GGGGG – E, M/d/y GGGGG",
-                  "M": "E, M/d/y – E, M/d/y GGGGG",
-                  "y": "E, M/d/y – E, M/d/y GGGGG"
+                  "d": "E, M/d/y – E, M/d/y G",
+                  "G": "E, M/d/y G – E, M/d/y G",
+                  "M": "E, M/d/y – E, M/d/y G",
+                  "y": "E, M/d/y – E, M/d/y G"
                 },
                 "GyMMM": {
                   "G": "MMM y G – MMM y G",
@@ -471,22 +482,26 @@
                   "d": "E, MMM d – E, MMM d",
                   "M": "E, MMM d – E, MMM d"
                 },
+                "MMMMd": {
+                  "d": "MMMM d–d",
+                  "M": "MMMM d – MMMM d"
+                },
                 "y": {
                   "y": "y – y G"
                 },
                 "yM": {
-                  "M": "M/y – M/y GGGGG",
-                  "y": "M/y – M/y GGGGG"
+                  "M": "M/y – M/y G",
+                  "y": "M/y – M/y G"
                 },
                 "yMd": {
-                  "d": "M/d/y – M/d/y GGGGG",
-                  "M": "M/d/y – M/d/y GGGGG",
-                  "y": "M/d/y – M/d/y GGGGG"
+                  "d": "M/d/y – M/d/y G",
+                  "M": "M/d/y – M/d/y G",
+                  "y": "M/d/y – M/d/y G"
                 },
                 "yMEd": {
-                  "d": "E, M/d/y – E, M/d/y GGGGG",
-                  "M": "E, M/d/y – E, M/d/y GGGGG",
-                  "y": "E, M/d/y – E, M/d/y GGGGG"
+                  "d": "E, M/d/y – E, M/d/y G",
+                  "M": "E, M/d/y – E, M/d/y G",
+                  "y": "E, M/d/y – E, M/d/y G"
                 },
                 "yMMM": {
                   "M": "MMM – MMM y G",
@@ -510,8 +525,8 @@
             },
             "dateTimeFormats-atTime": {
               "standard": {
-                "full": "{1} {0}",
-                "long": "{1} {0}",
+                "full": "{1}, {0}",
+                "long": "{1}, {0}",
                 "medium": "{1}, {0}",
                 "short": "{1}, {0}"
               }
@@ -520,7 +535,7 @@
               "standard": {
                 "full": "{1} 'ee' {0}",
                 "long": "{1} 'ee' {0}",
-                "medium": "{1} {0}",
+                "medium": "{1}, {0}",
                 "short": "{1} {0}"
               }
             }

@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "časové pásmo {0}",
           "regionFormat-type-daylight": "{0} (+1)",
           "regionFormat-type-standard": "{0} (+0)",
@@ -337,9 +339,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "britský letný čas"
-                },
                 "exemplarCity": "Londýn"
               },
               "Gibraltar": {
@@ -357,12 +356,6 @@
               "Budapest": {
                 "_type": "zone",
                 "exemplarCity": "Budapešť"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "írsky štandardný čas"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -816,13 +809,6 @@
                 "daylight": "aljašský letný čas"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "almaatský čas",
-                "standard": "almaatský štandardný čas",
-                "daylight": "almaatský letný čas"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "amazonský čas",
@@ -870,20 +856,6 @@
                 "generic": "apijský čas",
                 "standard": "apijský štandardný čas",
                 "daylight": "apijský letný čas"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "aktauský čas",
-                "standard": "aktauský štandardný čas",
-                "daylight": "aktauský letný čas"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "aktobský čas",
-                "standard": "aktobský štandardný čas",
-                "daylight": "aktobský letný čas"
               }
             },
             "Arabian": {
@@ -985,6 +957,13 @@
                 "generic": "brazílsky čas",
                 "standard": "brazílsky štandardný čas",
                 "daylight": "brazílsky letný čas"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "britský čas",
+                "standard": "greenwichský čas",
+                "daylight": "britský letný čas"
               }
             },
             "Brunei": {
@@ -1170,6 +1149,13 @@
                 "standard": "greenwichský čas"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "grónsky čas",
+                "standard": "grónsky štandardný čas",
+                "daylight": "grónsky letný čas"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "východogrónsky čas",
@@ -1184,11 +1170,6 @@
                 "daylight": "západogrónsky letný čas"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "guamský čas"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "štandardný čas Perzského zálivu"
@@ -1201,7 +1182,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "havajsko-aleutský štandardný čas"
+                "standard": "havajský čas"
               }
             },
             "Hawaii_Aleutian": {
@@ -1262,6 +1243,13 @@
                 "daylight": "iránsky letný čas"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "írsky čas",
+                "standard": "greenwichský čas",
+                "daylight": "írsky štandardný čas"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "irkutský čas",
@@ -1285,9 +1273,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Petropavlovsk-Kamčatský čas",
-                "standard": "Petropavlovsk-Kamčatský štandardný čas",
-                "daylight": "Petropavlovsk-Kamčatskijský letný čas"
+                "generic": "kamčatský čas",
+                "standard": "kamčatský štandardný čas",
+                "daylight": "kamčatský letný čas"
               }
             },
             "Kazakhstan": {
@@ -1329,11 +1317,6 @@
                 "standard": "kirgizský čas"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "srílanský čas"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "čas Rovníkových ostrovov"
@@ -1344,13 +1327,6 @@
                 "generic": "čas ostrova lorda Howa",
                 "standard": "štandardný čas ostrova lorda Howa",
                 "daylight": "letný čas ostrova lorda Howa"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "macajský čas",
-                "standard": "macajský štandardný čas",
-                "daylight": "macajský letný čas"
               }
             },
             "Magadan": {
@@ -1468,11 +1444,6 @@
                 "daylight": "letný čas súostrovia Fernando de Noronha"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "severomariánsky čas"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "novosibirský čas",
@@ -1552,13 +1523,6 @@
                 "standard": "pchjongjanský čas"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "kyzylordský čas",
-                "standard": "kyzylordský štandardný čas",
-                "daylight": "kyzylordský letný čas"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "réunionský čas"
@@ -1578,16 +1542,14 @@
             },
             "Samara": {
               "long": {
-                "generic": "Samarský čas",
-                "standard": "Samarský štandardný čas",
-                "daylight": "Samarský letný čas"
+                "generic": "samarský čas",
+                "standard": "samarský štandardný čas",
+                "daylight": "samarský letný čas"
               }
             },
             "Samoa": {
               "long": {
-                "generic": "samojský čas",
-                "standard": "samojský štandardný čas",
-                "daylight": "samojský letný čas"
+                "standard": "samojský štandardný čas"
               }
             },
             "Seychelles": {
@@ -1654,6 +1616,13 @@
                 "standard": "chuukský čas"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "turecký čas",
+                "standard": "turecký štandardný čas",
+                "daylight": "turecký letný čas"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "turkménsky čas",
@@ -1671,6 +1640,11 @@
                 "generic": "uruguajský čas",
                 "standard": "uruguajský štandardný čas",
                 "daylight": "uruguajský letný čas"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "čas Urumči"
               }
             },
             "Uzbekistan": {

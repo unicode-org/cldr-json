@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "{0} Gk",
-          "gmtZeroFormat": "Gk",
+          "gmtFormat-alt-utc": "{0} ƉAK",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "ƉAK+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} kaakɔŋkɔŋɔ̀",
           "regionFormat-type-daylight": "{0} kaakɔŋkɔŋɔ̀ gafʊbaka",
           "regionFormat-type-standard": "{0} kaakɔŋkɔŋɔ̀ ɖeiɖei",
@@ -101,9 +103,6 @@
               },
               "London": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Gagɛɛshɩtǝna kaakɔŋkɔŋɔ̀ gafʊbaka"
-                },
                 "exemplarCity": "Lɔnɖɔn"
               },
               "Guernsey": {
@@ -128,9 +127,6 @@
               },
               "Dublin": {
                 "_type": "zone",
-                "long": {
-                  "daylight": "Irlanɖ kaakɔŋkɔŋɔ̀"
-                },
                 "exemplarCity": "Ɖɔblɛŋ"
               },
               "Isle_of_Man": {
@@ -721,7 +717,7 @@
               },
               "Bahia": {
                 "_type": "zone",
-                "exemplarCity": "Bahiyaa"
+                "exemplarCity": "Bahiiya"
               },
               "Fortaleza": {
                 "_type": "zone",
@@ -865,7 +861,7 @@
               },
               "Curacao": {
                 "_type": "zone",
-                "exemplarCity": "Kurasaawu"
+                "exemplarCity": "Kurasawuu"
               },
               "Dominica": {
                 "_type": "zone",
@@ -1094,7 +1090,7 @@
                 },
                 "New_Salem": {
                   "_type": "zone",
-                  "exemplarCity": "Niu Salɛm, Nɔɔr Ɖakota"
+                  "exemplarCity": "Niu Salɛm, Nɔɔr Ɖakoota"
                 },
                 "Center": {
                   "_type": "zone",
@@ -1221,7 +1217,7 @@
               },
               "Douala": {
                 "_type": "zone",
-                "exemplarCity": "Ɖuwalaa"
+                "exemplarCity": "Ɖuwala"
               },
               "Djibouti": {
                 "_type": "zone",
@@ -1266,10 +1262,6 @@
               "Conakry": {
                 "_type": "zone",
                 "exemplarCity": "Konakrii"
-              },
-              "Malabo": {
-                "_type": "zone",
-                "exemplarCity": "Malaboo"
               },
               "Bissau": {
                 "_type": "zone",
@@ -1349,7 +1341,7 @@
               },
               "Sao_Tome": {
                 "_type": "zone",
-                "exemplarCity": "Saotome kampá"
+                "exemplarCity": "Saotomee kampá"
               },
               "Mbabane": {
                 "_type": "zone",
@@ -1431,7 +1423,7 @@
               },
               "Macquarie": {
                 "_type": "zone",
-                "exemplarCity": "Makarii"
+                "exemplarCity": "Makarii kaAtukǝltǝna"
               }
             },
             "Pacific": {
@@ -1457,7 +1449,7 @@
               },
               "Ponape": {
                 "_type": "zone",
-                "exemplarCity": "Poonpee"
+                "exemplarCity": "Poonpei"
               },
               "Kosrae": {
                 "_type": "zone",
@@ -1469,7 +1461,7 @@
               },
               "Enderbury": {
                 "_type": "zone",
-                "exemplarCity": "Kantɔn"
+                "exemplarCity": "Kantɔn kaAtukǝltǝna"
               },
               "Kiritimati": {
                 "_type": "zone",
@@ -1497,7 +1489,7 @@
               },
               "Norfolk": {
                 "_type": "zone",
-                "exemplarCity": "Nɔrfook"
+                "exemplarCity": "Nɔrfook kaAtukǝltǝna"
               },
               "Nauru": {
                 "_type": "zone",
@@ -1509,7 +1501,7 @@
               },
               "Chatham": {
                 "_type": "zone",
-                "exemplarCity": "Shatam"
+                "exemplarCity": "Shatam kaBʊtukǝltǝna"
               },
               "Auckland": {
                 "_type": "zone",
@@ -1521,7 +1513,7 @@
               },
               "Marquesas": {
                 "_type": "zone",
-                "exemplarCity": "Markesas"
+                "exemplarCity": "Markesas kaBʊtukǝltǝna"
               },
               "Gambier": {
                 "_type": "zone",
@@ -1537,7 +1529,7 @@
               },
               "Pitcairn": {
                 "_type": "zone",
-                "exemplarCity": "Pɩtkɛɛn"
+                "exemplarCity": "Pɩtkɛɛn kaBʊtukǝltǝna"
               },
               "Palau": {
                 "_type": "zone",
@@ -1565,7 +1557,7 @@
               },
               "Wake": {
                 "_type": "zone",
-                "exemplarCity": "Week"
+                "exemplarCity": "Week kaAtukǝltǝna"
               },
               "Efate": {
                 "_type": "zone",
@@ -1573,7 +1565,7 @@
               },
               "Wallis": {
                 "_type": "zone",
-                "exemplarCity": "Walis"
+                "exemplarCity": "Walis na Futuna"
               },
               "Apia": {
                 "_type": "zone",
@@ -1623,7 +1615,7 @@
               },
               "Lord_Howe": {
                 "_type": "zone",
-                "exemplarCity": "Lɔrɖ Hoo"
+                "exemplarCity": "Lɔrɖ Hoo kaAtukǝltǝna"
               }
             },
             "Atlantic": {
@@ -1671,11 +1663,11 @@
             "Indian": {
               "Cocos": {
                 "_type": "zone",
-                "exemplarCity": "Kokoos"
+                "exemplarCity": "Kokoos kaBʊtukǝltǝna"
               },
               "Christmas": {
                 "_type": "zone",
-                "exemplarCity": "Nowɛl"
+                "exemplarCity": "Nowɛl kaAtukǝltǝna"
               },
               "Chagos": {
                 "_type": "zone",
@@ -1722,6 +1714,13 @@
             }
           },
           "metazone": {
+            "Acre": {
+              "long": {
+                "generic": "Akrǝ kaakɔŋkɔŋɔ̀",
+                "standard": "Akrǝ kaakɔŋkɔŋɔ̀ ɖeiɖei",
+                "daylight": "Akrǝ kaakɔŋkɔŋɔ̀ gafʊbaka"
+              }
+            },
             "Afghanistan": {
               "long": {
                 "standard": "Afganistan kaakɔŋkɔŋɔ̀"
@@ -1895,6 +1894,13 @@
                 "generic": "Brasiliya kaakɔŋkɔŋɔ̀",
                 "standard": "Brasiliya kaakɔŋkɔŋɔ̀ ɖeiɖei",
                 "daylight": "Brasiliya kaakɔŋkɔŋɔ̀ gafʊbaka"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "Gagɛɛshɩtǝna kaakɔŋkɔŋɔ̀",
+                "standard": "Griinwish kaakɔŋkɔŋɔ̀",
+                "daylight": "Gagɛɛshɩtǝna kaakɔŋkɔŋɔ̀ gafʊbaka"
               }
             },
             "Brunei": {
@@ -2073,6 +2079,13 @@
                 "standard": "Gk"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "Grinlanɖ kaakɔŋkɔŋɔ̀",
+                "standard": "Grinlanɖ kaakɔŋkɔŋɔ̀ ɖeiɖei",
+                "daylight": "Grinlanɖ kaakɔŋkɔŋɔ̀ gafʊbaka"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "Grinlanɖ gajakalaŋ kaakɔŋkɔŋɔ̀",
@@ -2087,11 +2100,6 @@
                 "daylight": "Grinlanɖ gɩteŋshilelaŋ kaakɔŋkɔŋɔ̀ gafʊbaka"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Guwam kaakɔŋkɔŋɔ̀"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "Gɔlf kaakɔŋkɔŋɔ̀"
@@ -2104,7 +2112,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "Awayɩɩ n’Alewutii kaakɔŋkɔŋɔ̀ ɖeiɖei"
+                "standard": "Awayɩɩ kaakɔŋkɔŋɔ̀ ɖeiɖei"
               }
             },
             "Hawaii_Aleutian": {
@@ -2165,6 +2173,13 @@
                 "daylight": "Iraŋ kaakɔŋkɔŋɔ̀ gafʊbaka"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "Irlanɖ kaakɔŋkɔŋɔ̀",
+                "standard": "Griinwish kaakɔŋkɔŋɔ̀",
+                "daylight": "Irlanɖ kaakɔŋkɔŋɔ̀ deidei"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "Irkut kaakɔŋkɔŋɔ̀",
@@ -2184,6 +2199,13 @@
                 "generic": "Japaŋ kaakɔŋkɔŋɔ̀",
                 "standard": "Japaŋ kaakɔŋkɔŋɔ̀ ɖeiɖei",
                 "daylight": "Japaŋ kaakɔŋkɔŋɔ̀ gafʊbaka"
+              }
+            },
+            "Kamchatka": {
+              "long": {
+                "generic": "Kamshatɩka kaakɔŋkɔŋɔ̀",
+                "standard": "Kamshatɩka kaakɔŋkɔŋɔ̀ ɖeiɖei",
+                "daylight": "Kamshatɩka kaakɔŋkɔŋɔ̀ gafʊbaka"
               }
             },
             "Kazakhstan": {
@@ -2225,11 +2247,6 @@
                 "standard": "Kirgistan kaakɔŋkɔŋɔ̀"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Siri Laŋkaa kaakɔŋkɔŋɔ̀"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "Laɩn kaBʊtukǝltǝna kaakɔŋkɔŋɔ̀"
@@ -2240,13 +2257,6 @@
                 "generic": "Lɔrɖ Hoo kaakɔŋkɔŋɔ̀",
                 "standard": "Lɔrɖ Hoo kaakɔŋkɔŋɔ̀ ɖeiɖei",
                 "daylight": "Lɔrɖ Hoo kaakɔŋkɔŋɔ̀ gafʊbaka"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Makawoo kaakɔŋkɔŋɔ̀",
-                "standard": "Makawoo kaakɔŋkɔŋɔ̀ ɖeiɖei",
-                "daylight": "akawoo kaakɔŋkɔŋɔ̀ gafʊbaka"
               }
             },
             "Magadan": {
@@ -2364,11 +2374,6 @@
                 "daylight": "Fɛrnanɖo ɖe Norɔnya kaakɔŋkɔŋɔ̀ gafʊbaka"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Mariyan kǝbʊtukǝltǝna gʊnyɩpɛnɛlaŋ kaakɔŋkɔŋɔ̀"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "Nofosibirk kaakɔŋkɔŋɔ̀",
@@ -2465,11 +2470,16 @@
                 "daylight": "Sakalin kaakɔŋkɔŋɔ̀ gafʊbaka"
               }
             },
+            "Samara": {
+              "long": {
+                "generic": "Samara kaakɔŋkɔŋɔ̀",
+                "standard": "Samara kaakɔŋkɔŋɔ̀ ɖeiɖei",
+                "daylight": "Samara kaakɔŋkɔŋɔ̀ gafʊbaka"
+              }
+            },
             "Samoa": {
               "long": {
-                "generic": "Samowa Amalɩka kaja kaakɔŋkɔŋɔ̀",
-                "standard": "Samowa Amalɩka kaja kaakɔŋkɔŋɔ̀ ɖeiɖei",
-                "daylight": "Samowa Amalɩka kaja kaakɔŋkɔŋɔ̀ gafʊbaka"
+                "standard": "Samowa Amalɩka kaja kaakɔŋkɔŋɔ̀ ɖeiɖei"
               }
             },
             "Seychelles": {
@@ -2536,6 +2546,13 @@
                 "standard": "Cuuk kaakɔŋkɔŋɔ̀"
               }
             },
+            "Turkey": {
+              "long": {
+                "generic": "Turkii kaakɔŋkɔŋɔ̀",
+                "standard": "Turkii kaakɔŋkɔŋɔ̀ ɖeiɖei",
+                "daylight": "Turkii kaakɔŋkɔŋɔ gafʊbaka"
+              }
+            },
             "Turkmenistan": {
               "long": {
                 "generic": "Turkmenistan kaakɔŋkɔŋɔ̀",
@@ -2553,6 +2570,11 @@
                 "generic": "Uruguwee kaakɔŋkɔŋɔ̀",
                 "standard": "Uruguwee kaakɔŋkɔŋɔ̀ ɖeiɖei",
                 "daylight": "Uruguwee kaakɔŋkɔŋɔ̀ gafʊbaka"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "Urumkii kaakɔŋkɔŋɔ̀"
               }
             },
             "Uzbekistan": {

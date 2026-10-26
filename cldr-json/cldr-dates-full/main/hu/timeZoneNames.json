@@ -8,8 +8,10 @@
         "timeZoneNames": {
           "hourFormat": "+HH:mm;-HH:mm",
           "gmtFormat": "GMT{0}",
-          "gmtZeroFormat": "GMT",
+          "gmtFormat-alt-utc": "UTC{0}",
           "gmtUnknownFormat": "GMT+?",
+          "gmtUnknownFormat-alt-utc": "UTC+?",
+          "dualOffsetFormat": "{0}/{1}",
           "regionFormat": "{0} idő",
           "regionFormat-type-daylight": "{0} nyári idő",
           "regionFormat-type-standard": "{0} zónaidő",
@@ -419,12 +421,6 @@
                 "_type": "zone",
                 "exemplarCity": "Párizs"
               },
-              "London": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "brit nyári idő"
-                }
-              },
               "Gibraltar": {
                 "_type": "zone",
                 "exemplarCity": "Gibraltár"
@@ -436,12 +432,6 @@
               "Zagreb": {
                 "_type": "zone",
                 "exemplarCity": "Zágráb"
-              },
-              "Dublin": {
-                "_type": "zone",
-                "long": {
-                  "daylight": "ír nyári idő"
-                }
               },
               "Isle_of_Man": {
                 "_type": "zone",
@@ -899,13 +889,6 @@
                 "daylight": "alaszkai nyári idő"
               }
             },
-            "Almaty": {
-              "long": {
-                "generic": "Almati idő",
-                "standard": "Almati zónaidő",
-                "daylight": "Almati nyári idő"
-              }
-            },
             "Amazon": {
               "long": {
                 "generic": "amazóniai idő",
@@ -953,20 +936,6 @@
                 "generic": "apiai idő",
                 "standard": "apiai téli idő",
                 "daylight": "apiai nyári idő"
-              }
-            },
-            "Aqtau": {
-              "long": {
-                "generic": "Aqtaui idő",
-                "standard": "Aqtaui zónaidő",
-                "daylight": "Aqtaui nyári idő"
-              }
-            },
-            "Aqtobe": {
-              "long": {
-                "generic": "Aqtobei idő",
-                "standard": "Aqtobei zónaidő",
-                "daylight": "Aqtobei nyári idő"
               }
             },
             "Arabian": {
@@ -1068,6 +1037,13 @@
                 "generic": "brazíliai idő",
                 "standard": "brazíliai téli idő",
                 "daylight": "brazíliai nyári idő"
+              }
+            },
+            "British": {
+              "long": {
+                "generic": "brit időzóna",
+                "standard": "greenwichi középidő, téli idő",
+                "daylight": "brit nyári idő"
               }
             },
             "Brunei": {
@@ -1266,6 +1242,13 @@
                 "standard": "GMT"
               }
             },
+            "Greenland": {
+              "long": {
+                "generic": "grönlandi idő",
+                "standard": "grönlandi téli idő",
+                "daylight": "grönlandi nyári idő"
+              }
+            },
             "Greenland_Eastern": {
               "long": {
                 "generic": "kelet-grönlandi időzóna",
@@ -1280,11 +1263,6 @@
                 "daylight": "nyugat-grönlandi nyári idő"
               }
             },
-            "Guam": {
-              "long": {
-                "standard": "Guami zónaidő"
-              }
-            },
             "Gulf": {
               "long": {
                 "standard": "öbölbeli téli idő"
@@ -1297,7 +1275,7 @@
             },
             "Hawaii": {
               "long": {
-                "standard": "hawaii-aleuti téli idő"
+                "standard": "hawaii idő"
               }
             },
             "Hawaii_Aleutian": {
@@ -1358,6 +1336,13 @@
                 "daylight": "iráni nyári idő"
               }
             },
+            "Irish": {
+              "long": {
+                "generic": "ír időzóna",
+                "standard": "greenwichi középidő, téli idő",
+                "daylight": "ír nyári idő"
+              }
+            },
             "Irkutsk": {
               "long": {
                 "generic": "irkutszki idő",
@@ -1381,9 +1366,9 @@
             },
             "Kamchatka": {
               "long": {
-                "generic": "Petropavlovszk-kamcsatkai idő",
-                "standard": "Petropavlovszk-kamcsatkai zónaidő",
-                "daylight": "Petropavlovszk-kamcsatkai nyári idő"
+                "generic": "kamcsatkai idő",
+                "standard": "kamcsatkai téli idő",
+                "daylight": "kamcsatkai nyári idő"
               }
             },
             "Kazakhstan": {
@@ -1425,11 +1410,6 @@
                 "standard": "kirgizisztáni idő"
               }
             },
-            "Lanka": {
-              "long": {
-                "standard": "Lankai idő"
-              }
-            },
             "Line_Islands": {
               "long": {
                 "standard": "sor-szigeteki idő"
@@ -1440,13 +1420,6 @@
                 "generic": "Lord Howe-szigeti idő",
                 "standard": "Lord Howe-szigeti téli idő",
                 "daylight": "Lord Howe-szigeti nyári idő"
-              }
-            },
-            "Macau": {
-              "long": {
-                "generic": "Macaui idő",
-                "standard": "Macaui zónaidő",
-                "daylight": "Macaui nyári idő"
               }
             },
             "Magadan": {
@@ -1564,11 +1537,6 @@
                 "daylight": "Fernando de Noronha-i nyári idő"
               }
             },
-            "North_Mariana": {
-              "long": {
-                "standard": "Észak-mariana-szigeteki idő"
-              }
-            },
             "Novosibirsk": {
               "long": {
                 "generic": "novoszibirszki idő",
@@ -1648,13 +1616,6 @@
                 "standard": "phenjani idő"
               }
             },
-            "Qyzylorda": {
-              "long": {
-                "generic": "Qyzylordai idő",
-                "standard": "Qyzylordai zónaidő",
-                "daylight": "Qyzylordai nyári idő"
-              }
-            },
             "Reunion": {
               "long": {
                 "standard": "réunioni idő"
@@ -1681,9 +1642,7 @@
             },
             "Samoa": {
               "long": {
-                "generic": "szamoai idő",
-                "standard": "szamoai téli idő",
-                "daylight": "szamoai nyári idő"
+                "standard": "szamoai téli idő"
               }
             },
             "Seychelles": {
@@ -1774,6 +1733,11 @@
                 "generic": "uruguayi idő",
                 "standard": "uruguayi téli idő",
                 "daylight": "uruguayi nyári idő"
+              }
+            },
+            "Urumqi": {
+              "long": {
+                "standard": "ürümcsi idő"
               }
             },
             "Uzbekistan": {
